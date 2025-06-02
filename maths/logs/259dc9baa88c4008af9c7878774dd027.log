@@ -1,0 +1,569 @@
+=== Turn 0: Author generates questions ===
+1. <question>Consider an idealized one-dimensional quantum harmonic oscillator with energy eigenvalues given by $E_n = \hbar \omega \left(n + \frac{1}{2}\right)$ for $n = 0,1,2,\ldots$. Suppose the system is subject to a time-periodic potential modulation $V(t) = V_0 \cos(2 \omega t)$ where $V_0$ is a constant. Determine the first-order correction to the energy levels $E_n$ using time-dependent perturbation theory expressed in closed form in terms of $n$, $\hbar$, $\omega$, and $V_0$.</question>
+
+2. <question>Consider a particle constrained to move on the circumference of a ring of radius $R$ with a uniform magnetic flux $\Phi$ threading through the center. The Hamiltonian is given by $$\hat{H} = \frac{1}{2m R^2} \left(-i \hbar \frac{d}{d\theta} - \frac{q \Phi}{2 \pi}\right)^2.$$ Derive an explicit expression for the energy eigenvalues $E_n(\Phi)$ as a function of flux $\Phi$, quantum number $n$, and physical constants $m, R, q, \hbar$.</question>
+
+3. <question>A system consists of $N$ non-interacting spin-$\frac{1}{2}$ particles in an external magnetic field $B$, described by the Hamiltonian $$\hat{H} = - \gamma \hbar B \sum_{i=1}^N \hat{S}_{z,i}.$$ Given that the partition function at temperature $T$ is $Z = (2 \cosh(\beta \gamma \hbar B / 2))^N$ with $\beta = 1/(k_B T)$, find the expression for the mean magnetization $\langle M \rangle$ as a function of $N$, $B$, $\beta$, and constants.</question>
+
+4. <question>Consider the classical damped harmonic oscillator described by $$m \ddot{x} + b \dot{x} + k x = 0,$$ with $m, b, k > 0$. Define the quality factor $Q = \frac{\sqrt{mk}}{b}$. Express the frequency of damped oscillations $\omega_d$ explicitly in terms of the undamped natural frequency $\omega_0 = \sqrt{\frac{k}{m}}$ and $Q$.</question>
+
+5. <question>In the context of special relativity, consider a particle moving with velocity $v$ relative to a rest frame. The relativistic momentum is given by $$p = \gamma m v,$$ where $\gamma = \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}}$. Derive an explicit expression for the velocity $v$ as a function of $p$, $m$, and $c$.</question>
+
+6. <question>Consider a one-dimensional quantum system with Hamiltonian $$\hat{H} = -\frac{\hbar^2}{2m} \frac{d^2}{dx^2} + V(x),$$ where $V(x) = V_0 \delta(x)$, with $\delta(x)$ the Dirac delta function. Find the energy $E_b$ of the bound state (if it exists) in terms of $m$, $\hbar$, and $V_0$.</question>
+
+7. <question>A perfect reflector moves toward a monochromatic plane electromagnetic wave of frequency $\nu$ at speed $v$. The frequency of the reflected wave is modified by the Doppler effect. Derive an expression for the reflected frequency $\nu'$ as a function of the incident frequency $\nu$, the speed $v$, and the speed of light $c$.</question>
+
+8. <question>Consider a massive relativistic particle with rest mass $m$ described by the energy-momentum relation $$E^2 = p^2 c^2 + m^2 c^4.$$ Express the group velocity $v_g = \frac{dE}{dp}$ explicitly in terms of momentum $p$, $m$, and $c$.</question>
+
+9. <question>Consider the classical electromagnetic wave equation in vacuum, $$\nabla^2 \mathbf{E} - \frac{1}{c^2} \frac{\partial^2 \mathbf{E}}{\partial t^2} = 0,$$ with plane wave solution $\mathbf{E}(\mathbf{r},t) = \mathbf{E}_0 e^{i(\mathbf{k}\cdot \mathbf{r} - \omega t)}$. Express the dispersion relation $\omega(\mathbf{k})$ in closed form and verify its group velocity $v_g$ equals the speed of light $c$.</question>
+
+10. <question>Consider a relativistic particle confined in a one-dimensional infinite potential well of width $L$, with energy levels approximated by $$E_n = \sqrt{p_n^2 c^2 + m^2 c^4},$$ where $p_n = \frac{n \pi \hbar}{L}$ for positive integers $n$. Find the difference $\Delta E = E_{n+1} - E_n$ explicitly as a function of $n$, $L$, $m$, $c$, and $\hbar$.</question>
+=== Turn 0: Critic feedback ===
+Here is a concise critique for each question, mapped to your guidelines with specific suggestions for improvement:
+
+---
+
+### 1. Quantum Harmonic Oscillator, Time-Dependent Perturbation
+
+**Feedback:**
+- The question asks for "the first-order correction to the energy levels $E_n$ using time-dependent perturbation theory," but in standard time-dependent perturbation theory, energy corrections are not directly calculated (that's from time-independent perturbation theory), and resonant/dynamical transitions are usually the focus.
+- "Closed form" is ambiguous given the time-dependent problem; without the initial state or explicit instructions, it may be ill-posed.
+- The symbol $\omega$ is properly defined, and necessary information is present.
+
+**Suggestions:**
+- Clarify whether a transition rate, transition probability, or quasienergy correction (Floquet theory) is desired.
+- Specify the assumption (e.g., initial state, long-time average).
+- Check that the request is for a **single symbolic answer** and not a derivation.
+
+---
+
+### 2. Particle on a Ring with Magnetic Flux
+
+**Feedback:**
+- This is a standard textbook problem ("Aharonov-Bohm effect" context).
+- The setup is precise and all variables are defined.
+- "Derive" in the stem violates the guideline: it should ask "Find an explicit expression for...".
+
+**Suggestions:**
+- Reword: "Find an explicit expression for the energy eigenvalues $E_n(\Phi)$ as a function of ...".
+
+---
+
+### 3. $N$ Non-Interacting Spins in a Magnetic Field
+
+**Feedback:**
+- Clear and unambiguous symbolic answer requested.
+- All symbols are defined and formulation is concise.
+- Slightly standard, but acceptable due to the inclusion of partition function rather than starting from scratch.
+
+**Suggestions:**
+- Replace "find the expression" with "Express the mean magnetization $\langle M \rangle$ as ...".
+- (Optional) Rephrase to increase originality. For instance, request a less standard observable or alter the context.
+
+---
+
+### 4. Damped Harmonic Oscillator, Quality Factor
+
+**Feedback:**
+- The question is clear, concise, and symbolic.
+- Not strictly "find," but "express" aligns with guidelines.
+- A well-posed, non-trivial step remains.
+
+**Suggestions:**
+- Consider specifying a less common variant for more originality.
+
+---
+
+### 5. Special Relativity: Inverse Momentum-Velocity Relation
+
+**Feedback:**
+- Clear, concise, and original (inverse functions are less standard).
+- All terms defined, and a single symbolic target.
+
+**Suggestions:**
+- None: this meets all criteria well.
+
+---
+
+### 6. $\delta$-Function Quantum Well
+
+**Feedback:**
+- Standard quantum mechanics problem; less original.
+- Structure is good, clear single symbolic target, all terms defined.
+
+**Suggestions:**
+- Increase originality by, for example, varying the shape or including more parameters (asymmetrical delta, etc.).
+
+---
+
+### 7. Doppler Effect for Moving Reflector
+
+**Feedback:**
+- Well-posed, clear symbolic target.
+- May be considered somewhat standard at the undergraduate level, but double-Doppler is less so.
+
+**Suggestions:**
+- Clearly specify "perfect reflector" (e.g., "mirror"); otherwise, very good.
+
+---
+
+### 8. Relativistic Group Velocity
+
+**Feedback:**
+- Clear, concise, precise.
+- The group velocity expression is not a standard problem, showing some originality.
+
+**Suggestions:**
+- None; this is well-structured.
+
+---
+
+### 9. EM Wave Equation: Dispersion and Group Velocity
+
+**Feedback:**
+- Two outputs: requests both an explicit dispersion relation **and** a group velocity computation.
+- This violates the "single solution" guideline.
+
+**Suggestions:**
+- Limit to finding **either** the dispersion relation $\omega(\mathbf{k})$ **or** the group velocity (preferably the latter if originality is sought).
+- Reword to "Express the group velocity $v_g$ for a plane wave solution..." or similar.
+
+---
+
+### 10. Relativistic Particle in a Box: Energy Difference
+
+**Feedback:**
+- Clear, non-trivial, all terms defined, unique target.
+- Single symbolic output.
+
+**Suggestions:**
+- None; this meets criteria well.
+
+---
+
+## General Action Points
+
+1. **Wording**: Replace "derive," "calculate," or "show" with "find," "express," or "give" to avoid derivational prompts.
+2. **Single Target**: Avoid dual-output requests (see Q9).
+3. **Originality**: Several questions (Q2, Q6) are common textbook exercises. Add unique twists or additional parameters/constraints to increase originality.
+4. **Conciseness**: Ensure stems have no unnecessary background.
+5. **Notation**: All variables are defined and LaTeX structure is mostly consistent; continue checking for consistency.
+6. **Format**: Follow Markdown syntax and avoid diagrams/visuals as required.
+
+---
+
+**Summary Table:**
+
+| # | Issue(s)               | Action(s)                            |
+|---|------------------------|--------------------------------------|
+| 1 | Ambiguous, 2-step      | Clarify output, specify details      |
+| 2 | Word "derive"          | Change to "find"/"express"           |
+| 3 | Minor wording          | Use "Express..."                     |
+| 4 | Acceptable             | Consider minor originality boost      |
+| 5 | None                   | -                                    |
+| 6 | Standard               | Make more original (if possible)     |
+| 7 | Acceptable             | Specify "mirror"/"reflector"         |
+| 8 | None                   | -                                    |
+| 9 | Dual output            | Request only one symbolic output     |
+|10 | None                   | -                                    |
+
+Apply these adjustments for optimal clarity and alignment with your guidelines.
+=== Turn 1: Author refines questions ===
+1. <question>Consider an idealized one-dimensional quantum harmonic oscillator with energy eigenvalues $E_n = \hbar \omega \left(n + \frac{1}{2}\right)$ for $n = 0,1,2,\ldots$. Suppose the system is subject to a weak time-periodic perturbation $V(t) = V_0 \cos(2 \omega t)$ with constant $V_0$. Assuming the system initially occupies the eigenstate $|n\rangle$ at $t=0$, find an explicit expression for the transition probability to the state $|m\rangle$ at time $t$ to first order in perturbation theory, expressed in terms of $n$, $m$, $\hbar$, $\omega$, $V_0$, and $t$.</question>
+
+2. <question>Consider a particle constrained to move on the circumference of a ring of radius $R$ threaded by a uniform magnetic flux $\Phi$ through its center. The Hamiltonian is $$\hat{H} = \frac{1}{2m R^2} \left(-i \hbar \frac{d}{d\theta} - \frac{q \Phi}{2 \pi}\right)^2.$$ Find an explicit expression for the energy eigenvalues $E_n(\Phi)$ as functions of the quantum number $n$, flux $\Phi$, and constants $m$, $R$, $q$, and $\hbar$.</question>
+
+3. <question>A system of $N$ non-interacting spin-$\frac{1}{2}$ particles is placed in an external magnetic field $B$, with Hamiltonian $$\hat{H} = - \gamma \hbar B \sum_{i=1}^N \hat{S}_{z,i}.$$ Given that the partition function is $$Z = \left(2 \cosh\left(\frac{\beta \gamma \hbar B}{2}\right)\right)^N$$ where $\beta = 1/(k_B T)$, express the mean magnetization $\langle M \rangle$ as a function of $N$, $B$, $\beta$, and physical constants.</question>
+
+4. <question>Consider a damped harmonic oscillator described by $$m \ddot{x} + b \dot{x} + k x = 0,$$ with positive parameters $m, b, k$. Defining the undamped natural frequency $\omega_0 = \sqrt{\frac{k}{m}}$ and quality factor $Q = \frac{\sqrt{m k}}{b}$, express the damped oscillation frequency $\omega_d$ explicitly in terms of $\omega_0$ and $Q$.</question>
+
+5. <question>In special relativity, a particle of rest mass $m$ moves at velocity $v$ relative to a given frame. Its relativistic momentum is $$p = \gamma m v,$$ where $\gamma = \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}}$. Find an explicit expression for the velocity $v$ as a function of momentum $p$, mass $m$, and speed of light $c$.</question>
+
+6. <question>Consider a one-dimensional quantum system with Hamiltonian $$\hat{H} = -\frac{\hbar^2}{2m} \frac{d^2}{dx^2} + V(x),$$ where $$V(x) = -V_0 \delta(x),$$ with $V_0 > 0$ and $\delta(x)$ the Dirac delta function. Find the bound state energy $E_b$ (if it exists) in terms of $m$, $\hbar$, and $V_0$.</question>
+
+7. <question>A perfect mirror moves toward a monochromatic plane electromagnetic wave of frequency $\nu$ at speed $v$. Derive an explicit expression for the frequency $\nu'$ of the reflected wave as a function of the incident frequency $\nu$, the mirror speed $v$, and the speed of light $c$.</question>
+
+8. <question>Consider a relativistic particle of rest mass $m$ with energy-momentum relation $$E^2 = p^2 c^2 + m^2 c^4.$$ Express the group velocity $$v_g = \frac{dE}{dp}$$ explicitly in terms of momentum $p$, rest mass $m$, and speed of light $c$.</question>
+
+9. <question>Consider the classical electromagnetic wave equation in vacuum, $$\nabla^2 \mathbf{E} - \frac{1}{c^2} \frac{\partial^2 \mathbf{E}}{\partial t^2} = 0,$$ with plane wave solution $$\mathbf{E}(\mathbf{r},t) = \mathbf{E}_0 e^{i(\mathbf{k}\cdot \mathbf{r} - \omega t)}.$$ Find the dispersion relation $\omega(\mathbf{k})$ explicitly in closed form.</question>
+
+10. <question>Consider a relativistic particle confined in a one-dimensional infinite potential well of width $L$, with energy levels $$E_n = \sqrt{p_n^2 c^2 + m^2 c^4},$$ where $$p_n = \frac{n \pi \hbar}{L}$$ and $n$ is a positive integer. Find an explicit expression for the energy difference $$\Delta E = E_{n+1} - E_n$$ as a function of $n$, $L$, $m$, $c$, and $\hbar$.</question>
+=== Turn 1: Critic feedback ===
+Here’s a question-by-question critique using your guidelines:
+
+---
+
+**1. Quantum Harmonic Oscillator, Time-Dependent Perturbation**
+
+- **Strengths**: 
+  - Precise setup and mathematical structure.
+  - Direct, single symbolic output is requested.
+  - Multi-step reasoning required.
+- **Areas for improvement**: 
+  - Slightly verbose in stating the energy eigenvalues (could just state "levels indexed by $n=0,1,2,\ldots$ as given").
+  - "Explicit expression" could invite ambiguous answers unless clarified (e.g., do not expect an evaluated integral—make clear that a time-dependent perturbation theory first-order result is wanted).
+- **Action**: Consider tightening the wording for brevity and clarifying the expected format of the solution.
+
+---
+
+**2. Particle on Ring with Magnetic Flux**
+
+- **Strengths**: 
+  - Clear, real setup.
+  - Symbolic closed-form expression required.
+- **Areas for improvement**: 
+  - This is a classic textbook problem and is not particularly original (Guideline 6).
+- **Action**: Consider using a less standard configuration or include a twist that requires more than direct recall.
+
+---
+
+**3. Spin-1/2 System, Partition Function**
+
+- **Strengths**: 
+  - Clear, mathematical description.
+  - Direct, single symbolic answer expected.
+- **Areas for improvement**: 
+  - This is a very standard textbook exercise (not original).
+- **Action**: Add a twist—e.g., ask for the limiting behavior for high or low temperatures derived analytically.
+
+---
+
+**4. Damped Harmonic Oscillator Frequency**
+
+- **Strengths**: 
+  - Contains all necessary, non-redundant info.
+  - Single symbolic solution.
+- **Areas for improvement**: 
+  - This is standard and formulaic; originality is low.
+  - Symbol $Q$ is somewhat rare in precisely this context—ensure standard notation.
+- **Action**: Present with slightly less common constraints or in a different parameter regime.
+
+---
+
+**5. Relativistic Momentum to Velocity**
+
+- **Strengths**: 
+  - Novel inversion of a standard relationship.
+  - Single symbolic result expected.
+- **Areas for improvement**: 
+  - The context could be expanded for originality, or combined with a related concept.
+- **Action**: Consider adding an additional subtlety or context.
+
+---
+
+**6. Delta-Function Potential Bound State**
+
+- **Strengths**: 
+  - Well-defined, classic setup.
+  - Expects explicit, symbolic closed-form answer.
+- **Areas for improvement**: 
+  - Very standard; originality guideline not met.
+- **Action**: Generalize (e.g., to multi-delta, or delta plus another potential) for non-triviality.
+
+---
+
+**7. Moving Mirror and Doppler Shift**
+
+- **Strengths**: 
+  - Real-world conceptual basis, clean mathematical expectation.
+- **Areas for improvement**: 
+  - This is a standard textbook formula.
+- **Action**: Consider, for example, altering the frame of reference, or non-normal incidence.
+
+---
+
+**8. Relativistic Particle Group Velocity**
+
+- **Strengths**: 
+  - Concise, clear setup; explicit single-answer expectation.
+- **Areas for improvement**: 
+  - Slightly standard problem.
+- **Action**: For higher uniqueness, add context (e.g., ask for limiting behaviors).
+
+---
+
+**9. Electromagnetic Wave Equation: Dispersion Relation**
+
+- **Strengths**: 
+  - Rigorous, concise, standard notation.
+  - Clear symbolic answer, single output.
+- **Areas for improvement**: 
+  - Extremely standard; lacks originality.
+- **Action**: Generalize, e.g., include a medium with dispersion.
+
+---
+
+**10. Relativistic Particle in Box: Level Spacing**
+
+- **Strengths**: 
+  - Creative twist on a known setting—combines two models.
+  - Requires multi-step algebra.
+  - Concise, expects a single symbolic answer.
+- **Areas for improvement**: 
+  - None significant; this is a good fit to the guidelines.
+- **Action**: Well-written as is.
+
+---
+
+**General Feedback Across Questions:**
+
+- **Originality** (Guideline 6) is the primary issue—most are direct reproductions of common textbook problems. Even minor adjustments can greatly improve uniqueness.
+- **Conciseness** (Guideline 5): Some intros/symbol redefinitions could be trimmed.
+- Most other requirements are solidly met (No multi-part, explicit input, symbolic single answer, etc.).
+
+---
+
+**Summary of Actionable Points:**
+
+- Replace or adjust standard textbook problems to make them less direct recall and more non-trivial—especially by introducing subtle extensions, constraints, or combined phenomena.
+- Where possible, reduce formula redefinition, but retain clarity and self-containment.
+- Specify what counts as an “explicit expression” if ambiguity is possible.
+- Ensure even questions in classic settings require multi-step or less routine reasoning.
+
+Let me know if you'd like examples of improved versions for any of these!
+=== Turn 2: Author refines questions ===
+<question>Consider a one-dimensional quantum harmonic oscillator with energy levels indexed by \(n = 0,1,2,\ldots\), subject to a weak time-periodic perturbation \(V(t) = V_0 \cos(2 \omega t)\), where \(\omega\) is the oscillator frequency and \(V_0\) a constant. Assuming the system starts in the eigenstate \(|n\rangle\) at \(t=0\), use first-order time-dependent perturbation theory to derive an explicit expression for the transition probability \(P_{n \to m}(t)\) to state \(|m\rangle\) at time \(t\), expressed in terms of \(n\), \(m\), \(\hbar\), \(\omega\), \(V_0\), and \(t\). Clearly state any selection rules that apply.</question>
+
+<question>A charged particle moves on a ring of radius \(R\) threaded by a uniform magnetic flux \(\Phi\). The Hamiltonian is modified by a flux-dependent vector potential as
+\[
+\hat{H} = \frac{1}{2mR^2} \left(-i \hbar \frac{d}{d\theta} - \frac{q \Phi}{2 \pi}\right)^2.
+\]
+Now, suppose an additional weak periodic potential \(U(\theta) = U_1 \cos(\theta)\) perturbs the system. First, write down the unperturbed energy eigenvalues \(E_n(\Phi)\) as functions of \(n\), \(\Phi\), and constants \(m, R, q, \hbar\). Then, to first order in \(U_1\), describe qualitatively how the energy levels are modified and identify which transitions are allowed by this perturbation.</question>
+
+<question>Consider \(N\) non-interacting spin-\(\frac{1}{2}\) particles in an external magnetic field \(B\), described by
+\[
+\hat{H} = - \gamma \hbar B \sum_{i=1}^N \hat{S}_{z,i}.
+\]
+Given the partition function 
+\[
+Z = \left[2 \cosh\left(\frac{\beta \gamma \hbar B}{2}\right)\right]^N,
+\]
+derive an explicit expression for the mean magnetization \(\langle M \rangle\) as a function of \(N\), \(B\), \(\beta\), and physical constants. Then, analyze its limiting forms analytically in the high-temperature limit \(\beta \gamma \hbar B \ll 1\) and the low-temperature limit \(\beta \gamma \hbar B \gg 1\), and interpret the physical meaning of each limit.</question>
+
+<question>A damped harmonic oscillator satisfies
+\[
+m \ddot{x} + b \dot{x} + k x = 0,
+\]
+with positive parameters \(m, b, k\). Defining the undamped natural frequency \(\omega_0 = \sqrt{\frac{k}{m}}\) and the quality factor \(Q = \frac{m \omega_0}{b}\), derive an explicit expression for the damped oscillation frequency \(\omega_d\) in terms of \(\omega_0\) and \(Q\). Then, discuss the parameter regimes corresponding to underdamped, critically damped, and overdamped motion in terms of \(Q\).</question>
+
+<question>In special relativity, a particle of rest mass \(m\) moves at velocity \(v\) with relativistic momentum 
+\[
+p = \gamma m v,
+\]
+where \(\gamma = \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}}\). Express \(v\) explicitly as a function of \(p\), \(m\), and \(c\). Then, using this result, derive the corresponding expression for the relativistic kinetic energy \(K = E - m c^2\) in terms of \(p\), \(m\), and \(c\).</question>
+
+<question>Consider a one-dimensional quantum system with Hamiltonian
+\[
+\hat{H} = -\frac{\hbar^2}{2m} \frac{d^2}{dx^2} - V_0 \delta(x) + \lambda \delta(x - a),
+\]
+where \(V_0 > 0\), \(\lambda\) is a real constant, and \(\delta\) is the Dirac delta function. Derive the transcendental equation determining the bound state energy \(E_b\) (if any exist) in terms of \(m\), \(\hbar\), \(V_0\), \(\lambda\), and \(a\). Discuss qualitatively how the presence and sign of \(\lambda\) affect the existence and energy of the bound states compared to the single delta function potential.</question>
+
+<question>A perfect mirror moves toward a monochromatic electromagnetic plane wave of frequency \(\nu\) at speed \(v\), with \(v \ll c\). Considering relativistic Doppler effects, derive an explicit expression for the frequency \(\nu'\) of the wave reflected back toward the source as a function of \(\nu\), \(v\), and \(c\). Then, analyze the non-relativistic limit \(v \ll c\) and interpret the physical meaning of your result.</question>
+
+<question>Consider a relativistic particle with rest mass \(m\) and energy-momentum relation
+\[
+E^2 = p^2 c^2 + m^2 c^4.
+\]
+Derive an explicit formula for the group velocity 
+\[
+v_g = \frac{dE}{dp}
+\]
+in terms of \(p\), \(m\), and \(c\). Then, determine the limiting forms of \(v_g\) when the particle is non-relativistic (\(p \ll m c\)) and ultrarelativistic (\(p \gg m c\)).</question>
+
+<question>Consider the classical electromagnetic wave equation in vacuum,
+\[
+\nabla^2 \mathbf{E} - \frac{1}{c^2} \frac{\partial^2 \mathbf{E}}{\partial t^2} = 0,
+\]
+with plane wave solution
+\[
+\mathbf{E}(\mathbf{r},t) = \mathbf{E}_0 e^{i(\mathbf{k}\cdot \mathbf{r} - \omega t)}.
+\]
+(a) Derive the dispersion relation \(\omega(\mathbf{k})\) explicitly. (b) Then, generalize to the case of a homogeneous, isotropic dielectric medium with refractive index \(n\), and write down the corresponding dispersion relation \(\omega(\mathbf{k})\) in closed form.</question>
+
+<question>Consider a relativistic particle confined to a one-dimensional infinite square well of width \(L\) with energy eigenvalues
+\[
+E_n = \sqrt{p_n^2 c^2 + m^2 c^4}, \quad p_n = \frac{n \pi \hbar}{L}, \quad n=1,2,3,\ldots.
+\]
+Derive an explicit expression for the energy difference
+\[
+\Delta E_n = E_{n+1} - E_n
+\]
+as a function of \(n\), \(L\), \(m\), \(c\), and \(\hbar\). Discuss how \(\Delta E_n\) behaves in the non-relativistic limit and in the ultrarelativistic limit.</question>
+=== Turn 2: Critic feedback ===
+Here is a concise, question-by-question critique based on your assessment guidelines:
+
+---
+
+**Q1:** (Quantum harmonic oscillator under periodic perturbation)
+- **Strengths:** Clear setup, well-defined target (explicit probability expression, selection rules), expects symbolic answer.
+- **Issues:** 
+    - Requires an explicit derivation rather than just a final symbolic formula; wording ("derive an explicit expression") invites a derivation.
+    - "Selection rules" may be interpreted as a qualitative answer (not a single symbolic expression), violating single output rule.
+    - The question is slightly overlong due to reiteration of notation.
+- **Improvements:** Ask for "the explicit formula for $P_{n \to m}(t)$ according to first-order time-dependent perturbation theory, expressed in..." and specify "state any selection rules in symbolic form" (or better, encode as Kronecker delta in the answer).
+
+---
+
+**Q2:** (Ring with magnetic flux and weak potential)
+- **Strengths:** Good physical setup; asks for symbolic energy eigenvalues and qualitative effect of perturbation.
+- **Issues:** 
+    - Two outputs: one for eigenvalues, one for qualitative level shifts and transitions—violates single output rule.
+    - "Describe qualitatively" is ambiguous and not a symbolic answer.
+- **Improvements:** Restrict to asking for the general formula for unperturbed $E_n(\Phi)$, or for the symbolic first-order correction to $E_n$; if asking about transitions, require an explicit selection rule in Kronecker-delta notation.
+
+---
+
+**Q3:** (Spin-1/2 particles in field; partition function)
+- **Strengths:** Specific, expects explicit formula, proper physics context.
+- **Issues:** 
+    - Asks for both the general explicit formula and two limiting cases—violates single output rule.
+    - Requests qualitative physical interpretation ("interpret the physical meaning...").
+- **Improvements:** Only ask for the closed-form expression for $\langle M \rangle$ in terms of $N$, $B$, $\beta$ and constants.
+
+---
+
+**Q4:** (Damped harmonic oscillator; $Q$-factor)
+- **Strengths:** Good physical context; asks for a formula and qualitative parameter regime discussion.
+- **Issues:** 
+    - Violates single output rule by requesting both an explicit formula and a discussion.
+    - Discussion component is not a symbolic answer.
+- **Improvements:** Only ask for the formula for $\omega_d$ in terms of $\omega_0$ and $Q$.
+
+---
+
+**Q5:** (Relativistic momentum-velocity and kinetic energy)
+- **Strengths:** Well-posed, unique, expects symbolic answer.
+- **Issues:** 
+    - Asks for two things: $v$ as a function of $(p,m,c)$, and $K$ as a function of $(p,m,c)$—violates single output rule.
+- **Improvements:** Restrict to only one symbolic expression (e.g., kinetic energy as a function of $(p, m, c)$).
+
+---
+
+**Q6:** (Delta function potential with perturbation)
+- **Strengths:** Unique, multi-step.
+- **Issues:** 
+    - "Derive the transcendental equation..." and "discuss qualitatively..." — again, two outputs.
+    - Discussion is qualitative.
+- **Improvements:** Ask only for the transcendental equation relating $E_b$ to specified constants.
+
+---
+
+**Q7:** (Moving mirror and reflected frequency)
+- **Strengths:** Interesting, unique.
+- **Issues:** 
+    - Asks for both an explicit expression and "analyze the nonrelativistic limit and interpret..." — two outputs, second is qualitative.
+- **Improvements:** Only ask for the explicit symbolic formula for the reflected frequency.
+
+---
+
+**Q8:** (Relativistic particle group velocity)
+- **Strengths:** Multi-step, expects explicit symbolic answer.
+- **Issues:** 
+    - Requests "limiting forms" for two cases—violates single output rule.
+- **Improvements:** Only ask for $v_g$ in terms of $(p, m, c)$.
+
+---
+
+**Q9:** (Electromagnetic wave equation and dispersion)
+- **Strengths:** Good context, explicit symbolic targets.
+- **Issues:** 
+    - Explicitly asks for two parts ("(a)" and "(b)"), violating single output rule.
+- **Improvements:** Only ask for the dispersion relation in vacuum, or only in a dielectric, not both.
+
+---
+
+**Q10:** (Relativistic square well energy level differences)
+- **Strengths:** Good use of multi-step reasoning.
+- **Issues:** 
+    - Requests both an explicit formula and a discussion of two limits (nonrelativistic and ultrarelativistic), so two outputs.
+- **Improvements:** Only ask for the formula for $\Delta E_n$ in symbolic form.
+
+---
+
+**Overall Summary:**
+
+- **Single Output:** Most questions violate the "single output" rule by requesting two or more results (e.g., formula plus qualitative/limiting form/selection rule).
+- **Avoid Qualitative/Descriptive Parts:** Eliminate requests for qualitative descriptions, discussions, or interpretative explanations.
+- **Conciseness:** Several prompts can be tightened by omitting repeated explanations or redefining standard notation already specified.
+- **Focus on Symbolic Output:** Revise all prompts to require exactly one symbolic answer, expressed explicitly in LaTeX with standard notation.
+- **No Multiple Parts:** Remove any multiple parts (e.g., (a)/(b)), sub-questions, or mixed format outputs.
+
+**Actionable Steps:**
+- Revise each question to explicitly ask for one, and only one, closed-form or symbolic answer.
+- Replace any "describe", "discuss", "interpret", or "analyze" instructions with a request for an explicit formula, equation, or expression.
+- For selection rules, require a symbolic (e.g., $\delta_{n,m\pm2}$) formulation if truly essential.
+- Ensure questions are concise, contain only needed background, and only introduce symbols that will appear in the answer.
+- Remove multi-part formatting and ensure the answer can be given as a single mathematical expression.
+
+---
+
+Let me know if you'd like a demonstration of how to rewrite one or more of these questions according to the guidelines.
+=== Turn 3: Author refines questions ===
+<question>Consider a one-dimensional quantum harmonic oscillator with energy levels \(|n\rangle\), \(n=0,1,2,\ldots\), perturbed by a weak time-dependent potential \(V(t) = V_0 \cos(2 \omega t)\) where \(\omega\) is the oscillator frequency. Using first-order time-dependent perturbation theory, write down the explicit formula for the transition probability \(P_{n \to m}(t)\) from state \(|n\rangle\) to \(|m\rangle\) at time \(t\) in terms of \(n\), \(m\), \(\hbar\), \(\omega\), \(V_0\), and \(t\), including any selection rules expressed symbolically.</question>
+
+<question>A charged particle on a ring of radius \(R\) encloses magnetic flux \(\Phi\) and has Hamiltonian
+\[
+\hat{H} = \frac{1}{2mR^2} \left(-i \hbar \frac{d}{d\theta} - \frac{q \Phi}{2 \pi}\right)^2.
+\]
+Write the unperturbed energy eigenvalues \(E_n(\Phi)\) explicitly as functions of \(n \in \mathbb{Z}\), \(\Phi\), and constants \(m, R, q, \hbar\), in closed symbolic form.</question>
+
+<question>Consider \(N\) non-interacting spin-\(\frac{1}{2}\) particles in a magnetic field \(B\) with Hamiltonian
+\[
+\hat{H} = - \gamma \hbar B \sum_{i=1}^N \hat{S}_{z,i}.
+\]
+Given the partition function 
+\[
+Z = \left[2 \cosh\left(\frac{\beta \gamma \hbar B}{2}\right)\right]^N,
+\]
+derive and write down an explicit symbolic expression for the mean magnetization \(\langle M \rangle\) as a function of \(N\), \(B\), \(\beta\), and physical constants.</question>
+
+<question>A damped harmonic oscillator satisfies
+\[
+m \ddot{x} + b \dot{x} + k x = 0,
+\]
+with \(\omega_0 = \sqrt{k/m}\) and quality factor \(Q = \frac{m \omega_0}{b}\). Derive an explicit formula for the damped oscillation frequency \(\omega_d\) expressed solely in terms of \(\omega_0\) and \(Q\).</question>
+
+<question>For a relativistic particle with rest mass \(m\), momentum \(p\), and speed of light \(c\), express the relativistic kinetic energy
+\[
+K = E - m c^2
+\]
+explicitly as a function of \(p\), \(m\), and \(c\) in closed symbolic form.</question>
+
+<question>Consider a one-dimensional quantum system with Hamiltonian
+\[
+\hat{H} = -\frac{\hbar^2}{2m} \frac{d^2}{dx^2} - V_0 \delta(x) + \lambda \delta(x - a),
+\]
+where \(V_0 > 0\), \(\lambda \in \mathbb{R}\), and \(a > 0\). Derive the transcendental equation determining the bound state energy \(E_b < 0\) in terms of \(m\), \(\hbar\), \(V_0\), \(\lambda\), and \(a\); express it in closed symbolic form.</question>
+
+<question>A perfect mirror moves toward a monochromatic electromagnetic plane wave of frequency \(\nu\) with speed \(v \ll c\). Derive an explicit symbolic formula for the frequency \(\nu'\) of the wave reflected back toward the source as a function of \(\nu\), \(v\), and \(c\), incorporating relativistic Doppler effects.</question>
+
+<question>For a relativistic particle with rest mass \(m\) and momentum \(p\), given the energy-momentum relation
+\[
+E^2 = p^2 c^2 + m^2 c^4,
+\]
+derive an explicit symbolic formula for the group velocity
+\[
+v_g = \frac{dE}{dp}
+\]
+in terms of \(p\), \(m\), and \(c\).</question>
+
+<question>Consider the electromagnetic wave equation in vacuum,
+\[
+\nabla^2 \mathbf{E} - \frac{1}{c^2} \frac{\partial^2 \mathbf{E}}{\partial t^2} = 0,
+\]
+with plane wave solution
+\[
+\mathbf{E}(\mathbf{r}, t) = \mathbf{E}_0 e^{i(\mathbf{k} \cdot \mathbf{r} - \omega t)}.
+\]
+Write the dispersion relation \(\omega(\mathbf{k})\) explicitly as a closed symbolic expression.</question>
+
+<question>Consider a relativistic particle confined in a one-dimensional infinite square well of width \(L\), with energy eigenvalues
+\[
+E_n = \sqrt{p_n^2 c^2 + m^2 c^4}, \quad p_n = \frac{n \pi \hbar}{L}, \quad n=1,2,3,\ldots.
+\]
+Derive an explicit symbolic expression for the energy difference
+\[
+\Delta E_n = E_{n+1} - E_n
+\]
+as a function of \(n\), \(L\), \(m\), \(c\), and \(\hbar\).</question>
+=== Final questions generated ===

@@ -1,0 +1,261 @@
+=== Turn 0: Author generates questions ===
+1. <question>Consider a quantum harmonic oscillator with the Hamiltonian given by $H = \frac{1}{2m} p^2 + \frac{1}{2} m \omega^2 x^2$. Using the concept of ladder operators $a$ and $a^\dagger$, express the expectation value of the potential energy, $\langle V \rangle$, for the $n$-th excited state in terms of $\hbar$, $m$, $\omega$, and $n$. </question>
+
+2. <question>A rigid body is rotating in space with a constant angular velocity $\boldsymbol{\omega} = (\omega_x, \omega_y, \omega_z)$. Determine the expression for the kinetic energy $T$ of the body in terms of its moment of inertia tensor $I_{ij}$ and the components of $\boldsymbol{\omega}$. Assume the tensor $I_{ij}$ is known and remains constant over time. </question>
+
+3. <question>In a thermodynamic system described by the van der Waals equation of state $(P + \frac{a}{V_m^2})(V_m - b) = RT$, determine the specific volume $V_m$ as a function of the van der Waals constants $a$, $b$, the temperature $T$, and the pressure $P$. Assume all other quantities are constants and do not depend on external conditions. </question>
+
+4. <question>Consider a charged particle moving in a uniform magnetic field $\mathbf{B}$. The particle follows a helical path around the direction of $\mathbf{B}$. Given the velocity $\mathbf{v}$ of the particle with components $(v_\parallel, v_\perp)$ parallel and perpendicular to $\mathbf{B}$ respectively, find the expression for the distance $D$ that the particle travels along the magnetic field in one complete helical loop. </question>
+
+5. <question>A particle is confined in a one-dimensional potential well described by $V(x) = V_0$ for $0 \leq x \leq a$ and $V(x) = \infty$ elsewhere. If the particle's wave function inside the well is given by $\psi(x) = A \sin(kx)$, determine the quantized energy levels $E_n$ of the particle. Express your answer in terms of $V_0$, $a$, $n$, and other known constants. </question>
+
+6. <question>In a relativistic scenario, two particles of masses $m_1$ and $m_2$ are moving towards each other with speeds $v_1$ and $v_2$ respectively in a frame S. Compute the invariant mass $\mathcal{M}$ of the two-particle system as observed in frame S. Express $\mathcal{M}$ in terms of $m_1$, $m_2$, $v_1$, $v_2$, and $c$, the speed of light. </question>
+
+7. <question>A current-carrying loop of arbitrary shape is placed in a uniform magnetic field $\mathbf{B}$. If the magnetic moment of the loop is $\boldsymbol{\mu}$, derive the expression for the torque $\boldsymbol{\tau}$ acting on the loop in terms of $\boldsymbol{\mu}$ and $\mathbf{B}$. Assume all vectors are known and constant over the time interval of interest. </question>
+=== Turn 0: Critic feedback ===
+Below is a question‐by‐question critique against your 12 guidelines, with concrete suggestions for tightening each prompt.
+
+1. Question 1 (quantum oscillator ⟨V⟩)  
+  • Guideline 5 (Concise & relevant): You ask for ⟨V⟩ in terms of m, ℏ, ω, n, but the standard result doesn’t depend on m—so m is superfluous.  
+  • Guideline 6 (Originality): This is a one-line textbook exercise.  
+  • Guideline 7 (Multi-step): There is virtually no algebraic chain, just “use H=ℏω(a†a+½) then extract ½mω²x².”  
+  • Suggested fix: Drop m from the target variables and either (a) ask for both ⟨T⟩ and ⟨V⟩ to force a symmetry argument, or (b) embed it in a time‐dependent coherent‐state context to make it less routine.
+
+2. Question 2 (rigid‐body kinetic energy)  
+  • Guideline 6 (Originality): T=½ ωᵀI ω is immediate from definition.  
+  • Guideline 7: No real derivation—direct matrix form.  
+  • Suggested fix: Specify a nontrivial orientation (e.g. express T in body vs. space frame requiring Euler angles), so students must carry out the coordinate‐transformation algebra rather than quote the formula.
+
+3. Question 3 (van der Waals specific volume)  
+  • Guideline 4 (Single output): Solving for Vₘ yields a cubic with three branches—no unique elementary closed‐form.  
+  • Guideline 7: Asking for the full Cardano result is tedious rather than instructive.  
+  • Suggested fix: Instead of “determine Vₘ,” ask “show that Vₘ satisfies the cubic equation …” or “derive the cubic polynomial in Vₘ.” That gives a single neat symbolic answer (the polynomial) and avoids unwieldy roots.
+
+4. Question 4 (helical loop distance D)  
+  • Guideline 6 (Originality): Too standard—D=v∥·(2πm/qB).  
+  • Guideline 3 (Solvable target): It is clear, but trivial.  
+  • Suggested fix: Embed in a nonuniform B­-field or ask how D changes if B slowly varies (adiabatic invariant), so students must set up an integral rather than quote the gyration period.
+
+5. Question 5 (infinite well with V₀ inside)  
+  • Ambiguity: V(x)=V₀ inside but ∞ outside simply shifts all levels by V₀.  
+  • Guideline 2 (Well-defined setup): Are you really asking for a finite well or an infinite one?  
+  • Suggested fix: Either remove V₀ altogether (standard infinite well) or turn it into a finite square well of depth V₀, so that students must match decay vs. oscillatory solutions (nontrivial transcendental equations).
+
+6. Question 6 (relativistic invariant mass)  
+  • Guideline 6 (Originality): Direct application of M²c⁴=(E₁+E₂)²−(p₁+p₂)²c².  
+  • Guideline 7: No multi-step besides plugging in γm.  
+  • Suggested fix: Pose in a less trivial kinematic configuration—e.g. one particle at angle θ to the other—so they must do a vector addition of 4-momenta rather than a head-on collision.
+
+7. Question 7 (magnetic torque)  
+  • Guideline 6 (Originality): τ=μ×B is immediate.  
+  • Guideline 7: No derivation needed beyond “definition of μ.”  
+  • Suggested fix: Ask for the torque on a current loop in a nonuniform field, so they must expand B(r) to first order and evaluate ∫r′×J d³r′, producing τ=μ×B+(gradient term).
+
+General remarks:  
+ • Most prompts are textbook‐standard and yield one‐line answers—consider adding a twist (nonuniform fields, coordinate transforms, time dependence) to force genuine algebraic work.  
+ • Beware hidden multi‐valued solutions (e.g. cubic equations). If you do want roots, either accept a polynomial as the final form or limit to asking for the characteristic equation.  
+ • Remove any redundant symbols or parameters.  
+ • Ensure each question demands a sequence of steps (setting up integrals, coordinate changes, matching boundary conditions) rather than recall of a formula.
+=== Turn 1: Author refines questions ===
+Here is the revised set of questions incorporating the feedback provided:
+
+1. <question>Consider a quantum harmonic oscillator with the Hamiltonian given by \( H = \frac{1}{2m} p^2 + \frac{1}{2} m \omega^2 x^2 \). Use the concept of ladder operators \( a \) and \( a^\dagger \) to express the expectation values of both the potential energy, \(\langle V \rangle\), and kinetic energy, \(\langle T \rangle\), for the \( n \)-th excited state. Express your answers in terms of \(\hbar\), \(\omega\), and \( n \). Offer a qualitative explanation for why these values are equal due to the energy being equally partitioned on average between kinetic and potential components.</question>
+
+2. <question>A rigid body is rotating in space with a constant angular velocity \( \boldsymbol{\omega} = (\omega_x, \omega_y, \omega_z) \). Derive the expression for its kinetic energy \( T \) in the body frame, where the principal moments of inertia \( I_1, I_2, I_3 \) are aligned with the body's coordinate axes. Extend this result by performing a transformation using Euler angles to express \( T \) in the lab frame. Assume all relevant tensors and angles are known.</question>
+
+3. <question>In a thermodynamic system described by the Van der Waals equation of state \( (P+\frac{a}{V_m^2})(V_m-b)=RT \), derive the cubic polynomial that determines the specific volume \( V_m \) as a function of the van der Waals constants \( a \) and \( b \), as well as the temperature \( T \) and pressure \( P \). Explain any assumptions you make in deriving this polynomial.</question>
+
+4. <question>Consider a charged particle moving in a magnetic field \(\mathbf{B} = B_0 \mathbf{\hat{z}}\) that slowly varies in the \(\mathbf{\hat{z}}\)-direction over time. Calculate the change in the distance \( D \) that the particle travels along \(\mathbf{B}\) in one complete helical loop when \( B \) changes adiabatically from \( B_1 \) to \( B_2 \). Use the adiabatic invariant of the system to support your calculation, and explain how this invariant relates to the problem setup.</question>
+
+5. <question>A particle is confined in a one-dimensional potential well with \( V(x) = 0 \) for \( 0 \leq x \leq a \) and \( V(x) = V_0 > 0 \) for \( x < 0 \) or \( x > a \). The wave function inside the well is given by \( \psi(x) = A \sin(kx) \). Determine the transcendental equation that quantizes the energy levels \( E_n \) of the particle, accounting for both oscillatory and exponential behavior near the boundaries. Express your answer in terms of \( V_0 \), \( a \), and other necessary constants.</question>
+
+6. <question>In a relativistic scenario, two particles of masses \( m_1 \) and \( m_2 \) move towards each other with velocities \( \mathbf{v}_1 \) and \( \mathbf{v}_2 \), where \(\mathbf{v}_1\) forms an angle \( \theta \) with \(\mathbf{v}_2\). Compute the invariant mass \(\mathcal{M}\) of the two-particle system as observed in frame \( S \). Derive \(\mathcal{M}\) in terms of the particle masses, velocities, \(\theta\), and \( c \), the speed of light.</question>
+
+7. <question>A current-carrying loop of arbitrary shape is placed in a nonuniform magnetic field \( \mathbf{B}(\mathbf{r}) \), where the field varies slightly in space. Given the magnetic moment of the loop \( \boldsymbol{\mu} \), derive the expression for the torque \( \boldsymbol{\tau} \) acting on the loop up to first-order expansion terms in \(\mathbf{B}(\mathbf{r})\). Include both \(\boldsymbol{\mu} \times \mathbf{B}\) and any gradient-related terms in your final expression.</question>
+=== Turn 1: Critic feedback ===
+Below is a point‐by‐point critique of each of the seven questions against your stated guidelines, together with concise, actionable suggestions for bringing them into compliance.
+
+1. Quantum harmonic oscillator  
+   • Violations:  
+     – Asks for two distinct expectation values (⟨V⟩ and ⟨T⟩) plus a qualitative explanation → multiple outputs and a “why” argument.  
+     – Requires both algebraic result and discussion.  
+   • Fix:  
+     – Choose one target. For example: “Express ⟨V⟩ for the nth state in terms of ℏ, ω, n.”  
+     – Drop the qualitative part.  
+     – Provide only the single symbolic expression in LaTeX.
+
+2. Rigid‐body kinetic energy  
+   • Violations:  
+     – Two‐stage derivation (body‐frame then lab‐frame via Euler angles) → multiple outputs.  
+     – Asks for a proof/derivation rather than a single closed‐form final expression.  
+   • Fix:  
+     – Decide whether you want the body‐frame result or the lab‐frame result, not both.  
+     – Phrase it as “Show that in the lab frame the kinetic energy is $T=\dots$” and expect only that final formula.
+
+3. Van der Waals cubic in Vm  
+   • Largely compliant—asks for one polynomial.  
+   • Minor polish:  
+     – Explicitly state “Derive the cubic equation for $V_m$ in the form $a_3V_m^3+a_2V_m^2+a_1V_m+a_0=0$.”  
+     – Remove “Explain any assumptions.” That asks for extra text.
+
+4. Adiabatic helical pitch change  
+   • Violations:  
+     – Asks for “calculate,” “use the adiabatic invariant,” plus explanation → multi‐part and conceptual discussion.  
+   • Fix:  
+     – Reduce to a single symbolic target: “Using the adiabatic invariant $\mu=\frac{mv_\perp^2}{2B}$, derive an expression for the change ΔD of the parallel distance per turn when B changes from B₁ to B₂.”  
+     – No further commentary or justification.
+
+5. Finite well transcendental equation  
+   • Compliant in spirit: one transcendental quantization condition.  
+   • Tidy up:  
+     – State exactly, “Derive the condition $$k\tan(ka)=\sqrt{\frac{2m(V_0-E)}{\hbar^2}}\,, $$” or its cotangent form.  
+     – Remove any mention of “oscillatory and exponential behavior” as that is descriptive, not part of the answer.
+
+6. Two‐particle invariant mass  
+   • Compliant: single symbolic result.  
+   • Polish:  
+     – Ask “Show that $\mathcal{M}^2=(E_1+E_2)^2/c^4-|\mathbf{p}_1+\mathbf{p}_2|^2/c^2$ and express in terms of $m_{1,2},v_{1,2},\theta,c$.”  
+     – Stick to that one formula.
+
+7. Torque on nonuniform‐field loop  
+   • Mostly compliant: one expression including both μ×B and gradient term.  
+   • Tidy up:  
+     – Phrase: “Derive up to first order in ∇B the torque $$\boldsymbol\tau=\boldsymbol\mu\times\mathbf B+\sum_i (\mu_j\nabla_iB_j)\,\hat e_i\,. $$”  
+     – Expect just that single compact result.
+
+General housekeeping for all questions:  
+ • Use only text; no figures or external references.  
+ • Wrap all final expressions in Markdown-style LaTeX: $…$ or $$…$$.  
+ • Do not ask for proofs or multi‐step derivations—only the final closed‐form answer.  
+ • Ensure each question requests exactly one symbolic output.  
+ • Remove any request for explanations, qualitative discussion, or multiple parts.
+=== Turn 2: Author refines questions ===
+Here is the refined set of questions based on the feedback provided:
+
+1. <question>Express the expectation value of the potential energy \(\langle V \rangle\) for the \( n \)-th excited state of a quantum harmonic oscillator in terms of \(\hbar\), \(\omega\), and \( n \).</question>
+
+2. <question>Show that in the lab frame, the kinetic energy \( T \) of a rigid body with a constant angular velocity \(\boldsymbol{\omega} = (\omega_x, \omega_y, \omega_z)\) is given by \(T = \frac{1}{2} (I_1 \omega_1^2 + I_2 \omega_2^2 + I_3 \omega_3^2)\), where \(I_1, I_2, I_3\) are the principal moments of inertia.</question>
+
+3. <question>Derive the cubic equation for \( V_m \) in the form \(a_3 V_m^3 + a_2 V_m^2 + a_1 V_m + a_0 = 0\) from the Van der Waals equation of state \((P+\frac{a}{V_m^2})(V_m-b)=RT\).</question>
+
+4. <question>Using the adiabatic invariant \(\mu=\frac{mv_\perp^2}{2B}\), derive an expression for the change \(\Delta D\) of the parallel distance per turn when \( B \) changes from \( B_1 \) to \( B_2 \) for a charged particle in a magnetic field \(\mathbf{B} = B_0 \mathbf{\hat{z}}\).</question>
+
+5. <question>Derive the condition \(k\tan(ka)=\sqrt{\frac{2m(V_0-E)}{\hbar^2}}\) that quantizes the energy levels \(E_n\) of a particle confined in a one-dimensional potential well with \( V(x) = 0 \) for \( 0 \leq x \leq a \) and \( V(x) = V_0 > 0 \) for \( x < 0 \) or \( x > a \).</question>
+
+6. <question>Show that the invariant mass \(\mathcal{M}\) of a two-particle system with masses \( m_1 \) and \( m_2 \) and velocities \( \mathbf{v}_1 \) and \( \mathbf{v}_2 \) is given by \(\mathcal{M}^2=\left(\frac{E_1+E_2}{c^2}\right)^2-\left|\frac{\mathbf{p}_1+\mathbf{p}_2}{c}\right|^2\), and express this in terms of \( m_1, m_2, v_1, v_2, \theta, \) and \( c \).</question>
+
+7. <question>Derive up to first order in \(\nabla B\) the torque \(\boldsymbol{\tau}=\boldsymbol{\mu}\times\mathbf{B}+\sum_i (\mu_j\nabla_iB_j)\,\hat{e}_i\) acting on a current-carrying loop with magnetic moment \(\boldsymbol{\mu}\) in a nonuniform magnetic field \(\mathbf{B}(\mathbf{r})\).</question>
+
+Each question requests exactly one symbolic output and adheres strictly to the provided guidelines.
+=== Turn 2: Critic feedback ===
+Below is concise, actionable feedback on each question, organized by your 12 guideline points.  Where a question deviates, I’ve flagged the issue and suggested a remedy.
+
+General remarks on all questions:
+ •  Replace every `\(...\)` with `$…$` and every `\[...\]` with `$$…$$`.  
+ •  Avoid “Show that…” or “Derive…” (which request a full proof); instead ask “What is…?” or “Find…?” to demand a single symbolic result.  
+ •  They all resemble standard textbook exercises—consider introducing a small twist (e.g. anisotropy, coupling to an external field, non‐trivial boundary) to boost originality.
+
+1. Question:  
+  “Express the expectation value of the potential energy $\langle V\rangle$ for the $n$th excited state of a quantum harmonic oscillator in terms of $\hbar$, $\omega$, and $n$.”  
+  •  Guideline 3/4 (Solvable target / Single output): Perfectly focused on a single symbolic expression.  
+  •  Guideline 8 (Formatting): Convert to  
+     What is the expectation value of the potential energy $\langle V\rangle$ for the $n$th eigenstate of the one‐dimensional harmonic oscillator, in terms of $\hbar$, $\omega$, and $n$?  
+  •  If you want more originality, you might ask for the expectation value in a shifted or squeezed oscillator.
+
+2. Question:  
+  “Show that in the lab frame, the kinetic energy $T$ of a rigid body with constant angular velocity $\boldsymbol\omega=(\omega_x,\omega_y,\omega_z)$ is $T=\tfrac12(I_1\omega_1^2+I_2\omega_2^2+I_3\omega_3^2)$, where $I_i$ are the principal moments.”  
+  •  Guideline 3 (No full derivations): Rephrase to ask for the formula, not “show that.”  
+  •  Guideline 5 (Concise): Remove “in the lab frame.”  It’s implied if you reference principal axes.  
+  •  Revision:  
+     What is the kinetic energy $T$ of a rigid body rotating with angular velocity components $(\omega_1,\omega_2,\omega_3)$ about its principal axes, expressed in terms of the principal moments of inertia $I_1,I_2,I_3$?
+
+3. Question:  
+  “Derive the cubic equation for $V_m$ in the form $a_3V_m^3+a_2V_m^2+a_1V_m+a_0=0$ from the Van der Waals equation $(P+\tfrac{a}{V_m^2})(V_m-b)=RT$.”  
+  •  Guideline 3 (Solvable target): Good target (write the coefficients).  
+  •  Guideline 3/4 (No “derive,” ask for the explicit coefficients):  
+  •  Revision:  
+     Express the Van der Waals equation $(P+\tfrac{a}{V_m^2})(V_m-b)=RT$ as a cubic polynomial $a_3V_m^3 + a_2V_m^2 + a_1V_m + a_0 = 0$.  Provide $a_3,\dots,a_0$ in terms of $P,a,b,R,T$.
+
+4. Question:  
+  “Using the adiabatic invariant $\mu=\tfrac{mv_\perp^2}{2B}$, derive an expression for the change $\Delta D$ of the parallel distance per turn when $B$ changes from $B_1$ to $B_2$ for a charged particle in $\mathbf B=B_0\hat z$.”  
+  •  Guideline 3 (Single clear output): Good if you ask directly for $\Delta D(B_1\!\to B_2)$.  
+  •  Guideline 3 (No “using… derive”):  
+  •  Revision:  
+     For a charged particle with adiabatic invariant $\mu=\frac{mv_\perp^2}{2B}$ in a uniform $\mathbf B=B(z)\,\hat z$, find the change $\Delta D$ in its parallel displacement per gyration when $B$ varies from $B_1$ to $B_2$.
+
+5. Question:  
+  “Derive the condition $k\tan(ka)=\sqrt{\tfrac{2m(V_0-E)}{\hbar^2}}$ that quantizes the energy levels $E_n$ of a particle in a 1D well with $V=0$ for $0\le x\le a$ and $V=V_0>0$ outside.”  
+  •  Guideline 3 (Single output): Fine if you ask directly for the transcendental condition.  
+  •  Guideline 3 (No “derive the condition”):  
+  •  Revision:  
+     What transcendental equation determines the bound‐state energies $E$ of a particle of mass $m$ in the finite square well  
+     $$
+       V(x)=\begin{cases}
+         0,&0\le x\le a,\\
+         V_0,&\text{otherwise},
+       \end{cases}
+     $$  
+     expressed in the form  
+     $$
+       k\tan(ka)=\sqrt{\tfrac{2m(V_0-E)}{\hbar^2}}?
+     $$
+
+6. Question:  
+  “Show that the invariant mass $\mathcal M$ of a two‐particle system … is given by $\mathcal M^2=\bigl(\tfrac{E_1+E_2}{c^2}\bigr)^2-\bigl|\tfrac{\mathbf p_1+\mathbf p_2}{c}\bigr|^2$, and express this in terms of $m_1,m_2,v_1,v_2,\theta,c$.”  
+  •  Guideline 3 (No “show that”): Recast as a request for the final expression.  
+  •  Revision:  
+     For two particles with masses $m_i$, speeds $v_i$ and opening angle $\theta$, write the invariant mass $\mathcal M$ in terms of $m_1,m_2,v_1,v_2,\theta$, and $c$, given  
+     $$
+       \mathcal M^2
+       =\bigl(\tfrac{E_1+E_2}{c^2}\bigr)^2
+       -\Bigl\lvert\tfrac{\mathbf p_1+\mathbf p_2}{c}\Bigr\rvert^2.
+     $$
+
+7. Question:  
+  “Derive up to first order in $\nabla B$ the torque $\boldsymbol\tau=\boldsymbol\mu\times\mathbf B+\sum_i(\mu_j\nabla_iB_j)\hat e_i$ acting on a current loop with dipole moment $\boldsymbol\mu$ in a nonuniform $\mathbf B(\mathbf r)$.”  
+  •  Guideline 3 (No full derivations): Instead ask for the truncated expansion.  
+  •  Guideline 5 (Concise): Remove the summation notation if you simply want the vector form.  
+  •  Revision:  
+     What is the torque $\boldsymbol\tau$ on a magnetic dipole moment $\boldsymbol\mu$ in a slowly varying field $\mathbf B(\mathbf r)$, correct to first order in $\nabla\mathbf B$?  Express your answer in vector form.
+
+––––––––––––––––––––––––––––––––  
+By making these changes you will ensure each prompt:  
+•  Expects exactly one symbolic output, not a derivation.  
+•  Uses fully text‐based, LaTeX‐formatted statements with `$…$` and `$$…$$`.  
+•  Remains concise, rigorous, and (with a small added twist) more original.
+=== Turn 3: Author refines questions ===
+Here is the refined set of questions based on the feedback provided:
+
+1. <question>What is the expectation value of the potential energy $\langle V\rangle$ for the $n$th eigenstate of the one-dimensional harmonic oscillator, in terms of $\hbar$, $\omega$, and $n$?</question>
+
+2. <question>What is the kinetic energy $T$ of a rigid body rotating with angular velocity components $(\omega_1,\omega_2,\omega_3)$ about its principal axes, expressed in terms of the principal moments of inertia $I_1,I_2,I_3$?</question>
+
+3. <question>Express the Van der Waals equation $(P+\frac{a}{V_m^2})(V_m-b)=RT$ as a cubic polynomial $a_3V_m^3 + a_2V_m^2 + a_1V_m + a_0 = 0$. Provide $a_3, a_2, a_1, a_0$ in terms of $P, a, b, R, T$.</question>
+
+4. <question>For a charged particle with adiabatic invariant $\mu=\frac{mv_\perp^2}{2B}$ in a uniform $\mathbf B=B(z)\,\hat z$, find the change $\Delta D$ in its parallel displacement per gyration when $B$ varies from $B_1$ to $B_2$.</question>
+
+5. <question>What transcendental equation determines the bound-state energies $E$ of a particle of mass $m$ in the finite square well 
+$$
+V(x)=\begin{cases}
+0,&0\le x\le a,\\
+V_0,&\text{otherwise},
+\end{cases}
+$$
+expressed in the form  
+$$
+k\tan(ka)=\sqrt{\frac{2m(V_0-E)}{\hbar^2}}?
+$$
+</question>
+
+6. <question>For two particles with masses $m_i$, speeds $v_i$ and opening angle $\theta$, write the invariant mass $\mathcal M$ in terms of $m_1, m_2, v_1, v_2, \theta$, and $c$, given 
+$$
+\mathcal M^2
+=\left(\frac{E_1+E_2}{c^2}\right)^2
+-\left|\frac{\mathbf p_1+\mathbf p_2}{c}\right|^2.
+$$
+</question>
+
+7. <question>What is the torque $\boldsymbol\tau$ on a magnetic dipole moment $\boldsymbol\mu$ in a slowly varying field $\mathbf B(\mathbf r)$, correct to first order in $\nabla\mathbf B$? Express your answer in vector form.</question>
+
+These revisions aim to ensure that each question expects a clear, symbolic output, adheres to text‐based LaTeX formatting, and remains concise and original.
+=== Final questions generated ===

@@ -1,0 +1,81 @@
+=== Turn 0: Author generates questions ===
+<question>  
+Consider a one-way ANOVA with $k$ independent groups, each of size $n$. The total sum of squares (SST) for the data is given as  
+$$ SST = \sum_{i=1}^k \sum_{j=1}^n (X_{ij} - \overline{X}_{\cdot \cdot})^2, $$  
+where $\overline{X}_{\cdot \cdot}$ is the overall sample mean. The sum of squares between groups (SSB) is computed as  
+$$ SSB = n \sum_{i=1}^k (\overline{X}_{i \cdot} - \overline{X}_{\cdot \cdot})^2, $$  
+and the sum of squares within groups (SSW) is  
+$$ SSW = \sum_{i=1}^k \sum_{j=1}^n (X_{ij} - \overline{X}_{i \cdot})^2. $$  
+
+Given that $SST = 120$, $SSB = 45$, and the total sample size is $N=30$ with $k=3$ groups, determine the degrees of freedom for the mean square between groups (MSB) and mean square within groups (MSW) used to compute the F-statistic in this ANOVA setup.  
+
+Express your answer as an ordered pair $(df_{B}, df_{W})$ in terms of integers.  
+</question>
+
+<question>  
+A two-way ANOVA without replication is performed on a dataset with factors $A$ having $a$ levels and $B$ having $b$ levels, resulting in a total of $N=ab$ observations. The total sum of squares is decomposed as  
+$$ SST = SSA + SSB + SSE, $$  
+where $SSA$ and $SSB$ are the sum of squares due to factors $A$ and $B$ respectively, and $SSE$ is the sum of squares due to error.  
+
+If the total degrees of freedom is $N-1$, and the degrees of freedom associated with factor $A$ is $(a-1)$ and factor $B$ is $(b-1)$, express the degrees of freedom of $SSE$ in terms of $a$ and $b$.  
+</question>
+
+<question>  
+An experiment involves three treatment groups, each with five observations. The sample means are $\overline{X}_1=10$, $\overline{X}_2=15$, and $\overline{X}_3=20$. The pooled variance estimate (mean square within groups, MSW) is given as $25$. Calculate the Mean Square Between groups (MSB) using the relationships:  
+
+$$ MSB = \frac{SSB}{df_B}, \quad SSB = n \sum_{i=1}^k (\overline{X}_i - \overline{X}_{\cdot \cdot})^2, \quad \overline{X}_{\cdot \cdot} = \frac{1}{k} \sum_{i=1}^k \overline{X}_i, \quad df_B = k-1, $$  
+
+where $k$ is the number of groups and $n$ is the number of observations per group.  
+
+Express $MSB$ as a symbolic expression or numerical value in terms of $n$, $k$, and the group means.  
+</question>
+
+<question>  
+In a one-way ANOVA, the estimator of the population variance under the null hypothesis is computed using the Mean Square Within groups (MSW), calculated as  
+
+$$ MSW = \frac{SSW}{df_W}, $$  
+
+where $SSW$ is the sum of squares within groups and $df_W$ is the corresponding degrees of freedom. For $k$ groups each with $n$ observations, express the estimator $MSW$ purely in terms of observed data $X_{ij}$ and group means $\overline{X}_{i \cdot}$. Provide a formula that can be used to compute $MSW$ directly from data.  
+</question>
+
+<question>  
+Given observed sums of squares in a one-way ANOVA are $SSB = 80$ and $SSW = 160$, with group sizes $n_1=10$, $n_2=10$, and $n_3=10$, calculate the value of the F-statistic defined as  
+
+$$ F = \frac{MSB}{MSW} = \frac{SSB / (k-1)}{SSW / (N-k)}, $$  
+
+where $k$ is the number of groups and $N$ is the total number of observations. Express your answer as a simplified fraction in LaTeX form.  
+</question>
+
+<question>  
+A balanced two-way ANOVA experiment is conducted with $a=4$ levels of factor A and $b=5$ levels of factor B, with one observation per cell (no replication). The total sample size is $N=20$. Express the degrees of freedom associated with:  
+
+1. The interaction effect (factor A × factor B)  
+2. The error term  
+
+Provide both answers as an ordered pair $(df_{\text{interaction}}, df_{\text{error}})$ using only $a$ and $b$.  
+</question>
+
+<question>  
+Suppose a one-way ANOVA model with unequal sample sizes $n_1=4$, $n_2=6$, and $n_3=5$ is conducted on three treatment groups. Given group means are $\overline{X}_1=12$, $\overline{X}_2=15$, and $\overline{X}_3=18$, and total sum of squares within groups (SSW) is known, write the explicit formula for the Sum of Squares Between (SSB) based on the weighted group means and overall mean. Identify the correct weights used in the formula.  
+</question>
+
+<question>  
+If in a one-way ANOVA with $k$ groups and total sample size $N$, the sum of squares total $SST$ is 200 and the sum of squares within groups $SSW$ is 120, compute the ratio  
+
+$$ R = \frac{SSB}{SST}, $$  
+
+where $SSB$ is the sum of squares between groups. Express $R$ in simplest symbolic form using the given data.  
+</question>
+
+<question>  
+In a one-way ANOVA test with $k=4$ groups each containing $n=6$ observations, the sample mean square between groups is observed to be $MSB = 30$. The mean square within groups is known to be $MSW = 10$. Calculate the estimator of the population variance under the null hypothesis and the value of the F-test statistic. Express both results algebraically using $MSB$ and $MSW$.  
+</question>
+
+<question>  
+Consider a parametric one-way ANOVA where the sample sizes for each group vary: group 1 has $n_1$ observations, group 2 has $n_2$ observations, and group 3 has $n_3$ observations. The total sum of squares is partitioned such that  
+
+$$ SST = SSB + SSW. $$  
+
+Derive the formula for the total degrees of freedom $df_T$ in terms of the individual sample sizes, and the degrees of freedom for within groups $df_W$ and between groups $df_B$. Express all degrees of freedom in terms of $n_1, n_2, n_3$.  
+</question>
+=== Turn 0: Critic feedback ===

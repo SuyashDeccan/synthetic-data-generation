@@ -1,0 +1,299 @@
+=== Turn 0: Author generates questions ===
+<question>  
+Consider a three-dimensional topological superconductor described by a Bogoliubov–de Gennes Hamiltonian with uranium impurity scattering modeled by a potential $V_{\mathrm{imp}}(\mathbf{r}) = U \sum_i \delta(\mathbf{r} - \mathbf{r}_i)$. Assuming the clean system exhibits an $A_u$ fully gapped pairing symmetry analogous to the B phase of superfluid ${}^3\mathrm{He}$ with gap amplitude $\Delta_0$, derive the impurity-averaged quasiparticle density of states $N(E)$ at energy $E$ within the self-consistent Born approximation. Then, express the critical disorder strength $U_c$ at which the gap closes and the system transitions to a gapless phase in terms of $\Delta_0$ and the normal state density of states $N_0$ at the Fermi level.  
+</question>
+
+<question>  
+In the heavy fermion superconductor $\mathrm{UTe}_2$, suppose the introduction of uranium defects induces a subdominant $B_{3u}$ pairing channel with order parameter amplitude $\Delta_{B_{3u}}$ that coexists with a dominant fully gapped $A_u$ state of amplitude $\Delta_{A_u}$. Given that the total gap function is $\Delta(\mathbf{k}) = \Delta_{A_u} + \alpha \Delta_{B_{3u}} f(\mathbf{k})$ where $f(\mathbf{k})$ is an odd parity function vanishing on certain symmetry planes, determine the minimal impurity concentration $n_{\mathrm{imp}}$ required so that the effective gap zeros appear on the Fermi surface. Express $n_{\mathrm{imp}}$ in terms of the coefficients $\alpha$, $\Delta_{A_u}$, and the functional form of $f(\mathbf{k})$ on the Fermi surface, assuming a linear relation between impurity concentration and $\Delta_{B_{3u}}$.  
+</question>
+
+<question>  
+Assuming $\mathrm{UTe}_2$ exhibits a fully gapped $A_u$ superconducting state, model the temperature dependence of the London penetration depth $\lambda(T)$ in the presence of weak uranium impurity scattering characterized by a mean free path $\ell_{\mathrm{imp}}$. Given the pristine zero-temperature penetration depth $\lambda_0$ and superconducting gap $\Delta_0$, derive an expression for $\lambda(T)$ to leading order in $T \ll T_c$ incorporating both impurity-induced pairbreaking and thermally activated quasiparticles. Express the low-temperature slope $d\lambda/dT$ in terms of $\Delta_0$, $\lambda_0$, and $\ell_{\mathrm{imp}}$.  
+</question>
+
+<question>  
+For a non-Abelian topological superconductor with a dominant $A_u$ pairing symmetry, the presence of uranium impurities leads to localized bound states described by Yu-Shiba-Rusinov theory. Given the impurity potential strength $J$ and superconducting gap $\Delta_0$, calculate the energy $E_{\mathrm{BS}}$ of the midgap bound state induced by a single impurity in the unitary limit ($J \to \infty$). Express $E_{\mathrm{BS}}$ symbolically and discuss its evolution as $J$ varies from weak to strong coupling.  
+</question>
+
+<question>  
+In $\mathrm{UTe}_2$, a fully gapped phase with $A_u$ symmetry can be described effectively by an isotropic gap $\Delta_0$. Impurities introduce quasiparticle scattering with rate $\Gamma = \hbar/(2\tau)$, where $\tau$ is the scattering time. Using the Abrikosov-Gor'kov formalism, find the critical scattering rate $\Gamma_c$ at which the superconducting transition temperature $T_c$ is suppressed to zero. Express $\Gamma_c$ as a function of the clean-limit critical temperature $T_{c0}$.  
+</question>
+=== Turn 0: Critic feedback ===
+Certainly! Here’s a detailed critique for each question, referencing your guidelines. Each point is actionable and concise, followed by general summary recommendations.
+
+---
+
+<question>  
+Consider a three-dimensional topological superconductor described by a Bogoliubov–de Gennes Hamiltonian with uranium impurity scattering modeled by a potential $V_{\mathrm{imp}}(\mathbf{r}) = U \sum_i \delta(\mathbf{r} - \mathbf{r}_i)$. Assuming the clean system exhibits an $A_u$ fully gapped pairing symmetry analogous to the B phase of superfluid ${}^3\mathrm{He}$ with gap amplitude $\Delta_0$, derive the impurity-averaged quasiparticle density of states $N(E)$ at energy $E$ within the self-consistent Born approximation. Then, express the critical disorder strength $U_c$ at which the gap closes and the system transitions to a gapless phase in terms of $\Delta_0$ and the normal state density of states $N_0$ at the Fermi level.  
+</question>
+
+**Feedback:**
+- **Strengths:**  
+  - Clearly models an advanced condensed matter scenario (Guideline 1).
+  - Expects symbolic answers ($N(E)$ and $U_c$), satisfying Guideline 2.
+  - Requires multi-step reasoning (impurity averaging, density of states, gap-closing condition) (Guideline 3).
+  - No unnecessary variables included (Guideline 4).
+  - Not a standard textbook problem, promoting uniqueness (Guideline 5).
+- **Issues:**  
+  - **Multipart violation:** Asks for both $N(E)$ and $U_c$ (Guideline 10). Each question must require only one target answer.
+  - **Clarity:** The phrase “derive… then, express…” explicitly indicates two tasks.
+  - **Formatting:** LaTeX syntax inside markdown is correct, and variables are well defined (Guidelines 7, 9).
+- **Action:** Split into two separate questions: one for $N(E)$, one for $U_c$. Revise question to focus on a single target quantity.
+
+---
+
+<question>  
+In the heavy fermion superconductor $\mathrm{UTe}_2$, suppose the introduction of uranium defects induces a subdominant $B_{3u}$ pairing channel with order parameter amplitude $\Delta_{B_{3u}}$ that coexists with a dominant fully gapped $A_u$ state of amplitude $\Delta_{A_u}$. Given that the total gap function is $\Delta(\mathbf{k}) = \Delta_{A_u} + \alpha \Delta_{B_{3u}} f(\mathbf{k})$ where $f(\mathbf{k})$ is an odd parity function vanishing on certain symmetry planes, determine the minimal impurity concentration $n_{\mathrm{imp}}$ required so that the effective gap zeros appear on the Fermi surface. Express $n_{\mathrm{imp}}$ in terms of the coefficients $\alpha$, $\Delta_{A_u}$, and the functional form of $f(\mathbf{k})$ on the Fermi surface, assuming a linear relation between impurity concentration and $\Delta_{B_{3u}}$.  
+</question>
+
+**Feedback:**
+- **Strengths:**
+  - Models a realistic, advanced physical scenario (Guideline 1).
+  - Requests a single symbolic answer for $n_{\mathrm{imp}}$ (Guideline 2).
+  - Multi-step reasoning: superposition of order parameters, conditions for gap zeros, impurity effects (Guideline 3).
+  - Variables are all necessary and relevant (Guideline 4).
+- **Issues:**
+  - **Ambiguity:** “Functional form of $f(\mathbf{k})$ on the Fermi surface” is imprecise—should clarify exactly how $f(\mathbf{k})$ is to be used in the answer (Guideline 8).
+  - **Units:** $n_{\mathrm{imp}}$ should be specified as a concentration, i.e., per unit volume, for clarity (Guideline 9).
+- **Action:** State explicitly how $f(\mathbf{k})$ is to be used/evaluated. For example: “…express $n_{\mathrm{imp}}$ in terms of $\alpha$, $\Delta_{A_u}$, and the maximum/minimum value of $|f(\mathbf{k})|$ on the Fermi surface…”  
+  Also, specify units for $n_{\mathrm{imp}}$ where appropriate.
+
+---
+
+<question>  
+Assuming $\mathrm{UTe}_2$ exhibits a fully gapped $A_u$ superconducting state, model the temperature dependence of the London penetration depth $\lambda(T)$ in the presence of weak uranium impurity scattering characterized by a mean free path $\ell_{\mathrm{imp}}$. Given the pristine zero-temperature penetration depth $\lambda_0$ and superconducting gap $\Delta_0$, derive an expression for $\lambda(T)$ to leading order in $T \ll T_c$ incorporating both impurity-induced pairbreaking and thermally activated quasiparticles. Express the low-temperature slope $d\lambda/dT$ in terms of $\Delta_0$, $\lambda_0$, and $\ell_{\mathrm{imp}}$.  
+</question>
+
+**Feedback:**
+- **Strengths:**
+  - Excellent scenario—conceptually rich and authentic (Guideline 1).
+  - Requires symbolic answer for $d\lambda/dT$ (Guideline 2).
+  - Solution requires use of multiple physical concepts (pairbreaking and thermal excitations) (Guideline 3).
+  - All details included are necessary (Guideline 4).
+  - Uniqueness and concise technical phrasing (Guidelines 5, 7, 8).
+  - Consistent units and correct notation (Guideline 9).
+- **Issues:**  
+  - **Minor:** The problem first asks for an expression for $\lambda(T)$, then for the slope $d\lambda/dT$—this could be interpreted as two steps, violating the “single-solution” criterion (Guideline 10).
+- **Action:** Focus directly on the derivative: “…derive the low-temperature slope $d\lambda/dT$ in terms of…” OR, only ask for $\lambda(T)$ to leading order if the intent is that this is sufficient for the slope. Clarify which to provide.
+
+---
+
+<question>  
+For a non-Abelian topological superconductor with a dominant $A_u$ pairing symmetry, the presence of uranium impurities leads to localized bound states described by Yu-Shiba-Rusinov theory. Given the impurity potential strength $J$ and superconducting gap $\Delta_0$, calculate the energy $E_{\mathrm{BS}}$ of the midgap bound state induced by a single impurity in the unitary limit ($J \to \infty$). Express $E_{\mathrm{BS}}$ symbolically and discuss its evolution as $J$ varies from weak to strong coupling.  
+</question>
+
+**Feedback:**
+- **Strengths:**
+  - Models a sophisticated nontrivial scenario (Guideline 1).
+  - Requests a symbolic expression for $E_{\mathrm{BS}}$ in a particular limit (Guideline 2).
+  - Multi-step physical reasoning necessary (Guideline 3).
+- **Issues:**
+  - **Multipart violation:** Asks both for $E_{\mathrm{BS}}$ in the unitary limit and to “discuss its evolution as $J$ varies” (Guideline 10). Must focus on a single quantity.
+  - **Ambiguity:** “Discuss” is not precise or suited to a formula-based answer (Guideline 8).
+  - **Units:** $J$ should be clearly defined (exchange energy? dimensionless coupling?). Consider explicit unit requirements (Guideline 9).
+- **Action:** Only ask for $E_{\mathrm{BS}}$ in the specified limit, or separately for a general $J$ if desired—but do not combine with a qualitative “discuss.” Specify what $J$ is (units).
+
+---
+
+<question>  
+In $\mathrm{UTe}_2$, a fully gapped phase with $A_u$ symmetry can be described effectively by an isotropic gap $\Delta_0$. Impurities introduce quasiparticle scattering with rate $\Gamma = \hbar/(2\tau)$, where $\tau$ is the scattering time. Using the Abrikosov-Gor'kov formalism, find the critical scattering rate $\Gamma_c$ at which the superconducting transition temperature $T_c$ is suppressed to zero. Express $\Gamma_c$ as a function of the clean-limit critical temperature $T_{c0}$.  
+</question>
+
+**Feedback:**
+- **Strengths:**  
+  - Well-posed real-world scenario (Guideline 1).
+  - Symbolic solution for $\Gamma_c$ (Guideline 2).
+  - Requires two physical principles—pairbreaking and transition temperature suppression (Guideline 3).
+  - No unnecessary detail (Guideline 4).
+  - Technically precise and unambiguous (Guidelines 5, 7, 8).
+  - Clear, correct units and notation (Guideline 9).
+  - Has only one answer (Guideline 10).
+- **Issues:**  
+  - None significant; this is an exemplary question.
+- **Action:** No improvements needed.
+
+---
+
+### **Overall Recommendations**
+
+- **Multipart Questions**: Revise any question that asks for more than one result (“find $X$ and then $Y$”; “derive $X$, then discuss $Y$”, etc.)—split into single-question prompts.
+- **Target Quantity**: Ask for only one symbolic/numeric result per question.
+- **Precision/Clarity**: Where functional dependencies or evaluation on surfaces is involved (e.g., $f(\mathbf{k})$), specify what is meant (e.g., min/max on Fermi surface).
+- **Units/Definitions**: Always ensure each quantity’s physical nature and units are explicit.
+- **Solution Formatting**: Maintain strict LaTeX for all math in markdown; continue to wrap questions in <question>...</question> tags.
+
+---
+
+**Summary**:  
+Most questions show high technical merit and creativity. The only recurring issue is multipart phrasing—refocus each to one single answer per question. Otherwise, clarity, notation, and uniqueness are well met.
+=== Turn 1: Author refines questions ===
+<question>  
+Consider a three-dimensional topological superconductor described by a Bogoliubov–de Gennes Hamiltonian with uranium impurity scattering modeled by a potential \( V_{\mathrm{imp}}(\mathbf{r}) = U \sum_i \delta(\mathbf{r} - \mathbf{r}_i) \). Assuming the clean system exhibits an \( A_u \) fully gapped pairing symmetry analogous to the B phase of superfluid \({}^3\mathrm{He}\) with gap amplitude \(\Delta_0\), derive the impurity-averaged quasiparticle density of states \( N(E) \) at energy \( E \) within the self-consistent Born approximation. Express \( N(E) \) symbolically in terms of \( U \), \(\Delta_0\), the normal state density of states \( N_0 \) at the Fermi level, and energy \( E \).  
+</question>
+
+<question>  
+Consider the same system as above. Using the self-consistent Born approximation, express the critical disorder strength \( U_c \) at which the superconducting gap closes and the system transitions to a gapless phase. Write \( U_c \) symbolically in terms of the gap amplitude \(\Delta_0\) and the normal state density of states \( N_0 \) at the Fermi level.  
+</question>
+
+<question>  
+In the heavy fermion superconductor \(\mathrm{UTe}_2\), uranium defects induce a subdominant \( B_{3u} \) pairing channel with order parameter amplitude \(\Delta_{B_{3u}}\) that coexists with a dominant fully gapped \( A_u \) state of amplitude \(\Delta_{A_u}\). Given the total gap function  
+\[
+\Delta(\mathbf{k}) = \Delta_{A_u} + \alpha\, \Delta_{B_{3u}} f(\mathbf{k}),
+\]  
+where \( f(\mathbf{k}) \) is an odd parity function that vanishes on certain symmetry planes of the Brillouin zone, determine the minimal impurity concentration \( n_{\mathrm{imp}} \) (in units of impurities per unit volume) required to induce effective gap zeros on the Fermi surface. Assume that \(\Delta_{B_{3u}}\) depends linearly on \( n_{\mathrm{imp}} \) and express \( n_{\mathrm{imp}} \) in terms of \(\alpha\), \(\Delta_{A_u}\), and the maximum absolute value of \( |f(\mathbf{k})| \) on the Fermi surface.  
+</question>
+
+<question>  
+Assuming \(\mathrm{UTe}_2\) exhibits a fully gapped \( A_u \) superconducting state, model the temperature dependence of the London penetration depth \(\lambda(T)\) in the presence of weak uranium impurity scattering characterized by a mean free path \(\ell_{\mathrm{imp}}\). Given the pristine zero-temperature penetration depth \(\lambda_0\) and gap \(\Delta_0\), derive an expression for the low-temperature slope \(\frac{d\lambda}{dT}\) to leading order in \( T \ll T_c \), incorporating both impurity-induced pairbreaking and thermally activated quasiparticles. Express \(\frac{d\lambda}{dT}\) symbolically in terms of \(\Delta_0\), \(\lambda_0\), and \(\ell_{\mathrm{imp}}\).  
+</question>
+
+<question>  
+For a non-Abelian topological superconductor with dominant \( A_u \) pairing symmetry, a single uranium impurity induces a Yu-Shiba-Rusinov bound state. Given the impurity potential strength \( J \) (with units of energy) and superconducting gap \(\Delta_0\), calculate symbolically the energy \( E_{\mathrm{BS}} \) of the midgap bound state in the unitary limit \( J \to \infty \).  
+</question>
+
+<question>  
+In \(\mathrm{UTe}_2\), a fully gapped phase with \( A_u \) symmetry is characterized by an isotropic gap \(\Delta_0\). Impurities introduce quasiparticle scattering described by a rate \(\Gamma = \hbar / (2 \tau)\), where \(\tau\) is the scattering time. Using the Abrikosov-Gor'kov formalism for pairbreaking, find the critical scattering rate \(\Gamma_c\) at which the superconducting transition temperature \( T_c \) is suppressed to zero. Express \(\Gamma_c\) in terms of the clean-limit transition temperature \( T_{c0} \).  
+</question>
+=== Turn 1: Critic feedback ===
+Here is a critique of your questions based on your detailed guidelines:
+
+---
+
+### General Feedback
+
+- **Model a Physics Scenario:** Every question is rooted in a realistic or idealized condensed matter scenario, specifically centered on UTe$_2$ and impurity effects—excellent.
+- **Symbolic or Numerical Answers:** Each question clearly expects a symbolic answer—good.
+- **Multi-Step Reasoning:** Most questions require advanced, multi-step reasoning, using both formalism (e.g., self-consistent Born, Abrikosov-Gor'kov, YSR bound state) and physical intuition.
+- **Redundancy:** A few questions repeat the full description of the system; this could be trimmed by referencing the "system above" (as in question 2). However, repetition is minimal.
+- **Unambiguous Solution:** All questions seem to have a single concise answer.
+- **Language and Rigor:** Phrasing is rigorous and professional; no colloquial language identified.
+- **Units and Symbols:** Units and notation are consistent and standard throughout. Answers are always required symbolically unless otherwise specified.
+
+---
+
+### Per-Question Feedback
+
+---
+<question>  
+Consider a three-dimensional topological superconductor described by a Bogoliubov–de Gennes Hamiltonian with uranium impurity scattering modeled by a potential \( V_{\mathrm{imp}}(\mathbf{r}) = U \sum_i \delta(\mathbf{r} - \mathbf{r}_i) \). Assuming the clean system exhibits an \( A_u \) fully gapped pairing symmetry analogous to the B phase of superfluid \({}^3\mathrm{He}\) with gap amplitude \(\Delta_0\), derive the impurity-averaged quasiparticle density of states \( N(E) \) at energy \( E \) within the self-consistent Born approximation. Express \( N(E) \) symbolically in terms of \( U \), \(\Delta_0\), the normal state density of states \( N_0 \) at the Fermi level, and energy \( E \).  
+</question>
+
+**Feedback:**
+- **Strengths:** 
+    - Realistic scenario, multi-step (BdG formalism + impurity averaging), target is $N(E)$.
+    - Required answer is clear; variables are defined; phrasing is precise.
+- **Possible improvements:** 
+    - Consider omitting "modeled by a potential..." and simply state “with pointlike uranium impurity scattering of strength $U$” for conciseness.
+    - Indicate that the solution is to leading order or in the limit of dilute impurities if that is intended.
+
+---
+
+<question>  
+Consider the same system as above. Using the self-consistent Born approximation, express the critical disorder strength \( U_c \) at which the superconducting gap closes and the system transitions to a gapless phase. Write \( U_c \) symbolically in terms of the gap amplitude \(\Delta_0\) and the normal state density of states \( N_0 \) at the Fermi level.  
+</question>
+
+**Feedback:**
+- **Strengths:** 
+    - Single target (critical disorder), minimal variables, crystal clear request, rigorous.
+    - Properly references the previous system to avoid redundancy.
+- **Improvement:** 
+    - None needed. Good focus and conciseness.
+
+---
+
+<question>  
+In the heavy fermion superconductor \(\mathrm{UTe}_2\), uranium defects induce a subdominant \( B_{3u} \) pairing channel with order parameter amplitude \(\Delta_{B_{3u}}\) that coexists with a dominant fully gapped \( A_u \) state of amplitude \(\Delta_{A_u}\). Given the total gap function  
+\[
+\Delta(\mathbf{k}) = \Delta_{A_u} + \alpha\, \Delta_{B_{3u}} f(\mathbf{k}),
+\]  
+where \( f(\mathbf{k}) \) is an odd parity function that vanishes on certain symmetry planes of the Brillouin zone, determine the minimal impurity concentration \( n_{\mathrm{imp}} \) (in units of impurities per unit volume) required to induce effective gap zeros on the Fermi surface. Assume that \(\Delta_{B_{3u}}\) depends linearly on \( n_{\mathrm{imp}} \) and express \( n_{\mathrm{imp}} \) in terms of \(\alpha\), \(\Delta_{A_u}\), and the maximum absolute value of \( |f(\mathbf{k})| \) on the Fermi surface.  
+</question>
+
+**Feedback:**
+- **Strengths:** 
+    - Unique, multi-step, focused on a symbolic threshold for impurity-induced nodes.
+    - Specifies linear dependence of $\Delta_{B_{3u}}$ on $n_{\mathrm{imp}}$, which resolves ambiguities.
+- **Improvements:** 
+    - Specify the proportionality constant $C$ (if $\Delta_{B_{3u}} = C n_{\mathrm{imp}}$) or note "with proportionality constant $C$" for clarity and avoid hidden variables.
+    - The phrase “effective gap zeros” is clear, but you may state, “such that the minimum gap on the Fermi surface vanishes.”
+    - Use inline math (with $...$) except for displayed formulas in Markdown.
+
+---
+
+<question>  
+Assuming \(\mathrm{UTe}_2\) exhibits a fully gapped \( A_u \) superconducting state, model the temperature dependence of the London penetration depth \(\lambda(T)\) in the presence of weak uranium impurity scattering characterized by a mean free path \(\ell_{\mathrm{imp}}\). Given the pristine zero-temperature penetration depth \(\lambda_0\) and gap \(\Delta_0\), derive an expression for the low-temperature slope \(\frac{d\lambda}{dT}\) to leading order in \( T \ll T_c \), incorporating both impurity-induced pairbreaking and thermally activated quasiparticles. Express \(\frac{d\lambda}{dT}\) symbolically in terms of \(\Delta_0\), \(\lambda_0\), and \(\ell_{\mathrm{imp}}\).  
+</question>
+
+**Feedback:**
+- **Strengths:** 
+    - Scenario is clear, symbolic answer, units are clear, multi-step (thermally activated + impurity effects).
+- **Improvements:** 
+    - State explicitly "to leading order in $T \ll T_c$" up front for clarity.
+    - Could clarify "consider only dominant linear term in $T$ if multiple contributions"; otherwise, requests for both effects are fine.
+
+---
+
+<question>  
+For a non-Abelian topological superconductor with dominant \( A_u \) pairing symmetry, a single uranium impurity induces a Yu-Shiba-Rusinov bound state. Given the impurity potential strength \( J \) (with units of energy) and superconducting gap \(\Delta_0\), calculate symbolically the energy \( E_{\mathrm{BS}} \) of the midgap bound state in the unitary limit \( J \to \infty \).  
+</question>
+
+**Feedback:**
+- **Strengths:** 
+    - Unique scenario, single target variable, concise and symbolic, precise wording.
+- **Improvement:** 
+    - None; question is focused and meets all guidelines.
+
+---
+
+<question>  
+In \(\mathrm{UTe}_2\), a fully gapped phase with \( A_u \) symmetry is characterized by an isotropic gap \(\Delta_0\). Impurities introduce quasiparticle scattering described by a rate \(\Gamma = \hbar / (2 \tau)\), where \(\tau\) is the scattering time. Using the Abrikosov-Gor'kov formalism for pairbreaking, find the critical scattering rate \(\Gamma_c\) at which the superconducting transition temperature \( T_c \) is suppressed to zero. Express \(\Gamma_c\) in terms of the clean-limit transition temperature \( T_{c0} \).  
+</question>
+
+**Feedback:**
+- **Strengths:** 
+    - Rigorous, single symbolic answer, context is clear, outcome is unambiguous.
+- **Improvement:** 
+    - None necessary.
+
+---
+
+### Summary of Actionable Recommendations
+
+1. **Trim Repetition:** Where possible, reference previous questions ("same system as above") to minimize repeated context.
+2. **Display Math:** Use Markdown properly: Inline math with `$...$`, block math with `$$...$$`.
+3. **Clarify Variable Dependencies:** If a parameter is proportional (e.g., $\Delta_{B_{3u}}$ to $n_{\mathrm{imp}}$), introduce or mention the proportionality constant explicitly.
+4. **State Limiting Cases Up Front:** e.g., For low-temperature expansions, put “to leading order in $T \ll T_c$” at the beginning of the relevant sentence.
+5. **Check for Hidden Variables:** Make sure all parameters needed for symbolic solution are defined or, if necessary, allow an undetermined proportionality constant.
+6. **Precision in Wording:** Continue the already rigorous phrasing; very little to change here.
+
+**Overall:**  
+Your questions are excellent, especially for an advanced/graduate assessment in condensed matter physics. Only minor adjustments are recommended for maximum clarity and brevity. Your Markdown and LaTeX formatting are correct for the most part, but always double-check inline vs. block math usage.
+=== Turn 2: Author refines questions ===
+<question>  
+Consider a three-dimensional topological superconductor described by a Bogoliubov–de Gennes Hamiltonian with pointlike uranium impurity scattering of strength \( U \). The clean system exhibits an \( A_u \) fully gapped pairing symmetry analogous to the B phase of superfluid \({}^3\mathrm{He}\), with gap amplitude \(\Delta_0\). Within the self-consistent Born approximation and assuming dilute impurities, derive the impurity-averaged quasiparticle density of states \( N(E) \) at energy \( E \). Express \( N(E) \) symbolically in terms of \( U \), \(\Delta_0\), the normal-state density of states \( N_0 \) at the Fermi level, and energy \( E \).  
+</question>
+
+<question>  
+Consider the same system as above. Using the self-consistent Born approximation, express the critical disorder strength \( U_c \) at which the superconducting gap closes and the system transitions to a gapless phase. Write \( U_c \) symbolically in terms of the gap amplitude \(\Delta_0\) and the normal-state density of states \( N_0 \) at the Fermi level.  
+</question>
+
+<question>  
+In the heavy fermion superconductor \(\mathrm{UTe}_2\), uranium defects induce a subdominant \( B_{3u} \) pairing channel with order parameter amplitude \(\Delta_{B_{3u}}\) that coexists with a dominant fully gapped \( A_u \) state of amplitude \(\Delta_{A_u}\). The total gap function is  
+\[
+\Delta(\mathbf{k}) = \Delta_{A_u} + \alpha\, \Delta_{B_{3u}} f(\mathbf{k}),
+\]  
+where \( f(\mathbf{k}) \) is an odd-parity function vanishing on certain symmetry planes of the Brillouin zone. Assume \(\Delta_{B_{3u}} = C\, n_{\mathrm{imp}}\), linear in impurity concentration \( n_{\mathrm{imp}} \) (impurities per unit volume) with proportionality constant \( C \). Determine the minimal \( n_{\mathrm{imp}} \) required such that the minimum gap magnitude on the Fermi surface vanishes, i.e., effective gap zeros appear. Express \( n_{\mathrm{imp}} \) symbolically in terms of \(\alpha\), \(\Delta_{A_u}\), \( C \), and the maximum of \(|f(\mathbf{k})|\) over the Fermi surface.  
+</question>
+
+<question>  
+To leading order in \( T \ll T_c \), model the temperature dependence of the London penetration depth \(\lambda(T)\) in \(\mathrm{UTe}_2\) assuming a fully gapped \( A_u \) superconducting state with weak uranium impurity scattering characterized by mean free path \(\ell_{\mathrm{imp}}\). Given the pristine zero-temperature penetration depth \(\lambda_0\) and gap amplitude \(\Delta_0\), derive an expression for the low-temperature slope \(\frac{d\lambda}{dT}\), incorporating both impurity-induced pairbreaking and thermally activated quasiparticles. Express \(\frac{d\lambda}{dT}\) symbolically in terms of \(\Delta_0\), \(\lambda_0\), and \(\ell_{\mathrm{imp}}\).  
+</question>
+
+<question>  
+For a non-Abelian topological superconductor with dominant \( A_u \) pairing symmetry, a single uranium impurity induces a Yu-Shiba-Rusinov bound state. Given impurity potential strength \( J \) (with units of energy) and superconducting gap \(\Delta_0\), calculate symbolically the bound-state energy \( E_{\mathrm{BS}} \) in the unitary limit \( J \to \infty \).  
+</question>
+
+<question>  
+In \(\mathrm{UTe}_2\), a fully gapped superconducting phase with \( A_u \) symmetry has isotropic gap \(\Delta_0\). Impurity-induced quasiparticle scattering is characterized by scattering rate \(\Gamma = \hbar / (2 \tau)\), where \(\tau\) is the scattering time. Using the Abrikosov-Gor'kov formalism for pairbreaking, find the critical scattering rate \(\Gamma_c\) at which the superconducting transition temperature \( T_c \) is suppressed to zero. Express \(\Gamma_c\) symbolically in terms of the clean-limit transition temperature \( T_{c0} \).  
+</question>
+=== Final questions generated ===

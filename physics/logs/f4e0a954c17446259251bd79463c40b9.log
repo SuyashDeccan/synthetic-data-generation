@@ -1,0 +1,457 @@
+=== Turn 0: Author generates questions ===
+<question>  
+Consider a quasi-two-dimensional non-Abelian topological superconductor described by a $4 \times 4$ Bogoliubov–de Gennes Hamiltonian $\mathcal{H}(\mathbf{k})$ incorporating spin-orbit coupling and a superconducting order parameter with symmetry corresponding to the $B_{3u}$ irreducible representation. Suppose dilute uranium impurities are introduced, modeled as point-like scattering centers inducing both potential and spin-flip scattering with characteristic scattering rates $\Gamma_p$ and $\Gamma_{sf}$. Assuming weak impurity concentration, derive a symbolic expression for the critical temperature suppression $\Delta T_c$ as a function of $\Gamma_p$, $\Gamma_{sf}$, and intrinsic parameters (gap amplitude $\Delta_0$ and density of states $N_0$), based on the Abrikosov-Gor’kov theory generalized to non-Abelian superconductors.  
+</question>  
+
+<question>  
+Consider a three-dimensional bulk superconductor with a fully gapped $A_u$ pairing state, analogous to the $B$ phase of superfluid ${}^3$He, embedded with a random distribution of uranium-induced Kondo-type magnetic impurities causing spin-dependent scattering characterized by a Kondo temperature $T_K$. Assume the superconducting gap $\Delta_0$ is uniform and isotropic in momentum space. Using the framework of renormalization group flow for the spin-flip scattering amplitude and self-consistent gap equations, express the renormalized superconducting gap $\Delta(T=0, T_K)$ as a symbolic function of $T_K$, $\Delta_0$, and the bare pairing interaction constant $g$.  
+</question>  
+
+<question>  
+A chiral topological superconductor slab of thickness $d$ supports surface Majorana modes described by a dispersion relation linear in momentum parallel to the surface. Uranium impurity clusters, modeled as localized magnetic moments, produce a spatially varying Zeeman field $h(z)$ decaying exponentially into the bulk with characteristic length $\xi$. Using the self-consistent BdG formalism and assuming weak Zeeman perturbation, obtain an expression for the induced minigap $\delta$ in the surface states as a function of $h_0 = h(0)$, $\xi$, the Fermi velocity $v_F$, and $d$.  
+</question>  
+
+<question>  
+Consider a tetragonal heavy-fermion superconductor with a fully gapped $A_u$ pairing symmetry subjected to a Gaussian-distributed random potential from uranium defects modeled by a disorder correlation function $\langle V(\mathbf{r}) V(\mathbf{r}') \rangle = W^2 \delta(\mathbf{r} - \mathbf{r}')$. Using the self-consistent Born approximation, derive a symbolic formula for the disorder-induced quasiparticle scattering rate $\Gamma$ at the Fermi surface in terms of $W$, the density of states $N_0$, and the pairing gap amplitude $\Delta_0$.  
+</question>  
+
+<question>  
+A heavy-fermion superconductor $UTe_2$ exhibits a fully gapped $A_u$-type order parameter in the clean limit. Suppose a dilute concentration $n_i$ of uranium defects induces spatial fluctuations $\delta \Delta(\mathbf{r})$ in the superconducting gap, modeled as Gaussian white noise with variance proportional to $n_i$. Considering Andreev bound states localized at impurity sites, express the average in-gap density of states $N_{in-gap}(E=0)$ at zero energy as a symbolic function of $n_i$, the bulk gap $\Delta_0$, and coherence length $\xi$.  
+</question>  
+
+<question>  
+In a non-Abelian topological superconductor with order parameter symmetry $B_{3u}$, the presence of uranium atomic defects produces resonant impurity scattering modeled by a $T$-matrix approach with scattering amplitude $t(\omega)$. Assuming a single-channel resonant state near the Fermi level and an isotropic normal-state density of states $N_0$, derive a symbolic expression for the impurity-induced subgap state's energy $E_{res}$ as a function of scattering strength $V_0$ and $N_0$.  
+</question>  
+
+<question>  
+Consider the superfluid analog of $UTe_2$ with a fully gapped $A_u$ state under the influence of randomly distributed uranium impurities modeled as delta-correlated spin-dependent pair-breaking potentials with pair-breaking parameter $\alpha$. Employing the Abrikosov-Gor’kov formalism adjusted for spin-triplet pairing, find the symbolic expression for the critical impurity concentration $n_c$ above which superconductivity is completely suppressed, in terms of $\alpha$, density of states $N_0$, and intrinsic gap amplitude $\Delta_0$.  
+</question>  
+
+<question>  
+A two-dimensional non-centrosymmetric superconductor with dominant $B_{3u}$ pairing symmetry experiences uranium impurity-induced spin-orbit scattering characterized by a rate $\Gamma_{so}$. Using the Elliott–Yafet mechanism and the Gor’kov equations generalized to include spin-orbit impurities, derive a symbolic form for the spin relaxation time $\tau_{so}$ in terms of $\Gamma_{so}$, $N_0$, and the impurity potential strength $U_0$.  
+</question>  
+
+<question>  
+In the presence of uranium atomic defects, a one-dimensional topological superconductor chain with $A_u$ symmetry develops localized mid-gap states. Assume each defect generates a local suppression of the order parameter over a length scale $\xi$ and that the defect density is $n_i$. Using the semiclassical approximation for quasiparticle scattering and localization theory, express the average localization length $\lambda$ of these bound states as a function of $n_i$, $\xi$, and the bulk gap $\Delta_0$.  
+</question>  
+
+<question>  
+Consider a bulk $UTe_2$ crystal exhibiting a fully gapped $A_u$ superconducting phase with isotropic gap $\Delta_0$. Uranium impurities act as resonant magnetic scatterers described by an energy-dependent self-energy $\Sigma(\omega)$ within the $T$-matrix approximation. Derive a symbolic relation for the impurity contribution to the zero-temperature density of states at the Fermi level $N(0)$ in terms of impurity concentration $n_i$, scattering potential $V_0$, and $N_0$.  
+</question>
+=== Turn 0: Critic feedback ===
+Certainly! Here is a critique of the questions according to your guidelines, with explicit, actionable recommendations where needed.
+
+---
+
+**Question 1**
+
+**Strengths:**  
+- Physical setup is clear and advanced.
+- Focuses on suppression $\Delta T_c$ as a solvable target quantity, not a simplification.
+- Context is original and multi-faceted (non-Abelian, specific pairing, impurities).
+- Requires multiple physical steps (BdG + Abrikosov-Gorkov generalization).
+
+**Improvements:**  
+- Could better isolate only essential parameters; “gap amplitude $\Delta_0$” may not directly enter $\Delta T_c$ in the classic AG framework.
+- Clarify that the Abrikosov-Gor’kov modification should stem from the non-Abelian context (state if symmetry is crucial to pair breaking).
+- The phrasing “derive a symbolic expression for...” is acceptable, but could be more concise: e.g., “Obtain a symbolic expression for the critical temperature suppression...”
+
+---
+
+**Question 2**
+
+**Strengths:**  
+- Describes a precise physical setting; relates a Kondo effect to superconductivity.
+- Asks for a single symbolic result ($\Delta(T=0, T_K)$).
+- Requires multi-step reasoning (RG flow + gap equation).
+
+**Improvements:**  
+- The phrase “self-consistent gap equations” could be replaced by “within BCS mean-field theory” for clarity.
+- Could more clearly specify which parameters are held fixed (e.g., is $N_0$ taken as constant?).
+- Be clear that only a symbolic (not fully explicit) expression is required; possibly re-phrase for conciseness.
+
+---
+
+**Question 3**
+
+**Strengths:**  
+- Physical setup is rich and unambiguous.
+- Minigap $\delta$ is a concrete, solvable, symbolic objective.
+- Involves multiple principles (surface state theory + Zeeman perturbations).
+- No extraneous details.
+
+**Improvements:**  
+- Specify boundary conditions for the Zeeman field—e.g., is the field only present on one side?
+- “Self-consistent BdG formalism” could be rephrased for conciseness: “using the BdG approach in the weak Zeeman limit, obtain...”
+- Clarify any implicit assumptions about the spectrum, e.g., is $\delta$ the lowest induced gap or a splitting?
+
+---
+
+**Question 4**
+
+**Strengths:**  
+- Clearly identifies the physical model—disorder in a heavy-fermion superconductor, Born approximation.
+- $\Gamma$ is a single target symbolic expression.
+- Requires two physical methods (disorder average + pairing context).
+
+**Improvements:**  
+- There is a bit more detail than needed (e.g., “Gaussian-distributed” already implied by the $\delta$-correlation).
+- “At the Fermi surface” can be changed to “for quasiparticles at the Fermi level” for clarity.
+- Specify if $N_0$ is normal- or superconducting-state DOS at $E_F$.
+- Confirm units and symbols are standard: $W$ for random potential amplitude isn’t universally standard—could clarify.
+
+---
+
+**Question 5**
+
+**Strengths:**  
+- Describes an advanced, original setting (spatial $\delta\Delta$ induced by uranium).
+- Asks for a clearly defined observable ($N_{in-gap}(E=0)$).
+- Solution involves disorder statistics + Andreev bound state theory (multi-step).
+
+**Improvements:**  
+- Could clarify meaning of “variance proportional to $n_i$” with a specific notation: e.g., variance $\sigma^2 = C n_i$.
+- More strictly define “average in-gap density of states”: average over disorder? Local or global?
+- Consider specifying whether averaging is over positions, disorder realizations, or both.
+
+---
+
+**Question 6**
+
+**Strengths:**  
+- Well-defined, unique non-Abelian setting with resonant $T$-matrix theory.
+- Clear, solvable symbolic for $E_{res}$.
+
+**Improvements:**  
+- Specify explicitly that “resonant state” refers to a Shiba/Rusinov-type bound state (if applicable).
+- State if $V_0$ is the bare impurity potential or already dressed.
+- Be more concise about “single-channel”: “single resonant channel near $E_F$”.
+
+---
+
+**Question 7**
+
+**Strengths:**  
+- Clear connection of nontrivial pair-breaking parameter $\alpha$ to a physical observable ($n_c$).
+- Involves multiple steps (AG suppression + pairing symmetry).
+
+**Improvements:**  
+- Spine out that $\alpha$ is defined in terms of microscopic scattering (or cite its meaning).
+- The phrase “superfluid analog of $UTe_2$” could simply be “a bulk superfluid with $A_u$ pairing...”
+- Specify whether spin-triplet pairing must be assumed to affect AG result.
+
+---
+
+**Question 8**
+
+**Strengths:**  
+- Original combination of spin-orbit scattering and $B_{3u}$ pairing.
+- Elliott–Yafet mechanism + Gor’kov equations: clear, multi-step reasoning.
+- Solves for a single symbolic $\tau_{so}$.
+
+**Improvements:**  
+- Could clarify exactly what “impurity potential strength $U_0$” means: is it an average or single-impurity value?
+- Confirm that the required relation between $\tau_{so}$ and $\Gamma_{so}$ is unambiguous.
+
+---
+
+**Question 9**
+
+**Strengths:**  
+- Well-motivated scenario: 1D topological chain, localized states from defects.
+- Single symbolic result: localization length $\lambda$.
+- Multi-step (semiclassical + localization).
+
+**Improvements:**  
+- “Defect generates local suppression over length scale $\xi$” might be more precisely defined.
+- Specify what “localization length” refers to: average for mid-gap bound states, or overall?
+- Specify what regime this applies (e.g., dilute limit: $n_i \xi \ll 1$)(if necessary).
+
+---
+
+**Question 10**
+
+**Strengths:**  
+- Detailed physical scenario with $T$-matrix and energy-dependent self-energy.
+- Solvable symbolic: $N(0)$ in terms of $n_i$, $V_0$, $N_0$.
+
+**Improvements:**  
+- Specify whether $V_0$ is a bare or effective scattering strength.
+- “Impurity contribution” to $N(0)$: could clarify if this is an additive increase, or the total DOS at $E_F$.
+- Rephrase to “Obtain a symbolic expression for the impurity-induced density of states at $E_F$ at $T=0$…”
+
+---
+
+**General Points by Guideline**
+
+1.  Most setups are advanced and well-framed. Minor semantic clarifications suggested to avoid overloading context.
+2.  All target a clear single symbolic quantity.
+3.  Math delimiters are **correct** (all LaTeX is Markdown compatible).
+4.  All require multi-step reasoning (e.g., impurity+superconductivity, BdG+Zeeman, etc.).
+5.  Nearly all have only necessary details; some can cut wording (“variance proportional to $n_i$” defined mathematically).
+6./7.  All are highly original, nonstandard, creative.
+8./10.  Language is technical, but sometimes verbose; can be made more direct.
+9.  Single symbolic answer specified each time.
+11.  Notation is mostly standard; a few symbols ($W$, $\alpha$) could use a clarifying clause.
+12.  No multi-parts detected.
+13.  No major hidden assumptions, but a few questions could clarify the meaning of parameters ($N_0$, $V_0$, etc.), and the exact observable to be computed.
+
+---
+
+**Summary Table:**  
+
+| Q | Issue(s) | Actions |
+|:-:|:---------|:--------|
+| 1 | Slightly verbose, minor parameter ambiguity | Streamline wording, clarify role of $\Delta_0$ if needed |
+| 2 | Slight ambiguity re: constants, phrasing | Clarify notation, streamline phrasing |
+| 3 | Specify BCs, clarify definition | Specify Zeeman boundary, define $\delta$ explicitly |
+| 4 | Minor redundancy, symbol $W$ definition | Remove redundant details, explain $W$ |
+| 5 | Clarify variance, averaging | Explicitly define disorder stats, averaging |
+| 6 | Define $V_0$, resonance type | Clarify what kind of state and $V_0$ |
+| 7 | Define $\alpha$, may clarify context | Define terms, concise wording |
+| 8 | Ambiguity in $U_0$ | Define meaning of $U_0$ |
+| 9 | Define “local suppression”, context of $\lambda$ | Specify physical meaning/regime |
+| 10 | $V_0$ definition, clarify “impurity contribution” | Specify $V_0$, clarify target observable |
+
+---
+
+**General Recommendations:**
+- Be concise: e.g., "Obtain a symbolic expression for..." instead of "derive a symbolic expression for..."
+- Be explicit: always define symbols not universally standard, especially disorder strength, pair-breaking parameter, etc.
+- Make observable definitions sharp: state precisely what is to be averaged or evaluated.
+- Avoid stating more context than necessary: e.g., if “Gaussian” is implied by $\langle V V \rangle = ...$, drop “Gauss-distributed”.
+- Avoid ellipsis and ambiguous terms ("of the form", "variance proportional to...")—mathematical precision preferred.
+- Clarify all boundary conditions and context (especially for surface or boundary states).
+- Use standard SI units and variables, or explicitly define nonstandard ones.  
+
+---
+
+**Overall:**  
+These questions are well on track for originality, creativity, and technical sophistication. Most improvements are about clarity, not compliance, and can be applied with relatively minor edits.
+=== Turn 1: Author refines questions ===
+<question>  
+Consider a quasi-two-dimensional non-Abelian topological superconductor described by a $4 \times 4$ Bogoliubov–de Gennes Hamiltonian $\mathcal{H}(\mathbf{k})$ with spin-orbit coupling and a superconducting order parameter transforming according to the $B_{3u}$ irreducible representation. Introducing dilute uranium impurities modeled as point-like scatterers inducing potential and spin-flip scattering with rates $\Gamma_p$ and $\Gamma_{sf}$, respectively, and assuming weak impurity concentration, obtain a symbolic expression for the critical temperature suppression $\Delta T_c$ as a function of $\Gamma_p$, $\Gamma_{sf}$, and normal-state parameters (density of states $N_0$). Use the Abrikosov–Gor’kov theory generalized to account for the non-Abelian pairing symmetry and its impact on pair breaking.  
+</question>  
+
+<question>  
+Consider a three-dimensional bulk superconductor in a fully gapped $A_u$ pairing state, analogous to the $B$ phase of superfluid ${}^3$He, containing randomly distributed uranium-induced magnetic impurities exhibiting Kondo scattering described by Kondo temperature $T_K$. Assume an isotropic superconducting gap amplitude $\Delta_0$ and a constant density of states $N_0$. Within the renormalization group framework for the spin-flip scattering amplitude and BCS mean-field theory, obtain a symbolic expression for the renormalized zero-temperature gap $\Delta(T=0,T_K)$ as a function of $T_K$, the bare pairing interaction constant $g$, and $\Delta_0$.  
+</question>  
+
+<question>  
+A chiral topological superconducting slab of thickness $d$ hosts surface Majorana modes with linear dispersion in momentum parallel to the surface. Uranium impurity clusters act as localized magnetic moments producing a spatially varying Zeeman field $h(z) = h_0 e^{-z/\xi}$, where $h_0 = h(0)$ is the surface field amplitude and $\xi$ is the decay length into the bulk ($z>0$). Using the Bogoliubov–de Gennes formalism in the weak Zeeman limit, obtain a symbolic expression for the induced minigap $\delta$ in the surface Majorana states as a function of $h_0$, $\xi$, the Fermi velocity $v_F$, and slab thickness $d$. Assume hard-wall boundary conditions and that $\delta$ is the lowest induced energy gap in the surface-state spectrum.  
+</question>  
+
+<question>  
+Consider a tetragonal heavy-fermion superconductor with a fully gapped $A_u$ pairing symmetry subject to disorder modeled by a Gaussian random potential $V(\mathbf{r})$ with correlation function $\langle V(\mathbf{r}) V(\mathbf{r}') \rangle = W^2 \delta(\mathbf{r} - \mathbf{r}')$, where $W$ characterizes the disorder strength. Using the self-consistent Born approximation, obtain a symbolic expression for the quasiparticle scattering rate $\Gamma$ at the Fermi level for normal-state quasiparticles in terms of $W$, the normal-state density of states $N_0$, and the gap amplitude $\Delta_0$.  
+</question>  
+
+<question>  
+A heavy-fermion superconductor $UTe_2$ with a fully gapped $A_u$ order parameter in the clean limit contains a dilute concentration $n_i$ of uranium defects that induce spatial fluctuations of the superconducting gap, modeled as Gaussian white noise with variance $\sigma^2 = C n_i$, where $C$ is a constant. Considering Andreev bound states localized near impurity sites, express the average zero-energy in-gap density of states $N_{in-gap}(E=0)$, averaged over disorder realizations, as a symbolic function of $n_i$, the bulk gap $\Delta_0$, and coherence length $\xi$.  
+</question>  
+
+<question>  
+In a non-Abelian topological superconductor with $B_{3u}$ pairing symmetry, uranium atomic defects produce resonant impurity scattering described by a single resonant channel near the Fermi level within a $T$-matrix approach. Let $V_0$ denote the bare impurity scattering strength and $N_0$ the isotropic normal-state density of states. Obtain a symbolic expression for the impurity-induced subgap bound state energy $E_{res}$ (Shiba-Rusinov-type state) as a function of $V_0$ and $N_0$.  
+</question>  
+
+<question>  
+Consider a bulk spin-triplet superfluid with a fully gapped $A_u$ pairing state under random uranium impurities modeled as delta-correlated spin-dependent pair-breaking potentials characterized by pair-breaking parameter $\alpha$. Employing the Abrikosov–Gor’kov formalism adapted for spin-triplet pairing, find a symbolic expression for the critical impurity concentration $n_c$ above which superconductivity is fully suppressed, expressed in terms of $\alpha$, the density of states $N_0$, and the intrinsic gap amplitude $\Delta_0$.  
+</question>  
+
+<question>  
+A two-dimensional non-centrosymmetric superconductor with dominant $B_{3u}$ pairing experiences uranium impurity-induced spin-orbit scattering characterized by a scattering rate $\Gamma_{so}$. Using the Elliott–Yafet mechanism and Gor’kov equations generalized to include spin-orbit impurities, derive a symbolic expression for the spin relaxation time $\tau_{so}$ in terms of $\Gamma_{so}$, the normal-state density of states $N_0$, and the single-impurity scattering potential strength $U_0$.  
+</question>  
+
+<question>  
+In a one-dimensional topological superconductor chain with $A_u$ pairing symmetry, uranium defects generate local suppressions of the superconducting order parameter over a length scale $\xi$. Given a defect density $n_i$ in the dilute limit ($n_i \xi \ll 1$), use semiclassical quasiparticle scattering and localization theory to express the average localization length $\lambda$ of mid-gap impurity bound states as a function of $n_i$, $\xi$, and the bulk gap amplitude $\Delta_0$.  
+</question>  
+
+<question>  
+Consider a bulk $UTe_2$ crystal in a fully gapped $A_u$ superconducting phase with isotropic gap amplitude $\Delta_0$. Uranium impurities act as resonant magnetic scatterers described by an energy-dependent self-energy $\Sigma(\omega)$ within the $T$-matrix approximation. Let $n_i$ be the impurity concentration, $V_0$ the bare scattering potential, and $N_0$ the normal-state density of states. Obtain a symbolic expression for the impurity-induced correction to the zero-temperature density of states at the Fermi level, $N_{imp}(0)$, as a function of $n_i$, $V_0$, and $N_0$.  
+</question>
+=== Turn 1: Critic feedback ===
+Certainly. Here’s concise, actionable feedback for each question with respect to your guidelines, focusing on areas for improvement:
+
+---
+
+<question>  
+Consider a quasi-two-dimensional non-Abelian topological superconductor described by a $4 \times 4$ Bogoliubov–de Gennes Hamiltonian $\mathcal{H}(\mathbf{k})$ with spin-orbit coupling and a superconducting order parameter transforming according to the $B_{3u}$ irreducible representation. Introducing dilute uranium impurities modeled as point-like scatterers inducing potential and spin-flip scattering with rates $\Gamma_p$ and $\Gamma_{sf}$, respectively, and assuming weak impurity concentration, obtain a symbolic expression for the critical temperature suppression $\Delta T_c$ as a function of $\Gamma_p$, $\Gamma_{sf}$, and normal-state parameters (density of states $N_0$). Use the Abrikosov–Gor’kov theory generalized to account for the non-Abelian pairing symmetry and its impact on pair breaking.  
+</question>  
+
+**Feedback:**  
+- **Good:** Physical setup is clear, unique, and non-standard. Target quantity $\Delta T_c$ is specific.
+- **Improve:** Remove the instruction "Use the Abrikosov–Gor’kov theory...", as this is process-oriented and a hint. Instead, specify that all relevant physical effects of non-Abelian symmetry are present in the setup.
+- **Unused Details:** "Assuming weak impurity concentration" is standard and helpful; all details support the question.
+- **LaTeX:** Syntax is correct.
+- **Other:** Consider simplifying verbosity: "modeled as point-like scatterers" is good, but "with rates ..." could be merged for clarity.
+- **Actionable revision:** Remove explicit guidance on which theory to use; ensure only essential elements are present.
+
+---
+
+<question>  
+Consider a three-dimensional bulk superconductor in a fully gapped $A_u$ pairing state, analogous to the $B$ phase of superfluid ${}^3$He, containing randomly distributed uranium-induced magnetic impurities exhibiting Kondo scattering described by Kondo temperature $T_K$. Assume an isotropic superconducting gap amplitude $\Delta_0$ and a constant density of states $N_0$. Within the renormalization group framework for the spin-flip scattering amplitude and BCS mean-field theory, obtain a symbolic expression for the renormalized zero-temperature gap $\Delta(T=0,T_K)$ as a function of $T_K$, the bare pairing interaction constant $g$, and $\Delta_0$.  
+</question>  
+
+**Feedback:**  
+- **Good:** The setup is original and blends RG for Kondo with BCS theory.
+- **Improve:** "Within the renormalization group framework..." hints at the solution; rephrase as a statement of the physical situation, not the method.
+- **Unused Details:** All elements are necessary.
+- **Actionable revision:** Remove process-based instructions (e.g., method/theory names) and focus on physical description.
+
+---
+
+<question>  
+A chiral topological superconducting slab of thickness $d$ hosts surface Majorana modes with linear dispersion in momentum parallel to the surface. Uranium impurity clusters act as localized magnetic moments producing a spatially varying Zeeman field $h(z) = h_0 e^{-z/\xi}$, where $h_0 = h(0)$ is the surface field amplitude and $\xi$ is the decay length into the bulk ($z>0$). Using the Bogoliubov–de Gennes formalism in the weak Zeeman limit, obtain a symbolic expression for the induced minigap $\delta$ in the surface Majorana states as a function of $h_0$, $\xi$, the Fermi velocity $v_F$, and slab thickness $d$. Assume hard-wall boundary conditions and that $\delta$ is the lowest induced energy gap in the surface-state spectrum.  
+</question>  
+
+**Feedback:**  
+- **Good:** Unique and well-posed; asks for a specific symbolic expression.
+- **Improve:** The phrase "Using the Bogoliubov–de Gennes formalism in the weak Zeeman limit" could be trimmed—just describe the weak Zeeman field in the situation, not as an explicit instruction to use BdG equations.
+- **LaTeX:** Correct.
+- **Unused Details:** The details on minigap and surface spectrum are necessary.
+- **Actionable revision:** Remove interventional phrases about method; clarify all definitions in context.
+
+---
+
+<question>  
+Consider a tetragonal heavy-fermion superconductor with a fully gapped $A_u$ pairing symmetry subject to disorder modeled by a Gaussian random potential $V(\mathbf{r})$ with correlation function $\langle V(\mathbf{r}) V(\mathbf{r}') \rangle = W^2 \delta(\mathbf{r} - \mathbf{r}')$, where $W$ characterizes the disorder strength. Using the self-consistent Born approximation, obtain a symbolic expression for the quasiparticle scattering rate $\Gamma$ at the Fermi level for normal-state quasiparticles in terms of $W$, the normal-state density of states $N_0$, and the gap amplitude $\Delta_0$.  
+</question>  
+
+**Feedback:**  
+- **Good:** Clearly-defined, specific symbolic target ($\Gamma$).
+- **Improve:** "Using the self-consistent Born approximation," is a hint; instead, just describe the physical characteristics of the disorder.
+- **Unused Details:** Including the gap amplitude $\Delta_0$ in the functional dependence may be unnecessary for normal-state quasiparticle scattering rate—clarify its relevance, unless disorder affects the superconducting state.
+- **Actionable revision:** Remove method instruction and double-check if $\Delta_0$ is needed for normal-state scattering.
+
+---
+
+<question>  
+A heavy-fermion superconductor $UTe_2$ with a fully gapped $A_u$ order parameter in the clean limit contains a dilute concentration $n_i$ of uranium defects that induce spatial fluctuations of the superconducting gap, modeled as Gaussian white noise with variance $\sigma^2 = C n_i$, where $C$ is a constant. Considering Andreev bound states localized near impurity sites, express the average zero-energy in-gap density of states $N_{in-gap}(E=0)$, averaged over disorder realizations, as a symbolic function of $n_i$, the bulk gap $\Delta_0$, and coherence length $\xi$.  
+</question>  
+
+**Feedback:**  
+- **Good:** Physical setup is original and the target quantity is concrete.
+- **Improve:** The phrase "Considering Andreev bound states localized near impurity sites, express..." is unnecessarily procedural; instead, just describe the system and ask for $N_{in-gap}(E=0)$ as a function of the stated variables.
+- **Unused Details:** All elements are relevant.
+- **Actionable revision:** Avoid instruction-like language; make the question a direct request for the symbolic expression.
+
+---
+
+<question>  
+In a non-Abelian topological superconductor with $B_{3u}$ pairing symmetry, uranium atomic defects produce resonant impurity scattering described by a single resonant channel near the Fermi level within a $T$-matrix approach. Let $V_0$ denote the bare impurity scattering strength and $N_0$ the isotropic normal-state density of states. Obtain a symbolic expression for the impurity-induced subgap bound state energy $E_{res}$ (Shiba-Rusinov-type state) as a function of $V_0$ and $N_0$.  
+</question>  
+
+**Feedback:**  
+- **Good:** Physical scenario and target symbolic answer are well specified and non-standard.
+- **Improve:** "within a $T$-matrix approach" is a hint; instead, state the physical origin of the resonance as a single-channel process.
+- **Unused Details:** All needed.
+- **Actionable revision:** Remove "within a $T$-matrix approach" and make it a purely physical description.
+
+---
+
+<question>  
+Consider a bulk spin-triplet superfluid with a fully gapped $A_u$ pairing state under random uranium impurities modeled as delta-correlated spin-dependent pair-breaking potentials characterized by pair-breaking parameter $\alpha$. Employing the Abrikosov–Gor’kov formalism adapted for spin-triplet pairing, find a symbolic expression for the critical impurity concentration $n_c$ above which superconductivity is fully suppressed, expressed in terms of $\alpha$, the density of states $N_0$, and the intrinsic gap amplitude $\Delta_0$.  
+</question>  
+
+**Feedback:**  
+- **Good:** Physical situation and symbolic objective are clear and rigorous.
+- **Improve:** Remove "Employing the Abrikosov–Gor’kov formalism adapted for spin-triplet pairing"; just state the relevant pair-breaking potential and parameters.
+- **Unused Details:** All elements are relevant.
+- **Actionable revision:** Phrase the question so the method is implied by the setup, not given.
+
+---
+
+<question>  
+A two-dimensional non-centrosymmetric superconductor with dominant $B_{3u}$ pairing experiences uranium impurity-induced spin-orbit scattering characterized by a scattering rate $\Gamma_{so}$. Using the Elliott–Yafet mechanism and Gor’kov equations generalized to include spin-orbit impurities, derive a symbolic expression for the spin relaxation time $\tau_{so}$ in terms of $\Gamma_{so}$, the normal-state density of states $N_0$, and the single-impurity scattering potential strength $U_0$.  
+</question>  
+
+**Feedback:**  
+- **Good:** Physical setup is plausible and targets a concrete symbolic answer.
+- **Improve:** Remove references to solution methods ("Elliott–Yafet mechanism and Gor’kov equations..."); instead, embed their physical effects in the scenario.
+- **Unused Details:** All parameters are presumably used.
+- **Actionable revision:** Focus on the physical processes, not the solution tools.
+
+---
+
+<question>  
+In a one-dimensional topological superconductor chain with $A_u$ pairing symmetry, uranium defects generate local suppressions of the superconducting order parameter over a length scale $\xi$. Given a defect density $n_i$ in the dilute limit ($n_i \xi \ll 1$), use semiclassical quasiparticle scattering and localization theory to express the average localization length $\lambda$ of mid-gap impurity bound states as a function of $n_i$, $\xi$, and the bulk gap amplitude $\Delta_0$.  
+</question>  
+
+**Feedback:**  
+- **Good:** Scenario is clear and not standard; specific symbolic outcome.
+- **Improve:** "use semiclassical quasiparticle scattering and localization theory" is a hint—just define the physics and request the mean localization length.
+- **Unused Details:** Relevant.
+- **Actionable revision:** State the scenario, not the solution method.
+
+---
+
+<question>  
+Consider a bulk $UTe_2$ crystal in a fully gapped $A_u$ superconducting phase with isotropic gap amplitude $\Delta_0$. Uranium impurities act as resonant magnetic scatterers described by an energy-dependent self-energy $\Sigma(\omega)$ within the $T$-matrix approximation. Let $n_i$ be the impurity concentration, $V_0$ the bare scattering potential, and $N_0$ the normal-state density of states. Obtain a symbolic expression for the impurity-induced correction to the zero-temperature density of states at the Fermi level, $N_{imp}(0)$, as a function of $n_i$, $V_0$, and $N_0$.  
+</question>
+
+**Feedback:**  
+- **Good:** Realistic, original setup with a specific symbolic answer.
+- **Improve:** Remove "within the $T$-matrix approximation", which is a solution guide.
+- **Unused Details:** All relevant.
+- **Actionable revision:** Make process passive—say impurities produce an energy-dependent self-energy, not how to calculate it.
+
+---
+
+**General Summary:**  
+- Remove (or reword) instructions referencing specific solution methods or frameworks (e.g., "use Abrikosov–Gor'kov theory," "within the T-matrix approach"). Set up the physics; let the solver choose the appropriate methods.
+- Ensure every numerical/physical parameter introduced is required for the solution.
+- All questions are already unique, rigorous, and have well-specified physical situations and symbolic targets.  
+- Maintain focus on physical description, not calculation instructions.
+
+**Example of Improved Style:**  
+Replace  
+"Using the Abrikosov–Gor’kov theory generalized to account for the non-Abelian pairing symmetry and its impact on pair breaking..."  
+with  
+"Obtain a symbolic expression for the critical temperature suppression $\Delta T_c$ as a function of $\Gamma_p, \Gamma_{sf}, N_0$ in this system."
+
+**LaTeX and Tag Use:**  
+Your LaTeX use is correct and all questions are properly bracketed in <question>...</question>.
+
+---
+
+**In summary:** Remove process hints, ensure all parameters are needed, keep instructions strictly on the physics, and avoid reference to solution procedures or external frameworks in the problem statement.
+=== Turn 2: Author refines questions ===
+<question>  
+Consider a quasi-two-dimensional non-Abelian topological superconductor described by a $4 \times 4$ Bogoliubov–de Gennes Hamiltonian $\mathcal{H}(\mathbf{k})$ with spin-orbit coupling and a superconducting order parameter transforming according to the $B_{3u}$ irreducible representation. Dilute uranium impurities act as point-like scatterers inducing potential and spin-flip scattering with rates $\Gamma_p$ and $\Gamma_{sf}$, respectively. Assuming weak impurity concentration, obtain a symbolic expression for the critical temperature suppression $\Delta T_c$ as a function of $\Gamma_p$, $\Gamma_{sf}$, and the normal-state density of states $N_0$, taking into account the effects of the non-Abelian pairing symmetry on pair breaking.  
+</question>  
+
+<question>  
+Consider a three-dimensional bulk superconductor in a fully gapped $A_u$ pairing state, analogous to the $B$ phase of superfluid ${}^3$He, containing randomly distributed uranium-induced magnetic impurities characterized by a Kondo temperature $T_K$. Assume an isotropic superconducting gap amplitude $\Delta_0$ and a constant density of states $N_0$. Express symbolically the renormalized zero-temperature superconducting gap $\Delta(T=0,T_K)$ as a function of $T_K$, the bare pairing interaction constant $g$, and $\Delta_0$.  
+</question>  
+
+<question>  
+A chiral topological superconducting slab of thickness $d$ hosts surface Majorana modes with linear dispersion in momentum parallel to the surface. Uranium impurity clusters generate localized magnetic moments producing a spatially varying Zeeman field $h(z) = h_0 e^{-z/\xi}$, where $h_0 = h(0)$ is the surface field amplitude and $\xi$ is the decay length into the bulk ($z > 0$). In the weak Zeeman field limit, obtain a symbolic expression for the induced minigap $\delta$ in the surface Majorana states as a function of $h_0$, $\xi$, the Fermi velocity $v_F$, and the slab thickness $d$, assuming hard-wall boundary conditions.  
+</question>  
+
+<question>  
+Consider a tetragonal heavy-fermion superconductor with a fully gapped $A_u$ pairing symmetry subject to disorder modeled by a Gaussian random potential $V(\mathbf{r})$ with correlation function $\langle V(\mathbf{r}) V(\mathbf{r}') \rangle = W^2 \delta(\mathbf{r} - \mathbf{r}')$, where $W$ quantifies the disorder strength. Obtain a symbolic expression for the quasiparticle scattering rate $\Gamma$ at the Fermi level for normal-state quasiparticles in terms of $W$ and the normal-state density of states $N_0$.  
+</question>  
+
+<question>  
+A heavy-fermion superconductor $UTe_2$ with a fully gapped $A_u$ order parameter in the clean limit contains a dilute concentration $n_i$ of uranium defects that induce spatial fluctuations of the superconducting gap, modeled as Gaussian white noise with variance $\sigma^2 = C n_i$, where $C$ is a constant. Express the average zero-energy in-gap density of states $N_{\mathrm{in\text{-}gap}}(E=0)$, averaged over disorder realizations, as a symbolic function of $n_i$, the bulk gap $\Delta_0$, and the coherence length $\xi$.  
+</question>  
+
+<question>  
+In a non-Abelian topological superconductor with $B_{3u}$ pairing symmetry, uranium atomic defects produce resonant impurity scattering via a single resonant channel near the Fermi level. Let $V_0$ denote the bare impurity scattering strength and $N_0$ the isotropic normal-state density of states. Obtain a symbolic expression for the impurity-induced subgap bound state energy $E_{res}$ (Shiba-Rusinov-type state) as a function of $V_0$ and $N_0$.  
+</question>  
+
+<question>  
+Consider a bulk spin-triplet superfluid with a fully gapped $A_u$ pairing state under random uranium impurities modeled as delta-correlated spin-dependent pair-breaking potentials characterized by a pair-breaking parameter $\alpha$. Find a symbolic expression for the critical impurity concentration $n_c$ above which superconductivity is fully suppressed, expressed in terms of $\alpha$, the density of states $N_0$, and the intrinsic gap amplitude $\Delta_0$.  
+</question>  
+
+<question>  
+A two-dimensional non-centrosymmetric superconductor with dominant $B_{3u}$ pairing experiences uranium impurity-induced spin-orbit scattering characterized by a scattering rate $\Gamma_{so}$. Derive a symbolic expression for the spin relaxation time $\tau_{so}$ in terms of $\Gamma_{so}$, the normal-state density of states $N_0$, and the single-impurity scattering potential strength $U_0$, incorporating the relevant physical effects of spin-orbit impurity scattering.  
+</question>  
+
+<question>  
+In a one-dimensional topological superconductor chain with $A_u$ pairing symmetry, uranium defects generate local suppressions of the superconducting order parameter over a length scale $\xi$. In the dilute defect limit ($n_i \xi \ll 1$), express the average localization length $\lambda$ of mid-gap impurity bound states as a symbolic function of the defect density $n_i$, the coherence length $\xi$, and the bulk gap amplitude $\Delta_0$.  
+</question>  
+
+<question>  
+Consider a bulk $UTe_2$ crystal in a fully gapped $A_u$ superconducting phase with isotropic gap amplitude $\Delta_0$. Uranium impurities act as resonant magnetic scatterers producing an energy-dependent self-energy $\Sigma(\omega)$ characterized by impurity concentration $n_i$, bare scattering potential $V_0$, and normal-state density of states $N_0$. Obtain a symbolic expression for the impurity-induced correction to the zero-temperature density of states at the Fermi level, $N_{\mathrm{imp}}(0)$, as a function of $n_i$, $V_0$, and $N_0$.  
+</question>
+=== Final questions generated ===

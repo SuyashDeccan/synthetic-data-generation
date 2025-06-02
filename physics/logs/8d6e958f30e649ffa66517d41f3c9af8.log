@@ -1,0 +1,732 @@
+=== Turn 0: Author generates questions ===
+<question>  
+Consider a scalar field $\phi$ in the Standard Model with a Wilsonian effective Lagrangian valid up to a cutoff scale $\Lambda$, where quantum corrections induce a mass term  
+$$m_H^2(\Lambda) = m_0^2 + \frac{\kappa}{16\pi^2} \Lambda^2,$$  
+with $m_0^2$ the bare Higgs mass squared and $\kappa$ a positive constant dependent on couplings. Assuming the physical Higgs mass squared $m_H^2(\mu)$ at the electroweak scale $\mu \ll \Lambda$ is fixed, express the necessary fine-tuning condition $\Delta$ defined by  
+$$\Delta = \left| \frac{\delta m_H^2}{m_H^2(\mu)} \right| = \left| \frac{m_H^2(\Lambda) - m_H^2(\mu)}{m_H^2(\mu)} \right|,$$  
+in terms of $\Lambda$, $m_H(\mu)$, and $\kappa$, assuming $m_0^2$ is adjusted to cancel the quadratic divergence up to scale $\Lambda$. Derive the symbolic expression for $\Delta$ explicitly and discuss its dependence on $\Lambda$ and $m_H(\mu)$.
+
+</question>
+
+<question>  
+Within the framework of the Standard Model effective field theory, consider the one-loop corrected Higgs potential at scale $\mu$ given by  
+$$V_{\mathrm{eff}}(h) = -\frac{1}{2} m^2(\mu) h^2 + \frac{\lambda(\mu)}{4} h^4 + \frac{3}{64\pi^2} y_t^4 h^4 \ln \left( \frac{y_t^2 h^2}{\mu^2} \right),$$  
+where $h$ is the real Higgs field, $y_t$ is the top Yukawa coupling, and $m^2(\mu), \lambda(\mu)$ are running parameters. Find the condition on $h = v$ that satisfies  
+$$\frac{dV_{\mathrm{eff}}}{dh}\bigg|_{h=v} = 0,$$  
+and express $v$ implicitly or explicitly in terms of $m^2(\mu), \lambda(\mu), y_t,$ and $\mu$. 
+
+</question>
+
+<question>  
+The Little Hierarchy Problem concerns the stability of the Higgs mass under radiative corrections given multiple mass scales. Consider a new physics scale $M \gg m_H$ that induces a threshold correction to the Higgs mass squared at scale $\mu \approx M$:  
+$$\delta m_H^2 \sim \frac{g^2}{16\pi^2} M^2,$$  
+with $g$ a dimensionless coupling. Assuming the renormalization group evolution of $m_H^2$ between scales $M$ and the electroweak scale $v$ is dominated by Standard Model beta functions and can be approximated as  
+$$m_H^2(v) \approx m_H^2(M) - \frac{3 y_t^2}{8 \pi^2} m_H^2(M) \ln\left(\frac{M}{v}\right),$$  
+derive an explicit expression for the upper bound on $M$ such that the relative correction to $m_H^2(v)$ does not exceed a fixed fine-tuning parameter $\Delta$, i.e.,  
+$$\left|\frac{\delta m_H^2}{m_H^2(v)}\right| \leq \Delta.$$  
+Express $M$ in terms of $g, y_t, v, m_H$, and $\Delta$.
+
+</question>
+
+<question>  
+In a Wilsonian effective approach, the Higgs field self-energy correction due to a heavy scalar $S$ of mass $M_S$ coupled via interaction term  
+$$\mathcal{L}_{\mathrm{int}} = -\lambda_{HS} |H|^2 S^2,$$  
+where $H$ is the Higgs doublet, induces a correction to the Higgs mass parameter  
+$$\delta m_H^2 = \frac{\lambda_{HS}}{16\pi^2} \Lambda^2 \Big(1 - \frac{M_S^2}{\Lambda^2} \ln\frac{\Lambda^2 + M_S^2}{M_S^2}\Big).$$  
+Derive the limiting form of $\delta m_H^2$ for $\Lambda \gg M_S$ and for $\Lambda \to M_S$ and provide a closed-form symbolic expression for $\delta m_H^2$ in each limit.
+
+</question>
+
+<question>  
+The Higgs vacuum expectation value (VEV) $v$ is determined by minimizing the Higgs potential with tree-level mass parameter $\mu_h^2$ and quartic coupling $\lambda$:  
+$$V(H) = -\mu_h^2 |H|^2 + \lambda |H|^4.$$  
+Given the physical Higgs mass $m_h$ satisfies  
+$$m_h^2 = 2 \lambda v^2,$$  
+and allowing for threshold corrections $\Delta \mu_h^2$ from heavy states at scale $M \gg v$ such that  
+$$\mu_h^2 = \mu_0^2 + \Delta \mu_h^2,$$  
+with  
+$$\Delta \mu_h^2 = \frac{C}{16\pi^2} M^2,$$  
+where $C$ is a dimensionless constant, express the sensitivity measure  
+$$S = \left| \frac{\partial \ln v^2}{\partial \ln M^2} \right|$$  
+in terms of $C, \mu_0^2, M^2,$ and $v^2$. Provide an explicit symbolic formula for $S$ assuming $\mu_0^2$ is tuned to reproduce the physical $v^2$.
+
+</question>
+=== Turn 0: Critic feedback ===
+Certainly! Here is an expert review of each question, noting where each aligns/violates the guidelines, followed by targeted, actionable suggestions for improvement. I check for correct markdown-LaTeX, uniqueness, step/reasoning depth, redundancy, clarity, and the requirements for a single unambiguous answer.
+
+---
+
+### **Question 1**
+> <question>
+> Consider a scalar field $\phi$ in the Standard Model with a Wilsonian effective Lagrangian valid up to a cutoff scale $\Lambda$, where quantum corrections induce a mass term  
+> $$m_H^2(\Lambda) = m_0^2 + \frac{\kappa}{16\pi^2} \Lambda^2,$$  
+> with $m_0^2$ the bare Higgs mass squared and $\kappa$ a positive constant dependent on couplings. Assuming the physical Higgs mass squared $m_H^2(\mu)$ at the electroweak scale $\mu \ll \Lambda$ is fixed, express the necessary fine-tuning condition $\Delta$ defined by  
+> $$\Delta = \left| \frac{\delta m_H^2}{m_H^2(\mu)} \right| = \left| \frac{m_H^2(\Lambda) - m_H^2(\mu)}{m_H^2(\mu)} \right|,$$  
+> in terms of $\Lambda$, $m_H(\mu)$, and $\kappa$, assuming $m_0^2$ is adjusted to cancel the quadratic divergence up to scale $\Lambda$. Derive the symbolic expression for $\Delta$ explicitly and discuss its dependence on $\Lambda$ and $m_H(\mu)$.
+> </question>
+
+#### **Evaluation & Feedback**
+
+- **+** Good modeling—realistic Higgs fine-tuning scenario.
+- **+** Targets a single symbolic expression ($\Delta$).
+- **+** Requires multi-step reasoning (manipulation of the expressions and possible substitution).
+- **-** The last instruction: "and discuss its dependence..." violates Guideline 11 (should not request a discussion but only a symbolic formula).
+- **-** The question is clear, concise, and avoids unnecessary background.
+- **+** Markdown LaTeX is correct and all math is properly formatted.
+- **+** No extraneous variables, and the answer is unique.
+- **-** The reference to "$m_0^2$ is adjusted..." could be more concrete: it's better to state the relationship/formula for $m_0^2$ to avoid ambiguity.
+
+#### **How to Improve**
+- Remove the request for a discussion; request only the symbolic expression.
+- Specify the exact requirement for $m_0^2$ ("assuming $m_0^2 = m_H^2(\mu) - \frac{\kappa}{16\pi^2} \Lambda^2$" or equivalent), so there is zero ambiguity.
+---
+**Improved Version:**
+> <question>
+> Consider a scalar field $\phi$ in the Standard Model with a Wilsonian effective Lagrangian valid up to cutoff $\Lambda$, where quantum corrections induce a mass term 
+> $$m_H^2(\Lambda) = m_0^2 + \frac{\kappa}{16\pi^2} \Lambda^2,$$
+> with $\kappa>0$. If $m_0^2$ is chosen such that the physical Higgs mass squared $m_H^2(\mu)$ at the electroweak scale $\mu \ll \Lambda$ is fixed, derive a symbolic expression for the fine-tuning measure
+> $$\Delta = \left| \frac{m_H^2(\Lambda) - m_H^2(\mu)}{m_H^2(\mu)} \right|$$
+> in terms of $\Lambda$, $m_H(\mu)$, and $\kappa$.
+> </question>
+
+---
+
+### **Question 2**
+> <question>
+> Within the framework of the Standard Model effective field theory, consider the one-loop corrected Higgs potential at scale $\mu$ given by  
+> $$V_{\mathrm{eff}}(h) = -\frac{1}{2} m^2(\mu) h^2 + \frac{\lambda(\mu)}{4} h^4 + \frac{3}{64\pi^2} y_t^4 h^4 \ln \left( \frac{y_t^2 h^2}{\mu^2} \right),$$  
+> where $h$ is the real Higgs field, $y_t$ is the top Yukawa coupling, and $m^2(\mu), \lambda(\mu)$ are running parameters. Find the condition on $h = v$ that satisfies  
+> $$\frac{dV_{\mathrm{eff}}}{dh}\bigg|_{h=v} = 0,$$  
+> and express $v$ implicitly or explicitly in terms of $m^2(\mu), \lambda(\mu), y_t,$ and $\mu$. 
+> </question>
+
+#### **Evaluation & Feedback**
+
+- **+** Modeled from effective field theory Higgs potential: realistic, advanced, not textbook.
+- **+** Clear target: symbolic equation for $v$.
+- **+** The multi-step reasoning is required: take derivative, set to zero, solve for $v$.
+- **+** Variables are all relevant, no redundancy.
+- **+** LaTeX formatting is correct; question well-phrased and concise.
+- **-** The phrase "implicitly or explicitly" is ambiguous; prefer to require an explicit symbolic condition or the most explicit form possible, leaving no ambiguity about what is expected.
+- **-** The phrase "find the condition on $h = v$ that satisfies..." is convoluted; better to say "derive a symbolic equation for $v$...".
+
+#### **How to Improve**
+- Unambiguously require an explicit symbolic equation for $v$ (even if only implicit).
+- Rephrase to be direct and concise, removing unnecessary words.
+
+---
+**Improved Version:**
+> <question>
+> For the effective Higgs potential
+> $$V_{\mathrm{eff}}(h) = -\frac{1}{2} m^2(\mu) h^2 + \frac{\lambda(\mu)}{4} h^4 + \frac{3}{64\pi^2} y_t^4 h^4 \ln \left( \frac{y_t^2 h^2}{\mu^2} \right),$$
+> where $h$ is real, $y_t$ is the top Yukawa coupling, and $m^2(\mu), \lambda(\mu)$ are running parameters, derive a symbolic equation satisfied by the vacuum expectation value $v$ that minimizes $V_{\mathrm{eff}}(h)$. Express the result in terms of $m^2(\mu)$, $\lambda(\mu)$, $y_t$, and $\mu$.
+> </question>
+
+---
+
+### **Question 3**
+> <question>
+> The Little Hierarchy Problem concerns the stability of the Higgs mass under radiative corrections given multiple mass scales. Consider a new physics scale $M \gg m_H$ that induces a threshold correction to the Higgs mass squared at scale $\mu \approx M$:  
+> $$\delta m_H^2 \sim \frac{g^2}{16\pi^2} M^2,$$  
+> with $g$ a dimensionless coupling. Assuming the renormalization group evolution of $m_H^2$ between scales $M$ and the electroweak scale $v$ is dominated by Standard Model beta functions and can be approximated as  
+> $$m_H^2(v) \approx m_H^2(M) - \frac{3 y_t^2}{8 \pi^2} m_H^2(M) \ln\left(\frac{M}{v}\right),$$  
+> derive an explicit expression for the upper bound on $M$ such that the relative correction to $m_H^2(v)$ does not exceed a fixed fine-tuning parameter $\Delta$, i.e.,  
+> $$\left|\frac{\delta m_H^2}{m_H^2(v)}\right| \leq \Delta.$$  
+> Express $M$ in terms of $g, y_t, v, m_H$, and $\Delta$.
+> </question>
+
+#### **Evaluation & Feedback**
+
+- **+** Models a physical BSM scenario.
+- **+** Targets a symbolic equation for the upper bound on $M$ in terms of specified variables.
+- **+** Requires multi-step reasoning (threshold correction, RG running, algebraic manipulation).
+- **-** The correction $m_H^2(v) \approx m_H^2(M) - \ldots$ produces a dependence on $m_H^2(M)$, which may not be uniquely determined in terms of $m_H$ (physical mass at $v$), possibly leading to ambiguity in the solution.
+- **+** Variables are all relevant and not redundant.
+- **+** LaTeX is correct.
+- **-** "Derive an explicit expression..."—clarify exactly which $m_H$ (is it $m_H(v)$, physical mass?) and that all quantities requested are symbolic.
+- **-** Problem could admit more than one rearrangement if $m_H^2(v)$ is not strictly determined; better to state that $m_H(v)$ is the physical pole mass or make $m_H^2(v)$ explicit.
+
+#### **How to Improve**
+- State explicitly that $m_H(v)$ is the physical Higgs mass, and that $m_H^2(v)$ should be used to express the bound.
+- Require a symbolic formula for the maximal $M$ in terms of $g, y_t, v, m_H, \Delta$.
+
+---
+**Improved Version:**
+> <question>
+> A new physics threshold at scale $M \gg v$ induces a correction to the Higgs mass parameter
+> $$\delta m_H^2 = \frac{g^2}{16\pi^2} M^2,$$
+> and, between scales $M$ and $v$, the Higgs mass squared evolves as
+> $$m_H^2(v) \approx m_H^2(M) - \frac{3 y_t^2}{8 \pi^2} m_H^2(M) \ln\left(\frac{M}{v}\right).$$
+> Find an explicit symbolic upper bound on $M$ such that
+> $$\left| \frac{\delta m_H^2}{m_H^2(v)} \right| \leq \Delta,$$
+> where $m_H^2(v)$ is the physical Higgs mass squared at the electroweak scale. Express $M$ in terms of $g$, $y_t$, $v$, $m_H$ (the physical Higgs mass), and $\Delta$.
+> </question>
+
+---
+
+### **Question 4**
+> <question>
+> In a Wilsonian effective approach, the Higgs field self-energy correction due to a heavy scalar $S$ of mass $M_S$ coupled via interaction term  
+> $$\mathcal{L}_{\mathrm{int}} = -\lambda_{HS} |H|^2 S^2,$$  
+> where $H$ is the Higgs doublet, induces a correction to the Higgs mass parameter  
+> $$\delta m_H^2 = \frac{\lambda_{HS}}{16\pi^2} \Lambda^2 \Big(1 - \frac{M_S^2}{\Lambda^2} \ln\frac{\Lambda^2 + M_S^2}{M_S^2}\Big).$$  
+> Derive the limiting form of $\delta m_H^2$ for $\Lambda \gg M_S$ and for $\Lambda \to M_S$ and provide a closed-form symbolic expression for $\delta m_H^2$ in each limit.
+> </question>
+
+#### **Evaluation & Feedback**
+
+- **+** Specific, nonstandard quantum field theory scenario.
+- **-** Asks for "the limiting form...for $\Lambda \gg M_S$ and for $\Lambda \to M_S$ and provide closed-form...in each limit." This constitutes a two-part question, conflicting with Guideline 11.
+- **+** Multi-step: requires expansions and limiting algebra.
+- **-** Expects two answers (one per limiting case), violating the requirement of a single solution.
+- **+** LaTeX and markdown are correct.
+- **+** All variables/quantities are relevant, no redundancy.
+- **-** Could be reframed to focus on one limit to satisfy guidelines.
+
+#### **How to Improve**
+- Ask for the symbolic limiting form in only one limit to guarantee a single answer; or request a symbolic formula for a given hierarchy of scales.
+- If necessary, split into two separate questions.
+
+---
+**Improved Version (one limit, e.g., $\Lambda \gg M_S$):**
+> <question>
+> In a Wilsonian approach, a heavy scalar $S$ of mass $M_S$ coupled to the Higgs doublet $H$ via the interaction
+> $$\mathcal{L}_{\mathrm{int}} = -\lambda_{HS} |H|^2 S^2$$
+> induces the correction
+> $$\delta m_H^2 = \frac{\lambda_{HS}}{16\pi^2} \Lambda^2 \left(1 - \frac{M_S^2}{\Lambda^2} \ln\frac{\Lambda^2 + M_S^2}{M_S^2} \right).$$
+> Derive the closed-form symbolic expression for $\delta m_H^2$ in the limit $\Lambda \gg M_S$, expressing your answer in terms of $\lambda_{HS}$, $\Lambda$, and $M_S$.
+> </question>
+
+---
+
+### **Question 5**
+> <question>
+> The Higgs vacuum expectation value (VEV) $v$ is determined by minimizing the Higgs potential with tree-level mass parameter $\mu_h^2$ and quartic coupling $\lambda$:  
+> $$V(H) = -\mu_h^2 |H|^2 + \lambda |H|^4.$$  
+> Given the physical Higgs mass $m_h$ satisfies  
+> $$m_h^2 = 2 \lambda v^2,$$  
+> and allowing for threshold corrections $\Delta \mu_h^2$ from heavy states at scale $M \gg v$ such that  
+> $$\mu_h^2 = \mu_0^2 + \Delta \mu_h^2,$$  
+> with  
+> $$\Delta \mu_h^2 = \frac{C}{16\pi^2} M^2,$$  
+> where $C$ is a dimensionless constant, express the sensitivity measure  
+> $$S = \left| \frac{\partial \ln v^2}{\partial \ln M^2} \right|$$  
+> in terms of $C, \mu_0^2, M^2,$ and $v^2$. Provide an explicit symbolic formula for $S$ assuming $\mu_0^2$ is tuned to reproduce the physical $v^2$.
+> </question>
+
+#### **Evaluation & Feedback**
+
+- **+** Realistic scenario, not from a standard textbook problem.
+- **+** Asks for a single, unique symbolic expression, $S$.
+- **+** Multi-step reasoning (potential minimization, sensitivity calculation, chain rule).
+- **+** All variables involved are relevant and necessary.
+- **+** Formulae are rendered in proper markdown-LaTeX.
+- **-** The last sentence could be made more concise (just ask for the symbolic expression).
+- **-** Possible redundancy—do not need to state "provide an explicit formula..." since this is implicit in "express $S$ in terms of ...".
+- **+** Phrasing is rigorous and concise.
+- **+** No additional assumptions required.
+
+#### **How to Improve**
+- Eliminate redundancy; merge last sentence for conciseness and directness.
+
+---
+**Improved Version:**
+> <question>
+> The Higgs vacuum expectation value $v$ minimizes the potential
+> $$V(H) = -\mu_h^2 |H|^2 + \lambda |H|^4,$$
+> where $m_h^2 = 2 \lambda v^2$ is the physical Higgs mass squared, and $\mu_h^2 = \mu_0^2 + \frac{C}{16\pi^2} M^2$ with $C$ dimensionless and $M \gg v$. Assuming $\mu_0^2$ is chosen such that $v$ reproduces the observed $m_h$, derive a symbolic formula for the sensitivity measure
+> $$S = \left| \frac{\partial \ln v^2}{\partial \ln M^2} \right|$$
+> in terms of $C$, $\mu_0^2$, $M^2$, and $v^2$.
+> </question>
+
+---
+
+## **Summary Table**
+
+| Q# | Issue(s)                    | Actionable Improvements         |
+|----|-----------------------------|---------------------------------|
+| 1  | Discussion requested        | Remove, require symbolic only   |
+| 2  | Ambiguous "explicit/implicit" | Request explicit symbolic equation for $v$ |
+| 3  | $m_H^2(v)$ could be ambiguous  | Specify in terms of physical mass, clarify |
+| 4  | Multiple parts (limits)     | Focus on a single limit, make unipartite  |
+| 5  | Redundant phrasing          | Merge/focus, concise instruction         |
+
+---
+
+**General Notes:**  
+- All questions use correct markdown-LaTeX and are wrapped in <question>...</question> tags.
+- The physical scenarios are advanced, unique, and require multi-step, nontrivial reasoning.
+- The primary improvements needed are to enforce single-answer format, remove ambiguity, and ensure concise instructions.
+
+**Final actionable advice:**  
+- **Always avoid multi-part requests; each question must have a single, unambiguous symbolic answer.**
+- **Be specific about assumptions and variable definitions to prevent alternative interpretations.**
+- **Phrase instructions directly: “Express $X$ symbolically in terms of [variables],” without additional narrative or requests for discussion.**
+=== Turn 1: Author refines questions ===
+<question>
+Consider a scalar field $\phi$ in the Standard Model with a Wilsonian effective Lagrangian valid up to cutoff scale $\Lambda$, where quantum corrections induce a mass term  
+$$m_H^2(\Lambda) = m_0^2 + \frac{\kappa}{16\pi^2}\, \Lambda^2,$$  
+with $\kappa > 0$. If the bare mass parameter $m_0^2$ is chosen such that the physical Higgs mass squared at the electroweak scale $\mu \ll \Lambda$ is fixed to $m_H^2(\mu)$, derive a symbolic expression for the fine-tuning measure  
+$$\Delta = \left| \frac{m_H^2(\Lambda) - m_H^2(\mu)}{m_H^2(\mu)} \right|$$  
+in terms of $\Lambda$, $\kappa$, and $m_H(\mu)$.
+</question>
+
+<question>
+For the effective one-loop corrected Higgs potential at renormalization scale $\mu$:  
+$$V_{\mathrm{eff}}(h) = -\frac{1}{2} m^2(\mu) h^2 + \frac{\lambda(\mu)}{4} h^4 + \frac{3}{64\pi^2} y_t^4 h^4 \ln \left( \frac{y_t^2 h^2}{\mu^2} \right),$$  
+where $h$ is the real Higgs field, $y_t$ the top Yukawa coupling, and $m^2(\mu), \lambda(\mu)$ are running parameters, derive a symbolic equation satisfied by the vacuum expectation value $v$ that minimizes $V_{\mathrm{eff}}(h)$. Express the equation explicitly in terms of $v$, $m^2(\mu)$, $\lambda(\mu)$, $y_t$, and $\mu$.
+</question>
+
+<question>
+A new physics threshold at scale $M \gg v$ induces a correction to the Higgs mass parameter  
+$$\delta m_H^2 = \frac{g^2}{16\pi^2} M^2,$$  
+with $g$ a dimensionless coupling. Between scales $M$ and the electroweak scale $v$, the Higgs mass squared evolves approximately as  
+$$m_H^2(v) \approx m_H^2(M) - \frac{3 y_t^2}{8 \pi^2} m_H^2(M) \ln\left(\frac{M}{v}\right),$$  
+where $m_H^2(v)$ is the physical Higgs mass squared. Derive an explicit symbolic upper bound for $M$ such that the relative correction satisfies  
+$$\left| \frac{\delta m_H^2}{m_H^2(v)} \right| \leq \Delta,$$  
+expressing $M$ in terms of $g$, $y_t$, $v$, $m_H$ (the physical Higgs mass), and $\Delta$.
+</question>
+
+<question>
+In a Wilsonian effective framework, a heavy scalar field $S$ of mass $M_S$ coupled to the Higgs doublet $H$ via  
+$$\mathcal{L}_{\mathrm{int}} = -\lambda_{HS} |H|^2 S^2,$$  
+induces a correction to the Higgs mass parameter given by  
+$$\delta m_H^2 = \frac{\lambda_{HS}}{16\pi^2} \Lambda^2 \left(1 - \frac{M_S^2}{\Lambda^2} \ln\frac{\Lambda^2 + M_S^2}{M_S^2}\right).$$  
+Derive the simplified closed-form expression for $\delta m_H^2$ in the limit $\Lambda \gg M_S$, expressed symbolically in terms of $\lambda_{HS}$, $\Lambda$, and $M_S$.
+</question>
+
+<question>
+The Higgs vacuum expectation value $v$ minimizes the tree-level potential  
+$$V(H) = -\mu_h^2 |H|^2 + \lambda |H|^4,$$  
+with physical Higgs mass satisfying  
+$$m_h^2 = 2 \lambda v^2,$$  
+and the mass parameter corrected by threshold effects from heavy states at scale $M \gg v$ as  
+$$\mu_h^2 = \mu_0^2 + \frac{C}{16\pi^2} M^2,$$  
+where $C$ is dimensionless. Assuming $\mu_0^2$ is chosen such that the physical $v$ is reproduced, derive a symbolic expression for the sensitivity measure  
+$$S = \left| \frac{\partial \ln v^2}{\partial \ln M^2} \right|,$$  
+expressed in terms of $C$, $\mu_0^2$, $M^2$, and $v^2$.
+</question>
+=== Turn 1: Critic feedback ===
+Certainly! Here is a critique for each question, evaluated point-by-point, followed by general syntactic feedback and specific suggestions for improvement.
+
+---
+
+### Question 1
+
+**Strengths:**
+- Clearly models a physical scenario (Wilsonian EFT for SM Higgs).
+- The problem targets a specific, physically motivated solvable quantity (fine-tuning measure).
+- Correctly uses LaTeX and Markdown formatting and is enclosed within <question> tags.
+- Requires multi-step reasoning (relating cutoff effects to fine-tuning).
+- Variables used are relevant.
+- Expects a unique symbolic expression, not multiple answers.
+- Wording is concise and not colloquial.
+
+**Areas for Improvement:**
+- $m_H^2(\Lambda)$ and $m_H^2(\mu)$ are both "mass squared" at different scales, which could confuse if the distinction isn’t explicit. A note that $m_H^2(\mu)$ is fixed by experiment could help, but it’s not strictly necessary.
+- The phrase "chosen such that..." could be more direct: perhaps "Given that $m_0^2$ is chosen to fix..."
+- Units and notation for mass squared are standard.
+
+**Summary:**  
+Meets requirements. Marginal improvement: "Given that $m_0^2$ is fixed such that..." improves clarity.
+
+---
+
+### Question 2
+
+**Strengths:**
+- Well-posed, rooted in a realistic scenario (quantum corrections to Higgs potential).
+- Targets a single, unique equation: condition for minimum.
+- Requires multistep calculus (take derivative, set to zero).
+- Uses LaTeX/Markdown, variables are standard, question is concise.
+
+**Areas for Improvement:**
+- Specifies to "derive a symbolic equation"—could clarify that the user should "write an explicit equation satisfied by $v$ that minimizes $V_{\mathrm{eff}}$," which aids in interpretation.
+- All variables used are necessary, nothing superfluous.
+
+**Summary:**  
+Strong question. Consider minor clarifications ("write an explicit equation satisfied by $v$") for transparency.
+
+---
+
+### Question 3
+
+**Strengths:**
+- Models new physics threshold and RG running effect (well-posed scenario).
+- Solvable symbolic upper bound targeted, asks for explicit result for $M$.
+- Requires several steps: apply correction, solve inequality.
+- Well-formatted in Markdown/LaTeX.
+
+**Areas for Improvement:**
+- The phrase "explicit symbolic upper bound" is good, but could more directly say: "Express $M$ as a function of..." for maximum clarity.
+- The variable $m_H$ is used with implicit meaning as the mass at scale $v$; ensure this is unambiguous (e.g., clarify "$m_H$ is the physical Higgs mass at scale $v$").
+- Avoid use of "physical Higgs mass squared" and "$m_H$" in the same question without explicit setting; perhaps substitute one or clarify.
+
+**Summary:**  
+Minor clarity suggestions on variable definitions; otherwise meets rubric.
+
+---
+
+### Question 4
+
+**Strengths:**
+- Effective scenario (threshold effects; heavy scalar corrections to Higgs mass).
+- Clear task: derive limiting form.
+- All variables are necessary.
+- Requires physics and mathematical limit-taking.
+- Solution is unique, unambiguous, LaTeX is correct.
+
+**Areas for Improvement:**
+- Make it explicit that only $\Lambda \gg M_S$ limit is relevant; possibly add "to leading order in $M_S^2/\Lambda^2$".
+- Remove unneeded phrase "closed-form" (since it's a standard limiting expansion).
+- Could ask to “Simplify $\delta m_H^2$ to leading order in $M_S^2/\Lambda^2$…”.
+
+**Summary:**  
+Strong. Minor adjustment in phrasing, specify expansion variable.
+
+---
+
+### Question 5
+
+**Strengths:**
+- Scenario is realistic (Higgs VEV shift from heavy threshold).
+- Solvable symbolic sensitivity expression is well-defined.
+- Multi-step: relate mass parameter, VEV, sensitivity via calculus.
+- All variables necessary.
+- LaTeX/Markdown correct, concise tone.
+
+**Areas for Improvement:**
+- Variable overlap: $v, \mu_0^2$ may need explicit association to maintain clarity.
+- Could specify that $v$ is the tree-level minimum of the potential given the mass parameter.
+- Reword "Assuming $\mu_0^2$ is chosen such that..." to "Given that $\mu_0^2$ is fixed such that…", for directness.
+
+**Summary:**  
+Clear question, only minor refinement to phrasing needed.
+
+---
+
+## General Feedback on All Questions
+
+- **LaTeX Syntax:**  
+  All questions use valid LaTeX within Markdown and are properly wrapped in <question>...</question> tags.
+
+- **Single-solution Structure:**  
+  Each asks for a single symbolic expression—there are no ambiguities or multipart answers.
+
+- **Avoidance of Redundancy:**  
+  No extraneous details/variables.
+
+- **Originality/Complexity:**  
+  Each is an original, non-textbook exercise that demands multistep calculation/derivation.
+
+- **Rigor and Consistency:**  
+  Terminology is precise and standard; all notation is consistent.
+
+- **Self-contained and Assumption-free:**  
+  Each question presents all necessary data; no extraneous assumptions required for solution.
+
+---
+
+## **Actionable Suggestions**
+
+- For absolute clarity, introduce a brief definition for any non-standard symbols (especially if $m_H$, $m_H^2$, and $v$ are all used in one question).
+- Refine "chosen such that" → "fixed so that" (for directness and active phrasing).
+- Avoid phrases like "closed-form" unless specifically necessary; prefer "explicitly in terms of..." or "in the limit of..."
+- For limit processes, add “to leading order in $M_S^2/\Lambda^2$” to specify the expansion.
+- Where possible, say "derive", "express $X$ as a function of $Y$," or "write an explicit equation for $Z$" for maximal directness.
+
+---
+
+## **Final Summary (Sample Formulaic Example for Feedback)**
+
+> **Your questions meet nearly all rubric criteria: realistic scenario, single unique answer, rigorous standard notation, and multistep reasoning. Primary improvements: clarify any double usage of mass symbols ($m_H^2$ and $m_H$), directly state which variables are required as input/output, and use unambiguous, active phrasing. In limit-derivation exercises, specify terms to be neglected/retained. LaTeX syntax and tags are correct.**
+=== Turn 2: Author refines questions ===
+<question>
+Consider a scalar field \(\phi\) in the Standard Model with a Wilsonian effective Lagrangian valid up to cutoff scale \(\Lambda\), where quantum corrections induce a mass term  
+\[
+m_H^2(\Lambda) = m_0^2 + \frac{\kappa}{16\pi^2} \Lambda^2,
+\]  
+with \(\kappa > 0\). Given that the bare mass parameter \(m_0^2\) is fixed so that the physical Higgs mass squared at the electroweak scale \(\mu \ll \Lambda\) is \(m_H^2(\mu)\), derive a symbolic expression for the fine-tuning measure  
+\[
+\Delta = \left| \frac{m_H^2(\Lambda) - m_H^2(\mu)}{m_H^2(\mu)} \right|
+\]  
+in terms of \(\Lambda\), \(\kappa\), and \(m_H(\mu)\).
+</question>
+
+<question>
+For the one-loop effective Higgs potential at renormalization scale \(\mu\):  
+\[
+V_{\mathrm{eff}}(h) = -\frac{1}{2} m^2(\mu) h^2 + \frac{\lambda(\mu)}{4} h^4 + \frac{3}{64\pi^2} y_t^4 h^4 \ln \left( \frac{y_t^2 h^2}{\mu^2} \right),
+\]  
+where \(h\) is the real Higgs field, \(y_t\) the top Yukawa coupling, and \(m^2(\mu), \lambda(\mu)\) are running parameters, write an explicit equation satisfied by the vacuum expectation value \(v\) that minimizes \(V_{\mathrm{eff}}(h)\). Express the equation in terms of \(v\), \(m^2(\mu)\), \(\lambda(\mu)\), \(y_t\), and \(\mu\).
+</question>
+
+<question>
+A new physics threshold at scale \(M \gg v\) induces a correction to the Higgs mass parameter  
+\[
+\delta m_H^2 = \frac{g^2}{16\pi^2} M^2,
+\]  
+with \(g\) a dimensionless coupling. Between scales \(M\) and the electroweak scale \(v\), the Higgs mass squared evolves approximately as  
+\[
+m_H^2(v) \approx m_H^2(M) - \frac{3 y_t^2}{8 \pi^2} m_H^2(M) \ln\left(\frac{M}{v}\right),
+\]  
+where \(m_H^2(v)\) is the physical Higgs mass squared at scale \(v\). Assuming the relative correction satisfies  
+\[
+\left| \frac{\delta m_H^2}{m_H^2(v)} \right| \leq \Delta,
+\]  
+derive an explicit symbolic upper bound for \(M\) expressed in terms of \(g\), \(y_t\), \(v\), the physical Higgs mass \(m_H\) at scale \(v\), and \(\Delta\).
+</question>
+
+<question>
+In a Wilsonian effective framework, a heavy scalar field \(S\) of mass \(M_S\) coupled to the Higgs doublet \(H\) via  
+\[
+\mathcal{L}_{\mathrm{int}} = -\lambda_{HS} |H|^2 S^2,
+\]  
+induces a correction to the Higgs mass parameter given by  
+\[
+\delta m_H^2 = \frac{\lambda_{HS}}{16\pi^2} \Lambda^2 \left(1 - \frac{M_S^2}{\Lambda^2} \ln\frac{\Lambda^2 + M_S^2}{M_S^2}\right).
+\]  
+Derive the simplified expression for \(\delta m_H^2\) in the limit \(\Lambda \gg M_S\), keeping terms to leading order in the small parameter \(M_S^2/\Lambda^2\). Express your answer symbolically in terms of \(\lambda_{HS}\), \(\Lambda\), and \(M_S\).
+</question>
+
+<question>
+The Higgs vacuum expectation value \(v\) minimizes the tree-level potential  
+\[
+V(H) = -\mu_h^2 |H|^2 + \lambda |H|^4,
+\]  
+with the physical Higgs mass related to \(v\) as  
+\[
+m_h^2 = 2 \lambda v^2,
+\]  
+and the mass parameter corrected by threshold effects from heavy states at scale \(M \gg v\) as  
+\[
+\mu_h^2 = \mu_0^2 + \frac{C}{16\pi^2} M^2,
+\]  
+where \(C\) is dimensionless. Given that \(\mu_0^2\) is fixed so the physical \(v\) is reproduced, derive a symbolic expression for the sensitivity measure  
+\[
+S = \left| \frac{\partial \ln v^2}{\partial \ln M^2} \right|,
+\]  
+expressed in terms of \(C\), \(\mu_0^2\), \(M^2\), and \(v^2\).
+</question>
+=== Turn 2: Critic feedback ===
+Certainly! Here is a critique for each question, referencing your guidelines.
+
+---
+
+<question>
+Consider a scalar field $\phi$ in the Standard Model with a Wilsonian effective Lagrangian valid up to cutoff scale $\Lambda$, where quantum corrections induce a mass term  
+$$
+m_H^2(\Lambda) = m_0^2 + \frac{\kappa}{16\pi^2} \Lambda^2,
+$$  
+with $\kappa > 0$. Given that the bare mass parameter $m_0^2$ is fixed so that the physical Higgs mass squared at the electroweak scale $\mu \ll \Lambda$ is $m_H^2(\mu)$, derive a symbolic expression for the fine-tuning measure  
+$$
+\Delta = \left| \frac{m_H^2(\Lambda) - m_H^2(\mu)}{m_H^2(\mu)} \right|
+$$  
+in terms of $\Lambda$, $\kappa$, and $m_H(\mu)$.
+</question>
+
+**Feedback:**
+- ✅ Models an effective field theory scenario.
+- ✅ Targets a well-defined symbolic expression.
+- ✅ All equations are correctly formatted in Markdown LaTeX.
+- ✅ Involves a multistep reasoning: relating bare/renormalized mass, evaluating the fine-tuning measure.
+- ✅ No extraneous variables; focuses only on necessary parameters.
+- ✅ Not a standard textbook problem; precise and original.
+- ✅ Single unambiguous symbolic solution expected.
+- ✅ Rigorous, non-colloquial phrasing; consistent units.
+- ✅ No ambiguities or hidden assumptions.
+- ✅ Only one part to solve.
+**No major improvements needed.**
+
+---
+
+<question>
+For the one-loop effective Higgs potential at renormalization scale $\mu$:  
+$$
+V_{\mathrm{eff}}(h) = -\frac{1}{2} m^2(\mu) h^2 + \frac{\lambda(\mu)}{4} h^4 + \frac{3}{64\pi^2} y_t^4 h^4 \ln \left( \frac{y_t^2 h^2}{\mu^2} \right),
+$$  
+where $h$ is the real Higgs field, $y_t$ the top Yukawa coupling, and $m^2(\mu), \lambda(\mu)$ are running parameters, write an explicit equation satisfied by the vacuum expectation value $v$ that minimizes $V_{\mathrm{eff}}(h)$. Express the equation in terms of $v$, $m^2(\mu)$, $\lambda(\mu)$, $y_t$, and $\mu$.
+</question>
+
+**Feedback:**
+- ✅ Sets up a realistic quantum field theory scenario.
+- ✅ Asks for a symbolic equation for $v$.
+- ✅ All math in correct Markdown LaTeX format.
+- ✅ Requires student to compute first derivative, set to zero, collect terms.
+- ✅ Uses only relevant variables and parameters.
+- ✅ Unique and original, not a textbook copy.
+- ✅ Only one symbolic equation is expected.
+- ✅ Language is precise, units clear, terminology appropriate.
+- ✅ Only one step/output expected.
+**No substantive changes required.**
+
+---
+
+<question>
+A new physics threshold at scale $M \gg v$ induces a correction to the Higgs mass parameter  
+$$
+\delta m_H^2 = \frac{g^2}{16\pi^2} M^2,
+$$  
+with $g$ a dimensionless coupling. Between scales $M$ and the electroweak scale $v$, the Higgs mass squared evolves approximately as  
+$$
+m_H^2(v) \approx m_H^2(M) - \frac{3 y_t^2}{8 \pi^2} m_H^2(M) \ln\left(\frac{M}{v}\right),
+$$  
+where $m_H^2(v)$ is the physical Higgs mass squared at scale $v$. Assuming the relative correction satisfies  
+$$
+\left| \frac{\delta m_H^2}{m_H^2(v)} \right| \leq \Delta,
+$$  
+derive an explicit symbolic upper bound for $M$ expressed in terms of $g$, $y_t$, $v$, the physical Higgs mass $m_H$ at scale $v$, and $\Delta$.
+</question>
+
+**Feedback:**
+- ✅ Scenario is realistic and well-motivated.
+- ✅ Asks for an explicit symbolic upper bound on $M$.
+- ✅ Markdown LaTeX syntax and usage is correct.
+- ✅ Multi-step reasoning: RG evolution, apply threshold correction, rearrange inequality.
+- ✅ Does not introduce extraneous variables.
+- ✅ Not a standard exercise, but an original constraint derivation.
+- ✅ Only one unique symbolic solution expected.
+- ✅ Phrasing is rigorous, precise, and consistent in units.
+- ✅ All assumptions (e.g., RG running, form of correction) are explicit and proven.
+- ✅ Single-part question.
+**No changes needed.**
+
+---
+
+<question>
+In a Wilsonian effective framework, a heavy scalar field $S$ of mass $M_S$ coupled to the Higgs doublet $H$ via  
+$$
+\mathcal{L}_{\mathrm{int}} = -\lambda_{HS} |H|^2 S^2,
+$$  
+induces a correction to the Higgs mass parameter given by  
+$$
+\delta m_H^2 = \frac{\lambda_{HS}}{16\pi^2} \Lambda^2 \left(1 - \frac{M_S^2}{\Lambda^2} \ln\frac{\Lambda^2 + M_S^2}{M_S^2}\right).
+$$  
+Derive the simplified expression for $\delta m_H^2$ in the limit $\Lambda \gg M_S$, keeping terms to leading order in the small parameter $M_S^2/\Lambda^2$. Express your answer symbolically in terms of $\lambda_{HS}$, $\Lambda$, and $M_S$.
+</question>
+
+**Feedback:**
+- ✅ Starts from a realistic scenario (Wilsonian EFT, threshold correction).
+- ✅ Asks for a single symbolic simplified expression in a specific limit.
+- ✅ Math formatted in correct Markdown LaTeX.
+- ✅ To solve, must expand logarithm and collect leading order terms.
+- ✅ Only necessary variables are present, no extraneous information.
+- ✅ Not a standard textbook problem, unique formulation.
+- ✅ Single unambiguous solution.
+- ✅ Language and notation rigorous.
+- ✅ All assumptions made explicit.
+**No changes necessary.**
+
+---
+
+<question>
+The Higgs vacuum expectation value $v$ minimizes the tree-level potential  
+$$
+V(H) = -\mu_h^2 |H|^2 + \lambda |H|^4,
+$$  
+with the physical Higgs mass related to $v$ as  
+$$
+m_h^2 = 2 \lambda v^2,
+$$  
+and the mass parameter corrected by threshold effects from heavy states at scale $M \gg v$ as  
+$$
+\mu_h^2 = \mu_0^2 + \frac{C}{16\pi^2} M^2,
+$$  
+where $C$ is dimensionless. Given that $\mu_0^2$ is fixed so the physical $v$ is reproduced, derive a symbolic expression for the sensitivity measure  
+$$
+S = \left| \frac{\partial \ln v^2}{\partial \ln M^2} \right|,
+$$  
+expressed in terms of $C$, $\mu_0^2$, $M^2$, and $v^2$.
+</question>
+
+**Feedback:**
+- ✅ Setup is physically motivated, involving threshold corrections in the Higgs sector.
+- ✅ Asks for a clear, symbolic sensitivity measure.
+- ✅ Markdown LaTeX is correct and well-formatted.
+- ✅ Involves multi-step reasoning: implicit differentiation, sensitivity with respect to parameter.
+- ✅ Only minimal, needed variables presented.
+- ✅ Not standard textbook; the question is original.
+- ✅ Single symbolic answer expected.
+- ✅ Rigorous and precise language and notation.
+- ✅ All assumption logic is explicit; need not assume anything unstated.
+- ✅ Only one part; one solution.
+**No changes necessary.**
+
+---
+
+**General recommendations:**
+
+- All questions have clear and correct Markdown LaTeX.
+- Each question adheres closely to the guidelines: realistic scenario, clear symbolic target, multi-step reasoning, no redundant variables, no ambiguity, one unambiguous answer, rigorous and concise language, and one part per question.
+- Minor: For absolute maximal clarity, always specify if e.g. $m_H(\mu)$ and $m_H^2(\mu)$ are interchangeable (but this is a trivial notation issue and should not confuse at this technical level).
+
+**Overall: Excellent quality, all items substantially meet or exceed your stated guidelines.**
+=== Turn 3: Author refines questions ===
+<question>
+Consider a scalar field \(\phi\) in the Standard Model with a Wilsonian effective Lagrangian valid up to cutoff scale \(\Lambda\), where quantum corrections induce a mass term  
+\[
+m_H^2(\Lambda) = m_0^2 + \frac{\kappa}{16\pi^2} \Lambda^2,
+\]  
+with \(\kappa > 0\). Given that the bare mass parameter \(m_0^2\) is fixed such that the physical Higgs mass squared at the electroweak scale \(\mu \ll \Lambda\) is \(m_H^2(\mu)\), derive a symbolic expression for the fine-tuning measure  
+\[
+\Delta = \left| \frac{m_H^2(\Lambda) - m_H^2(\mu)}{m_H^2(\mu)} \right|,
+\]  
+expressed in terms of \(\Lambda\), \(\kappa\), and \(m_H(\mu)\).
+</question>
+
+<question>
+For the one-loop effective Higgs potential at renormalization scale \(\mu\):  
+\[
+V_{\mathrm{eff}}(h) = -\frac{1}{2} m^2(\mu) h^2 + \frac{\lambda(\mu)}{4} h^4 + \frac{3}{64\pi^2} y_t^4 h^4 \ln \left( \frac{y_t^2 h^2}{\mu^2} \right),
+\]  
+where \(h\) is the real Higgs field, \(y_t\) the top Yukawa coupling, and \(m^2(\mu), \lambda(\mu)\) are running parameters, write an explicit equation that the vacuum expectation value \(v\) satisfies to minimize \(V_{\mathrm{eff}}(h)\). Express the equation in terms of \(v\), \(m^2(\mu)\), \(\lambda(\mu)\), \(y_t\), and \(\mu\).
+</question>
+
+<question>
+A new physics threshold at scale \(M \gg v\) induces a correction to the Higgs mass parameter  
+\[
+\delta m_H^2 = \frac{g^2}{16\pi^2} M^2,
+\]  
+with \(g\) a dimensionless coupling. Between scales \(M\) and the electroweak scale \(v\), the Higgs mass squared evolves approximately as  
+\[
+m_H^2(v) \approx m_H^2(M) - \frac{3 y_t^2}{8 \pi^2} m_H^2(M) \ln\left(\frac{M}{v}\right),
+\]  
+where \(m_H^2(v)\) is the physical Higgs mass squared at scale \(v\). Assuming the relative correction satisfies  
+\[
+\left| \frac{\delta m_H^2}{m_H^2(v)} \right| \leq \Delta,
+\]  
+derive an explicit symbolic upper bound on \(M\) expressed in terms of \(g\), \(y_t\), \(v\), the physical Higgs mass \(m_H(v)\), and \(\Delta\).
+</question>
+
+<question>
+In a Wilsonian effective framework, a heavy scalar field \(S\) of mass \(M_S\) coupled to the Higgs doublet \(H\) via  
+\[
+\mathcal{L}_{\mathrm{int}} = -\lambda_{HS} |H|^2 S^2,
+\]  
+induces a correction to the Higgs mass parameter given by  
+\[
+\delta m_H^2 = \frac{\lambda_{HS}}{16\pi^2} \Lambda^2 \left(1 - \frac{M_S^2}{\Lambda^2} \ln\frac{\Lambda^2 + M_S^2}{M_S^2}\right).
+\]  
+Derive the simplified expression for \(\delta m_H^2\) in the limit \(\Lambda \gg M_S\), keeping terms to leading order in the small parameter \(\frac{M_S^2}{\Lambda^2}\). Express your answer symbolically in terms of \(\lambda_{HS}\), \(\Lambda\), and \(M_S\).
+</question>
+
+<question>
+The Higgs vacuum expectation value \(v\) minimizes the tree-level potential  
+\[
+V(H) = -\mu_h^2 |H|^2 + \lambda |H|^4,
+\]  
+with the physical Higgs mass related to \(v\) as  
+\[
+m_h^2 = 2 \lambda v^2,
+\]  
+and the mass parameter corrected by threshold effects from heavy states at scale \(M \gg v\) as  
+\[
+\mu_h^2 = \mu_0^2 + \frac{C}{16\pi^2} M^2,
+\]  
+where \(C\) is a dimensionless constant. Given that \(\mu_0^2\) is fixed such that the physical \(v\) is reproduced, derive a symbolic expression for the sensitivity measure  
+\[
+S = \left| \frac{\partial \ln v^2}{\partial \ln M^2} \right|,
+\]  
+expressed in terms of \(C\), \(\mu_0^2\), \(M^2\), and \(v^2\).
+</question>
+=== Final questions generated ===

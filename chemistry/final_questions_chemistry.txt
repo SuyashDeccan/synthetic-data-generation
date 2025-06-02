@@ -1,0 +1,314 @@
+Topics: ['Catalysis in organic synthesis', 'Iron-catalyzed hydroamidation']
+Key Concepts: ['Markovnikov and anti-Markovnikov products', 'Alkyl radical amidation reagent design', 'C–N cross coupling and hydroamination', 'Functional group tolerance in reactions']
+
+Below is a self‐contained, scenario-driven problem set.  All kinetic assumptions are explicit, IUPAC names are required, unnecessary details have been removed, and units are consistent.  Report all rate constants and activation energies to three significant figures; report ratios and TOF as directed.
+
+--------------------------------------------------------------------------------------------------
+A new iron‐catalyzed hydroamidation protocol has been developed and thoroughly characterized.  In what follows, use R = 8.314 J mol⁻¹ K⁻¹ and the Arrhenius equation in the form  
+  k = A e^(–Eₐ/RT).  
+
+1. Rate constant and mechanistic implication  
+   In toluene at 80 °C, the measured rate law for the reaction of 1-hexene with benzamide catalyzed by Fe(acac)₃ is  
+     rate = k [1-hexene]¹[benzamide]¹[Fe(acac)₃]^0.5.  
+   An initial-rate experiment (conversion ≤ 5 %) gives  
+     rate₀ = 3.00×10⁻⁴ M min⁻¹  
+     [1-hexene]₀ = 0.500 M  
+     [benzamide]₀ = 0.750 M  
+     [Fe(acac)₃]₀ = 0.0100 M.  
+   a) Calculate the rate constant k in units of M⁻¹.⁵ min⁻¹.  
+   b) The half-order dependence on [Fe(acac)₃] suggests a pre-equilibrium in which a dimeric iron species converts to the active monomer.  Write a balanced pre-equilibrium expression that is consistent with the observed 0.5 order in iron.
+
+2. Regioselectivity from ΔΔG‡  
+   In a related Fe/bisphosphine-catalyzed hydroamidation of 4-methylstyrene at 298 K, the Markovnikov transition state lies 3.101 kJ mol⁻¹ lower in free energy than the anti-Markovnikov transition state.  Define  
+     ΔΔG‡ = G‡(anti) – G‡(Mark) = +3.101 kJ mol⁻¹,  
+   and note that the product ratio equals the ratio of rate constants, K = k_Mark/k_anti = e^(–ΔΔG‡/RT).  Calculate the product ratio  
+     [Markovnikov] : [anti-Markovnikov]  
+   in the form a : 1 and report to two significant figures.
+
+3. Turnover number and frequency  
+   In a C–N cross-coupling of 4-bromoanisole (1.00 mmol) with cyclohexylamine (1.20 mmol) catalyzed by an Fe–NHC complex (0.00500 mmol), the reaction mixture is stirred for 6.00 h and 0.92 mmol of N-cyclohexyl-4-methoxyaniline is formed.  
+   a) Identify the limiting reagent and calculate the turnover number (TON = moles product per mole catalyst).  
+   b) Calculate the turnover frequency (TOF = TON / time) in h⁻¹.  Report TOF to two significant figures.
+
+4. IUPAC name of the anti-Markovnikov product  
+   Under anti-Markovnikov conditions, 1-hexene undergoes radical hydroamidation with acetamide such that the amide N adds to C-1 of the former double bond and H to C-2.  Draw the single amide product and provide its preferred IUPAC name.
+
+5. Activation energy and rate prediction  
+   The observed first-order rate constants for iron-catalyzed hydroamidation of 1-hexene are  
+     k₁ = 1.20×10⁻³ s⁻¹ at T₁ = 333 K  
+     k₂ = 2.40×10⁻³ s⁻¹ at T₂ = 353 K.  
+   a) Calculate the activation energy Eₐ in kJ mol⁻¹ using  
+     Eₐ = R ln(k₂/k₁) / (1/T₁ – 1/T₂).  
+   b) Using your Eₐ and assuming the same pre-exponential factor, predict k₃ at T₃ = 343 K.  Report k₃ in s⁻¹ to three significant figures.
+
+========================================
+
+Topics: ['Carbohydrate Synthesis', 'Computational Chemistry']
+Key Concepts: ['S1 vs SN2 Glycosylation Mechanisms', 'Gas-Phase vs Solution-Phase Structures', 'Temperature and Solvent Effects on Reaction Mechanism']
+
+Below is a refined set of six self-contained problems.  Each asks for exactly one numerical answer; energies are in kJ mol⁻¹ (unless noted), temperatures in K.  Use  
+ R = 8.314×10⁻³ kJ mol⁻¹ K⁻¹  
+ kB = 1.381×10⁻²³ J K⁻¹  
+ h  = 6.626×10⁻³⁴ J s  
+and assume transition-state theory with identical pre-exponential factors when comparing rate constants.  Give each answer with the precision shown.
+
+1. Kinetic product ratio  
+An α-glycosyl donor reacts with ethanol under BF₃·OEt₂ catalysis at 298 K.  The activation free energies are ΔG‡₍α₎ = 65.2 kJ mol⁻¹ and ΔG‡₍β₎ = 68.9 kJ mol⁻¹.  Calculate the dimensionless ratio [α]/[β] = kα/kβ at 298 K.  Report to two significant figures.
+
+2. Electronic solvation free energy  
+A DFT calculation gives electronic energies for methyl α-D-glucopyranoside of Egas = –362.314 hartree and Esoln = –362.503 hartree.  (1 hartree = 2625.5 kJ mol⁻¹.)  Calculate the electronic component of the solvation free energy ΔGsolv = Esoln – Egas in kJ mol⁻¹.  Report to three decimal places.
+
+3. Solvation equilibrium constant  
+Given an electronic solvation free energy ΔGsolv = –496.260 kJ mol⁻¹ at 298 K, calculate the dimensionless log₁₀K for solvation using ΔGsolv = –RT ln K.  Report to two decimal places.
+
+4. Temperature for equal activation free energies  
+Two competing methanolysis pathways have  
+ SN1: ΔH‡₁ = 110 kJ mol⁻¹, ΔS‡₁ = –10 J mol⁻¹ K⁻¹  
+ SN2: ΔH‡₂ =  95 kJ mol⁻¹, ΔS‡₂ = –80 J mol⁻¹ K⁻¹  
+At what temperature T do ΔG‡₁(T) = ΔG‡₂(T)?  (Recall ΔG‡ = ΔH‡ – T ΔS‡; convert ΔS‡ to kJ mol⁻¹ K⁻¹.)  Report T to the nearest kelvin.
+
+5. Boltzmann population of the lowest conformer  
+In water at 298 K three conformers of methyl β-D-glucopyranoside have relative Gibbs energies ΔG° = 0.0, 3.2 and 5.8 kJ mol⁻¹ and degeneracies g = 2, 1 and 3, respectively.  Calculate the Boltzmann population (%) of the lowest-energy conformer (ΔG° = 0.0).  Report to one decimal place.
+
+6. Activation free energy from the Eyring equation  
+In CH₂Cl₂ at 273 K a glycosylation has first-order rate constant k = 1.2×10⁻³ s⁻¹.  Using k = (kB T/h) exp(–ΔG‡/(R T)), calculate the activation free energy ΔG‡ in kJ mol⁻¹.  Report to one decimal place.
+
+========================================
+
+Topics: ['Cryogenic Infrared Spectroscopy', 'Computational Chemistry', 'Glycosyl Cation Structure']
+Key Concepts: ['Charge Delocalization in Glycosyl Cations', 'Gas-Phase vs Solution-Phase Structures', 'Temperature and Solvent Effects on Reaction Mechanism', 'Covalent and Cationic Intermediates']
+
+Use R = 8.314 J mol⁻¹ K⁻¹ throughout.  Each question has a single numerical answer; show your workings elsewhere.
+
+1. Cryogenic IR charge‐delocalisation  
+In a reference glycosyl cation at 10 K the C1–O stretch occurs at ν_ref(cation) = 1020 cm⁻¹, while in the neutral sugar it occurs at ν_ref(neutral) = 1080 cm⁻¹.  The corresponding bond‐charge fraction is ρ_ref = 0.25, and Δν_ref = ν_ref(neutral) – ν_ref(cation).  Assuming Δν = k ρ for any glycosyl cation, calculate ρ for a 2-deoxy-glucosyl cation at 10 K whose C1–O stretch appears at ν(cation) = 1035 cm⁻¹ (neutral at 1080 cm⁻¹).  
+Answer: ρ = __________ (dimensionless)
+
+2. Boltzmann population ratio  
+Two gas‐phase conformers A and B of a glycosyl oxocarbenium ion have degeneracies g_A = g_B = 1 and relative electronic energies E_A = 0 kJ mol⁻¹, E_B = 3.0 kJ mol⁻¹.  Assuming Boltzmann statistics at T = 298 K, calculate the population ratio P_A / P_B.  
+Answer: P_A / P_B = __________ (dimensionless)
+
+3. Dielectric–frequency interpolation  
+Assuming a linear dependence of the C=O stretch frequency ν on the solvent dielectric constant ε, ν = 1742 cm⁻¹ in n-hexane (ε = 1.89) and ν = 1770 cm⁻¹ in acetonitrile (ε = 36.6), both at 298 K.  In an unknown solvent under the same conditions, ν = 1754 cm⁻¹.  Determine ε for the unknown solvent (report to three significant figures).  
+Answer: ε = __________
+
+4. Van ’t Hoff enthalpy from IR intensities  
+For the equilibrium X ⇌ Y, the equilibrium constant K = [X]/[Y] is given by K = I_X/I_Y (equal molar absorptivities).  At T₁ = 150 K, I_X = 30 and I_Y = 270; at T₂ = 300 K, I_X = 250 and I_Y = 50.  Using  
+ ln(K₂/K₁) = –ΔH/R (1/T₂ – 1/T₁),  
+calculate ΔH for the reaction Y → X in kJ mol⁻¹.  
+Answer: ΔH = __________ kJ mol⁻¹
+
+5. Arrhenius‐derived rate ratio  
+At 298 K, the SN1 pathway has A₁ = 5.0×10¹² s⁻¹ and E_a₁ = 60.0 kJ mol⁻¹; the SN2 pathway has A₂ = 1.0×10¹¹ s⁻¹ and E_a₂ = 45.0 kJ mol⁻¹.  Using k = A exp(–E_a/RT), compute k_SN1 / k_SN2.  
+Answer: k_SN1 / k_SN2 = __________ (dimensionless)
+
+========================================
+
+Topics: ['Computational Chemistry', 'Glycosyl Cation Structure']
+Key Concepts: ['4,6-O-Benzylidene Protection', '1,2-Cis Glycosidic Linkages', 'Anhydro Cation Formation', 'Temperature and Solvent Effects on Reaction Mechanism']
+
+Below is a revised set of four questions.  All activation free energies ΔG‡ are given in kJ·mol⁻¹; convert them to J·mol⁻¹ before use.  Use the following constants throughout:
+
+ R  = 8.314 J·mol⁻¹·K⁻¹  
+ kB = 1.381×10⁻²³ J·K⁻¹  
+ h  = 6.626×10⁻³⁴ J·s  
+ 1 cal = 4.184 J  
+
+Report each numerical answer with the indicated precision and units.
+
+1. SN1 glycosylation selectivity (one decimal place)  
+A 4,6-O-benzylidene-protected α-D-glucopyranosyl trichloroacetimidate donor undergoes SN1 glycosylation in CH₂Cl₂ at 298 K.  DFT gives  
+ ΔG‡α = 85.8 kJ·mol⁻¹  
+ ΔG‡β = 93.3 kJ·mol⁻¹  
+
+The ratio of product mole fractions is  
+ Pα/Pβ = exp[(ΔG‡β – ΔG‡α)/(R T)].  
+
+Calculate the α : β ratio in the form X : 1.  
+Report the value of X (α/β) to one decimal place.  
+Answer: ______
+
+2. Solvent-dependent rate equality (three significant figures)  
+The same donor has activation free energies at 298 K:  
+ ΔG‡(CH₂Cl₂) = 96.3 kJ·mol⁻¹  
+ ΔG‡(MeCN)   = 89.9 kJ·mol⁻¹  
+
+According to the Eyring equation  
+ k = (kB T/h) exp(–ΔG‡/(R T)),  
+
+neglect the temperature variation of the pre-exponential factor (treat kB T/h as equal in both rate constants).  Find the temperature T (in K) at which  
+ k_CH₂Cl₂(T) = k_MeCN(298 K).  
+
+Show your working.  Report T to three significant figures.  
+Answer: ______ K
+
+3. Half-life of intramolecular cyclization (two significant figures)  
+A 4,6-O-benzylidene-protected D-galactopyranosyl oxocarbenium ion cyclizes intramolecularly via O4→C1 with ΔG‡ = 59.4 kJ·mol⁻¹ (convert to J·mol⁻¹ before use) at 298 K.  Using  
+
+ k = (kB T/h) exp(–ΔG‡/(R T))  
+ t₁/₂ = (ln 2)/k  
+
+calculate the half-life t₁/₂ in seconds at 298 K.  Report t₁/₂ to two significant figures.  
+Answer: ______ s
+
+4. IUPAC naming of a bicyclic oxonium ion  
+The intramolecular O6→C1 cyclization of the 4,6-O-benzylidene-protected α-D-glucopyranosyl cation gives a bicyclic oxonium ion with SMILES  
+
+ [O+]1[C@H]2O[C@H](OCc3ccccc3)[C@H]([C@H]1CO)O2  
+
+The parent system is 2,5-dioxabicyclo[3.2.1]octan-7-ylium.  Numbering of the bicyclic skeleton is defined as follows:
+
+ 1 → C bearing the hydroxymethyl substituent (–CH₂OH)  
+ 2 → O  
+ 3 → C bearing the [(phenyl)methoxy]methyl substituent (–OCH₂Ph)  
+ 4 → C  
+ 5 → O  
+ 6 → C  
+ 7 → O⁺ (positively charged oxygen)  
+
+Stereocenters at C-1, C-3, C-4 and C-6 are R, R, S and S, respectively.  
+
+Using IUPAC 2013 rules, provide the full stereochemical IUPAC name (locants, stereodescriptors and substituent names).  
+Answer: ______
+
+========================================
+
+Topics: ['Cyclopalladation', 'Covalent Organic Frameworks (COFs)', 'Photocatalysis']
+Key Concepts: ['Palladium-Functionalized COFs', 'Crystallinity and Structural Stability', 'Gas Storage and Separation', 'Light Absorption in NIR Region']
+
+1. Turnover frequency (TOF) of Pd in a batch reaction  
+Substrate: 2-phenylpyridine, initial amount = 0.500 mmol; product obtained = 0.78 × 0.500 mmol = 0.390 mmol. Catalyst: Pd(OAc)₂, 0.00970 mmol; reaction time = 11.5 h.  
+TOF (h⁻¹) = (moles of product) / (moles of Pd × time).  
+Calculate the TOF. Report TOF in h⁻¹ (2 s.f.).
+
+2. XRD-peak decay in a Pd-COF  
+I(N) = I₀·2^(–N/120), where I₀ = 100 a.u. and N = 150 cycles.  
+Calculate I(150)/I₀ as a percentage of the original intensity. Report the result in % (2 s.f.).
+
+3. Competitive Langmuir adsorption selectivity  
+T = 298 K; qₘ = 2.3 mmol·g⁻¹ for both CO₂ and N₂; b_CO₂ = 0.12 bar⁻¹; b_N₂ = 0.011 bar⁻¹.  
+Mixture: y_CO₂ = y_N₂ = 0.50; total pressure P = 9.5 bar; P_i = y_i·P.  
+q_i = (qₘ·b_i·P_i) / [1 + ∑_j (b_j·P_j)].  
+Selectivity S = (q_CO₂ / y_CO₂) / (q_N₂ / y_N₂).  
+Calculate S. Report S (2 s.f.).
+
+4. Maximum photon energy per mole at λ = 957 nm  
+λ = 957 nm = 9.57×10⁻⁷ m; h = 6.626×10⁻³⁴ J·s; c = 3.00×10⁸ m·s⁻¹; N_A = 6.022×10²³ mol⁻¹.  
+Photon energy E = h·c/λ; molar energy ΔE = E·N_A.  
+Calculate ΔE. Report ΔE in kJ·mol⁻¹ (2 s.f.).
+
+5. IUPAC name of a cyclopalladated complex  
+Provide the full IUPAC name of [PdCl(κ²-C,N-2-(4-methylphenyl)pyridinato)] using “chlorido” for the chloride ligand and “palladium(II)” for the metal. Spelling and punctuation count.
+
+========================================
+
+Topics: ['Photochemical control in living cells', 'Intracellular supramolecular assembly', 'Synthetic chemistry in cellular environments']
+Key Concepts: ['Endosomal escape and intracellular environments', 'Cellular uptake and internalization', 'NIR-fluorophore tracking of assemblies', 'Control of assembly kinetics via light', 'Impact of assembly on cell viability']
+
+1. Photolysis-kinetics time  
+A 50 μM solution of a compound is irradiated at λ = 365 nm with constant incident power density I₀ = 5.0 mW·cm⁻². The absorption cross-section is σ = 3.0×10⁻¹⁸ cm² and the photochemical quantum yield is φ = 0.12. Assuming first-order photolysis with rate constant kₚₕₒₜ = φ·σ·Φₚ (Φₚ = photon flux) and using h = 6.63×10⁻³⁴ J·s, c = 3.00×10⁸ m·s⁻¹, calculate the irradiation time t (s) required to convert 90 % of the substrate. Report t to two significant figures.
+
+2. Net charge density of a protonated polymer  
+What is the net positive-charge density (mol·L⁻¹) of a 15 mM solution of a tertiary-amine polymer (pKₐ = 6.4) at pH 5.50? Use the Henderson–Hasselbalch equation and report your answer to two significant figures.
+
+3. Fluorescence emission rate  
+In a confocal experiment the intracellular absorbance at the excitation wavelength is A = 0.080 through an optical path length l = 50 μm (0.0050 cm). The molar extinction coefficient is ε = 1.2×10⁵ M⁻¹·cm⁻¹ and the quantum yield is φ = 0.25. If the sample is illuminated with photon flux Φₚ = 1.0×10¹⁷ photons·cm⁻²·s⁻¹, calculate the fluorescence emission rate R = φ·Φₚ·(1–10^(–A)) in photons·cm⁻²·s⁻¹. Report R to two significant figures.
+
+4. Residual monomer in second-order dimerization  
+A monomer M undergoes irreversible dimerization 2 M → product with second-order rate constant k = 4.0×10³ M⁻¹·s⁻¹. If the initial monomer concentration is 20 μM, what is the residual [M] (in μM) after t = 30 s? Report your answer to two significant figures.
+
+5. Hill-model cytotoxicity  
+A peptide follows Viability (%) = 100 / [1 + (P_in/IC₅₀)²] with IC₅₀ = 5.0 μM. If a 10 μM extracellular dose yields an intracellular concentration P_in = 0.40×10 μM, calculate the predicted viability (%) to the nearest whole percent.
+
+========================================
+
+Topics: ['Carbohydrate Synthesis', 'Computational Chemistry', 'Glycosyl Cation Structure']
+Key Concepts: ['Charge Delocalization in Glycosyl Cations', '4,6-O-Benzylidene Protection', 'Temperature and Solvent Effects on Reaction Mechanism', 'Gas-Phase vs Solution-Phase Structures', 'Anhydro Cation Formation']
+
+Below is a revised set of six carbohydrate-specific problems. Each now requires a single, well-defined numerical or textual answer, uses consistent notation and units, and incorporates all of the feedback.
+
+Data (unless otherwise stated)  
+• Gas constant R = 8.008 × 10⁻³ kJ·mol⁻¹·K⁻¹  
+• All energies in kJ·mol⁻¹; temperatures in K
+
+1. Transition-state free-energy difference (product ratio)  
+A glycosyl trichloroacetimidate donor in CH₂Cl₂ at 298 K reacts via two competing transition states leading to α- and β-glycosides. The free-energy difference is  
+ ΔΔG‡ = G‡(β) – G‡(α) = +1.50 kJ·mol⁻¹.  
+According to Eyring kinetics, the ratio of rates (and hence product ratio) is  
+ α/β = exp(–ΔΔG‡/RT).  
+Calculate α/β (dimensionless) to two significant figures.
+
+2. Stabilization energy by charge delocalization  
+Ab initio single-point energies (relative to the neutral sugar at 0.0 kJ·mol⁻¹) for two glycosyl-cation structures are:  
+ Localized oxocarbenium ion: +50.2  
+ Bridged (delocalized) oxocarbenium ion: +38.7  
+Calculate ΔE = Ebridged – Elocalized. Report ΔE in kJ·mol⁻¹ to one decimal place (negative if the bridged ion is more stable).
+
+3. Conformer equilibrium constant from ΔG°  
+Two conformers A and B of a glycosyl cation in solution differ in standard free energy by  
+ ΔG° = G°(B) – G°(A) = +1.80 kJ·mol⁻¹ at 298 K.  
+The equilibrium constant for [A] versus [B] is  
+ K = [A]/[B] = exp(–ΔG°/RT).  
+Calculate K to two significant figures.
+
+4. Activation energy from two rate constants  
+A per-4,6-O-benzylidene glycosyl donor in CH₂Cl₂ has first-order solvolysis rates  
+ k₁ = 3.0×10⁻³ s⁻¹ at T₁ = 293 K  
+ k₂ = 1.2×10⁻² s⁻¹ at T₂ = 313 K  
+Assuming the same pre-exponential factor at both temperatures, use the Arrhenius form  
+ ln(k₂/k₁) = Ea/R (1/T₁ – 1/T₂)  
+to calculate the activation energy Ea. Give Ea in kJ·mol⁻¹ to one decimal place.
+
+5. IUPAC name of a bicyclic 4,6-O-benzylidene-1,6-anhydro sugar  
+Upon activation, per-4,6-O-benzylidene-D-galactopyranosyl triflate undergoes intramolecular 1,6-anhydro closure to give the bicyclic product shown.  
+[See line drawing with full stereochemistry and atom numbering; the bicyclic core is 2-oxabicyclo[3.2.1]octane.]  
+Provide the full substitutive IUPAC name using 2-oxabicyclo[3.2.1]octane as the parent. Include all locants and stereochemical descriptors according to IUPAC 2013 Carbohydrate Nomenclature.
+
+6. pKa of a glycosyl-oxonium intermediate  
+In aqueous solution at 298 K the equilibrium  
+ glycosyl-oxonium + H₂O ⇌ glycoside + H₃O⁺  
+has equilibrium constant K = [glycoside][H₃O⁺]/[oxonium] = 7.8×10⁻⁵. Given pKa(H₃O⁺) = –1.74 and neglecting activity coefficients, the pKa of the glycosyl-oxonium is  
+ pKa(oxonium) = pKa(H₃O⁺) – log K.  
+Calculate pKa(oxonium) to two decimal places.
+
+========================================
+
+Topics: ['Heterobimetallic Dimetallocene Chemistry', 'Organometallic Chemistry', 'Reactivity Studies']
+Key Concepts: ['Use of Pentaisopropylcyclopentadienyl Ligands: These ligands play a critical role in stabilizing the Al–Li bond through steric and dispersion interactions.', 'Al–Li Bond Characteristics: The Al–Li bond shows a high ionic character supported by attractive dispersion interactions, differentiating it from other metal-metal bonds.', 'Crystal Structure and NMR Characterization: Single-crystal X-ray diffraction and multinuclear NMR spectroscopy are used to determine structures and study the bonding configurations.']
+
+Consider the organoaluminium–lithium complex Cp(iPr)₅AlLi, studied by X-ray diffraction and variable-temperature ¹H NMR. Use only the constants given in each question.
+
+Question 1. Percent ionic character  
+Data:  
+ • e = 1.602×10⁻¹⁹ C  
+ • Bond length r = 2.75 Å (2.75×10⁻¹⁰ m)  
+ • Observed dipole μ_obs = 2.30 D (1 D = 3.336×10⁻³⁰ C·m)  
+Assume μ_max = e·r and % ionic = (μ_obs/μ_max)×100.  
+Report % ionic to one decimal place: % ionic = ______ %.
+
+Question 2. Activation free energy ΔG‡  
+Data:  
+ • NMR coalescence at T_c = 268 K; Δν = 120 Hz  
+ • Rate at coalescence k_c = π·Δν/√2  
+ • Eyring: k_c = (k_B T_c/h)·e^(–ΔG‡/RT_c)  
+ • R = 8.314 J·K⁻¹·mol⁻¹  
+You may calculate (k_B T_c/h) in one line.  
+Report ΔG‡ in kJ·mol⁻¹ to three significant figures: ΔG‡ = ______ kJ·mol⁻¹.
+
+Question 3. Crystal-packing coefficient C  
+The same complex crystallises in an orthorhombic cell with  
+ • V_cell = 1.8200×10⁴ Å³  
+ • Z = 4 formula units per cell  
+ • Molecular volume V_mol = 1.120×10³ Å³ per formula unit  
+Define C = (Z·V_mol/V_cell)×100%.  
+(a) Calculate C to one decimal place: C = ______ %.  
+(b) Typical small-molecule crystals have C ≃ 65–75 %. Is this crystal unusually dense?
+
+Question 4. Second-order rate constant k  
+For A + B → products with rate = k[A][B] and [A]₀=[B]₀=0.100 M, after t = 500 s both [A] and [B] = 0.0200 M. The integrated rate law is  
+1/[A]_t – 1/[A]₀ = k·t.  
+Solve for k.  
+Report k in L·mol⁻¹·s⁻¹ as a·b×10ⁿ (two significant figures): k = ______ L·mol⁻¹·s⁻¹.
+
+========================================
+

@@ -1,0 +1,251 @@
+=== Turn 0: Author generates questions ===
+<question>Consider a continuous random variable $X$ with a normal distribution characterized by mean $\mu = 3$ and standard deviation $\sigma = 2$. Define the cumulative distribution function (CDF) as $F_X(x) = P(X \leq x)$. Calculate the value of $x$ such that $F_X(x) = \frac{3}{4}$ and express your answer in terms of the inverse of the standard normal CDF, $\Phi^{-1}$.</question>
+
+<question>Suppose a discrete random variable $Y$ follows a Poisson distribution with parameter $\lambda > 0$. Given that $P(Y=0) = \frac{1}{e^2}$, find the value of $\lambda$. Express your answer as a simplified exact expression.</question>
+
+<question>Let $Z$ be a binomial random variable with parameters $n = 10$ and success probability $p$. If the probability of getting exactly 5 successes equals the probability of getting exactly 7 successes, find $p$ expressed as a simplified rational function.</question>
+
+<question>Define the probability mass function (PMF) of a discrete random variable $W$ taking values $0,1,2$ such that $P(W=0)=a$, $P(W=1)=2a$, and $P(W=2)=1-3a$. If the cumulative distribution function (CDF) $F_W(x)$ satisfies $F_W(1) = \frac{1}{2}$, determine the value of $a$ as a simplified fraction.</question>
+
+<question>For a binomial distribution with fixed number of trials $n$ and success probability $p$, express the condition on $p$ such that the expected value equals the variance. Provide the resulting equation relating $p$ and $n$ in simplest form.</question>
+
+<question>Consider a Poisson random variable $X$ with parameter $\lambda$. The probability of observing an odd number of events is $\frac{2}{3}$. Derive and express formally the equation for $\lambda$ that satisfies this condition using exponential functions.</question>
+
+<question>Let $X$ be a normally distributed random variable with unknown mean $\mu$ and variance $\sigma^2 = 4$. If the probability density function at $x=1$ equals the probability density at $x=5$, find the value of $\mu$ expressed in simplest form.</question>
+
+<question>Given a random variable $V$ with PMF $P(V=k) = c \cdot 3^{-k}$ for integer $k = 1, 2, 3, \dots$ and zero otherwise, find the normalization constant $c$ expressed as a simplified fraction using infinite geometric series properties.</question>
+
+<question>For a binomial random variable with parameters $n$ and $p$, find the closed-form expression of the cumulative distribution function $P(X \leq k)$ in terms of the regularized incomplete beta function $I_{1-p}(n-k, k+1)$. Write the formula precisely.</question>
+
+<question>Suppose a continuous random variable $X$ has probability density function $f_X(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}$. If the skewness of $X$ is zero and kurtosis is 3, confirm the values of $\mu$ and $\sigma$ when the variable is standardized, and express $f_X(x)$ in terms of the standard normal distribution $Z$.</question>
+=== Turn 0: Critic feedback ===
+Here is a critique of your questions according to your guidelines (numbered for reference):
+
+---
+
+**Question 1:** *Normal variable, CDF, solve for $x$.*
+- **Strengths:** Well-defined, precise, single output, uses standard notation.
+- **Issues:** The setup is standard textbook (Guideline 6). Consider modifying the percentile or the structure to avoid repetition of classic examples.
+- **Suggestion:** Contextualize, or modify the probability value sought, or ask for a form not commonly seen in textbooks.
+
+---
+
+**Question 2:** *Poisson PMF at 0, find lambda.*
+- **Strengths:** Clear setup and target.
+- **Issues:** This is extremely standard (Guideline 6); almost identical to textbook exercises.
+- **Suggestion:** Invert the probability, use a less common value, or create a scenario with the same structure but non-trivial context.
+
+---
+
+**Question 3:** *Binomial, equal probabilities for 5 and 7 successes, find $p$.*
+- **Strengths:** Requires multi-step reasoning, precise, concise.
+- **Issues:** Close to classic identity problems (Guideline 6). Can be improved in originality.
+- **Suggestion:** Use less standard symmetric cases, such as asking for matching probabilities for $k$ and $n-k-1$, or similar.
+
+---
+
+**Question 4:** *PMF with variable $a$, CDF at 1 is 1/2, find $a$.*
+- **Strengths:** Concise, well-posed.
+- **Issues:** Standard setup for small discrete random variables. Could benefit from a less predictable distribution or CDF value.
+- **Suggestion:** Make the PMF structure less uniform, or use a different CDF value, or specify $a$ using an expectation or moment.
+
+---
+
+**Question 5:** *Binomial: expected value equals variance, express $p$ in terms of $n$.*
+- **Strengths:** Concise, symbolic target, multi-step.
+- **Issues:** Highly standard textbook property (Guideline 6).
+- **Suggestion:** Use a less common equality, or ask for parameters under an inequality condition.
+
+---
+
+**Question 6:** *Poisson, probability of odd events is 2/3, express equation for lambda.*
+- **Strengths:** Excellent originality, multi-step, precise symbolic answer. Satisfies all guidelines.
+- **Issues:** None significant.
+- **Suggestion:** None; this is a model question.
+
+---
+
+**Question 7:** *Normal PDF values at 1 and 5 are equal, $\mu$ unknown, find $\mu$.*
+- **Strengths:** Concise, clear, requires algebraic manipulation, single symbolic answer.
+- **Issues:** Classic "equal PDF at symmetric points" setup; slightly standard, but less so than others.
+- **Suggestion:** Increase originality with a more asymmetric anchor, or impose another non-standard equality.
+
+---
+
+**Question 8:** *Discrete PMF with geometric structure, normalization constant.*
+- **Strengths:** Concise, uses infinite series, single symbolic answer, non-trivial.
+- **Issues:** May be standard in infinite PMF normalization.
+- **Suggestion:** Consider changing the base from 3 to an expression in $k$, or use a sum that is less immediately recognizable.
+
+---
+
+**Question 9:** *Binomial CDF in terms of regularized incomplete beta function.*
+- **Strengths:** Rigorous, advanced, precise symbolic answer.
+- **Issues:** Could be framed as "derive" (avoid). Standard for advanced probability, but not trivial.
+- **Suggestion:** Instead of "find," use clearer phrasing: "Express $P(X \leq k)$ as..." and avoid the word "derive."
+
+---
+
+**Question 10:** *Normal PDF, verify standardized parameter values, express in standard normal form.*
+- **Strengths:** Multi-step, clear symbolic targets, requires understanding of standardization.
+- **Issues:** Could force a two-part answer (confirm values, then rewrite PDF), which may violate Guideline 10.
+- **Suggestion:** Split into a single required answer: for example, "Express $f_X(x)$ after standardizing the variable."
+
+---
+
+### Summary Actionable Feedback
+
+1. **Originality (6):** Many questions are highly standard; introduce novel parameter values, contexts, or less common probability distributions/scenarios.
+2. **Single Output (10):** Ensure the question expects only one precise answer (not sequential confirmations or constructions).
+3. **Conciseness (5):** All questions are concise and text-based; this is handled well.
+4. **Wording (3, 7):** Avoid words like "derive" or "prove". Use "express", "find", or "calculate".
+5. **Formatting (8, 9):** Equations and notation are properly formatted and consistent.
+6. **Multi-step reasoning (4):** Reasoning requirement is well balanced.
+7. **Standard Problems:** Avoid direct restatements of standard textbook examples. Twist parameters, structures, or contexts to increase uniqueness.
+
+**Overall:** Most questions only need originality improvements and minor clarity adjustments to maximize adherence to the guidelines.
+=== Turn 1: Author refines questions ===
+<question>Consider a continuous random variable \( X \) with a normal distribution having mean \(\mu = 3\) and standard deviation \(\sigma = 2\). Define the cumulative distribution function \( F_X(x) = P(X \leq x) \). Find the value of \( x \) such that \( F_X(x) = 0.82 \) and express your answer in terms of the inverse standard normal CDF, \(\Phi^{-1}\).</question>
+
+<question>Suppose a discrete random variable \( Y \) follows a Poisson distribution with parameter \(\lambda > 0\). Given that \( P(Y=1) = \frac{2}{e^3} \), find \(\lambda\) expressed as a simplified exact expression.</question>
+
+<question>Let \( Z \) be a binomial random variable with parameters \( n = 12 \) and success probability \( p \). If the probability of obtaining exactly 4 successes equals the probability of obtaining exactly 7 successes, find \( p \) expressed as a simplified rational function.</question>
+
+<question>Define the probability mass function (PMF) of a discrete random variable \( W \) taking values \( 0, 1, 2 \) such that \( P(W=0)=a \), \( P(W=1) = 3a \), and \( P(W=2) = 1 - 4a \). If the cumulative distribution function (CDF) satisfies \( F_W(0.5) = \frac{1}{3} \), determine \( a \) as a simplified fraction.</question>
+
+<question>For a binomial distribution with fixed number of trials \( n \) and success probability \( p \), express the condition on \( p \) such that the variance is twice the expected value. Provide the resulting equation relating \( p \) and \( n \) in simplest form.</question>
+
+<question>Consider a Poisson random variable \( X \) with parameter \(\lambda\). The probability of observing an odd number of events is \(\frac{2}{3}\). Express the equation for \(\lambda\) that satisfies this condition using exponential functions.</question>
+
+<question>Let \( X \) be a normally distributed random variable with unknown mean \(\mu\) and variance \(\sigma^2 = 9\). If the PDF values satisfy \( f_X(2) = f_X(8) \), find \(\mu\) expressed in simplest form.</question>
+
+<question>Given a discrete random variable \( V \) with PMF \( P(V=k) = c \cdot \left(\frac{1}{2}\right)^k \) for integers \( k = 1, 2, 3, \ldots \) and zero otherwise, find the normalization constant \( c \) expressed as a simplified fraction using properties of infinite geometric series.</question>
+
+<question>For a binomial random variable \( X \) with parameters \( n \) and \( p \), express the cumulative distribution function \( P(X \leq k) \) in terms of the regularized incomplete beta function \( I_{1-p}(n-k, k+1) \). Write the formula precisely.</question>
+
+<question>Suppose a continuous random variable \( X \) has probability density function \( f_X(x) = \frac{1}{\sigma \sqrt{2\pi}} \exp\left(-\frac{(x-\mu)^2}{2\sigma^2}\right) \). If the variable is standardized so that it has mean 0 and variance 1, express \( f_X(x) \) in terms of the standard normal distribution \( Z \) and specify the values of \(\mu\) and \(\sigma\) under this standardization.</question>
+=== Turn 1: Critic feedback ===
+**Overall Assessment:**  
+Most questions align well with the guidelines in terms of structure, mathematical rigor, brevity, notation, and expected output. Minor improvements could further optimize clarity, eliminate minor redundancies, and tighten notation or phrasing. Below is question-by-question feedback with suggested improvements.
+
+---
+
+### 1. Normal CDF / Quantile
+
+**Feedback:**  
+- Strong mathematical structure and solvable target.
+- The introductory phrase "Consider a continuous random variable" is standard.  
+- **Suggestions:** The phrase "define the cumulative distribution function..." is nice for clarity, but since $F_X$ is standard, it may not be needed unless you expect audiences who might confuse notation.  
+---
+
+### 2. Poisson Parameter from Probability
+
+**Feedback:**  
+- Clear, focused, and solvable.
+- "**...as a simplified exact expression**" is excellent.
+- **Suggestions:** None. Well-constructed.
+
+---
+
+### 3. Binomial—Equating Two Probabilities
+
+**Feedback:**  
+- Strong use of contextual clue ("probability of exactly 4 equals probability of exactly 7").
+- Clear expected answer format.
+- **Suggestions:** None. Well-designed.
+
+---
+
+### 4. Discrete PMF with CDF constraint
+
+**Feedback:**  
+- Clear structure, unique form.
+- "CDF satisfies $F_W(0.5)=\frac{1}{3}$" is precise.
+- **Suggestions:** You could clarify that $F_W(x)=P(W\leq x)$ for completeness, although common conventions make this unnecessary.
+
+---
+
+### 5. Binomial Variance/Mean Relationship
+
+**Feedback:**  
+- Well-posed, expects an explicit relationship.
+- "Express the condition..." is good.
+- **Suggestions:** None.
+
+---
+
+### 6. Poisson—Probability of Odd Number
+
+**Feedback:**  
+- Mathematical relationship is well-posed.
+- Asks for equation, not for a solved value.
+- **Suggestions:** Clear as-is.
+
+---
+
+### 7. Normal PDF—Symmetry Condition
+
+**Feedback:**  
+- Satisfies all guidelines.
+- Clear single output ($\mu$).
+- **Suggestions:** None.
+
+---
+
+### 8. Geometric-like PMF Normalization
+
+**Feedback:**  
+- Well-posed and original.
+- "as a simplified fraction" is helpful.
+- **Suggestions:** None.
+
+---
+
+### 9. Binomial CDF and Beta Function
+
+**Feedback:**  
+- Advanced original twist; not just formula recall.
+- The phrase "write the formula precisely" is not strictly needed.
+- **Suggestions:** Instead, simply say "Express $P(X \leq k)$ in terms of $I_{1-p}(n-k, k+1)$," reducing minor redundancy.
+
+---
+
+### 10. Standardizing a Normal PDF
+
+**Feedback:**  
+- Good structure and clarity.
+- Last sentence: "specify the values of $\mu$ and $\sigma$ under this standardization."
+- **Suggestions:** To further tighten, you might say: "State the standard normal PDF and give the corresponding values of $\mu$ and $\sigma$." The phrase "express $f_X(x)$ in terms of the standard normal distribution $Z$" can be improved: perhaps, "Write $f_X(x)$ explicitly for the standard normal case, and specify the resulting parameter values."
+
+---
+
+## General Recommendations
+
+- **Avoid Redundant Phrases:** Eliminate instructions like "write the formula precisely" or "as a simplified exact expression" when the expected output is unambiguously symbolic.
+- **Notation Consistency:** Ensure $P(\cdot)$ versus $f_X(x)$ versus $F_X(x)$ are always defined when first used, but don't over-explain notation common in the context.
+- **Clarity of Constraints:** State constraints only as needed (e.g., integer restrictions or positivity).
+- **Single Statement:** Favor direct imperative or interrogative forms (e.g., "Find $a$ as a simplified fraction.").
+
+**Summary:**  
+Your questions are almost entirely compliant with your guidelines; most improvements are stylistic or about further efficiency of expression. Consider omitting minor instructional phrases and tightening notation for peak clarity. Overall, these are rigorous, concise, and original questions suitable for advanced assessment.
+=== Turn 2: Author refines questions ===
+<question>Let \( X \sim N(\mu=3, \sigma=2) \) with CDF \( F_X(x) = P(X \leq x) \). Find \( x \) such that \( F_X(x) = 0.82 \) and express your answer using the inverse standard normal CDF \(\Phi^{-1}\).</question>
+
+<question>Suppose a Poisson random variable \( Y \) has parameter \(\lambda > 0\). Given \( P(Y=1) = \frac{2}{e^3} \), find \(\lambda\) as a simplified exact expression.</question>
+
+<question>Let \( Z \sim \text{Binomial}(n=12, p) \). If \( P(Z=4) = P(Z=7) \), find \( p \) expressed as a simplified rational function.</question>
+
+<question>Define a discrete random variable \( W \) with PMF \( P(W=0) = a \), \( P(W=1) = 3a \), and \( P(W=2) = 1 - 4a \). Given \( F_W(0.5) = \frac{1}{3} \), find \( a \) as a simplified fraction.</question>
+
+<question>For a binomial distribution with parameters \( n \) and \( p \), express the equation relating \( p \) and \( n \) such that the variance equals twice the mean, in simplest form.</question>
+
+<question>Let \( X \sim \text{Poisson}(\lambda) \). If the probability of observing an odd number of events is \(\frac{2}{3}\), write the equation involving \(\lambda\) using exponential functions that satisfies this condition.</question>
+
+<question>Let \( X \sim N(\mu, \sigma^2=9) \). If \( f_X(2) = f_X(8) \), find \(\mu\) in simplest form.</question>
+
+<question>Let \( V \) be a discrete random variable with PMF \( P(V=k) = c \left(\frac{1}{2}\right)^k \) for \( k=1,2,3,\ldots \) and zero otherwise. Find the normalization constant \( c \) as a simplified fraction using properties of infinite geometric series.</question>
+
+<question>For \( X \sim \text{Binomial}(n, p) \), express the cumulative distribution function \( P(X \leq k) \) in terms of the regularized incomplete beta function \( I_{1-p}(n-k, k+1) \).</question>
+
+<question>Given \( X \sim N(\mu, \sigma^2) \) with PDF \( f_X(x) = \frac{1}{\sigma \sqrt{2\pi}} \exp\left(-\frac{(x-\mu)^2}{2\sigma^2}\right) \), write the PDF for the standardized case with mean 0 and variance 1, and specify the corresponding values of \(\mu\) and \(\sigma\).</question>
+=== Final questions generated ===

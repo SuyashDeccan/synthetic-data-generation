@@ -1,0 +1,493 @@
+=== Turn 0: Author generates questions ===
+<question>  
+Consider the vector field  
+$$ \mathbf{F}(x,y,z) = (yz, xz, xy) $$  
+and the surface $S$ given by the portion of the paraboloid  
+$$ z = 4 - x^2 - y^2 $$  
+above the $xy$-plane, oriented upwards. Compute the flux of $\mathbf{F}$ across $S$.  
+</question>  
+
+<question>  
+Let $f(x,y,z) = x^2y + yz^3$ and let $\mathbf{r}(u,v) = (u \cos v, u \sin v, u^2)$ parameterize a surface $S$ for $u \in [0,1]$, $v \in [0, 2\pi]$. Calculate the partial derivatives $\frac{\partial f}{\partial u}$ and $\frac{\partial f}{\partial v}$ at the point where $u = 1$, $v = \frac{\pi}{3}$.  
+</question>  
+
+<question>  
+For the vector-valued function  
+$$ \mathbf{r}(t) = (t \sin t, t \cos t, t^2) $$  
+find the limit  
+$$ \lim_{t \to 0} \frac{\|\mathbf{r}(t) - \mathbf{r}(0) - \mathbf{r}'(0) t\|}{|t|} $$  
+and determine whether $\mathbf{r}$ is differentiable at $t=0$.  
+</question>  
+
+<question>  
+Using the chain rule for multivariable functions, let  
+$$ z = e^{xy}, \quad x = r \cos \theta, \quad y = r \sin \theta. $$  
+Find the partial derivative $\frac{\partial z}{\partial r}$ in terms of $r$ and $\theta$.  
+</question>  
+
+<question>  
+Given the 2-form  
+$$ \omega = (x^2 + y^2) \, dx \wedge dy + z \, dy \wedge dz $$  
+evaluate the integral of $\omega$ over the oriented surface $S$ defined as the upper hemisphere of radius $1$:  
+$$ x^2 + y^2 + z^2 = 1, \quad z \geq 0, $$  
+with outward orientation.  
+</question>  
+
+<question>  
+Consider the scalar function  
+$$ f(x,y) = \frac{x^2 y}{x^2 + y^2} $$  
+for $(x,y) \neq (0,0)$ and $f(0,0) = 0$. Determine whether the limit  
+$$ \lim_{(x,y) \to (0,0)} f(x,y) $$  
+exists, and justify your conclusion by evaluating along two different paths.  
+</question>  
+
+<question>  
+Let the vector field  
+$$ \mathbf{F}(x,y,z) = (e^{xy}, yz, xz^2) $$  
+and the closed surface $S$ be the boundary of the cube defined by $0 \le x,y,z \le 1$ with outward orientation. Use the divergence theorem to calculate the total flux of $\mathbf{F}$ across $S$.  
+</question>  
+
+<question>  
+Consider the parameterization  
+$$ \mathbf{r}(u,v) = (u \cos v, u \sin v, \ln(1+u^2)) $$  
+for $u \in [0,2]$, $v \in [0, 2\pi]$. Find the area of the surface parameterized by $\mathbf{r}$.  
+</question>  
+
+<question>  
+Given the vector field  
+$$ \mathbf{F}(x,y,z) = (yz^2, xz^2, xyz) $$  
+and the surface $S$ parameterized by  
+$$ \mathbf{r}(u,v) = (u, v, u^2 + v^2) $$  
+for $(u,v)$ in the unit disk $u^2 + v^2 \le 1$, oriented with upward normal, compute the flux integral  
+$$ \iint_S \mathbf{F} \cdot \mathbf{n} \, dS. $$  
+</question>  
+
+<question>  
+Suppose a charge density $\rho(x,y,z) = e^{-(x^2+y^2+z^2)}$ is distributed in space. Considering the sphere of radius $R$ centered at the origin, express the total charge enclosed within this sphere as an integral and evaluate it in closed form.  
+</question>
+=== Turn 0: Critic feedback ===
+Here is concise, actionable feedback on each question, evaluated against your guidelines:
+
+---
+
+**Question 1:**  
+*Flux of $\mathbf{F}$ across a paraboloid.*
+
+- **Strengths:**  
+  - Clear mathematical setup and target (surface integral of a vector field).
+  - All symbols are clearly defined.
+  - The question leads to a single symbolic answer.
+- **Actionable Improvements:**  
+  - No major improvements needed.  
+  - If you want to increase originality, consider using a nonstandard vector field or surface.
+
+---
+
+**Question 2:**  
+*Partial derivatives of a composite function via parameterization.*
+
+- **Strengths:**  
+  - Well-defined setup, non-trivial computation.
+  - Clearly states the specific evaluation point.
+  - Asks only for the two partial derivatives (well-scoped).
+- **Actionable Improvements:**  
+  - Clarify that the partials are of the composition $f(\mathbf{r}(u,v))$ with respect to $u, v$ and not $f$ directly — minor notational ambiguity.
+  - If you want more challenge, ask for the full vector of derivatives, but this might breach the "single output" rule.
+
+---
+
+**Question 3:**  
+*Limit involving vector-valued function and differentiability at $t=0$.*
+
+- **Strengths:**  
+  - Well-posed, solution is a symbolic answer.
+  - Requires knowledge of Taylor expansion and limits.
+- **Weaknesses:**  
+  - Asks both for the limit and for a determination regarding differentiability (effectively two outputs).
+  - "And determine whether $\mathbf{r}$ is differentiable at $t=0$" is an extra instruction.
+- **Actionable Improvements:**  
+  - Only ask for the limit; remove the additional clause about differentiability to comply with guideline 10.
+
+---
+
+**Question 4:**  
+*Chain rule to compute $\partial z/\partial r$.*
+
+- **Strengths:**  
+  - Well-defined, concise, single symbolic target.
+  - Clearly specifies all variables and relationships.
+- **Actionable Improvements:**  
+  - None needed.
+
+---
+
+**Question 5:**  
+*2-form integral over upper hemisphere.*
+
+- **Strengths:**  
+  - Good use of exterior calculus, original context.
+  - Defines everything unambiguously.
+- **Actionable Improvements:**  
+  - Optionally, clarify what "oriented with outward orientation" means for the hemisphere (it should be standard, but you could state "with the normal pointing out of the sphere for $z \ge 0$").
+
+---
+
+**Question 6:**  
+*Limit of scalar function along two paths.*
+
+- **Strengths:**  
+  - Tests fundamental multivariate limits.
+  - Setup is precise.
+- **Weaknesses:**  
+  - The question asks for "determine whether the limit exists, and justify ... by evaluating along two different paths"—this is effectively two tasks (show existence *and* show via two paths).
+  - The answer may include a discussion, not just a single symbolic value.
+- **Actionable Improvements:**  
+  - Ask only for the existence or nonexistence of the limit, requesting a specific limiting value or stating "does not exist".  
+  - Alternatively, specify just one path, or rephrase as:  
+    "Does the limit $\lim_{(x,y)\to (0,0)} f(x,y)$ exist? If so, state its value; if not, provide counterexamples."
+
+---
+
+**Question 7:**  
+*Flux through cube using divergence theorem.*
+
+- **Strengths:**  
+  - Well-defined, clear target (symbolic flux value), all variables defined.
+- **Actionable Improvements:**  
+  - None needed.
+
+---
+
+**Question 8:**  
+*Area of parameterized surface involving logarithm.*
+
+- **Strengths:**  
+  - Well-defined, original parameterization.
+  - The question is concise, with a single target.
+- **Actionable Improvements:**  
+  - None needed.
+
+---
+
+**Question 9:**  
+*Flux of $\mathbf{F}$ across a nonstandard surface parameterization.*
+
+- **Strengths:**  
+  - Nontrivial, unique setup, clear flux integral.
+- **Actionable Improvements:**  
+  - None needed.
+
+---
+
+**Question 10:**  
+*Total charge inside a sphere with Gaussian density.*
+
+- **Strengths:**  
+  - Good use of 3D integration and transformation to closed form.
+  - Clearly asks for both the integral setup and the closed-form value.
+- **Weaknesses:**  
+  - The phrase "express the total charge enclosed within this sphere as an integral and evaluate it in closed form" may be interpreted as a two-part answer (integral form *and* closed-form evaluation).
+- **Actionable Improvements:**  
+  - Ask directly for the closed-form value, e.g.,  
+    "Calculate the total charge enclosed within the sphere of radius $R$, expressing your answer in closed form."
+
+---
+
+### General Feedback:
+
+- **Redundant or Multiple Outputs:**  
+  - Several questions implicitly require two outputs (justification plus numeric answer, or limit plus path-checking). Revise so each expects only a single symbolic/numeric output (Guideline 10).
+- **Clarity and Conciseness:**  
+  - Overall, questions are concise. When asking for an existence result or value, phrase to yield a single unambiguous answer.
+- **Originality:**  
+  - Most questions are original or at least not standard textbook clones; a few could be made more distinctive by adjusting vector fields or surfaces.
+- **Consistency:**  
+  - Notation is mostly consistent. Minor suggestion: Ensure explicit clarification of any composition or pushforward when relevant for partial derivatives.
+- **Formatting:**  
+  - All equations are properly in LaTeX with Markdown syntax.
+
+---
+
+**Summary Recommendations:**  
+- For each problem, explicitly require only one type of answer (value, existence, closed-form, etc.).  
+- Avoid multi-part questions to comply with your guideline 10.  
+- Where multiple steps are needed (e.g., set up and evaluate), phrase so solution is a single symbolic/numeric output.  
+- Optionally revise common themes or symmetry to inject more real-world context if seeking further originality.  
+- All other aspects (notation, precision, single output, complexity) are appropriate.
+=== Turn 1: Author refines questions ===
+<question>  
+Consider the vector field  
+$$ \mathbf{F}(x,y,z) = (yz, xz, xy) $$  
+and the surface $S$ given by the portion of the paraboloid  
+$$ z = 4 - x^2 - y^2 $$  
+above the $xy$-plane, oriented upwards. Compute the flux of $\mathbf{F}$ across $S$.  
+</question>  
+
+<question>  
+Let $f(x,y,z) = x^2 y + y z^3$, and let $\mathbf{r}(u,v) = (u \cos v, u \sin v, u^2)$ parameterize a surface $S$ for $u \in [0,1]$, $v \in [0, 2\pi]$. Compute the partial derivatives of the composite function $F(u,v) = f(\mathbf{r}(u,v))$, that is, find $\frac{\partial F}{\partial u}$ and $\frac{\partial F}{\partial v}$ at the point where $u=1$, $v=\frac{\pi}{3}$.  
+</question>  
+
+<question>  
+For the vector-valued function  
+$$ \mathbf{r}(t) = (t \sin t, t \cos t, t^2) $$  
+find the limit  
+$$ \lim_{t \to 0} \frac{\|\mathbf{r}(t) - \mathbf{r}(0) - \mathbf{r}'(0) t\|}{|t|}. $$  
+</question>  
+
+<question>  
+Using the chain rule for multivariable functions, let  
+$$ z = e^{xy}, \quad x = r \cos \theta, \quad y = r \sin \theta. $$  
+Find the partial derivative $\frac{\partial z}{\partial r}$ expressed in terms of $r$ and $\theta$.  
+</question>  
+
+<question>  
+Given the 2-form  
+$$ \omega = (x^2 + y^2) \, dx \wedge dy + z \, dy \wedge dz, $$  
+evaluate the integral of $\omega$ over the oriented surface $S$ defined by the upper hemisphere of radius $1$:  
+$$ x^2 + y^2 + z^2 = 1, \quad z \geq 0, $$  
+oriented with the outward normal vector pointing away from the center of the sphere.  
+</question>  
+
+<question>  
+Consider the scalar function  
+$$ f(x,y) = \frac{x^2 y}{x^2 + y^2} $$  
+for $(x,y) \neq (0,0)$ and $f(0,0) = 0$. Determine whether the limit  
+$$ \lim_{(x,y) \to (0,0)} f(x,y) $$  
+exists. If it exists, state its value; if not, state that it does not exist.  
+</question>  
+
+<question>  
+Let the vector field  
+$$ \mathbf{F}(x,y,z) = (e^{xy}, yz, xz^2) $$  
+and let $S$ be the closed surface bounding the cube defined by $0 \leq x,y,z \leq 1$, oriented outward. Use the divergence theorem to compute the total flux of $\mathbf{F}$ across $S$.  
+</question>  
+
+<question>  
+Consider the parameterization  
+$$ \mathbf{r}(u,v) = (u \cos v, u \sin v, \ln(1+u^2)) $$  
+for $u \in [0,2]$, $v \in [0, 2\pi]$. Find the area of the surface parameterized by $\mathbf{r}$.  
+</question>  
+
+<question>  
+Given the vector field  
+$$ \mathbf{F}(x,y,z) = (y z^2, x z^2, x y z) $$  
+and the surface $S$ parameterized by  
+$$ \mathbf{r}(u,v) = (u, v, u^2 + v^2) $$  
+for $(u,v)$ in the unit disk $u^2 + v^2 \leq 1$, oriented with upward normal, compute the flux integral  
+$$ \iint_S \mathbf{F} \cdot \mathbf{n} \, dS. $$  
+</question>  
+
+<question>  
+Suppose a charge density is given by  
+$$ \rho(x,y,z) = e^{-(x^2 + y^2 + z^2)}. $$  
+Calculate the total charge enclosed within the sphere of radius $R$ centered at the origin, expressing your answer in closed form.  
+</question>
+=== Turn 1: Critic feedback ===
+Here is a critique, question by question, following your guidelines:
+
+---
+
+**Question 1:** (Flux of $\mathbf{F}(x,y,z) = (yz, xz, xy)$ across paraboloid)
+
+***Strengths:***
+- Clearly defined surface and vector field.
+- Setup is mathematically standard but specific.
+- Single, unambiguous quantity is requested.
+
+***Suggestions:***
+- Problem is nearly standard textbook, could be made more unique by modifying the field or surface.
+
+---
+
+**Question 2:** (Chain rule with parameterized surface)
+
+***Strengths:***
+- Setup is clear and requires multi-step application of the chain rule.
+- Target is explicit (the two partial derivatives at a given point).
+- Originality is above average.
+
+***Suggestions:***
+- Since two derivatives are requested, this slightly encroaches on a multiple-parts issue (see guideline 10).
+- Best if restricted to a single derivative (e.g., "Compute $\frac{\partial F}{\partial u}$ at ..."), or clarify that both are part of a single natural output.
+
+---
+
+**Question 3:** (Limit involving $\mathbf{r}(t)$)
+
+***Strengths:***
+- Well-posed, tests understanding of Taylor expansion for vector functions.
+- Clear symbolic target.
+
+***Suggestions:***
+- Completely meets criteria.
+
+---
+
+**Question 4:** (Chain rule, partial of $z$ w.r.t. $r$)
+
+***Strengths:***
+- Direct, focused, and single-answer.
+- Requires multi-step application of the chain rule.
+
+***Suggestions:***
+- Could slightly enhance originality by varying the function $z$.
+
+---
+
+**Question 5:** (Integral of 2-form over hemisphere)
+
+***Strengths:***
+- Multivariable calculus at a high level, clear, single output sought.
+- Requires use of differential forms, not completely standard.
+
+***Suggestions:***
+- Good as is.
+
+---
+
+**Question 6:** (Limit for $f(x,y)$)
+
+***Strengths:***
+- Classic limit question, concise.
+- Single, clear question.
+
+***Suggestions:***
+- Standard textbook style. For more originality, consider less obvious function forms.
+
+---
+
+**Question 7:** (Divergence theorem, vector field over cube)
+
+***Strengths:***
+- Well-defined, solvable, multi-step.
+- Symbolic answer expected: matches guidelines.
+
+***Suggestions:***
+- Field could be less archetypal for added originality.
+
+---
+
+**Question 8:** (Surface area of parameterized surface)
+
+***Strengths:***
+- Clean, direct, single symbolic answer.
+- Multi-step computation.
+
+***Suggestions:***
+- Good as is.
+
+---
+
+**Question 9:** (Flux of $\mathbf{F}$ over a paraboloid-disk surface)
+
+***Strengths:***
+- Surface and domain precisely specified.
+- Requires calculation of flux—not just surface area.
+
+***Suggestions:***
+- Good, though vector field could be chosen to reduce algebraic complexity without making it trivial.
+- Parametrization is clear.
+
+---
+
+**Question 10:** (Total charge for Gaussian density in ball)
+
+***Strengths:***
+- Well-posed physical and mathematical setup.
+- Closed-form expression required.
+
+***Suggestions:***
+- Problem is standard; for more originality, alter the density function or the region of integration.
+
+---
+
+### Additional General Feedback
+
+- **Conciseness/Relevance:** All questions are clear, concise, and to the point, with minimal extraneous information. 
+- **Notation:** All equations are formatted in LaTeX and easy to read.
+- **Single-Output:** Only Question 2 potentially wavers here.
+- **Originality:** Several questions are classic and could be spiced up with minor tweaks. Focus on less standard vector fields/functions or less generic surfaces to increase uniqueness.
+- **No 'Prove' or 'Show':** All questions comply.
+- **No Multiple Parts:** Ensure all answers only require a *single* final symbolic quantity, unless two outputs are obviously inseparable.
+
+---
+
+**Summary of Improvement Suggestions:**
+- Make at least some problems more original in field/surface/function.
+- For Question 2, either instruct to compute one derivative or clarify that both derivatives at a point are considered a single multi-component answer.
+- Double-check that each question only leads to a single unambiguous output.
+- Consider reducing algebraic complexity where it doesn't add conceptual depth, especially in flux integrals.
+- Avoid classic textbook statements when possible—introduce non-triviality via less common shapes/fields or interesting compositions.
+=== Turn 2: Author refines questions ===
+<question>  
+Consider the vector field  
+$$ \mathbf{F}(x,y,z) = (y z^2, \, x^2 z, \, x y^3) $$  
+and the surface $S$ given by the portion of the paraboloid  
+$$ z = 5 - x^2 - y^2 $$  
+above the $xy$-plane, oriented upwards. Compute the flux of $\mathbf{F}$ across $S$.  
+</question>  
+
+<question>  
+Let $f(x,y,z) = x^2 y + y z^3$, and define  
+$$ \mathbf{r}(u,v) = (u \cos v, \, u \sin v, \, u^2), \quad u \in [0,1], \quad v \in [0, 2\pi]. $$  
+Set $F(u,v) = f(\mathbf{r}(u,v))$. Compute the partial derivative $\frac{\partial F}{\partial u}$ at the point $(u,v) = \left(1, \frac{\pi}{3}\right)$.  
+</question>  
+
+<question>  
+For the vector-valued function  
+$$ \mathbf{r}(t) = \bigl(t \sin t, \; t \cos t, \; t^2\bigr), $$  
+find the limit  
+$$ \lim_{t \to 0} \frac{\|\mathbf{r}(t) - \mathbf{r}(0) - \mathbf{r}'(0) t\|}{|t|}. $$  
+</question>  
+
+<question>  
+Using the chain rule for multivariable functions, let  
+$$ z = e^{x y}, \quad x = r \cos \theta, \quad y = r \sin \theta. $$  
+Find the partial derivative $\frac{\partial z}{\partial r}$ expressed explicitly in terms of $r$ and $\theta$.  
+</question>  
+
+<question>  
+Given the 2-form  
+$$ \omega = (x^2 + y^2) \, dx \wedge dy + z \, dy \wedge dz, $$  
+evaluate the integral of $\omega$ over the oriented surface $S$ defined by the upper hemisphere of radius $2$:  
+$$ x^2 + y^2 + z^2 = 4, \quad z \geq 0, $$  
+oriented with the outward normal vector pointing away from the center of the sphere.  
+</question>  
+
+<question>  
+Consider the scalar function  
+$$ f(x,y) = \frac{x^3 y}{x^2 + y^2} $$  
+for $(x,y) \neq (0,0)$ and $f(0,0) = 0$. Determine whether the limit  
+$$ \lim_{(x,y) \to (0,0)} f(x,y) $$  
+exists. If it exists, state its value; if not, state that it does not exist.  
+</question>  
+
+<question>  
+Let the vector field  
+$$ \mathbf{F}(x,y,z) = \bigl(e^{x y}, \; y z^2, \; x z^3\bigr) $$  
+and let $S$ be the closed surface bounding the cube  
+$$ 0 \leq x,y,z \leq 1, $$  
+oriented outward. Using the divergence theorem, compute the total flux of $\mathbf{F}$ across $S$.  
+</question>  
+
+<question>  
+Consider the parameterization  
+$$ \mathbf{r}(u,v) = \biggl(u \cos v, \; u \sin v, \; \ln(1 + u^4)\biggr), \quad u \in [0,2], \quad v \in [0, 2\pi]. $$  
+Find the area of the surface parameterized by $\mathbf{r}$.  
+</question>  
+
+<question>  
+Given the vector field  
+$$ \mathbf{F}(x,y,z) = (y z, \; x z, \; x y) $$  
+and the surface $S$ parameterized by  
+$$ \mathbf{r}(u,v) = (u, v, u^3 + v^3) $$  
+for $(u,v)$ in the unit disk $u^2 + v^2 \leq 1$, oriented with upward normal, compute the flux integral  
+$$ \iint_S \mathbf{F} \cdot \mathbf{n} \, dS. $$  
+</question>  
+
+<question>  
+Suppose a charge density is given by  
+$$ \rho(x,y,z) = e^{-2(x^2 + y^2 + z^2)}. $$  
+Calculate the total charge enclosed within the sphere of radius $R$ centered at the origin, expressing your answer in closed form in terms of $R$.  
+</question>
+=== Final questions generated ===

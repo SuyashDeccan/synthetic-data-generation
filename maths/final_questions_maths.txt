@@ -1,0 +1,52 @@
+Topics: ['Divisibility and modular properties', 'Congruences in Mathematics']
+Key Concepts: ['Ramanujan-like congruences for power series coefficients', "Extensions and generalizations of MacMahon's sums of divisors", 'Arithmetic properties of partitions and overpartition families', 'Chebychev polynomials and their applications in this context']
+
+Below is the revised problem set.  Each question asks you to “Find” or “Give” exactly one symbolic object.  Display‐math uses `$$…$$`, inline math uses `$…$`, and every answer is uniquely determined.
+
+1.  
+Let $p_3(n)$ be the number of partitions of $n$ into parts not divisible by 3.  
+Find the unique residue  
+$$r\in\{0,1,2,3,4,5,6\}$$  
+such that for all integers $n\ge0$  
+$$
+p_3(7n+r)\;\equiv\;0\pmod7.
+$$
+
+2.  
+Let  
+$$
+\sum_{n=0}^{\infty}B(n)\,q^n
+\;=\;
+\prod_{m=1}^{\infty}(1-q^m)^{-3}(1+q^m),
+\qquad
+\sigma_k(n)=\sum_{d\mid n}d^k.
+$$  
+Find the unique integers $c_1,c_3,c_5\in\Bbb Z$ such that for all integers $n\ge1$  
+$$
+B(n)
+\;=\;
+c_1\,\sigma_1(n)\;+\;c_3\,\sigma_3(n)\;+\;c_5\,\sigma_5(n).
+$$
+
+3.  
+An _overpartition_ of $n$ is a partition in which the first occurrence of each distinct part may be overlined.  Let $\overline p_{\mathrm{odd}}^{\mathrm{even}}(n)$ be the number of overpartitions of $n$ into odd parts with an even number of overlined parts.  
+Find the unique integer sequences $(\alpha_m)_{m\ge1}$ and $(\beta_m)_{m\ge1}$ for which  
+$$
+\sum_{n=0}^{\infty}\overline p_{\mathrm{odd}}^{\mathrm{even}}(n)\,q^n
+\;=\;
+\prod_{m=1}^{\infty}(1-q^{2m-1})^{\alpha_m}(1+q^{2m-1})^{\beta_m}.
+$$
+
+4.  
+Define  
+$$
+G_a(x,t)\;=\;\sum_{n=0}^{\infty}T_{n+a}(x)\,t^n,
+$$  
+where $T_n(x)$ is the Chebyshev polynomial of the first kind satisfying $T_n(\cos\theta)=\cos(n\theta)$.  
+For a fixed nonnegative integer $a$, find the unique rational function $R(x,t)\in\Bbb Q(x,t)$ such that  
+$$
+G_a(x,t)\;=\;R(x,t).
+$$
+
+========================================
+

@@ -1,0 +1,593 @@
+=== Turn 0: Author generates questions ===
+<question>  
+Consider the polar equation  
+$$ r = 4\sin(3\theta) $$  
+representing a curve in the plane. Determine the length of the interval for $\theta$ over which this curve completes exactly one full petal, based on its periodicity. Express your answer in terms of $\pi$.  
+</question>
+
+<question>  
+A particle moves in the plane with position vector function parametrized by $t$:  
+$$ \mathbf{r}(t) = \begin{pmatrix} \cos t + 2t \\ \sin t - t \end{pmatrix}, \quad t \in \mathbb{R}. $$  
+Find the parametric equation for the same curve traversed in the reverse direction, starting from the point corresponding to $t=0$, expressed as a function of a new parameter $s$.  
+</question>
+
+<question>  
+Given two vectors in $\mathbb{R}^3$:  
+$$ \mathbf{a} = \begin{pmatrix} 2 \\ -1 \\ 3 \end{pmatrix} \quad \text{and} \quad \mathbf{b} = \begin{pmatrix} 1 \\ 4 \\ -2 \end{pmatrix}, $$  
+find the vector projection of $\mathbf{a}$ onto $\mathbf{b}$, expressed in simplest vector form.  
+</question>
+
+<question>  
+Solve the trigonometric equation  
+$$ 2\cos(2x) - \sqrt{3} = 0 $$  
+for all $x$ in the interval $[0, 2\pi)$, and express the general solution for $x$ using inverse trigonometric functions and appropriate identities. Then provide the particular solutions in the given interval.  
+</question>
+
+<question>  
+The function  
+$$ y = 3\sec\left(2x - \frac{\pi}{4}\right) + 1 $$  
+is defined on the real line. Determine the fundamental period of this function.  
+</question>
+
+<question>  
+A curve is defined in polar coordinates by  
+$$ r = 5 + 3\cos\theta. $$  
+Find the Cartesian equation of the tangent line to this curve at the point where $\theta = \frac{\pi}{3}$. Express your answer in standard linear form $Ax + By = C$.  
+</question>
+
+<question>  
+A vector-valued function is given by  
+$$ \mathbf{r}(t) = \begin{pmatrix} 2\sin t \\ 3\cos t \end{pmatrix}, \quad t \in \mathbb{R}. $$  
+Construct the parametric equation for the same ellipse corresponding to $\mathbf{r}(t)$ after a phase shift of $\frac{\pi}{3}$ in the parameter $t$. Express the new position vector in terms of $t$.  
+</question>
+
+<question>  
+Given the function  
+$$ y = \cot\left(\frac{x}{3} + \frac{\pi}{6}\right), $$  
+determine its period and the vertical asymptotes in the interval $[0, 6\pi]$.  
+</question>
+
+<question>  
+Consider vectors  
+$$ \mathbf{u} = \begin{pmatrix} 1 \\ 2 \end{pmatrix} \quad \text{and} \quad \mathbf{v} = \begin{pmatrix} 3 \\ -1 \end{pmatrix}. $$  
+Find the orthogonal projection of $\mathbf{v}$ onto the vector orthogonal to $\mathbf{u}$ and express the result in simplest form.  
+</question>
+
+<question>  
+Solve the trigonometric equation for $x \in \mathbb{R}$:  
+$$ \sin(3x) = \cos\left(x - \frac{\pi}{4}\right) $$  
+expressing $x$ as a set of formulas involving inverse trigonometric functions and constants.  
+</question>
+=== Turn 0: Critic feedback ===
+Here is an itemized critique for each question, aligned with your stated guidelines:
+
+---
+
+### Q1 (Polar Rose Petal Interval)
+- **Strengths**: Clear context, unique curve, asks for explicit symbolic interval in terms of $\pi$.
+- **Issues**:
+    - *Potential Multiplicity*: The interval could have multiple valid forms depending on where the petal starts. Specify: "beginning at $\theta=0$" or specify the domain.
+    - *Vagueness*: "based on periodicity" is unnecessary; omit to avoid ambiguity.
+    - *Guideline #10 Violation*: The phrase "over which this curve completes exactly one full petal" is subtlely ambiguous as it depends on petal starting point.  
+- **Recommendation**: 
+    - Reword to: "Find the length of the interval in $\theta$, starting at $\theta=0$, over which the curve $r=4\sin(3\theta)$ traces exactly one petal."
+
+---
+
+### Q2 (Reverse Parametrization)
+- **Strengths**: Specific vector function, clear request for reparametrization in reverse direction, unique curve.
+- **Issues**:
+    - *Clarity*: "Starting from the point corresponding to $t=0$" is slightly ambiguous; clarify what "traversed in the reverse direction" means.
+    - *Guideline #10 Violation*: The question could be interpreted as requiring both construction and identification of start point.
+- **Recommendation**:
+    - Edit to: "Give a vector-valued parametrization (as a function of $s$) of the same curve traced in the reverse direction, such that at $s=0$ the position is $\mathbf{r}(0)$."
+
+---
+
+### Q3 (Projection in $\mathbb{R}^3$)
+- **Strengths**: Standard vector operation, unambiguous result, unique values.
+- **Issues**:
+    - *Textbook Problem*: Risks being a direct textbook problem (Guideline #6).
+- **Recommendation**:
+    - Introduce a less standard vector pair, or require expressing the projection onto a non-parallel vector/combo.
+    - As is: Acceptable, but consider making the setup more unique.
+
+---
+
+### Q4 (Trig Equation: $\cos(2x)$)
+- **Strengths**: Well-posed, single equation, interval specified, asks for symbolic and particular results.
+- **Issues**:
+    - *Multiple Parts*: Asks for both general solution and interval-specific values (Guideline #10 violation).
+    - *Answer Multiplicity*: "Express the general solution..." + "Then provide the particular solutions..." = two solutions.
+- **Recommendation**:
+    - Split into: "Solve $2\cos(2x)-\sqrt{3}=0$ for $x\in[0,2\pi)$, expressing your answer using inverse trigonometric functions only."
+
+---
+
+### Q5 (Secant Function Periodicity)
+- **Strengths**: Unique function, well-defined answer (period), limited focus.
+- **Issues**:
+    - *Clear Setup*: Acceptable, but "is defined on the real line" is unnecessary.
+- **Recommendation**:
+    - Remove superfluous phrase. "Determine the fundamental period of $y=3\sec(2x-\frac{\pi}{4})+1$."
+
+---
+
+### Q6 (Polar Tangent Line)
+- **Strengths**: Non-standard polar-to-Cartesian tangent, unique at specified point.
+- **Issues**:
+    - *Slight Ambiguity*: Could clarify at which point the tangent is required, but already sufficient.
+    - *Redundant Symbols*: None.
+- **Recommendation**:
+    - Acceptable as is; just ensure absence of extraneous detail.
+
+---
+
+### Q7 (Ellipse Phase Shift)
+- **Strengths**: Specific parametric ellipse, asks for canonical symbolic answer.
+- **Issues**:
+    - *Possible Standard Problem*: Phase shift, but otherwise a typical manipulation (Guideline #6).
+    - *Redundant Words*: "Construct the parametric equation for the same ellipse corresponding to..." can be simplified.
+- **Recommendation**:
+    - Reword: "Write the parametric vector equation for the ellipse obtained by phase-shifting $\mathbf{r}(t)=\begin{pmatrix}2\sin t\\3\cos t\end{pmatrix}$ by $\frac{\pi}{3}$ in $t$."
+
+---
+
+### Q8 (Period and Asymptotes for Cotangent)
+- **Strengths**: Clear function, period and asymptote focus.
+- **Issues**:
+    - *Multi-Part Question*: Two outputs requested: both period and list of asymptotes over an interval (Guideline #10 violation).
+- **Recommendation**:
+    - Split: Either find the period **or** all asymptotes in interval; not both in the same item.
+
+---
+
+### Q9 (Orthogonal Projection in $\mathbb{R}^2$)
+- **Strengths**: Interesting twist (onto perpendicular vector), unique vectors.
+- **Issues**:
+    - *Clarity*: "vector orthogonal to $\mathbf{u}$" is ambiguous; should be "onto a unit vector orthogonal to $\mathbf{u}$" or specify orientation.
+    - *Guideline #6*: Not a standard textbook problem, good.
+- **Recommendation**:
+    - Clarify which orthogonal vector: e.g., "Find the orthogonal projection of $\mathbf{v}$ onto the vector $\mathbf{w}$, where $\mathbf{w}$ is a unit vector orthogonal to $\mathbf{u}$ with positive $x$-component."
+
+---
+
+### Q10 (Trig Equation: $\sin(3x)=\cos(x-\pi/4)$)
+- **Strengths**: Interesting equation, expects symbolic result, not standard.
+- **Issues**:
+    - *Multiplicity*: "Expressing $x$ as a set of formulas ..." is slightly broad. Prefer "all real solutions for $x$ in terms of...".
+- **Recommendation**:
+    - Reword: "Find all real solutions $x$ to $\sin(3x)=\cos(x-\frac{\pi}{4})$, expressing your answer in terms of inverse trigonometric functions and constants only."
+
+---
+
+## General/Overarching Comments:
+
+- **Multi-Part Violations**: Q4 & Q8 directly violate the "single output" rule; avoid any formulations that ask for both a general and particular solution, or both period and asymptotes.
+- **Ambiguity in Starting Points**: For periodic or multi-valued curves, always specify how the interval is chosen (e.g., starting at zero or at the origin); otherwise, answer may not be unique.
+- **Colloquial Language**: Avoid phrases like "based on periodicity," "corresponding to," or "construct"—use "determine" or "find" for clarity and conciseness.
+- **Redundant Explanatory Phrases**: Remove unnecessary qualifiers like "is defined on the real line" unless meaningful context is added.
+- **Unique, Non-trivial Setups**: Most are sufficiently original, but avoid equations or projection problems that directly occur in basic textbooks without variation.
+
+**Actionable Summary**:
+- Rephrase all questions to expect only one symbolic output.
+- Clarify interval starting points or parameter orientation where relevant.
+- Cut out unnecessary wording and split multi-part questions.
+- Avoid slight ambiguities in definition (esp. with "reverse direction," "one petal," "orthogonal vector").
+- Whenever "express in terms of..." is used, specify variables and the nature of the form expected.
+
+Let me know if you want suggested rewrites for any question!
+=== Turn 1: Author refines questions ===
+<question>  
+Find the length of the interval in \(\theta\), starting at \(\theta = 0\), over which the curve defined by  
+\[ r = 4 \sin(3\theta) \]  
+traces exactly one petal. Express your answer in terms of \(\pi\).  
+</question>
+
+<question>  
+Given the position vector function  
+\[ \mathbf{r}(t) = \begin{pmatrix} \cos t + 2t \\ \sin t - t \end{pmatrix}, \quad t \in \mathbb{R}, \]  
+find a vector-valued parametrization \(\mathbf{R}(s)\) of the same curve traversed in the reverse direction, such that \(\mathbf{R}(0) = \mathbf{r}(0)\).  
+</question>
+
+<question>  
+Given vectors  
+\[ \mathbf{a} = \begin{pmatrix} 2 \\ -1 \\ 3 \end{pmatrix} \quad \text{and} \quad \mathbf{b} = \begin{pmatrix} 1 \\ 4 \\ -2 \end{pmatrix}, \]  
+find the vector projection of \(\mathbf{a}\) onto \(\mathbf{b}\), expressed in simplest vector form.  
+</question>
+
+<question>  
+Solve the equation  
+\[ 2 \cos(2x) - \sqrt{3} = 0 \]  
+for all \(x \in [0, 2\pi)\), expressing your solutions using inverse trigonometric functions only.   
+</question>
+
+<question>  
+Determine the fundamental period of the function  
+\[ y = 3 \sec\left(2x - \frac{\pi}{4}\right) + 1. \]  
+</question>
+
+<question>  
+A curve is defined in polar coordinates by  
+\[ r = 5 + 3 \cos \theta. \]  
+Find the equation of the tangent line to this curve at \(\theta = \frac{\pi}{3}\), and express your answer in standard form \(Ax + By = C\).  
+</question>
+
+<question>  
+Given the vector-valued function  
+\[ \mathbf{r}(t) = \begin{pmatrix} 2 \sin t \\ 3 \cos t \end{pmatrix}, \quad t \in \mathbb{R}, \]  
+write the parametric vector equation for the ellipse obtained by applying a phase shift of \(\frac{\pi}{3}\) in the parameter \(t\). Express your answer in terms of \(t\).  
+</question>
+
+<question>  
+Given the function  
+\[ y = \cot\left(\frac{x}{3} + \frac{\pi}{6}\right), \]  
+find all vertical asymptotes of \(y\) in the interval \([0, 6\pi]\).  
+</question>
+
+<question>  
+Let  
+\[ \mathbf{u} = \begin{pmatrix} 1 \\ 2 \end{pmatrix} \quad \text{and} \quad \mathbf{v} = \begin{pmatrix} 3 \\ -1 \end{pmatrix}. \]  
+Define \(\mathbf{w}\) as the unit vector orthogonal to \(\mathbf{u}\) with positive \(x\)-component. Find the orthogonal projection of \(\mathbf{v}\) onto \(\mathbf{w}\) and express your answer in simplest form.  
+</question>
+
+<question>  
+Find all real solutions \(x\) to the equation  
+\[ \sin(3x) = \cos\left(x - \frac{\pi}{4}\right), \]  
+expressing your answer using inverse trigonometric functions and constants only.  
+</question>
+=== Turn 1: Critic feedback ===
+Below is a critique of each question according to your guidelines, with focus on improvement suggestions.
+
+---
+
+**Question 1**
+
+*Find the length of the interval in $\theta$, starting at $\theta = 0$, over which the curve defined by $r = 4\sin(3\theta)$ traces exactly one petal. Express your answer in terms of $\pi$.*
+
+- **Strengths**: Concise, uses standard notation, requires algebraic reasoning.
+- **Issues**:
+    - **Guideline 6**: Finding the interval for "one petal" is a common textbook polar curve question—consider a more original variant (e.g., non-integer $n$ in $r = a\sin(n\theta)$).
+    - **Guideline 2**: While well-defined, further clarifying what "traces exactly one petal" means (i.e., no retracing) would help eliminate ambiguity.
+- **Action**: Rephrase for more originality; potentially specify "first full traversal of a single distinct non-overlapping petal".
+
+---
+
+**Question 2**
+
+*Given the position vector function $\mathbf{r}(t) = \begin{pmatrix} \cos t + 2t \\ \sin t - t \end{pmatrix},\ t\in\mathbb{R}$, find a vector-valued parametrization $\mathbf{R}(s)$ of the same curve traversed in the reverse direction, such that $\mathbf{R}(0) = \mathbf{r}(0)$.*
+
+- **Strengths**: Well-posed, rigorous, requires symbolic manipulation, provides clear target output.
+- **Issues**:
+    - **Guideline 6**: This is a standard reverse-parameterization problem; introducing unusual parameterizations, or constraints, would improve originality.
+    - **Guideline 10**: There may be more than one valid parametrization; ensure question wording expects exactly one form (e.g., require $s$ be an explicit monotonic function of $t$ such that $s=0$ corresponds to $t=0$, etc.).
+- **Action**: Specify the relationship between $s$ and $t$ to avoid multiple correct answers.
+
+---
+
+**Question 3**
+
+*Given vectors $\mathbf{a} = \begin{pmatrix} 2 \\ -1 \\ 3 \end{pmatrix}$ and $\mathbf{b} = \begin{pmatrix} 1 \\ 4 \\ -2 \end{pmatrix}$, find the vector projection of $\mathbf{a}$ onto $\mathbf{b}$, expressed in simplest vector form.*
+
+- **Strengths**: Clear, well-posed, only essential details, expects vector output.
+- **Issues**:
+    - **Guideline 6**: Standard projection calculation (textbook), not original.
+- **Action**: Use less typical vectors (e.g., with parameters) or pose in the context of an application.
+
+---
+
+**Question 4**
+
+*Solve the equation $2\cos(2x) - \sqrt{3} = 0$ for all $x \in [0, 2\pi)$, expressing your solutions using inverse trigonometric functions only.*
+
+- **Strengths**: Instructs specific form for answer, short and direct.
+- **Issues**:
+    - **Guideline 7 & 10**: The solution is not unique due to the periodicity, but interval $[0, 2\pi)$ restricts the answer; ensure instruction that all solutions within the given interval are to be given.
+    - **Guideline 6**: Common trig equation; can introduce a parameter or context for originality.
+- **Action**: Consider making the equation less standard or involving a parameter.
+
+---
+
+**Question 5**
+
+*Determine the fundamental period of the function $y = 3\sec(2x - \frac{\pi}{4}) + 1$.*
+
+- **Strengths**: Concise, structured, expects a single symbolic answer.
+- **Issues**:
+    - **Guideline 6**: Standard period question; including a less common function or phase shift relationship could enhance originality.
+- **Action**: Pose in a less typical form (e.g., include a sum/difference of frequencies).
+
+---
+
+**Question 6**
+
+*A curve is defined in polar coordinates by $r = 5 + 3\cos\theta$. Find the equation of the tangent line to this curve at $\theta = \frac{\pi}{3}$, and express your answer in standard form $Ax+By=C$.*
+
+- **Strengths**: Well-defined, requires multi-step analytic work, precise output form expected.
+- **Issues**:
+    - **Guideline 6**: Standard tangent-to-limaçon in polar form; could be more original.
+- **Action**: Consider a more general polar curve or a parameterized family.
+
+---
+
+**Question 7**
+
+*Given the vector-valued function $\mathbf{r}(t) = \begin{pmatrix} 2\sin t \\ 3\cos t \end{pmatrix}$, $t \in \mathbb{R}$, write the parametric vector equation for the ellipse obtained by applying a phase shift of $\frac{\pi}{3}$ in the parameter $t$. Express your answer in terms of $t$.*
+
+- **Strengths**: Clear, requires analytic reasoning, precise expected result.
+- **Issues**:
+    - **Guideline 6**: Standard phase shift application; might be improved with an extra twist (e.g., specify a particular initial point, or a transformed ellipse).
+- **Action**: Consider asking for a phase-shifted and rotated ellipse, or with an additional parameter.
+
+---
+
+**Question 8**
+
+*Given the function $y = \cot\left(\frac{x}{3} + \frac{\pi}{6}\right)$, find all vertical asymptotes of $y$ in the interval $[0, 6\pi]$.*
+
+- **Strengths**: Well-defined, asks for a symbolic set of values, appropriate interval specified.
+- **Issues**:
+    - **Guideline 6**: Standard vertical asymptote identification; originality could be improved.
+    - **Guideline 10**: Clarify output format (e.g., list or formula).
+- **Action**: Specify answer format (an explicit formula or list), and optionally generalize to a more interesting function.
+
+---
+
+**Question 9**
+
+*Let $\mathbf{u} = \begin{pmatrix} 1 \\ 2 \end{pmatrix}$ and $\mathbf{v} = \begin{pmatrix} 3 \\ -1 \end{pmatrix}$. Define $\mathbf{w}$ as the unit vector orthogonal to $\mathbf{u}$ with positive $x$-component. Find the orthogonal projection of $\mathbf{v}$ onto $\mathbf{w}$ and express your answer in simplest form.*
+
+- **Strengths**: Requires multiple logical steps, well-defined, clear output, no extraneous info.
+- **Issues**:
+    - **Guideline 6**: Somewhat standard, but specifying the sign of the $x$-component adds a nice constraint.
+- **Action**: Could further generalize or add a small twist for more originality (e.g., projecting onto a $\mathbf{w}$ with another constraint).
+
+---
+
+**Question 10**
+
+*Find all real solutions $x$ to the equation $\sin(3x) = \cos\left(x - \frac{\pi}{4}\right)$, expressing your answer using inverse trigonometric functions and constants only.*
+
+- **Strengths**: Requires several identities and steps, symbolic form required.
+- **Issues**:
+    - **Guideline 6**: More original than most—uses a non-standard identity; good.
+    - **Guideline 10**: Ensure the answer set is unambiguous; specify expected solution form (e.g., in terms of unions or lists if needed).
+- **Action**: Specify required output format.
+
+---
+
+**General Suggestions Across All Questions**
+- **Originality**: Shift from classic textbook formats toward slightly more inventive contexts or parameterized scenarios.
+- **Clarity**: Always specify the required format of the answer (formula, list, set, vector) especially where multiple forms are possible.
+- **Ambiguity**: Remove room for multiple interpretations by tightly restricting the solution form, domain, and parameter relationships.
+- **Redundancy**: Eliminate unnecessary qualifiers or information, but provide just enough in non-standard cases to prevent confusion.
+
+**Actionable Template for Future Questions**
+- Ensure each prompt’s context or parameterization is unique and not a direct rehash of well-known problems.
+- Clearly state desired forms and any solution constraints, especially where multiple valid outputs exist.
+- Where possible, create multi-step problems that combine two slightly less-standard concepts for greater originality without unnecessary complication.
+=== Turn 2: Author refines questions ===
+<question>  
+Consider the polar curve defined by  
+\[ r = 4 \sin\left(3.5 \theta\right). \]  
+Starting at \(\theta = 0\), determine the smallest positive length of the interval in \(\theta\) over which the curve traces one complete petal without retracing any part of it. Express your answer in terms of \(\pi\).  
+</question>
+
+<question>  
+Given the position vector function  
+\[ \mathbf{r}(t) = \begin{pmatrix} \cos t + 2t \\ \sin t - t \end{pmatrix}, \quad t \in \mathbb{R}, \]  
+find a vector-valued parametrization \(\mathbf{R}(s)\) of the same curve traversed in the reverse direction, with parameter \(s\) linearly related to \(t\) by \(t = -s\), and such that \(\mathbf{R}(0) = \mathbf{r}(0)\). Express \(\mathbf{R}(s)\) explicitly in terms of \(s\).  
+</question>
+
+<question>  
+Let \(\mathbf{a}(k) = \begin{pmatrix} k \\ 2 \\ -1 \end{pmatrix}\) and \(\mathbf{b} = \begin{pmatrix} 1 \\ 4 \\ -2 \end{pmatrix}\), where \(k\) is a real parameter. For \(k=2\), find the vector projection of \(\mathbf{a}(k)\) onto \(\mathbf{b}\), expressing your answer in simplified vector form.  
+</question>
+
+<question>  
+Solve the equation  
+\[ 2 \cos(2x) - \sqrt{3} = 0 \]  
+for all \(x \in [0, 2\pi)\). Express your complete solution set explicitly as a list in terms of inverse trigonometric functions or exact multiples of \(\pi\).  
+</question>
+
+<question>  
+Determine the fundamental period of the function  
+\[ y = 3 \sec\left(2x - \frac{\pi}{4}\right) + 1. \]  
+Justify your answer briefly by referring to the period of the inner trigonometric function.  
+</question>
+
+<question>  
+Consider the polar curve  
+\[ r = 5 + 3 \cos \left(\theta + \frac{\pi}{6}\right). \]  
+Find the equation of the tangent line to this curve at \(\theta = \frac{\pi}{3}\). Express your answer in standard form \(Ax + By = C\) with integer coefficients where possible.  
+</question>
+
+<question>  
+Given the vector-valued function  
+\[ \mathbf{r}(t) = \begin{pmatrix} 2 \sin t \\ 3 \cos t \end{pmatrix} \quad \text{for } t \in \mathbb{R}, \]  
+write the parametric vector equation for the ellipse obtained by applying a phase shift of \(\frac{\pi}{3}\) in \(t\), followed by a rotation of \(45^\circ\) (or \(\frac{\pi}{4}\) radians) counterclockwise. Express your final answer in terms of \(t\).  
+</question>
+
+<question>  
+Given the function  
+\[ y = \cot\left(\frac{x}{3} + \frac{\pi}{6}\right), \]  
+find all vertical asymptotes of \(y\) within the interval \([0, 6\pi]\). Express your answer as an explicit ascending list of all \(x\)-values.  
+</question>
+
+<question>  
+Let  
+\[ \mathbf{u} = \begin{pmatrix} 1 \\ 2 \end{pmatrix} \quad \text{and} \quad \mathbf{v} = \begin{pmatrix} 3 \\ -1 \end{pmatrix}. \]  
+Define \(\mathbf{w}\) as the unit vector orthogonal to \(\mathbf{u}\) with positive \(x\)-component. Find the orthogonal projection of \(\mathbf{v}\) onto \(\mathbf{w}\) and simplify your answer fully in vector form.  
+</question>
+
+<question>  
+Find all real solutions \(x\) to the equation  
+\[ \sin(3x) = \cos\left(x - \frac{\pi}{4}\right), \]  
+expressing your solution set explicitly using inverse trigonometric functions and constants only. Present your answers as unions of sets, clearly indicating all solution branches.  
+</question>
+=== Turn 2: Critic feedback ===
+Here is concise, actionable feedback for each question based on your guidelines:
+
+---
+
+**Q1:** *Polar Petal Interval*
+
+- **Strengths:** Well-defined setup; clear symbolic result; uses non-trivial half-integer frequency.
+- **Areas for improvement:** The phrase “starting at $\theta=0$” is ambiguous for curves that may have initial $r=0$. Consider specifying exactly what is meant by “traces one complete petal”—e.g., the interval from when it leaves and returns to $r=0$ in the same direction, without retracing any point.
+- **Action:** Rephrase for clarity, e.g., “Find the smallest positive interval in $\theta$ for which the curve, beginning at $r=0$, traces exactly one petal without overlap.”
+
+---
+
+**Q2:** *Vector Reverse Direction*
+
+- **Strengths:** Well-defined function; asks for an explicit symbolic answer; clear relationship $t = -s$.
+- **Areas for improvement:** The “reverse direction” plus “$\mathbf{R}(0)=\mathbf{r}(0)$” is slightly ambiguous since reversal with linear relation may not preserve initial point. It may confuse whether to apply a translation or simply the parameter substitution.
+- **Action:** Explicitly clarify what is meant by “reverse direction” and ensure that the initial condition is compatible with the parameter relation.
+
+---
+
+**Q3:** *Vector Projection for $k=2$*
+
+- **Strengths:** Clear, focused question; defines all symbols; straightforward vector algebra.
+- **Areas for improvement:** The “for $k=2$” part could be put before the vector definition to declutter.
+- **Action:** Move “for $k=2$” before the first vector, or state “Let $\mathbf{a} = \begin{pmatrix} 2 \\ 2 \\ -1 \end{pmatrix}$”.
+
+---
+
+**Q4:** *Trig Equation for $x$*
+
+- **Strengths:** Direct, concrete symbolic answer required; exact form requested.
+- **Areas for improvement:** The phrase “explicitly as a list in terms of…” could be replaced by standard set notation—e.g., “List all $x$ in $[0,2\pi)$ that…”.
+- **Action:** Phrase as: “Find all $x\in[0,2\pi)$ satisfying…”
+
+---
+
+**Q5:** *Secant Period*
+
+- **Strengths:** Clear functional form; asks for symbolic period.
+- **Areas for improvement:** “Justify briefly…” violates the single-output rule. The answer should be the period only.
+- **Action:** Remove justification request.
+
+---
+
+**Q6:** *Tangent to Polar Curve*
+
+- **Strengths:** Non-trivial polar form; clear symbolic answer required in standard form.
+- **Areas for improvement:** The standard form specification is fine, but “with integer coefficients where possible” introduces ambiguity (is simplification required even if impossible?). Also, the phrase is superfluous.
+- **Action:** Drop “where possible” to be unambiguous.
+
+---
+
+**Q7:** *Ellipse Phase Shift Rotation*
+
+- **Strengths:** Clear transformation sequence; expects explicit symbolic parametric answer.
+- **Areas for improvement:** Ensure that the “phase shift in $t$” and “rotation of $45^\circ$” is unambiguously ordered (first phase shift, then rotation).
+- **Action:** Make the sequence explicit: “First apply the phase shift, then the rotation.”
+
+---
+
+**Q8:** *Cotangent Asymptotes*
+
+- **Strengths:** Explicit symbolic answer as a list; domain well specified.
+- **Areas for improvement:** “Express your answer as a list” is fine, but “all vertical asymptotes” could be replaced by “Find all $x$ in $[0,6\pi]$ for which $y$ is undefined.”
+- **Action:** Phrase as “Find all $x$ in $[0,6\pi]$ for which $y$ is undefined.”
+
+---
+
+**Q9:** *Unit Vector and Projection*
+
+- **Strengths:** Multi-step reasoning required; clear symbolic answer requested.
+- **Areas for improvement:** The definition of “orthogonal to $\mathbf{u}$ with positive $x$-component” is good, but could phrase as “unit vector perpendicular to $\mathbf{u}$, with positive $x$-component”.
+- **Action:** Minor wording tweak as above for technical clarity.
+
+---
+
+**Q10:** *Trig Equation Inverse Form Solution*
+
+- **Strengths:** Explicit symbolic form, all solution branches; expects set notation.
+- **Areas for improvement:** The prompt is slightly long and “present your answers as unions of sets” could be simplified.
+- **Action:** Strike “present your answers…” and simply say “List all real $x$ that satisfy the equation in terms of...” to reduce wordiness.
+
+---
+
+**General recommendations:**
+- Remove any secondary requirements (such as explanations or justifications).
+- Always use set/list notation for solutions, specify desired form (e.g., in terms of $\pi$, exact, not decimal approximations).
+- Make output expectations explicit: “List all $x$…”, “Express your answer as…”, etc., in concise language.
+
+**Summary Table:**
+
+| # | Main Issue(s)                                   | Action                                                      |
+|---|-------------------------------------------------|-------------------------------------------------------------|
+| 1 | Ambiguity of “starting at $\theta=0$”           | Clarify starting point/interval for petal                   |
+| 2 | Possible confusion on initial condition         | Clarify definition of reverse direction + initial point     |
+| 3 | Minor ordering/redundancy                       | Move $k=2$ into vector definition                          |
+| 4 | Slightly awkward phrasing                       | Use standard form: “List all $x$ in $[0,2\pi)$…”           |
+| 5 | Extra justification request                     | Remove justification, ask for period only                   |
+| 6 | Superfluous “where possible”                    | Remove it, state “Express in standard form” clearly         |
+| 7 | Sequence minor ambiguity                        | State explicitly: phase shift, then rotation                |
+| 8 | Wording on asymptote locations                  | Say “all $x$ in…” rather than “vertical asymptotes”         |
+| 9 | Slightly awkward unit vector wording            | Use “unit vector perpendicular, positive $x$-component”     |
+|10 | Lengthy solution phrasing                       | Shorten to “List all real $x$ satisfying…”                  |
+
+These edits will help maximize clarity, conciseness, and adherence to your guidelines.
+=== Turn 3: Author refines questions ===
+<question>  
+Consider the polar curve defined by  
+\[ r = 4 \sin\left(3.5 \theta\right). \]  
+Find the smallest positive interval in \(\theta\), starting from \(\theta = 0\) where \(r=0\), over which the curve traces exactly one complete petal without retracing any part of it. Express your answer in terms of \(\pi\).  
+</question>
+
+<question>  
+Given the position vector function  
+\[ \mathbf{r}(t) = \begin{pmatrix} \cos t + 2t \\ \sin t - t \end{pmatrix}, \quad t \in \mathbb{R}, \]  
+find a vector-valued parametrization \(\mathbf{R}(s)\) of the same curve traversed in the reverse direction, with \(t = -s\), and such that \(\mathbf{R}(0) = \mathbf{r}(0)\). Express \(\mathbf{R}(s)\) explicitly in terms of \(s\).  
+</question>
+
+<question>  
+For \(k=2\), let  
+\[ \mathbf{a} = \begin{pmatrix} 2 \\ 2 \\ -1 \end{pmatrix} \quad \text{and} \quad \mathbf{b} = \begin{pmatrix} 1 \\ 4 \\ -2 \end{pmatrix}. \]  
+Find the vector projection of \(\mathbf{a}\) onto \(\mathbf{b}\), expressing your answer in simplified vector form.  
+</question>
+
+<question>  
+Solve the equation  
+\[ 2 \cos(2x) - \sqrt{3} = 0 \]  
+for all \(x \in [0, 2\pi)\). List your complete solution set explicitly in terms of exact multiples of \(\pi\) or inverse trigonometric functions.  
+</question>
+
+<question>  
+Determine the fundamental period of the function  
+\[ y = 3 \sec\left(2x - \frac{\pi}{4}\right) + 1. \]  
+Express your answer in terms of \(\pi\).  
+</question>
+
+<question>  
+Consider the polar curve  
+\[ r = 5 + 3 \cos \left(\theta + \frac{\pi}{6}\right). \]  
+Find the equation of the tangent line to this curve at \(\theta = \frac{\pi}{3}\). Express your answer in standard form \(Ax + By = C\) with integer coefficients.  
+</question>
+
+<question>  
+Given the vector-valued function  
+\[ \mathbf{r}(t) = \begin{pmatrix} 2 \sin t \\ 3 \cos t \end{pmatrix} \quad \text{for } t \in \mathbb{R}, \]  
+first apply a phase shift of \(\frac{\pi}{3}\) in \(t\), then rotate the resulting curve counterclockwise by \(45^\circ\) (\(\frac{\pi}{4}\) radians). Write the parametric vector equation of the resulting ellipse explicitly in terms of \(t\).  
+</question>
+
+<question>  
+Given the function  
+\[ y = \cot\left(\frac{x}{3} + \frac{\pi}{6}\right), \]  
+find all \(x \in [0, 6\pi]\) for which \(y\) is undefined. List all such \(x\)-values in ascending order explicitly.  
+</question>
+
+<question>  
+Let  
+\[ \mathbf{u} = \begin{pmatrix} 1 \\ 2 \end{pmatrix} \quad \text{and} \quad \mathbf{v} = \begin{pmatrix} 3 \\ -1 \end{pmatrix}. \]  
+Define \(\mathbf{w}\) as the unit vector perpendicular to \(\mathbf{u}\) with positive \(x\)-component. Find the orthogonal projection of \(\mathbf{v}\) onto \(\mathbf{w}\) and simplify your answer fully in vector form.  
+</question>
+
+<question>  
+Find all real solutions \(x\) to the equation  
+\[ \sin(3x) = \cos\left(x - \frac{\pi}{4}\right), \]  
+listing your solution set explicitly using inverse trigonometric functions and constants only.  
+</question>
+=== Final questions generated ===

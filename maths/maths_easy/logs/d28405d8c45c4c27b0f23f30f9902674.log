@@ -1,0 +1,290 @@
+=== Turn 0: Author generates questions ===
+<question>  
+A pharmaceutical company tests a new drug on 10 patients, measuring their blood pressure before and after treatment. Let the differences in blood pressure (before minus after) be recorded as $d_1, d_2, \ldots, d_{10}$. Using the Wilcoxon Signed-Rank Test at a significance level of $\alpha=0.05$, determine the critical value for the test statistic to decide whether the drug has a statistically significant effect on blood pressure.  
+</question>
+
+<question>  
+A psychologist measures the reaction times of 15 subjects under three different lighting conditions (Low, Medium, High). The data are related samples. Formulate the null hypothesis $H_0$ and the alternative hypothesis $H_1$ for applying the Friedman Test to analyze if lighting conditions affect reaction time. Then, specify the degrees of freedom for the test statistic.  
+</question>
+
+<question>  
+In a study comparing three independent teaching methods (A, B, and C) on students’ exam scores, the Kruskal-Wallis Test is applied to samples of sizes $n_1=12$, $n_2=15$, and $n_3=13$ respectively. Express the formula for the Kruskal-Wallis $H$ statistic in terms of the sum of ranks $R_1$, $R_2$, $R_3$ for each group, and total sample size $N=n_1+n_2+n_3$.  
+</question>
+
+<question>  
+A traffic researcher sets the level of significance at $\alpha=0.01$ to test whether the median waiting times at three different traffic lights differ. Using the Friedman Test with $n=20$ subjects measured under three conditions, determine the critical chi-square value ($\chi^2_{crit}$) for rejecting the null hypothesis at this significance level.  
+</question>
+
+<question>  
+A sample of size $n=8$ pairs of matched observations is tested using the Wilcoxon Signed-Rank Test. If the sum of positive ranks is $T^+ = 22$, formulate the null hypothesis, then express the test statistic $T$ and its decision rule for rejecting $H_0$ based on $T^+$.  
+</question>
+
+<question>  
+In a clinical trial, three independent groups of patients ($n_1=10$, $n_2=12$, $n_3=11$) receive different treatments. When applying the Kruskal-Wallis Test, the sum of ranks are $R_1 = 125$, $R_2 = 180$, and $R_3 = 165$. Calculate the Kruskal-Wallis $H$ statistic in terms of these values and the total number of observations $N$.  
+</question>
+
+<question>  
+Consider a paired data set of size $n=9$, to be analyzed by the Wilcoxon Signed-Rank Test. After computing the absolute differences, the ranks assigned produce a sum of ranks of the less frequent sign $T=10$. Using exact critical values, determine whether $H_0$ is rejected at $\alpha = 0.05$.  
+</question>
+
+<question>  
+A researcher performs the Friedman Test on related samples consisting of $n=25$ subjects tested under four different conditions. Express the formula for the test statistic $Q$ including the correction for ties, assuming tie-corrected ranks are incorporated, and specify the degrees of freedom for the asymptotic chi-square distribution.  
+</question>
+
+<question>  
+During hypothesis testing with the Wilcoxon Signed-Rank Test for $n=7$ pairs, the calculated test statistic $T$ equals $5$. Write the null and alternative hypotheses, state the appropriate decision rule at $\alpha=0.05$, and conclude whether to reject $H_0$.  
+</question>
+
+<question>  
+In an experiment involving three independent groups with sample sizes $n_1=8$, $n_2=9$, and $n_3=7$, the Kruskal-Wallis $H$ statistic is calculated as 6.5. Given that the degrees of freedom is 2, define the null hypothesis and determine if this $H$ value leads to rejection of $H_0$ at the 5% significance level.  
+</question>
+=== Turn 0: Critic feedback ===
+Here is a concise critique of each question with clear, actionable feedback according to your guidelines:
+
+---
+
+**Question 1 (Wilcoxon Signed-Rank critical value):**  
+- **Issue:** The prompt requests a lookup (critical value) instead of a process or a symbolic/numeric calculation. It does not require algebraic manipulation or multi-step reasoning.
+- **Action:** Ask for calculation or symbolic decision rule involving the test statistic, not look-up of a table value. For example, "Express the decision rule for this Wilcoxon test in terms of $T$ and/or $T^+$ for $n=10$."
+
+---
+
+**Question 2 (Friedman Test hypotheses and degrees of freedom):**  
+- **Issue:** Asks for two things (hypotheses and df)—violates the single output rule. Hypotheses formulation is semi-verbal and not a unique symbolic answer; degrees of freedom is a secondary question.
+- **Action:** Revise to require a single output: e.g., "Express the degrees of freedom for the Friedman test in this scenario."
+
+---
+
+**Question 3 (Kruskal-Wallis formula):**  
+- **Issue:** Well-structured, requires symbolic formula in terms of variables. However, this is a standard textbook question and lacks originality.
+- **Action:** Add a twist for originality (e.g., introduce tied ranks or require a correction), or frame it so the formula is applied to a specific context, not just recited.
+
+---
+
+**Question 4 (Friedman critical value):**  
+- **Issue:** Asks for critical value (lookup)—numeric decision based on a table, not a numeric calculation or formula. No multi-step reasoning.
+- **Action:** Ask instead for an expression for the rejection region or the value of the test statistic that should be compared, or for the degrees of freedom for the relevant chi-square distribution.
+
+---
+
+**Question 5 (Wilcoxon T+ and decision rule):**  
+- **Issue:** Two tasks (null hypothesis, expression/decision rule), violating single output. Hypotheses are verbal, not symbolic. Decision rule verges on table lookup, not requiring calculation.
+- **Action:** Require only the symbolic expression of the decision rule in terms of $T^+$ and $n=8$, or only write the null hypothesis in correct notation.
+
+---
+
+**Question 6 (Kruskal-Wallis direct calculation):**  
+- **Issue:** This requires plugging into the formula, which is good, but since only the formula is substituted with values, and the answer just rewrites the formula with numbers, there's little algebraic manipulation or step-by-step reasoning.
+- **Action:** Ask for a symbolic expression *and* the fully simplified numerical value as a single output.
+
+---
+
+**Question 7 (Wilcoxon, critical value for $n=9$):**  
+- **Issue:** Asks for a decision based on table (i.e., "determine whether $H_0$ is rejected..."). Requires table lookup, insufficient multi-step reasoning, and not a unique symbolic/numeric answer.
+- **Action:** Ask for the symbolic decision rule, or what the rejection region is in terms of $T$ for $n=9$ at $\alpha=0.05$.
+
+---
+
+**Question 8 (Friedman formula with tie correction):**  
+- **Issue:** Two outputs (formula and degrees of freedom), violating the guideline. Formula with tie correction is good, but asking for degrees of freedom is another output.
+- **Action:** Choose one: require only the tie-corrected formula, or only the degrees of freedom.
+
+---
+
+**Question 9 (Wilcoxon $n=7$, decision):**  
+- **Issue:** Requires multiple outputs (hypotheses, decision rule, conclusion), violating the "single output" rule. Conclusion is a yes/no, not an algebraic or symbolic answer.
+- **Action:** Specify either the hypotheses (symbolically), or the decision rule, or require just the rejection region in terms of $T$ for the given $\alpha$.
+
+---
+
+**Question 10 (Kruskal-Wallis reject/non-reject):**  
+- **Issue:** Asks for the null hypothesis plus a decision based on comparison to a table value, and the decision is not a symbolic/numeric answer.
+- **Action:** Require only the symbolic formulation of the null hypothesis, or only the critical value for $H$ at the given degrees of freedom and $\alpha$.
+
+---
+
+### **General Recommendations**
+- Each question should require *one* well-posed symbolic or numeric answer.
+- Avoid table lookups or yes/no decisions based solely on tables.
+- Ask for expressions, specific computations, or symbolic results involving the main variables.
+- Avoid multiple parts or multi-output requests (hypotheses + something else).
+- For more originality, include small variations (e.g., data ties, corrected statistics, express in terms of arbitrarily named variables).
+- Focus on algebraic manipulation, logical sequence, or calculation based on given scenarios, not recall or pure hypothesis writing.
+
+---
+
+### **Example of Improved Question Based on Guidelines**
+Given $n=10$ paired differences in a Wilcoxon Signed-Rank Test, express the range of values for the test statistic $T$ that would lead to rejection of the null hypothesis at the significance level $\alpha = 0.05$.
+=== Turn 1: Author refines questions ===
+<question>  
+Given a sample of size \( n=10 \) in a Wilcoxon Signed-Rank Test, express the rejection region for the test statistic \( T^+ \) at the significance level \(\alpha=0.05\). Specify the range of \( T^+ \) values that would lead to rejection of the null hypothesis.  
+</question>
+
+<question>  
+For the Friedman Test applied to \( n=15 \) subjects measured under \( k=3 \) related conditions, express the degrees of freedom used in the asymptotic chi-square distribution of the test statistic.  
+</question>
+
+<question>  
+In a study comparing three independent groups of sizes \( n_1=12 \), \( n_2=15 \), and \( n_3=13 \), the Kruskal-Wallis test is applied. Write the formula for the Kruskal-Wallis statistic \( H \) incorporating a correction for ties given the tie correction factor \( C \), using the sum of ranks \( R_1, R_2, R_3 \) and total sample size \( N = n_1 + n_2 + n_3 \).  
+</question>
+
+<question>  
+In a Friedman Test with \( n=20 \) subjects and \( k=3 \) repeated measures conditions, express the rejection region for the test statistic \( Q \) at the significance level \(\alpha=0.01\). Provide the inequality involving \( Q \) and the chi-square critical value \( \chi^2_{(k-1), \alpha} \) that defines when to reject the null hypothesis.  
+</question>
+
+<question>  
+For the Wilcoxon Signed-Rank Test with \( n=8 \) pairs, express the test statistic \( T \) in terms of \( T^+ \) (the sum of positive ranks). Then, state the symbolic form of the decision rule for rejecting the null hypothesis at significance level \(\alpha=0.05\) based on \( T^+ \) and the critical values \( T_{\text{crit}} \).  
+</question>
+
+<question>  
+Three independent groups have sizes \( n_1=10 \), \( n_2=12 \), and \( n_3=11 \), with sums of ranks \( R_1=125 \), \( R_2=180 \), and \( R_3=165 \) respectively. Calculate the value of the Kruskal-Wallis \( H \) statistic using the formula  
+\[
+H = \frac{12}{N(N+1)} \sum_{i=1}^3 \frac{R_i^2}{n_i} - 3(N+1),
+\]  
+where \( N = n_1 + n_2 + n_3 \). Provide the final numeric value of \( H \).  
+</question>
+
+<question>  
+For a Wilcoxon Signed-Rank Test with \( n=9 \), express the rejection region for the test statistic \( T \) at \(\alpha=0.05\) in terms of its critical values \( T_{\text{crit}} \). Specify the symbolic inequalities involving \( T \) that define when to reject the null hypothesis.  
+</question>
+
+<question>  
+Write the formula for the Friedman test statistic \( Q \) incorporating a tie correction factor \( C \), for \( n=25 \) subjects measured under \( k=4 \) conditions. Express \( Q \) entirely in terms of the sums of ranks \( R_j \), sample size \( n \), number of conditions \( k \), and the tie correction \( C \).  
+</question>
+
+<question>  
+In a Wilcoxon Signed-Rank Test with \( n=7 \) pairs, write the null hypothesis symbolically and express the rejection region for the test statistic \( T \) at \(\alpha=0.05\) in terms of the critical value(s) \( T_{\text{crit}} \).  
+</question>
+
+<question>  
+For a Kruskal-Wallis Test with three groups of sizes \( n_1=8 \), \( n_2=9 \), and \( n_3=7 \), express the null hypothesis \( H_0 \) symbolically. Then, provide the chi-square degrees of freedom \( df \) for this test.  
+</question>
+=== Turn 1: Critic feedback ===
+Certainly! Here is concise, actionable feedback for each question evaluated against your specified guidelines:
+
+---
+
+**Question 1**  
+*Issue:* Asks for a “range” (set) of $T^+$ values for rejection, but does not specify a direction or hypothesis (one-sided or two-sided). No concrete critical value or logical inequality to write.  
+*Improvement:* Ask explicitly for the symbolic inequality involving $T^+$ and $T_{\text{crit}}$ for rejection, and state one-sided or two-sided context.
+
+---
+
+**Question 2**  
+*Issue:* The degrees of freedom in the Friedman test are straightforward, making this too trivial. No multi-step reasoning or computation is required.  
+*Improvement:* Pose a question requiring the derivation or calculation based on variables, or ask for a symbolic function in terms of $k$.
+
+---
+
+**Question 3**  
+*Issue:* Well-structured, but “write the formula” is trivial and may simply copy a textbook formula.  
+*Improvement:* Require derivation, simplification for these $n_i$ and $R_i$, or specify all variables to ensure a closed expression.
+
+---
+
+**Question 4**  
+*Issue:* Redundant wording (“provide the inequality involving Q and the chi-square...”). Essentially just states the definition of the rejection region.  
+*Improvement:* Frame as "Express the rejection region for $Q$ using the critical value $\chi^2_{(k-1),\,\alpha}$" and avoid redundancy.
+
+---
+
+**Question 5**  
+*Issue:* The first sentence ("express $T$ in terms of $T^+$") and the second ("state the symbolic form of the decision rule...") are two separate tasks—violates "single output" policy.  
+*Improvement:* Only ask for the symbolic inequality for rejection in terms of $T^+$ and $T_{\text{crit}}$.
+
+---
+
+**Question 6**  
+*Issue:* Fully quantitative, matches guidelines. However, for more depth, you might require the symbolic expression first, then a numeric value (which would be two parts, so avoid).  
+*Improvement:* As is, it is acceptable, but do not instruct for both symbolic and numeric unless explicitly needed for logic.
+
+---
+
+**Question 7**  
+*Issue:* Redundant with prior Wilcoxon question; asks for region “in terms of its critical values” (restating the method).  
+*Improvement:* Frame as “State the symbolic inequality involving $T$ and $T_{\text{crit}}$ that defines the rejection region at $\alpha=0.05$.”
+
+---
+
+**Question 8**  
+*Issue:* Good symbolic structure, clear variables, and a unique element (tie correction), but “incorporating a tie correction factor $C$” is a bit vague.  
+*Improvement:* Clearly define $C$ as the standard tie correction factor in the Kruskal-Wallis context for full rigor.
+
+---
+
+**Question 9**  
+*Issue:* Asks for both the null hypothesis and the rejection region—two outputs in one question.  
+*Improvement:* Only ask for *one* of these, preferably the symbolic null hypothesis (or the rejection region).
+
+---
+
+**Question 10**  
+*Issue:* Asks for two outputs: symbolic null hypothesis and degrees of freedom.  
+*Improvement:* Ask for just one—preferably “state the degrees of freedom symbolically.”
+
+---
+
+**General Summary of Improvements:**
+
+- Always require a *single* answer per question (no double-barreled queries).
+- Specify *symbolic* (not ambiguous “range” or “region”; use clear inequalities).
+- Avoid trivial “write the formula” or “state the degrees of freedom” unless combined with a twist (e.g., require derivation, or parameterization).
+- Provide all information needed to state clear, non-redundant symbolic answers.
+- Minimize repetitive test-statistic region questions—vigorously vary structure and required algebraic manipulation.
+- Define all symbols and context for rigorous clarity (e.g., tie correction factor).
+- Do not conflate “decision rule” with “statistic definition”—focus on one key concept per question.
+
+---
+
+**Example of improved formulation:**
+
+"Given Wilcoxon signed-rank test statistic $T^+$ with sample size $n=10$ and critical value $T_{\text{crit}}$ at significance level $\alpha=0.05$, express the symbolic rejection region for $T^+$."
+
+---
+
+By addressing these issues, your questions will better adhere to advanced assessment standards and your own expert guidelines.
+=== Turn 2: Author refines questions ===
+<question>  
+Given a Wilcoxon Signed-Rank Test with sample size \( n=10 \) and significance level \(\alpha=0.05\), express the symbolic rejection region for the test statistic \( T^+ \) in terms of its critical value(s) \( T_{\text{crit}} \) for a two-sided test.  
+</question>
+
+<question>  
+For the Friedman test involving \( k \) related conditions, express the degrees of freedom \( df \) of the asymptotic chi-square distribution of the test statistic \( Q \) as a symbolic function of \( k \).  
+</question>
+
+<question>  
+Given three independent groups with sample sizes \( n_1=12 \), \( n_2=15 \), \( n_3=13 \), sums of ranks \( R_1, R_2, R_3 \), total sample size \( N = n_1 + n_2 + n_3 \), and the Kruskal-Wallis tie correction factor \( C \), write the formula for the corrected Kruskal-Wallis statistic \( H \) explicitly in terms of these variables.  
+</question>
+
+<question>  
+In a Friedman Test with \( n=20 \) subjects and \( k=3 \) repeated measures conditions at significance level \(\alpha=0.01\), express the rejection region for the test statistic \( Q \) as a symbolic inequality involving the chi-square critical value \( \chi^2_{(k-1), 1-\alpha} \).  
+</question>
+
+<question>  
+For the Wilcoxon Signed-Rank Test with \( n=8 \) pairs and significance level \(\alpha=0.05\), express the symbolic form of the rejection region for the test statistic \( T^+ \) in terms of critical value(s) \( T_{\text{crit}} \) for a two-sided test.  
+</question>
+
+<question>  
+Three independent groups have sizes \( n_1=10 \), \( n_2=12 \), and \( n_3=11 \), with sum of ranks \( R_1=125 \), \( R_2=180 \), and \( R_3=165 \) respectively. Using the formula  
+\[
+H = \frac{12}{N(N+1)} \sum_{i=1}^3 \frac{R_i^2}{n_i} - 3(N+1),
+\]  
+where \( N = n_1 + n_2 + n_3 \), calculate the numeric value of the Kruskal-Wallis statistic \( H \).  
+</question>
+
+<question>  
+For a Wilcoxon Signed-Rank Test with \( n=9 \) pairs and significance level \(\alpha=0.05\), express the symbolic inequalities defining the rejection region for the test statistic \( T \) in terms of critical values \( T_{\text{crit}} \) for a two-sided test.  
+</question>
+
+<question>  
+Write the formula for the Friedman test statistic \( Q \) incorporating the standard tie correction factor \( C \), given \( n=25 \) subjects measured under \( k=4 \) conditions. Express \( Q \) fully in terms of \( n \), \( k \), sums of ranks \( R_j \) for each condition \( j=1,\ldots,k \), and \( C \).  
+</question>
+
+<question>  
+In a Wilcoxon Signed-Rank Test with \( n=7 \) pairs at significance level \(\alpha=0.05\), write the symbolic form of the null hypothesis \( H_0 \).  
+</question>
+
+<question>  
+For a Kruskal-Wallis Test with three groups of sizes \( n_1=8 \), \( n_2=9 \), and \( n_3=7 \), express the degrees of freedom \( df \) of the associated chi-square distribution symbolically in terms of the number of groups \( k=3 \).  
+</question>
+=== Final questions generated ===

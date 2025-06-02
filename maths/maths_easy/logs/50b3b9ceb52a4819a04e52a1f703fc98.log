@@ -1,0 +1,323 @@
+=== Turn 0: Author generates questions ===
+<question>  
+Consider a two-way ANOVA design with factor A having $a$ levels and factor B having $b$ levels, with $n$ replicates per cell. The observed total sum of squares (TSS) is given, along with the sums of squares for factor A (SSA) and factor B (SSB). Derive the expression for the sum of squares error (SSE) in terms of TSS, SSA, and SSB. Express SSE symbolically using these quantities.  
+</question>
+
+<question>  
+In a one-way ANOVA with $k$ groups and $N$ total observations, the mean square within groups (MSW) is an unbiased estimator of the common population variance $\sigma^2$. Given this, express the degrees of freedom associated with MSW and explain how this relates to the total degrees of freedom in the model. Provide the symbolic formula for the degrees of freedom of MSW.  
+</question>
+
+<question>  
+A two-way ANOVA without replication involves factors A and B with $a$ and $b$ levels respectively, and a single observation per treatment combination. Express the total degrees of freedom as a function of $a$ and $b$. Then, determine the degrees of freedom associated with the interaction term and the error term under this design.  
+</question>
+
+<question>  
+Given a two-way ANOVA layout with $a$ levels for factor A, $b$ levels for factor B, and $n$ replicates for each combination, the total sum of squares (TSS) is partitioned into SSA, SSB, SSE. Suppose the mean squares are defined as $\mathrm{MSA} = \frac{\mathrm{SSA}}{a-1}$, $\mathrm{MSB} = \frac{\mathrm{SSB}}{b-1}$, and $\mathrm{MSE} = \frac{\mathrm{SSE}}{ab(n-1)}$. Write down the formula for the F-statistic testing the null hypothesis of no effect of factor A.  
+</question>
+
+<question>  
+In a parametric one-way ANOVA, the total sum of squares (TSS) can be decomposed into sum of squares between groups (SSB) and sum of squares within groups (SSW). If $N$ is total number of observations and $k$ the number of groups, write the expressions for the degrees of freedom associated with SSB and SSW, and provide the formula for the F-test statistic in terms of SSB, SSW, and their respective degrees of freedom.  
+</question>
+
+<question>  
+Let $X_{ijk}$ be observations in a two-way ANOVA where $i = 1, \ldots, a$, $j = 1, \ldots, b$, $k = 1, \ldots, n$ represent factor levels and replicates. Given the grand mean $\bar{X}_{...}$, factor A marginal means $\bar{X}_{i..}$, and factor B marginal means $\bar{X}_{.j.}$, write the symbolic formula for the sum of squares for factor A (SSA) and sum of squares for factor B (SSB) using these sample means.  
+</question>
+
+<question>  
+In a balanced one-way ANOVA with $k$ groups each containing $n$ observations, the estimator for the population variance $\sigma^2$ is obtained from the mean square within groups (MSW). If the sum of squares within groups is SSW, write the formula for MSW and state the degrees of freedom used in the denominator.  
+</question>
+
+<question>  
+Consider an F-test arising from a one-way ANOVA with $k$ groups and total sample size $N$. If the ratio of mean square between groups (MSB) to mean square within groups (MSW) follows an $F$ distribution with degrees of freedom $(k-1, N-k)$ under the null hypothesis, express the degrees of freedom for MSB and MSW in terms of $k$ and $N$.  
+</question>
+
+<question>  
+In a two-way ANOVA model with factors A ($a$ levels), B ($b$ levels), and $n$ replicates per cell, the total sum of squares (TSS) is decomposed into four components: SSA, SSB, interaction SS (SSAB), and SSE. Provide the symbolic relationship expressing TSS as the sum of these four components, defining each term clearly in terms of summed squared deviations.  
+</question>
+
+<question>  
+A two-way ANOVA with replication yields the following mean squares: $\mathrm{MSA} = 10$, $\mathrm{MSB} = 15$, $\mathrm{MSE} = 5$, with degrees of freedom: $\mathrm{df}_A = 3$, $\mathrm{df}_B = 2$, $\mathrm{df}_E = 24$. Write the formula for calculating the F-statistic to test the null hypothesis of no interaction effect and explain whether this F-statistic is computable directly from these mean squares and degrees of freedom.  
+</question>
+=== Turn 0: Critic feedback ===
+Certainly! Here are concise, actionable critiques for each question, referenced by their order:
+
+---
+
+**Q1:**  
+_“Consider a two-way ANOVA design with factor A having $a$ levels and factor B having $b$ levels, with $n$ replicates per cell. The observed total sum of squares (TSS) is given, along with the sums of squares for factor A (SSA) and factor B (SSB). Derive the expression for the sum of squares error (SSE) in terms of TSS, SSA, and SSB. Express SSE symbolically using these quantities.”_
+
+- **Strengths**: Well-structured, clear target, and correct notational use.
+- **Feedback**: Slightly standard textbook derivation, consider incorporating interaction sum of squares for higher originality/nontriviality (Guideline #6). Otherwise, good.
+
+---
+
+**Q2:**  
+_“In a one-way ANOVA with $k$ groups and $N$ total observations, the mean square within groups (MSW) is an unbiased estimator of the common population variance $\sigma^2$. Given this, express the degrees of freedom associated with MSW and explain how this relates to the total degrees of freedom in the model. Provide the symbolic formula for the degrees of freedom of MSW.”_
+
+- **Strengths**: Clear setup and precise target.
+- **Feedback**: Contains two questions—requesting both the formula and an explanation in words; violates guideline #10. Remove the explanatory component (“explain how this relates…”), and request only the symbolic expression for the degrees of freedom associated with MSW.
+
+---
+
+**Q3:**  
+_“A two-way ANOVA without replication involves factors A and B with $a$ and $b$ levels respectively, and a single observation per treatment combination. Express the total degrees of freedom as a function of $a$ and $b$. Then, determine the degrees of freedom associated with the interaction term and the error term under this design.”_
+
+- **Strengths**: Realistic scenario, mathematical structure.
+- **Feedback**: Multi-part question—asks for multiple results (total, interaction, error df), violating guideline #10. Instead, ask for one: e.g., "Express the total degrees of freedom as a function of $a$ and $b$."
+
+---
+
+**Q4:**  
+_“Given a two-way ANOVA layout with $a$ levels for factor A, $b$ levels for factor B, and $n$ replicates for each combination, the total sum of squares (TSS) is partitioned into SSA, SSB, SSE. Suppose the mean squares are defined as $\mathrm{MSA} = \frac{\mathrm{SSA}}{a-1}$, $\mathrm{MSB} = \frac{\mathrm{SSB}}{b-1}$, and $\mathrm{MSE} = \frac{\mathrm{SSE}}{ab(n-1)}$. Write down the formula for the F-statistic testing the null hypothesis of no effect of factor A.”_
+
+- **Strengths**: Well-posed, single symbolic answer, concise.
+- **Feedback**: Good adherence to guidelines.
+
+---
+
+**Q5:**  
+_“In a parametric one-way ANOVA, the total sum of squares (TSS) can be decomposed into sum of squares between groups (SSB) and sum of squares within groups (SSW). If $N$ is total number of observations and $k$ the number of groups, write the expressions for the degrees of freedom associated with SSB and SSW, and provide the formula for the F-test statistic in terms of SSB, SSW, and their respective degrees of freedom.”_
+
+- **Strengths**: Rigorous, covers setup.
+- **Feedback**: Requests multiple outputs (df for SSB, SSW, F-statistic) — split into single-output questions to meet guideline #10. Otherwise, well-structured.
+
+---
+
+**Q6:**  
+_“Let $X_{ijk}$ be observations in a two-way ANOVA where $i = 1, \ldots, a$, $j = 1, \ldots, b$, $k = 1, \ldots, n$ represent factor levels and replicates. Given the grand mean $\bar{X}_{...}$, factor A marginal means $\bar{X}_{i..}$, and factor B marginal means $\bar{X}_{.j.}$, write the symbolic formula for the sum of squares for factor A (SSA) and sum of squares for factor B (SSB) using these sample means.”_
+
+- **Strengths**: Detailed, clear notational setup.
+- **Feedback**: Asks for two formulas, violating guideline #10. Split into separate questions, one for SSA, one for SSB.
+
+---
+
+**Q7:**  
+_“In a balanced one-way ANOVA with $k$ groups each containing $n$ observations, the estimator for the population variance $\sigma^2$ is obtained from the mean square within groups (MSW). If the sum of squares within groups is SSW, write the formula for MSW and state the degrees of freedom used in the denominator.”_
+
+- **Strengths**: Precise, mathematical rigor.
+- **Feedback**: Requests two results (formula and degrees of freedom), violating guideline #10. Ask only for the formula, or only for the degrees of freedom.
+
+---
+
+**Q8:**  
+_“Consider an F-test arising from a one-way ANOVA with $k$ groups and total sample size $N$. If the ratio of mean square between groups (MSB) to mean square within groups (MSW) follows an $F$ distribution with degrees of freedom $(k-1, N-k)$ under the null hypothesis, express the degrees of freedom for MSB and MSW in terms of $k$ and $N$.”_
+
+- **Strengths**: Clear symbolic output.
+- **Feedback**: Minor: Strictly, this is asking for two outputs — be explicit, e.g., “Write the degrees of freedom for MSB in terms of $k$ and for MSW in terms of $N$ and $k$.” Otherwise, minimal issue.
+
+---
+
+**Q9:**  
+_“In a two-way ANOVA model with factors A ($a$ levels), B ($b$ levels), and $n$ replicates per cell, the total sum of squares (TSS) is decomposed into four components: SSA, SSB, interaction SS (SSAB), and SSE. Provide the symbolic relationship expressing TSS as the sum of these four components, defining each term clearly in terms of summed squared deviations.”_
+
+- **Strengths**: Realistic, encourages decomposition step, promotes symbolic output.
+- **Feedback**: The phrase “defining each term clearly in terms of summed squared deviations” could require multiple definitions, leading to multiple outputs. Restrict question to “Write the symbolic equation relating TSS, SSA, SSB, SSAB, and SSE.”
+
+---
+
+**Q10:**  
+_“A two-way ANOVA with replication yields the following mean squares: $\mathrm{MSA} = 10$, $\mathrm{MSB} = 15$, $\mathrm{MSE} = 5$, with degrees of freedom: $\mathrm{df}_A = 3$, $\mathrm{df}_B = 2$, $\mathrm{df}_E = 24$. Write the formula for calculating the F-statistic to test the null hypothesis of no interaction effect and explain whether this F-statistic is computable directly from these mean squares and degrees of freedom.”_
+
+- **Strengths**: Concise data, directs towards statistic computation.
+- **Feedback**: Contains a two-part request (formula and explanation) — split into two questions for a single output (guideline #10). Also, no mean square for interaction is given, so phrase more generally (e.g., “give the formula for the F-statistic for interaction using mean squares and degrees of freedom”).
+
+---
+
+### General Recommendations
+
+- **Most frequent issue:** Many questions have multiple targets/outputs. Revise to ask for one symbolic formula or expression only.
+- **Originality:** Some questions are standard textbook types; challenge originality by combining standard setups with nontrivial deductions or less common extensions.
+- **Language:** Avoid prompts such as “explain” or “show”; always target a single, explicit symbolic result.
+- **Instruction:** Always format math with $...$ or $$...$$.
+- **Redundancy:** Eliminate all superfluous contextual or background statements unless necessary for rigor.
+
+By addressing these points, the questions will better adhere to your guidelines and promote clarity, rigor, and originality.
+=== Turn 1: Author refines questions ===
+<question>  
+Consider a two-way ANOVA design with factor A having $a$ levels and factor B having $b$ levels, with $n$ replicates per cell. Given the total sum of squares (TSS), and sums of squares for factor A (SSA), factor B (SSB), and the interaction (SSAB), express the sum of squares error (SSE) symbolically in terms of TSS, SSA, SSB, and SSAB.  
+</question>
+
+<question>  
+In a one-way ANOVA with $k$ groups and $N$ total observations, write the symbolic formula for the degrees of freedom associated with the mean square within groups (MSW).  
+</question>
+
+<question>  
+In a two-way ANOVA without replication, with factor A having $a$ levels and factor B having $b$ levels, express the total degrees of freedom as a function of $a$ and $b$.  
+</question>
+
+<question>  
+Given a two-way ANOVA layout with $a$ levels for factor A, $b$ levels for factor B, and $n$ replicates per cell, the mean squares are defined as $\mathrm{MSA} = \frac{\mathrm{SSA}}{a-1}$, $\mathrm{MSB} = \frac{\mathrm{SSB}}{b-1}$, and $\mathrm{MSE} = \frac{\mathrm{SSE}}{ab(n-1)}$. Write the formula for the F-statistic testing the null hypothesis of no effect of factor A.  
+</question>
+
+<question>  
+In a parametric one-way ANOVA with $k$ groups and total $N$ observations, write the symbolic formula for the degrees of freedom associated with the sum of squares between groups (SSB).  
+</question>
+
+<question>  
+Let $X_{ijk}$ be observations in a two-way ANOVA with $i = 1, \ldots, a$, $j = 1, \ldots, b$, $k = 1, \ldots, n$. Given the grand mean $\bar{X}_{...}$ and factor A marginal means $\bar{X}_{i..}$, write the symbolic formula for the sum of squares for factor A (SSA) in terms of these sample means.  
+</question>
+
+<question>  
+In a balanced one-way ANOVA with $k$ groups each containing $n$ observations and sum of squares within groups SSW, write the formula for the mean square within groups (MSW).  
+</question>
+
+<question>  
+Consider an F-test from a one-way ANOVA with $k$ groups and total sample size $N$. Write the degrees of freedom associated with mean square between groups (MSB) and mean square within groups (MSW) in terms of $k$ and $N$.  
+</question>
+
+<question>  
+In a two-way ANOVA with factors A ($a$ levels), B ($b$ levels), and $n$ replicates per cell, write the symbolic equation expressing the total sum of squares (TSS) as the sum of SSA, SSB, SSAB (interaction sum of squares), and SSE.  
+</question>
+
+<question>  
+In a two-way ANOVA with replication, suppose the degrees of freedom are $\mathrm{df}_A$, $\mathrm{df}_B$, $\mathrm{df}_{AB}$, and $\mathrm{df}_E$ for factors A, B, their interaction, and error respectively, and the corresponding mean squares are $\mathrm{MSA}$, $\mathrm{MSB}$, $\mathrm{MSAB}$, and $\mathrm{MSE}$. Write the formula for the F-statistic to test the null hypothesis of no interaction effect.  
+</question>
+=== Turn 1: Critic feedback ===
+Here is a critique of each question according to your guidelines:
+
+---
+
+**Question 1:**  
+*Strengths:* Clear mathematical setup, concise, expects a symbolic answer, unambiguous.  
+*Improvements:*
+- The opening could be abbreviated; "Given the total sum of squares (TSS),..." is enough.
+- "Express..." is fine, but could specify "Give a formula for..." for consistency.
+- No major issues.
+
+---
+
+**Question 2:**  
+*Strengths:* Precise, expects a symbolic answer, only essential info provided.
+*Improvements:*  
+- Use "Write the degrees of freedom for the mean square within groups (MSW) in terms of $k$ and $N$."
+- "Symbolic formula" is not strictly necessary if your audience understands standard notation.
+
+---
+
+**Question 3:**  
+*Strengths:* Concise, asks for a clear, symbolic answer.
+*Improvements:*  
+- "Without replication" is correct but might be confusing; could briefly clarify (i.e., "only one observation per cell"), but this is minor.
+- Consistently use "degrees of freedom" with subscript "total," e.g., $\mathrm{df}_{\mathrm{total}}$.
+
+---
+
+**Question 4:**  
+*Strengths:* Context is established, variables clear, asks for a specific F-statistic formula.
+*Improvements:*
+- Phrase: "Write the formula for the F-statistic to test the null hypothesis that factor A has no effect."
+- Consider "in terms of..." to make it explicit.
+
+---
+
+**Question 5:**  
+*Strengths:* States parametric restriction, context and answer expected are clear.
+*Improvements:*  
+- Wording could be slightly more direct.
+
+---
+
+**Question 6:**  
+*Strengths:* All notation defined, instructions precise, expects an explicit symbolic answer.
+*Improvements:*  
+- Could cleanly state: "Write the formula for the sum of squares for factor A (SSA) in terms of $\bar{X}_{i..}$, $\bar{X}_{...}$, $n$, and $b$ ($n$ replicates per cell assumed)."
+
+---
+
+**Question 7:**  
+*Strengths:* Concise, concrete setup, answer expected is clear.
+*Improvements:*  
+- Add "in terms of SSW, $k$, and $n$."
+
+---
+
+**Question 8:**  
+*Strengths:* Clear intent, notation defined.
+*Improvements:*  
+- Could state more concisely: "Write the degrees of freedom for MSB and MSW in terms of $k$ and $N$."
+- Specify that only the d.f. are expected, not the full formulas for MSB/MSW.
+
+---
+
+**Question 9:**  
+*Strengths:* Setup clear, all terms defined. Seeks a specific, symbolic result.
+*Improvements:*  
+- Very standard; consider whether some aspect could be more novel.
+- Be explicit: "Write the equation expressing TSS as the sum of SSA, SSB, SSAB, and SSE."
+
+---
+
+**Question 10:**  
+*Strengths:* Precise, defines all variables.
+*Improvements:*  
+- "Write the formula for the F-statistic testing the null hypothesis that there is no interaction effect."
+- Very standard; consider if a non-textbook framing could be adopted.
+
+---
+
+**General Actionable Feedback:**
+
+- **Originality:** Several questions are essentially restatements of textbook definitions/equations; consider combining aspects or framing in more unique research or data-analytic contexts to increase non-triviality.
+- **Redundancy:** Double-check that each variable or parameter mentioned is relevant to the answer requested; remove any that are not needed.
+- **Clarity:** Ensure instructions are brief but explicit about what symbolic answer is required and in terms of which variables.
+- **Formatting:** Use standard wording for "Write the formula for...", "Express...", etc., to maintain consistency.
+- **Novelty:** Incorporate real-data context or minor twists (e.g., "Given the following constraints/variations, write...") if possible.
+- **Avoid Multiple Parts:** Ensure each question requests exactly one symbolic result.
+
+**Summary Table**
+
+| Q# | Issue         | Suggestion                                                   |
+|----|--------------|--------------------------------------------------------------|
+| 1  | OK           | Minor: consistent phrasing                                   |
+| 2  | Minor wording| Use standard phrasing                                        |
+| 3  | Clarity      | Add d.f. subscript, clarify "without replication"            |
+| 4  | Concision    | Direct: "Write the F-statistic for factor A in terms of..."  |
+| 5  | Wording      | Use more direct phrasing                                     |
+| 6  | Explicitness | List all relevant means/parameters in instructions           |
+| 7  | Explicitness | Specify which variables answer must use                      |
+| 8  | Focus        | Ask only for degrees of freedom, not formula for MSB/MSW     |
+| 9  | Standardness | Consider more originality/novelty                            |
+| 10 | Standardness | Standard framing; suggest more context or novel twist        |
+
+Overall, these are high quality, but could benefit from a little more originality, precision of language, and conciseness.
+=== Turn 2: Author refines questions ===
+<question>  
+Consider a two-way ANOVA with factor A having $a$ levels and factor B having $b$ levels, and $n$ replicates per cell. Given the total sum of squares (TSS) and sums of squares for factor A (SSA), factor B (SSB), and their interaction (SSAB), write a formula for the sum of squares error (SSE) in terms of TSS, SSA, SSB, and SSAB.  
+</question>
+
+<question>  
+In a one-way ANOVA with $k$ groups and $N$ total observations, write the degrees of freedom for the mean square within groups (MSW) in terms of $k$ and $N$.  
+</question>
+
+<question>  
+In a two-way ANOVA without replication (i.e., one observation per cell), with factor A having $a$ levels and factor B having $b$ levels, express the total degrees of freedom $\mathrm{df}_{\mathrm{total}}$ as a function of $a$ and $b$.  
+</question>
+
+<question>  
+Given a two-way ANOVA with $a$ levels for factor A, $b$ levels for factor B, and $n$ replicates per cell, and mean squares defined as $\mathrm{MSA} = \frac{\mathrm{SSA}}{a-1}$, $\mathrm{MSB} = \frac{\mathrm{SSB}}{b-1}$, and $\mathrm{MSE} = \frac{\mathrm{SSE}}{ab(n-1)}$, write the formula for the F-statistic testing the null hypothesis that factor A has no effect, in terms of $\mathrm{MSA}$ and $\mathrm{MSE}$.  
+</question>
+
+<question>  
+In a parametric one-way ANOVA with $k$ groups and $N$ total observations, write the degrees of freedom associated with the sum of squares between groups (SSB) in terms of $k$.  
+</question>
+
+<question>  
+Let $X_{ijk}$ be observations in a two-way ANOVA with $i = 1, \ldots, a$, $j = 1, \ldots, b$, and $k = 1, \ldots, n$. Denote the grand mean by $\bar{X}_{...}$ and the factor A marginal means by $\bar{X}_{i..}$. Write the formula for the sum of squares for factor A (SSA) in terms of $\bar{X}_{i..}$, $\bar{X}_{...}$, $n$, and $b$.  
+</question>
+
+<question>  
+In a balanced one-way ANOVA with $k$ groups each containing $n$ observations and sum of squares within groups SSW, write the formula for the mean square within groups (MSW) in terms of SSW, $k$, and $n$.  
+</question>
+
+<question>  
+Consider a one-way ANOVA with $k$ groups and total sample size $N$. Write the degrees of freedom associated with mean square between groups (MSB) and mean square within groups (MSW) explicitly in terms of $k$ and $N$.  
+</question>
+
+<question>  
+In a two-way ANOVA with factor A ($a$ levels), factor B ($b$ levels), and $n$ replicates per cell, write the equation expressing the total sum of squares (TSS) as the sum of SSA, SSB, SSAB (interaction sum of squares), and SSE.  
+</question>
+
+<question>  
+In a two-way ANOVA with replication, let the degrees of freedom be $\mathrm{df}_A$, $\mathrm{df}_B$, $\mathrm{df}_{AB}$, and $\mathrm{df}_E$ for factors A, B, their interaction, and error respectively, and the corresponding mean squares be $\mathrm{MSA}$, $\mathrm{MSB}$, $\mathrm{MSAB}$, and $\mathrm{MSE}$. Write the formula for the F-statistic testing the null hypothesis that there is no interaction effect, in terms of $\mathrm{MSAB}$ and $\mathrm{MSE}$.  
+</question>
+=== Final questions generated ===

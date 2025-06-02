@@ -1,0 +1,392 @@
+=== Turn 0: Author generates questions ===
+<question>  
+Consider the partial differential equation  
+$$ u_t = k u_{xx}, \quad 0 < x < L, \quad t>0 $$  
+with boundary conditions  
+$$ u(0,t) = 0, \quad u(L,t) = 0, $$  
+and initial condition  
+$$ u(x,0) = \sin\left(\frac{3 \pi x}{L}\right). $$  
+Using the Separation of Variables method, determine the first eigenvalue $\lambda$ such that the separation yields a non-trivial solution, and express it explicitly in terms of $L$ and $\pi$.  
+</question>
+
+<question>  
+For the Legendre differential equation  
+$$ (1 - x^2) y'' - 2 x y' + \lambda y = 0, \quad -1 < x < 1, $$  
+with boundary conditions requiring boundedness on $[-1,1]$, determine the eigenvalue $\lambda$ corresponding to the polynomial solution of degree 3. Express $\lambda$ in closed form.  
+</question>
+
+<question>  
+Given the nonlinear first-order PDE  
+$$ u_t + u u_x = 0, \quad u(x,0) = 1 - x^2, \quad x \in \mathbb{R}, $$  
+derive the implicit formula for $u(x,t)$ using the method of characteristics, and express $u$ as a function involving $x$, $t$, and the initial data.  
+</question>
+
+<question>  
+Consider the initial-boundary value problem governed by the heat equation  
+$$ u_t = \alpha^2 u_{xx}, \quad 0 < x < \pi, \quad t>0, $$  
+with  
+$$ u(0,t) = 0, \quad u(\pi,t) = 0, \quad u(x,0) = x(\pi - x). $$  
+Using eigenfunction expansions, find the coefficient corresponding to the first eigenfunction of the series representation of $u(x,t)$ at $t=0$. Provide the exact value in terms of $\pi$.  
+</question>
+
+<question>  
+Given the Sturm-Liouville problem  
+$$ -\frac{d}{dx}\left(p(x) \frac{dy}{dx}\right) + q(x) y = \lambda w(x) y, \quad 0 < x < 1, $$  
+with  
+$$ p(x) = 1, \quad q(x) = 0, \quad w(x) = x, $$  
+and boundary conditions  
+$$ y(0) = 0, \quad y(1) = 0, $$  
+determine the smallest positive eigenvalue $\lambda_1$ expressed in terms of zeros of Bessel functions or related special functions.  
+</question>
+
+<question>  
+For the first-order quasilinear PDE  
+$$ u_t + (2u) u_x = 0, \quad u(x,0) = \frac{1}{1+x^2}, \quad x \in \mathbb{R}, $$  
+find the time $t_c$ at which the solution first develops a shock (i.e., where the characteristic curves cross). Express $t_c$ in exact symbolic form.  
+</question>
+
+<question>  
+The linear PDE  
+$$ u_t + a u_x = 0, \quad u(x,0) = f(x), $$  
+is discretized by the explicit finite difference scheme  
+$$ u_j^{n+1} = u_j^n - \mu (u_j^n - u_{j-1}^n), \quad \mu = \frac{a \Delta t}{\Delta x}. $$  
+Determine the range of $\mu$ for which the scheme is stable according to the CFL condition. Express the stability condition with explicit inequalities on $\mu$.  
+</question>
+
+<question>  
+For the Bessel equation of order zero,  
+$$ x^2 y'' + x y' + \lambda x^2 y = 0, \quad 0 < x < R, $$  
+with boundary condition  
+$$ y(R) = 0, $$  
+identify the smallest positive eigenvalue $\lambda_1$ in terms of the first positive zero $j_{0,1}$ of the Bessel function $J_0$. Provide $\lambda_1$ as a function of $j_{0,1}$ and $R$.  
+</question>
+
+<question>  
+Consider the partial differential equation  
+$$ u_t = 3 u_{xx} + 2 u, \quad 0 < x < 1, \quad t>0, $$  
+with boundary conditions  
+$$ u_x(0,t) = 0, \quad u(1,t) = 0, $$  
+and initial data  
+$$ u(x,0) = \cos\left(\frac{\pi x}{2}\right). $$  
+Employing separation of variables, find the eigenvalue $\lambda$ associated with the spatial component that satisfies the boundary conditions, and write $\lambda$ explicitly in terms of $\pi$.  
+</question>
+
+<question>  
+Let the first-order PDE  
+$$ u_t + \sin(u) u_x = 0, \quad u(x,0) = \arctan(x), \quad x \in \mathbb{R}, $$  
+be given. Using the method of characteristics, find the implicit expression relating $u$, $x$, and $t$. Provide a final equation linking these variables.  
+</question>
+=== Turn 0: Critic feedback ===
+Here is a critique of each question with actionable feedback per your guidelines:
+
+---
+
+**Q1: Heat equation eigenvalue**  
+- **Strengths:** Clear mathematical setup, correct use of LaTeX, single symbolic output, all information provided.
+- **Improvement:** The phrase "determine the first eigenvalue $\lambda$ such that the separation yields a non-trivial solution" could be simplified to "find the smallest positive eigenvalue $\lambda$ associated with this problem" for conciseness and clarity.
+
+---
+
+**Q2: Legendre equation, degree 3 eigenvalue**  
+- **Strengths:** Precise mathematical statement, domain and requirements specified, answer expected is symbolic and unambiguous.
+- **Improvement:** Consider stating "bounded on $[-1,1]$" as "finite on $[-1,1]$" for mathematical precision.
+
+---
+
+**Q3: Burgers' equation (implicit formula)**  
+- **Strengths:** Clearly asks for implicit formula in terms of initial data, uses standard notation, well-posed with required details.
+- **Improvement:** None needed.
+
+---
+
+**Q4: Heat equation series, first eigenfunction coefficient**  
+- **Strengths:** Mathematical setup is clear, initial and boundary conditions included, requirement is to find a single explicit coefficient.
+- **Improvement:** Specify "series representation" as "eigenfunction expansion" earlier, to avoid confusion.
+
+---
+
+**Q5: Sturm-Liouville with weight $x$, eigenvalue in terms of Bessel zero**  
+- **Strengths:** Setup is clear, boundary conditions and functions defined, asks for a single symbolic answer.
+- **Improvement:** None.
+
+---
+
+**Q6: Quasilinear PDE, shock time**  
+- **Strengths:** Well-posed, initial data and PDE clear, asks for a single symbolic answer.
+- **Improvement:** Phrase "develops a shock" as "characteristic curves first intersect" to reduce ambiguity.
+
+---
+
+**Q7: Upwind finite difference, stability (CFL condition)**  
+- **Strengths:** Clear setup, variables and discretization defined, output is an explicit inequality.
+- **Improvement:** Replace "according to the CFL condition" with "such that the scheme is stable according to the CFL condition" for grammatical clarity.
+
+---
+
+**Q8: Bessel equation, eigenvalue in terms of $j_{0,1}$**  
+- **Strengths:** Setup is precise, symbolic output unambiguous.
+- **Improvement:** Consider specifying "corresponding to $J_0$" explicitly in the text to reinforce the notation $j_{0,1}$.
+
+---
+
+**Q9: Heat equation with Robin/Dirichlet boundaries, find eigenvalue**  
+- **Strengths:** All necessary data included, rigorous request for a single symbolic answer.
+- **Improvement:** State "find the eigenvalue $\lambda$ for the spatial problem corresponding to the initial data/first eigenfunction" for specificity.
+
+---
+
+**Q10: First-order PDE with sine nonlinearity (implicit solution)**  
+- **Strengths:** Clear, precise setup, symbolic implicit output expected.
+- **Improvement:** Rephrase "find the implicit expression relating $u$, $x$, and $t$" as "derive a symbolic equation relating $u$, $x$, and $t$" for more concise direction. Remove "Provide a final equation linking these variables," as it is redundant.
+
+---
+
+**General Summary/Actionable Feedback:**
+
+- All problems are framed with clear symbolic outputs and adhere well to guidelines, but can be made a bit more concise/rigorous with minor rewording.
+- Avoid superfluous phrases or redundancies in asking for the form/structure of the answer.
+- Ensure the request for the solution is consistently phrased using precise mathematical language.
+- Maintain uniform notation and use standard phrasing for conditions (e.g., "finite" rather than "boundedness" when referring to Legendre equation; "characteristic curves first intersect" for shocks).
+- For full clarity, restate or reference the relevant operator/special function in each question using standardized notation, especially for special functions (e.g., clarify $j_{0,1}$).
+
+**Conclusion:**  
+All questions are mathematically solid and suitable for assessment, requiring only minor improvements in conciseness and notational clarity. None require significant structural changes.
+=== Turn 1: Author refines questions ===
+<question>  
+Consider the partial differential equation  
+$$ u_t = k u_{xx}, \quad 0 < x < L, \quad t>0 $$  
+with boundary conditions  
+$$ u(0,t) = 0, \quad u(L,t) = 0, $$  
+and initial condition  
+$$ u(x,0) = \sin\left(\frac{3 \pi x}{L}\right). $$  
+Using the method of Separation of Variables, find the smallest positive eigenvalue $\lambda$ associated with this problem, and express it explicitly in terms of $L$ and $\pi$.  
+</question>
+
+<question>  
+For the Legendre differential equation  
+$$ (1 - x^2) y'' - 2 x y' + \lambda y = 0, \quad -1 < x < 1, $$  
+with boundary conditions requiring solutions to be finite on $[-1,1]$, determine the eigenvalue $\lambda$ corresponding to the polynomial solution of degree 3. Express $\lambda$ in closed form.  
+</question>
+
+<question>  
+Given the nonlinear first-order PDE  
+$$ u_t + u u_x = 0, \quad u(x,0) = 1 - x^2, \quad x \in \mathbb{R}, $$  
+derive the implicit formula for $u(x,t)$ using the method of characteristics, and express $u$ as a function involving $x$, $t$, and the initial data.  
+</question>
+
+<question>  
+Consider the initial-boundary value problem governed by the heat equation  
+$$ u_t = \alpha^2 u_{xx}, \quad 0 < x < \pi, \quad t>0, $$  
+with boundary conditions  
+$$ u(0,t) = 0, \quad u(\pi,t) = 0, $$  
+and initial condition  
+$$ u(x,0) = x(\pi - x). $$  
+Using eigenfunction expansions, find the coefficient corresponding to the first eigenfunction in the series representation of $u(x,t)$ at $t=0$. Provide the exact value in terms of $\pi$.  
+</question>
+
+<question>  
+Given the Sturm-Liouville problem  
+$$ -\frac{d}{dx}\left(p(x) \frac{dy}{dx}\right) + q(x) y = \lambda w(x) y, \quad 0 < x < 1, $$  
+with  
+$$ p(x) = 1, \quad q(x) = 0, \quad w(x) = x, $$  
+and boundary conditions  
+$$ y(0) = 0, \quad y(1) = 0, $$  
+determine the smallest positive eigenvalue $\lambda_1$ expressed in terms of zeros of Bessel functions or related special functions.  
+</question>
+
+<question>  
+For the first-order quasilinear PDE  
+$$ u_t + (2u) u_x = 0, \quad u(x,0) = \frac{1}{1+x^2}, \quad x \in \mathbb{R}, $$  
+find the time $t_c$ at which characteristic curves first intersect (i.e., when the solution develops a shock). Express $t_c$ in exact symbolic form.  
+</question>
+
+<question>  
+The linear PDE  
+$$ u_t + a u_x = 0, \quad u(x,0) = f(x), $$  
+is discretized by the explicit finite difference scheme  
+$$ u_j^{n+1} = u_j^n - \mu (u_j^n - u_{j-1}^n), \quad \mu = \frac{a \Delta t}{\Delta x}. $$  
+Determine the range of $\mu$ such that the scheme is stable according to the CFL condition. Express the stability condition using explicit inequalities on $\mu$.  
+</question>
+
+<question>  
+For the Bessel equation of order zero,  
+$$ x^2 y'' + x y' + \lambda x^2 y = 0, \quad 0 < x < R, $$  
+with boundary condition  
+$$ y(R) = 0, $$  
+identify the smallest positive eigenvalue $\lambda_1$ in terms of the first positive zero $j_{0,1}$ of the Bessel function of the first kind $J_0$. Provide $\lambda_1$ as a function of $j_{0,1}$ and $R$.  
+</question>
+
+<question>  
+Consider the partial differential equation  
+$$ u_t = 3 u_{xx} + 2 u, \quad 0 < x < 1, \quad t>0, $$  
+with boundary conditions  
+$$ u_x(0,t) = 0, \quad u(1,t) = 0, $$  
+and initial data  
+$$ u(x,0) = \cos\left(\frac{\pi x}{2}\right). $$  
+Using separation of variables, find the eigenvalue $\lambda$ associated with the spatial problem corresponding to these boundary conditions. Express $\lambda$ explicitly in terms of $\pi$.  
+</question>
+
+<question>  
+Let the first-order PDE  
+$$ u_t + \sin(u) u_x = 0, \quad u(x,0) = \arctan(x), \quad x \in \mathbb{R}, $$  
+be given. Using the method of characteristics, derive a symbolic equation relating $u$, $x$, and $t$.  
+</question>
+=== Turn 1: Critic feedback ===
+Certainly! Here is concise, actionable feedback for improving the set of questions based on your guidelines:
+
+---
+
+**General Positive Notes:**
+- All questions are fully text-based, appropriately formatted in LaTeX, and do not refer to diagrams or external media.
+- Each question requests a single, explicit symbolic or closed-form answer (no proofs required).
+- The mathematical setup is clear, relevant, and concise in nearly all cases.
+- Symbolic notation and equation formatting are consistent and professional.
+- Each problem requires multi-step reasoning.
+- No question is divided into explicit multiple subparts.
+
+---
+
+**Question-by-Question Critique:**
+
+1. **Heat Equation Eigenvalue Problem**
+   - **Strengths:** Clear setup, standard boundary and initial conditions, asks for a specific symbolic answer.
+   - **Improvements:** Consider noting that the initial condition motivates the eigenvalue—otherwise, the “smallest positive eigenvalue” is independent of initial data. To enhance originality (Guideline 6), connect the eigenvalue directly to properties of the initial state or specify a twist not found in standard textbooks.
+
+2. **Legendre Equation Eigenvalue (Degree 3)**
+   - **Strengths:** Well-posed, specifically asks for the eigenvalue corresponding to degree 3 solutions, setup is compact and clear.
+   - **Improvements:** None required—this is a clear and original question.
+
+3. **Burgers'-type Nonlinear PDE (Method of Characteristics)**
+   - **Strengths:** All details provided, requests an explicit (symbolic/implicit) solution form, not just the method.
+   - **Improvements:** State “Find an implicit formula relating $u$, $x$, and $t$” for maximal clarity. Otherwise, very good.
+
+4. **Heat Equation First Eigenfunction Coefficient**
+   - **Strengths:** Clearly asks for a single coefficient, with a well-defined initial function. Directs the answer to a specific eigenfunction.
+   - **Improvements:** Consider stating explicitly which eigenfunction (e.g., $n=1$) to avoid ambiguity.
+
+5. **Sturm-Liouville with Weighted $w(x)$**
+   - **Strengths:** Well-posed, original due to weight $x$, asks for eigenvalue in terms of Bessel zeros.
+   - **Improvements:** Clarity could be enhanced with “Express $\lambda_1$ using the first positive zero of the appropriate Bessel function”—specify the order so there’s no ambiguity.
+
+6. **Quasilinear PDE, Shock Formation Time**
+   - **Strengths:** Asks for explicit symbolic $t_c$, unique problem due to initial data.
+   - **Improvements:** Clarify with “Find the smallest positive $t_c$ at which any two characteristics intersect”, to rule out ambiguity.
+
+7. **Linear Advection: FTCS Scheme Stability**
+   - **Strengths:** Clearly laid out, asks for explicit inequality on $\mu$.
+   - **Improvements:** State “according to the CFL condition for this explicit upwind scheme,” to avoid ambiguity over which scheme is intended.
+
+8. **Bessel Equation Eigenvalue**
+   - **Strengths:** Clearly posed, single symbolic answer targeted.
+   - **Improvements:** Specify that $j_{0,1}$ is the first positive zero of $J_0(x)$, even though it’s implied.
+
+9. **Heat Equation with Robin/Neumann-Dirichlet Conditions**
+   - **Strengths:** Setup is clear, single symbolic eigenvalue explicitly asked for.
+   - **Improvements:** Specify the form of the spatial eigenvalue equation to avoid confusion about the boundary conditions.
+
+10. **Nonlinear PDE with $\sin(u)$, Characteristics**
+    - **Strengths:** Well-posed, asks for the symbolic relationship.
+    - **Improvements:** State that only the implicit “characteristic” solution is needed, to preempt explicit solution attempts that may be impossible.
+
+---
+
+**Additional General Actionable Suggestions:**
+
+- **Originality:** A few problems are standard textbook exercises (e.g., #1, #2, #4, #8). For greater uniqueness, slightly alter coefficients, domains, or initial data, add nontrivial weights, or connect to real-world interpretation.
+- **Nonstandard Initial/Boundary Conditions:** Small twists (nonhomogeneous or mixed conditions, piecewise initial data) enhance originality without increasing complexity.
+- **Solution Uniqueness:** State specifically “the (smallest/first) positive eigenvalue” or similar clarifiers where multiple solutions could exist.
+- **Problem Statement Directness:** For all, begin with “Consider the equation…” and end with “Find/Express/Determine… in terms of $...$”, ensuring focused output.
+- **Notational Consistency:** Maintain variable usage (e.g., $k$ always for diffusion, $a$ for advection) to avoid confusion.
+- **Redundancy:** Some setups include a little excess (e.g., repeating $t>0$ in every question)—can be streamlined.
+
+---
+
+**Summary:**  
+Your questions are mathematically rigorous, formatted professionally, and mostly meet all guidelines. To further improve:  
+- Tweak for greater originality beyond standard textbook form.
+- Clarify any minor ambiguities about which eigenvalue or coefficient is requested.
+- Be direct in what form of solution (explicit/implicit/symbolic) is required.  
+- Consider occasionally introducing non-standard data or domains.
+
+Otherwise: Excellent alignment with the provided guidelines.
+=== Turn 2: Author refines questions ===
+<question>  
+Consider the heat equation  
+$$ u_t = k u_{xx}, \quad 0 < x < L, \quad t>0, $$  
+with homogeneous Dirichlet boundary conditions  
+$$ u(0,t) = 0, \quad u(L,t) = 0, $$  
+and initial condition  
+$$ u(x,0) = \sin\left(\frac{3 \pi x}{L}\right). $$  
+Using the method of separation of variables, find the smallest positive eigenvalue $\lambda$ of the associated spatial problem. Express $\lambda$ explicitly in terms of $L$ and $\pi$.  
+</question>
+
+<question>  
+For the Legendre differential equation  
+$$ (1 - x^2) y'' - 2 x y' + \lambda y = 0, \quad -1 < x < 1, $$  
+with boundary conditions requiring solutions to be finite on $[-1,1]$, determine the eigenvalue $\lambda$ corresponding to the polynomial solution of degree 3. Express $\lambda$ in closed form.  
+</question>
+
+<question>  
+Given the nonlinear first-order PDE  
+$$ u_t + u u_x = 0, \quad u(x,0) = 1 - x^2, \quad x \in \mathbb{R}, $$  
+use the method of characteristics to derive an implicit formula relating $u$, $x$, and $t$. Express $u$ symbolically as a function involving $x$, $t$, and the given initial data.  
+</question>
+
+<question>  
+Consider the heat equation  
+$$ u_t = \alpha^2 u_{xx}, \quad 0 < x < \pi, \quad t>0, $$  
+with homogeneous Dirichlet boundary conditions  
+$$ u(0,t) = 0, \quad u(\pi,t) = 0, $$  
+and initial condition  
+$$ u(x,0) = x(\pi - x). $$  
+Using eigenfunction expansions, find the coefficient corresponding to the first eigenfunction ($n=1$) in the series representation of $u(x,t)$ at $t=0$. Express this coefficient exactly in terms of $\pi$.  
+</question>
+
+<question>  
+Consider the Sturm-Liouville problem  
+$$ -\frac{d}{dx}\left(p(x) \frac{dy}{dx}\right) + q(x) y = \lambda w(x) y, \quad 0 < x < 1, $$  
+with  
+$$ p(x) = 1, \quad q(x) = 0, \quad w(x) = x, $$  
+and boundary conditions  
+$$ y(0) = 0, \quad y(1) = 0. $$  
+Determine the smallest positive eigenvalue $\lambda_1$, and express it in terms of the first positive zero of the Bessel function of order one, $J_1$. Provide the explicit formula involving this zero.  
+</question>
+
+<question>  
+For the first-order quasilinear PDE  
+$$ u_t + (2 u) u_x = 0, \quad u(x,0) = \frac{1}{1+x^2}, \quad x \in \mathbb{R}, $$  
+find the smallest positive time $t_c$ at which characteristic curves first intersect (i.e., when the solution develops a shock). Express $t_c$ exactly in symbolic form.  
+</question>
+
+<question>  
+Consider the linear advection equation  
+$$ u_t + a u_x = 0, \quad u(x,0) = f(x), $$  
+discretized by the explicit upwind finite difference scheme  
+$$ u_j^{n+1} = u_j^n - \mu (u_j^n - u_{j-1}^n), \quad \mu = \frac{a \Delta t}{\Delta x}. $$  
+Determine the range of $\mu$ values such that the scheme is stable under the CFL condition. Express the stability condition as explicit inequalities on $\mu$.  
+</question>
+
+<question>  
+For the Bessel differential equation of order zero,  
+$$ x^2 y'' + x y' + \lambda x^2 y = 0, \quad 0 < x < R, $$  
+with boundary condition  
+$$ y(R) = 0, $$  
+identify the smallest positive eigenvalue $\lambda_1$. Express $\lambda_1$ in terms of $j_{0,1}$, the first positive zero of the Bessel function of the first kind $J_0$, and $R$.  
+</question>
+
+<question>  
+Consider the PDE  
+$$ u_t = 3 u_{xx} + 2 u, \quad 0 < x < 1, \quad t>0, $$  
+with boundary conditions  
+$$ u_x(0,t) = 0, \quad u(1,t) = 0, $$  
+and initial data  
+$$ u(x,0) = \cos\left(\frac{\pi x}{2}\right). $$  
+Using separation of variables, find the eigenvalue $\lambda$ associated with the spatial problem for these boundary conditions. Express $\lambda$ explicitly in terms of $\pi$.  
+</question>
+
+<question>  
+Let the first-order PDE  
+$$ u_t + \sin(u) \, u_x = 0, \quad u(x,0) = \arctan(x), \quad x \in \mathbb{R}, $$  
+be given. Using the method of characteristics, derive a symbolic implicit equation relating $u$, $x$, and $t$.  
+</question>
+=== Final questions generated ===

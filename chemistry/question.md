@@ -1,0 +1,1 @@
+Find the angle $\theta$ such that $\sin \theta = 0.5$.

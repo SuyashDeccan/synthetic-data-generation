@@ -1,0 +1,461 @@
+=== Turn 0: Author generates questions ===
+<question>  
+Consider the vector field  
+$$ \mathbf{F}(x,y,z) = (yz, xz, xy) $$  
+and the surface $S$ defined by the portion of the paraboloid $z = 4 - x^2 - y^2$ above the $xy$-plane, oriented upward. Calculate the flux of $\mathbf{F}$ through $S$.  
+</question>  
+
+<question>  
+Given a scalar function  
+$$ f(x,y,z) = x^2 y + y^2 z + z^2 x, $$  
+compute the directional derivative of $f$ at the point $(1,1,1)$ in the direction tangent to the curve defined by  
+$$ \mathbf{r}(t) = (t, t^2, t^3) $$  
+at $t=1$.  
+</question>  
+
+<question>  
+A surface $S$ is parameterized by  
+$$ \mathbf{r}(u,v) = (u \cos v, u \sin v, u^2) $$  
+for $0 \leq u \leq 1$, $0 \leq v \leq 2\pi$. The vector field is  
+$$ \mathbf{F}(x,y,z) = (x, y, z). $$  
+Find the flux of $\mathbf{F}$ across $S$ oriented by the outward normal vector.  
+</question>  
+
+<question>  
+Evaluate the limit  
+$$ \lim_{(x,y) \to (0,0)} \frac{x^3 y}{x^2 + y^2} $$  
+and determine whether the function  
+$$ f(x,y) = \begin{cases} \frac{x^3 y}{x^2 + y^2}, & (x,y) \neq (0,0) \\ 0, & (x,y) = (0,0) \end{cases} $$  
+is continuous at the origin.  
+</question>  
+
+<question>  
+Let $\mathbf{F}(x,y,z) = (e^x, yz, xy)$ be a vector field and $S$ be the part of the plane $x + y + z = 1$ in the first octant, oriented with unit normal pointing outward from the origin. Determine the flux of $\mathbf{F}$ through $S$.  
+</question>  
+
+<question>  
+A particle moves along the curve $\mathbf{r}(t) = (e^t, \ln(t+1), t^2)$ for $t \geq 0$. Compute the derivative of the scalar field  
+$$ g(x,y,z) = xyz $$$ at the point corresponding to $t=0$ with respect to time.  
+</question>  
+
+<question>  
+Let $f(x,y,z) = x^2 + y^2 - z^2$. Find the equation of the tangent plane to the level surface $f(x,y,z) = 1$ at the point $(1,1,1)$.  
+</question>  
+
+<question>  
+Consider the vector field  
+$$ \mathbf{F}(x,y,z) = (yz^2, xz^2, 2xyz) $$  
+and the closed surface $S$ given by the sphere of radius $2$ centered at the origin. Use the divergence theorem to find the flux of $\mathbf{F}$ outward through $S$.  
+</question>  
+
+<question>  
+Given the function $h(x,y) = x^3 y^2 e^{xy}$, compute the second mixed partial derivative $\frac{\partial^2 h}{\partial y \partial x}$ at the point $(0,1)$.  
+</question>  
+
+<question>  
+Parameterize the upper hemisphere of the sphere $x^2 + y^2 + z^2 = 9$, $z \geq 0$, using spherical coordinates $(\theta, \phi)$ with $\theta \in [0, 2\pi]$, $\phi \in [0, \frac{\pi}{2}]$. Compute the surface area element $dS$ in terms of $d\theta$ and $d\phi$.  
+</question>
+=== Turn 0: Critic feedback ===
+Below is detailed, actionable feedback on each question, referencing your rubric:
+
+---
+
+### 1. Flux through paraboloid
+**Evaluation**:  
+- Meets input format, structure, target, and output criteria.
+- Requests a clearly defined symbolic answer.
+- Requires multi-step work (parameterization, surface integral, computation).
+- Original and non-trivial, not just a reworded standard exercise.
+
+**Improvement**:  
+**No major changes needed.** This is an exemplary surface integral problem.
+
+---
+
+### 2. Directional derivative along a curve
+**Evaluation**:  
+- Setup is clear: function, point, curve, and evaluation location.
+- Multi-step: gradient, tangent vector, normalization, etc.
+- Original (direction is along tangent to specific curve).
+- Unambiguous single output.
+
+**Improvement**:  
+- Consider clarifying "direction tangent" by explicitly stating "unit tangent vector to $\mathbf{r}(t)$ at $t=1$".
+- Consider explicitly stating "compute the directional derivative of $f$ in the direction of the unit tangent vector..." to preempt ambiguity.
+
+---
+
+### 3. Flux through parameterized surface
+**Evaluation**:  
+- Surface and field are precisely defined.
+- Output is single flux value.
+- Multi-step: parameterization, normal vector, integration.
+
+**Improvement**:  
+- "Outward normal" could be ambiguous. For parameterizations, clarify orientation: "Take the normal corresponding to increasing $u$ and $v$ such that the orientation is outward from the surface."
+- Optionally, specify the orientation in terms of which side (outside the paraboloid surface).
+
+---
+
+### 4. Limit and continuity
+**Evaluation**:  
+- Asks two things: limit and continuity.
+- Slightly violates "single output" rule (question #10).
+- Otherwise, mathematically clear and multi-step.
+
+**Improvement**:  
+**Change to only require limit** OR only ask about continuity at the origin (since that depends on the limit):  
+> "Evaluate $\lim_{(x,y)\to(0,0)} \frac{x^3 y}{x^2+y^2}$."  
+*or*
+> "Determine whether $f$ is continuous at the origin."  
+But do not ask both in one item.
+
+---
+
+### 5. Flux through planar region in first octant
+**Evaluation**:  
+- Vector field and surface are precisely defined.
+- "Unit normal pointing outward from the origin" is clear for standard orientation.
+- Single symbolic answer expected.
+
+**Improvement**:  
+- *Optional*: Specify the region explicitly as $x\geq0$, $y\geq0$, $z\geq0$ so there's no ambiguity about the "first octant".
+
+---
+
+### 6. Time derivative along a curve
+**Evaluation**:  
+- Curve and scalar field are clearly defined.
+- Target value at given $t$ is unambiguous.
+- Single output.
+- Multi-step: chain rule for multivariable function along a curve.
+
+**Improvement**:  
+- The dollar sign after $t^2)$ in the question is a typo, remove the extra $.  
+- To be clearer: "Compute $\frac{d}{dt} g(\mathbf{r}(t))$ at $t=0$."
+
+---
+
+### 7. Tangent plane to level surface
+**Evaluation**:  
+- Well-posed, unambiguous.
+- Multi-step.
+- Target answer is a single equation.
+
+**Improvement**:  
+- None necessary: textbook direct, but can be considered minimally original.
+
+---
+
+### 8. Divergence theorem on sphere
+**Evaluation**:  
+- Vector field and surface specified exactly.
+- Use of divergence theorem is explicitly called for.
+- Output strictly single number.
+
+**Improvement**:  
+- None needed.
+
+---
+
+### 9. Second mixed partial derivative
+**Evaluation**:  
+- Function and evaluation point are clear.
+- Only asks for one partial.
+
+**Improvement**:  
+- None needed.
+
+---
+
+### 10. Surface area element on hemisphere
+**Evaluation**:  
+- Asks for dS in spherical coordinates on upper hemisphere.
+- Clear bounds, single output expected.
+
+**Improvement**:  
+- None needed.
+
+---
+
+### **General Feedback**
+- Be careful that each question asks for exactly one answer (no multipart queries—see #4).
+- When specifying surface orientations, in parameterized surfaces, explicitly state the orientation relative to the parameterization, not just "outward" (see #3).
+- Avoid stray or mismatched LaTeX delimiters (see #6).
+
+**Overall**, your questions are largely compliant and high-quality. Most improvements are minor clarifications or ways to reduce small ambiguities. The main actionable fix is to ensure questions never have multiple distinct tasks (as in #4).
+=== Turn 1: Author refines questions ===
+<question>  
+Consider the vector field  
+$$ \mathbf{F}(x,y,z) = (yz, xz, xy) $$  
+and the surface $S$ defined by the portion of the paraboloid  
+$$ z = 4 - x^2 - y^2 $$  
+above the $xy$-plane, oriented upward. Calculate the flux of $\mathbf{F}$ through $S$.  
+</question>  
+
+<question>  
+Given a scalar function  
+$$ f(x,y,z) = x^2 y + y^2 z + z^2 x, $$  
+compute the directional derivative of $f$ at the point $(1,1,1)$ in the direction of the unit tangent vector to the curve  
+$$ \mathbf{r}(t) = (t, t^2, t^3) $$  
+at $t=1$.  
+</question>  
+
+<question>  
+A surface $S$ is parameterized by  
+$$ \mathbf{r}(u,v) = (u \cos v, u \sin v, u^2) $$  
+for $0 \leq u \leq 1$, $0 \leq v \leq 2\pi$. Let $\mathbf{F}(x,y,z) = (x, y, z)$ be a vector field. Find the flux of $\mathbf{F}$ across $S$, oriented by the normal vector corresponding to the parameterization with increasing $u$ and $v$, which points outward from the surface.  
+</question>  
+
+<question>  
+Evaluate the limit  
+$$ \lim_{(x,y) \to (0,0)} \frac{x^3 y}{x^2 + y^2}. $$  
+</question>  
+
+<question>  
+Let $\mathbf{F}(x,y,z) = (e^x, yz, xy)$ be a vector field, and let $S$ be the part of the plane  
+$$ x + y + z = 1 $$  
+in the first octant (where $x,y,z \geq 0$), oriented by the unit normal vector pointing away from the origin. Determine the flux of $\mathbf{F}$ through $S$.  
+</question>  
+
+<question>  
+A particle moves along the curve  
+$$ \mathbf{r}(t) = (e^t, \ln(t+1), t^2) $$  
+for $t \geq 0$. Compute the derivative with respect to time of the scalar field  
+$$ g(x,y,z) = xyz $$  
+at the point corresponding to $t=0$.  
+</question>  
+
+<question>  
+Let  
+$$ f(x,y,z) = x^2 + y^2 - z^2. $$  
+Find the equation of the tangent plane to the level surface defined by  
+$$ f(x,y,z) = 1 $$  
+at the point $(1,1,1)$.  
+</question>  
+
+<question>  
+Consider the vector field  
+$$ \mathbf{F}(x,y,z) = (yz^2, xz^2, 2xyz) $$  
+and the closed surface $S$ given by the sphere of radius $2$ centered at the origin. Use the divergence theorem to find the flux of $\mathbf{F}$ outward through $S$.  
+</question>  
+
+<question>  
+Given the function  
+$$ h(x,y) = x^3 y^2 e^{xy}, $$  
+compute the second mixed partial derivative  
+$$ \frac{\partial^2 h}{\partial y \partial x} $$  
+at the point $(0,1)$.  
+</question>  
+
+<question>  
+Parameterize the upper hemisphere of the sphere  
+$$ x^2 + y^2 + z^2 = 9, \quad z \geq 0, $$  
+using spherical coordinates $(\theta, \phi)$ where $\theta \in [0, 2\pi]$, $\phi \in [0, \frac{\pi}{2}]$. Compute the surface area element $dS$ in terms of $d\theta$ and $d\phi$.  
+</question>
+=== Turn 1: Critic feedback ===
+Here is a critique of your questions, evaluated against your stated guidelines:
+
+---
+
+### Question 1  
+**Strengths**:  
+- Clear mathematical setup with all necessary definitions.
+- Target is a single symbolic/numerical result (flux).
+- Requires multi-step reasoning (surface parameterization, flux calculation).
+
+**Improvements**:  
+- The question matches the structure of common textbook questions (Guideline 6: Originality). Consider altering the vector field or surface, or combining concepts to enhance originality.
+
+---
+
+### Question 2  
+**Strengths**:  
+- Well-posed mathematical structure.
+- Single, unambiguous output is required.
+- Involves chained application of gradient and directional derivative.
+
+**Improvements**:  
+- This is a standard application problem; to boost originality, select a less common curve or function.
+
+---
+
+### Question 3  
+**Strengths**:  
+- All relevant information is present.
+- Requires parameterization, normal vector, and surface integral.
+- Unambiguous, single output.
+
+**Improvements**:  
+- Like question 1, it's based on typical exam problems. Try to introduce a twist (e.g., different orientation, or more creative region).
+
+---
+
+### Question 4  
+**Strengths**:  
+- Concise, relevant, single-output limit.
+- All information given.
+
+**Improvements**:  
+- The function is a common example for non-existence of multivariable limits. To improve originality, choose a less canonical expression.
+
+---
+
+### Question 5  
+**Strengths**:  
+- Mathematical structure is well defined.
+- Single clear target (flux through a planar region).
+- Clear description for the orientation.
+
+**Improvements**:  
+- The vector field and surface are directly from standard texts. Choose less common surfaces or vector fields.
+
+---
+
+### Question 6  
+**Strengths**:  
+- Properly defines curve and scalar field.
+- Target is single directional derivative.
+
+**Improvements**:  
+- Standard format; for originality, change the function or the curve to make the question less textbook-like.
+
+---
+
+### Question 7  
+**Strengths**:  
+- Clear layout: function, level surface, and point are given.
+- Asks for a single equation (tangent plane).
+
+**Improvements**:  
+- This is a very standard question; consider a more involved surface or less trivial point.
+
+---
+
+### Question 8  
+**Strengths**:  
+- Fully specified vector field and surface.
+- Explicitly requests use of divergence theorem (multi-step).
+- Single, symbolic answer.
+
+**Improvements**:  
+- The vector field is a bit too straightforward for divergence theorem; try constructing a field that makes the computation less standard.
+
+---
+
+### Question 9  
+**Strengths**:  
+- All aspects are specified.
+- Clearly asks for a single partial derivative at a point.
+
+**Improvements**:  
+- Very similar to many textbook examples; modify either $h(x, y)$ or the evaluation point for more originality.
+
+---
+
+### Question 10  
+**Strengths**:  
+- Defines both parameterization ranges and mathematical surface.
+- Clearly asks for a single symbolic expression for $dS$.
+
+**Improvements**:  
+- This is a typical surface parameterization/computation exercise. Adjust the surface shape or coordinate system for more originality.
+
+---
+
+### General Feedback  
+- **Input Format**: All questions satisfy fully text-based criteria.
+- **Mathematical Structure & Solvable Target**: All have full setups with single, unambiguous answers.
+- **Multi-Step Reasoning**: Each requires chaining definitions/theorems.
+- **Conciseness & Relevance**: No redundant or irrelevant information.
+- **Originality**: Most questions closely resemble standard textbook or exam problems. Strive for more creative, less predictable setups (novel surfaces, less common fields, unique domain ranges).
+- **Single Output**: All satisfy.
+- **Solution Format**: Not applicable, as no solutions are given.
+- **Language & Notation**: Rigorous and standard.
+
+---
+
+### **Summary of Actionable Suggestions**
+1. **Increase originality:** For each problem, use less conventional functions, fields, or surfaces, or combine concepts for novelty.
+2. **Avoid overused templates:** Move away from strictly classic examples seen in multivariable calculus texts.
+3. **Maintain single-solution focus:** You do this well; continue not to include parts or multiple answers.
+4. **Continue using clear, unambiguous notation and instructions.**
+
+Overall, your questions are properly formatted and mathematically solid, but lack in originality; this is the primary area to improve.
+=== Turn 2: Author refines questions ===
+<question>  
+Consider the vector field  
+$$ \mathbf{F}(x,y,z) = (y e^{z}, \sin(xz), x^2 y) $$  
+and the surface \( S \) defined by the portion of the ellipsoid  
+$$ \frac{x^2}{4} + \frac{y^2}{9} + \frac{z^2}{16} = 1 $$  
+above the plane \( z = 1 \), oriented upward. Calculate the flux of \(\mathbf{F}\) through \( S \).  
+</question>  
+
+<question>  
+Given the scalar function  
+$$ f(x,y,z) = \ln(x^2 + y^2 + z^2) + xyz, $$  
+compute the directional derivative of \( f \) at the point \( (1,2,-1) \) in the direction of the tangent vector to the curve  
+$$ \mathbf{r}(t) = (t^2, \sqrt{t}, \ln(t+2)) $$  
+at \( t = 1 \). Express the direction vector as a unit vector before taking the directional derivative.  
+</question>  
+
+<question>  
+A surface \( S \) is parameterized by  
+$$ \mathbf{r}(u,v) = (u \cos v, u \sin v, \ln(u+1)) $$  
+for \( 0 \leq u \leq 2 \), \( 0 \leq v \leq 2\pi \). Let the vector field be  
+$$ \mathbf{F}(x,y,z) = (e^{x}, y^2, \sin(z)). $$  
+Find the flux of \(\mathbf{F}\) across \( S \), oriented so that the normal vector corresponds to increasing \( u \) and \( v \) and points outward from the surface.  
+</question>  
+
+<question>  
+Evaluate the limit  
+$$ \lim_{(x,y) \to (0,0)} \frac{x^2 \sin(y)}{x^2 + y^4}. $$  
+Does the limit exist? Justify your answer.  
+</question>  
+
+<question>  
+Consider the vector field  
+$$ \mathbf{F}(x,y,z) = \big( \cos(yz), x e^{z}, y \ln(x+2) \big), $$  
+and let \( S \) be the part of the plane  
+$$ 2x - y + z = 3 $$  
+inside the first octant (\( x,y,z \geq 0 \)), oriented by the unit normal vector pointing away from the origin. Compute the flux of \(\mathbf{F}\) through \( S \).  
+</question>  
+
+<question>  
+A particle moves along the curve  
+$$ \mathbf{r}(t) = (t \sin t, e^{t^2}, \arctan t) $$  
+for \( t \geq 0 \). Given the scalar field  
+$$ g(x,y,z) = x^2 + yz + \sin(xz), $$  
+compute \( \frac{d}{dt}g(\mathbf{r}(t)) \) at \( t=0 \).  
+</question>  
+
+<question>  
+Let  
+$$ f(x,y,z) = e^{xyz} + x^3 - z^2. $$  
+Find the equation of the tangent plane to the level surface  
+$$ f(x,y,z) = e + 1 $$  
+at the point \( (1,1,1) \).  
+</question>  
+
+<question>  
+Consider the vector field  
+$$ \mathbf{F}(x,y,z) = (x y z, x^2 y, y^2 z) $$  
+and the closed surface \( S \) given by the ellipsoid  
+$$ \frac{x^2}{1} + \frac{y^2}{4} + \frac{z^2}{9} = 1. $$  
+Use the divergence theorem to find the flux of \(\mathbf{F}\) outward through \( S \).  
+</question>  
+
+<question>  
+Given the function  
+$$ h(x,y) = e^{x y} (x^4 y + y^3), $$  
+compute the second mixed partial derivative  
+$$ \frac{\partial^2 h}{\partial y \partial x} $$  
+at the point \( (1,0) \).  
+</question>  
+
+<question>  
+Parameterize the portion of the paraboloid  
+$$ z = 9 - x^2 - y^2, \quad z \geq 5, $$  
+using cylindrical coordinates \( (r, \theta) \) where \( r \in [0,2] \), \( \theta \in [0,2\pi] \). Compute the surface area element \( dS \) in terms of \( dr \) and \( d\theta \).  
+</question>
+=== Final questions generated ===

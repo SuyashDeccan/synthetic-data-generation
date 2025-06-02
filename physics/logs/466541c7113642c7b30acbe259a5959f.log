@@ -1,0 +1,244 @@
+=== Turn 0: Author generates questions ===
+```xml
+<question>A point source emits monochromatic X-rays with a wavelength of $\lambda = 0.1 \, \mathrm{nm}$ into vacuum. An observer moves towards the source with a relativistic speed of $v = 0.8c$, where $c$ is the speed of light in vacuum. Due to the Doppler effect, the observer measures a different wavelength $\lambda'$.  What is the value of $\lambda'$ (in nm) as measured by the observer? </question>
+
+<question>An isotropic point source emits light with a luminous intensity of $I = 100 \, \mathrm{cd}$. A circular detector with a radius of $r = 5 \, \mathrm{cm}$ is placed at a distance of $d = 2 \, \mathrm{m}$ from the source, with its surface normal pointing directly at the source.  What is the illuminance $E$ (in lux) on the detector?</question>
+
+<question>A collimated beam of gamma rays with an energy of $E = 662 \, \mathrm{keV}$ is incident on a thin aluminum foil. A detector measures the scattered photons at an angle of $\theta = 90^\circ$ relative to the incident beam direction. What is the energy $E'$ (in keV) of the scattered photons, assuming Compton scattering is the dominant interaction?</question>
+
+<question>A relativistic electron with a kinetic energy of $T = 1.5 \, \mathrm{MeV}$ moves through a transparent medium with a refractive index of $n = 1.4$. What is the angle $\theta_c$ (in degrees) of the Cherenkov radiation emitted by the electron with respect to the electron's direction of motion? </question>
+
+<question>A monochromatic light source with a wavelength of $\lambda = 555 \, \mathrm{nm}$ emits radiation with a power of $P = 1 \, \mathrm{W}$. Assuming the human eye's spectral luminous efficacy at this wavelength is $V(\lambda) = 1$, what is the luminous flux $\Phi_v$ (in lumens) of the source? Note that $K_m = 683 \, \mathrm{lm/W}$ is the maximum spectral luminous efficacy.</question>
+
+<question>Consider a hypothetical material with a work function of $\phi = 2.5 \, \mathrm{eV}$. If light with a wavelength of $\lambda = 400 \, \mathrm{nm}$ is incident on this material, what is the maximum kinetic energy $K_{max}$ (in eV) of the emitted photoelectrons? </question>
+
+<question>A spaceship is moving away from Earth at a constant velocity $v = 0.6c$, where $c$ is the speed of light. On Earth, a light source emits a signal with a frequency of $f_0 = 5 \times 10^{14} \, \mathrm{Hz}$. What is the frequency $f$ (in Hz) of the light observed on the spaceship?</question>
+
+<question>A perfectly black, spherical object with a radius of $r = 0.1 \, \mathrm{m}$ is heated to a temperature of $T = 1000 \, \mathrm{K}$.  Assuming it radiates as a blackbody, what is its luminosity $L$ (in Watts)? Stefan-Boltzmann constant is $\sigma = 5.67 \times 10^{-8} \, \mathrm{W m^{-2} K^{-4}}$.</question>
+```
+=== Turn 0: Critic feedback ===
+Here's a critique of each question based on the provided guidelines:
+
+---
+
+**Question 1: Relativistic Doppler Effect (Wavelength)**
+
+*   **Critique:** This question successfully models a physics scenario, is concisely phrased, uses correct units and formatting, and yields a single numerical solution. However, it falls short on "Force Multi-Step Reasoning" and "Be Unique." The calculation is a direct application of the relativistic Doppler formula.
+*   **Actionable Feedback:**
+    1.  **Multi-Step Reasoning:** To enhance, consider providing the observer's kinetic energy instead of velocity. This would require calculating the relativistic velocity ($v$) first, using $T = (\gamma - 1)m_e c^2$ or similar, before applying the Doppler formula.
+    2.  **Uniqueness:** This is a very standard problem. If similar relativistic Doppler questions appear elsewhere (like Q7), one should be removed or significantly altered to be distinct.
+
+---
+
+**Question 2: Illuminance**
+
+*   **Critique:** This question clearly models a scenario, is well-phrased, correctly formatted, and has a single solution. It includes a common distracter (detector radius) which tests careful reading. However, it primarily involves a direct application of the illuminance formula ($E=I/d^2$), thus lacking genuine "Multi-Step Reasoning" in the sense of combining multiple physical principles or calculations.
+*   **Actionable Feedback:**
+    1.  **Multi-Step Reasoning:** To force more steps, ask for the *total luminous flux incident on the detector* instead of illuminance. This would require calculating the solid angle subtended by the detector ($\Omega = A/d^2$ or $\Omega = 2\pi(1-\cos\alpha)$) and then the flux ($\Phi_v = I\Omega$). Alternatively, ask for both total flux *and* average illuminance on the detector, requiring the detector's area.
+    2.  **Uniqueness:** The problem setup is standard. Consider a scenario where the source is not isotropic, or the detector is not normal to the incident light.
+
+---
+
+**Question 3: Compton Scattering**
+
+*   **Critique:** This question is strong. It effectively models a scenario, is concisely phrased, uses correct units and formatting, and yields a single numerical solution. Crucially, it successfully "Forces Multi-Step Reasoning" by requiring conversion between energy and wavelength, application of the Compton formula, and then conversion back to energy.
+*   **Actionable Feedback:**
+    1.  **Uniqueness:** While the problem itself is well-constructed, Compton scattering is a standard topic. To make it more unique, perhaps embed it within a broader context (e.g., analyzing a spectrum from an X-ray source, or considering recoil electron energy). However, for a direct test of Compton scattering, it is effective.
+
+---
+
+**Question 4: Cherenkov Radiation**
+
+*   **Critique:** This question is excellent. It models a complex scenario, is well-phrased, correctly formatted, and yields a single numerical solution. It outstandingly "Forces Multi-Step Reasoning" by requiring the student to first calculate the relativistic velocity of the electron from its kinetic energy, and then use that velocity in the Cherenkov angle formula. This combines two distinct advanced physics concepts.
+*   **Actionable Feedback:**
+    1.  **Uniqueness:** Similar to Q3, while the problem is conceptually strong, the scenario is a classic application. For higher uniqueness, consider a scenario where the refractive index depends on wavelength, or derive the kinetic energy from a particle accelerator context. But as is, it's a solid question.
+
+---
+
+**Question 5: Luminous Flux and Luminous Efficacy**
+
+*   **Critique:** This question clearly models a scenario, is well-phrased, correctly formatted, and yields a single numerical solution. However, it's primarily a direct application of the definition of luminous flux based on radiometric power and luminous efficacy ($\Phi_v = K_m \cdot V(\lambda) \cdot P$). It lacks significant "Multi-Step Reasoning" or "Uniqueness."
+*   **Actionable Feedback:**
+    1.  **Multi-Step Reasoning:** To improve, require students to calculate the radiometric power ($P$) from a given number of photons per second, or from the radiant intensity of a source at a certain distance and area. Or, introduce a scenario where the efficiency of power conversion is given, requiring a step to find the radiometric power first.
+    2.  **Uniqueness:** This is a very basic definition application. Consider integrating it with a different aspect of light interaction or emission.
+
+---
+
+**Question 6: Photoelectric Effect**
+
+*   **Critique:** This question is strong. It models a scenario, is concisely phrased, uses correct units and formatting, and yields a single numerical solution. It effectively "Forces Multi-Step Reasoning" by requiring the conversion of wavelength to photon energy ($E=hc/\lambda$) before applying the photoelectric effect equation ($K_{max} = E_{photon} - \phi$).
+*   **Actionable Feedback:**
+    1.  **Uniqueness:** While well-constructed, the photoelectric effect problem is a staple. To make it more unique, consider asking for the threshold wavelength given the work function and a specific stopping voltage, or involve a situation where the intensity of light affects the photocurrent, requiring a conceptual understanding beyond just energy calculation.
+
+---
+
+**Question 7: Relativistic Doppler Effect (Frequency)**
+
+*   **Critique:** This question is very similar to Question 1, differing only in asking for frequency instead of wavelength and the direction of motion. This significantly violates the "Be Unique" guideline. Like Q1, it's a direct application of the relativistic Doppler formula, thus lacking "Multi-Step Reasoning."
+*   **Actionable Feedback:**
+    1.  **Remove or Rework:** Given its similarity to Q1, one of them should be removed or drastically re-conceptualized.
+    2.  **Multi-Step Reasoning:** If kept, similar to Q1, integrate it with calculating the velocity from a different principle (e.g., relativistic momentum or energy), or ask for the *energy* of the observed photons, requiring an additional Planck's relation step.
+    3.  **Uniqueness:** As a standalone, this is a standard textbook problem.
+
+---
+
+**Question 8: Blackbody Radiation (Luminosity)**
+
+*   **Critique:** This question is strong. It effectively models a scenario, is concisely phrased, uses correct units and formatting, and yields a single numerical solution. It successfully "Forces Multi-Step Reasoning" by requiring the calculation of the sphere's surface area ($A = 4\pi r^2$) before applying the Stefan-Boltzmann law ($L = A \sigma T^4$).
+*   **Actionable Feedback:**
+    1.  **Uniqueness:** Blackbody radiation is a standard topic. To make it more unique, consider a non-spherical object, or a scenario involving heat exchange with surroundings, or finding the equilibrium temperature when absorbing radiation from another source. However, for a direct test of the Stefan-Boltzmann law with area, it is effective.
+
+---
+
+**Summary of Overall Improvements Needed:**
+
+*   **Multi-Step Reasoning:** Questions 1, 2, 5, and 7 need to be revised to genuinely incorporate two or more distinct physical principles or calculation steps, rather than direct formula application.
+*   **Uniqueness:** Most questions are standard textbook examples. While some are well-crafted within that context (like Q3, Q4, Q6, Q8), they could benefit from more novel scenarios or combinations of concepts to truly stand out. Q1 and Q7 are particularly redundant and one should be removed or fundamentally changed.
+=== Turn 1: Author refines questions ===
+```xml
+<question>A spaceship with proper length $L_0 = 100 \, \mathrm{m}$ is observed from Earth to have a length of $L = 80 \, \mathrm{m}$ while traveling directly away. The spaceship emits a radio signal at a frequency of $f_0 = 1.0 \, \mathrm{GHz}$ in its own frame. What is the frequency $f$ (in GHz) of the signal received on Earth?</question>
+
+<question>An isotropic light source emits a total luminous flux of $\Phi_v = 1000 \, \mathrm{lm}$. A circular detector with a radius of $r = 10 \, \mathrm{cm}$ is placed at a distance of $d = 2 \, \mathrm{m}$ from the source, with its surface normal pointing directly at the source. What is the total luminous flux $\Phi_{det}$ (in lumens) incident on the detector?</question>
+
+<question>A collimated beam of gamma rays with an energy of $E = 511 \, \mathrm{keV}$ is incident on a thin lead foil. A detector measures the scattered photons at an angle of $\theta = 120^\circ$ relative to the incident beam direction. What is the kinetic energy $T_e$ (in keV) of the recoil electron, assuming Compton scattering is the dominant interaction?</question>
+
+<question>A relativistic electron with a kinetic energy of $T = 2.0 \, \mathrm{MeV}$ is injected into a water Cherenkov detector ($n = 1.33$). What is the sine of the Cherenkov angle, $\sin(\theta_c)$, with respect to the electron's direction of motion?</question>
+
+<question>A light source emits $N = 10^{16}$ photons per second at a wavelength of $\lambda = 555 \, \mathrm{nm}$. Assuming the human eye's spectral luminous efficacy at this wavelength is $V(\lambda) = 1$, what is the luminous flux $\Phi_v$ (in lumens) of the source? Note that $K_m = 683 \, \mathrm{lm/W}$ is the maximum spectral luminous efficacy. Use $h = 6.626 \times 10^{-34} \, \mathrm{J s}$ and $c = 3 \times 10^8 \, \mathrm{m/s}$.</question>
+
+<question>A metal with a work function of $\phi = 2.0 \, \mathrm{eV}$ is illuminated with light of wavelength $\lambda = 300 \, \mathrm{nm}$. What is the stopping potential $V_s$ (in volts) required to halt the emission of photoelectrons?</question>
+
+<question>Two identical spaceships, A and B, are moving towards each other. An observer on Earth measures the velocity of spaceship A to be $0.5c$ and the velocity of spaceship B to be $0.8c$.  If spaceship A emits a light signal at a frequency of $f_A = 6 \times 10^{14} \, \mathrm{Hz}$ in its rest frame, what is the frequency $f_B$ (in Hz) of the light observed by spaceship B?</question>
+
+<question>A perfectly black, spherical object with a radius of $r = 0.2 \, \mathrm{m}$ and emissivity $\epsilon = 1$ is heated by an internal heater to a temperature of $T = 800 \, \mathrm{K}$ and is placed inside a large, evacuated cavity whose walls are maintained at a constant temperature of $T_{env} = 300 \, \mathrm{K}$. What is the net power $P_{net}$ (in Watts) radiated by the sphere? Stefan-Boltzmann constant is $\sigma = 5.67 \times 10^{-8} \, \mathrm{W m^{-2} K^{-4}}$.</question>
+```
+=== Turn 1: Critic feedback ===
+Here's a critique of the provided physics questions based on your guidelines, with concise, actionable feedback for improvement:
+
+**General Feedback:**
+The questions are generally well-phrased, grammatically correct, and use appropriate conventional notation and units. They all require multi-step reasoning and target a single numerical answer. The formatting, including LaTeX and Markdown, is correct.
+
+However, a significant area for improvement lies in **Guideline 5: Be Unique**. Many of these questions are very standard, almost verbatim textbook problems. While they fulfill the "multi-step" requirement, the *scenario* itself often lacks novelty, which might limit their effectiveness in truly assessing deeper conceptual understanding beyond rote application of formulas.
+
+---
+
+<question>A spaceship with proper length $L_0 = 100 \, \mathrm{m}$ is observed from Earth to have a length of $L = 80 \, \mathrm{m}$ while traveling directly away. The spaceship emits a radio signal at a frequency of $f_0 = 1.0 \, \mathrm{GHz}$ in its own frame. What is the frequency $f$ (in GHz) of the signal received on Earth?</question>
+**Critique:**
+*   **Guideline 1 (Scenario):** Good, clear relativistic scenario.
+*   **Guideline 3 (Multi-Step Reasoning):** Excellent, requires using length contraction to find velocity, then the relativistic Doppler effect.
+*   **Guideline 5 (Be Unique):** Good. While individual components (length contraction, Doppler) are standard, their combination into a single problem makes it a well-designed, non-trivial scenario.
+*   **Overall:** Strong question, meets almost all guidelines effectively.
+
+**Improvement Suggestion:** None, this is a well-crafted problem.
+
+---
+
+<question>An isotropic light source emits a total luminous flux of $\Phi_v = 1000 \, \mathrm{lm}$. A circular detector with a radius of $r = 10 \, \mathrm{cm}$ is placed at a distance of $d = 2 \, \mathrm{m}$ from the source, with its surface normal pointing directly at the source. What is the total luminous flux $\Phi_{det}$ (in lumens) incident on the detector?</question>
+**Critique:**
+*   **Guideline 1 (Scenario):** Clear photometry setup.
+*   **Guideline 3 (Multi-Step Reasoning):** Yes, calculate luminous intensity, then solid angle, then incident flux.
+*   **Guideline 5 (Be Unique):** Weak. This is a very standard textbook problem for calculating incident flux/illumination from an isotropic source.
+*   **Overall:** Technically correct but lacks novelty.
+
+**Improvement Suggestion:** To enhance uniqueness, consider:
+*   Make the source non-isotropic (e.g., a spotlight with a given beam angle).
+*   Have the detector surface be at an angle relative to the line connecting it to the source.
+*   Introduce a medium between the source and detector with a given transmittance.
+
+---
+
+<question>A collimated beam of gamma rays with an energy of $E = 511 \, \mathrm{keV}$ is incident on a thin lead foil. A detector measures the scattered photons at an angle of $\theta = 120^\circ$ relative to the incident beam direction. What is the kinetic energy $T_e$ (in keV) of the recoil electron, assuming Compton scattering is the dominant interaction?</question>
+**Critique:**
+*   **Guideline 1 (Scenario):** Good, clear setup for particle-matter interaction.
+*   **Guideline 3 (Multi-Step Reasoning):** Excellent, requires Compton scattering formula and energy conservation.
+*   **Guideline 5 (Be Unique):** Weak. This is *the* classic Compton scattering problem, found in nearly every modern physics textbook.
+*   **Overall:** Technically sound but highly unoriginal.
+
+**Improvement Suggestion:** To enhance uniqueness, consider:
+*   Ask for the scattering angle required for the scattered photon to have a specific energy, or for the electron to have a specific kinetic energy.
+*   Involve the recoil electron's momentum or angle, requiring conservation of momentum as well as energy.
+*   Combine with a different interaction, e.g., if the scattered photon then undergoes photoelectric absorption in a detector with a given work function.
+
+---
+
+<question>A relativistic electron with a kinetic energy of $T = 2.0 \, \mathrm{MeV}$ is injected into a water Cherenkov detector ($n = 1.33$). What is the sine of the Cherenkov angle, $\sin(\theta_c)$, with respect to the electron's direction of motion?</question>
+**Critique:**
+*   **Guideline 1 (Scenario):** Good, clear relativistic particle in a medium.
+*   **Guideline 3 (Multi-Step Reasoning):** Excellent, requires relativistic energy-momentum relation to find velocity, then the Cherenkov angle formula.
+*   **Guideline 5 (Be Unique):** Weak. This is a very standard problem for Cherenkov radiation calculations.
+*   **Overall:** Technically correct but highly unoriginal.
+
+**Improvement Suggestion:** To enhance uniqueness, consider:
+*   Ask for the minimum kinetic energy an electron needs to produce Cherenkov radiation in the medium.
+*   Introduce a different particle type (e.g., proton) and ask for the energy required to produce the same Cherenkov angle as the electron.
+*   Ask for the Cherenkov cone's diameter at a certain distance from the particle's path.
+
+---
+
+<question>A light source emits $N = 10^{16}$ photons per second at a wavelength of $\lambda = 555 \, \mathrm{nm}$. Assuming the human eye's spectral luminous efficacy at this wavelength is $V(\lambda) = 1$, what is the luminous flux $\Phi_v$ (in lumens) of the source? Note that $K_m = 683 \, \mathrm{lm/W}$ is the maximum spectral luminous efficacy. Use $h = 6.626 \times 10^{-34} \, \mathrm{J s}$ and $c = 3 \times 10^8 \, \mathrm{m/s}$.</question>
+**Critique:**
+*   **Guideline 1 (Scenario):** Good, relates photon properties to photometric quantities.
+*   **Guideline 3 (Multi-Step Reasoning):** Excellent, requires calculating photon energy, radiant power, then converting to luminous flux using the given constants.
+*   **Guideline 5 (Be Unique):** Good. While the concepts are standard, this specific combination of steps to bridge quantum properties (photons) to photometric units is less commonly found as a direct textbook problem.
+*   **Overall:** Strong question, well-designed and meets most guidelines effectively.
+
+**Improvement Suggestion:** None, this is a well-crafted problem.
+
+---
+
+<question>A metal with a work function of $\phi = 2.0 \, \mathrm{eV}$ is illuminated with light of wavelength $\lambda = 300 \, \mathrm{nm}$. What is the stopping potential $V_s$ (in volts) required to halt the emission of photoelectrons?</question>
+**Critique:**
+*   **Guideline 1 (Scenario):** Good, classic photoelectric effect setup.
+*   **Guideline 3 (Multi-Step Reasoning):** Excellent, requires calculating photon energy, then using the photoelectric equation, then relating kinetic energy to stopping potential.
+*   **Guideline 5 (Be Unique):** Weak. This is *the* classic photoelectric effect problem, found in almost every modern physics textbook.
+*   **Overall:** Technically sound but highly unoriginal.
+
+**Improvement Suggestion:** To enhance uniqueness, consider:
+*   Use two different wavelengths or two different metals, and ask for a property (e.g., work function of the second metal) given the stopping potentials.
+*   Introduce intensity, and ask about the number of electrons emitted per second, rather than just the stopping potential.
+*   Involve the light source's power or distance, combining with inverse square law.
+
+---
+
+<question>Two identical spaceships, A and B, are moving towards each other. An observer on Earth measures the velocity of spaceship A to be $0.5c$ and the velocity of spaceship B to be $0.8c$. If spaceship A emits a light signal at a frequency of $f_A = 6 \times 10^{14} \, \mathrm{Hz}$ in its rest frame, what is the frequency $f_B$ (in Hz) of the light observed by spaceship B?</question>
+**Critique:**
+*   **Guideline 1 (Scenario):** Good, clear relativistic scenario with multiple frames.
+*   **Guideline 3 (Multi-Step Reasoning):** Excellent, requires relativistic velocity addition to find relative velocity, then the relativistic Doppler effect.
+*   **Guideline 5 (Be Unique):** Good. While components are standard, the combination of two moving frames and calculating their relative velocity before applying Doppler effect makes it a good, less trivial problem.
+*   **Overall:** Strong question, meets almost all guidelines effectively.
+
+**Improvement Suggestion:** None, this is a well-crafted problem.
+
+---
+
+<question>A perfectly black, spherical object with a radius of $r = 0.2 \, \mathrm{m}$ and emissivity $\epsilon = 1$ is heated by an internal heater to a temperature of $T = 800 \, \mathrm{K}$ and is placed inside a large, evacuated cavity whose walls are maintained at a constant temperature of $T_{env} = 300 \, \mathrm{K}$. What is the net power $P_{net}$ (in Watts) radiated by the sphere? Stefan-Boltzmann constant is $\sigma = 5.67 \times 10^{-8} \, \mathrm{W m^{-2} K^{-4}}$.</question>
+**Critique:**
+*   **Guideline 1 (Scenario):** Good, clear thermal radiation scenario.
+*   **Guideline 3 (Multi-Step Reasoning):** Excellent, requires calculating power emitted and power absorbed, then finding the net power.
+*   **Guideline 5 (Be Unique):** Weak. This is *the* classic Stefan-Boltzmann problem for net heat transfer between a blackbody and its environment.
+*   **Overall:** Technically correct but highly unoriginal. The phrasing "perfectly black" and "emissivity $\epsilon = 1$" is redundant but not incorrect for a blackbody.
+
+**Improvement Suggestion:** To enhance uniqueness, consider:
+*   Give the power of the internal heater and ask for the equilibrium temperature of the sphere (steady state).
+*   Make the object a non-blackbody with a given emissivity (less trivial than $\epsilon = 1$).
+*   Ask for the *rate of temperature change* of the sphere, requiring knowledge of its specific heat and mass.
+*   Consider a scenario where the sphere is also receiving radiation from another specific source (e.g., a laser) in addition to the cavity walls.
+=== Turn 2: Author refines questions ===
+```xml
+<question>A spaceship with proper length $L_0 = 100 \, \mathrm{m}$ is observed from Earth to have a length of $L = 80 \, \mathrm{m}$ while traveling directly away. The spaceship is equipped with a beacon that emits two radio signals. The first signal is emitted at a frequency of $f_0 = 1.0 \, \mathrm{GHz}$ in its own frame. The second signal is emitted 10 seconds later in the spaceship's frame, also at a frequency of $f_0 = 1.0 \, \mathrm{GHz}$. What is the time difference (in seconds) between the arrival of the two signals at Earth?</question>
+
+<question>An LED emits light according to a Lambertian distribution. At a distance of $d = 1 \, \mathrm{m}$ directly in front of the LED, the illuminance is $E = 100 \, \mathrm{lux}$.  A small solar cell with an area of $A = 1 \, \mathrm{cm}^2$ is placed at a distance of $r = 1.5 \, \mathrm{m}$ from the LED, at an angle of $\theta = 45^\circ$ relative to the normal. Assume the solar cell is pointed directly at the LED. What is the luminous flux $\Phi_{det}$ (in lumens) incident on the solar cell?</question>
+
+<question>A collimated beam of gamma rays with an energy of $E = 662 \, \mathrm{keV}$ (from $^{137}$Cs) is incident on a thin aluminum foil. A detector measures the scattered photons at an angle of $\theta = 90^\circ$ relative to the incident beam direction. If the scattered photon then undergoes photoelectric absorption in a silicon detector, what is the maximum kinetic energy $T_e$ (in keV) of the electron emitted from the silicon, given that silicon has a K-shell binding energy of $1.84 \, \mathrm{keV}$?</question>
+
+<question>A relativistic muon with a kinetic energy of $T = 500 \, \mathrm{MeV}$ enters a water Cherenkov detector ($n = 1.33$). The Cherenkov radiation is detected by photomultiplier tubes (PMTs) at a distance of $L = 2 \, \mathrm{m}$ from the muon's path. What is the diameter $D$ (in meters) of the ring of light formed by the Cherenkov radiation on the PMT array?</question>
+
+<question>A laser pointer emits $N = 10^{15}$ photons per second at a wavelength of $\lambda = 532 \, \mathrm{nm}$. A scientist uses a detector with a surface area of $A = 10^{-6} \mathrm{m}^2$ placed $d = 5 \, \mathrm{m}$ away from the laser. Assuming the laser emits light uniformly within a cone of half-angle $\theta = 0.001$ radians, and assuming the human eye's spectral luminous efficacy at this wavelength is $V(\lambda) = 0.88$, what is the luminous flux $\Phi_v$ (in lumens) incident on the detector? Note that $K_m = 683 \, \mathrm{lm/W}$ is the maximum spectral luminous efficacy. Use $h = 6.626 \times 10^{-34} \, \mathrm{J s}$ and $c = 3 \times 10^8 \, \mathrm{m/s}$.</question>
+
+<question>A metal with a work function of $\phi_1 = 2.0 \, \mathrm{eV}$ is illuminated with light of wavelength $\lambda = 300 \, \mathrm{nm}$, resulting in a stopping potential of $V_{s1}$. The same light is then used to illuminate a different metal with an unknown work function $\phi_2$, resulting in a stopping potential of $V_{s2} = V_{s1}/2$. What is the work function $\phi_2$ (in eV) of the second metal?</question>
+
+<question>Two identical spaceships, A and B, are moving towards each other. An observer on Earth measures the velocity of spaceship A to be $0.5c$ and the velocity of spaceship B to be $0.8c$.  Spaceship A emits a light signal at a frequency of $f_A = 6 \times 10^{14} \, \mathrm{Hz}$ in its rest frame. Spaceship B reflects this light signal back to spaceship A. What is the frequency $f_{A,reflected}$ (in Hz) of the reflected light as observed by spaceship A?</question>
+
+<question>A small, gray, spherical object with a radius of $r = 0.05 \, \mathrm{m}$, mass $m = 0.1 \, \mathrm{kg}$, specific heat capacity $c = 500 \, \mathrm{J/(kg \cdot K)}$, and emissivity $\epsilon = 0.6$ is initially at a temperature of $T_0 = 300 \, \mathrm{K}$ and is placed inside a large, evacuated cavity whose walls are maintained at a constant temperature of $T_{env} = 77 \, \mathrm{K}$ (liquid nitrogen temperature).  What is the approximate rate of change of the sphere's temperature, $dT/dt$ (in K/s), immediately after it is placed in the cavity? Stefan-Boltzmann constant is $\sigma = 5.67 \times 10^{-8} \, \mathrm{W m^{-2} K^{-4}}$.</question>
+```
+=== Final questions generated ===

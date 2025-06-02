@@ -1,0 +1,610 @@
+=== Turn 0: Author generates questions ===
+<question>  
+A photoswitchable supramolecular polymer is formed intracellularly by reversible covalent bonding of a diarylethene-modified peptide monomer. Under NIR irradiation (740 nm), the monomer switches from an open to a closed form, exhibiting a 5.0-fold increase in the second-order rate constant for dimerization compared to the dark state. Given that in the dark the rate constant $k_\mathrm{dark} = 2.0 \times 10^3\, \mathrm{M^{-1} s^{-1}}$, and that the intracellular concentration of monomer is $50\, \mu \mathrm{M}$, calculate the initial rate of polymer formation (dimerization rate, in $\mu \mathrm{M\, s^{-1}}$) upon NIR irradiation. Use the relation $r = k [M]^2$ for dimerization, and express your answer to two significant figures.</question>  
+  
+<question>  
+A supramolecular assembly within the acidic endosomal environment ($pH=5.0$) destabilizes when exposed to a protonation event that changes the net charge of its monomeric building block from –1 to 0. Given a pKa of 6.5 for the protonatable site, calculate the fraction of monomers protonated inside the endosome, assuming Henderson-Hasselbalch equilibrium. Then, predict the net monomer charge at $pH=7.4$ (cytosol), and explain how this shift affects assembly stability qualitatively but concisely.</question>
+
+<question>  
+A photoactivatable catalyst incorporated into a cell is activated by a 365 nm LED lamp, with a quantum yield of 0.65 for the conversion of inactive to active species. During a 3-minute irradiation at an intensity of 1.2 mW cm$^{-2}$ on a 1 cm$^2$ area, calculate the moles of active catalyst generated assuming the sample absorbs 100% of photons. (Planck’s constant $h=6.626 \times 10^{-34}\, \mathrm{J \cdot s}$, speed of light $c=3.00 \times 10^{8}\, \mathrm{m \cdot s^{-1}}$, Avogadro number $N_A = 6.022 \times 10^{23}$.)</question>
+
+<question>  
+A NIR-fluorophore-tagged supramolecular assembly inside cells shows biexponential fluorescence decay with lifetimes $\tau_1 = 1.2$ ns (amplitude 60%) and $\tau_2 = 4.8$ ns (amplitude 40%). Calculate the average fluorescence lifetime $\langle \tau \rangle$ and predict qualitatively how an increased assembly size resulting in increased nonradiative quenching would affect the average lifetime.</question>  
+
+<question>  
+A synthetic polymer designed for intracellular self-assembly has a critical aggregation concentration (CAC) of 15 µM at 310 K in cytosol-like buffer. The standard Gibbs free energy of aggregation $\Delta G^\circ$ relates to the CAC via $\Delta G^\circ = RT \ln(\mathrm{CAC})$, where CAC is in molar units. Calculate $\Delta G^\circ$ in kJ·mol$^{-1}$, given $R = 8.314\, \mathrm{J\,mol^{-1}K^{-1}}$ and express your answer with three significant figures.</question>
+
+<question>  
+A photochemical reaction controlling intracellular assembly follows first-order kinetics with respect to irradiation time. Under constant NIR light intensity, the half-life of monomer conversion into assembly nuclei is 5 minutes. Calculate the rate constant $k$ in s$^{-1}$, and determine the time (in minutes) required to convert 90% of the monomers into nuclei.</question>
+
+<question>  
+Endosomal escape of a supramolecular assembly depends on pH-triggered cleavage of a boronate ester bond with a rate constant $k = 4.5 \times 10^{-4} \, \mathrm{s^{-1}}$ at pH 5.0. Assuming first-order kinetics, calculate the time required for 75% cleavage of boronate ester bonds inside the endosome.</question>  
+
+<question>  
+A NIR-fluorophore used for tracking intracellular assemblies has an extinction coefficient $\varepsilon = 2.5 \times 10^{5}\, \mathrm{M^{-1} cm^{-1}}$ at 780 nm and a quantum yield $\Phi = 0.12$. Calculate the fluorescence brightness (product of $\varepsilon$ and $\Phi$) of this fluorophore, and compare it to a standard dye with $\varepsilon = 1.0 \times 10^{5}\, \mathrm{M^{-1} cm^{-1}}$ and $\Phi = 0.45$.</question>  
+
+<question>  
+A synthetic intracellular assembly exhibits an activation energy barrier $\Delta E_a = 85\, \mathrm{kJ \cdot mol^{-1}}$ for disassembly in physiological conditions. Using the Arrhenius equation, calculate the ratio of the disassembly rate constant at 310 K to that at 298 K, given the gas constant $R = 8.314\, \mathrm{J \cdot mol^{-1} K^{-1}}$. Assume the pre-exponential factor remains constant.</question>
+=== Turn 0: Critic feedback ===
+Certainly! Here is a detailed critique for each question, along with overarching and per-question recommendations, evaluated strictly against your guidelines.
+
+---
+
+### GENERAL/OVERARCHING OBSERVATIONS
+
+**Positives:**
+- All questions model advanced, reasonably realistic chemistry scenarios, with biochemical and photochemical contexts.
+- The calculations require multiple steps and lead to numerical answers with units.
+- Equations and numbers are presented (mostly) in LaTeX syntax.
+- Questions generally avoid redundancy and standard textbook examples.
+- Chemical nomenclature and terminology are mostly precise and formal.
+- No explicit “multiple parts” (e.g., a, b, c), although several questions implicitly require answering more than one sub-part.
+
+**Areas for Improvement:**
+- **Multi-part/Single Answer**: Several questions ask for more than one piece of information (e.g., calculate X **and** explain/predict Y), violating #10.
+- **Scope Creep**: Some questions require both numerical and qualitative/interpretive responses (“calculate and explain…”).
+- **Unit Consistency**: A few questions ask for answers in units different from those used in the given constants, creating minor risk for error but generally are manageable.
+- **Formatting**: Good overall, but be careful that all equations, variables, and units are in Markdown-compatible LaTeX.
+- **Conciseness**: Some questions could be condensed for clarity and to avoid minor extraneous context.
+
+---
+
+### PER-QUESTION FEEDBACK
+
+---
+
+**Q1 (Photoswitchable Supramolecular Polymer):**  
+> ...calculate the initial rate of polymer formation (dimerization rate, in $\mu \mathrm{M\, s^{-1}}$)...express your answer to two significant figures.
+
+- **Strengths**:  
+  - Numerical only; no qualitative part.
+  - Realistic setup and relevant calculation with clear units.
+  - No extraneous context.
+  - Well-posed with a single solution.
+
+- **Potential improvements**:  
+  - Specify explicitly to use the new rate constant under NIR (i.e., $k_{\mathrm{NIR}} = 5 \times k_{\mathrm{dark}}$ for clarity), ideally defining $k_{\mathrm{NIR}}$ in the statement.
+  - Small possible ambiguity: "initial rate of polymer formation" could theoretically mean >dimer< or >polymer<, but you clarify "dimerization rate." Consider phrasing as, "Calculate the initial rate of dimer formation after NIR irradiation..."
+
+**Suggested replacement line:**  
+"Calculate the initial rate of dimer formation (in $\mu \mathrm{M\, s^{-1}}$) upon NIR irradiation, expressing your answer to two significant figures."
+
+---
+
+**Q2 (Supramolecular assembly, pKa and charge):**  
+> ...calculate the fraction of monomers protonated...Then, predict the net monomer charge at $pH=7.4$..., and explain how this shift affects assembly stability qualitatively but concisely.
+
+- **Violates rule #10:** Multiple answers: (a) calculate a numerical fraction, (b) state a net charge, and (c) explain a qualitative effect. This makes the question unsuited to single-solution assessment.
+- **Suggest splitting:** Ask for only the fraction protonated at $pH=5.0$ **or** the net charge at $pH=7.4$.
+- **If numerical answer is preferred:** Focus on, e.g., "calculate the fraction of monomers protonated at $pH=5.0$ given $\mathrm{p}K_a=6.5$."
+- **If qualitative is desired:** Rewrite as an interpretive short-essay, which breaks rule #2 and #6.
+
+---
+
+**Q3 (Photoactivatable catalyst, photon absorption/quantum yield):**  
+- **Strengths**:  
+  - Single-solution numerical calculation.
+  - All constants given; units are clearly stated.
+  - A realistic, multi-step problem.
+- **Small issue:**  
+  - Ensure in question that all numbers are in consistent units for ease.
+  - All numbers are given in SI and the problem is well constrained.
+- **Fix:** None needed.
+
+---
+
+**Q4 (Biexponential fluorescence decay):**  
+> Calculate the average fluorescence lifetime ... and predict qualitatively how an increased assembly size resulting in increased nonradiative quenching would affect the average lifetime.
+
+- **Violates #10:** Requires both a numerical calculation (average lifetime) **and** a qualitative prediction/explanation.
+- **Correction:** Focus only on the calculation, e.g.:  
+  "Calculate the average fluorescence lifetime $\langle \tau\rangle$ for this system."
+- **Alternatively:** If you want conceptual:  
+  "Predict qualitatively how increased nonradiative quenching would affect the average fluorescence lifetime, assuming all other factors constant."  
+  (But this would no longer result in a numerical answer.)
+
+---
+
+**Q5 (Polymer CAC and Gibbs energy):**  
+- **Strengths**:  
+  - Single numerical answer, units in kJ·mol$^{-1}$, all constants given, IUPAC-compliant.
+  - Multi-step (conversion of concentration units, logarithm, calculation)
+- **Small improvement:**  
+  - Remind examinee that CAC should be input in M units when using $\ln(\mathrm{CAC})$.
+  - Alternatively, state: “where CAC is in molar units.”
+  - Minor, as you actually do this ("CAC is in molar units").
+
+---
+
+**Q6 (Photochemical assembly kinetics, half-life):**  
+> Calculate the rate constant $k$ in s$^{-1}$, and determine the time (in minutes) required to convert 90% of the monomers into nuclei.
+
+- **Violates #10:** Requires both a rate constant **and** a conversion time.
+- **Correction:** Pick one, e.g.:  
+  "Calculate the rate constant $k$ in s$^{-1}$ for this process."
+  -or-  
+  "Determine the time (in minutes) required for 90% conversion, given the half-life is 5 minutes."
+- **Alternatively** (if kept as is), clarify that **both** part answers will be expected in a single fill-in-the-blank.
+
+---
+
+**Q7 (Boronate ester cleavage, endosomal escape):**  
+- **Strengths**:  
+  - Single numerical calculation (time for 75% cleavage).
+  - Units provided and expected.
+- **Perfect as is.**
+
+---
+
+**Q8 (NIR fluorophore brightness comparison):**  
+> ...Calculate the fluorescence brightness ... and compare it to a standard...
+
+- **Violates #10:** Requires both calculation **and** qualitative/relative comparison.
+- **Correction:** Only one answer, e.g.:  
+  "Calculate the fluorescence brightness of this NIR-fluorophore."
+- **Alternatively:** If comparison is desired, phrase the question so that the numerical difference (ratio) is asked.
+
+---
+
+**Q9 (Activation energy, Arrhenius ratio):**  
+- **Strengths**:  
+  - Single calculation: ratio of rate constants.
+  - All parameters provided; units clearly stated.
+- **Minor improvement:**  
+  - Clarify to give answer as a dimensionless ratio “to two significant figures.”
+- **Otherwise, fine.**
+
+---
+
+## SUMMARY TABLE
+
+| Question | Meets All Guidelines? | Main Issue(s) | Suggestion                                            
+|----------|----------------------|---------------|-------------------------------------------------------|
+| Q1       | Yes (minor clarity)  | N/A           | Clarify "dimerization rate"; otherwise fine           |
+| Q2       | No                   | Multi-part    | Focus on only protonation calculation or charge       |
+| Q3       | Yes                  | N/A           | No changes needed                                     |
+| Q4       | No                   | Multi-part    | Remove qualitative prediction; only ask calculation   |
+| Q5       | Yes (minor)          | N/A           | Remind input in M; otherwise fine                     |
+| Q6       | No                   | Multi-part    | Ask either for $k$ or time to 90% only                |
+| Q7       | Yes                  | N/A           | No changes needed                                     |
+| Q8       | No                   | Multi-part    | Calculation only, or ask for a ratio                  |
+| Q9       | Yes (minor)          | N/A           | Ask for ratio to 2 sig figs; explicitly dimensionless |
+
+---
+
+### GENERAL IMPROVEMENT RECOMMENDATIONS
+
+1. **Enforce single solution per question:** No multi-part (calculate AND explain); split into separate questions if needed.
+2. **State all units, required significant figures, and variable meanings up front.**
+3. **Prefer calculation/numerical problems exclusively, unless the objective is qualitative.**
+4. **Avoid implicit two-stage answers (e.g. calculate; then compare, or calculate; then explain).**
+
+---
+
+## EXAMPLE OF IMPROVED VERSION (FOR Q2):
+
+**Original** (multi-part):  
+Given a pKa of 6.5 for the protonatable site, calculate the fraction of monomers protonated inside the endosome, assuming Henderson-Hasselbalch equilibrium. Then, predict the net monomer charge at $pH=7.4$ (cytosol), and explain how this shift affects assembly stability qualitatively but concisely.
+
+**Revised:**  
+Given a pKa of 6.5 for a protonatable site, calculate the fraction of monomers protonated at $pH=5.0$ inside the endosome using the Henderson-Hasselbalch equation. Express your answer to two significant figures.
+
+---
+
+## IN CONCLUSION:
+
+**Your assessments are advanced and rigorous, but multiple questions require splitting or rewording to enforce the single-solution rule. All calculation-based questions should solicit only one final answer (number or compound name with units). For qualitative or comparative questions, make them stand-alone. Check that all scientific notation, equations, and units appear in Markdown LaTeX-ready format.**
+=== Turn 1: Author refines questions ===
+<question>  
+A photoswitchable supramolecular polymer is formed intracellularly by reversible covalent bonding of a diarylethene-modified peptide monomer. Under NIR irradiation (740 nm), the rate constant for dimerization increases 5.0-fold relative to the dark state. Given that the dark-state rate constant is $k_\mathrm{dark} = 2.0 \times 10^{3}\,\mathrm{M^{-1}\,s^{-1}}$ and that the intracellular monomer concentration is $50\,\mu\mathrm{M}$, calculate the initial rate of dimer formation (in $\mu\mathrm{M\,s^{-1}}$) upon NIR irradiation. Use $r = k [M]^2$, and express your answer to two significant figures.  
+</question>  
+
+<question>  
+Given a protonatable site on a supramolecular monomer with $\mathrm{p}K_a = 6.5$, calculate the fraction of monomers protonated at $pH = 5.0$ using the Henderson–Hasselbalch equation. Express your answer as a decimal to two significant figures.  
+</question>  
+
+<question>  
+A photoactivatable catalyst inside a cell is irradiated with a 365 nm LED at an intensity of 1.2 mW cm$^{-2}$ over a 1 cm$^{2}$ area for 3 minutes. The quantum yield for conversion to the active species is 0.65, and 100% of photons are absorbed. Calculate the number of moles of active catalyst generated during irradiation. Use $h = 6.626 \times 10^{-34}\,\mathrm{J\cdot s}$, $c = 3.00 \times 10^{8}\,\mathrm{m/s}$, and Avogadro’s number $N_A = 6.022 \times 10^{23}$. Express your answer in moles to two significant figures.  
+</question>  
+
+<question>  
+A NIR-fluorophore-tagged supramolecular assembly exhibits biexponential fluorescence decay with lifetimes $\tau_1 = 1.2$ ns (amplitude 60%) and $\tau_2 = 4.8$ ns (amplitude 40%). Calculate the average fluorescence lifetime $\langle \tau \rangle$ in nanoseconds. Express your answer to two significant figures.  
+</question>  
+
+<question>  
+A synthetic polymer designed for intracellular self-assembly has a critical aggregation concentration (CAC) of 15 µM at 310 K in cytosol-like buffer. The standard Gibbs free energy of aggregation $\Delta G^\circ$ relates to CAC via $\Delta G^\circ = RT \ln(\mathrm{CAC})$, where CAC is in molar units. Given $R = 8.314\, \mathrm{J\,mol^{-1}K^{-1}}$ and $T = 310\, \mathrm{K}$, calculate $\Delta G^\circ$ in kJ·mol$^{-1}$. Express your answer to three significant figures.  
+</question>  
+
+<question>  
+A photochemical reaction controlling intracellular assembly follows first-order kinetics with respect to irradiation time. Given a half-life of 5.0 minutes for monomer conversion into assembly nuclei, calculate the rate constant $k$ in s$^{-1}$. Express your answer to two significant figures.  
+</question>  
+
+<question>  
+Assuming first-order kinetics and a rate constant $k = 4.5 \times 10^{-4}\, \mathrm{s^{-1}}$ for boronate ester bond cleavage at pH 5.0, calculate the time (in minutes) required for 75% cleavage of boronate ester bonds inside the endosome. Express your answer to two significant figures.  
+</question>  
+
+<question>  
+A NIR-fluorophore has an extinction coefficient $\varepsilon = 2.5 \times 10^{5}\, \mathrm{M^{-1} cm^{-1}}$ at 780 nm and a quantum yield $\Phi = 0.12$. Calculate the fluorescence brightness (defined as $\varepsilon \times \Phi$) of this fluorophore. Express your answer in units of $\mathrm{M^{-1} cm^{-1}}$ to three significant figures.  
+</question>  
+
+<question>  
+A synthetic intracellular assembly exhibits an activation energy of $\Delta E_a = 85\, \mathrm{kJ\,mol^{-1}}$ for disassembly. Using the Arrhenius equation and assuming a constant pre-exponential factor, calculate the ratio of the disassembly rate constant at 310 K to that at 298 K. Use $R = 8.314\, \mathrm{J\,mol^{-1}\,K^{-1}}$ and express your answer as a dimensionless ratio to two significant figures.  
+</question>
+=== Turn 1: Critic feedback ===
+Certainly! Here’s an expert critique of each question against your provided guidelines. Strengths and suggested improvements are given for each question, referencing specific guideline numbers where applicable.
+
+---
+
+### Question 1
+**Content**: Photoswitchable polymer, rate constant, effect of NIR irradiation, calculate rate.
+
+**Strengths**:
+- Unique and sophisticated context (Guideline 5).
+- Requires multi-step calculation (Guideline 3).
+- Proper unit usage and expected answer form (Guidelines 2, 9).
+- Concise, scientific language (Guideline 7).
+- Only one solution (Guideline 6).
+
+**Improvements**:
+- The phrase "reversible covalent bonding of a diarylethene-modified peptide monomer" is a bit extraneous since it doesn't impact the numerical calculation (Guideline 4).
+- The formula for calculation $r = k[M]^2$ is already given; consider not providing the formula, to increase complexity (Guideline 3).
+- The scenario could briefly justify why $[M]^2$ (e.g., “Assuming bimolecular second-order dimerization ...”).
+
+---
+
+### Question 2
+**Content**: Protonation fraction of a monomer at given pH, using Henderson–Hasselbalch.
+
+**Strengths**:
+- Chemistry scenario is clear and relevant (Guideline 1).
+- Single-step with clear expected answer (Guidelines 2, 6).
+- Uses precise scientific language (Guideline 7).
+- No ambiguity (Guideline 8).
+
+**Improvements**:
+- Consider stating explicitly the chemical species (acid/base) to avoid ambiguity if student is not aware that "protonated" means HA for an acid (minor detail for clarity; Guideline 8).
+- Instead of “as a decimal to two significant figures,” more rigorous wording is “Express your answer as a decimal with two significant figures.”
+
+---
+
+### Question 3
+**Content**: Photoconversion quantum yield, photon absorption, computation of moles generated.
+
+**Strengths**:
+- Involves multiple reasoning steps: power, photon energy, quantum yield (Guideline 3).
+- Units and numbers clear (Guidelines 2, 9).
+- Unique molecular photochemistry scenario (Guideline 5).
+- Concise and precise (Guideline 7).
+
+**Improvements**:
+- “100% of photons are absorbed” could be phrased more concisely: “Assume complete absorption of incident photons.”
+- State “neglect any thermal effects” if relevant (to eliminate any ambiguity).
+
+---
+
+### Question 4
+**Content**: Biexponential decay, average lifetime calculation.
+
+**Strengths**:
+- Focuses on data interpretation (Guideline 3).
+- Units and significant figures are specified (Guideline 2, 9).
+- Unique and applicable to fluorescence studies (Guideline 5).
+- Concise (Guideline 7).
+
+**Improvements**:
+- Specify how to combine amplitudes and lifetimes (i.e. $\langle \tau \rangle = \sum a_i \tau_i$), unless you intentionally want to test this background (Guideline 3).
+- The phrase "exhibits biexponential decay" is good, but it's even clearer to explicitly state amplitudes correspond to fractional populations.
+
+---
+
+### Question 5
+**Content**: Calculate standard Gibbs free energy from CAC.
+
+**Strengths**:
+- Multi-step: conversion from $\mu$M to M, then to $\Delta G^\circ$ (Guideline 3).
+- Uses appropriate units (Guideline 9).
+- Scenario is non-standard (Guideline 5).
+
+**Improvements**:
+- The equation should clarify that $\Delta G^\circ = RT \ln(\mathrm{CAC}/1\,\mathrm{M})$, as the standard state for concentrations is 1 M (for absolute thermodynamic correctness; Guideline 9).
+- Reiterate to convert CAC to M for calculation (clarity).
+
+---
+
+### Question 6
+**Content**: First-order kinetics, half-life to rate constant.
+
+**Strengths**:
+- Direct and specific scenario (Guideline 1).
+- Units clarified (Guideline 2, 9).
+- One solution, concise prompt (Guideline 6, 7).
+
+**Improvements**:
+- To strictly adhere to concise phrasing, remove “for monomer conversion into assembly nuclei” and just state “given a half-life of 5.0 minutes.”
+- Optionally, add the relation $t_{1/2} = \ln 2 / k$ if testing lower reasoning rather than formula recall.
+
+---
+
+### Question 7
+**Content**: First-order boronate ester cleavage, time for 75% conversion.
+
+**Strengths**:
+- Unique application (Guideline 5).
+- Single-step reasoning, correct units requested (Guideline 2, 9).
+- Single solution (Guideline 6).
+
+**Improvements**:
+- The term “inside the endosome” does not influence the answer—remove or connect to justify the specific context (Guideline 4).
+- Could explicitly say “assume pseudo-first order conditions” or “assume excess water,” if appropriate.
+
+---
+
+### Question 8
+**Content**: Calculate fluorescence brightness.
+
+**Strengths**:
+- Applies conceptual knowledge (Guideline 3).
+- Units and answer length well-specified (Guideline 2, 9).
+- Clear, unique metric relevant to NIR fluorophores (Guideline 5).
+
+**Improvements**:
+- None significant, perhaps clarify “at $780\,\mathrm{nm}$” by linking to the extinction coefficient at that wavelength (clarity).
+
+---
+
+### Question 9
+**Content**: Arrhenius equation, ratio of rate constants at two temperatures.
+
+**Strengths**:
+- Multi-step kinetic application (Guideline 3).
+- Units and dimensionless answer clear (Guideline 2, 9).
+- Novel biological-kinetics context (Guideline 5).
+- Concise and precise (Guideline 7, 8).
+
+**Improvements**:
+- Could specify more clearly: “Calculate the ratio $k_{310}/k_{298}$” to avoid ambiguity.
+- Remove “assuming a constant pre-exponential factor” unless it’s being specifically tested (it’s textbook in Arrhenius calculations; minor redundancy).
+
+---
+
+## General Summary & Recommendations
+
+**Overall strengths**:
+- All questions stem from non-textbook, contemporary chemistry situations (Guideline 5).
+- Most questions force multi-step reasoning and have precisely defined units and significant digits.
+- The phrasing is generally rigorous and concise.
+
+**Common improvements**:
+1. **Remove extraneous context**: Where provided, only retain scenario details truly necessary for the calculation (Guideline 4).
+2. **Equation hints**: Avoid supplying calculation formulas unless that is the targeted skill level (Guideline 3).
+3. **Explicit wording**: Always ensure physical meaning of quantities (concentration units, fractions, etc.) are explicit and avoid possible alternative interpretations.
+4. **Thermodynamics**: Specify standard states and units for logarithmic terms in $\Delta G^\circ$ calculations to avoid ambiguity for advanced students (Guideline 9).
+
+**Formatting and Mathematics**:  
+- All equations are generally well-suited to Markdown formatting.  
+- Double-check to ensure that $...$ notations are everywhere (for inline math).
+
+**Summary**:  
+Your questions are well-crafted, advanced, and meet most guidelines. Small refinements to context economy, explicitness, and formula provision will further elevate their clarity and rigor.
+=== Turn 2: Author refines questions ===
+<question>  
+A photoswitchable supramolecular polymer undergoes bimolecular second-order dimerization. Under NIR irradiation (740 nm), the rate constant increases 5.0-fold relative to the dark state. Given the dark-state rate constant $k_\mathrm{dark} = 2.0 \times 10^{3}\,\mathrm{M^{-1}\,s^{-1}}$ and monomer concentration $[M] = 50\,\mu\mathrm{M}$, calculate the initial rate of dimer formation (in $\mu\mathrm{M\,s^{-1}}$) upon NIR irradiation. Express your answer to two significant figures.  
+</question>  
+
+<question>  
+A supramolecular monomer contains a protonatable site with $\mathrm{p}K_a = 6.5$. Calculate the fraction of protonated monomers at $pH = 5.0$ using the Henderson–Hasselbalch equation. Express your answer as a decimal with two significant figures.  
+</question>  
+
+<question>  
+A photoactivatable catalyst inside a cell is irradiated with a 365 nm LED at an intensity of 1.2 mW cm$^{-2}$ over a 1 cm$^{2}$ area for 3 minutes. Assuming complete absorption of incident photons and a quantum yield of 0.65 for conversion to the active species, calculate the number of moles of active catalyst generated during irradiation. Use $h = 6.626 \times 10^{-34}\,\mathrm{J\cdot s}$, $c = 3.00 \times 10^{8}\,\mathrm{m/s}$, and Avogadro’s number $N_A = 6.022 \times 10^{23}$. Express your answer in moles to two significant figures.  
+</question>  
+
+<question>  
+A NIR-fluorophore-tagged supramolecular assembly exhibits biexponential fluorescence decay with lifetimes $\tau_1 = 1.2$ ns (amplitude 60%) and $\tau_2 = 4.8$ ns (amplitude 40%), where amplitudes represent fractional populations. Calculate the average fluorescence lifetime $\langle \tau \rangle$ in nanoseconds. Express your answer to two significant figures.  
+</question>  
+
+<question>  
+A synthetic polymer designed for intracellular self-assembly has a critical aggregation concentration (CAC) of 15 µM at 310 K in cytosol-like buffer. Given that the standard Gibbs free energy of aggregation is $\Delta G^\circ = RT \ln(\mathrm{CAC}/1\,\mathrm{M})$, where CAC is in molar units, calculate $\Delta G^\circ$ in kJ·mol$^{-1}$. Use $R = 8.314\, \mathrm{J\,mol^{-1}K^{-1}}$ and $T = 310\, \mathrm{K}$. Express your answer to three significant figures.  
+</question>  
+
+<question>  
+A photochemical reaction controlling intracellular assembly follows first-order kinetics with a half-life of 5.0 minutes. Calculate the rate constant $k$ in s$^{-1}$. Express your answer to two significant figures.  
+</question>  
+
+<question>  
+Assuming first-order kinetics and a rate constant $k = 4.5 \times 10^{-4}\, \mathrm{s^{-1}}$ for boronate ester bond cleavage at pH 5.0, calculate the time (in minutes) required for 75% cleavage of boronate ester bonds. Express your answer to two significant figures.  
+</question>  
+
+<question>  
+A NIR-fluorophore has an extinction coefficient $\varepsilon = 2.5 \times 10^{5}\, \mathrm{M^{-1} cm^{-1}}$ at 780 nm and a quantum yield $\Phi = 0.12$. Calculate the fluorescence brightness defined as $\varepsilon \times \Phi$. Express your answer in units of $\mathrm{M^{-1} cm^{-1}}$ to three significant figures.  
+</question>  
+
+<question>  
+A synthetic intracellular assembly exhibits an activation energy $\Delta E_a = 85\, \mathrm{kJ\,mol^{-1}}$ for disassembly. Using the Arrhenius equation, calculate the ratio of the disassembly rate constants $k_{310}/k_{298}$ at temperatures 310 K and 298 K, respectively. Use $R = 8.314\, \mathrm{J\,mol^{-1}\,K^{-1}}$. Express your answer as a dimensionless ratio to two significant figures.  
+</question>
+=== Turn 2: Critic feedback ===
+Here is a critique of your questions in relation to your provided guidelines:
+
+---
+
+### General/Recurring Feedback
+
+- **Strengths:**
+  - All scenarios are sophisticated, modern, and grounded in chemistry research contexts, not mere textbook boilerplate.
+  - All expect a single numerical value or compound name (no multipart/multichoice answers).
+  - Units (where needed) and IUPAC naming conventions are consistent and appropriate.
+  - Significant figures and units for answers are clearly requested.
+  - Phrasing is mostly rigorous and concise, with technical clarity.
+  - No questions exhibit redundancy, and each question asks about a unique situation/measurement.
+
+- **Areas for Improvement:**
+  - In a few cases, phrasing might be overly elaborate or could be tightened for absolute conciseness.
+  - Units could be even more consistent and explicitly stated for all given and requested quantities.
+  - Specify if values (e.g., amplitudes in biexponential decay) are already normalized (as in, sum to 1), or if they need normalization.
+  - In the dimerization (second-order) kinetic question, consider specifying "initial conditions", since strictly the "initial rate" can presuppose starting with only monomer, but ambiguity can arise if a dimer is present or other pre-equilibria exist.
+  - The advanced technical language, while good for realism, might sometimes stray close to requiring outside knowledge if the candidate doesn't know, for example, exactly how to interpret defining formulas in certain experimental contexts. Add clarifying remarks only if necessary for fairness.
+
+---
+
+### **Per-Question Feedback**
+
+---
+
+#### 1. Photoswitchable Supramolecular Polymer Dimerization (second-order)
+
+**Strengths:**  
+- Models a realistic kinetic scenario (modern, unique context).
+- Only key experimental details are given, with no redundancy.
+- Multi-step reasoning required.
+- Asks for a single numerical answer with units and significant figures.
+
+**Improve:**
+- Specify explicitly you want the "initial" rate using the given starting [M], assuming no dimer is present.
+- Possibly clarify that $k_\mathrm{NIR} = 5.0 \times k_\mathrm{dark}$ to avoid any confusion.
+
+---
+
+#### 2. Protonation Fraction by Henderson–Hasselbalch
+
+**Strengths:**  
+- Realistic for supramolecular/biopolymer contexts.
+- Requires algebraic manipulation and application of logarithms.
+- No extraneous information.
+
+**Improve:**
+- Specify whether only one protonatable site per monomer is assumed (should be clear, currently, but explicit is better).
+- Ask for answer as a decimal "between 0 and 1" for clarity.
+
+---
+
+#### 3. Photoactivatable Catalyst, Quantum Yield Calculation
+
+**Strengths:**  
+- Rigorous—requires linking photon energy, intensity, time, and quantum yield.
+- Every datum is necessary.
+- Multi-step calculation required.
+
+**Improve:**
+- None significant. Could clarify: "all incident photons are absorbed and each gives at most one product molecule (no secondary processes)", if absolute clarity is desired.
+
+---
+
+#### 4. Biexponential Fluorescence Decay: Weighted Lifetime
+
+**Strengths:**  
+- Modern context; not a standard textbook example.
+- Amplitudes provided, requires proper averaging.
+- Concise, rigorous.
+
+**Improve:**
+- Consider stating "fractional populations (sum to 1)" for amplitudes, or else direct students to normalize.
+- Specify whether the average requested is amplitude-weighted or intensity-weighted (in most experimental settings it's amplitude-weighted, but be explicit).
+
+---
+
+#### 5. Gibbs Free Energy from CAC
+
+**Strengths:**  
+- Realistic, nonstandard calculation.
+- Multi-step reasoning—unit conversions required.
+
+**Improve:**
+- Spell out that the CAC should be converted explicitly to molarity, to ensure the candidate knows how to handle $\mu\mathrm{M}$ units.
+- Consider explicitly stating: "Express your answer in kilojoules per mole (kJ mol$^{-1}$) and include the sign."
+
+---
+
+#### 6. First-Order Half-Life
+
+**Strengths:**  
+- Concise, modern context.
+- Appropriate unit conversions required. 
+
+**Improve:**
+- Clarify: "Report $k$ to two significant figures" and, ideally, "in units of s$^{-1}$", for total clarity.
+
+---
+
+#### 7. First-Order Kinetics—Time for 75% Cleavage
+
+**Strengths:**  
+- Well-posed, with modern context.
+- Recalls fraction processed, not amount remaining—requires careful equation use.
+
+**Improve:**
+- Could explicitly spell out that "cleavage" means disappearance of initial molecule, not formation of product, though contextually this is clear.
+
+---
+
+#### 8. NIR-Fluorophore Brightness
+
+**Strengths:**  
+- Contemporary and nonstandard.
+- Each datum is necessary, no fluff.
+
+**Improve:**
+- Specify: "Express your answer as a pure number with the unit $\mathrm{M^{-1}\,cm^{-1}}$ to three significant figures."
+
+---
+
+#### 9. Arrhenius Equation, Ratio of Rate Constants
+
+**Strengths:**  
+- Requires students to relate parameters for the Arrhenius equation—multi-step logic.
+- No redundant data.
+
+**Improve:**
+- Explicitly state that the ratio is $k_{310}/k_{298}$ (which you do, but this is good practice—keep!).
+- Could say “Report your answer as a dimensionless ratio to two significant figures.”
+
+---
+
+### **Summary Recommendations**
+
+- Mainly minor clarifications needed around phrasing for units, normalization, and boundary conditions to ensure *no ambiguity*.
+- Phrasing is rigorous and not colloquial, with no ambiguity or multiple solutions.
+- Keep question format as is; only tweak wording where noted above for maximal rigor and fairness.
+- All questions meet the challenge of requiring multi-step expert-level reasoning.
+
+**Overall:** These questions are well-crafted, modern, and sophisticated. Only minor wording/clarity improvements are suggested.
+=== Turn 3: Author refines questions ===
+<question>  
+A photoswitchable supramolecular polymer undergoes bimolecular second-order dimerization with rate constant $k_\mathrm{dark} = 2.0 \times 10^{3}\,\mathrm{M^{-1}\,s^{-1}}$ in the dark. Under NIR irradiation (740 nm), the rate constant increases 5.0-fold, i.e., $k_\mathrm{NIR} = 5.0 \times k_\mathrm{dark}$. Assuming initial conditions with only monomer at concentration $[M] = 50.0\,\mu\mathrm{M}$ (no dimer present), calculate the initial rate of dimer formation (in $\mu\mathrm{M\,s^{-1}}$) upon NIR irradiation. Express your answer to two significant figures.  
+</question>  
+
+<question>  
+A supramolecular monomer contains one protonatable site with $\mathrm{p}K_a = 6.5$. Using the Henderson–Hasselbalch equation, calculate the fraction of protonated monomers at $pH = 5.0$. Express your answer as a decimal between 0 and 1, to two significant figures.  
+</question>  
+
+<question>  
+A photoactivatable catalyst inside a cell is irradiated with 365 nm LED light at an intensity of $1.2\,\mathrm{mW\,cm^{-2}}$ over a $1.0\,\mathrm{cm^{2}}$ area for 3.0 minutes. Assuming all incident photons are completely absorbed and that the quantum yield for conversion to the active species is 0.65 (i.e., each absorbed photon produces 0.65 molecules of active catalyst), calculate the number of moles of active catalyst generated during irradiation. Use $h = 6.626 \times 10^{-34}\,\mathrm{J\cdot s}$, $c = 3.00 \times 10^{8}\,\mathrm{m/s}$, and Avogadro’s number $N_A = 6.022 \times 10^{23}$. Express your answer in moles to two significant figures.  
+</question>  
+
+<question>  
+A NIR-fluorophore-tagged supramolecular assembly exhibits biexponential fluorescence decay with lifetimes $\tau_1 = 1.2\,\mathrm{ns}$ (amplitude 0.60) and $\tau_2 = 4.8\,\mathrm{ns}$ (amplitude 0.40). The amplitudes represent normalized fractional populations that sum to 1. Calculate the amplitude-weighted average fluorescence lifetime $\langle \tau \rangle$ in nanoseconds. Express your answer to two significant figures.  
+</question>  
+
+<question>  
+A synthetic polymer designed for intracellular self-assembly has a critical aggregation concentration (CAC) of $15.0\,\mu\mathrm{M}$ at $310\,\mathrm{K}$ in cytosol-like buffer. Given that the standard Gibbs free energy of aggregation is  
+\[
+\Delta G^\circ = RT \ln\left(\frac{\mathrm{CAC}}{1\,\mathrm{M}}\right),
+\]  
+where CAC is expressed in molarity, calculate $\Delta G^\circ$ in kilojoules per mole (kJ·mol$^{-1}$). Use $R = 8.314\, \mathrm{J\,mol^{-1}K^{-1}}$ and $T = 310\, \mathrm{K}$. Express your answer with its correct sign to three significant figures.  
+</question>  
+
+<question>  
+A photochemical reaction controlling intracellular assembly follows first-order kinetics with a half-life of 5.0 minutes. Calculate the rate constant $k$ in $\mathrm{s^{-1}}$. Express your answer to two significant figures.  
+</question>  
+
+<question>  
+Assuming first-order kinetics with rate constant $k = 4.5 \times 10^{-4}\, \mathrm{s^{-1}}$ for boronate ester bond cleavage at pH 5.0, calculate the time (in minutes) required to achieve 75% cleavage of boronate ester bonds (i.e., 75% of initial bonds have cleaved). Express your answer to two significant figures.  
+</question>  
+
+<question>  
+A NIR-fluorophore has an extinction coefficient $\varepsilon = 2.5 \times 10^{5}\, \mathrm{M^{-1}cm^{-1}}$ at 780 nm and a fluorescence quantum yield $\Phi = 0.12$. Calculate the fluorescence brightness defined as $\varepsilon \times \Phi$. Express your answer in units of $\mathrm{M^{-1}cm^{-1}}$ to three significant figures.  
+</question>  
+
+<question>  
+A synthetic intracellular assembly exhibits an activation energy $\Delta E_a = 85\, \mathrm{kJ\,mol^{-1}}$ for disassembly. Using the Arrhenius equation, calculate the ratio of disassembly rate constants at 310 K and 298 K, i.e., $k_{310}/k_{298}$. Use $R = 8.314\, \mathrm{J\,mol^{-1}K^{-1}}$. Express your answer as a dimensionless ratio to two significant figures.  
+</question>
+=== Final questions generated ===

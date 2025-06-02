@@ -1,0 +1,269 @@
+=== Turn 0: Author generates questions ===
+```xml
+<question>A small UTe2 sample is known to have uranium defects introduced during its synthesis, modifying its superconducting properties. If the pristine sample has a critical temperature $T_c = 1.6 \, \mathrm{K}$, and the introduction of defects causes a reduction in $T_c$ described by the relation $\Delta T_c = -k \cdot N_{defects}$, where $N_{defects}$ is the defect concentration per unit volume and $k = 5.0 \times 10^{-28} \, \mathrm{K \cdot m^3}$, what is the new critical temperature $T_c'$ if the defect concentration is $N_{defects} = 1.2 \times 10^{27} \, \mathrm{m^{-3}}$? Give your answer in Kelvin.</question>
+
+<question>In a UTe2 superconductor, the fully gapped superconducting state is characterized by a minimum energy gap $\Delta$. If the quasiparticle excitation energy $E$ is given by $E = \sqrt{\epsilon^2 + \Delta^2}$, where $\epsilon$ is the single-particle energy measured relative to the Fermi level, and the minimum excitation energy is measured to be $1.2 \times 10^{-3} \, \mathrm{eV}$, calculate the value of $\Delta$ in Joules.</question>
+
+<question>Consider a UTe2 sample with a fully gapped Au superconducting state. The superconducting gap $\Delta$ is temperature-dependent and can be approximated near the critical temperature $T_c$ by $\Delta(T) = \Delta_0 \sqrt{1 - (T/T_c)}$, where $\Delta_0$ is the gap at zero temperature. If $T_c = 1.6 \, \mathrm{K}$ and at $T = 0.8 \, \mathrm{K}$ the gap is measured to be $\Delta(0.8) = 2.0 \times 10^{-4} \, \mathrm{eV}$, find the zero-temperature gap $\Delta_0$ in electron volts.</question>
+
+<question>Impurities in a UTe2 sample can act as scattering centers for superconducting Cooper pairs. If the scattering rate $\Gamma$ due to these impurities is proportional to the impurity concentration $n_{imp}$ such that $\Gamma = \alpha n_{imp}$, and the London penetration depth $\lambda_L$ is inversely proportional to the square root of the superfluid density $n_s$ (i.e., $\lambda_L \propto 1/\sqrt{n_s}$), and furthermore, the superfluid density is reduced by the impurity scattering as $n_s = n_{s0} - \beta \Gamma$, where $n_{s0}$ is the superfluid density without impurities, express the London penetration depth $\lambda_L$ in terms of $n_{s0}$, $\alpha$, $n_{imp}$ and $\beta$ and a proportionality constant $C$. Your answer should be in the form $\lambda_L = \dots$</question>
+
+<question>A UTe2 crystal with uranium defects exhibits a B3u dominant superconducting state. The coherence length $\xi$ of the Cooper pairs is related to the Fermi velocity $v_F$ and the superconducting gap $\Delta$ by $\xi = \hbar v_F / \Delta$. If the Fermi velocity is $v_F = 1.0 \times 10^5 \, \mathrm{m/s}$ and the gap is $\Delta = 2.4 \times 10^{-4} \, \mathrm{eV}$, calculate the coherence length $\xi$ in meters.</question>
+```
+=== Turn 0: Critic feedback ===
+Here's a critique of each question against your guidelines, with actionable feedback:
+
+---
+
+**Question 1 Critique:**
+
+```xml
+<question>A small UTe2 sample is known to have uranium defects introduced during its synthesis, modifying its superconducting properties. If the pristine sample has a critical temperature $T_c = 1.6 \, \mathrm{K}$, and the introduction of defects causes a reduction in $T_c$ described by the relation $\Delta T_c = -k \cdot N_{defects}$, where $N_{defects}$ is the defect concentration per unit volume and $k = 5.0 \times 10^{-28} \, \mathrm{K \cdot m^3}$, what is the new critical temperature $T_c'$ if the defect concentration is $N_{defects} = 1.2 \times 10^{27} \, \mathrm{m^{-3}}$? Give your answer in Kelvin.</question>
+```
+
+*   **1. Model a Physics Scenario:** Excellent. It describes a realistic scenario in condensed matter physics concerning defect effects on superconductivity.
+*   **2. Expect answers:** Numerical value with correct SI units (Kelvin). Achieved.
+*   **3. Force Multi-Step Reasoning:** Achieved. Requires calculating $\Delta T_c$ first, then subtracting it from the pristine $T_c$.
+*   **4. Be Unique:** Good. While the concept of defects affecting $T_c$ is known, the specific relation and parameters make it a novel problem.
+*   **5. Single Solution:** Achieved. Leads to a single numerical answer.
+*   **6. Rigorous, concise phrasing:** Excellent. Clear and professional.
+*   **7. Units consistent & SI:** Excellent. All units are consistent for the calculation, and the final answer unit is specified.
+*   **8. Not multipart:** Achieved. Solves for a single quantity ($T_c'$).
+*   **9. Formatting:** Excellent. All LaTeX and Markdown are correctly implemented.
+
+**Overall Feedback for Question 1:** This is a very well-designed question that meets all specified guidelines. No significant improvements are needed.
+
+---
+
+**Question 2 Critique:**
+
+```xml
+<question>In a UTe2 superconductor, the fully gapped superconducting state is characterized by a minimum energy gap $\Delta$. If the quasiparticle excitation energy $E$ is given by $E = \sqrt{\epsilon^2 + \Delta^2}$, where $\epsilon$ is the single-particle energy measured relative to the Fermi level, and the minimum excitation energy is measured to be $1.2 \times 10^{-3} \, \mathrm{eV}$, calculate the value of $\Delta$ in Joules.</question>
+```
+
+*   **1. Model a Physics Scenario:** Excellent. Describes quasiparticle excitation in a superconductor, a core concept.
+*   **2. Expect answers:** Numerical value with correct SI units (Joules). Achieved.
+*   **3. Force Multi-Step Reasoning:** Achieved. Requires identifying that the minimum excitation energy occurs when $\epsilon = 0$ (implying $E_{min} = \Delta$), followed by a unit conversion from eV to Joules.
+*   **4. Be Unique:** Good. While the formula is standard, the specific values and the need for unit conversion make it a concrete problem.
+*   **5. Single Solution:** Achieved. Leads to a single numerical answer.
+*   **6. Rigorous, concise phrasing:** Excellent. Clear and professional.
+*   **7. Units consistent & SI:** Excellent. Requires unit conversion, which is a good test of physical reasoning.
+*   **8. Not multipart:** Achieved. Solves for a single quantity ($\Delta$).
+*   **9. Formatting:** Excellent. All LaTeX and Markdown are correctly implemented.
+
+**Overall Feedback for Question 2:** This is a strong question. It effectively tests conceptual understanding (what 'minimum excitation energy' means in this context) and practical skills (unit conversion).
+
+---
+
+**Question 3 Critique:**
+
+```xml
+<question>Consider a UTe2 sample with a fully gapped Au superconducting state. The superconducting gap $\Delta$ is temperature-dependent and can be approximated near the critical temperature $T_c$ by $\Delta(T) = \Delta_0 \sqrt{1 - (T/T_c)}$, where $\Delta_0$ is the gap at zero temperature. If $T_c = 1.6 \, \mathrm{K}$ and at $T = 0.8 \, \mathrm{K}$ the gap is measured to be $\Delta(0.8) = 2.0 \times 10^{-4} \, \mathrm{eV}$, find the zero-temperature gap $\Delta_0$ in electron volts.</question>
+```
+
+*   **1. Model a Physics Scenario:** Excellent. Describes a temperature-dependent superconducting gap, a key aspect of superconductivity.
+*   **2. Expect answers:** Numerical value with correct SI units (electron volts, although eV is not an SI unit, it's conventional in condensed matter, and the problem explicitly asks for it in eV). Achieved.
+*   **3. Force Multi-Step Reasoning:** Achieved. Requires substituting values and then algebraically solving for $\Delta_0$.
+*   **4. Be Unique:** Good. It applies a standard approximation formula in a specific context with given values, requiring algebraic manipulation.
+*   **5. Single Solution:** Achieved. Leads to a single numerical answer.
+*   **6. Rigorous, concise phrasing:** Good. However, the phrase "fully gapped Au superconducting state" seems to contain a typo ("Au"). It should likely be "s-wave" or "BCS-like" to describe the gap symmetry or theoretical model.
+*   **7. Units consistent & SI:** Excellent. Units are consistent throughout the calculation. Asking for eV is fine as it's specified.
+*   **8. Not multipart:** Achieved. Solves for a single quantity ($\Delta_0$).
+*   **9. Formatting:** Excellent. All LaTeX and Markdown are correctly implemented.
+
+**Overall Feedback for Question 3:** This is a good question that effectively tests algebraic manipulation within a physics context.
+**Actionable Feedback:** Correct the likely typo "Au" to "s-wave" or "BCS-like" or similar, or remove it if it's not strictly necessary for the calculation.
+
+---
+
+**Question 4 Critique:**
+
+```xml
+<question>Impurities in a UTe2 sample can act as scattering centers for superconducting Cooper pairs. If the scattering rate $\Gamma$ due to these impurities is proportional to the impurity concentration $n_{imp}$ such that $\Gamma = \alpha n_{imp}$, and the London penetration depth $\lambda_L$ is inversely proportional to the square root of the superfluid density $n_s$ (i.e., $\lambda_L \propto 1/\sqrt{n_s}$), and furthermore, the superfluid density is reduced by the impurity scattering as $n_s = n_{s0} - \beta \Gamma$, where $n_{s0}$ is the superfluid density without impurities, express the London penetration depth $\lambda_L$ in terms of $n_{s0}$, $\alpha$, $n_{imp}$ and $\beta$ and a proportionality constant $C$. Your answer should be in the form $\lambda_L = \dots$</question>
+```
+
+*   **1. Model a Physics Scenario:** Excellent. Models a complex interaction between impurities, scattering, superfluid density, and London penetration depth, requiring conceptual understanding of these relationships.
+*   **2. Expect answers:** Symbolic expression. Achieved.
+*   **3. Force Multi-Step Reasoning:** Excellent. Requires multiple substitution steps to derive the final symbolic expression.
+*   **4. Be Unique:** Excellent. This is a highly novel problem, combining several proportionalities and dependencies into a single derivation.
+*   **5. Single Solution:** Achieved. Leads to a unique symbolic expression.
+*   **6. Rigorous, concise phrasing:** Excellent. Clear, precise, and professional.
+*   **7. Units consistent & SI:** Excellent. Although symbolic, the relationships imply consistent units if the constants ($\alpha$, $\beta$, $C$) have appropriate dimensions.
+*   **8. Not multipart:** Achieved. Solves for a single quantity ($\lambda_L$ expression).
+*   **9. Formatting:** Excellent. All LaTeX and Markdown are correctly implemented.
+
+**Overall Feedback for Question 4:** This is an outstanding question. It perfectly embodies the "Force Multi-Step Reasoning" and "Be Unique" guidelines, challenging students to integrate multiple physical concepts algebraically.
+
+---
+
+**Question 5 Critique:**
+
+```xml
+<question>A UTe2 crystal with uranium defects exhibits a B3u dominant superconducting state. The coherence length $\xi$ of the Cooper pairs is related to the Fermi velocity $v_F$ and the superconducting gap $\Delta$ by $\xi = \hbar v_F / \Delta$. If the Fermi velocity is $v_F = 1.0 \times 10^5 \, \mathrm{m/s}$ and the gap is $\Delta = 2.4 \times 10^{-4} \, \mathrm{eV}$, calculate the coherence length $\xi$ in meters.</question>
+```
+
+*   **1. Model a Physics Scenario:** Excellent. Relates fundamental superconducting properties (coherence length, Fermi velocity, energy gap).
+*   **2. Expect answers:** Numerical value with correct SI units (meters). Achieved.
+*   **3. Force Multi-Step Reasoning:** Excellent. Requires recalling Planck's constant ($\hbar$), converting $\Delta$ from eV to Joules, and then plugging values into the formula. This is a good 3-step problem.
+*   **4. Be Unique:** Good. While the formula is fundamental, applying it with specific numbers and requiring unit conversion makes it a practical, unique problem.
+*   **5. Single Solution:** Achieved. Leads to a single numerical answer.
+*   **6. Rigorous, concise phrasing:** Excellent. Clear and professional. The "B3u dominant superconducting state" adds realistic context without complicating the calculation.
+*   **7. Units consistent & SI:** Excellent. Explicitly requires unit conversion to ensure consistency for SI output.
+*   **8. Not multipart:** Achieved. Solves for a single quantity ($\xi$).
+*   **9. Formatting:** Excellent. All LaTeX and Markdown are correctly implemented.
+
+**Overall Feedback for Question 5:** This is another excellent question. It effectively tests knowledge of fundamental constants, unit conversion, and formula application.
+
+---
+
+**Summary:**
+
+Overall, this set of questions is of very high quality. They successfully adhere to almost all guidelines, particularly excelling in modeling physics scenarios, forcing multi-step reasoning, and creating unique problems relevant to condensed matter physics. The only minor improvement identified was a potential typo in Question 3.
+=== Turn 1: Author refines questions ===
+```xml
+<question>A small UTe2 sample is known to have uranium defects introduced during its synthesis, modifying its superconducting properties. If the pristine sample has a critical temperature $T_c = 1.6 \, \mathrm{K}$, and the introduction of defects causes a reduction in $T_c$ described by the relation $\Delta T_c = -k \cdot N_{defects}$, where $N_{defects}$ is the defect concentration per unit volume and $k = 5.0 \times 10^{-28} \, \mathrm{K \cdot m^3}$, what is the new critical temperature $T_c'$ if the defect concentration is $N_{defects} = 1.2 \times 10^{27} \, \mathrm{m^{-3}}$? Give your answer in Kelvin.</question>
+
+<question>In a UTe2 superconductor, the fully gapped superconducting state is characterized by a minimum energy gap $\Delta$. If the quasiparticle excitation energy $E$ is given by $E = \sqrt{\epsilon^2 + \Delta^2}$, where $\epsilon$ is the single-particle energy measured relative to the Fermi level, and the minimum excitation energy is measured to be $1.2 \times 10^{-3} \, \mathrm{eV}$, calculate the value of $\Delta$ in Joules.</question>
+
+<question>Consider a UTe2 sample with a BCS-like superconducting state. The superconducting gap $\Delta$ is temperature-dependent and can be approximated near the critical temperature $T_c$ by $\Delta(T) = \Delta_0 \sqrt{1 - (T/T_c)}$, where $\Delta_0$ is the gap at zero temperature. If $T_c = 1.6 \, \mathrm{K}$ and at $T = 0.8 \, \mathrm{K}$ the gap is measured to be $\Delta(0.8) = 2.0 \times 10^{-4} \, \mathrm{eV}$, find the zero-temperature gap $\Delta_0$ in electron volts.</question>
+
+<question>Impurities in a UTe2 sample can act as scattering centers for superconducting Cooper pairs. If the scattering rate $\Gamma$ due to these impurities is proportional to the impurity concentration $n_{imp}$ such that $\Gamma = \alpha n_{imp}$, and the London penetration depth $\lambda_L$ is inversely proportional to the square root of the superfluid density $n_s$ (i.e., $\lambda_L \propto 1/\sqrt{n_s}$), and furthermore, the superfluid density is reduced by the impurity scattering as $n_s = n_{s0} - \beta \Gamma$, where $n_{s0}$ is the superfluid density without impurities, express the London penetration depth $\lambda_L$ in terms of $n_{s0}$, $\alpha$, $n_{imp}$ and $\beta$ and a proportionality constant $C$. Your answer should be in the form $\lambda_L = \dots$</question>
+
+<question>A UTe2 crystal with uranium defects exhibits a B3u dominant superconducting state. The coherence length $\xi$ of the Cooper pairs is related to the Fermi velocity $v_F$ and the superconducting gap $\Delta$ by $\xi = \hbar v_F / \Delta$. If the Fermi velocity is $v_F = 1.0 \times 10^5 \, \mathrm{m/s}$ and the gap is $\Delta = 2.4 \times 10^{-4} \, \mathrm{eV}$, calculate the coherence length $\xi$ in meters.</question>
+```
+=== Turn 1: Critic feedback ===
+The questions are generally well-designed and adhere closely to the provided guidelines. Here's a detailed critique for each, followed by an overall assessment:
+
+### Question 1
+
+```xml
+<question>A small UTe2 sample is known to have uranium defects introduced during its synthesis, modifying its superconducting properties. If the pristine sample has a critical temperature $T_c = 1.6 \, \mathrm{K}$, and the introduction of defects causes a reduction in $T_c$ described by the relation $\Delta T_c = -k \cdot N_{defects}$, where $N_{defects}$ is the defect concentration per unit volume and $k = 5.0 \times 10^{-28} \, \mathrm{K \cdot m^3}$, what is the new critical temperature $T_c'$ if the defect concentration is $N_{defects} = 1.2 \times 10^{27} \, \mathrm{m^{-3}}$? Give your answer in Kelvin.</question>
+```
+
+**Critique:**
+*   **1. Physics Scenario:** Excellent. Focuses on a real material (UTe2) and a relevant physical phenomenon (defect-induced $T_c$ reduction).
+*   **2. Answer Type:** Numerical value with specified SI units (Kelvin). Clear.
+*   **3. Multi-Step Reasoning:** Yes. It requires calculating $\Delta T_c$ first and then applying it to the initial $T_c$ to find $T_c'$. (2 steps).
+*   **4. Unique:** The specific material, values, and the given relationship for $T_c$ reduction make it distinct from standard textbook problems.
+*   **5. Single Solution:** Yes.
+*   **6. Rigorous, concise phrasing:** Clear and professional.
+*   **7. Units consistent:** All units are consistent, leading to the correct unit for $\Delta T_c$ and $T_c'$.
+*   **8. Not multipart:** Yes, targets a single quantity ($T_c'$).
+*   **9. Formatting:** Correct LaTeX within Markdown.
+
+**Feedback:** This question is very strong and meets all requirements.
+
+---
+
+### Question 2
+
+```xml
+<question>In a UTe2 superconductor, the fully gapped superconducting state is characterized by a minimum energy gap $\Delta$. If the quasiparticle excitation energy $E$ is given by $E = \sqrt{\epsilon^2 + \Delta^2}$, where $\epsilon$ is the single-particle energy measured relative to the Fermi level, and the minimum excitation energy is measured to be $1.2 \times 10^{-3} \, \mathrm{eV}$, calculate the value of $\Delta$ in Joules.</question>
+```
+
+**Critique:**
+*   **1. Physics Scenario:** Excellent. Models a fundamental aspect of superconductors (quasiparticle excitations).
+*   **2. Answer Type:** Numerical value with specified SI units (Joules). Clear.
+*   **3. Multi-Step Reasoning:** Yes. It requires understanding that minimum excitation energy implies $\epsilon = 0$, and then a unit conversion from eV to Joules. (2 steps: conceptual understanding + unit conversion).
+*   **4. Unique:** The specific context and numerical values make it novel.
+*   **5. Single Solution:** Yes.
+*   **6. Rigorous, concise phrasing:** Clear and professional.
+*   **7. Units consistent:** Requires a unit conversion, which is explicitly asked for. Units in the formula are implicitly consistent for energy.
+*   **8. Not multipart:** Yes, targets a single quantity ($\Delta$).
+*   **9. Formatting:** Correct LaTeX within Markdown.
+
+**Feedback:** This question is excellent and fully compliant.
+
+---
+
+### Question 3
+
+```xml
+<question>Consider a UTe2 sample with a BCS-like superconducting state. The superconducting gap $\Delta$ is temperature-dependent and can be approximated near the critical temperature $T_c$ by $\Delta(T) = \Delta_0 \sqrt{1 - (T/T_c)}$, where $\Delta_0$ is the gap at zero temperature. If $T_c = 1.6 \, \mathrm{K}$ and at $T = 0.8 \, \mathrm{K}$ the gap is measured to be $\Delta(0.8) = 2.0 \times 10^{-4} \, \mathrm{eV}$, find the zero-temperature gap $\Delta_0$ in electron volts.</question>
+```
+
+**Critique:**
+*   **1. Physics Scenario:** Excellent. Uses a standard BCS-like approximation for temperature dependence of the gap, applied to UTe2.
+*   **2. Answer Type:** Numerical value with specified units (electron volts). Clear.
+*   **3. Multi-Step Reasoning:** Yes. It requires substituting given values into the formula and then algebraically solving for $\Delta_0$. (Substitution + algebraic rearrangement).
+*   **4. Unique:** The specific values and material context add uniqueness.
+*   **5. Single Solution:** Yes.
+*   **6. Rigorous, concise phrasing:** Clear and professional.
+*   **7. Units consistent:** All temperature units are Kelvin, leading to a dimensionless ratio. Energy units are eV throughout. Consistent.
+*   **8. Not multipart:** Yes, targets a single quantity ($\Delta_0$).
+*   **9. Formatting:** Correct LaTeX within Markdown.
+
+**Feedback:** This question is excellent and fully compliant.
+
+---
+
+### Question 4
+
+```xml
+<question>Impurities in a UTe2 sample can act as scattering centers for superconducting Cooper pairs. If the scattering rate $\Gamma$ due to these impurities is proportional to the impurity concentration $n_{imp}$ such that $\Gamma = \alpha n_{imp}$, and the London penetration depth $\lambda_L$ is inversely proportional to the square root of the superfluid density $n_s$ (i.e., $\lambda_L \propto 1/\sqrt{n_s}$), and furthermore, the superfluid density is reduced by the impurity scattering as $n_s = n_{s0} - \beta \Gamma$, where $n_{s0}$ is the superfluid density without impurities, express the London penetration depth $\lambda_L$ in terms of $n_{s0}$, $\alpha$, $n_{imp}$ and $\beta$ and a proportionality constant $C$. Your answer should be in the form $\lambda_L = \dots$</question>
+```
+
+**Critique:**
+*   **1. Physics Scenario:** Excellent. Connects multiple physical concepts (impurities, scattering, superfluid density, London penetration depth) in a causal chain.
+*   **2. Answer Type:** Symbolic expression. Clearly specified.
+*   **3. Multi-Step Reasoning:** Absolutely. Requires sequential substitution of one relation into another, leading to a complex expression. (Multiple substitution steps). This is a strong test of conceptual understanding and algebraic manipulation.
+*   **4. Unique:** This is a very novel and conceptually rich problem, precisely what is requested.
+*   **5. Single Solution:** Yes, a single symbolic expression.
+*   **6. Rigorous, concise phrasing:** Very clear and professionally written.
+*   **7. Units consistent:** For a symbolic answer, the consistency is in the logical flow of the proportionality and equations. The question implies that if the given relations are true, then the final expression will also be unit-consistent.
+*   **8. Not multipart:** Yes, targets a single expression ($\lambda_L$).
+*   **9. Formatting:** Correct LaTeX within Markdown.
+
+**Feedback:** This question is outstanding. It perfectly addresses the "multi-step reasoning" and "unique/conceptually rich" guidelines.
+
+---
+
+### Question 5
+
+```xml
+<question>A UTe2 crystal with uranium defects exhibits a B3u dominant superconducting state. The coherence length $\xi$ of the Cooper pairs is related to the Fermi velocity $v_F$ and the superconducting gap $\Delta$ by $\xi = \hbar v_F / \Delta$. If the Fermi velocity is $v_F = 1.0 \times 10^5 \, \mathrm{m/s}$ and the gap is $\Delta = 2.4 \times 10^{-4} \, \mathrm{eV}$, calculate the coherence length $\xi$ in meters.</question>
+```
+
+**Critique:**
+*   **1. Physics Scenario:** Excellent. Introduces coherence length, Fermi velocity, and superconducting gap in the context of UTe2.
+*   **2. Answer Type:** Numerical value with specified SI units (meters). Clear.
+*   **3. Multi-Step Reasoning:** Yes. Requires recalling the value of $\hbar$ (reduced Planck constant), converting $\Delta$ from eV to Joules, and then performing the final calculation. (Constant recall + unit conversion + calculation).
+*   **4. Unique:** Specific values and material context add uniqueness.
+*   **5. Single Solution:** Yes.
+*   **6. Rigorous, concise phrasing:** Clear and professional.
+*   **7. Units consistent:** Units are consistent after the necessary eV to Joule conversion, leading to the correct unit for $\xi$.
+*   **8. Not multipart:** Yes, targets a single quantity ($\xi$).
+*   **9. Formatting:** Correct LaTeX within Markdown.
+
+**Feedback:** This question is excellent and fully compliant.
+
+---
+
+### Overall Assessment:
+
+All five questions are of high quality and adhere very well to the provided guidelines.
+
+*   **Modeling Physics Scenarios:** All questions successfully embed within the context of UTe2 superconductors, providing a specific and relevant physical scenario.
+*   **Answer Type:** Both numerical and symbolic answer types are correctly specified and appropriate for the questions.
+*   **Multi-Step Reasoning:** Every question effectively forces multi-step reasoning, moving beyond simple formula application by requiring conceptual understanding, unit conversions, algebraic manipulation, or sequential substitutions. This is a significant strength.
+*   **Uniqueness:** While the underlying physics principles are fundamental, the specific material (UTe2) and the custom-designed relationships (especially in Q1 and Q4) lend a good degree of novelty, avoiding rephrasing of standard textbook problems.
+*   **Single Solution:** All questions are designed to yield a single correct answer.
+*   **Phrasing:** The language is consistently rigorous, concise, and professional.
+*   **Units and Notation:** Units are handled meticulously, with proper SI unit specification for numerical answers and conventional notation for variables. Unit conversions are appropriately integrated where necessary.
+*   **Not Multipart:** Each question targets a single desired quantity or expression.
+*   **Formatting:** LaTeX formatting within Markdown is impeccable throughout.
+
+These questions demonstrate a strong understanding of effective physics assessment design for advanced learners. They are challenging but fair, requiring both conceptual understanding and computational/algebraic skills.
+=== Turn 2: Author refines questions ===
+```xml
+<question>A UTe2 single crystal exhibits anisotropic superconducting behavior. The critical magnetic field along the a-axis is measured to be $H_{c2,a} = 3 \, \mathrm{T}$, and along the b-axis, it is $H_{c2,b} = 7 \, \mathrm{T}$. Assuming the coherence length $\xi$ is inversely proportional to the square root of the critical magnetic field ($H_{c2} \propto 1/\xi^2$), determine the ratio of the coherence length along the b-axis to the coherence length along the a-axis, i.e., calculate $\xi_b / \xi_a$.</question>
+
+<question>The specific heat capacity $C$ of a UTe2 sample near its superconducting transition temperature $T_c$ shows a jump, $\Delta C$, at $T_c$. The ratio $\Delta C / T_c$ is related to the derivative of the critical magnetic field $H_c$ with respect to temperature $T$ at $T_c$ by the Rutgers formula: $\Delta C / T_c = \mu_0 \left( \frac{dH_c}{dT} \Big|_{T=T_c} \right)^2$. If the measured value of $\Delta C / T_c$ is $0.5 \, \mathrm{J/(mol \cdot K^2)}$, calculate the absolute value of the derivative of the critical magnetic field with respect to temperature at $T_c$, i.e., find $\left| \frac{dH_c}{dT} \Big|_{T=T_c} \right|$ in units of Tesla per Kelvin.  Assume $\mu_0 = 4\pi \times 10^{-7} \, \mathrm{T \cdot m/A}$ and express your answer to one decimal place.</question>
+
+<question>Consider a UTe2 Josephson junction formed between two superconducting regions separated by a thin insulating barrier. The critical current $I_c$ of the junction is related to the superconducting gap $\Delta$ and the normal-state resistance $R_N$ by the Ambegaokar-Baratoff relation: $I_c R_N = \frac{\pi \Delta(T)}{2e} \tanh\left(\frac{\Delta(T)}{2k_B T}\right)$, where $e$ is the elementary charge and $k_B$ is the Boltzmann constant. At a temperature much lower than the critical temperature ($T \ll T_c$), we can approximate $\tanh(x) \approx 1$ for large $x$. If the normal-state resistance is $R_N = 10 \, \Omega$ and the critical current is measured to be $I_c = 30 \, \mu\mathrm{A}$, calculate the superconducting gap $\Delta$ in electron volts.</question>
+
+<question>Inelastic neutron scattering experiments on UTe2 reveal the presence of resonant modes associated with the superconducting state. The energy of these modes, $E_{res}$, is related to the superconducting gap $\Delta$ and the Fermi velocity $v_F$. Suppose the resonant mode energy is given by $E_{res} = A \Delta$, where $A$ is a dimensionless constant. Furthermore, the superfluid density $n_s$ is related to the London penetration depth $\lambda_L$ by $n_s \propto 1/\lambda_L^2$, and the London penetration depth is found to depend on the Fermi velocity and resonant mode energy according to $\lambda_L = B \frac{v_F}{E_{res}}$, where B is another dimensionless constant. Express the superfluid density $n_s$ in terms of $v_F$, $\Delta$, $A$, $B$ and a proportionality constant $C$. Your answer should be in the form $n_s = \dots$</question>
+
+<question>A thin film of UTe2 is subjected to strain, which affects its superconducting properties. The critical temperature $T_c$ changes linearly with applied strain $\epsilon$ according to the relation $T_c(\epsilon) = T_{c,0} + \kappa \epsilon$, where $T_{c,0}$ is the critical temperature without strain and $\kappa$ is the strain sensitivity coefficient. The Ginzburg-Landau coherence length $\xi(T)$ near $T_c$ is given by $\xi(T) = \xi_0 / \sqrt{1 - T/T_c}$, where $\xi_0$ is the zero-temperature coherence length.  Derive an expression for the coherence length $\xi(T, \epsilon)$ as a function of both temperature $T$ and strain $\epsilon$, in terms of $\xi_0$, $T$, $T_{c,0}$, $\kappa$, and $\epsilon$. Your answer should be in the form $\xi(T, \epsilon) = \dots$</question>
+```
+=== Final questions generated ===

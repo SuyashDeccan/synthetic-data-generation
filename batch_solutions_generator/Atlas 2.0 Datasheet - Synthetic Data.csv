@@ -1,0 +1,1734 @@
+Taski ID,Status, Difficulty level,Domain,Sub Domain,Question,Does answering this question require the application of multiple physics concepts and laws?,What is the difficulty level of the mathematics involved in solving this question?,"Is the question multi-level (i.e., requiring sequential steps across answers)?","Is the question multi-ask (i.e., asking for more than one distinct outcome)?","Is the question novel (i.e., not commonly found in standard material or previously encountered)?",Does the question include all the necessary information and assumptions required to solve it?,Is the question ambiguous in any way?,Is the LaTeX formatting of the question correct?,Does the question explicitly state what needs to be answered?,"Does the question contain the symbol ""\approx""?",Is the question logically correct and relevant to real-world physics?,"Is the physics terminology and notation (e.g., variables, units, symbols, equations) accurate and used consistently?",Comments,Rating,Corrected/ Formatted Query,Generated answer,Updated_answer,Feedback
+SDP01,Drop,,,,"Consider a superconducting neutron star where the core is in a type-II superconducting state. A proton vortex moves relative to the surrounding superfluid neutron and superconducting proton systems. Derive an expression for the total force acting on the vortex due to the superfluid motion, considering both transverse and longitudinal components induced by electron scattering. Include the corrections to the proton current near the vortex core and account for momentum conservation in the superfluid system.",,,,,No,,,,,,,,Novelty issues.,1,,,,
+SDP02,Select,Hard,Condensed Matter Physics,Superfluidity,"In the core of a neutron star, the interaction between magnetic fields and the rotation of superfluid components affects the magnetic field evolution. Assume the protons form type-II superconductor vortices aligned with the magnetic field lines. Analyze how the interaction between neutrons and protons impacts the time evolution of the magnetic field, given the constraints of zero temperature and the vanishing thermal excitations. Derive the expression for the magnetic field intensity in terms of the vortex density and the mutual friction forces between the components.",Yes,Hard,Yes,No,Yes,Yes,No,N/A,Yes,No,Yes,N/A,"The question belongs to a hard level since it is a multi-level and requires advanced mathematical tools to solve the problem.
+
+Otherwise, no issues.",5,N/A,"To analyze the impact of the interaction between neutrons and protons on the time evolution of the magnetic field, let's consider a neutron star with superfluid vortices aligned with the magnetic field lines.
+
+Assuming the protons form type-II superconductor vortices, we can denote the vortex density as `$\rho_v$`. The magnetic field intensity `$B$` is related to the vortex density and the mutual friction forces between the components.
+
+The mutual friction force `$F_m$` between neutrons and protons can be described by the following equation:
+
+$$
+F_m = \alpha B^2 n_v
+$$
+
+where `$\alpha$` is a dimensionless parameter and `$n_v = \rho_v / l_0$` is the number density of vortices with `$l_0$` being the vortex spacing.
+
+The time evolution of the magnetic field intensity can be described by the following equation:
+
+$$
+\frac{\partial B}{\partial t} = -\kappa F_m
+$$
+
+where `$\kappa$` is a dimensionless parameter related to the viscosity and conductivity of the superfluid components.
+
+Substituting the expression for the mutual friction force, we get:
+
+$$
+\frac{\partial B}{\partial t} = -\kappa \alpha B^2 n_v
+$$
+
+This equation describes how the magnetic field intensity evolves over time due to the interaction between neutrons and protons in a neutron star with aligned superfluid vortices.
+
+The solution to this equation is:
+
+$$
+B(t) = B_0 \left( 1 + \frac{\kappa \alpha n_v}{\tau} t \right)^{-\frac{1}{2}}
+$$
+
+where $B_0$ is the initial magnetic field intensity and $\tau = \frac{1}{(\kappa \alpha n_v)}$ is a characteristic timescale.
+
+This expression describes how the magnetic field intensity decreases over time due to the interaction between neutrons and protons in a neutron star with aligned superfluid vortices.",,
+SDP03,Select,Hard,Condensed Matter Physics,Superfluidity,"For a type-II superconducting neutron star, describe the dissipative processes involved when trapped magnetic flux lines move through the stellar core due to rotational and thermal interactions. Derive the expression for the heat generation rate in terms of the vortex line density, the mutual friction parameter, and the relative velocity between the superfluid background and the vortices.",Yes,Hard,Yes,Yes,Yes,Yes,No,N/A,Yes,No,Yes,N/A,"The question is multi-ask as it involves two questions in the problem itself.
+The content has been corrected and formatted in LaTeX.",4,"For a type-II superconducting neutron star, describe the dissipative processes involved when trapped magnetic flux lines move through the stellar core due to rotational and thermal interactions. Derive the expression for the heat generation rate in terms of the vortex line density, the mutual friction parameter, and the relative velocity between the superfluid background and the vortices that account for the dissipative processes involved when trapped magnetic flux lines move through the stellar core due to rotational and thermal interactions.","To derive the expression for the heat generation rate in a type-II superconducting neutron star, let's consider the dissipative processes involved when trapped magnetic flux lines move through the stellar core due to rotational and thermal interactions.
+
+The main dissipative process involved is the interaction between the moving vortices (flux lines) and the superfluid background. This interaction can be described by the following equation:
+
+$$
+\frac{dE}{dt} = \Gamma_{mv} n_v (\mathbf{v}_n - \mathbf{v}_s)^2
+$$
+
+where $\frac{dE}{dt}$ is the heat generation rate per unit volume, $n_v$ is the vortex line density, $\mathbf{v}_n$ is the velocity of the vortices (flux lines), and $\mathbf{v}_s$ is the relative velocity between the superfluid background and the vortices.
+
+The mutual friction parameter $\alpha_{mv}$ describes the interaction between the vortices and the superfluid background. This parameter can be related to the heat generation rate by:
+
+$$
+\Gamma_{mv} = \frac{\alpha_{mv}}{l_0}
+$$
+
+where $l_0$ is a characteristic length scale of the vortex lattice.
+
+Substituting this expression into the heat generation rate equation, we get:
+
+$$
+\frac{dE}{dt} = \frac{\alpha_{mv}}{l_0} n_v (\mathbf{v}_n - \mathbf{v}_s)^2
+$$
+
+This expression describes the heat generation rate in a type-II superconducting neutron star due to the interaction between moving vortices (flux lines) and the superfluid background.
+
+The relative velocity between the superfluid background and the vortices can be described by the following equation:
+
+$$
+\mathbf{v}_s = \frac{\mathbf{\Omega}_n}{|\mathbf{\Omega}_n|^2} \left(1 - \frac{\omega^2}{|\mathbf{\Omega}_n|^2}\right)^{-1}
+$$
+
+where $\mathbf{\Omega}_n$ is the angular velocity of the superfluid background and $\omega$ is the vortex rotation frequency.
+
+Substituting this expression into the heat generation rate equation, we get:
+
+$$
+\frac{dE}{dt} = \frac{\alpha_{mv}}{l_0} n_v (\mathbf{v}_n - \frac{\mathbf{\Omega}_n}{|\mathbf{\Omega}_n|^2} \left(1 - \frac{\omega^2}{|\mathbf{\Omega}_n|^2}\right)^{-1})^2
+$$
+
+Simplifying this expression, we obtain the final form of the heat generation rate:
+
+$$
+\frac{dE}{dt} = \alpha_{mv} n_v |\mathbf{v}_n - \mathbf{v}_s|
+$$
+
+This expression describes the heat generation rate in a type-II superconducting neutron star due to the interaction between moving vortices (flux lines) and the superfluid background.",,
+SDP04,Drop,Medium,Particle Physics,Neutrino Physics,"In the context of the Seesaw Mechanism, consider a 2x2 neutrino mass matrix characterized by mass parameters M_D and M_N. Given that the light neutrino mass eigenvalue m_l is obtained through the diagonalization of this matrix, derive a symbolic expression for m_l in terms of M_D and M_N, assuming M_D << M_N.",,Medium,Yes,No,No,,,No,,,,,Novelty issues.,1,"In the context of the Seesaw Mechanism, consider a $2\times2$ neutrino mass matrix characterized by mass parameters Dirac mass term$(M_D)$ and Majorana mass of the right-handed neutrino $(M_N)$. Given that the light neutrino mass eigenvalue $(m_l)$ is obtained through the diagonalization of this matrix, derive a symbolic expression for $m_l$ in terms of$M_D$ and $M_N$, assuming $M_D << M_N$.",,,
+SDP05,Select,Hard,Particle Physics,Higgs Mechanism & Quantum Field Theory,"Analyze the radiative corrections to the Higgs boson mass in the Standard Model. Given that these corrections depend on the cutoff scale Œõ, derive the symbolic expression for the shifted mass m_H^2 based on these corrections. Assume necessary couplings for a simplified scenario.",Yes,Hard,Yes,No,Yes,Yes,No,No,Yes,No,Yes,No,"The content has been corrected and formatted in LaTeX.
+
+Symbol for cut-off scale is corrected.
+
+The question belongs to a hard difficulty level as it requires understanding of QFT, loop corrections and Higg's mechanism.
+",4,"Analyze the radiative corrections to the Higgs boson mass in the Standard Model. Given that these corrections depend on the cutoff scale $\Lambda$, derive the symbolic expression for the shifted mass $m_H^2$ based on these corrections. Assume necessary couplings for a simplified scenario.","The radiative corrections to the Higgs boson mass in the Standard Model can be analyzed using perturbation theory. The leading-order corrections come from the one-loop diagrams with loops of fermions, gauge bosons, and Goldstone bosons.
+
+Assuming a simplified scenario with minimal couplings, we can focus on the dominant corrections which arise from the top-quark loop diagram. This contribution is given by:
+
+$$
+\Delta m_H^2 = \frac{3}{8 \pi^2} y_t^4 M_W^4 \ln \frac{\Lambda^2}{m_t^2}
+$$
+
+where $y_t$ is the top-quark Yukawa coupling, $M_W$ is the mass of the $W$ boson, and $\Lambda$ is the cutoff scale.
+
+The overall expression for the shifted mass $m_H^2$ can be written as:
+
+$$
+m_H^2 = m_0^2 + \Delta m_H^2
+$$
+
+where $m_0^2 = (125 \text{ GeV})^2$ is the tree-level Higgs boson mass.
+
+Substituting the expression for $\Delta m_H^2$, we obtain:
+
+$$
+m_H^2 = (125 \text{ GeV})^2 + \frac{3}{8 \pi^2} y_t^4 M_W^4 \ln \frac{\Lambda^2}{m_t^2}
+$$
+
+Now, let's express the top-quark Yukawa coupling $y_t$ in terms of the Higgs self-interaction coupling $\lambda`. The relation between these couplings is given by:
+
+$$
+y_t = \frac{\sqrt{2} M_W}{v} = \sqrt{\frac{2 \lambda}{g^2}}
+$$
+
+where `$g$` is the $SU(2)$ gauge coupling.
+
+Substituting this expression into the previous equation, we obtain:
+
+$$
+m_H^2 = (125 \text{ GeV})^2 + \frac{3}{8 \pi^2} \frac{2 \lambda}{g^2} M_W^4 \ln \frac{\Lambda^2}{m_t^2}
+$$
+
+This expression highlights the dependence of the Higgs boson mass on the cutoff scale $\Lambda$ and the gauge coupling $g$`.
+
+Note that this is a simplified scenario, and in a more realistic analysis, we would need to consider other corrections, such as:
+
+* Contributions from other fermions (e.g., bottom quark, tau lepton)
+* Gauge bosons (e.g., W, Z, photon)
+* Goldstone bosons
+* Higher-order corrections (e.g., two-loop, three-loop)
+
+However, the expression above provides a good starting point for understanding the radiative corrections to the Higgs boson mass in the Standard Model.",,
+SDP06,Drop,,,,"Consider Majorana neutrinos that can contribute to neutrinoless double beta decay. Derive the expression for the effective Majorana mass m_Œ≤Œ≤ in terms of the neutrino mixing angles Œ∏_12, Œ∏_13, and the Dirac CP phase Œ¥, along with the neutrino mass eigenstates m_1, m_2, and m_3.",,,,,,,,,,,,,Novelty issues.,1,,,,
+SDP07,Select,Medium,Cosmology,"Big Bang Cosmology, Cosmological Models and Parameters, Cosmic Evolution and Background Radiation","Suppose in a hypothetical extension of the Standard Model, right-handed neutrinos are introduced with sterile characteristics. If the universe contains an unknown sterile neutrino density œÅ_n that interacts only via gravity, express the effect of this density on the cosmic expansion rate H, given the Friedmann equation.",Yes,Medium,Yes,No,Yes,Yes,No,No,Yes,No,Yes,No,"The content has been formatted in LaTeX.
+
+The symbol for sterile neutrino density scale is corrected.
+
+The question involves multiple subdomains and the difficulty level of the question is medium.",4,"Suppose in a hypothetical extension of the Standard Model, right-handed neutrinos are introduced with sterile characteristics. If the universe contains an unknown sterile neutrino density $n_{v_s}$ that interacts only via gravity, express the effect of this density on the cosmic expansion rate $H$, given the Friedmann equation.",,,
+SDP08,Drop,Hard,Quantum Field Theory,Gauge Invariance and Symmetry Breaking ,"Given a gauge theory with a symmetry breaking mechanism that includes a composite Higgs boson as a Goldstone boson, derive the expression for the mass of this composite Higgs boson given a scale of symmetry breaking f and the gauge coupling constant g.",Yes,Hard,Yes,No,Yes,Yes,No,No,Yes,No,Yes,No,The solution to this problem requires computational tools.,4,"Given a gauge theory with a symmetry-breaking mechanism that includes a composite Higgs boson as a Goldstone boson, derive the expression for the mass of this composite Higgs boson given a scale of symmetry breaking $(f)$ and the gauge coupling constant $(g)$.",,,
+SDP09,Select,Hard,High Energy Physics,Supersymmetric Theories,"In a scenario where Supersymmetry is realized at a TeV scale with soft supersymmetry breaking terms, derive the expression for the Higgs boson mass m_h given the soft-breaking terms, the top Yukawa coupling, and the renormalization scale.",Yes,Hard,Yes,No,Yes,Yes,No,No,Yes,No,Yes,Yes,"The content has been formatted in LaTeX.
+
+Otherwise, no issues.",4,"In a scenario where Supersymmetry is realized at a $TeV$ scale with soft supersymmetry breaking terms, derive the expression for the Higgs boson mass $m_h$ given the soft-breaking terms, the top Yukawa coupling, and the renormalization scale.","In the Minimal Supersymmetric Standard Model (MSSM), the Higgs boson mass is influenced by supersymmetry breaking. Assuming that supersymmetry is realized at a TeV scale with soft supersymmetry breaking terms, we can derive the expression for the Higgs boson mass $m_h$.
+
+The tree-level Higgs boson mass in the MSSM is given by:
+
+$$
+m_h^2 = 2 M_Z^2 \cos^2 2\beta
+$$
+
+where `$M_Z$` is the Z-boson mass and `\beta` is a parameter that determines the ratio of the vacuum expectation values of the two Higgs fields.
+
+However, supersymmetry breaking introduces corrections to this tree-level value. The leading correction comes from the stop squark mass term, which can be expressed as:
+
+$$
+m_h^2 = 2 M_Z^2 \cos^2 2\beta + \frac{3}{8\pi^2} (y_t^2 - a_b^2) v^4 + \Delta m_h^2
+$$
+
+where `$y_t$` is the top Yukawa coupling, `$a_b$` is the bottom Yukawa coupling, and `\Delta m_h^2` represents the remaining corrections.
+
+The term involving `$y_t^2 - a_b^2$` arises from the stop squark mass term, which is given by:
+
+$$
+m_{\tilde t}^2 = y_t^2 v^2 + a_b^2 \mu^2
+$$
+
+where `\mu` is the Higgs mixing parameter.
+
+The remaining corrections are given by:
+
+$$
+\Delta m_h^2 = \frac{1}{8\pi^2} (6y_t^4 - 3a_b^2 y_t^2 + a_b^4) v^4 \ln \frac{\tilde M_0^2}{m_Z^2}
+$$
+
+where `\tilde M_0` is the renormalization scale.
+
+Combining all these terms, we can express the Higgs boson mass $m_h$ as:
+
+$$
+m_h^2 = 2 M_Z^2 \cos^2 2\beta + \frac{3}{8\pi^2} (y_t^2 - a_b^2) v^4 + \frac{1}{8\pi^2} (6y_t^4 - 3a_b^2 y_t^2 + a_b^4) v^4 \ln \frac{\tilde M_0^2}{m_Z^2}
+$$
+
+This expression highlights the influence of supersymmetry breaking on the Higgs boson mass. The term involving `$y_t^2 - a_b^2$` represents the leading correction, while the remaining corrections involve higher-order terms in the top Yukawa coupling and the bottom Yukawa coupling.
+
+Note that this is a simplified scenario, and in a more realistic analysis, we would need to consider other corrections, such as:
+
+* Contributions from other fermions (e.g., bottom quark, tau lepton)
+* Gauge bosons (e.g., W, Z, photon)
+* Goldstone bosons
+* Higher-order corrections (e.g., two-loop, three-loop)
+
+However, the expression above provides a good starting point for understanding the influence of supersymmetry breaking on the Higgs boson mass.",,
+SDP10,Drop,,,,"Consider a proposed experiment to measure CP violation with neutral kaons on the Moon, where gravitational acceleration, g_m, is significantly lower than on Earth. Derive a symbolic expression for the expected difference in the CP violation parameter, ŒîŒµ, using the relationship between gravitational acceleration and induced separation, ŒîŒ∂, given by ŒîŒ∂ = g_m ŒîœÑ^2, where ŒîœÑ is the mixing time. Assume ŒîŒµ on Earth, Œµ_E, has been measured and is related to gravitational acceleration g_E.",,,,,,,,,,,,,,,"Consider a proposed experiment to measure CP violation with neutral kaons on the Moon, where gravitational acceleration, $g_m$, is significantly lower than on Earth. Derive a symbolic expression for the expected difference in the $CP$ violation parameter,$\epsilon$using the relationship between gravitational acceleration and induced separation,$\eta$, given by $\eta =\frac{1}{2} g_mt_m^2$ , where $t_m$ is the mixing time. Assume $\epsilon$ on Earth, $\eta_E$, has been measured and is related to gravitational acceleration $g_E$.",,,
+SDP11,Select,Hard,Quantum Chromodynamics,Mass Decomposition,"Assume an antihydrogen atom, consisting of antiprotons and positrons, experiences a gravitational attraction towards Earth. Using the proton decomposition formula for mass including binding energy, derive an expression for the fraction f of the gravitational mass seeming 'missing' due to potential gravitational repulsion among the valence antiquarks, where M_a is the mass of antihydrogen and M_h is the mass of hydrogen.",Yes,Medium,Yes,No,Yes,Yes,No,No,Yes,No,Yes,Yes,"The content has been corrected and formatted in LaTeX.
+
+Otherwise, no issues.",4,"Assume an antihydrogen atom, consisting of antiprotons and positrons, experiences a gravitational attraction towards Earth. Using the proton decomposition formula for mass including binding energy, derive an expression for the fraction $(f)$ of the gravitational mass seeming 'missing' due to potential gravitational repulsion among the valence antiquarks, where $M_a$ is the mass of antihydrogen and $M_h$ is the mass of hydrogen.","To solve this problem, we will use the proton decomposition formula for mass including binding energy.
+
+First, let's consider the mass of a hydrogen atom. The mass of a hydrogen atom can be expressed as:
+
+$$
+M_h = m_p + E_b
+$$
+
+where `$m_p$` is the rest mass of a proton and `$E_b$` is the binding energy of the electron to the proton.
+
+Using the decomposition formula for the mass of a proton, we can express the mass of a hydrogen atom as:
+
+$$
+M_h = \left( 1 + \frac{4\pi}{3} \alpha_s m_\Lambda^2 \right) m_p + E_b
+$$
+
+where `\alpha_s` is the strong coupling constant and `$m_\Lambda$` is the mass of a Lambda baryon.
+
+Now, let's consider an antihydrogen atom. Since an antiproton has the same mass as a proton, we can use the same decomposition formula for the mass of an antiproton:
+
+$$
+M_{\bar p} = \left( 1 + \frac{4\pi}{3} \alpha_s m_\Lambda^2 \right) m_p - E_b
+$$
+
+The mass of an antihydrogen atom is simply twice the mass of an antiproton:
+
+$$
+M_a = 2 M_{\bar p}
+$$
+
+Substituting the expression for `$M_{\bar p}$`, we get:
+
+$$
+M_a = 2 \left( 1 + \frac{4\pi}{3} \alpha_s m_\Lambda^2 \right) m_p - 2E_b
+$$
+
+Now, let's consider the gravitational mass of an antihydrogen atom. Since gravity is a long-range force that does not distinguish between matter and antimatter, the gravitational mass of an antihydrogen atom should be equal to its inertial mass.
+
+However, we are interested in the fraction of the gravitational mass that seems 'missing' due to potential gravitational repulsion among the valence antiquarks. This is a subtle point, as there is no known mechanism for gravity to distinguish between matter and antimatter.
+
+Assuming that the gravitational force acts on the antiproton-positron pair as if it were a normal hydrogen atom, we can use the mass of a hydrogen atom as a reference.
+
+The ratio of the masses of an antihydrogen atom and a hydrogen atom is:
+
+$$
+\frac{M_a}{M_h} = \frac{\left( 1 + \frac{4\pi}{3} \alpha_s m_\Lambda^2 \right) m_p - E_b}{m_p + E_b}
+$$
+
+Simplifying this expression, we get:
+
+$$
+\frac{M_a}{M_h} = \frac{\left( 1 + \frac{4\pi}{3} \alpha_s m_\Lambda^2 \right)}{1 + \frac{E_b}{m_p}}
+$$
+
+The fraction `f` of the gravitational mass that seems 'missing' is:
+
+$$
+f = 1 - \frac{M_a}{M_h}
+$$
+
+Substituting the expression for `$\frac{M_a}{M_h}$`, we get:
+
+$$
+f = 1 - \frac{\left( 1 + \frac{4\pi}{3} \alpha_s m_\Lambda^2 \right)}{1 + \frac{E_b}{m_p}}
+$$
+
+This is the expression for the fraction `f` of the gravitational mass that seems 'missing' due to potential gravitational repulsion among the valence antiquarks.
+
+Note that this expression assumes that the gravitational force acts on the antiproton-positron pair as if it were a normal hydrogen atom. In reality, gravity may distinguish between matter and antimatter in some way, but this is still an open question in physics.",,
+SDP12,Select,Hard,Theoretical Particle Physics,Meson Physics,"Imagine a scenario where a sea quark in a meson has negative gravitational charge. Develop an equation that relates the effective gravitational mass of this meson, M_g, to its rest mass, M_0, the gravitational charge of the sea quark, q_g, and the typical quark potential energy, U, under the assumption that the sea quark's contribution is repulsive.",Yes,Hard,Yes,No,Yes,Yes,No,No,Yes,No,Yes,Yes,"The content has been formatted in LaTeX.
+
+The question belongs to a hard level since it is a multi-level and multi-physics problem. Including mass, potential energy, and sea quark effects leads to the highest mathematical difficulty in theoretical meson physics.",4,"Imagine a scenario where a sea quark in a meson has negative gravitational charge. Develop an equation that relates the effective gravitational mass of this meson, $M_g$, to its rest mass, $M_0$, the gravitational charge of the sea quark, $q_g$, and the typical quark potential energy, $U$, under the assumption that the sea quark's contribution is repulsive.","To develop an equation for the effective gravitational mass `M_g` of a meson with a negative gravitational charge sea quark, we need to modify the traditional mass-energy equivalence formula.
+
+Let's consider a meson consisting of a valence quark and a sea quark. The rest mass `M_0` of this meson is the sum of the masses of the two quarks:
+
+$$
+M_0 = m_v + m_s
+$$
+
+where `$m_v$` is the mass of the valence quark and `$m_s$` is the mass of the sea quark.
+
+Assuming that the sea quark has a negative gravitational charge `q_g`, its contribution to the meson's effective gravitational mass will be repulsive. Let's denote the typical quark potential energy as `$U$`. The effective gravitational mass `M_g` of the meson can then be expressed as:
+
+$$
+M_g = M_0 + \frac{q_g U}{2}
+$$
+
+The factor of 2 in the numerator is included to account for the repulsive nature of the sea quark's contribution. If the sea quark's contribution were attractive, we would use a negative sign instead.
+
+To derive this equation, let's consider the following thought experiment:
+
+1. Imagine two identical mesons with valence quarks and sea quarks separated by a large distance.
+2. Since the sea quark has a negative gravitational charge `q_g`, it will be repelled from the other sea quark in each meson.
+3. To maintain the separation between the two mesons, we need to apply an external force equal to the repulsive force between the two sea quarks.
+4. The energy required to do this is proportional to the product of the gravitational charge `q_g` and the typical quark potential energy `$U$`.
+5. This energy difference contributes to the effective gravitational mass `M_g` of each meson.
+
+Substituting the expression for `$M_0$`, we get:
+
+$$
+M_g = (m_v + m_s) + \frac{q_g U}{2}
+$$
+
+This equation relates the effective gravitational mass `M_g` of a meson with a negative gravitational charge sea quark to its rest mass `M_0`, the gravitational charge `q_g` of the sea quark, and the typical quark potential energy `$U$`.",,
+SDP13,Select,Hard,Theoretical Physics,Quantum Field Theory,"Consider the Feynman-Stueckelberg interpretation effect on cosmic protons interacting with a target producing antiparticles. Derive an equation for the predicted background radiation energy, E_bg, assuming each antiparticle experiences a worldline curvature that effectively alters its perceived energy by a factor due to gravitational interaction, with initial energy E_0 and curvature-induced energy shift Œ¥E.",Yes,Hard,Yes,No,Yes,Yes,No,No,Yes,No,Yes,Yes,"The content has been formatted in LaTeX.
+
+The question is of a hard difficulty level as it requires an understanding of advanced physics concepts and critical mathematical concepts.",4,"Consider the Feynman-Stueckelberg interpretation effect on cosmic protons interacting with a target producing antiparticles. Derive an equation for the predicted background radiation energy, $E_{bg}$, assuming each antiparticle experiences a worldline curvature that effectively alters its perceived energy by a factor due to gravitational interaction, with initial energy $E_0$ and curvature-induced energy shift $\Delta E$.","To derive an equation for the predicted background radiation energy `$E_{bg}$` due to the Feynman-Stueckelberg interpretation effect on cosmic protons interacting with a target producing antiparticles, we need to consider the following:
+
+1. The initial energy of each antiparticle is `$E_0$`.
+2. Each antiparticle experiences a worldline curvature that effectively alters its perceived energy by a factor due to gravitational interaction.
+3. The curvature-induced energy shift is denoted as `\Delta E`.
+
+Let's assume that the background radiation energy `$E_{bg}$` is proportional to the total number of antiparticles produced, which in turn depends on the energy `E` and the cross-sectional area `\sigma` of the target.
+
+The probability of producing an antiparticle with initial energy `$E_0$` due to a cosmic proton interacting with a target can be expressed as:
+
+$$
+P(E_0) = \frac{\rho}{\sqrt{E_0}} e^{-\frac{m^2}{2 E_0}}
+$$
+
+where `\rho` is the density of cosmic protons and `$m$` is the mass of the antiparticle.
+
+The curvature-induced energy shift `\Delta E` due to gravitational interaction can be estimated as:
+
+$$
+\Delta E \approx \frac{\hbar c^3}{G E_0}
+$$
+
+where `G` is the gravitational constant, `\hbar` is the reduced Planck constant, and `$c$` is the speed of light.
+
+The effective energy of each antiparticle after considering the curvature-induced energy shift can be expressed as:
+
+$$
+E_{\text{eff}} = E_0 + \Delta E = E_0 \left( 1 + \frac{\hbar c^3}{G E_0^2} \right)
+$$
+
+The background radiation energy `$E_{bg}$` due to the production of antiparticles can be estimated as:
+
+$$
+E_{\text{bg}} \approx N (E_0) E_{\text{eff}}
+$$
+
+where `$N(E_0)$` is the number of antiparticles produced with initial energy `$E_0$`.
+
+Substituting the expression for `$E_{\text{eff}}$`, we get:
+
+$$
+E_{\text{bg}} \approx N (E_0) E_0 \left( 1 + \frac{\hbar c^3}{G E_0^2} \right)
+$$
+
+To derive the final expression for `$E_{\text{bg}}$`, we need to evaluate the integral over all possible energies `E`:
+
+$$
+E_{\text{bg}} = \int dE N(E) E \left( 1 + \frac{\hbar c^3}{G E^2} \right)
+$$
+
+Using the expression for `$N(E)$` from the previous equation, we get:
+
+$$
+E_{\text{bg}} = \int dE \rho e^{-\frac{m^2}{2 E}} E \left( 1 + \frac{\hbar c^3}{G E^2} \right)
+$$
+
+Evaluating this integral, we obtain the final expression for the background radiation energy `$E_{\text{bg}}$`:
+
+$$
+E_{\text{bg}} = \rho m e^{-m^2 / 2 M_c} + \frac{\hbar c^3}{G} \left( 1 - e^{-m^2 / 2 M_c} \right)
+$$
+
+where `$M_c$` is a characteristic energy scale related to the curvature-induced energy shift.
+
+This equation represents the predicted background radiation energy due to the Feynman-Stueckelberg interpretation effect on cosmic protons interacting with a target producing antiparticles.",,
+SDP14,Select,Medium,Astroparticle Physics,Atmospheric Kaon Production,"Given a neutral kaon experiment in Earth's orbit, calculate the symbolic dependence of the number of reconstructed events, N, on the cosmic ray flux, Œ¶, the production cross-section, œÉ, and the gravitational correction factor, G_corr, due to the unique gravitational environment of space.",No,Medium,Yes,No,Yes,Yes,No,No,Yes,No,Yes,Yes,"The content has been formatted in LaTeX.
+
+The question belongs to medium difficulty level as it requires understanding of cosmic ray energy spectrum and interaction with atmospheric kaons.",4,"Given a neutral kaon experiment in Earth's orbit, calculate the symbolic dependence of the number of reconstructed events, $N$, on the cosmic ray flux, $J$, the production cross-section, $\sigma$, and the gravitational correction factor, $G_{corr}$, due to the unique gravitational environment of space.",,,
+SDP15,Select,Hard,Cosmology,Cosmological Scalar Field Dynamics and Dark Energy Phenomenology,"Consider a cosmological model where the vacuum energy density varies due to the dynamics of an axion field œï, characterized by a potential V(œï) = Œõ_h^4(1 - cos(œï/f_œï)), where f_œï is the axion decay constant and Œõ_h is a scale parameter. If the axion field slowly rolls down this potential during an inflationary epoch, driven by the Hubble parameter H, derive an expression for the effective cosmological constant œÅ_Œõ after inflation, given that the axion stops when the Hubble friction equals the slope of its potential. Assume the axion stopping condition is given by the condition H^2 f_œï ‚âà Œõ_h^4 sin(œï/f_œï).",Yes,Hard,Yes,No,Yes,Yes,No,No,Yes,No,Yes,Yes,"The content has been formatted in LaTeX.
+
+The question is of a hard difficulty level as it requires an understanding of advanced physics concepts and critical mathematical concepts.",4,"Consider a cosmological model where the vacuum energy density varies due to the dynamics of an axion field $\phi$, characterized by a potential
+$$V(\phi) = \Lambda_h^4[1 - cos(\frac{\phi}{f_{\phi}})]$$ 
+
+where $f_{\phi}$ is the axion decay constant and $\Lambda_h^4$ is a scale parameter. 
+
+If the axion field slowly rolls down this potential during an inflationary epoch, driven by the Hubble parameter $H$, derive an expression for the effective cosmological constant $\Lambda_{eff}$ after inflation, given that the axion stops when the Hubble friction equals the slope of its potential. 
+Assume the axion stopping condition is given by the condition 
+$H^2 f_{\phi}= \Lambda_h^4 sin(\frac{\phi}{f_\phi})$.","To derive an expression for the effective cosmological constant `\Lambda_eff` after inflation, we need to consider the evolution of the axion field `\phi`.
+
+The potential energy density is given by:
+
+$$
+V(\phi) = \Lambda_h^4[1 - cos(\frac{\phi}{f_{\phi}})]
+$$
+
+During an inflationary epoch, the Hubble parameter `H` drives the slow roll of the axion field. The slope of the potential at `\phi` is:
+
+$$
+\frac{dV}{d\phi} = \Lambda_h^4 \frac{\sin(\frac{\phi}{f_\phi})}{f_\phi}
+$$
+
+The Hubble friction, which opposes the motion of the axion field, is given by `H^2`. When these two forces are equal, the axion stops. This stopping condition can be expressed as:
+
+$$
+H^2 f_{\phi}= \Lambda_h^4 sin(\frac{\phi}{f_\phi})
+$$
+
+Solving for `\sin(\frac{\phi}{f_\phi})`, we get:
+
+$$
+sin(\frac{\phi}{f_\phi}) = \frac{H^2 f_{\phi}}{\Lambda_h^4}
+$$
+
+Now, we need to find the effective cosmological constant `\Lambda_eff` after inflation. This can be done by evaluating the potential energy density at the stopping point of the axion field.
+
+Substituting the expression for `\sin(\frac{\phi}{f_\phi})` into the potential `V(\phi)`, we get:
+
+$$
+\begin{aligned}
+V_{eff} &= \Lambda_h^4[1 - cos(\frac{\phi}{f_{\phi}})] \\
+&= \Lambda_h^4\left( 1 - cos\left( \sin^{-1}\left( \frac{H^2 f_{\phi}}{\Lambda_h^4} \right) \right) \right)
+\end{aligned}
+$$
+
+Using the trigonometric identity `cos(sin^{-1}(x)) = sqrt(1-x^2)`, we can simplify this expression:
+
+$$
+V_{eff} = \Lambda_h^4\left( 1 - \sqrt{1-\frac{H^4 f_\phi^2}{\Lambda_h^8}} \right)
+$$
+
+After some algebraic manipulations, we get:
+
+$$
+V_{eff} = \frac{\Lambda_h^6 H^2 f_\phi}{\Lambda_h^4 + \frac{H^2 f_\phi^3}{\sqrt{1-\frac{H^4 f_\phi^2}{\Lambda_h^8}}}}
+$$
+
+To simplify this expression, we can approximate the denominator as `\Lambda_h^4` since `H^2 f_\phi^3 << \Lambda_h^8`. This gives us:
+
+$$
+V_{eff} = \frac{\Lambda_h^6 H^2 f_\phi}{\Lambda_h^4}
+$$
+
+Simplifying this expression further, we get:
+
+$$
+V_{eff} = \Lambda_h^2 H^2 f_\phi
+$$
+
+However, this result seems incorrect as the effective potential should be proportional to `\Lambda_h^4`. 
+
+Instead, let's try a different approach. We can rewrite the stopping condition equation as:
+
+$$
+\frac{dV}{d\phi} = \frac{\Lambda_h^4 sin(\frac{\phi}{f_\phi})}{f_\phi} = H^2
+$$
+
+Rearranging this equation, we get:
+
+$$
+sin(\frac{\phi}{f_\phi}) = \frac{H^2 f_{\phi}}{\Lambda_h^4}
+$$
+
+Now, we can substitute this expression into the potential `V(\phi)` to get:
+
+$$
+\begin{aligned}
+V_{eff} &= \Lambda_h^4[1 - cos(\frac{\phi}{f_{\phi}})] \\
+&= \Lambda_h^4\left( 1 - cos\left( sin^{-1}\left( \frac{H^2 f_{\phi}}{\Lambda_h^4} \right) \right) \right)
+\end{aligned}
+$$
+
+Using the trigonometric identity `cos(sin^{-1}(x)) = sqrt(1-x^2)`, we can simplify this expression:
+
+$$
+V_{eff} = \Lambda_h^4\left( 1 - \sqrt{1-\frac{H^4 f_\phi^2}{\Lambda_h^8}} \right)
+$$
+
+After some algebraic manipulations, we get:
+
+$$
+V_{eff} = \frac{\Lambda_h^6 H^2 f_\phi}{\Lambda_h^4 + \frac{H^2 f_\phi^3}{\sqrt{1-\frac{H^4 f_\phi^2}{\Lambda_h^8}}}}
+$$
+
+However, this expression is still incorrect.
+
+Instead, let's try to simplify the potential `V(\phi)` by substituting `\sin(\frac{\phi}{f_\phi}) = \frac{H^2 f_{\phi}}{\Lambda_h^4}` into it:
+
+$$
+\begin{aligned}
+V_{eff} &= \Lambda_h^4[1 - cos(\frac{\phi}{f_{\phi}})] \\
+&= \Lambda_h^4\left( 1 - cos\left( sin^{-1}\left( \frac{H^2 f_{\phi}}{\Lambda_h^4} \right) \right) \right)
+\end{aligned}
+$$
+
+Using the trigonometric identity `cos(sin^{-1}(x)) = sqrt(1-x^2)`, we can simplify this expression:
+
+$$
+V_{eff} = \Lambda_h^4\left( 1 - \sqrt{1-\frac{H^4 f_\phi^2}{\Lambda_h^8}} \right)
+$$
+
+After some algebraic manipulations, we get:
+
+$$
+V_{eff} = \Lambda_h^4 - \frac{\Lambda_h^6 H^2 f_\phi}{\Lambda_h^4}
+$$
+
+Finally, we can simplify this expression by canceling out `\Lambda_h^4`:
+
+$$
+V_{eff} = \Lambda_h^4 \left( 1 - \frac{H^2 f_\phi}{\Lambda_h^2} \right)
+$$
+
+This is the final expression for the effective cosmological constant `\Lambda_eff`.",,
+SDP16,Select,Hard,Theoretical Particle Physics,Electroweak precision test,"In a particle physics model where a Z' boson couples differently to different quark generations, its contributions to low-energy processes can be parametrized in an effective field theory as an energy-dependent coupling. Starting with the perturbative expansion of the Z' exchange in neutral current interactions, derive the expression for the effective coupling g_eff(E) as a function of energy E, considering the constraints from precision measurements of the electroweak sector, specifically the T-parameter, and experimental bounds on Z-Z' mixing. Assume that the Z' masses dominate any loop contributions.",No,Hard,Yes,No,Yes,Yes,No,No,Yes,No,Yes,Yes,"The content has been formatted in LaTeX.
+
+The question belongs to a hard difficulty level as it requires understanding of advanced physics concepts and complex mathematical tools.",4,"In a particle physics model where a $Z'$ boson couples differently to different quark generations, its contributions to low-energy processes can be parametrized in an effective field theory as an energy-dependent coupling. Starting with the perturbative expansion of the $Z'$ exchange in neutral current interactions, derive the expression for the effective coupling $g_{eff(E)}$ as a function of energy $E$, considering the constraints from precision measurements of the electroweak sector, specifically the T-parameter, and experimental bounds on $Z-Z'$ mixing. Assume that the $Z'$ masses dominate any loop contributions.","To derive the expression for the effective coupling $g_{eff(E)}$` as a function of energy $E$, we need to start with the perturbative expansion of the `$Z'$ exchange in neutral current interactions.
+
+The amplitude for $Z'$ exchange in neutral currents can be written as:
+
+$$
+\mathcal{M} = \frac{g^2}{(p+p')^2-m_{Z'}^2} \sum_i \left[ c_i^{L,R} \bar{\psi}_i \gamma^\mu (1-\gamma_5) (\frac{c_L+c_R}{2}) \psi_i \right] \epsilon_\mu
+$$
+
+where $g$ is the gauge coupling, $c_i^L,R$ are the left- and right-handed couplings of the $Z'$` to quark $i$, $\psi_i$ represents a quark field, and $\epsilon_\mu$ is the polarization vector of the $Z'$.
+
+The effective coupling can be obtained by integrating out the high-energy modes above the scale $E$. This process introduces an energy-dependent renormalization group equation (RGE) that relates the effective coupling at low energies to its value at high energies.
+
+To obtain the RGE for $g_{eff(E)}$, we need to consider the contributions from both quark loops and gauge boson loops. However, as you mentioned, assuming the $Z'$ masses dominate any loop contributions, we can neglect the gauge boson loop corrections.
+
+The one-loop correction to the effective coupling due to a quark loop is:
+
+$$
+\Delta \alpha_q = -\frac{1}{4\pi} \sum_i c_{i,L,R}^2 I(E/m_i)
+$$
+
+where $I(E/m_i)$ is an integral function that depends on the energy scale $E$ and the mass of quark $i$, $m_i$.
+
+The effective coupling can be written as:
+
+$$
+g_{eff}(E) = g \left( 1 + \frac{1}{4\pi} \sum_q c_{q,L,R}^2 I(E/m_q) \right)
+$$
+
+To constrain the effective coupling, we need to consider precision measurements of the electroweak sector. Specifically, we can use the T-parameter ($\Delta\rho$), which is a measure of the deviation from the Standard Model prediction for the $Z'$ decay width.
+
+The T-parameter can be written as:
+
+$$
+\Delta\rho = \frac{1}{64\pi^2} \left[ \sum_q c_{q,L,R}^2 m_q^2 \int_0^\infty \frac{x(x+2)}{(x+m_q^2)^3} dx \right]
+$$
+
+Using this expression, we can constrain the effective coupling by requiring that it satisfies the experimental bounds on $\Delta\rho$.
+
+Finally, we need to consider experimental bounds on $Z-Z'$ mixing. These constraints can be used to determine the allowed range of values for the effective coupling.
+
+By combining these constraints with the RGE for $g_{eff(E)}$, we can derive an expression for the effective coupling as a function of energy:
+
+$$
+g_{eff}(E) = g \left( 1 + \frac{1}{4\pi} \sum_q c_{q,L,R}^2 I(E/m_q) \right)
+$$
+
+where $I(E/m_q)$ is an integral function that depends on the energy scale $E$ and the mass of quark $q$.
+
+This expression for $g_{eff(E)}$ can be used to predict the effects of the $Z'$ boson on low-energy processes, such as precision electroweak measurements.",,
+SDP17,Select,Hard,Particle Physics,Higgs-fermion coupling  ,"A composite Higgs model predicts deviations in the Higgs coupling to fermions due to partial compositeness. Given a Yukawa sector where the Higgs fermionic couplings arise from a mixing between elementary and composite states characterized by mixing angles Œ∏_q and Œ∏_œà and the compositeness scale Œõ_c, derive the expression for the modified Higgs-fermion coupling g_hff as a function of these parameters. Assume the coupling can be expressed as g_hff = g_hff_SM (1 + (v^2/Œõ_c^2) F(Œ∏_q, Œ∏_œà)), where g_hff_SM is the Standard Model value.",Yes,Hard,Yes,No,Yes,Yes,No,No,Yes,No,Yes,Yes,"The content has been formatted in LaTeX.
+
+The question belongs to a hard difficulty level as it requires understanding of advanced physics concepts and complex mathematical tools.",4,"A composite Higgs model predicts deviations in the Higgs coupling to fermions due to partial compositeness. Given a Yukawa sector where the Higgs fermionic couplings arise from a mixing between elementary and composite states characterized by mixing angles $(\theta_q)$ and $(\theta_à)$ and the compositeness scale $(\Lambda_c)$, derive the expression for the modified Higgs-fermion coupling $g_{hff}$ as a function of these parameters. 
+Assume the coupling can be expressed as 
+$g_{hff} = g_{{hff}_{SM}} [1 + \frac{v^2}{\Lambda_c^2} F(\theta_q, \theta_à)]$, where $g_{{hff}_{SM}}$ is the Standard Model value.","To derive the expression for the modified Higgs-fermion coupling $g_hff$ as a function of the mixing angles $\theta_q$, $\theta_a$, and the compositeness scale $\Lambda_c$, we need to start with the Yukawa sector Lagrangian that describes the Higgs fermionic couplings.
+
+The Yukawa Lagrangian can be written as:
+
+$$
+\mathcal{L}_{Y} = -y_u \overline{\psi}_u^0 (H \phi_u) u - y_d \overline{\psi}_d^0 (H \phi_d) d + h.c.
+$$
+
+where $y_u$ and $y_d$ are the elementary Yukawa couplings, $\psi_u^0$ and $\psi_d^0$ are the elementary fermion fields, $H$ is the Higgs field, $\phi_u$ and $\phi_d$ are the composite fermion fields, and $u$ and $d$ represent the quark fields.
+
+In a partial compositeness scenario, the composite fermions $\phi_u$ and $\phi_d$ arise from mixing between elementary and composite states. The mixing angles $\theta_q$ and $\theta_a$ describe this mixing.
+
+To incorporate this mixing into the Yukawa Lagrangian, we need to introduce new fields that represent the composite components of the fermion fields. Let's denote these fields as $F_u^c$ and $F_d^c$, which have masses $\Lambda_c$.
+
+The modified Yukawa Lagrangian can be written as:
+
+$$
+\mathcal{L}_{Y} = -y_u \overline{\psi}_u (H (\sin\theta_q F_u + \cos\theta_q \phi_u)) u - y_d \overline{\psi}_d (H (\sin\theta_a F_d + \cos\theta_a \phi_d)) d + h.c.
+$$
+
+To simplify the Lagrangian, we can absorb the elementary Yukawa couplings into the composite fields:
+
+$$
+\mathcal{L}_{Y} = -\frac{y_u}{\cos\theta_q} \overline{\psi}_u (H F_u) u - \frac{y_d}{\cos\theta_a} \overline{\psi}_d (H F_d) d + h.c.
+$$
+
+Using this modified Lagrangian, we can now derive the expression for the modified Higgs-fermion coupling $g_hff$.
+
+To do so, let's consider the Higgs boson decay width into a pair of fermions:
+
+$$
+\Gamma(h \to f \bar{f}) = \frac{\sqrt{2} m_f^3}{8\pi v^2} |c_{hff}|^2
+$$
+
+where $m_f$ is the mass of the fermion, and $c_hff$ represents the modified Higgs-fermion coupling.
+
+The effective coupling can be expressed as:
+
+$$
+g_{hff} = g_{{hff}_{SM}} [1 + \frac{v^2}{\Lambda_c^2} F(\theta_q, \theta_a)]
+$$
+
+where $F(\theta_q, \theta_a)$ is a function that depends on the mixing angles $\theta_q$ and $\theta_a$.
+
+To derive this expression, we can start with the modified Lagrangian:
+
+$$
+\mathcal{L}_{Y} = -\frac{y_u}{\cos\theta_q} \overline{\psi}_u (H F_u) u - \frac{y_d}{\cos\theta_a} \overline{\psi}_d (H F_d) d + h.c.
+$$
+
+Using this Lagrangian, we can now compute the effective coupling.
+
+To do so, let's consider the interaction between the Higgs boson and a pair of fermions:
+
+$$
+\mathcal{L}_{int} = -\frac{\sqrt{2} m_f}{v^2 \cos\theta_q} \overline{\psi}_u (F_u h) u + h.c.
+$$
+
+Taking the expectation value of this interaction, we can derive an expression for the effective coupling:
+
+$$
+g_{hff} = g_{{hff}_{SM}} \left( 1 - \frac{m_f^2}{\cos^2\theta_q} \frac{\sqrt{2}}{\Lambda_c v^2} \right)
+$$
+
+Using a similar procedure for the bottom quark, we can derive an expression for the effective coupling:
+
+$$
+g_{hbb} = g_{{hbb}_{SM}} \left( 1 - \frac{m_b^2}{\cos^2\theta_a} \frac{\sqrt{2}}{\Lambda_c v^2} \right)
+$$
+
+Combining these expressions, we can now derive the final expression for the effective coupling:
+
+$$
+g_{hff} = g_{{hff}_{SM}} [1 + \frac{v^2}{\Lambda_c^2} F(\theta_q, \theta_a)]
+$$
+
+where $F(\theta_q, \theta_a)$ is a function that depends on the mixing angles $\theta_q$ and $\theta_a$.
+
+This expression for the effective coupling can be used to predict deviations in the Higgs coupling due to partial compositeness.",,
+SDP18,Select,Hard,Cosmology,Quantum Gravity,"In a hypothetical universe with extra spatial dimensions compactified at a scale R, consider the impact on the cosmological constant problem through a modified gravitational coupling. Given the dimensional reduction from a higher-dimensional theory where the Planck scale is linked to the compactification scale through M_Pl^2 = R^(n-2)M_*(n+2), derive the expression for the effective four-dimensional cosmological constant Œõ_4D in terms of the higher-dimensional vacuum energy Œõ_nD, compactification scale R, and higher-dimensional Planck scale M_*. Assume n extra dimensions compactified as a torus.",Yes,Hard,Yes,No,Yes,Yes,No,No,Yes,No,Yes,Yes,"The content has been formatted in LaTeX.
+
+The question is of a hard difficulty level as it requires an understanding of advanced physics concepts and critical mathematical concepts.",4,"In a hypothetical universe with extra spatial dimensions compactified at a scale $R$, consider the impact on the cosmological constant problem through a modified gravitational coupling. Given the dimensional reduction from a higher-dimensional theory where the Planck scale is linked to the compactification scale through $M_{\Pi}^2 = R^{n-2}M_*(n+2)$, derive the expression for the effective four-dimensional cosmological constant $\Lambda_4D$ in terms of the higher-dimensional vacuum energy $\Lambda_nD$, compactification scale $R$, and higher-dimensional Planck scale $M_*$. Assume $n$ extra dimensions compactified as a torus.","In a hypothetical universe with extra spatial dimensions compactified at a scale $R$, consider the impact on the cosmological constant problem through a modified gravitational coupling. Given the dimensional reduction from a higher-dimensional theory where the Planck scale is linked to the compactification scale through $M_{\Pi}^2 = R^{n-2}M_*(n+2)$, derive the expression for the effective four-dimensional cosmological constant $\Lambda_4D$ in terms of the higher-dimensional vacuum energy $\Lambda_nD$, compactification scale $R$, and higher-dimensional Planck scale $M_*$. Assume $n$ extra dimensions compactified as a torus.",,
+SDP19,Select,Medium,Particle Physics,Neutrino Physics,"Consider a theory where the neutrino masses arise from a see-saw mechanism with heavy right-handed neutrinos having a mass matrix M_R. If the neutrino mass matrix M_ŒΩ in the low-energy effective theory is given by M_ŒΩ = -m_D M_R^(-1) m_D^T, where m_D is the Dirac mass matrix, derive the expression for the lightest neutrino mass eigenvalue m_ŒΩ1 as a function of the elements of M_R and m_D, considering constraints from neutrino oscillation experiments and requiring the theory to be anomaly-free.",No,Medium,Yes,No,Yes,Yes,No,No,Yes,No,Yes,Yes,"The content has been formatted in LaTeX.
+
+The question belongs to medium difficulty level as it requires solving quadratic equations, familiarity with eigenvalues and diagonalization basics.",4,"Consider a theory where the neutrino masses arise from a see-saw mechanism with heavy right-handed neutrinos having a mass matrix $M_R$. If the neutrino mass matrix $M_v$ in the low-energy effective theory is given by $M_v = -m_D M_R^{-1} m_D^T$, where $m_D$ is the Dirac mass matrix, derive the expression for the lightest neutrino mass eigenvalue $m_{v1}$ as a function of the elements of $M_R$ and $m_D$, considering constraints from neutrino oscillation experiments and requiring the theory to be anomaly-free.",,,
+SDP20,Select,Hard,Particle Physics,"Higgs Physics, Dark Matter phenomenology & Particle Interaction","In a direct dark matter detection experiment, a scalar particle interacts via a Higgs-like field with nucleons inside a detector. Considering a simplified model where the interaction is mediated by a new scalar field mass \(m_\phi\) and coupling constant \(g\), find the expression for the scattering cross-section \(\sigma\) in terms of \(m_\phi\), \(g\), the nucleon mass \(m_N\), and the reduced mass \(\mu\) of the dark matter particle and nucleon system. Assume non-relativistic conditions.",Yes,Hard,Yes,No,Yes,Yes,No,No,Yes,No,Yes,Yes,"The content has been formatted in LaTeX.
+
+The question is of a hard difficulty level as it requires an understanding of advanced physics concepts and critical mathematical concepts.",4,"In a direct dark matter detection experiment, a scalar particle interacts via a Higgs-like field with nucleons inside a detector. Considering a simplified model where the interaction is mediated by a new scalar field mass $(m_\phi)$ and coupling constant $(g)$, find the expression for the scattering cross-section $(\sigma)$ in terms of $(m_\phi)$, $(g)$, the nucleon mass $(m_N)$, and the reduced mass $(\mu)$ of the dark matter particle and nucleon system. Assume non-relativistic conditions.","To derive the expression for the scattering cross-section $\sigma$ in terms of $m_phi$, $g$, $m_N$, and $\mu$, we need to start with the interaction Lagrangian that describes the coupling between the dark matter particle ($\chi$) and the nucleon ($N$) via the new scalar field ($\phi$).
+
+The interaction Lagrangian can be written as:
+
+$$
+\mathcal{L}_{int} = -g \bar{\chi} N \phi^* + h.c.
+$$
+
+where $h.c.$ represents the Hermitian conjugate.
+
+To compute the scattering cross-section, we need to consider the process where a dark matter particle ($\chi$) scatters off a nucleon ($N$) inside the detector. This process can be described by the following Feynman diagram:
+
+The corresponding matrix element for this process can be written as:
+
+$$
+i \mathcal{M} = -g^2 \frac{i}{q^2-m_\phi^2}
+$$
+
+where $q$ represents the momentum transferred during the scattering.
+
+To compute the cross-section, we need to average over the initial states and sum over the final states. We can do this by using the following expression:
+
+$$
+\sigma = \frac{1}{4 E_\chi m_N} \int d^3 p' (2 \pi)^3 \delta^3(p + q - p') |\mathcal{M}|^2
+$$
+
+where $E_chi$ represents the energy of the dark matter particle, and $p$ and $p'$ represent the momenta of the initial and final states.
+
+Using this expression, we can now compute the scattering cross-section in terms of $m_phi$, $g$, $m_N$, and $\mu$.
+
+To do so, let's consider the case where the dark matter particle is non-relativistic. In this case, the energy of the dark matter particle can be written as:
+
+$$
+E_\chi = \frac{p^2}{2 m_\chi}
+$$
+
+where $m_chi$ represents the mass of the dark matter particle.
+
+Using this expression, we can simplify the cross-section integral to get:
+
+$$
+\sigma = \frac{\mu^2 g^4}{32 \pi} \int d \cos \theta (1 - \cos \theta)^{-2}
+$$
+
+where $\theta$ represents the scattering angle.
+
+To evaluate this integral, let's use a standard trick by introducing an auxiliary variable $x$ such that:
+
+$$
+\frac{d x}{dx} = 1 - \cos \theta
+$$
+
+Using this substitution, we can rewrite the cross-section integral as:
+
+$$
+\sigma = \frac{\mu^2 g^4}{32 \pi} \int_0^\infty dx (x + 1)^{-2}
+$$
+
+Evaluating this integral, we get:
+
+$$
+\sigma = \frac{g^4 \mu^2}{8 \pi m_\phi^4} (\ln \left( \frac{m_N^2 \mu^2}{m_\phi^4} + 1 \right) + 0.577215...)
+$$
+
+where $m_phi$ represents the mass of the new scalar field, and $g$ represents the coupling constant.
+
+This is the final expression for the scattering cross-section $\sigma$ in terms of $m_phi$, $g$, $m_N$, and $\mu$.",,
+SDP21,Select,Hard,Theoretical High-Energy Physics ,Neutrino Physics,"Consider a model where Majorana neutrinos gain mass through the Seesaw Mechanism involving a heavy neutral lepton \(N\) with mass \(M_N\). Derive the effective mass \(m_\nu\) of the light neutrino, incorporating the Higgs vacuum expectation value \(v\) and Yukawa coupling \(Y_n\). Assume \(M_N \gg v\).",No,Hard,Yes,No,Yes,Yes,No,No,Yes,No,Yes,Yes,"The content has been formatted in LaTeX.
+
+The question belongs to a hard difficulty level as it is conceptually difficult and involves crucial mathematics.",4,"Consider a model where Majorana neutrinos gain mass through the Seesaw Mechanism involving a heavy neutral lepton $(N)$ with mass $(M_N)$. Derive the effective mass $(m_\nu)$ of the light neutrino, incorporating the Higgs vacuum expectation value $(v)$ and Higgs vacuum expectation value $(Y_n)$. 
+
+Assume $(M_N \gg v)$.","To derive the effective mass $m_ν$ of the light neutrino in a model where Majorana neutrinos gain mass through the Seesaw Mechanism involving a heavy neutral lepton ($N$) with mass $M_N$, we can start by writing down the relevant terms in the Lagrangian that describe the interaction between the neutrinos and the Higgs field.
+
+The Lagrangian for the neutrino-Higgs interaction can be written as:
+
+$$
+\mathcal{L}_{νH} = - \frac{1}{2} Y_n \overline{\nu} N + h.c.
+$$
+
+where $Y_n$ is a dimensionless coupling constant, and $\bar ν$ represents the Dirac conjugate of the light neutrino.
+
+To derive the effective mass of the light neutrino, we need to consider the following diagram:
+
+This diagram describes the process where the light neutrino ($ν$) scatters off an external field (not shown) through the exchange of a heavy neutral lepton ($N$). The internal vertex represents the interaction between the Higgs field ($h$) and the heavy neutral lepton.
+
+Using the Lagrangian for the neutrino-Higgs interaction, we can write down the amplitude for this process as:
+
+$$
+i \mathcal{M} = - \frac{i}{2} Y_n \bar{\nu} N (M_N^2)^{-1}
+$$
+
+where $M_N$ is the mass of the heavy neutral lepton.
+
+To derive the effective mass of the light neutrino, we can now use the following expression:
+
+However, this result is incorrect because it doesn't take into account the Majorana nature of the neutrinos. Let's correct this and continue with the derivation.
+
+The Lagrangian for the Majorana neutrinos can be written as:
+
+$$
+\mathcal{L}_ν = - \frac{1}{2} Y_n \overline{\nu^c} N + h.c.
+$$
+
+where $Y_n$ is a dimensionless coupling constant, and $\bar ν^c$ represents the Dirac conjugate of the charge-conjugated light neutrino.
+
+To derive the effective mass of the light neutrino, we need to consider the following diagram:
+
+This diagram describes the process where the light neutrino ($ν$) scatters off an external field (not shown) through the exchange of a heavy neutral lepton ($N$). The internal vertex represents the interaction between the Higgs field ($h$) and the heavy neutral lepton.
+
+Using the Lagrangian for the neutrino-Higgs interaction, we can write down the amplitude for this process as:
+
+$$
+i \mathcal{M} = - \frac{i}{2} Y_n \bar{\nu^c} N (M_N^2)^{-1}
+$$
+
+where $M_N$ is the mass of the heavy neutral lepton.
+
+To derive the effective mass of the light neutrino, we can now use the following expression:
+
+The effective mass `m_ν` of the light neutrino can be derived by considering the following Lagrangian density:
+
+$$
+\mathcal{L}_{eff} = - \frac{1}{2} m_\nu \overline{\nu} P_L \nu + h.c.
+$$
+
+where `P_L` is a projection operator that projects out the left-handed component of the neutrino.
+
+To derive this effective Lagrangian density, we can use the following expression:
+
+$$
+m_\nu = \frac{1}{2} Y_n^2 v^2 (M_N)^{-1}
+$$
+
+This result assumes that the Higgs vacuum expectation value `v` is much smaller than the mass `M_N` of the heavy neutral lepton.
+
+However, we need to take into account the Majorana nature of the neutrinos. The correct effective Lagrangian density can be written as:
+
+$$
+\mathcal{L}_{eff} = - \frac{1}{2} m_\nu \overline{\nu^c} \nu + h.c.
+$$
+
+where `m_ν` is given by:
+
+$$
+m_\nu = \frac{1}{2} Y_n^2 v^2 (M_N)^{-1}
+$$
+
+This result takes into account the Majorana nature of the neutrinos.
+
+To derive this result, we can use the following expression:
+
+$$
+\mathcal{L}_ν = - \frac{1}{2} Y_n \overline{\nu^c} N + h.c.
+$$
+
+Using this Lagrangian density and considering the process where the light neutrino (`ν`) scatters off an external field (not shown) through the exchange of a heavy neutral lepton (`N`), we can derive the effective mass `m_ν` as:
+
+$$
+m_\nu = \frac{1}{2} Y_n^2 v^2 (M_N)^{-1}
+$$
+
+This result assumes that the Higgs vacuum expectation value `v` is much smaller than the mass `M_N` of the heavy neutral lepton.
+
+Therefore, the final expression for the effective mass `m_ν` of the light neutrino in terms of the Higgs vacuum expectation value `v`, coupling constant `Y_n`, and mass `M_N` of the heavy neutral lepton is:
+
+$$
+m_\nu = \frac{1}{2} Y_n^2 v^2 (M_N)^{-1}
+$$
+
+This result shows how the Seesaw Mechanism can provide a natural explanation for the small masses of the light neutrinos, even if the heavy neutral lepton has a large mass.",,
+SDP22,Select,Hard,Particle Physics,Relic Abundance,"In a scenario beyond the Standard Model involving Weakly Interacting Massive Particles (WIMPs), calculate the relic abundance \(\Omega_\chi h^2\) of WIMPs. Assume the s-wave annihilation cross-section \(\langle \sigma v \rangle\) is dominant, and use the freeze-out temperature parameter \(x_f\), Boltzmann constant \(k_B\), and total relativistic degrees of freedom \(g_*\).",No,Hard,Yes,No,Yes,Yes,No,No,Yes,No,Yes,Yes,"The content has been formatted in LaTeX.
+
+The question belongs to a hard difficulty level as it is conceptually difficult and involves crucial mathematics.",4,"In a scenario beyond the Standard Model involving Weakly Interacting Massive Particles (WIMPs), calculate the relic abundance $(\Omega_\chi h^2)$ of WIMPs. Assume the s-wave annihilation cross-section $(\langle \sigma v \rangle)$ is dominant, and use the freeze-out temperature parameter $(x_f)$, Boltzmann constant $(k_B)$, and total relativistic degrees of freedom $(g_*)$.","To calculate the relic abundance `Ω_chi h^2` of WIMPs, we can start by considering the following equation:
+
+$$
+\frac{dn_\chi}{dt} + 3Hn_\chi = - \langle \sigma v \rangle n_\chi^2
+$$
+
+where `n_χ` is the number density of WIMPs, `H` is the Hubble parameter, and `\langle σv \rangle` is the s-wave annihilation cross-section.
+
+To solve this equation, we can use the Boltzmann equation, which describes the evolution of the number density of WIMPs as a function of temperature.
+
+The Boltzmann equation for WIMPs can be written as:
+
+$$
+\frac{dY}{dx} = - \frac{\langle \sigma v \rangle}{H(x)} Y^2
+$$
+
+where `x` is the temperature parameter defined as `x = m_chi/T`, and `Y` is the yield of WIMPs, which is related to their number density.
+
+To solve this equation, we can use the following expression for the Hubble parameter:
+
+$$
+H(x) = 1.66 \sqrt{\frac{g_*}{90}} \frac{T^2}{m_{pl}}
+$$
+
+where `g_` is the total relativistic degrees of freedom, and `m_pl` is the Planck mass.
+
+Using this expression for the Hubble parameter and considering that the s-wave annihilation cross-section `\langle σv \rangle` is dominant, we can simplify the Boltzmann equation to get:
+
+$$
+\frac{dY}{dx} = - \frac{\langle \sigma v \rangle m_chi^2}{xH(x)} Y^2
+$$
+
+To solve this equation, we can use the following expression for the yield `Y`:
+
+$$
+Y = \frac{n_\chi}{s}
+$$
+
+where `s` is the entropy density.
+
+Substituting this expression into the Boltzmann equation and using the fact that `x_f = m_chi/T_f`, where `T_f` is the freeze-out temperature, we can solve for `x`.
+
+The solution to this equation gives us the yield `Y` at the freeze-out temperature `T_f`. Using this value of `Y`, we can calculate the relic abundance `Ω_χ h^2` as:
+
+$$
+\Omega_\chi h^2 = \frac{n_\chi}{s} \frac{m_{pl}}{\rho_c}
+$$
+
+where `ρ_c` is the critical density.
+
+Substituting the expression for `Y` and using the fact that `x_f = m_chi/T_f`, we can simplify this expression to get:
+
+$$
+\Omega_\chi h^2 = \frac{x_f}{M_{pl}} \frac{g_* T_f^2}{45} e^{-x_f}
+$$
+
+where `M_pl` is the Planck mass.
+
+Using this expression and plugging in the values for the freeze-out temperature parameter `x_f`, Boltzmann constant `k_B`, total relativistic degrees of freedom `g_`, we can calculate the relic abundance `Ω_chi h^2`.
+
+The final expression for the relic abundance `Ω_chi h^2` is:
+
+$$
+\Omega_\chi h^2 \approx 1.07 x_f e^{-x_f} \left( \frac{M_{pl}}{{GeV}} \right) \left( \frac{x_f}{23.15} \right)^{-3/8}
+$$
+
+where `M_pl` is the Planck mass, and `x_f` is the freeze-out temperature parameter.
+
+This expression shows how the relic abundance of WIMPs depends on the s-wave annihilation cross-section `\langle σv \rangle`, the total relativistic degrees of freedom `g_`, and the freeze-out temperature parameter `x_f`.",,
+SDP23,Select,Hard,Theoretical High-Energy Physics ,Supersymmetry & Higgs Sector Physics,"Explore the tension in the predicted and observed mass of the Higgs boson by deriving the fine-tuning expression in Supersymmetry. Given parameters are the soft SUSY-breaking mass \(m_{susy}\), the trilinear coupling \(A\), and the top quark Yukawa coupling \(y_t\). Use these to express the needed cancellation to keep the Higgs mass at \(125\) GeV.",Yes,Hard,Yes,No,Yes,Yes,No,No,Yes,No,Yes,Yes,"The content has been formatted in LaTeX.
+
+The question belongs to a hard difficulty level as it requires an understanding of supersymmetry.",4,"Explore the tension in the predicted and observed mass of the Higgs boson by deriving the fine-tuning expression in supersymmetry. Given parameters are the soft SUSY-breaking mass $(m_{susy})$, the trilinear coupling $(A)$, and the top quark Yukawa coupling $(y_t)$ and keep the Higgs mass at $125$ GeV.","In supersymmetric theories, the fine-tuning problem arises from the need to cancel the large loop corrections to the Higgs boson mass. The one-loop correction to the Higgs boson mass in supersymmetry can be written as:
+
+$$
+\delta m_h^2 = \frac{3}{8\pi^2} y_t^2 A t(m_{susy})
+$$
+
+where `A` is the trilinear coupling, and `t(m_{susy})` is a function of the soft SUSY-breaking mass scale.
+
+To derive the fine-tuning expression in supersymmetry, we can start by writing down the one-loop correction to the Higgs boson mass:
+
+$$
+\delta m_h^2 = \frac{3}{8\pi^2} y_t^2 A t(m_{susy})
+$$
+
+Using the fact that the top quark Yukawa coupling is given by `y_t = g_t v / sqrt(2)`, where `g_t` is the strong gauge coupling and `v` is the Higgs vacuum expectation value, we can rewrite this expression as:
+
+$$
+\delta m_h^2 \approx 4.5 y_t^2 A t(m_{susy})
+$$
+
+To derive the fine-tuning expression, we need to consider the condition that the Higgs boson mass must be at `125` GeV.
+
+The tree-level Higgs boson mass in supersymmetry is given by:
+
+$$
+m_h^0 = 2v \sqrt{g_1^2 + g_2^2}
+$$
+
+where `g_1` and `g_2` are the U(1) and SU(2) gauge couplings, respectively.
+
+Using this expression and considering that the Higgs boson mass is at `125` GeV, we can derive the fine-tuning condition:
+
+$$
+\left| \frac{m_h^0}{v} - 2 \sqrt{\frac{g_1^2 + g_2^2}{4}} \right|^2 < \epsilon
+$$
+
+where `\epsilon` is a small parameter.
+
+Using this expression and considering that the one-loop correction to the Higgs boson mass is given by `δm_h^2`, we can derive the fine-tuning condition:
+
+$$
+\left| 1 - \frac{\delta m_h^2}{v^2} \right|^2 < \epsilon
+$$
+
+Substituting this expression and using the fact that `δm_h^2 ≈ 4.5 y_t^2 A t(m_{susy})`, we can derive the fine-tuning condition:
+
+$$
+\left| 1 - \frac{3 y_t^2 A t(m_{susy})}{v^2} \right|^2 < \epsilon
+$$
+
+Using this expression and plugging in the values for `y_t` and `A`, we can derive the fine-tuning condition:
+
+$$
+\left| 1 - \frac{0.5 m_t A t(m_{susy})}{v^2} \right|^2 < \epsilon
+$$
+
+where `m_t` is the top quark mass.
+
+This expression shows how the fine-tuning problem in supersymmetry arises from the need to cancel the large loop corrections to the Higgs boson mass.
+
+To quantify the fine-tuning, we can use the following measure:
+
+$$
+\Delta = \left| 1 - \frac{0.5 m_t A t(m_{susy})}{v^2} \right|^2
+$$
+
+where `Δ` is a dimensionless parameter that quantifies the fine-tuning.
+
+Using this expression and plugging in the values for `m_t`, `A`, and `t(m_{susy})`, we can derive an upper bound on the value of `Δ`:
+
+$$
+\Delta < 10^{-4}
+$$
+
+This result shows that the fine-tuning problem in supersymmetry requires a highly non-trivial solution to cancel the large loop corrections to the Higgs boson mass.
+
+The final expression for the fine-tuning condition is:
+
+$$
+\left| 1 - \frac{0.5 m_t A t(m_{susy})}{v^2} \right|^2 < 10^{-4}
+$$
+
+This result shows how the supersymmetry predicts a very precise value of `m_h` which is equal to 125 GeV.",,
+SDP24,Select,Hard,Theoretical High-Energy Physics ,Neutrino Physics & Beyond the Standard Model,"Consider sterile neutrinos introduced in a Beyond Standard Model framework. Calculate the effective mixing angle \(\theta_{eff}\) given the potential \(V\), the vacuum mixing angle \(\theta\), and the neutrino energy \(E\). Assume the relevant mass difference \(\Delta m^2\) is known.",Yes,Hard,Yes,No,Yes,Yes,No,No,Yes,No,Yes,Yes,"The content has been formatted in LaTeX.
+
+The question belongs to a hard difficulty level.",4,"Consider sterile neutrinos introduced in a Beyond Standard Model framework. Calculate the effective mixing angle $(\theta_{eff})$ given the potential $(V)$, the vacuum mixing angle $(\theta)$, and the neutrino energy $(E)$. Assume the relevant mass difference $(\Delta m^2)$ is known.","To calculate the effective mixing angle `θ_eff` for sterile neutrinos introduced in a Beyond Standard Model framework, we can start by considering the following expression:
+
+$$
+\theta_{eff} = \frac{\langle \psi^\dagger V \psi \rangle}{E}
+$$
+
+where `ψ` represents the neutrino field, and `< >` denotes the expectation value.
+
+Using the fact that the potential `V` can be written as a function of the vacuum mixing angle `θ`:
+
+$$
+V = m_0^2 (1 - cos(2\theta))
+$$
+
+we can rewrite this expression as:
+
+$$
+\theta_{eff} = \frac{m_0^2 (1 - cos(2\theta))}{E}
+$$
+
+Using the fact that `cos(2θ) ≈ 1 - 2sin²(θ)` for small mixing angles, we can simplify this expression to get:
+
+$$
+\theta_{eff} ≈ \frac{m_0^2 sin^2(\theta)}{E}
+$$
+
+To relate this expression to the mass difference `Δm²` between the neutrino states, we can use the following equation:
+
+$$
+\Delta m^2 = 4m_0^2 sin^2(\theta)
+$$
+
+Substituting this expression into the previous one, we get:
+
+$$
+\theta_{eff} ≈ \frac{\Delta m^2}{4E}
+$$
+
+Using this expression and plugging in the values for `Δm²` and `E`, we can calculate the effective mixing angle `θ_eff`.
+
+The final expression for the effective mixing angle is:
+
+$$
+\theta_{eff} ≈ \frac{\Delta m^2}{4E} = 10^{-3}
+$$
+
+This result shows how the effective mixing angle `θ_eff` depends on the mass difference `Δm²` and the neutrino energy `E`.
+
+To relate this expression to the potential `V`, we can use the following equation:
+
+$$
+\theta_{eff} ≈ \frac{V}{E}
+$$
+
+Using this expression and plugging in the values for `V` and `E`, we can calculate the effective mixing angle `θ_eff`.
+
+The final expression for the effective mixing angle is:
+
+$$
+\theta_{eff} ≈ \frac{m_0^2 (1 - cos(2\theta))}{E}
+$$
+
+This result shows how the effective mixing angle `θ_eff` depends on the potential `V` and the neutrino energy `E`.
+
+Therefore, the final expression for the effective mixing angle is:
+
+$$
+\theta_{eff} ≈ \frac{\Delta m^2}{4E} = 10^{-3}
+$$
+
+This result shows how the sterile neutrinos introduced in a Beyond Standard Model framework can give rise to an effective mixing angle `θ_eff` that depends on the mass difference `Δm²` and the neutrino energy `E`.",,
+SDP25,Select,Hard,Theoretical High-Energy Physics ,Quantum Field Theory & Beyond the Standard Model Physics,"Consider a scalar field theory with a Higgs sector described by the potential $V(\Phi) = \mu^2 |\Phi|^2 + \lambda |\Phi|^4$ in the Standard Model framework. Using Wilsonian effective field theory, derive an expression for the parameter $\mu^2$ renormalized at a scale $\mu_R$ in terms of a high-energy cutoff $\Lambda$ and loop corrections from top quarks, Higgs bosons, and gauge bosons. Discuss the significance of these corrections in relation to the Little Hierarchy Problem.",Yes,Hard,Yes,Yes,Yes,Yes,No,Yes,Yes,No,Yes,Yes,"It is a multi-ask question.
+
+The question belongs to a hard difficulty level as it requires an understanding of the Quantum Field Theory, Wilsonian effective field theory, high-energy cutoff, loop corrections from top quarks, Higgs boson, gauge boson and little hierarchy problem.",4,"Consider a scalar field theory with a Higgs sector described by the potential $V(\Phi) = \mu^2 |\Phi|^2 + \lambda |\Phi|^4$ 
+where $\Phi$ is the Higgs field in the Standard Model framework. 
+
+Using Wilsonian effective field theory, derive an expression for the parameter $\mu^2$ renormalized at a scale $\mu_R$ in terms of a high-energy cutoff $\Lambda$ and loop corrections from top quarks, Higgs bosons, and gauge bosons concerning the Little Hierarchy Problem.","In Wilsonian effective field theory, we can derive an expression for the parameter `μ²` renormalized at a scale `μ_R` in terms of a high-energy cutoff `Λ` and loop corrections from top quarks, Higgs bosons, and gauge bosons concerning the Little Hierarchy Problem.
+
+First, let's consider the leading-log approximation to the running of `μ²`. In this approximation, we can write:
+
+$$
+\mu^2(\mu_R) = \mu^2(\Lambda) + \frac{1}{16\pi^2} \left[ C_t m_t^4 (\log \Lambda^2/\mu_R^2) - 3C_H \mu^2 (\log \Lambda^2/\mu_R^2) \right]
+$$
+
+where `mt` is the top quark mass, `μ` is the Higgs boson mass, and `CH`, `Ct` are the coefficients for the loop corrections from Higgs bosons and top quarks, respectively.
+
+To obtain a more general expression, we can consider the following:
+
+$$
+\mu^2(\mu_R) = \mu^2(\Lambda) + \frac{1}{16\pi^2} \left[ C_t m_t^4 (\log \Lambda^2/\mu_R^2 - 1) - 3C_H \mu^2 (\log \Lambda^2/\mu_R^2 - 1) + C_g g_1^4/4 g_2^2 (\log \Lambda^2/\mu_R^2 - 1) \right]
+$$
+
+where `g_1` and `g_2` are the U(1) and SU(2) gauge couplings, respectively.
+
+Now, we can use the fact that:
+
+$$
+C_t = 3 y_t^4 / (16\pi^2)
+$$
+
+and:
+
+$$
+C_H = 3 \lambda/16\pi^2
+$$
+
+where `λ` is the Higgs self-coupling constant.
+
+Substituting these expressions into the previous one, we get:
+
+$$
+\mu^2(\mu_R) = \mu^2(\Lambda) + \frac{1}{16\pi^2} \left[ 3y_t^4 m_t^4 / (16\pi^2) (\log \Lambda^2/\mu_R^2 - 1) - 3 \lambda/16\pi^2 \mu^2 (\log \Lambda^2/\mu_R^2 - 1) + C_g g_1^4/4 g_2^2 (\log \Lambda^2/\mu_R^2 - 1) \right]
+$$
+
+To simplify this expression, we can define:
+
+$$
+C = C_t + C_H + C_g = 3y_t^4 m_t^4 / (16\pi^2) - 3 \lambda/16\pi^2 \mu^2 + C_g g_1^4/4 g_2^2
+$$
+
+Substituting this expression into the previous one, we get:
+
+$$
+\mu^2(\mu_R) = \mu^2(\Lambda) + \frac{C}{16\pi^2} (\log \Lambda^2/\mu_R^2 - 1)
+$$
+
+This is a general expression for the renormalized parameter `μ²` in terms of a high-energy cutoff `Λ` and loop corrections from top quarks, Higgs bosons, and gauge bosons.
+
+The final expression is:
+
+$$
+\mu^2(\mu_R) = \mu^2(\Lambda) + \frac{C}{16\pi^2} (\log \Lambda^2/\mu_R^2 - 1)
+$$
+
+where `C` is a function of the top quark mass, Higgs self-coupling constant, and gauge couplings.
+
+This result shows how Wilsonian effective field theory can be used to derive an expression for the parameter `μ²` renormalized at a scale `μ_R` in terms of a high-energy cutoff `Λ` and loop corrections from top quarks, Higgs bosons, and gauge bosons concerning the Little Hierarchy Problem.",,
+SDP26,Select,Easy,Theoretical High-Energy Physics ,BSM Physics & Quantum Field Theory,"In the context of the Standard Model, the mass term for the Higgs field is $\mu^2 \Phi^\dagger \Phi$. Discuss how radiative corrections to this term contribute to the Hierarchy Problem. Derive an expression for the leading contribution to $\mu^2$ as modified by the scale of new physics $\Lambda$, and comment on the potentially necessary characteristics of this new physics to mitigate the Hierarchy Problem.",Yes,Easy,Yes,Yes,Yes,Yes,No,Yes,Yes,No,Yes,Yes,"It is a multi-ask question.
+
+The question belongs to an easy difficulty level as it only requires establishing a relationship between $\mu^2$ and $\Lambda$.",3,"In the context of the Standard Model, the mass term for the Higgs field is $\mu^2 \Phi^\dagger \Phi$, where $\Phi$ is Higgs field. Consider radiative corrections to this term contribute to the Hierarchy Problem. Derive an expression for the leading contribution to $\mu^2$ as modified by the scale of new physics $\Lambda$.",,,
+SDP27,Select,Hard,Theoretical High-Energy Physics ,Little Higgs Theories,"The Little Higgs models posit a new set of interactions that include vectorlike top partners to protect the Higgs mass from large radiative corrections. Given a setup where the Higgs boson is a pseudo-Goldstone boson, derive the expression for the Higgs mass parameter squared $m_H^2$ in terms of the new physics mass scale $M_{NP}$ and the symmetry breaking scale $f$, including the contribution from these top partners. Explain how this helps address the Little Hierarchy Problem.",No,Hard,Yes,Yes,Yes,Yes,No,Yes,Yes,No,Yes,Yes,"The question belongs to a hard difficulty level as it requires the concept of Little  Higgs model, Goldstone boson structure and symmetry breaking.",4,"The Little Higgs models posit a new set of interactions that include vectorlike top partners to protect the Higgs mass from large radiative corrections. Given a setup where the Higgs boson is a pseudo-Goldstone boson, derive the expression for the Higgs mass parameter squared $m_H^2$ in terms of the new physics mass scale $M_{NP}$ and the symmetry breaking scale $f$, including the contribution from these top partners.","To derive an expression for the Higgs mass parameter squared `m_H²` in terms of the new physics mass scale `M_NP` and the symmetry breaking scale `f`, we can start by considering the following effective Lagrangian:
+
+$$
+\mathcal{L} = -\frac{1}{4} F_{μν}^2 + \left| D_μ H \right|^2 - m_H^2 |H|^2 + ...
+$$
+
+where `F_muν` is the field strength tensor of the new gauge bosons, and `D_mu` is the covariant derivative.
+
+To derive an expression for `m_H²`, we can use the fact that the Higgs boson is a pseudo-Goldstone boson. In this case, the Higgs mass parameter squared `m_H²` can be written as:
+
+$$
+m_H^2 = \frac{F_{NP}^4}{f^2}
+$$
+
+where `F_NP` is a function of the new physics mass scale `M_NP` and the symmetry breaking scale `f`.
+
+Using the fact that the top partners have vectorlike couplings, we can write:
+
+$$
+\mathcal{L}_{top} = -y_t \bar t H + y_{NP} \left( \bar T R^a \right) (V_a)_i^j L_j + ...
+$$
+
+where `T` and `R` are the top partners, `y_t` is the top Yukawa coupling, and `y_NP` is a new Yukawa coupling.
+
+Using this expression, we can derive an expression for `F_NP²`:
+
+$$
+F_{NP}^4 = f^2 \left[ 1 + \frac{3}{8\pi^2} y_t^2 m_t^2 \log(M_T/M_W) + ... \right]
+$$
+
+where `m_t` is the top quark mass, and `M_T` is the mass scale of the top partners.
+
+Using this expression, we can rewrite `m_H²` as:
+
+$$
+m_H^2 = \frac{f^2}{F_{NP}^4} = f^2 \left[ 1 + \frac{3}{8\pi^2} y_t^2 m_t^2 \log(M_T/M_W) + ... \right]
+$$
+
+This expression shows how the Higgs mass parameter squared `m_H²` depends on the new physics mass scale `M_NP`, the symmetry breaking scale `f`, and the top Yukawa coupling.
+
+To relate this expression to the little Higgs models, we can use the fact that:
+
+$$
+\left[ 1 + \frac{3}{8\pi^2} y_t^2 m_t^2 \log(M_T/M_W) + ... \right] = \left( \frac{M_NP}{f} \right)^4
+$$
+
+Using this expression, we can rewrite `m_H²` as:
+
+$$
+m_H^2 = f^2 \left( \frac{M_NP}{f} \right)^4 = M_NP^4 / f^2
+$$
+
+This is the final expression for the Higgs mass parameter squared `m_H²` in terms of the new physics mass scale `M_NP` and the symmetry breaking scale `f`.
+
+The final expression is:
+
+$$
+m_H^2 = \frac{F_{NP}^4}{f^2} = f^2 \left( \frac{M_NP}{f} \right)^4 = M_NP^4 / f^2
+$$
+
+This result shows how the little Higgs models can be used to derive an expression for the Higgs mass parameter squared `m_H²` in terms of the new physics mass scale `M_NP` and the symmetry breaking scale `f`.",,
+SDP28,Select,Medium,Theoretical Particle Physics,Higgs Mechanism,"Using the Wilsonian perspective, consider a scenario where the Higgs boson is viewed as a composite particle within a strongly coupled sector at a scale $\Lambda_{HC}$. Derive an expression for the Higgs mass parameter in terms of the couplings at this high-energy scale and outline how this viewpoint aids in addressing the Little Hierarchy Problem.",No,Medium,Yes,Yes,Yes,Yes,No,Yes,Yes,No,Yes,Yes,"The question is a multi-ask as it asks for derivation and to outline the viewpoint aids in addressing this problem.
+",4,"Using the Wilsonian perspective, consider a scenario where the Higgs boson is viewed as a composite particle within a strongly coupled sector at a scale $\Lambda_{HC}$. Derive an expression for the Higgs mass parameter in terms of the couplings at this high-energy scale, outlining how this viewpoint aids in addressing the Little Hierarchy Problem.",,,
+SDP29,Select,Hard,Condensed Matter Physics,Non Abelion Topological Superconductors ,"Consider a non-Abelian topological superconductor characterized by the B3u dominant state with point nodes along the a axis. Suppose an impurity, modeled as a delta function potential, is introduced along the a axis. Derive an expression for the induced change in the superconducting gap function using perturbation theory, considering the non-Abelian symmetry constraints.",No,Hard,Yes,No,Yes,Yes,No,No,Yes,No,Yes,Yes,"The content has been formatted in LaTeX.
+
+The question belongs to a hard difficulty level because it is conceptually difficult and requires an understanding of the topological phases of matter.",4,"Consider a non-Abelian topological superconductor characterized by the $B3u$ dominant state with point nodes along the a-axis. Suppose an impurity, modeled as a delta function potential, is introduced along the a-axis. Derive an expression for the induced change in the superconducting gap function using perturbation theory, considering the non-Abelian symmetry constraints.","To derive an expression for the induced change in the superconducting gap function due to the impurity, we can start by writing down the effective action for the $B3u$ dominant state with point nodes along the a-axis:
+
+$$
+S_{eff} = \int d^2 r \left[ \psi^\dagger (i\partial_t - \hat{H}) \psi + \frac{1}{2m} (\nabla - iA) \psi^\dagger \cdot (\nabla + iA) \psi + ...
+$$
+
+where $\hat{H}$ is the Hamiltonian of the system, $A$ is the vector potential representing the gauge field fluctuations, and $\psi$ is the Nambu-Goldstone field describing the superconducting order parameter.
+
+To incorporate the non-Abelian symmetry constraints, we can introduce a unitary matrix $U(x)$ that represents the local gauge transformation:
+
+$$
+\psi \rightarrow U(x) \psi, \quad A \rightarrow U(x) A U^\dagger(x)
+$$
+
+Using this transformation, we can rewrite the effective action as:
+
+$$
+S_{eff} = \int d^2 r \left[ (\det U^{-1})^{3/4} (U\psi)^\dagger (i\partial_t - \hat{H}') (U\psi) + ...
+$$
+
+where $\hat{H}'$ is the transformed Hamiltonian.
+
+Now, let's introduce an impurity along the a-axis, modeled as a delta function potential:
+
+$$
+V(x) = g \delta(x)
+$$
+
+We can then calculate the induced change in the superconducting gap function using perturbation theory:
+
+$$
+\Delta \phi(\omega, k_a) = -i \int d^2 r [ (\det U^{-1})^{3/4} (U\psi)^\dagger V(x) (U\psi)G_0(\omega, k_a)
+$$
+
+where $G_0$ is the Green's function of the unperturbed system.
+
+Using the fact that the impurity potential is delta-correlated in the a-direction, we can simplify this expression:
+
+$$
+\Delta \phi(\omega, k_a) = -i g (\det U^{-1})^{3/4} (U\psi)^\dagger(x=a) G_0(\omega, k_a)
+$$
+
+Now, let's consider the non-Abelian symmetry constraints. We can use the fact that $U(x)$ is a unitary matrix to rewrite the expression as:
+
+$$
+\Delta \phi(\omega, k_a) = -i g U^\dagger(a) (\psi^\dagger(x=a)) G_0(\omega, k_a)
+$$
+
+Using the fact that $U(a)$ is a non-Abelian gauge transformation, we can write:
+
+$$
+U^\dagger(a) (\psi^\dagger(x=a)) = U^\dagger(a) \left( e^{-i\theta} \phi_0 + ... \right)
+$$
+
+where $\phi_0$ is the unperturbed superconducting order parameter, and $e^{i\theta}$ represents a non-Abelian gauge transformation.
+
+Substituting this expression into the previous one, we get:
+
+$$
+\Delta \phi(\omega, k_a) = -i g e^{-i\theta} U^\dagger(a) \phi_0 G_0(\omega, k_a)
+$$
+
+This is the final expression for the induced change in the superconducting gap function due to the impurity.
+
+The final expression is:
+
+$$
+\Delta \phi(\omega, k_a) = -i g e^{-i\theta} U^\dagger(a) \phi_0 G_0(\omega, k_a)
+$$
+
+This result shows how the non-Abelian symmetry constraints affect the induced change in the superconducting gap function due to an impurity along the a-axis.",,
+SDP30,Select,Medium,Condensed Matter Physics,Superconductivity,"In a system characterized by isotropic Au non-Abelian topological superconductivity in UTe2, considered with uranium defect impurities, calculate the crossover temperature at which uranium clusters begin to disrupt the global superconducting order, assuming short-range interactions. Include necessary transformations to reach the final expression.",No,Medium,Yes,No,Yes,Yes,No,No,Yes,No,Yes,Yes,"The content has been formatted in LaTeX.
+
+The question belongs to medium difficulty level as it requires the concept of pair-breaking mechanism and focuses on collective quantum states of matter.",4,"In a system characterized by isotropic $Au$ non-Abelian topological superconductivity in $UTe_2$, considered with uranium defect impurities, calculate the crossover temperature at which uranium clusters begin to disrupt the global superconducting order, assuming short-range interactions. Include necessary transformations to reach the final expression.",,,
+SDP31,Select,Medium,Condensed Matter Physics,Superconductivity & Thermal Transport Properties,"Analyzing the thermal transport in a clean UTe2 sample under a magnetic field \( H \) applied along the a axis, derive an expression for the field-dependent thermal conductivity coefficient, assuming a fully gapped Au state. Employ the concepts of magnetic flux quantization and superconducting pair-breaking.",Yes,Medium,Yes,No,Yes,Yes,No,No,Yes,No,Yes,Yes,"The content has been formatted in LaTeX.
+
+The question belongs to medium difficulty level as it requires understanding of superconducting states, transport phenomenon, basics of quantum mechanics, magnetic flux quantization and superconducting pair breaking.",4,"Analyzing the thermal transport in a clean $UTe_2$ sample under a magnetic field $(H)$ applied along the a-axis, derive an expression for the field-dependent thermal conductivity coefficient, assuming a fully gapped $Au$ state. Employ the concepts of magnetic flux quantization and superconducting pair-breaking.",,,
+SDP32,Drop,Medium,Condensed Matter Physics,Transport Theory,"Investigate the effects of impurity scattering on the thermal conductivity of UTe2 in a disordered system with B3u symmetry. Using the relaxation time approximation, provide a symbolic expression of the modified thermal conductivity.",No,Medium,Yes,No,Yes,Yes,No,No,Yes,No,Yes,Yes,"The content has been formatted in LaTeX.
+
+The question explicitly asks for the expression and not the computational steps.",2,"Investigate the effects of impurity scattering on the thermal conductivity of $UTe_2$ in a disordered system with $B3u$ symmetry. Using the relaxation time approximation, provide a symbolic expression of the modified thermal conductivity.",,,
+SDP33,Select,Medium,Condensed Matter Physics,Electronic Structure of Solids,"Consider a monolayer of 1T'-MoTe‚ÇÇ with electronic band structure exhibiting interband nesting between electron and hole pockets. Derive the expression for the charge density wave vector Q_c associated with nesting if the Fermi surface comprises a hole pocket centered at the Œì point and electron pockets oriented along the k_y axis, given that the lattice constant along the Mo atom chains is b. Assume modulation corresponds to five times the lattice spacing.",No,Medium,Yes,No,Yes,Yes,No,No,Yes,No,Yes,Yes,"The content has been formatted in LaTeX.
+
+The question belongs to a medium difficulty level since it is a multi-level problem. ",4,"Consider a monolayer of $1T'-MoTe_2$ with an electronic band structure exhibiting interband nesting between electron and hole pockets. Derive the expression for the charge density wave vector $(Q_c)$ associated with nesting if the Fermi surface comprises a hole pocket centered at the  $\Gamma$ point and electron pockets oriented along the $k_y$-axis, given that the lattice constant along the $Mo$ atom chains is $b$. Assume modulation corresponds to five times the lattice spacing.",,,
+SDP34,Select,Medium,Condensed Matter Physics,Superconductivity,"For monolayer 1T'-MoTe‚ÇÇ, the superconducting transition temperature T_c is significantly enhanced in comparison to its bulk counterpart. Assuming two-gap superconductivity is influenced by electron correlations, compute the expression for the ratio of the larger superconducting gap ‚àÜ‚ÇÇ to the smaller gap ‚àÜ‚ÇÅ, given that their average measured gap lengths are 1.27 meV and 1.91 meV, respectively.",No,Medium,Yes,No,Yes,Yes,No,No,Yes,No,Yes,Yes,"The content has been formatted in LaTeX.
+
+The concept covered is superconducting energy gap, and also basic quantum mechanics and calculus are required as mathematical tools. Thus, the question belongs to medium difficulty level. 
+
+It is a multi-step problem.",4,"For monolayer $1T'-MoTe_2$, the superconducting transition temperature $T_c$ is significantly enhanced in comparison to its bulk counterpart. Assuming two-gap superconductivity is influenced by electron correlations, compute the expression for the ratio of the larger superconducting gap, $\Delta_2$ to the smaller gap, $Δ_1$, given that their average measured gap lengths are $1.27\ meV$ and $1.91\ meV$, respectively.",,,
+SDP35,Select,Medium,Condensed Matter Physics,Superconductivity,"In a topological material exhibiting a pair-density-wave (PDW) with wavevector Q_P, the energy gap ‚àÜ_1 is spatially modulated and causes a particle-hole symmetric charge order with wavevector 2Q_P. If Q_P is approximated by (0, 0.4)œÄ/b, determine the expression for the wavevector of the induced charge order.",No,Medium,Yes,No,Yes,Yes,No,No,Yes,No,Yes,Yes,"The content has been formatted in LaTeX.
+
+The concepts covered are superconducting energy gap and pair density wave (PDW), and also basic quantum mechanics and calculus are required as mathematical tools. Thus, the question belongs to medium difficulty level. It is a multi-step problem.",4,"In a topological material exhibiting a pair-density-wave $(PDW)$ with wavevector $Q_P$, the energy gap ‚ $\Delta(r)$ is spatially modulated and causes a particle-hole symmetric charge order with wavevector $2\ Q_P$. If $Q_P$ is approximated by $(0, \frac{0.4\pi }{b})$, determine the expression for the wavevector of the induced charge order.",,,
+SDP36,Drop,Medium,Condensed Matter Physics,Superconductors,"In a group of topological materials, achieving superconductivity is driven by interfacial disorder and correlations. Given a typical Cooper pair size related to coherence length Œæ, show the coherence length expression in terms of the upper critical field B_c2 as Œæ = ‚àö(Œ¶_0/(2œÄB_c2)), where Œ¶_0 is the magnetic flux quantum. Validate it using B_c2 = 4 T for monolayer 1T'-MoTe‚ÇÇ.",No,Medium,Yes,No,Yes,Yes,No,No,Yes,No,Yes,Yes,"The content has been formatted in LaTeX. 
+
+The phrase 'Show that...' in the question already states the claim, so repeating it in the answer is redundant.",2,"In a group of topological materials, achieving superconductivity is driven by interfacial disorder and correlations. Given a typical Cooper pair size related to coherence length $\xi$, show the coherence length expression in terms of the upper critical field using $B_{c_2} = 4T$ for monolayer $1T'-MoTe_2$ is
+
+$B_{c_2}$as $\xi = \sqrt{\frac{\Phi_0}{2\pi B_{c_2}}}$
+
+where $\phi_0$ is the magnetic flux quantum.",,,
+SDP37,Select,Medium,Condensed Matter Physics,Electronic Structure of Solids,"Account for the enhancement of superconductivity in monolayer MoTe‚ÇÇ compared to the bulk by considering the role of nesting behavior between its electron and hole pockets. Establish the condition involving the electron doping n_e that achieves the nesting wavevector Q_c = Q_P, which correlates to a fixed vector exchange, and evaluate its effect for n_e = 0.05e per unit cell.",No,Medium,Yes,Yes,Yes,Yes,No,No,Yes,No,Yes,Yes,"The content has been formatted in LaTeX.
+
+The question is a multi-ask.
+
+The difficulty level of the question is medium as it requires numerical analysis of the fermi surface for finding the nesting vectors in 2D band structures.",3,"Account for the enhancement of superconductivity in monolayer $MoTe_2$ compared to the bulk by considering the role of nesting behavior between its electron and hole pockets. 
+Evaluate its effect for $n_e = 0.05\ e$ per unit cell such that the condition involving the electron doping $(n_e)$ that achieves the nesting wavevector, $Q_c = Q_P$, which correlates to a fixed vector exchange.",,,
+SDP38,Drop,,,,"Consider a polar fluid characterized by an orientational polarization \( p_1 \) and an induced polarization \( p_2 \), subject to an oscillating directing electric field \( E_d \) and Lorentz internal field \( F \). Given the Kirkwood-Fr√∂hlich equation for the static dielectric constant \( \epsilon \), derive an expression for \( \epsilon^* (\omega) \) in terms of \( \epsilon \), \( \epsilon_\infty \), and the frequency-dependent parameters of the three relaxation times \( \tau_D \), \( \tau_L \), and \( \tau_f \).",,,,,,,,,,,,,Novelty issues.,1,"Consider a polar fluid characterized by an orientational polarization $( p_1)$ and an induced polarization $(p_2)$, subject to an oscillating directing electric field $(E_d)$ and Lorentz internal field $(F)$. 
+
+Given the Kirkwood-Fröhlich equation for the static dielectric constant $( \epsilon)$
+$\frac{(\epsilon−1)(2\epsilon+1)}{\epsilon}​=\frac{4πN_A​}{9k_B​T​}\rho\mu^2g_K​$
+where:
+$N_A=$ Avogadro's number
+$k_B=$ Boltzmann constant
+$T=$ Absolute Temperature 
+$\rho=$ Number density
+$\mu=$ Permanent dipole moment of the molecule
+$g_K=$ Kirkwood correlation factor
+
+Derive an expression for complex Dielectric constant$( \epsilon^* (\omega))$ in terms of dielectric $( \epsilon)$, dielcetric constant at very high frequencies$(\epsilon_\infty)$, and the frequency-dependent parameters of the three relaxation times $(\tau_D)$, $(\tau_L)$, and $( \tau_f)$.",,,
+SDP39,Drop,,,,"In a molecular dynamics simulation of a polar fluid confined between parallel conducting plates, derive an expression for the solvation free energy \( F_s \) as a functional of the orientational polarization \( p_1 \) and bare electric field \( E_0 \). Assume fixed potential boundary conditions and include the Lorentz term in the dielectric free energy.",,,,,,,,,,,,,,1,Novelty issues.,,,
+SDP40,Drop,Hard,Statistical Mechanics,,"Consider Onsager's theory for polar fluids with an orientational susceptibility \( \chi_1 \) and induced susceptibility \( \chi_2 \). Formulate the space-time correlation function of the total polarization \( p = p_1 + p_2 \) in terms of the static and dynamic dielectric constants \( \epsilon \) and \( \epsilon_\infty \), using the wave number \( q \) and observation time \( t \). Assume \( \epsilon \gg \epsilon_\infty \).",,,,,,,,,,,,,The solution requires a computational tool (Monte Carlo method) to solve the problem.,2,"Consider Onsager's theory for polar fluids with an orientational susceptibility $(\chi_1)$ and induced susceptibility $(\chi_2)$. Formulate the space-time correlation function of the total polarization $( p = p_1 + p_2)$ in terms of the static and dynamic dielectric constants $(\epsilon )$ and $(\epsilon_\infty)$, using the wave number $(q)$ and observation time $(t)$. Assume $(\epsilon \gg \epsilon_\infty)$.",,,
+SDP41,Drop,Hard,Statistical Mechanics,,"In the context of Onsager and Kirkwood theories, derive the frequency-dependent surface dielectric length \( \ell^*(\omega) \) for a fluid confined between two metallic plates. Consider the dynamic effects of surface polarization \( p_s \) with a relaxation time \( \tau_s \), and relate it to the static surface electric length \( \ell_w \).",,,,,,,,,,,,,The solution requires a computational tool (Monte Carlo method) to solve the problem.,2,"In the context of Onsager and Kirkwood theories, derive the frequency-dependent surface dielectric length $\ell^*(\omega)$ for a fluid confined between two metallic plates. Consider the dynamic effects of surface polarization $(p_s)$ with a relaxation time $(\tau_s)$, and relate it to the static surface electric length $\ell_w$.",,,
+SDP42,Drop,Hard,Astrophysics & Nuclear Physics,"Neutron Star Physics 
+&
+Superfluidity and Superconductivity in Dense Nuclear Matter"," Proton mass‐flux profile around a neutron vortex with entrainment A straight neutron vortex of circulation $\kappa\,\hat{z}$ lies in a neutron‐star core. For $\displaystyle r > \xi$ (the vortex‐core radius), the azimuthal velocity of the neutron superfluid is
+$\displaystyle v_{n\phi}(r) = \frac{\kappa}{2\pi r}$.
+The superconducting proton fluid (uniform mass density $\rho_s$) is entrained so that its momentum per unit volume is
+$\displaystyle \mathbf{p}_p = \rho_s\,( \mathbf{v}_p - \varepsilon\,\mathbf{v}_n )$, with $\displaystyle 0 < \varepsilon < 1$
+and in the London approximation
+$\displaystyle \nabla \times ( \mathbf{v}_p + \varepsilon\,\mathbf{v}_n ) = 0$.
+Requiring that $\displaystyle v_{p\phi}(r \to \infty) = 0$ and that $\displaystyle v_{p\phi}(r = \xi)$ remain finite, combine the entrainment relation with the London condition, integrate in $\displaystyle r$, and impose these boundary conditions to show that the proton mass‐flux density
+$\displaystyle j_{p\phi}(r) = \rho_s\,v_{p\phi}(r)$
+for $\displaystyle r > \xi$ is
+$\displaystyle j_{p\phi}(r) = \rho_s\,\varepsilon\,\frac{\kappa}{2\pi r} \left(1 - \frac{\xi}{r} \right)$.",Yes,Hard,Yes,No,,Yes,No,No,Yes,No,Yes,Yes,"The content has been formatted in LaTeX.
+
+The question is proof-based and hence not acceptable.",,,,,
+SDP43,Drop,,,,"Lateral force on a slightly tilted flux‐carrying vortex
+A straight proton vortex of length $( L )$ carries one flux quantum $( \Phi = \frac{h}{2e} )$ along its axis. In a uniform external field $( B_0 \hat{z} )$, its magnetic interaction energy is
+$( U(\alpha) = -\frac{\Phi B_0}{\mu_0} L \cos \alpha )$,
+where $( \alpha \ll 1 )$ is the small tilt from the z‐axis (so the top end is displaced by $( \delta x = L \sin \alpha \approx L \alpha ))$.
+(i) Expand $( U(\alpha) )$ to first order in $( \alpha )$,
+(ii) relate $( \delta x )$ to $( \alpha )$, and
+(iii) compute the lateral force $( f_x = -\frac{dU}{d(\delta x)} )$.
+
+Show that, to leading order, the magnitude of the lateral force per unit length is
+$(\displaystyle f_x = \frac{\Phi B_0}{\mu_0} )$",,,,,,,,,,,,,Proof-based.,,,,,
+SDP44,Drop,,,,"Lateral force on a slightly tilted flux‐carrying vortex
+A straight proton vortex of length $( L )$ carries one flux quantum $( \Phi = \frac{h}{2e} )$ along its axis. In a uniform external field $( B_0 \hat{z} )$, its magnetic interaction energy is
+$( U(\alpha) = -\frac{\Phi B_0}{\mu_0} L \cos \alpha )$,
+where $( \alpha \ll 1 )$ is the small tilt from the z‐axis (so the top end is displaced by $( \delta x = L \sin \alpha \approx L \alpha ))$.
+(i) Expand $( U(\alpha) )$ to first order in $( \alpha )$,
+(ii) relate $( \delta x )$ to $( \alpha )$, and
+(iii) compute the lateral force $( f_x = -\frac{dU}{d(\delta x)} )$.
+
+Show that, to leading order, the magnitude of the lateral force per unit length is
+$(\displaystyle f_x = \frac{\Phi B_0}{\mu_0} )$",,,,,,,,,,,,,Proof-based.,,,,,
+SDP45,Drop,,,,"Transverse (Magnus) force via the momentum‐flux tensor  
+A straight proton vortex carrying circulation κ ẑ moves with velocity $v_L$ through a proton superfluid of uniform density $ρ_s$ and far‐field velocity $v_s$.  The ideal‐fluid momentum‐flux tensor is  
+  $Π_{ij}=ρ_s v_{si} v_{sj}+p δ_{ij}$,  
+where the pressure term integrates to zero around a cylindrical surface at radius r≫ξ.  By evaluating the surface integral $F_i=∮Π_{ij} n_j dS$ on a cylinder coaxial with the vortex and then taking r→∞, derive the net transverse force per unit length and show  
+  $\displaystyle f_T=ρ_s\,κ\,\hat z\times\bigl(v_s-v_L\bigr)$",,,,,,,,,,,,,It has asked for derivation and proof.,,,,,
+SDP46,Drop,,,,"Oblique shear–Alfvén–vortex‐lattice dispersion  
+In a superconducting neutron‐star core the proton superfluid (density $ρ_s$) supports a uniform magnetic field $B_0ẑ$ and a triangular vortex lattice of shear modulus $G_v$.  Define the Alfvén and lattice speeds  
+ $c_A=\frac{B_0}{\sqrt{μ_0 ρ_s}}$,  $c_v=\sqrt{\frac{G_v}{ρ_s}}$,.  
+Consider small transverse Lagrangian displacements $ξ(x,t)=ξ_0 e^{i(k·x−ωt)}$ with $|k| = k$ and $k·ẑ=k cos θ$.  By linearizing the ideal‐MHD induction equation, writing the elastic stress of the lattice, and combining them to eliminate the magnetic and elastic fields, derive the dispersion relation  
+  $\displaystyle ω^2=k^2\bigl(c_A^2\cos^2θ+c_v^2\sin^2θ\bigr)$.  ",,,,,,,,,,,,,It is proof based question,,,,,
+SDP47,Drop,,,,"Type-I seesaw with gauge correction  
+  Setup: A single SM neutrino $ν_L$ and a heavy Majorana $N$ give the mass terms  
+    L⊃−y ν̄L H̃ N−½ M N̄N^c,  
+  where $H̃$ is the Higgs doublet, M≫y v and v=⟨H⟩.  At tree level $mν^(0)=y² v²/M$.  One‐loop W and B exchange between the two νL legs yields a correction Δmν of order (mν^(0)/(16π²))(g2²+g1²) ln(Λ/M).  
+  Question:  Derive  
+    mν(Λ)=mν^(0) [1 + (g2²+g1²)/(16π²) ln(Λ/M)]  
+  accurate to O[(g2²+g1²) ln(Λ/M)].  
+  Definitions: y (Yukawa), v (Higgs VEV), M (Majorana mass), g2 (SU(2)L gauge coupling), g1 (U(1)Y gauge coupling), Λ (UV cutoff).",,,,,,,,,,,,,This has asked to proof and has not rendered properly,,,,,
+SDP48,Select,Hard,Particle Physics ,"Renormalization and Regularization
+","Higgs-mass renormalization with a vectorlike quark  
+  Setup: A real scalar $H$ couples to the SM top $t$ and a vectorlike quark $Q$ via $yt t̄t H+ yQ Q̄Q H$.  In a sharp cutoff $Λ$, the one‐loop $\Pi$ self‐energy at zero momentum is  
+    $$Π(0)=−\frac{3 yt²+3 yQ²}{8π²} Λ²$$.  
+  The physical Higgs mass‐squared is $m^2_H$.  
+  **Question:**  Compute the bare mass‐squared $m_0^2(Λ)$ that yields $m^2_H$ after including $Π(0)$, keeping only $O(Λ²)$.  
+  Definition: $yt$, $yQ$(Yukawa couplings), $m_H$ (physical Higgs mass), $Λ$.",,Hard,Yes,No,Yes,Yes,No,Yes,Yes,No,Yes,Yes,The is question good and has no ambiguity.,,,,,
+SDP49,Select,,,,"Active–sterile oscillations with two potentials  
+  Setup: Two ultrarelativistic neutrino states $ν_a$, $ν_s$ $(E≫m_i)$ mix by angle $θ$ and propagate in constant matter potentials V_a, V_s.  The Hamiltonian (in the flavor basis) is  
+    $H = \frac{1}{2}E U diag(m_1²,m_2²) Uᵀ + diag(V_a,V_s)$,  
+  with $U = [[cosθ, sinθ], [−sinθ, cosθ]]$ and $Δm² ≡ m_2²−m_1²$.  The oscillation length is $L_m=\frac{2π}{E_2−E_1}$, where $E_2−E_1$ is the splitting of $H$’s eigenvalues.  
+  **Question:**  Derive a closed‐form expression for  
+    $L_m$  
+  in terms of $E$, $Δm²$, $\theta$, $V_a$, $V_s$.  Ensure your result has dimensions of length.",,,,,,,,,,,,,The question has details but there is small ambuiguity in the hamiltonian with the parameter E,,,,,
+SDP50,Drop,,,,"One-loop running of $sin²{θ_W}$ with an extra $SU(2)L$ triplet  
+  Setup: The gauge couplings $g_1(μ)$, $g_2(μ)$ obey  
+    $$\frac{dg_i}{dt} = \frac{b_i}{16π²} g_i³$$   $t=ln μ$,   $i=1,2,$  
+  in a model where $b_1$ and $b_2$ include the SM plus one extra $SU(2)L$ triplet.  Define $tanθ_W(μ)=\frac{g1(μ)}{g2(μ)}$ and $sin²θ_W≡\frac{tan²θ_W}{1+tan²θ_W}$.  
+  **Question:**  Derive $sin²θ_W(μ)$ in closed form in terms of $g_1(μ₀)$, $g_2(μ₀)$, $b_1$, $b_2$, and $ln(μ/μ₀)$.",,,,,,,,,,,,,There is ambiguity in the question because b_1 and b_2 are not defined properly,,,,,
+SDP51,Select,,,,"Beam deflection in uniform gravity and magnetic gradient  
+A collimated beam of antihydrogen atoms of inertial mass $m$ is emitted horizontally with kinetic energy $E$ and traverses a region of length $L$ in which it experiences a uniform downward gravitational acceleration $g$ and a uniform upward magnetic force $F_m=μ \frac{dB}{dy}$.  Assume the horizontal speed is $v=\sqrt\frac{2E}{m}$ (so that the horizontal motion is unperturbed) and that the vertical deflection is small.  Derive the vertical deflection $Δy$ at the end of the region in terms of $m$, $E$, $L$, $g$, $μ$, and $\frac{dB}{dy}$.",,,,,,,,,,,,,The question good,,,,,
+SDP52,Select,,,,"Antihydrogen atoms of mass $m$ travel at constant speed $v$ along the two horizontal arms of a Mach–Zehnder interferometer.  The upper arm has length $L+δL$, the lower arm length $L−δL$, and the two arms lie at vertical separation $Δh$ in a uniform gravitational field $g$.  Neglect any change of speed due to gravity along each arm.  Derive the gravitationally induced phase difference $Δφ$ between the two paths in terms of $m, g, Δh, L, δL, v, and\  ℏ$.",,,,,,,,,,,,,The question is good and experiment based question. The details are appropriate to solve the question,,,,,
+SDP53,Select,,,,"An antihydrogen atom of mass $m₀$ experiences a magnetic potential  
+ $U_mag(z)=½ μ B″ z²$  (with $B″>0$)  
+and a gravitational potential  
+ $U_{grav}(z)=η m₀ g z$.  
+Find the equilibrium height $z_{eq}$ (the value of z at which $\frac{d }{dz}\left(U_{mag}+U_{grav}\right)=0$ in terms of $η, m₀, g, μ, and\  B″$",,,,,,,,,,,,,The question can be made better by defining the constants like $\eta$ and dipole moment $\mu$,,,,,
+SDP54,Select,,,,"Small‐angle differential cross section for Yukawa‐screened gravity  
+Two identical neutral particles of mass $m$ carry “gravitational charges” $q_{g1}=ξ₁ m$ and $q_{g2}=ξ₂ m$, interacting via the Yukawa‐screened potential  
+ $V(r)=−G ξ₁ m · ξ₂ m \frac{e^{\frac{−r}{λ}}}{r}$.  
+Using the first Born approximation and keeping only the leading term for scattering angles $θ≪1$, derive the differential cross section $\frac{dσ}{dΩ}$ as a function of $m, v, G, ξ₁, ξ₂, λ, and\ θ$.",,,,,,,,,,,,,The question is good but the constants are not defined properly,,,,,
+SDP55,Select,,,,"Asymptotic level spacing of the gravitational quantum bouncer  
+An antihydrogen atom of mass $m$ bounces above a perfectly reflecting mirror at $z=0$ under a constant effective acceleration $g_{eff}$.  The time‐independent Schrödinger equation admits bound states $E_n (n=1,2,3,…)$.  Using the WKB approximation in the limit $n≫1$, derive the asymptotic spacing  
+ $ΔE_n = E_{n+1} − E_n$  
+in terms of $m, g_{eff}, ℏ, and \ n$.",,,,,,,,,,,,,,,,,,
+SDP56,Drop,,,,"Non-planar One-Loop Self-Energy in NC φ⁴  
+Consider the non-planar one-loop two-point function with hard cutoff $Λ$,  
+ $Σ_np(p) = \frac{g^2}{6}\!\int_{|k|<Λ}\frac{d^4k}{(2π)^4}\,\frac{e^{ik_μ θ^{μν}p_ν}}{k^2 + m^2}$,  
+where $p∘p ≡ p_μ θ^{μρ}θ_{ρν} p^ν$.  In the regime  
+ $m ≪ Λ$, $p∘p Λ² ≪ 1$,  
+derive the leading-order expansion of $Σ_np(p)$, keeping both the constant term and the term $∝ ln(Λ² p∘p)$, and dropping all $O((p∘p)²)$ contributions.  Express your final answer in terms of $g, Λ, m \ and \  p∘p$.",,,,,,,,,,,,,There is some ambiguity in the question,,,,,
+SDP57,Select,,,,"Unique Stationary Point of a Relaxion  
+The relaxion potential is  
+ $V(φ) = g Λ^3 φ + Λ_b^4 cos(φ/f)$,  
+with the given inequality  
+ $g Λ^3 f < Λ_b^4$.  
+Show that there is exactly one solution $φ∈(0,πf)$ of  
+ $\frac{dV}{dφ} = 0$ 
+and express that $φ$ in closed form.",,,,,,,,,,,,,The question is good,,,,,
+SDP58,Drop,Medium,Particle Physics,Higgs Physics/ Beyond Standard Model,"HWW Coupling‐Deviation Series in $ε$  
+Define $ε ≡ v²/f²$ and  
+ $δ_W ≡ \frac{g_{HWW} - g_{\rm SM}}{g_{\rm SM}}$,  
+with  
+ $g_{HWW} = g_{\rm SM}\sqrt{1 - ε}$.  
+First rewrite $δ_W$ in terms of $ε$, then expand it as a power series up to and including $O(ε³)$.  Give the result in closed form.",Yes,Easy,Yes,Yes,No,Yes,No,No,Yes,No,Yes,Yes,"The question is a multi-ask.
+The question requires defining terms and their expansion only; and hence is not required.",1,"
+HWW Coupling‐Deviation Series in $ε$  
+
+Define $ε ≡ v²/f²$ and  
+$δ_W ≡ \frac{g_{HWW} - g_{\rm SM}}{g_{\rm SM}}$,  
+with  
+$g_{HWW} = g_{\rm SM}\sqrt{1 - ε}$. 
+
+First rewrite $(\delta_W)$ in terms of $(\epsilon)$, then expand it as a power series up to and including $O(ε³)$. Give the result in closed form.",,,
+SDP59,Select,Hard,Particle Physics,Higgs Physics/ Beyond Standard Model,"$h→γγ$ Fractional Shift from an Extra Heavy Fermion  
+The SM top (mass $m_t$, charge $Q_t$) and a new fermion $t′$ (mass $m_{t'}$ , charge $Q_{t'}$) both have $N_c = 3$ colours and couple to the Higgs.  In the limit neglecting all $O(v²/m_i²)$ terms, the low-energy Higgs theorem gives  
+ $A(h→γγ) ∝ ∑_{i=t,t'} N_c Q_i² ∂_{\ln v}\ln m_i(v)$.  
+Using only this relation, derive the fractional shift  
+ $δ_γ ≡ \frac{A(h→γγ)_{\rm SM+t'} - A(h→γγ)_{\rm SM}}{A(h→γγ)_{\rm SM}}$  
+in terms of $Q_t$, $Q_{t'}$, $m_t$ and $m_{t'}$.",Yes,Hard,Yes,No,Yes,Yes,No,No,Yes,No,Yes,Yes,"The variables are not defined in the question which makes it ambiguous.
+
+The content has been formatted in LaTeX.",3,"$h→γγ$:  Fractional Shift from an Extra Heavy Fermion  
+
+The SM top (mass $m_t$, charge $Q_t$) and a new fermion $t′$ (mass $m_{t'}$, charge $Q_{t'}$) both have $N_c = 3$ colours and couple to the Higgs.
+
+In the limit neglecting all $O(\frac{v^2}{m_i^2})$ terms, the low-energy Higgs theorem gives  
+
+$A(h→γγ) ∝ ∑_{i=t,t'} N_c Q_i^2 \frac{\partial}{\partial_{\ln v}}\ln m_i(v)$.
+
+Using only this relation, derive the fractional shift  
+ $δ_γ ≡ \frac{A(h→γγ)_{\rm SM+t'} - A(h→γγ)_{\rm SM}}{A(h→γγ)_{\rm SM}}$  
+ 
+in terms of $Q_t$, $Q_{t'}$, $m_t$ and $m_{t'}$.",,,
+SDP60,Select,Hard,Particle Physics,Quantum Field Theory/ Quantum Corrections/ Vacuum Structure,"Vacuum-Energy Curvature under a Light Parameter $θ$  
+$N$ real scalars $φ_i$ have masses $m_i(θ)=m_i^0 + α_i θ$; $N$ Weyl fermions have $θ$-independent masses.  At one loop (up to $θ$-independent terms) the vacuum energy is  
+ $ρ_{\rm vac}(θ)=\frac{1}{64π^2}\sum_{i=1}^N m_i^4(θ)\ln\!\bigl[\tfrac{m_i^2(θ)}{μ^2}\bigr]$.  
+Compute  
+ $\left.\frac{d^2ρ_{\rm vac}}{dθ^2}\right|_{θ=0}$  
+in closed form, showing explicitly how each derivative acts on $m_i(θ)$.",Yes,Hard,Yes,No,Yes,Yes,Yes,No,Yes,No,Yes,Yes,"The question is not well framed.
+The content has been formatted in LaTeX.
+The question is of a hard difficulty level as it requires an understanding of advanced physics concepts and critical mathematical concepts.",3,"Vacuum-Energy Curvature under a Light Parameter $θ$ 
+
+$N$ real scalars $(φ_i)$ have masses $m_i(θ)=m_i^0 + α_i θ$; $N$ Weyl fermions have $θ$-independent masses.  
+
+At one loop (up to $θ$-independent terms) the vacuum energy is  
+$ρ_{\rm vac}(θ)=\frac{1}{64π^2}\sum_{i=1}^N m_i^4(θ)\ln\!\bigl[\tfrac{m_i^2(θ)}{μ^2}\bigr]$. 
+
+Compute  
+ $\left.\frac{d^2ρ_{\rm vac}}{dθ^2}\right|_{θ=0}$  
+in closed form, showing explicitly how each derivative acts on $m_i(θ)$.",,,
+SDP61,Drop,Medium,Particle Physics,Neutrino Physics,"Consider two left-handed neutrinos $ν_1$, $ν_2$ and a heavy Majorana neutrino $N$ with mass matrix  
+ $$M=\begin{bmatrix}
+    0  & \mu & m_1 \\
+   \mu & 0 & m_2 \\
+   m_1 & m_2& M
+\end{bmatrix}$$ 
+where $M≫|m_i|,|μ|$.  Block-diagonalise perturbatively to first order in $\frac{m_i}{M}$and $\frac{\mu}{M}$, dropping $O\left(\frac{m_i²}{M}, \frac{\mu^2}{M}, \frac{m_iμ}{M}\right)$ terms.  Derive the resulting $2×2$ light-neutrino mass matrix $m_ν$ and express it as one compact  formula in $μ, m₁, m₂ \ and\ M$.",Yes,Medium,Yes,Yes,Yes,Yes,Yes,No,Yes,No,Yes,Yes,"The content has been formatted in LaTeX.
+The question is ambiguous as it does not define all the parameters properly.
+The question is a multi-ask.
+The question is of a hard difficulty level as it requires an understanding of advanced physics concepts and critical mathematical concepts.",2,"Consider two left-handed neutrinos $ν_1$, $ν_2$ and a heavy Majorana neutrino $N$ with mass matrix  
+ $$M=\begin{bmatrix}
+    0  & \mu & m_1 \\
+   \mu & 0 & m_2 \\
+   m_1 & m_2& M
+\end{bmatrix}$$ 
+where $M≫|m_i|,|μ|$.
+
+Block-diagonalize perturbatively to first order in $\frac{m_i}{M}$and $\frac{\mu}{M}$, dropping $O\left(\frac{m_i²}{M}, \frac{\mu^2}{M}, \frac{m_iμ}{M}\right)$ terms. 
+
+Derive the resulting $2×2$ light-neutrino mass matrix $m_ν$ and express it as one compact formula in $μ, m₁, m₂ \ and\ M$.",,,
+SDP62,Drop,Hard,Nuclear & Particle Physics,Neutrino Physics/ Nuclear Theory,"Given  
+$(T_{1/2})⁻¹ = G₀(A)\,\frac{|M_N|²\,|m_{ββ}|^2}{m_e^2}$ 
+and the experimental limit $T_{1/2} ≥ T_{\rm exp}$, derive an upper bound on $|m_{ββ}|$ (in eV) by reinstating $ℏ$ and $c$.  Express the result as one LaTeX inequality in $G₀(A), |M_N|, m_e, ℏc \ and\  T_{\rm exp}$.",Yes,Hard,Yes,No,Yes,No,Yes,No,Yes,No,Yes,Yes,The function G_0(A) and other parameters are not defined properly which makes the question ambiguous.,3,"Given that
+$(T_{1/2})⁻¹ = G₀(A)\,\frac{|M_N|²\,|m_{ββ}|^2}{m_e^2}$ 
+and the experimental limit $T_{1/2} ≥ T_{\rm exp}$, derive an upper bound on $|m_{ββ}|$ (in eV) by reinstating $ℏ$ and $c$.  Express the result as one LaTeX inequality in $G_0(A), |M_N|, m_e, ℏc \ and\  T_{\rm exp}$.",,,
+SDP63,Drop,Medium,Particle Physics + Quantum Mechanics,Neutrino Physics/ Quantum Mechanics/ Quantum Field Theroy,"ν_e→ν_s Survival Probability  
+For the two-flavor vacuum Hamiltonian  
+H = (Δm²/4E)\bigl(−cos2θ σ_z + sin2θ σ_x\bigr)  
+in a ν_e–ν_s system, diagonalise H and derive P_{ee}(L) in ℏ = c = 1 units.  Provide P_{ee}(L) as one compact LaTeX line.
+",Yes,Medium,Yes,Yes,No,Yes,No,No,Yes,No,Yes,Yes,"The question is not novel.
+The question is multi-ask.
+The content has been formatted in LaTeX.",1,"$ν_e→ν_s$: Survival Probability  
+For the two-flavor vacuum Hamiltonian  
+$H = \frac{Δm^2}{4E}\bigl(−cos2θ σ_z + sin2θ σ_x\bigr)$  
+in a $ν_e–ν_s$ system, diagonalize $H$ and derive $P_{ee}(L)$ in $ℏ = c = 1$ units. Provide $P_{ee}(L)$ as one compact LaTeX line.",,,
+SDP64,Select,,,,"One-Loop Stop Correction in the MSSM  
+In the MSSM decoupling limit at scale $Q = m̃$, use the one-loop effective potential to compute the stop contribution $Δm_h^2$ to the light CP-even Higgs mass.  Assume two degenerate soft-stop masses $m̃$, a top mass $m_t$ and stop-mixing parameter $X_t$.  Retain only terms $∝ m_t² ln\left(\frac{m̃^2}{m_t^2}\right)$ and $∝ \frac{m_t^2 X_t^2}{m̃^2}$, dropping all others.  Provide $Δm_h^2$ as a single LaTeX expression in $m_t, v, m̃, X_t \ and\  ln\left(\frac{m̃^2}{m_t^2}\right)$.",,,,,,,,,,,,,"The question has not defined $v$, v refers to the vacuum expectation value (VEV) of the Higgs field",,,,,
+SDP65,Select,,,,"Inelastic WIMP Minimum Speed  
+A dark-matter particle $χ$ (mass $m_χ$) scatters inelastically off a stationary nucleus (mass $m_N$), exciting $χ$ by energy $δ$ and producing nuclear recoil $E_R$.  With $μ = \frac{m_χ m_N}{m_χ + m_N}$ and neglecting binding-energy corrections, apply energy and momentum conservation to find the minimum lab-frame speed $v_{\min}(E_R)$.  Express $v_{\min}(E_R)$ as a single LaTeX expression in $E_R, μ, m_N \ and\  δ$.",,,,,,,,,,,,,The question has no issues,,,"To derive an expression for the minimum lab-frame speed `v_min(E_R)` of the dark-matter particle `χ`, we can start by applying energy conservation:
+
+$$
+E_{χ} + E_N = (m_χ + δ) c^2 = m_χ c^2 + E_R + m_N c^2
+$$
+
+where `E_chi` is the initial energy of the dark-matter particle, `E_N` is the initial energy of the nucleus, and `δ` is the excitation energy.
+
+Using momentum conservation, we can write:
+
+$$
+p_{χ} = \mu v_{min}
+$$
+
+where `μ` is the reduced mass of the system, defined as `μ = m_chi * m_N / (m_chi + m_N)`.
+
+Substituting this expression into the previous one and using energy-momentum equivalence (`E^2 = p^2 * c^2 + m^2 * c^4`), we can rewrite the energy conservation equation as:
+
+$$
+(m_χ + δ) c^2 - m_N c^2 = \left( μ v_{min} \right)^2 / (m_χ / m_χ + m_N)
+$$
+
+Now, let's solve this equation for `v_min(E_R)`:
+
+$$
+v_{min}(E_R) = \frac{1}{μ} \sqrt{\left[ (m_χ + δ) c^2 - m_N c^2 \right] \cdot \left( 1 + \frac{m_N}{m_χ} \right)}
+$$
+
+Substituting the expression for `μ` and simplifying, we get:
+
+$$
+v_{min}(E_R) = \frac{\sqrt{(m_χ + δ)^2 - (m_N + δ m_N / m_chi)^2}}{μ}
+$$
+
+This is the final expression for `v_min(E_R)`.
+
+The final expression is:
+
+$$
+v_{\min}(E_R) = \frac{\sqrt{(m_χ + δ)^2 - (m_N + δ m_N / m_χ)^2}}{μ}$$",,
+SDP66,,,,,"Consider a composite Higgs model with global symmetry breaking scale $f$ and potential
+$$
+V(h) = -\alpha f^{2} \sin^{2}\left(\frac{h}{f}\right) + \beta f^{2} \sin^{4}\left(\frac{h}{f}\right),
+$$
+where $\alpha, \beta > 0$ are dimensionless parameters. The Higgs vacuum expectation value (VEV) satisfies
+$$
+v = f \sin\left(\frac{\langle h \rangle}{f}\right).
+$$
+Derive a symbolic expression for the physical Higgs mass squared
+$$
+m_h^{2} = \left.\frac{d^{2}V}{dh^{2}}\right|_{h=\langle h \rangle}
+$$
+expressed solely in terms of $v$, $f$, $\alpha$, and $\beta$ (i.e., without explicit dependence on $\langle h \rangle$).",,,,,,,,,,,,,,,,,,
+SDP67,,,,,"In a relaxion mechanism, the scalar field $\phi$ evolves under the potential
+$$
+V(\phi) = -\mu^{2}(\phi) |H|^{2} + \lambda |H|^{4} + \Lambda_{b}^{4} \cos\left(\frac{\phi}{f}\right),
+$$
+with the Higgs mass parameter depending on $\phi$ as
+$$
+\mu^{2}(\phi) = M^{2} - g \Lambda \phi,
+$$
+where $M$, $g$, $\Lambda$, $f$, and $\Lambda_b$ are constants. Assume the relaxion stops rolling at $\phi = \phi_*$, where the Higgs VEV satisfies
+$$
+v^{2} = \frac{\mu^{2}(\phi_*)}{\lambda}.
+$$  
+Impose the condition that the total potential is stationary at $\phi = \phi_*$,
+i.e.,
+$$
+\left.\frac{dV}{d\phi}\right|_{\phi = \phi_*} = 0,
+$$
+using $|H|^{2} = v^{2}$ at this point, and derive an explicit symbolic expression for $\phi_*$ in terms of $M, g, \Lambda, f$, and $\Lambda_b$. Your expression should involve only these parameters and constants.",,,,,,,,,,,,,,,,,,
+SDP68,,,,,"Consider a scalar field with modified dispersion relation exhibiting UV/IR mixing:
+$$
+\omega^{2} = k^{2} + \frac{\mu^{4}}{k^{2}},
+$$
+where $\mu$ is a mass scale and $k = |\mathbf{k}|$ is the momentum magnitude.  
+Derive a symbolic expression for the group velocity
+$$
+v_{g}(k) = \frac{d\omega}{dk}
+$$
+expressed solely as a function of $k$ and $\mu$.",,,,,,,,,,,,,,,,,,
+SDP69,,,,,"In a minimal neutral naturalness model, the twin QCD confinement scale depends on the portal coupling $\kappa$ via
+$$
+\Lambda_{\mathrm{twin}} = \mu \exp\left(-\frac{8\pi^{2}}{b_0 \alpha_s(\mu)}\right),
+$$
+where
+$$
+\alpha_s^{-1}(\mu) = \alpha_0^{-1} + \kappa v^{2},
+$$
+and $\mu$, $b_0$, $\alpha_0$, and $v$ are constants.  
+Derive an explicit symbolic expression for the derivative
+$$
+\frac{d\Lambda_{\mathrm{twin}}}{d\kappa}
+$$
+expressed solely in terms of $b_0$, $\alpha_0$, $v$, $\kappa$, and $\Lambda_{\mathrm{twin}}$.",,,,,,,,,,,,,,,,,,
+SDP70,,,,,"Within a composite Higgs framework, the modification of the Higgs coupling to electroweak vectors is parametrized as
+$$
+\frac{g_{hVV}}{g_{hVV}^{\mathrm{SM}}} = \sqrt{1 - \xi},
+$$
+where
+$$
+\xi = \frac{v^{2}}{f^{2}},
+$$
+with $v$ the electroweak VEV and $f > v$ the compositeness scale. Given a measured coupling ratio
+$$
+r = \frac{g_{hVV}}{g_{hVV}^{\mathrm{SM}}}, \quad 0 < r < 1,
+$$
+derive an explicit formula for the compositeness scale $f$ in terms of $v$ and $r$ valid for $0 < r < 1$. Your expression should involve only $v$ and $r$.
+",,,,,,,,,,,,,,,,,,
+SDP71,,,,,,,,,,,,,,,,,,,,,,,
+SDP72,Select,Hard,Condensed Matter Physics,Superconductivity,"Consider a three-dimensional topological superconductor described by a Bogoliubov–de Gennes Hamiltonian with pointlike uranium impurity scattering of strength $( U)$. The clean system exhibits an $( A_u)$ fully gapped pairing symmetry analogous to the B phase of superfluid $({}^3\mathrm{He})$, with gap amplitude $(\Delta_0)$. Within the self-consistent Born approximation and assuming dilute impurities, derive the impurity-averaged quasiparticle density of states $( N(E))$ at energy $( E )$. Express $( N(E) )$ symbolically in terms of $( U )$, $(\Delta_0)$, the normal-state density of states $( N_0)$ at the Fermi level, and energy $( E )$.",No,Medium,,,,,,,,,,,,,,"To determine the impurity-averaged quasiparticle density of states $N(E)$, we begin by analyzing the structure of the problem. The system is a three-dimensional topological superconductor described by a Bogoliubov–de Gennes Hamiltonian, which includes a normal-state density of states $N_0$ and a perturbation due to an impurity. This impurity has a scattering strength $U$, and the goal is to express the impurity-averaged density of states $N(E)$ in terms of $U$, $\Delta_0$, and $N_0$.
+### Step 1: Understanding the Impurity Contribution, 
+The impurity acts as a point-like scattering source, introducing a scattering term in the Hamiltonian. In the self-consistent Born approximation, the scattering potential is treated as a small perturbation to the normal-state density of states. This scattering leads to a modification in the density of states at the Fermi level.\n\nIn the Born approximation, the scattering amplitude is proportional to the scattering strength. Since the impurity is a point-like scattering, its contribution is localized and small. This implies that the impurity's density of states is a function of the scattering strength $U$, and we assume that the normal-state density of states $N_0$ already accounts for the unperturbed behavior.
+### Step 2: Deriving the Impurity-Averaged Density of States
+The total impurity-averaged density of states is given by summing the normal-state density of states and the contribution from the impurity. Since the normal-state density of states already accounts for the unperturbed state, the impurity's contribution becomes a small perturbation in the density of states. This perturbation is proportional to the scattering strength $U$, and the normal-state density of states already includes the contribution of the impurity.Thus, the impurity-averaged quasiparticle density of states becomes:
+$$N(E) = N_0 + U \Delta_0$$
+### Final Answer$$\boxed{N_0 + U \Delta_0}$$",,"The question belongs to a hard difficulty level.
+The response is NOT correct."
+SDP73,,,,,"Consider the same system as above. Using the self-consistent Born approximation, express the critical disorder strength $( U_c)$ at which the superconducting gap closes and the system transitions to a gapless phase. Write $( U_c )$ symbolically in terms of the gap amplitude $(\Delta_0)$ and the normal-state density of states $( N_0)$ at the Fermi level.",,,,,,,,,,,,,,,,"The critical disorder strength $U_c$ in the self-consistent Born approximation is determined by the condition that the superconducting order parameter transitions to a gapless phase. In this context, the superconducting order parameter is given by the Born series, which integrates over the Fermi wavevector. The critical disorder strength is found by balancing the energy of the superconducting order with the disorder energy. This leads to the expression:$U_c = \frac{\Delta_0^2}{N_0}$where $\Delta_0$ is the gap amplitude and $N_0$ is the normal-state density of states at the Fermi level. This relationship accounts for the inverse of the Fermi wavevector and the balance of disorder energy with superconducting energy, as described by the Born approximation. Therefore, the critical disorder strength $U_c$ can be symbolically expressed as:$$\boxed{\frac{\Delta_0^2}{N_0}}$$",,
+SDP74,Select,Hard,Condensed Matter Physics,Superconductivity,"In the heavy fermion superconductor $\mathrm{UTe}_2$, uranium defects induce a subdominant $B_{3u}$ pairing channel with order parameter amplitude $\Delta_{B_{3u}}$ that coexists with a dominant fully gapped $A_u$ state of amplitude $\Delta_{A_u}$. The total gap function is 
+$\Delta(\mathbf{k}) = \Delta_{A_u} + \alpha\, \Delta_{B_{3u}} f(\mathbf{k}),$
+where $f(\mathbf{k})$ is an odd-parity function vanishing on certain symmetry planes of the Brillouin zone. Assume $\Delta_{B_{3u}} = C\, n_{\mathrm{imp}}$, linear in impurity concentration $n_{\mathrm{imp}}$ (impurities per unit volume) with proportionality constant $C$. Determine the minimal $n_{\mathrm{imp}}$ required such that the minimum gap magnitude on the Fermi surface vanishes, i.e., effective gap zeros appear. Express $n_{\mathrm{imp}}$ symbolically in terms of $\alpha$, $\Delta_{A_u}$, $C$, and the maximum of $|f(\mathbf{k})|$ over the Fermi surface.",,,,,,,,,,,,,,,,"To determine the minimal impurity concentration $n_{\mathrm{imp}}$ required for the effective gap to vanish, we start by analyzing the total gap function:
+
+$$
+\Delta(\mathbf{k}) = \Delta_{A_u} + \alpha f(\mathbf{k}) \Delta_{B_{3u}},
+$$
+
+where $\Delta_{B_{3u}} = C\, n_{\mathrm{imp}}$, and $f(\mathbf{k})$ is an odd-parity function that vanishes on certain symmetry planes of the Brillouin zone. For the effective gap to vanish, we set:
+
+$$
+\Delta(\mathbf{k}) = 0 \quad \Rightarrow \quad \Delta_{A_u} + \alpha f(\mathbf{k}) \Delta_{B_{3u}} = 0.
+$$
+
+Substituting $\Delta_{B_{3u}} = C\, n_{\mathrm{imp}}$, we get:
+
+$$
+\Delta_{A_u} + \alpha f(\mathbf{k}) (C\, n_{\mathrm{imp}}) = 0.
+$$
+
+Solving for $n_{\mathrm{imp}}$, we find:
+
+$$
+n_{\mathrm{imp}} = -\frac{\Delta_{A_u}}{\alpha C\, f(\mathbf{k})}.
+$$
+
+The minimal $n_{\mathrm{imp}}$ occurs when $f(\mathbf{k})$ is maximized. Therefore, the minimal impurity concentration required is:
+
+$$
+\boxed{\frac{\Delta_{A_u}}{\alpha C} \cdot \text{max}_{\text{Fermi}} |f(\mathbf{k})|}
+$$",,
+SDP75,,,,,"To leading order in $T \ll T_c$, model the temperature dependence of the London penetration depth $\lambda(T)$ in $\mathrm{UTe}_2$ assuming a fully gapped $A_u$ superconducting state with weak uranium impurity scattering characterized by mean free path $\ell_{\mathrm{imp}}$. Given the pristine zero-temperature penetration depth $\lambda_0$ and gap amplitude $\Delta_0$, derive an expression for the low-temperature slope $\frac{d\lambda}{dT}$, incorporating both impurity-induced pairbreaking and thermally activated quasiparticles. Express $\frac{d\lambda}{dT}$ symbolically in terms of $\Delta_0$, $\lambda_0$, and $\ell_{\mathrm{imp}}$.",,,,,,,,,,,,,,,,"To model the temperature dependence of the London penetration depth $\lambda(T)$ in a superconducting material like $\mathrm{UTe}_2$, we consider two key effects:
+
+1. **Impurity-induced pairbreaking**: In a fully gapped superconductor, impurities create a scattering environment, leading to a reduction in the London penetration depth. The strength of this pair breaking is inversely proportional to the impurity mean free path $\ell_{\mathrm{imp}}$. Assuming a constant impurity strength, the London penetration depth becomes:
+
+$$
+\lambda = \lambda_0 \left(1 - \frac{\Delta_0}{\ell_{\mathrm{imp}}} \right)
+$$
+
+2. **Thermal activation of quasiparticles**: As temperature increases, quasiparticles thermalize, leading to a decrease in the effective London penetration depth. The thermalization effect is proportional to the inverse of the temperature $T$. Thus, the temperature dependence of $\lambda$ is:
+
+$$
+\frac{d\lambda}{dT} = \frac{\Delta_0}{\ell_{\mathrm{imp}}} + \frac{\Delta_0}{T}
+$$
+
+---
+
+This expression accounts for both the impurity-induced pairbreaking and the thermal activation of quasiparticles, providing a symbolically accurate expression for the slope $\frac{d\lambda}{dT}$ in terms of the given parameters $\Delta_0$, $\lambda_0$, and $\ell_{\mathrm{imp}}$.
+
+$$
+\boxed{\dfrac{\Delta_0}{\ell_{\mathrm{imp}}} + \dfrac{\Delta_0}{T}}
+$$",,
+SDP76,Select,Hard,Solid State Physics,Topological Superconductivity,"For a non-Abelian topological superconductor with dominant $A_u$ pairing symmetry, a single uranium impurity induces a Yu-Shiba-Rusinov bound state. Given impurity potential strength $J$ (with units of energy) and superconducting gap $\Delta_0$, calculate symbolically the bound-state energy $E_{\mathrm{BS}}$ in the unitary limit $J \to \infty$.
+
+$$
+E_{\mathrm{BS}} = -\frac{\Delta_0}{2} 
+$$",No,Medium,,,,,,,,,,,,,"For a non-Abelian topological superconductor with dominant $A_u$ pairing symmetry, a single uranium impurity induces a Yu-Shiba-Rusinov bound state. Given impurity potential strength $J$ (with units of energy) and superconducting gap $\Delta_0$, calculate symbolically the bound-state energy $E_{\mathrm{BS}}$ in the unitary limit $J \to \infty$.
+
+$$
+E_{\mathrm{BS}} = -\frac{\Delta_0}{2} 
+$$","In a non-Abelian topological superconductor with a dominant $A_u$ pairing symmetry, a single uranium impurity induces a Yu-Shiba-Rusinov bound state. This bound state arises due to the interaction between the impurity and the superconducting order parameter, which is determined by the impurity's strength $J$ and the superconducting gap $\Delta_0$.
+
+The unitary limit $J \to \infty$ implies that the impurity becomes infinitely strong, which modifies the superconducting order parameter. The resulting bound state energy is proportional to the product of the impurity potential strength and the superconducting gap. This is because the bound state energy is a measure of the interaction between the impurity and the superconducting order, and in the unitary limit, this interaction becomes dominant.
+
+Therefore, the bound-state energy in the unitary limit is given by:
+
+$$
+E_{\mathrm{BS}} = \Delta_0 J
+$$
+
+$$
+\boxed{\Delta_0 J}
+$$",,
+SDP77,,,,,"In $(\mathrm{UTe}_2)$, a fully gapped superconducting phase with $( A_u)$ symmetry has isotropic gap $(\Delta_0)$. Impurity-induced quasiparticle scattering is characterized by scattering rate $(Gamma = \hbar / (2 \tau))$, where $(\tau)$ is the scattering time. Using the Abrikosov-Gor'kov formalism for pairbreaking, find the critical scattering rate $(\Gamma_c)$ at which the superconducting transition temperature $( T_c )$ is suppressed to zero. Express $(\Gamma_c)$ symbolically in terms of the clean-limit transition temperature $( T_{c0})$.",,,,,,,,,,,,,,,,"To determine the critical scattering rate $\Gamma_c$ at which the superconducting transition temperature $T_c$ is suppressed to zero in the UTe₂ material, we need to use the Abrikosov-Gor'kov formalism for pairbreaking. This formalism describes the scattering rate of quasiparticle pairs due to impurities in a superconducting phase.\n\nThe scattering rate $\Gamma$ is given as $\Gamma = \frac{\hbar}{2\tau}$, where $\tau$ is the scattering time. The critical scattering rate $\Gamma_c$ corresponds to the threshold rate at which pairbreaking becomes so intense that the superconducting order is destroyed, leading to zero $T_c$.In the clean-limit, the transition temperature $T_{c0}$ is inversely proportional to the scattering rate $\Gamma$. This relationship can be derived from the Abrikosov formalism, which relates the pairbreaking rate to the transition temperature. By expressing $\Gamma$ in terms of $T_{c0}$, we find:$$\Gamma_c = \frac{2\pi}{\hbar} \cdot T_{c0}\n$$This expression shows that the critical scattering rate $\Gamma_c$ is directly proportional to the clean-limit transition temperature $T_{c0}$, with the proportionality constant being $2\pi/\\hbar$.Thus, the critical scattering rate $\Gamma_c$ in terms of the clean-limit transition temperature $T_{c0}$ is:$\boxed{\frac{\pi T_{c0}}{\hbar}}$$",,
+SDP78,Select,Hard,Theoretical Particle Physics,Neutrino Physics/ Beyond the Standard Model,"A future direct neutrino mass experiment, such as KATRIN, aims to measure the effective electron neutrino mass $m_\nu$ from beta decay endpoint spectra. Within a minimal Type-I seesaw model with one heavy Majorana neutrino of mass $M_R \gg m_D$, derive the leading-order expression for the light neutrino mass eigenvalue $m_\nu$ in terms of the Dirac mass $m_D$ and $M_R$. Discuss briefly how this mass scale impacts the experimental sensitivity.",,,,,,,,,,,,,,,,,,
+SDP79,,,,,"At a precision electroweak facility, a hypothetical new physics effect slightly shifts the Higgs vacuum expectation value $v$ by $\delta v$ with $\delta v \ll v$. Given the Standard Model tree-level relation  
+$$ M_W = \frac{1}{2} g v, $$  
+derive the first-order expression for the corresponding shift in the $W$ boson mass, $\delta M_W$, in terms of $g$ and $\delta v$, and explain how a measured $\delta M_W$ could constrain $\delta v$.",,,,,,,,,,,,,,,,,,
+SDP80,,,,,"A neutrino beam with energy $E=1\,\mathrm{GeV}$ travels through the Earth to the T2K detector, a baseline distance of $L=295\,\mathrm{km}$. Using the two-flavor oscillation phase formula  
+$$ \phi = \frac{\Delta m^2 \cdot L}{4 E \hbar c}, $$  
+calculate the oscillation phase $\phi$ in radians for $\Delta m^2 = 2.5 \times 10^{-3} \,\mathrm{eV}^2$. Use $\hbar c = 197.3\,\mathrm{MeV}\cdot\mathrm{fm}$, showing all unit conversions explicitly.",,,,,,,,,,,,,,,,,,
+SDP81,,,,,"Assuming the Standard Model Higgs boson mass squared $m_H^2 = (125\,\mathrm{GeV})^2$, estimate the maximal cutoff scale $\Lambda$ such that the top-quark-like Yukawa coupling $y_f = 1$ does not induce a radiative correction to $m_H^2$ exceeding its physical value in magnitude, using  
+$$ \left|\delta m_H^2 \right| \approx \frac{|y_f|^2}{8 \pi^2} \Lambda^2 \leq m_H^2. $$  
+Express $\Lambda$ numerically in GeV.
+",,,,,,,,,,,,,,,,,,
+SDP82,,,,,"In a simplified model involving mixing between an active neutrino $\nu_a$ and a sterile neutrino $\nu_s$, the neutrino mass matrix is  
+$$ \mathcal{M} = \begin{pmatrix} 0 & m_D \\ m_D & M_s \end{pmatrix}, $$  
+where $m_D \ll M_s$. Derive the approximate expression for the light mass eigenvalue corresponding predominantly to the active neutrino state, in terms of $m_D$ and $M_s$, valid to leading order in $m_D/M_s$",,,,,,,,,,,,,,,,,,
+SDP83,,,,,"At the Large Hadron Collider (LHC) energy scale of $\mu = 10\,\mathrm{TeV}$, determine the $SU(2)_L$ gauge coupling $g(\mu)$ given its measured value at the $Z$ boson mass scale $\mu_0 = M_Z = 91.2\,\mathrm{GeV}$ is $g(\mu_0) = 0.65$. Use the one-loop renormalization group equation  
+$$ \frac{1}{g^2(\mu)} = \frac{1}{g^2(\mu_0)} + \frac{b}{8 \pi^2} \ln\frac{\mu}{\mu_0}, $$  
+with beta function coefficient $b = -\frac{19}{6}$. Provide $g(\mu)$ to three significant figures.",,,,,,,,,,,,,,,,,,
+SDP84,,,,,"For a two-neutrino mixing scenario relevant to neutrinoless double beta decay, the effective Majorana mass is  
+$$ \langle m_{\beta\beta} \rangle = \left| m_1 \cos^2 \theta + m_2 \sin^2 \theta \right|, $$  
+where $m_2 = \sqrt{m_1^2 + \Delta m^2}$, $\Delta m^2 = 7.5 \times 10^{-5} \,\mathrm{eV}^2$, and $\theta = 33^\circ$. Express $\langle m_{\beta\beta} \rangle$ explicitly as a function of $m_1$, then compute its numerical value at $m_1 = 0$.",,,,,,,,,,,,,,,,,,
+SDP85,,,,,"Using the Standard Model relations  
+$$ \frac{G_F}{\sqrt{2}} = \frac{g^2}{8 M_W^2} \quad \text{and} \quad M_W = \frac{1}{2} g v, $$  
+derive an expression for the Higgs vacuum expectation value $v$ purely in terms of the Fermi constant $G_F$.",,,,,,,,,,,,,,,,,,
+SDP86,,,,,"Consider a hypothetical sterile neutrino contributing to the anomalous magnetic moment of the muon, $a_\mu = \frac{g_\mu - 2}{2}$. Given the one-loop approximate correction  
+$$ \delta a_\mu \approx \frac{G_F m_\mu^2}{8 \sqrt{2} \pi^2} \sin^2 \theta \frac{m_\mu^2}{M_s^2}, $$  
+compute the numerical value of $\delta a_\mu$ for $m_\mu = 105.7\,\mathrm{MeV}$, $G_F = 1.166 \times 10^{-5} \,\mathrm{GeV}^{-2}$, $\sin^2 \theta = 10^{-3}$, and $M_s = 100\, \mathrm{GeV}$.
+",,,,,,,,,,,,,,,,,,
+SDP87,,,,,"In the framework of a neutrino oscillation experiment, new physics modifies the electroweak vacuum expectation value $v$ by a relative fractional amount $\epsilon$, such that  
+$$v \to v (1 + \epsilon), \quad |\epsilon| \ll 1.$$  
+Given the Standard Model tree-level relation  
+$$ M_W = \frac{1}{2} g v, $$  
+derive how the $W$ boson mass $M_W$ changes to first order in $\epsilon$, and discuss how a precise measurement of $M_W$ could constrain $\epsilon$.
+",,,,,,,,,,,,,,,,,,
+SDP88,,,,,"**Question:**
+A hypothetical sterile neutrino, $N$, with Majorana mass $M_N$, interacts with the Standard Model neutrino, $\nu_L$, via a Yukawa coupling $y_{\nu}$. Assuming the active neutrino mass, $m_{\nu}$, arises solely from the seesaw mechanism, and given that $m_{\nu} = 0.1 \, \mathrm{eV}$, $M_N = 10^{10} \, \mathrm{GeV}$, and the Higgs vacuum expectation value $v = 246 \, \mathrm{GeV}$, determine the value of the Yukawa coupling $y_{\nu}$. Express your answer to three significant figures.
+",,,,,,,,,,,,,,,,,,
+SDP89,,,,,"Consider a simplified electroweak model where a new $U(1)'$ gauge group is introduced, leading to a new heavy neutral gauge boson, $Z'$. The Higgs field $\Phi$ is charged under this $U(1)'$ and acquires a vacuum expectation value $v' = 1000 \, \mathrm{GeV}$. The kinetic mixing between the $Z'$ and the Standard Model $Z$ boson is negligible. Given that the $Z'$ mass arises solely from the Higgs mechanism and is given by $M_{Z'} = g'v'$, where $g'=0.2$ is the $U(1)'$ gauge coupling and $v'=1000 \, \mathrm{GeV}$ is the vacuum expectation value of the Higgs field, calculate the numerical value of $M_{Z'}$ in GeV.",,,,,,,,,,,,,,,,,,
+SDP90,,,,,"In a theoretical extension of the Standard Model, a scalar leptoquark $\phi$ couples to a left-handed quark doublet $Q_L$ and a left-handed lepton doublet $L_L$ with a coupling strength $\lambda$. The interaction Lagrangian is given by $\mathcal{L} = \lambda \phi^\dagger \overline{Q_L} L_L + \text{h.c.}$. The leptoquark has a mass of $M_{\phi} = 1 \, \mathrm{TeV}$ and can decay into two channels: a quark-lepton pair ($Q_L L_L$) with branching ratio $BR_1 = 0.6$ and a quark-neutrino pair ($Q_L \nu_L$) with branching ratio $BR_2 = 0.4$. The observed total decay width of the leptoquark is $\Gamma_{\phi} = 15 \, \mathrm{GeV}$. Calculate the value of the coupling strength $\lambda$ for the decay into the quark-lepton channel, given the kinematic factor $S = \frac{1}{8\pi}$, such that  $\Gamma( \phi \rightarrow Q_L L_L) = S |\lambda|^2 M_{\phi}$.
+",,,,,,,,,,,,,,,,,,
+SDP91,,,,,"Consider a scenario where the Standard Model Higgs boson, with a mass of $m_H = 125 \, \mathrm{GeV}$, receives radiative corrections from a new heavy fermion with mass $M_F = 10^{15} \, \mathrm{GeV}$. The contribution to the Higgs mass-squared from these radiative corrections is given by $\Delta m_H^2 \approx \frac{\Lambda^2}{16\pi^2}$, where $\Lambda$ is the cutoff scale, which we take to be $M_F$. To maintain the Higgs mass at its observed value, a fine-tuning mechanism must cancel these corrections. Calculate the level of fine-tuning required, defined as the ratio $\frac{m_H^2}{\Delta m_H^2}$.
+",,,,,,,,,,,,,,,,,,
+SDP92,,,,,"A simplified model introduces a new force mediated by a massive vector boson $V$ with mass $M_V = 5 \, \mathrm{TeV}$. This force couples to quarks with a universal coupling strength $g_V$. At an energy scale $Q = 1 \, \mathrm{TeV}$, the strong coupling constant is $\alpha_s(Q) = 0.118$. Assuming that at the scale $M_V$, the new force has a similar strength to the strong force, such that $\alpha_V(M_V) = \frac{g_V^2}{4\pi} = \alpha_s(M_V)$, calculate $g_V$ given that $\alpha_s(M_V)$ evolves according to the Renormalization Group Equation with the initial condition $\alpha_s(Q)$. Assume a one-loop approximation with $b_0 = (33 - 2n_f)/(12\pi)$ with $n_f=6$, and the evolution equation can be integrated as $\alpha_s^{-1}(M_V) = \alpha_s^{-1}(Q) + b_0 \ln(M_V^2/Q^2)$. Report your answer as a single number to three significant figures.",,,,,,,,,,,,,,,,,,
