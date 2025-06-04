@@ -1,0 +1,517 @@
+=== Turn 0: Author generates questions ===
+```
+<question>
+A low-noise microwave signal generator utilizes a common cavity oscillator operating at 10 GHz. To suppress thermal noise, the cavity is cryogenically cooled to 4 K. Assuming the noise power spectral density is proportional to temperature, and that electronic noise contributes an equivalent noise temperature of 1 K, calculate the total noise power within a 1 Hz bandwidth centered at the carrier frequency. Give your answer in Watts. Boltzmann constant $k_B = 1.38 \times 10^{-23} \, \mathrm{J/K}$.
+</question>
+
+<question>
+An optoelectronic frequency divider (OFD) achieves a reduced division ratio of $N = 10$. The system exhibits a phase noise performance of -65 dBc/Hz at a 1 Hz offset from the carrier frequency. Convert this phase noise specification to the equivalent timing jitter, $\Delta t$, in seconds, assuming the carrier frequency is 1 GHz.
+</question>
+
+<question>
+A microwave oscillator, operating at 10 GHz, is designed to approach the quantum noise limit. Assuming the Schawlow-Townes linewidth is 10 μHz, calculate the coherence time, $\tau_c$, of the oscillator signal in seconds.
+</question>
+
+<question>
+An OFD system utilizes a fiber optic cable with a length of 10 meters. The refractive index of the fiber is $n = 1.5$, and the speed of light in vacuum is $c = 3 \times 10^8 \, \mathrm{m/s}$. If the system uses a modulation frequency of 1 GHz, what is the phase shift, $\Delta \phi$, introduced by the fiber optic cable at the modulation frequency, assuming perfect impedance matching and no dispersion? Give your answer in radians.
+</question>
+
+<question>
+A microwave amplifier used in a low-noise signal generation system has a gain of 20 dB and a noise figure of 3 dB. If the input signal power is -100 dBm, calculate the signal-to-noise ratio (SNR) at the output of the amplifier, assuming the input noise power is -174 dBm/Hz and the bandwidth of the signal is 1 MHz. Give your answer in dB.
+</question>
+
+<question>
+A resonant cavity with a quality factor $Q = 10^6$ is used in a low-noise oscillator. The resonant frequency is 5 GHz. Calculate the full width at half maximum (FWHM) of the resonance in Hz.
+</question>
+
+<question>
+A fractional-N synthesizer used in an OFD system has a division ratio that varies between 9 and 10. The reference frequency is 10 MHz. What is the minimum frequency step size that can be achieved by the synthesizer in Hz?
+</question>
+
+<question>
+A balanced photodetector is used in an OFD system to suppress common-mode noise. The responsivity of each photodiode is 0.8 A/W. If the optical power incident on each photodiode is 1 mW, what is the differential photocurrent generated in Amperes?
+</question>
+
+<question>
+A low-noise amplifier (LNA) in a microwave signal generation system has a gain of 30 dB and an output power of 10 dBm. What is the input power to the LNA in dBm?
+</question>
+
+<question>
+An OFD system uses a Mach-Zehnder modulator (MZM) with a $V_\pi$ (half-wave voltage) of 2 V. If the MZM is biased at quadrature, what is the required voltage swing to achieve a maximum optical power modulation? Give your answer in Volts.
+</question>
+```
+=== Turn 0: Critic feedback ===
+Here's a critique of the provided questions against your guidelines, with actionable feedback:
+
+---
+
+**Question 1:**
+A low-noise microwave signal generator utilizes a common cavity oscillator operating at 10 GHz. To suppress thermal noise, the cavity is cryogenically cooled to 4 K. Assuming the noise power spectral density is proportional to temperature, and that electronic noise contributes an equivalent noise temperature of 1 K, calculate the total noise power within a 1 Hz bandwidth centered at the carrier frequency. Give your answer in Watts. Boltzmann constant $k_B = 1.38 \times 10^{-23} \, \mathrm{J/K}$.
+
+**Critique:**
+*   **Guideline 1 (Model a Physics Scenario):** Excellent. Models a realistic, relevant scenario (cryogenic cooling for low noise).
+*   **Guideline 3 (Force Multi-Step Reasoning):** Good. Requires combining thermal noise with an equivalent electronic noise temperature and calculating power over a bandwidth.
+*   **Guideline 6 (Rigorous, concise phrasing):** Minor point: "noise power spectral density is proportional to temperature" could be more explicit about it being thermal noise ($k_B T$). However, given $k_B$ is provided, it's clearly implied.
+*   **All other guidelines:** Met.
+
+**Actionable Feedback:**
+*   (Minor) For absolute clarity, rephrase "Assuming the noise power spectral density is proportional to temperature" to "Assuming the thermal noise power spectral density is given by $k_B T$".
+
+---
+
+**Question 2:**
+An optoelectronic frequency divider (OFD) achieves a reduced division ratio of $N = 10$. The system exhibits a phase noise performance of -65 dBc/Hz at a 1 Hz offset from the carrier frequency. Convert this phase noise specification to the equivalent timing jitter, $\Delta t$, in seconds, assuming the carrier frequency is 1 GHz.
+
+**Critique:**
+*   **Guideline 3 (Force Multi-Step Reasoning):** Good. Requires conversion from dBc/Hz to linear spectral density and then to timing jitter.
+*   **Guideline 5 (Single Solution):** **Major issue.** The term "equivalent timing jitter" for a single-point phase noise spectral density (dBc/Hz) is ambiguous. Timing jitter is typically an RMS value integrated over a bandwidth. The question needs to specify the bandwidth over which this "equivalent" jitter is calculated (e.g., "over a 1 Hz effective noise bandwidth centered at the offset"). Without this, the answer is not uniquely defined.
+*   **Guideline 7 (All variables defined):** The division ratio $N=10$ is provided but not used in the calculation, making it extraneous.
+*   **All other guidelines:** Met, assuming the ambiguity is resolved.
+
+**Actionable Feedback:**
+*   Clarify the definition of "equivalent timing jitter". For example, "Calculate the timing jitter, $\Delta t$, that would result if this phase noise spectral density were constant over a 1 Hz bandwidth centered at the 1 Hz offset."
+*   Remove the unused variable $N=10$ or incorporate it into the problem if relevant.
+
+---
+
+**Question 3:**
+A microwave oscillator, operating at 10 GHz, is designed to approach the quantum noise limit. Assuming the Schawlow-Townes linewidth is 10 μHz, calculate the coherence time, $\tau_c$, of the oscillator signal in seconds.
+
+**Critique:**
+*   **Guideline 3 (Force Multi-Step Reasoning):** **Major issue.** This is a direct application of a definition ($\tau_c = 1/(\pi \Delta f)$). It is a single-step recall, not multi-step reasoning involving different physical principles.
+*   **Guideline 4 (Be Unique):** **Major issue.** This is a standard textbook definition lookup.
+*   **Guideline 7 (All variables defined):** The carrier frequency (10 GHz) is provided but not used in the calculation.
+*   **All other guidelines:** Met.
+
+**Actionable Feedback:**
+*   To force multi-step reasoning, provide parameters from which the Schawlow-Townes linewidth *itself* must be calculated (e.g., cavity Q, stored energy, output power) before calculating coherence time.
+*   Remove the unused carrier frequency (10 GHz).
+
+---
+
+**Question 4:**
+An OFD system utilizes a fiber optic cable with a length of 10 meters. The refractive index of the fiber is $n = 1.5$, and the speed of light in vacuum is $c = 3 \times 10^8 \, \mathrm{m/s}$. If the system uses a modulation frequency of 1 GHz, what is the phase shift, $\Delta \phi$, introduced by the fiber optic cable at the modulation frequency, assuming perfect impedance matching and no dispersion? Give your answer in radians.
+
+**Critique:**
+*   **Guideline 1 (Model a Physics Scenario):** Excellent. Models a relevant optical/microwave scenario.
+*   **Guideline 3 (Force Multi-Step Reasoning):** Excellent. Requires calculating speed in a medium, time delay, and then converting time delay to phase shift at a given frequency.
+*   **All other guidelines:** Met.
+
+**Actionable Feedback:**
+*   This is a well-formulated question. No changes needed.
+
+---
+
+**Question 5:**
+A microwave amplifier used in a low-noise signal generation system has a gain of 20 dB and a noise figure of 3 dB. If the input signal power is -100 dBm, calculate the signal-to-noise ratio (SNR) at the output of the amplifier, assuming the input noise power is -174 dBm/Hz and the bandwidth of the signal is 1 MHz. Give your answer in dB.
+
+**Critique:**
+*   **Guideline 1 (Model a Physics Scenario):** Excellent. Models a realistic amplifier scenario.
+*   **Guideline 3 (Force Multi-Step Reasoning):** Excellent. Requires converting dB values, calculating input noise power over a bandwidth, calculating output signal power, calculating output noise power considering noise figure, and finally calculating SNR.
+*   **All other guidelines:** Met.
+
+**Actionable Feedback:**
+*   This is a well-formulated question. No changes needed.
+
+---
+
+**Question 6:**
+A resonant cavity with a quality factor $Q = 10^6$ is used in a low-noise oscillator. The resonant frequency is 5 GHz. Calculate the full width at half maximum (FWHM) of the resonance in Hz.
+
+**Critique:**
+*   **Guideline 3 (Force Multi-Step Reasoning):** **Major issue.** This is a direct application of a definition ($Q = f_0 / \Delta f_{FWHM}$). It is a single-step recall, not multi-step reasoning involving different physical principles.
+*   **Guideline 4 (Be Unique):** **Major issue.** This is a standard textbook definition lookup.
+*   **All other guidelines:** Met.
+
+**Actionable Feedback:**
+*   To force multi-step reasoning, provide parameters from which the Q-factor must be derived (e.g., energy stored and power dissipated, or ring-down time of the cavity), and then ask for the FWHM.
+
+---
+
+**Question 7:**
+A fractional-N synthesizer used in an OFD system has a division ratio that varies between 9 and 10. The reference frequency is 10 MHz. What is the minimum frequency step size that can be achieved by the synthesizer in Hz?
+
+**Critique:**
+*   **Guideline 5 (Single Solution):** **Major issue.** The question is unsolvable with the provided information. The minimum frequency step size of a fractional-N synthesizer depends on the modulus (resolution) of its fractional accumulator (e.g., $f_{step} = f_{ref} / M$), which is not given. The range "between 9 and 10" only defines the *range* of possible output frequencies, not their granularity.
+*   **Guideline 7 (All variables defined):** Crucial information (the modulus $M$ or number of bits in the fractional accumulator) is missing.
+*   **All other guidelines:** Met, if the question were solvable.
+
+**Actionable Feedback:**
+*   Provide the missing information about the fractional resolution (e.g., "assuming a 10-bit fractional accumulator" or "with a fractional modulus of $M=2^{20}$").
+*   Alternatively, rephrase the question to ask something that *can* be answered with the given information (e.g., "What is the *range* of output frequencies...").
+
+---
+
+**Question 8:**
+A balanced photodetector is used in an OFD system to suppress common-mode noise. The responsivity of each photodiode is 0.8 A/W. If the optical power incident on each photodiode is 1 mW, what is the differential photocurrent generated in Amperes?
+
+**Critique:**
+*   **Guideline 5 (Single Solution):** **Major issue.** The wording "optical power incident on each photodiode is 1 mW" is ambiguous for a balanced detector. If it means *both* photodiodes receive 1 mW equally (a common-mode signal), then the *differential* output should be zero. If the intention is a non-zero differential current, the question needs to explicitly state that 1 mW refers to the *differential optical power*, or the *amplitude of the modulated power difference*, or the power on one arm *relative to a reference*.
+*   **All other guidelines:** Met, assuming the ambiguity is resolved.
+
+**Actionable Feedback:**
+*   Clarify the meaning of "optical power incident on each photodiode is 1 mW" in the context of a differential output. For example: "If the *differential optical power* between the two photodiodes is 1 mW..." or "If a differential optical signal with a peak power of 1 mW is incident on the photodiodes...".
+
+---
+
+**Question 9:**
+A low-noise amplifier (LNA) in a microwave signal generation system has a gain of 30 dB and an output power of 10 dBm. What is the input power to the LNA in dBm?
+
+**Critique:**
+*   **Guideline 3 (Force Multi-Step Reasoning):** **Major issue.** This is a direct application of a definition (Output Power = Input Power + Gain in dB). It is a single-step recall, not multi-step reasoning involving different physical principles.
+*   **Guideline 4 (Be Unique):** **Major issue.** This is a standard textbook definition lookup.
+*   **All other guidelines:** Met.
+
+**Actionable Feedback:**
+*   To force multi-step reasoning, integrate this amplifier into a larger system (e.g., a cascaded amplifier chain, or a system with a specific SNR requirement, requiring calculation of output noise or input sensitivity).
+
+---
+
+**Question 10:**
+An OFD system uses a Mach-Zehnder modulator (MZM) with a $V_\pi$ (half-wave voltage) of 2 V. If the MZM is biased at quadrature, what is the required voltage swing to achieve a maximum optical power modulation? Give your answer in Volts.
+
+**Critique:**
+*   **Guideline 3 (Force Multi-Step Reasoning):** **Major issue.** This is a direct application of the definition of $V_\pi$ in the context of maximum modulation from quadrature. It is a single-step recall of a device characteristic, not multi-step reasoning involving different physical principles.
+*   **Guideline 4 (Be Unique):** **Major issue.** This is a standard textbook definition lookup.
+*   **All other guidelines:** Met.
+
+**Actionable Feedback:**
+*   To force multi-step reasoning, provide fundamental parameters from which $V_\pi$ itself must be calculated (e.g., electro-optic coefficient, waveguide dimensions, interaction length, wavelength) before asking for its application.
+*   Alternatively, integrate the MZM into a system requiring calculation of optical power, signal-to-noise ratio, or other link budget parameters that depend on the modulation depth.
+=== Turn 1: Author refines questions ===
+```xml
+<question>
+A low-noise microwave signal generator utilizes a common cavity oscillator operating at 10 GHz. To suppress thermal noise, the cavity is cryogenically cooled to 4 K. Assuming the thermal noise power spectral density is given by $k_B T$, and that electronic noise contributes an equivalent noise temperature of 1 K, calculate the total noise power within a 1 Hz bandwidth centered at the carrier frequency. Give your answer in Watts. Boltzmann constant $k_B = 1.38 \times 10^{-23} \, \mathrm{J/K}$.
+</question>
+
+<question>
+An optoelectronic frequency divider (OFD) system exhibits a phase noise performance of -65 dBc/Hz at a 1 Hz offset from the carrier frequency of 1 GHz. Calculate the timing jitter, $\Delta t$, that would result if this phase noise spectral density were constant over a 1 Hz bandwidth centered at the 1 Hz offset. Give your answer in seconds.
+</question>
+
+<question>
+A microwave oscillator operating at 1 GHz uses a resonant cavity with a loaded quality factor of $Q_L = 10^5$.  The oscillator sustains oscillations with an output power of 1 mW at a temperature of 300 K.  Assuming the Schawlow-Townes linewidth is the dominant noise contribution, calculate the coherence time, $\tau_c$, of the oscillator signal in seconds. You may approximate the stored energy in the cavity as $P_{out} Q_L / \omega_0$, where $\omega_0$ is the angular frequency of the oscillator.
+</question>
+
+<question>
+An OFD system utilizes a fiber optic cable with a length of 10 meters. The refractive index of the fiber is $n = 1.5$, and the speed of light in vacuum is $c = 3 \times 10^8 \, \mathrm{m/s}$. If the system uses a modulation frequency of 1 GHz, what is the phase shift, $\Delta \phi$, introduced by the fiber optic cable at the modulation frequency, assuming perfect impedance matching and no dispersion? Give your answer in radians.
+</question>
+
+<question>
+A microwave amplifier used in a low-noise signal generation system has a gain of 20 dB and a noise figure of 3 dB. The amplifier is connected to a mixer with a conversion loss of 6 dB and an IF amplifier with a gain of 15 dB and noise figure of 6 dB. If the input signal power to the microwave amplifier is -100 dBm, calculate the signal-to-noise ratio (SNR) at the *output* of the IF amplifier, assuming the input noise power to the microwave amplifier is -174 dBm/Hz and the bandwidth of the signal is 1 MHz. Assume all components are impedance matched. Give your answer in dB.
+</question>
+
+<question>
+A resonant cavity is constructed from a material with a dielectric loss tangent of $\tan{\delta} = 10^{-6}$ at 5 GHz. The cavity is designed to store 1 Joule of energy when driven at resonance.  Calculate the full width at half maximum (FWHM) of the resonance in Hz.
+</question>
+
+<question>
+A fractional-N synthesizer used in an OFD system has a division ratio that varies between 9 and 10. The reference frequency is 10 MHz, and the fractional accumulator has a modulus of $M=2^{20}$. What is the minimum frequency step size that can be achieved by the synthesizer in Hz?
+</question>
+
+<question>
+A balanced photodetector is used in an OFD system to suppress common-mode noise. The responsivity of each photodiode is 0.8 A/W. If the *differential optical power* between the two photodiodes is 1 mW, what is the differential photocurrent generated in Amperes?
+</question>
+
+<question>
+A low-noise amplifier (LNA) with a gain of 30 dB is cascaded with a filter that attenuates the signal by 3 dB, and a second amplifier with a gain of 20 dB.  If the *output* power of the second amplifier is 10 dBm, what is the input power to the *first* LNA in dBm? Assume all components are impedance matched.
+</question>
+
+<question>
+An OFD system uses a Mach-Zehnder modulator (MZM) with an electrode length of 1 cm and an electro-optic coefficient of $r_{33} = 30 \times 10^{-12} \, \mathrm{m/V}$ at the operating wavelength of 1550 nm. The waveguide gap is 5 μm. If the MZM is biased at quadrature, what is the required voltage swing to achieve a maximum optical power modulation? Give your answer in Volts. Assume the refractive index is 2.2.
+</question>
+```
+=== Turn 1: Critic feedback ===
+Here's a critique of each question against the provided guidelines, along with actionable feedback for improvement.
+
+---
+
+### Question 1
+
+```xml
+<question>
+A low-noise microwave signal generator utilizes a common cavity oscillator operating at 10 GHz. To suppress thermal noise, the cavity is cryogenically cooled to 4 K. Assuming the thermal noise power spectral density is given by $k_B T$, and that electronic noise contributes an equivalent noise temperature of 1 K, calculate the total noise power within a 1 Hz bandwidth centered at the carrier frequency. Give your answer in Watts. Boltzmann constant $k_B = 1.38 \times 10^{-23} \, \mathrm{J/K}$.
+</question>
+```
+
+**Critique:**
+*   **Guideline 1 (Physics Scenario):** Excellent. Models a realistic low-noise system.
+*   **Guideline 2 (Answer Format):** Good. Expects a single numerical value with units.
+*   **Guideline 3 (Multi-Step Reasoning):** Good. Requires calculating noise from two sources (physical temperature and equivalent noise temperature) and summing them.
+*   **Guideline 5 (Unique):** Good. Not a standard textbook problem.
+*   **Guideline 6 (Single Solution):** Good. Yields a single correct numerical result.
+*   **Guideline 7 (Rigorous, Concise Phrasing):** Good. Phrasing is professional.
+*   **Guideline 8 (Assumptions/Variables):** Good. All necessary variables are defined, and the key assumption about the thermal noise spectral density is stated.
+*   **Guideline 9 (Units/Notation):** Good. Consistent units, correct SI unit for answer, conventional notation.
+*   **Guideline 10 (Not Multipart):** Good. Focuses on a single quantity.
+*   **Guideline 11 (Formatting):** Good. Correct LaTeX and XML tags.
+
+**Feedback for Improvement:**
+*   No significant improvements needed. The phrasing "thermal noise power spectral density is given by $k_B T$" implies $S_N = k_B T$ in W/Hz, which is standard for available thermal noise and leads to a clear solution for a 1 Hz bandwidth.
+
+---
+
+### Question 2
+
+```xml
+<question>
+An optoelectronic frequency divider (OFD) system exhibits a phase noise performance of -65 dBc/Hz at a 1 Hz offset from the carrier frequency of 1 GHz. Calculate the timing jitter, $\Delta t$, that would result if this phase noise spectral density were constant over a 1 Hz bandwidth centered at the 1 Hz offset. Give your answer in seconds.
+</question>
+```
+
+**Critique:**
+*   **Guideline 1 (Physics Scenario):** Excellent. Relevant to advanced systems (OFD, phase noise, timing jitter).
+*   **Guideline 2 (Answer Format):** Good. Expects a single numerical value with units.
+*   **Guideline 3 (Multi-Step Reasoning):** Good. Requires conversion from dBc/Hz to linear, integration (multiplication) over a bandwidth to get phase variance, and then conversion from phase variance to timing jitter using the carrier frequency.
+*   **Guideline 5 (Unique):** Good. Not a standard textbook problem.
+*   **Guideline 6 (Single Solution):** Good. Yields a single correct numerical result based on the standard interpretation.
+*   **Guideline 7 (Rigorous, Concise Phrasing):** Mostly good. The phrasing "if this phase noise spectral density were constant over a 1 Hz bandwidth centered at the 1 Hz offset" is a slightly verbose way to specify the integration limits, but it is clear enough in context.
+*   **Guideline 8 (Assumptions/Variables):** Good. All necessary parameters are provided.
+*   **Guideline 9 (Units/Notation):** Good. Consistent units, correct SI unit for answer, conventional notation.
+*   **Guideline 10 (Not Multipart):** Good. Focuses on a single quantity.
+*   **Guideline 11 (Formatting):** Good. Correct LaTeX and XML tags.
+
+**Feedback for Improvement:**
+*   Consider rephrasing the bandwidth specification for integration slightly for ultimate conciseness, e.g., "Calculate the root mean square (RMS) timing jitter, $\Delta t$, due to this phase noise assuming a phase noise spectral density of -65 dBc/Hz constant over a 1 Hz bandwidth (e.g., from 0.5 Hz to 1.5 Hz offset)." However, the current phrasing is understandable to those familiar with noise integration.
+
+---
+
+### Question 3
+
+```xml
+<question>
+A microwave oscillator operating at 1 GHz uses a resonant cavity with a loaded quality factor of $Q_L = 10^5$. The oscillator sustains oscillations with an output power of 1 mW at a temperature of 300 K. Assuming the Schawlow-Townes linewidth is the dominant noise contribution, calculate the coherence time, $\tau_c$, of the oscillator signal in seconds. You may approximate the stored energy in the cavity as $P_{out} Q_L / \omega_0$, where $\omega_0$ is the angular frequency of the oscillator.
+</question>
+```
+
+**Critique:**
+*   **Guideline 1 (Physics Scenario):** Excellent. Realistic oscillator scenario, linking Q-factor, power, temperature, and noise linewidth.
+*   **Guideline 2 (Answer Format):** Good. Expects a single numerical value with units.
+*   **Guideline 3 (Multi-Step Reasoning):** Good. Requires calculating stored energy, then linewidth, then coherence time.
+*   **Guideline 5 (Unique):** Good. Integrates several concepts in a novel way.
+*   **Guideline 6 (Single Solution):** Good, assuming a standard relationship between linewidth and coherence time for a Lorentzian line.
+*   **Guideline 7 (Rigorous, Concise Phrasing):** Good. The hint for stored energy is helpful.
+*   **Guideline 8 (Assumptions/Variables):** Good. All necessary variables are defined or inferable ($k_B$ is a fundamental constant, often expected knowledge at advanced levels, but its value is given in Q1, so it's consistent across the set).
+*   **Guideline 9 (Units/Notation):** Good. Consistent units, correct SI unit for answer, conventional notation.
+*   **Guideline 10 (Not Multipart):** Good. Focuses on a single quantity.
+*   **Guideline 11 (Formatting):** Good. Correct LaTeX and XML tags.
+
+**Feedback for Improvement:**
+*   Clarify the exact relationship between linewidth and coherence time to avoid ambiguity. For a Lorentzian lineshape, the coherence time is often defined as $\tau_c = 1 / (\pi \Delta \nu_{FWHM})$. Stating this relationship (or specifying which one to use) would remove potential ambiguity.
+
+---
+
+### Question 4
+
+```xml
+<question>
+An OFD system utilizes a fiber optic cable with a length of 10 meters. The refractive index of the fiber is $n = 1.5$, and the speed of light in vacuum is $c = 3 \times 10^8 \, \mathrm{m/s}$. If the system uses a modulation frequency of 1 GHz, what is the phase shift, $\Delta \phi$, introduced by the fiber optic cable at the modulation frequency, assuming perfect impedance matching and no dispersion? Give your answer in radians.
+</question>
+```
+
+**Critique:**
+*   **Guideline 1 (Physics Scenario):** Good. Relevant to OFD systems and fiber optics.
+*   **Guideline 2 (Answer Format):** Good. Expects a single numerical value with units.
+*   **Guideline 3 (Multi-Step Reasoning):** Good. Requires calculating propagation speed, wavelength in the medium, and then the total phase shift.
+*   **Guideline 5 (Unique):** Good. Not a direct textbook problem, combines concepts.
+*   **Guideline 6 (Single Solution):** Good. Yields a single correct numerical result.
+*   **Guideline 7 (Rigorous, Concise Phrasing):** Good. Assumptions are clearly stated.
+*   **Guideline 8 (Assumptions/Variables):** Good. All variables are defined.
+*   **Guideline 9 (Units/Notation):** Good. Consistent units, correct SI unit for answer, conventional notation.
+*   **Guideline 10 (Not Multipart):** Good. Focuses on a single quantity.
+*   **Guideline 11 (Formatting):** Good. Correct LaTeX and XML tags.
+
+**Feedback for Improvement:**
+*   No significant improvements needed.
+
+---
+
+### Question 5
+
+```xml
+<question>
+A microwave amplifier used in a low-noise signal generation system has a gain of 20 dB and a noise figure of 3 dB. The amplifier is connected to a mixer with a conversion loss of 6 dB and an IF amplifier with a gain of 15 dB and noise figure of 6 dB. If the input signal power to the microwave amplifier is -100 dBm, calculate the signal-to-noise ratio (SNR) at the *output* of the IF amplifier, assuming the input noise power to the microwave amplifier is -174 dBm/Hz and the bandwidth of the signal is 1 MHz. Assume all components are impedance matched. Give your answer in dB.
+</question>
+```
+
+**Critique:**
+*   **Guideline 1 (Physics Scenario):** Excellent. Models a complex, realistic RF/microwave system.
+*   **Guideline 2 (Answer Format):** Good. Expects a single numerical value with units.
+*   **Guideline 3 (Multi-Step Reasoning):** Excellent. This is a complex multi-step problem requiring: dB to linear conversion, Friis' formula for cascaded noise figure, total gain calculation, input noise power calculation, output signal power calculation, output noise power calculation, and finally SNR calculation.
+*   **Guideline 5 (Unique):** Good. While the individual components are standard, the combination and specific parameters make it unique.
+*   **Guideline 6 (Single Solution):** Good. Yields a single correct numerical result.
+*   **Guideline 7 (Rigorous, Concise Phrasing):** Good. All parameters are clearly stated.
+*   **Guideline 8 (Assumptions/Variables):** Good. All variables and assumptions are defined. The input noise power of -174 dBm/Hz implicitly sets the reference temperature for noise calculations (typically $T_0 = 290 \text{ K}$).
+*   **Guideline 9 (Units/Notation):** Good. Consistent units, correct SI unit for answer, conventional notation.
+*   **Guideline 10 (Not Multipart):** Good. Focuses on a single quantity.
+*   **Guideline 11 (Formatting):** Good. Correct LaTeX and XML tags.
+
+**Feedback for Improvement:**
+*   No significant improvements needed. This is a well-designed, challenging question.
+
+---
+
+### Question 6
+
+```xml
+<question>
+A resonant cavity is constructed from a material with a dielectric loss tangent of $\tan{\delta} = 10^{-6}$ at 5 GHz. The cavity is designed to store 1 Joule of energy when driven at resonance. Calculate the full width at half maximum (FWHM) of the resonance in Hz.
+</question>
+```
+
+**Critique:**
+*   **Guideline 1 (Physics Scenario):** Good. Models a resonant cavity and its properties.
+*   **Guideline 2 (Answer Format):** Good. Expects a single numerical value with units.
+*   **Guideline 3 (Multi-Step Reasoning):** Acceptable, but borderline. It requires two steps: inferring the quality factor $Q$ from the loss tangent, and then using $Q$ and the resonant frequency $f_0$ to find the FWHM linewidth ($\Delta f = f_0/Q$).
+*   **Guideline 5 (Unique):** Good. Combines material properties with cavity resonance.
+*   **Guideline 6 (Single Solution):** Good. Yields a single correct numerical result.
+*   **Guideline 7 (Rigorous, Concise Phrasing):** Good.
+*   **Guideline 8 (Assumptions/Variables):** Good. All variables are defined.
+*   **Guideline 9 (Units/Notation):** Good. Consistent units, correct SI unit for answer, conventional notation.
+*   **Guideline 10 (Not Multipart):** Good. Focuses on a single quantity.
+*   **Guideline 11 (Formatting):** Good. Correct LaTeX and XML tags.
+
+**Feedback for Improvement:**
+*   The information "The cavity is designed to store 1 Joule of energy when driven at resonance" is a **distractor**. It does not affect the calculation of FWHM from the loss tangent and resonant frequency ($Q = 1/\tan\delta$ and $\Delta f = f_0/Q$). While distractors can be part of advanced problems, if the goal is strictly "Force Multi-Step Reasoning" where *all* given information is used, this part might be considered redundant. For a more challenging question, this information could be used to calculate something like power dissipation, but not the FWHM directly. Consider removing the distractor if the intent is to avoid extraneous information.
+
+---
+
+### Question 7
+
+```xml
+<question>
+A fractional-N synthesizer used in an OFD system has a division ratio that varies between 9 and 10. The reference frequency is 10 MHz, and the fractional accumulator has a modulus of $M=2^{20}$. What is the minimum frequency step size that can be achieved by the synthesizer in Hz?
+</question>
+```
+
+**Critique:**
+*   **Guideline 1 (Physics Scenario):** Good. Models a fractional-N synthesizer, a key component in frequency generation.
+*   **Guideline 2 (Answer Format):** Good. Expects a single numerical value with units.
+*   **Guideline 3 (Multi-Step Reasoning):** **Weak.** This is a single-step formula application: $\Delta f_{min} = f_{ref} / M$. Calculating $2^{20}$ might be considered a preliminary step, but it's a direct calculation, not a physical principle. This question might not sufficiently "Force Multi-Step Reasoning."
+*   **Guideline 5 (Unique):** Good. Specific parameters make it unique.
+*   **Guideline 6 (Single Solution):** Good. Yields a single correct numerical result.
+*   **Guideline 7 (Rigorous, Concise Phrasing):** Good.
+*   **Guideline 8 (Assumptions/Variables):** Good. All variables are defined. The "division ratio varies between 9 and 10" is a distractor for this specific question, as it doesn't affect the *minimum step size*.
+*   **Guideline 9 (Units/Notation):** Good. Consistent units, correct SI unit for answer, conventional notation.
+*   **Guideline 10 (Not Multipart):** Good. Focuses on a single quantity.
+*   **Guideline 11 (Formatting):** Good. Correct LaTeX and XML tags.
+
+**Feedback for Improvement:**
+*   To strengthen "Multi-Step Reasoning," consider asking for something that requires the *output* frequency, or perhaps the resulting phase noise characteristic, which would then involve the division ratio. Alternatively, remove the "division ratio" information if it's purely a distractor. As it stands, it's a very direct formula application.
+
+---
+
+### Question 8
+
+```xml
+<question>
+A balanced photodetector is used in an OFD system to suppress common-mode noise. The responsivity of each photodiode is 0.8 A/W. If the *differential optical power* between the two photodiodes is 1 mW, what is the differential photocurrent generated in Amperes?
+</question>
+```
+
+**Critique:**
+*   **Guideline 1 (Physics Scenario):** Good. Models a balanced photodetector, common in optical systems.
+*   **Guideline 2 (Answer Format):** Good. Expects a single numerical value with units.
+*   **Guideline 3 (Multi-Step Reasoning):** **Weak.** This is a single-step formula application: $\Delta I = \mathcal{R} \times \Delta P_{opt}$. It directly applies the definition of responsivity to a given differential power.
+*   **Guideline 5 (Unique):** Good. Specific parameters make it unique.
+*   **Guideline 6 (Single Solution):** Good. Yields a single correct numerical result.
+*   **Guideline 7 (Rigorous, Concise Phrasing):** Good.
+*   **Guideline 8 (Assumptions/Variables):** Good. All variables are defined.
+*   **Guideline 9 (Units/Notation):** Good. Consistent units, correct SI unit for answer, conventional notation.
+*   **Guideline 10 (Not Multipart):** Good. Focuses on a single quantity.
+*   **Guideline 11 (Formatting):** Good. Correct LaTeX and XML tags.
+
+**Feedback for Improvement:**
+*   To "Force Multi-Step Reasoning," consider making the optical power inputs for each photodiode explicit, and ask for the *differential output voltage* across a load resistor, for example. Or, introduce noise terms (e.g., shot noise) and ask for the SNR of the differential current. As is, it's a direct definition application.
+
+---
+
+### Question 9
+
+```xml
+<question>
+A low-noise amplifier (LNA) with a gain of 30 dB is cascaded with a filter that attenuates the signal by 3 dB, and a second amplifier with a gain of 20 dB. If the *output* power of the second amplifier is 10 dBm, what is the input power to the *first* LNA in dBm? Assume all components are impedance matched. Give your answer in dBm.
+</question>
+```
+
+**Critique:**
+*   **Guideline 1 (Physics Scenario):** Good. Models a cascaded RF system.
+*   **Guideline 2 (Answer Format):** Good. Expects a single numerical value with units.
+*   **Guideline 3 (Multi-Step Reasoning):** Acceptable. It requires calculating the total gain in dB, then subtracting it from the output power (working backwards). This is two distinct calculation steps.
+*   **Guideline 5 (Unique):** Good. Specific parameters make it unique.
+*   **Guideline 6 (Single Solution):** Good. Yields a single correct numerical result.
+*   **Guideline 7 (Rigorous, Concise Phrasing):** Good.
+*   **Guideline 8 (Assumptions/Variables):** Good. All variables and assumptions are defined.
+*   **Guideline 9 (Units/Notation):** Good. Consistent units, correct SI unit for answer, conventional notation.
+*   **Guideline 10 (Not Multipart):** Good. Focuses on a single quantity.
+*   **Guideline 11 (Formatting):** Good. Correct LaTeX and XML tags.
+
+**Feedback for Improvement:**
+*   This question is solid. While not as complex as Q5, it meets the multi-step requirement. No major changes recommended.
+
+---
+
+### Question 10
+
+```xml
+<question>
+An OFD system uses a Mach-Zehnder modulator (MZM) with an electrode length of 1 cm and an electro-optic coefficient of $r_{33} = 30 \times 10^{-12} \, \mathrm{m/V}$ at the operating wavelength of 1550 nm. The waveguide gap is 5 μm. If the MZM is biased at quadrature, what is the required voltage swing to achieve a maximum optical power modulation? Give your answer in Volts. Assume the refractive index is 2.2.
+</question>
+```
+
+**Critique:**
+*   **Guideline 1 (Physics Scenario):** Excellent. Models an MZM, a critical component in optoelectronics.
+*   **Guideline 2 (Answer Format):** Good. Expects a single numerical value with units.
+*   **Guideline 3 (Multi-Step Reasoning):** Good. Requires understanding the MZM phase shift equation, identifying the phase shift needed for maximum power modulation, and then solving for voltage.
+*   **Guideline 5 (Unique):** Good. Specific parameters make it unique.
+*   **Guideline 6 (Single Solution):** **Weak (Ambiguity).** The term "voltage swing" needs clarification. For an MZM biased at quadrature, "maximum optical power modulation" typically implies swinging the output from minimum to maximum power. This requires a phase change of $\pi$. If "voltage swing" refers to the peak-to-peak voltage of a sinusoidal drive, then it's $V_\pi$. If it refers to the peak voltage (from 0 to peak), it might be $V_\pi/2$. Conventionally, $V_\pi$ is defined as the voltage required to achieve a $\pi$ phase shift and is often the quantity asked for in such problems. Clarifying "Calculate the $V_\pi$ voltage" or "Calculate the peak-to-peak voltage swing" would remove ambiguity.
+*   **Guideline 7 (Rigorous, Concise Phrasing):** Mostly good, but "voltage swing" needs precision.
+*   **Guideline 8 (Assumptions/Variables):** Good. All variables and assumptions are defined.
+*   **Guideline 9 (Units/Notation):** Good. Consistent units, correct SI unit for answer, conventional notation.
+*   **Guideline 10 (Not Multipart):** Good. Focuses on a single quantity.
+*   **Guideline 11 (Formatting):** Good. Correct LaTeX and XML tags.
+
+**Feedback for Improvement:**
+*   Clarify what "voltage swing" means. For instance, "Calculate the voltage $V_\pi$ required to achieve a $\pi$ phase shift," or "Calculate the peak-to-peak voltage swing required to achieve maximum optical power modulation." The latter implies $V_\pi$. Assuming the intent is $V_\pi$, the question is otherwise very good.
+=== Turn 2: Author refines questions ===
+```xml
+<question>
+A low-noise microwave signal generator utilizes a common cavity oscillator operating at 10 GHz. To suppress thermal noise, the cavity is cryogenically cooled to 4 K. The thermal noise power spectral density is given by $k_B T$, and electronic noise contributes an equivalent noise temperature of 1 K. Calculate the total noise power within a 1 Hz bandwidth centered at the carrier frequency. Give your answer in Watts. Boltzmann constant $k_B = 1.38 \times 10^{-23} \, \mathrm{J/K}$.
+</question>
+
+<question>
+An optoelectronic frequency divider (OFD) system exhibits a phase noise performance of -65 dBc/Hz at a 1 Hz offset from the carrier frequency of 1 GHz. Calculate the root mean square (RMS) timing jitter, $\Delta t$, due to this phase noise assuming a phase noise spectral density of -65 dBc/Hz constant over a 1 Hz bandwidth (e.g., from 0.5 Hz to 1.5 Hz offset). Give your answer in seconds.
+</question>
+
+<question>
+A microwave oscillator operating at 1 GHz uses a resonant cavity with a loaded quality factor of $Q_L = 10^5$. The oscillator sustains oscillations with an output power of 1 mW at a temperature of 300 K. Assuming the Schawlow-Townes linewidth is the dominant noise contribution, calculate the coherence time, $\tau_c$, of the oscillator signal in seconds. You may approximate the stored energy in the cavity as $P_{out} Q_L / \omega_0$, where $\omega_0$ is the angular frequency of the oscillator. Use the relationship $\tau_c = 1 / (\pi \Delta \nu_{FWHM})$ where $\Delta \nu_{FWHM}$ is the full width at half maximum linewidth.
+</question>
+
+<question>
+An OFD system utilizes a fiber optic cable with a length of 10 meters. The refractive index of the fiber is $n = 1.5$, and the speed of light in vacuum is $c = 3 \times 10^8 \, \mathrm{m/s}$. If the system uses a modulation frequency of 1 GHz, what is the phase shift, $\Delta \phi$, introduced by the fiber optic cable at the modulation frequency, assuming perfect impedance matching and no dispersion? Give your answer in radians.
+</question>
+
+<question>
+A microwave amplifier used in a low-noise signal generation system has a gain of 20 dB and a noise figure of 3 dB. The amplifier is connected to a mixer with a conversion loss of 6 dB and an IF amplifier with a gain of 15 dB and noise figure of 6 dB. If the input signal power to the microwave amplifier is -100 dBm, calculate the signal-to-noise ratio (SNR) at the *output* of the IF amplifier, assuming the input noise power to the microwave amplifier is -174 dBm/Hz and the bandwidth of the signal is 1 MHz. Assume all components are impedance matched. Give your answer in dB.
+</question>
+
+<question>
+A resonant cavity is constructed from a material with a dielectric loss tangent of $\tan{\delta} = 10^{-6}$ at 5 GHz. Calculate the full width at half maximum (FWHM) of the resonance in Hz.
+</question>
+
+<question>
+A fractional-N synthesizer used in an OFD system has a reference frequency of 10 MHz, and the fractional accumulator has a modulus of $M=2^{20}$. What is the minimum frequency step size that can be achieved by the synthesizer in Hz?
+</question>
+
+<question>
+A balanced photodetector is used in an OFD system to suppress common-mode noise. The responsivity of each photodiode is 0.8 A/W. If the *differential optical power* between the two photodiodes is 1 mW, what is the differential photocurrent generated in Amperes?
+</question>
+
+<question>
+A low-noise amplifier (LNA) with a gain of 30 dB is cascaded with a filter that attenuates the signal by 3 dB, and a second amplifier with a gain of 20 dB. If the *output* power of the second amplifier is 10 dBm, what is the input power to the *first* LNA in dBm? Assume all components are impedance matched.
+</question>
+
+<question>
+An OFD system uses a Mach-Zehnder modulator (MZM) with an electrode length of 1 cm and an electro-optic coefficient of $r_{33} = 30 \times 10^{-12} \, \mathrm{m/V}$ at the operating wavelength of 1550 nm. The waveguide gap is 5 μm. If the MZM is biased at quadrature, calculate the voltage $V_\pi$ required to achieve a $\pi$ phase shift. Give your answer in Volts. Assume the refractive index is 2.2.
+</question>
+```
+=== Final questions generated ===

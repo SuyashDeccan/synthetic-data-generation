@@ -1,0 +1,124 @@
+=== Turn 0: Author generates questions ===
+Here are some novel university-level mathematics questions, following your guidelines:
+
+1. <question>A physicist is studying the decay of a new type of particle. The particle's decay rate is modeled by a function belonging to a Besov space $B_{p,q}^s(\mathbb{R})$, where $s > 0$, $1 \leq p,q \leq \infty$. An adaptive Bayesian estimation method using an Oversmoothed heavy-Tailed (OT) prior is employed to estimate the decay rate. Given that the posterior distribution contracts at the rate $\epsilon_n$ for the $L_2$ loss function, express $\epsilon_n$ in terms of $n$, $s$, and $p$, assuming the minimax rate is achieved.</question>
+
+2. <question>Consider a signal $f$ in the Besov space $B_{2, \infty}^\alpha(\mathbb{R}^d)$ with $\alpha > 0$. Suppose we approximate $f$ using a sparse representation with $N$ terms. According to sparse Besov rates, the error in approximating $f$ in the $L_2$ norm is bounded by $N^{-\beta}$. Express $\beta$ in terms of $\alpha$ and $d$.</question>
+
+3. <question>Let $f \in B_{p,q}^s([0,1])$ be a function belonging to the Besov space. We want to estimate $f$ using a Bayesian approach with a prior that is heavy-tailed. Let the posterior distribution contract at rate $\epsilon_n$ with respect to the $L_{\infty}$ norm. Assuming the Besov space is embedded in $C^{\gamma}([0,1])$ for some $\gamma > 0$, provide a formula for $\epsilon_n$ in terms of $n$, $s$, $p$ and $q$ when $s > 1/p$.</question>
+
+4. <question>Suppose we are performing adaptive Bayesian estimation of a function $f$ in a Besov space $B_{2,1}^s(\mathbb{R}^d)$. We use a heavy-tailed prior and observe that the posterior contraction rate for the $L_2$ norm is $\epsilon_n = n^{-\alpha}$. Assuming the minimax rate is achieved, determine the relationship between $\alpha$, $s$, and $d$.</question>
+
+5. <question>A signal $f$ is known to belong to the Besov space $B_{1,1}^s(\mathbb{R})$. We estimate $f$ using a Bayesian method and analyze the posterior distribution's contraction rate in the $L_1$ norm. The contraction rate is found to be $\epsilon_n$. Express $\epsilon_n$ in terms of $n$ and $s$, assuming that the estimator achieves the minimax rate.</question>
+=== Turn 0: Critic feedback ===
+Here's a critique of the provided questions, evaluated against your guidelines:
+
+**General Feedback:**
+The questions are well-formatted, clear in their request for a symbolic answer, and adhere to guidelines regarding input/output format, single output, and avoidance of numerical approximations. They are concise and use standard mathematical notation.
+
+However, the primary weakness across all questions lies in their **originality (Guideline 6)** and the requirement for **multi-step reasoning (Guideline 7)**. They overwhelmingly test the direct recall of specific, well-known minimax rates in nonparametric function estimation over Besov spaces. While these rates are fundamental, simply asking for their expressions (often specific known formulas) does not typically constitute "novel" or "multi-step reasoning" at a university level, unless the course specifically aims to test memorization of a large set of such formulas. The "real-world" contexts are superficial and add no mathematical depth.
+
+---
+
+**Critique per Question:**
+
+**1. Question:** "A physicist is studying the decay of a new type of particle. The particle's decay rate is modeled by a function belonging to a Besov space $B_{p,q}^s(\mathbb{R})$, where $s > 0$, $1 \leq p,q \leq \infty$. An adaptive Bayesian estimation method using an Oversmoothed heavy-Tailed (OT) prior is employed to estimate the decay rate. Given that the posterior distribution contracts at the rate $\epsilon_n$ for the $L_2$ loss function, express $\epsilon_n$ in terms of $n$, $s$, and $p$, assuming the minimax rate is achieved."
+*   **Guideline 2 (Mathematical Structure):** The "physicist" and "particle decay" context is superficial; it adds no mathematical substance. The question is purely about function estimation.
+*   **Guideline 5 (Concise and Relevant):** "Oversmoothed heavy-Tailed (OT) prior" is likely overly specific and potentially redundant. If "minimax rate is achieved," the exact type of adaptive prior is usually not necessary for determining the main rate exponent, only for ensuring adaptivity. "Adaptive Bayesian estimation method using a heavy-tailed prior" would be sufficient. The parameter $q$ is listed but not asked for in the final expression, which is common for these rates but means it's irrelevant detail for the *answer*.
+*   **Guideline 6 & 7 (Originality & Multi-Step Reasoning):** This is a direct recall question for the minimax rate of function estimation over Besov spaces in $L_2$ norm. The rate for $B_{p,q}^s(\mathbb{R}^d)$ ($d=1$ here) in $L_2$ is a standard formula, often $n^{-\frac{s}{2s+d(\frac{1}{p} - \frac{1}{2})_+ + d/2}}$ or related forms depending on $p$. This requires looking up/recalling a formula, not multi-step reasoning.
+*   **Actionable Feedback:**
+    1.  Remove the decorative "physicist" context.
+    2.  Simplify the prior description.
+    3.  To enforce multi-step reasoning, consider a scenario where the standard formula needs adaptation, e.g., estimation on a bounded domain with specific boundary conditions, or a slightly different combination of loss function and space parameter that requires interpreting multiple known results.
+
+**2. Question:** "Consider a signal $f$ in the Besov space $B_{2, \infty}^\alpha(\mathbb{R}^d)$ with $\alpha > 0$. Suppose we approximate $f$ using a sparse representation with $N$ terms. According to sparse Besov rates, the error in approximating $f$ in the $L_2$ norm is bounded by $N^{-\beta}$. Express $\beta$ in terms of $\alpha$ and $d$."
+*   **Guideline 6 & 7 (Originality & Multi-Step Reasoning):** This is a very standard result in sparse approximation theory (often related to wavelet bases). The rate $\beta = \alpha/d$ for $f \in B_{2,\infty}^\alpha(\mathbb{R}^d)$ in $L_2$ approximation is a direct lookup/recall. No multi-step reasoning is involved.
+*   **Actionable Feedback:**
+    1.  This question is a direct recall. To improve, modify the question to require a combination of concepts or a slightly less common scenario. For example, ask about approximation in a different norm ($L_p$) or under specific constraints on the sparse dictionary, or for a function that is a sum of components from different Besov spaces, forcing the student to consider the interplay of approximation rates.
+
+**3. Question:** "Let $f \in B_{p,q}^s([0,1])$ be a function belonging to the Besov space. We want to estimate $f$ using a Bayesian approach with a prior that is heavy-tailed. Let the posterior distribution contract at rate $\epsilon_n$ with respect to the $L_{\infty}$ norm. Assuming the Besov space is embedded in $C^{\gamma}([0,1])$ for some $\gamma > 0$, provide a formula for $\epsilon_n$ in terms of $n$, $s$, $p$ and $q$ when $s > 1/p$."
+*   **Guideline 5 (Concise and Relevant):** The condition "$s > 1/p$" for $d=1$ (implied by $[0,1]$) is precisely the condition required for the Besov space to embed into $C^0 = L_\infty$. Stating "Assuming the Besov space is embedded in $C^{\gamma}([0,1])$ for some $\gamma > 0$" is somewhat redundant given the explicit condition $s>1/p$ and the target $L_\infty$ norm.
+*   **Guideline 6 & 7 (Originality & Multi-Step Reasoning):** Similar to Q1, this is a direct recall of the minimax rate for function estimation over Besov spaces in the $L_\infty$ norm. The $q$ parameter typically does not influence the polynomial rate exponent.
+*   **Actionable Feedback:**
+    1.  Condense the embedding condition; it's implicit in $s > 1/p$ for $L_\infty$.
+    2.  To enforce multi-step reasoning, consider a scenario where the function is estimated on a manifold, or where the rate depends on a specific interaction between the smoothness and the dimension (e.g., asking for the rate in different regimes of $s, p$).
+
+**4. Question:** "Suppose we are performing adaptive Bayesian estimation of a function $f$ in a Besov space $B_{2,1}^s(\mathbb{R}^d)$. We use a heavy-tailed prior and observe that the posterior contraction rate for the $L_2$ norm is $\epsilon_n = n^{-\alpha}$. Assuming the minimax rate is achieved, determine the relationship between $\alpha$, $s$, and $d$."
+*   **Guideline 6 & 7 (Originality & Multi-Step Reasoning):** This question is a direct re-packaging of Q1, but with specific values for $p$ and $q$ and a general dimension $d$. The minimax rate for $f \in B_{2,1}^s(\mathbb{R}^d)$ in $L_2$ is a very standard result: $\alpha = \frac{s}{2s+d}$. This is pure recall.
+*   **Actionable Feedback:**
+    1.  This question is structurally almost identical to Q1 and suffers from the same issues of being a direct recall.
+    2.  To improve, introduce a challenge that requires combining concepts, for instance, estimating a density function where the Besov space parameters define its smoothness, and the problem asks for the rate of a related quantity (e.g., a functional of the density).
+
+**5. Question:** "A signal $f$ is known to belong to the Besov space $B_{1,1}^s(\mathbb{R})$. We estimate $f$ using a Bayesian method and analyze the posterior distribution's contraction rate in the $L_1$ norm. The contraction rate is found to be $\epsilon_n$. Express $\epsilon_n$ in terms of $n$ and $s$, assuming that the estimator achieves the minimax rate."
+*   **Guideline 6 & 7 (Originality & Multi-Step Reasoning):** This is another direct recall of a specific minimax rate for $p=1, q=1$ and $L_1$ norm in dimension $d=1$. The rate is often $n^{-\frac{s}{2s+1/2}}$ or $n^{-\frac{s}{2s+1}}$. This requires no multi-step reasoning.
+*   **Actionable Feedback:**
+    1.  This is solely a recall question.
+    2.  To improve, consider asking for the rate for a different type of signal (e.g., a piecewise smooth signal that can be naturally represented in a Besov space), or explore the implications of the chosen Besov space parameters on the estimation error, e.g., how the rate changes when $s$ is very small or very large relative to $d/p$.
+
+---
+
+**Summary Recommendation:**
+The questions are technically sound in their adherence to formatting and directness. However, for "novel university-level mathematics questions" that require "multi-step reasoning" and are "non-trivial," these questions primarily fall into the category of direct recall of known theorems/formulas from advanced nonparametric statistics or approximation theory. To elevate them, they need to be designed to:
+*   Require application of multiple theorems or definitions.
+*   Involve a setup that slightly deviates from standard textbook examples, necessitating adaptation of known results.
+*   Ask for a comparison, analysis of conditions, or an interpretation of results beyond just stating a formula.
+*   Eliminate purely decorative context.
+=== Turn 1: Author refines questions ===
+Okay, here's an improved set of questions, addressing the feedback on originality and multi-step reasoning, and removing unnecessary context.
+
+1.  <question>Let $f \in B_{p,q}^s([0,1])$ with $s>0$ and $1 \leq p,q \leq \infty$. Consider estimating $f$ in the $L_2$ norm using wavelet thresholding.  However, instead of using standard hard or soft thresholding, we employ a threshold that depends on the local Besov norm of the wavelet coefficients.  Specifically, the threshold is set to $\lambda_j = \eta \|d_{j,\cdot}\|_{b_{p,q}^s}$, where $d_{j,\cdot}$ represents the wavelet coefficients at level $j$, $b_{p,q}^s$ is the sequence space equivalent of $B_{p,q}^s$, and $\eta$ is a constant. Determine the convergence rate of this adaptive thresholding estimator in the $L_2$ norm, and express it in terms of $n$, $s$, and $p$, assuming the best possible constant $\eta$ is used.</question>
+
+2.  <question>Suppose $f$ is a function on $[0,1]^d$ belonging to both $B_{2, \infty}^{\alpha_1}([0,1]^d)$ and $B_{\infty, \infty}^{\alpha_2}([0,1]^d)$ with $\alpha_1 > 0$ and $\alpha_2 > 0$. We wish to approximate $f$ in the $L_2$ norm using a sparse representation with $N$ terms.  Derive the optimal rate of approximation, expressed as $N^{-\beta}$, in terms of $\alpha_1$, $\alpha_2$, and $d$. Consider the interplay between the smoothness parameters when determining the fastest possible rate.</question>
+
+3.  <question>Consider estimating a function $f \in B_{p,q}^s([0,1])$ using a Bayesian method with a heavy-tailed prior. We are interested in bounding the posterior contraction rate $\epsilon_n$ in the $L_\infty$ norm. Instead of assuming a direct embedding of $B_{p,q}^s$ into $C^\gamma([0,1])$, assume that $f$ can be written as $f = g + h$, where $g \in C^\gamma([0,1])$ and $\|h\|_{L_\infty} \leq n^{-\delta}$ for some $\delta > 0$. How does the presence of this "nearly smooth" component *h* affect the achievable posterior contraction rate $\epsilon_n$? Give the formula for $\epsilon_n$ in terms of $n$, $s$, $p$, $q$, and $\delta$.</question>
+
+4.  <question>Let $f$ be a function in $B_{2,1}^s(\mathbb{R}^d)$, and we are performing adaptive Bayesian estimation with a heavy-tailed prior. Instead of the standard $L_2$ norm, we now want to control the Hellinger distance between the true density $\exp(f)$ and its estimate $\exp(\hat{f})$. The posterior contraction rate in the Hellinger distance is observed to be $\epsilon_n = n^{-\alpha}$. Determine the relationship between $\alpha$, $s$, and $d$, taking into account the change in loss function. Justify your reasoning considering the relationship between Hellinger distance and $L_2$ distance.</question>
+
+5.  <question>Assume we observe $n$ independent and identically distributed random variables $X_1, ..., X_n$ drawn from a density $f$ on $[0,1]$. We know that $f^{1/2}$ (the square root of the density) belongs to the Besov space $B_{2,1}^s([0,1])$.  Estimate the $L_1$ distance between the true density $f$ and its estimate $\hat{f}$.  Express the minimax rate of convergence for this estimation problem in terms of $n$ and $s$. Hint: Relate the $L_1$ distance between densities to the $L_2$ distance between their square roots, and leverage the Besov smoothness of $f^{1/2}$.</question>
+=== Turn 1: Critic feedback ===
+Here's a critique of each question, along with actionable feedback for improvement:
+
+**Question 1:**
+*   **Critique:**
+    *   **Solvable Target/Originality:** The proposed thresholding rule ($\lambda_j = \eta \|d_{j,\cdot}\|_{b_{p,q}^s}$) is highly non-standard. While it aims for originality, it makes the problem very difficult to solve as a concise assessment question, as its convergence properties are not a readily available result in standard literature. This feels more like a research question than an assessment question with a known, derivable answer.
+    *   **Concise and Relevant/Clarity:** The phrase "assuming the best possible constant $\eta$ is used" is ambiguous. What defines "best possible"? Optimal for the leading constant in the rate, or for the exponent? This vagueness adds an unnecessary layer of interpretation.
+*   **Feedback:**
+    *   To make this solvable as an assessment, either replace the non-standard thresholding rule with a commonly studied adaptive thresholding scheme (e.g., universal thresholding based on noise variance or $L_p$ norms of coefficients) or provide enough context/assumptions about this specific rule for its convergence rate to be directly deducible from established principles.
+    *   Clarify or remove the phrase "assuming the best possible constant $\eta$ is used" if it introduces ambiguity or makes the problem over-complicated without a clear path to solution.
+
+**Question 2:**
+*   **Critique:**
+    *   **Solvable Target/Language:** The verb "Derive" in "Derive the optimal rate" directly violates guideline 3 ("Questions must not be proves or derivations").
+*   **Feedback:**
+    *   Replace "Derive the optimal rate" with "Determine the optimal rate," "Find the optimal rate," or "State the optimal rate."
+
+**Question 3:**
+*   **Critique:**
+    *   **Concise and Relevant/Single Output:** The question "How does the presence of this 'nearly smooth' component *h* affect the achievable posterior contraction rate $\epsilon_n$?" prompts for an explanation or description, which violates guideline 10 ("Questions must not have multiple parts to answer, there should be only one single solution to each question"). While it immediately asks for a formula, the preceding sentence can be misinterpreted.
+*   **Feedback:**
+    *   Remove the descriptive question: "How does the presence of this 'nearly smooth' component *h* affect the achievable posterior contraction rate $\epsilon_n$?" Start directly with the request for the formula.
+
+**Question 4:**
+*   **Critique:**
+    *   **Solvable Target/Single Output:** The instruction "Justify your reasoning considering the relationship between Hellinger distance and $L_2$ distance" explicitly asks for justification and reasoning, which violates guideline 3 ("Questions must not be proves or derivations") and guideline 10 ("Questions must not have multiple parts to answer, there should be only one single solution to each question").
+*   **Feedback:**
+    *   Remove the instruction "Justify your reasoning considering the relationship between Hellinger distance and $L_2$ distance." The question should solely ask for the relationship between $\alpha$, $s$, and $d$.
+
+**Question 5:**
+*   **Critique:**
+    *   **Originality (Minor):** While this is a fundamental and important result in non-parametric statistics (relating $L_1$ density estimation to $L_2$ of square roots, often attributed to Birgé and Massart), it is a well-established and widely taught theorem. It might be considered less "original" in the context of "Avoid rewording standard textbook problems" if strict novelty is required. However, for a high-level assessment, this is generally acceptable as it requires application and understanding rather than just recall.
+*   **Feedback:**
+    *   No critical issues. This question largely adheres to all guidelines. The minor point on originality is a judgment call, and for an advanced assessment, this problem is suitable.
+=== Turn 2: Author refines questions ===
+Okay, here's the revised set of questions, incorporating the feedback to address originality, multi-step reasoning, ambiguity, and to avoid requesting proofs or derivations:
+
+1.  <question>Let $f \in B_{p,q}^s([0,1])$ with $s>0$ and $1 \leq p,q \leq \infty$. Consider estimating $f$ in the $L_2$ norm using wavelet thresholding with a universal threshold $\lambda_j = \sigma \sqrt{\log(n)/n}$ at level $j$, where $\sigma$ is an estimate of the noise level. Determine the convergence rate of this adaptive thresholding estimator in the $L_2$ norm, and express it in terms of $n$, $s$, and $p>.</question>
+
+2.  <question>Suppose $f$ is a function on $[0,1]^d$ belonging to both $B_{2, \infty}^{\alpha_1}([0,1]^d)$ and $B_{\infty, \infty}^{\alpha_2}([0,1]^d)$ with $\alpha_1 > 0$ and $\alpha_2 > 0$. We wish to approximate $f$ in the $L_2$ norm using a sparse representation with $N$ terms.  State the optimal rate of approximation, expressed as $N^{-\beta}$, in terms of $\alpha_1$, $\alpha_2$, and $d$. Consider the interplay between the smoothness parameters when determining the fastest possible rate.</question>
+
+3.  <question>Consider estimating a function $f \in B_{p,q}^s([0,1])$ using a Bayesian method with a heavy-tailed prior. We are interested in bounding the posterior contraction rate $\epsilon_n$ in the $L_\infty$ norm. Instead of assuming a direct embedding of $B_{p,q}^s$ into $C^\gamma([0,1])$, assume that $f$ can be written as $f = g + h$, where $g \in C^\gamma([0,1])$ and $\|h\|_{L_\infty} \leq n^{-\delta}$ for some $\delta > 0$. Give the formula for the achievable posterior contraction rate $\epsilon_n$ in terms of $n$, $s$, $p$, $q$, and $\delta>.</question>
+
+4.  <question>Let $f$ be a function in $B_{2,1}^s(\mathbb{R}^d)$, and we are performing adaptive Bayesian estimation with a heavy-tailed prior. Instead of the standard $L_2$ norm, we now want to control the Hellinger distance between the true density $\exp(f)$ and its estimate $\exp(\hat{f})$. The posterior contraction rate in the Hellinger distance is observed to be $\epsilon_n = n^{-\alpha}$. Determine the relationship between $\alpha$, $s$, and $d$, taking into account the change in loss function.</question>
+
+5.  <question>Assume we observe $n$ independent and identically distributed random variables $X_1, ..., X_n$ drawn from a density $f$ on $[0,1]$. We know that $f^{1/2}$ (the square root of the density) belongs to the Besov space $B_{2,1}^s([0,1])$.  Estimate the $L_1$ distance between the true density $f$ and its estimate $\hat{f}$.  Express the minimax rate of convergence for this estimation problem in terms of $n$ and $s$.</question>
+=== Final questions generated ===

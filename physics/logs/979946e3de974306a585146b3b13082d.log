@@ -1,0 +1,339 @@
+=== Turn 0: Author generates questions ===
+```text
+<question>
+Consider a two-dimensional square lattice with lattice spacing $a$. A particle starts at the origin and performs a random walk with equal probability of moving to any of its four nearest neighbors at each time step.  A target is located at a distance $r$ from the origin, where $r >> a$. Assume the continuum approximation is valid. If the diffusion coefficient in the continuum is $D$, what is the asymptotic value of the Mean First Passage Time (MFPT) to reach *any* site within a small circle of radius $\epsilon$ around the target location, where $\epsilon << a$? Assume that initially the particle starts at the origin. Obtain result in terms of $D$, $r$, and $\epsilon$.
+</question>
+
+<question>
+A particle diffuses on a one-dimensional lattice with lattice spacing $a$. The particle has a probability $p$ of hopping to the right and a probability $1-p$ of hopping to the left at each time step $\Delta t$.  Assume a target is located at a large distance $r = Na$ from the starting point, where $N$ is a large integer. In the continuum limit, the diffusion coefficient is given by $D = a^2/(2\Delta t)$. The particle is subject to stochastic resetting to its initial position with a rate $r_0$. Calculate the Mean First Passage Time (MFPT) to the target in the limit of large $r$, assuming the system reaches a stationary non-equilibrium state, and give your answer as a symbolic expression in terms of $D$ and $r_0$. You can assume that the particle is initially at the origin and the target is far away ($r \to \infty$). Ignore any boundary effects.
+</question>
+
+<question>
+Consider a hypercubic lattice in $d$ dimensions, where $d > 2$, with lattice spacing $a$. A particle performs a random walk on this lattice. The particle starts at the origin and seeks to reach a target located at the origin itself. The particle resets to the origin with rate $r_0$.  Assume the lattice Green's function for this lattice is known and is given by $G(0)$. Derive the formula for the MFPT to return to the origin, accounting for the stochastic resetting. Your answer should be expressed in terms of $r_0$ and $G(0)$.
+</question>
+
+<question>
+Consider a particle diffusing on a one-dimensional lattice with lattice spacing $a$. The particle starts at site $x = 0$ and is searching for a target at site $x = L = Na$, where $N$ is a large integer.  Assume the continuum approximation is valid.  The particle undergoes diffusion with diffusion coefficient $D$ and is subject to stochastic resetting to its initial position, $x=0$, with a rate $r_0$. Find the stationary non-equilibrium probability distribution, $P(x)$, in the range $0 < x < L$, given the resetting condition. Express the distribution as a function of $x$, $D$, and $r_0$, assuming the total probability is normalized to 1. You may assume an absorbing boundary at $x=L$ and reflecting boundary at $x=0$.
+</question>
+
+<question>
+Consider a two-dimensional square lattice with lattice spacing $a$. A random walker starts at a site adjacent to the origin (target location).  In the limit where the distance to the boundary approaches infinity, $r \rightarrow \infty$, the Mean First Passage Time (MFPT) to the target is expected to approach a universal value. Assuming the diffusion constant $D$ is known, what is this *universal limiting value* of the MFPT in units of $a^2/D$, as $r\rightarrow \infty$, for a random walker that starts at a site *adjacent* to the target site?
+</question>
+```
+=== Turn 0: Critic feedback ===
+Here's a critique of each question based on your guidelines, along with actionable feedback for improvement:
+
+---
+
+### Question 1 Critique:
+
+```text
+<question>
+Consider a two-dimensional square lattice with lattice spacing $a$. A particle starts at the origin and performs a random walk with equal probability of moving to any of its four nearest neighbors at each time step. A target is located at a distance $r$ from the origin, where $r >> a$. Assume the continuum approximation is valid. If the diffusion coefficient in the continuum is $D$, what is the asymptotic value of the Mean First Passage Time (MFPT) to reach *any* site within a small circle of radius $\epsilon$ around the target location, where $\epsilon << a$? Assume that initially the particle starts at the origin. Obtain result in terms of $D$, $r$, and $\epsilon$.
+</question>
+```
+
+**Critique:**
+
+*   **1. Model a Physics Scenario:** Yes, a classic random walk/diffusion scenario with a target.
+*   **2. Expect answers as symbolic or numerical:** Symbolic. OK.
+*   **3. Force Multi-Step Reasoning:** Yes, requires understanding 2D diffusion, MFPT, continuum limit, and target geometry. It's a non-trivial problem.
+*   **4. Be Unique:** The combination of a 2D lattice, specific target region, and continuum approximation is a good, moderately unique problem.
+*   **5. Single Solution:** Yes, a unique symbolic expression is expected.
+*   **6. Rigorous, concise phrasing:** Mostly good, but there's a critical inconsistency.
+*   **7. All assumptions clearly stated, all variables defined:** All variables are defined. However, there's a strong logical inconsistency in the assumptions.
+    *   **Major Flaw:** The problem states "Assume the continuum approximation is valid" but then specifies the target as "a small circle of radius $\epsilon$ around the target location, where $\epsilon << a$". If $\epsilon << a$, the circle's radius is smaller than a single lattice spacing. This means the "continuum approximation" cannot be applied meaningfully to the target region itself; the target is effectively a single lattice site (or less). In two dimensions, the MFPT from a distant point to a *single site* (or an infinitesimally small region) in an infinite system is **infinite**. This makes the question ill-posed for a finite asymptotic value. To obtain a finite MFPT in 2D, the target *must* have a finite, non-zero continuum size (i.e., $\epsilon$ should be a continuum radius, and typically $\epsilon \gg a$ for the continuum approximation to be fully valid at the target boundary).
+*   **8. Units consistent; conventional symbols:** Symbols are conventional. Units for the answer would be time.
+*   **9. Not multipart:** Single target quantity (MFPT).
+*   **10. Question Formatting:** Correct.
+
+**Actionable Feedback:**
+
+*   **Resolve the $\epsilon$ vs. $a$ inconsistency:** To ensure a finite and physically meaningful answer, you must modify the condition for $\epsilon$.
+    *   **Recommendation 1 (Preferred):** Change "where $\epsilon << a$" to "where $\epsilon$ is a small but finite radius of the target circle (i.e., $\epsilon \gg a$ for the continuum approximation to be truly consistent across the whole domain including the target boundary, or simply imply $\epsilon$ is a continuum scale parameter without direct comparison to $a$)." This allows for a logarithmic dependence on $\epsilon$ which is standard.
+    *   **Recommendation 2 (If $\epsilon \ll a$ is intentional):** If you truly mean $\epsilon \ll a$, the question is ill-posed for a finite MFPT in 2D. You would need to introduce a cutoff or change the definition of MFPT, or acknowledge the infinite result, which is less ideal for a "calculate" question.
+
+---
+
+### Question 2 Critique:
+
+```text
+<question>
+A particle diffuses on a one-dimensional lattice with lattice spacing $a$. The particle has a probability $p$ of hopping to the right and a probability $1-p$ of hopping to the left at each time step $\Delta t$. Assume a target is located at a large distance $r = Na$ from the starting point, where $N$ is a large integer. In the continuum limit, the diffusion coefficient is given by $D = a^2/(2\Delta t)$. The particle is subject to stochastic resetting to its initial position with a rate $r_0$. Calculate the Mean First Passage Time (MFPT) to the target in the limit of large $r$, assuming the system reaches a stationary non-equilibrium state, and give your answer as a symbolic expression in terms of $D$ and $r_0$. You can assume that the particle is initially at the origin and the target is far away ($r \to \infty$). Ignore any boundary effects.
+</question>
+```
+
+**Critique:**
+
+*   **1. Model a Physics Scenario:** Yes, 1D biased random walk with resetting, MFPT.
+*   **2. Expect answers as symbolic or numerical:** Symbolic. OK.
+*   **3. Force Multi-Step Reasoning:** Yes, requires understanding 1D diffusion, bias, resetting, MFPT, and continuum limits. It's a complex, multi-step problem.
+*   **4. Be Unique:** While the concepts are standard (resetting is a common research area), the specific combination of a biased walk, resetting, and specific output variables makes it a good challenge, although not groundbreakingly novel.
+*   **5. Single Solution:** Yes, a unique symbolic expression is expected.
+*   **6. Rigorous, concise phrasing:** Generally good.
+*   **7. All assumptions clearly stated, all variables defined:** All variables are defined. However, there's a significant ambiguity.
+    *   **Major Ambiguity:** The problem states "a probability $p$ of hopping to the right and a probability $1-p$ of hopping to the left" but then defines the diffusion coefficient as "$D = a^2/(2\Delta t)$", which is the definition for an *unbiased* random walk ($p=1/2$). If $p \neq 1/2$, there is a drift velocity $v = a(2p-1)/\Delta t$. The MFPT for a biased random walk with resetting will explicitly depend on this drift velocity. The question asks for the answer only in terms of $D$ and $r_0$, implying either $p=1/2$ (unbiased walk) or that the drift term is negligible, which is not generally true. This is a crucial point of confusion.
+    *   Minor wording: "assuming the system reaches a stationary non-equilibrium state" is more pertinent for probability distributions, not MFPT itself, though the properties of the stationary state can influence the MFPT.
+*   **8. Units consistent; conventional symbols:** Symbols are conventional. Units for the answer would be time.
+*   **9. Not multipart:** Single target quantity (MFPT).
+*   **10. Question Formatting:** Correct.
+
+**Actionable Feedback:**
+
+*   **Clarify the nature of the random walk's bias:**
+    *   **Recommendation 1 (Simpler, likely intended):** Explicitly state that the random walk is **unbiased** (i.e., $p=1/2$). This makes the given $D$ consistent with the absence of $p$ in the final expression's requested variables.
+    *   **Recommendation 2 (More complex):** If a general $p$ is intended, then the answer must be allowed to depend on the drift velocity $v = a(2p-1)/\Delta t$. You would need to either include $p$ (or $v$) as a variable in the requested expression or define a new variable for the drift and allow it in the answer.
+
+---
+
+### Question 3 Critique:
+
+```text
+<question>
+Consider a hypercubic lattice in $d$ dimensions, where $d > 2$, with lattice spacing $a$. A particle performs a random walk on this lattice. The particle starts at the origin and seeks to reach a target located at the origin itself. The particle resets to the origin with rate $r_0$. Assume the lattice Green's function for this lattice is known and is given by $G(0)$. Derive the formula for the MFPT to return to the origin, accounting for the stochastic resetting. Your answer should be expressed in terms of $r_0$ and $G(0)$.
+</question>
+```
+
+**Critique:**
+
+*   **1. Model a Physics Scenario:** Yes, return to origin for a random walk with resetting.
+*   **2. Expect answers as symbolic or numerical:** Symbolic. OK.
+*   **3. Force Multi-Step Reasoning:** Yes, requires knowledge of random walks, Green's functions, and how to incorporate stochastic resetting. For $d > 2$, random walks are transient, which impacts the interpretation of $G(0)$ and return probabilities. This is a good, advanced problem.
+*   **4. Be Unique:** Yes, combining these elements and asking for the answer in terms of $G(0)$ makes it quite specific and conceptually rich, not a standard textbook problem.
+*   **5. Single Solution:** Yes, a unique symbolic expression is expected.
+*   **6. Rigorous, concise phrasing:** Generally good.
+*   **7. All assumptions clearly stated, all variables defined:** All variables are defined.
+    *   **Minor Ambiguity:** The definition and units of "$G(0)$" are not explicitly stated. In random walk theory, $G(0)$ can refer to various quantities (e.g., $G(\mathbf{0}, z)$ as a generating function, or $G(\mathbf{0}, \mathbf{0})$ as the expected number of visits to the origin). For $d > 2$, random walks are transient, meaning the probability of eventually returning to the origin is less than 1. This affects the interpretation and value of $G(0)$ when used in MFPT calculations. Providing a clearer definition or unit for $G(0)$ (e.g., "where $G(0)$ is the expected number of visits to the origin, starting from the origin, in the absence of resetting") would make the problem more precise.
+*   **8. Units consistent; conventional symbols:** Symbols are conventional. Units for MFPT are time. The units of $G(0)$ are crucial for unit consistency of the final answer (e.g., if $G(0)$ is dimensionless, then $r_0$ must provide the time units).
+*   **9. Not multipart:** Single target quantity (MFPT).
+*   **10. Question Formatting:** Correct.
+
+**Actionable Feedback:**
+
+*   **Clarify the definition and units of $G(0)$:** Explicitly state what $G(0)$ represents in this context. For example, "Assume the lattice Green's function, $G(0)$, which represents the expected number of visits to the origin starting from the origin in a walk without resetting, is known." This also helps with unit consistency.
+
+---
+
+### Question 4 Critique:
+
+```text
+<question>
+Consider a particle diffusing on a one-dimensional lattice with lattice spacing $a$. The particle starts at site $x = 0$ and is searching for a target at site $x = L = Na$, where $N$ is a large integer. Assume the continuum approximation is valid. The particle undergoes diffusion with diffusion coefficient $D$ and is subject to stochastic resetting to its initial position, $x=0$, with a rate $r_0$. Find the stationary non-equilibrium probability distribution, $P(x)$, in the range $0 < x < L$, given the resetting condition. Express the distribution as a function of $x$, $D$, and $r_0$, assuming the total probability is normalized to 1. You may assume an absorbing boundary at $x=L$ and reflecting boundary at $x=0$.
+</question>
+```
+
+**Critique:**
+
+*   **1. Model a Physics Scenario:** Yes, 1D diffusion with resetting and boundary conditions.
+*   **2. Expect answers as symbolic or numerical:** Symbolic. OK.
+*   **3. Force Multi-Step Reasoning:** Yes, requires setting up and solving a modified Fokker-Planck equation (or similar) with a source term due to resetting and specific boundary conditions. This is a demanding multi-step problem.
+*   **4. Be Unique:** The combination of an absorbing boundary at $L$ and a reflecting boundary at $0$ *while* $0$ is also the resetting point is quite unique and challenging.
+*   **5. Single Solution:** Yes, a unique symbolic expression is expected.
+*   **6. Rigorous, concise phrasing:** Generally good.
+*   **7. All assumptions clearly stated, all variables defined:** All variables are defined. However, there is a fundamental conflict in the boundary conditions.
+    *   **Major Flaw:** The problem states "reflecting boundary at $x=0$" and "stochastic resetting to its initial position, $x=0$, with a rate $r_0$". A reflecting boundary at $x=0$ implies zero probability flux ($\partial P / \partial x = 0$). However, resetting to $x=0$ implies a continuous *source* of probability at $x=0$. These two conditions are generally incompatible. If particles are constantly being re-injected at $x=0$, there cannot be zero net flux at $x=0$. The standard way to model resetting to $x=0$ in a continuum is by adding a delta function source term to the Fokker-Planck equation at $x=0$, which means the flux at $x=0$ is *not* zero. This makes the problem ill-posed with the stated boundary condition, or requires a very non-standard interpretation.
+*   **8. Units consistent; conventional symbols:** Symbols are conventional. $P(x)$ has units of inverse length (probability density).
+*   **9. Not multipart:** Single target quantity ($P(x)$).
+*   **10. Question Formatting:** Correct.
+
+**Actionable Feedback:**
+
+*   **Resolve the boundary condition conflict at $x=0$:**
+    *   **Recommendation 1 (Preferred for standard problem):** Remove the "reflecting boundary at $x=0$" assumption. In most resetting problems to the origin, the source term from resetting is the primary "boundary condition" at the origin, and the probability density is required to be finite there. This is a common and solvable setup.
+    *   **Recommendation 2 (If reflecting at $x=0$ is truly intended):** You would need to provide a much more detailed explanation of how these two conditions (reflecting and resetting-source) interact at $x=0$, which is highly non-standard and likely beyond the scope of a typical physics assessment unless specific advanced techniques are implied. This would drastically increase problem difficulty and require a very specific, careful setup of the boundary conditions for the differential equation.
+
+---
+
+### Question 5 Critique:
+
+```text
+<question>
+Consider a two-dimensional square lattice with lattice spacing $a$. A random walker starts at a site adjacent to the origin (target location). In the limit where the distance to the boundary approaches infinity, $r \rightarrow \infty$, the Mean First Passage Time (MFPT) to the target is expected to approach a universal value. Assuming the diffusion constant $D$ is known, what is this *universal limiting value* of the MFPT in units of $a^2/D$, as $r\rightarrow \infty$, for a random walker that starts at a site *adjacent* to the target site?
+</question>
+```
+
+**Critique:**
+
+*   **1. Model a Physics Scenario:** Yes, a specific 2D random walk MFPT problem.
+*   **2. Expect answers as symbolic or numerical:** Numerical, expressed in specific units. OK.
+*   **3. Force Multi-Step Reasoning:** Yes, requires knowledge of 2D random walk theory, MFPT, and the specific property of 2D recurrence. It's more of an application of a known advanced result than a full derivation.
+*   **4. Be Unique:** This is a very specific, known result in random walk theory (often related to Polya's theorem or specific derivations for MFPT in 2D). It's not "novel" in terms of derivation, but it's a good test of specific advanced knowledge, which is valuable for assessment.
+*   **5. Single Solution:** Yes, a single numerical value is expected.
+*   **6. Rigorous, concise phrasing:** Good. "Universal limiting value" is appropriate here.
+*   **7. All assumptions clearly stated, all variables defined:** All variables are defined.
+    *   **Minor Wording:** "In the limit where the distance to the boundary approaches infinity, $r \rightarrow \infty$" is slightly ambiguous. It could be rephrased for absolute clarity.
+*   **8. Units consistent; conventional symbols:** Symbols are conventional. The units are explicitly requested and are correct (time).
+*   **9. Not multipart:** Single target quantity (MFPT).
+*   **10. Question Formatting:** Correct.
+
+**Actionable Feedback:**
+
+*   **Minor wording improvement for clarity:** Rephrase "In the limit where the distance to the boundary approaches infinity, $r \rightarrow \infty$" to "In the limit of an infinite two-dimensional lattice" or "As the system size tends to infinity." This removes any potential confusion with a variable $r$ that might imply a starting distance.
+
+---
+=== Turn 1: Author refines questions ===
+```text
+<question>
+Consider a two-dimensional square lattice with lattice spacing $a$. A particle starts at the origin and performs a random walk with equal probability of moving to any of its four nearest neighbors at each time step. A target is located at a distance $r$ from the origin, where $r >> a$. Assume the continuum approximation is valid. If the diffusion coefficient in the continuum is $D$, what is the asymptotic value of the Mean First Passage Time (MFPT) to reach *any* site within a small circle of radius $\epsilon$ around the target location, where $\epsilon$ is a small but finite radius of the target circle (i.e., $\epsilon \gg a$)? Assume that initially the particle starts at the origin. Obtain result in terms of $D$, $r$, and $\epsilon$.
+</question>
+
+<question>
+A particle diffuses on a one-dimensional lattice with lattice spacing $a$. The particle has a probability $p=1/2$ of hopping to the right and a probability $1-p=1/2$ of hopping to the left at each time step $\Delta t$. Assume a target is located at a large distance $r = Na$ from the starting point, where $N$ is a large integer. In the continuum limit, the diffusion coefficient is given by $D = a^2/(2\Delta t)$. The particle is subject to stochastic resetting to its initial position with a rate $r_0$. Calculate the Mean First Passage Time (MFPT) to the target in the limit of large $r$, assuming the system reaches a stationary non-equilibrium state, and give your answer as a symbolic expression in terms of $D$ and $r_0$. You can assume that the particle is initially at the origin and the target is far away ($r \to \infty$). Ignore any boundary effects.
+</question>
+
+<question>
+Consider a hypercubic lattice in $d$ dimensions, where $d > 2$, with lattice spacing $a$. A particle performs a random walk on this lattice. The particle starts at the origin and seeks to reach a target located at the origin itself. The particle resets to the origin with rate $r_0$. Assume the lattice Green's function, $G(0)$, which represents the expected number of visits to the origin starting from the origin in a walk without resetting, is known. Derive the formula for the MFPT to return to the origin, accounting for the stochastic resetting. Your answer should be expressed in terms of $r_0$ and $G(0)$.
+</question>
+
+<question>
+Consider a particle diffusing on a one-dimensional lattice with lattice spacing $a$. The particle starts at site $x = 0$ and is searching for a target at site $x = L = Na$, where $N$ is a large integer. Assume the continuum approximation is valid. The particle undergoes diffusion with diffusion coefficient $D$ and is subject to stochastic resetting to its initial position, $x=0$, with a rate $r_0$. Find the stationary non-equilibrium probability distribution, $P(x)$, in the range $0 < x < L$, given the resetting condition. Express the distribution as a function of $x$, $D$, and $r_0$, assuming the total probability is normalized to 1. You may assume an absorbing boundary at $x=L$.
+</question>
+
+<question>
+Consider a two-dimensional square lattice with lattice spacing $a$. A random walker starts at a site adjacent to the origin (target location). In the limit of an infinite two-dimensional lattice, the Mean First Passage Time (MFPT) to the target is expected to approach a universal value. Assuming the diffusion constant $D$ is known, what is this *universal limiting value* of the MFPT in units of $a^2/D$, as $r\rightarrow \infty$, for a random walker that starts at a site *adjacent* to the target site?
+</question>
+```
+=== Turn 1: Critic feedback ===
+Here's a critique of each question based on your guidelines:
+
+---
+
+<question>
+Consider a two-dimensional square lattice with lattice spacing $a$. A particle starts at the origin and performs a random walk with equal probability of moving to any of its four nearest neighbors at each time step. A target is located at a distance $r$ from the origin, where $r >> a$. Assume the continuum approximation is valid. If the diffusion coefficient in the continuum is $D$, what is the asymptotic value of the Mean First Passage Time (MFPT) to reach *any* site within a small circle of radius $\epsilon$ around the target location, where $\epsilon$ is a small but finite radius of the target circle (i.e., $\epsilon \gg a$)? Assume that initially the particle starts at the origin. Obtain result in terms of $D$, $r$, and $\epsilon$.
+</question>
+
+**Critique:**
+*   **Guideline 1 (Model Physics Scenario):** Excellent. Clearly describes a 2D random walk setup.
+*   **Guideline 2 (Answer Type):** Excellent. Asks for a symbolic expression.
+*   **Guideline 3 (Force Multi-Step Reasoning):** Excellent. Requires translating lattice walk to continuum diffusion, solving the diffusion equation (or associated Green's function/MFPT equation) with boundary conditions for a circular target, and handling the logarithmic dependence typical of 2D problems. This involves multiple steps and principles.
+*   **Guideline 4 (Be Unique):** Good. While elements are standard, the combination of a 2D random walk, continuum approximation, and a target *circle* (rather than a point) at a large distance makes it a non-trivial and less common problem compared to basic textbook examples.
+*   **Guideline 5 (Single Solution):** Excellent. Should yield a unique symbolic expression.
+*   **Guideline 6 (Rigorous, concise phrasing):** Excellent. Phrasing is precise and clear, defining all necessary conditions and limits (e.g., $r \gg a$, $\epsilon \gg a$).
+*   **Guideline 7 (Assumptions & Variables):** Excellent. All variables ($a, r, D, \epsilon$) are clearly defined, and assumptions (continuum approximation, initial position, target definition) are well-stated.
+*   **Guideline 8 (Units & Notation):** Excellent. Standard notation, consistent units implicitly.
+*   **Guideline 9 (Not Multipart):** Excellent. Asks for a single quantity (MFPT).
+*   **Guideline 10 (Formatting):** Excellent. Correct LaTeX/Markdown and question tags.
+
+**Overall Feedback:** This is an excellent question. It is well-posed, challenging, and adheres to all guidelines.
+
+---
+
+<question>
+A particle diffuses on a one-dimensional lattice with lattice spacing $a$. The particle has a probability $p=1/2$ of hopping to the right and a probability $1-p=1/2$ of hopping to the left at each time step $\Delta t$. Assume a target is located at a large distance $r = Na$ from the starting point, where $N$ is a large integer. In the continuum limit, the diffusion coefficient is given by $D = a^2/(2\Delta t)$. The particle is subject to stochastic resetting to its initial position with a rate $r_0$. Calculate the Mean First Passage Time (MFPT) to the target in the limit of large $r$, assuming the system reaches a stationary non-equilibrium state, and give your answer as a symbolic expression in terms of $D$ and $r_0$. You can assume that the particle is initially at the origin and the target is far away ($r \to \infty$). Ignore any boundary effects.
+</question>
+
+**Critique:**
+*   **Guideline 1 (Model Physics Scenario):** Excellent. Clearly describes a 1D diffusion with resetting setup.
+*   **Guideline 2 (Answer Type):** Excellent. Asks for a symbolic expression.
+*   **Guideline 3 (Force Multi-Step Reasoning):** Excellent. Requires setting up the Fokker-Planck equation with a resetting term, defining the appropriate boundary conditions (absorbing target, resetting from anywhere), solving for MFPT, and taking the large distance limit. This involves multiple steps and principles.
+*   **Guideline 4 (Be Unique):** Good. While diffusion with resetting is a well-studied topic, solving for MFPT in the large $r$ limit for a specific scenario might be less common than general derivations. However, it's close to standard problems in this subfield.
+*   **Guideline 5 (Single Solution):** Excellent. Should yield a unique symbolic expression.
+*   **Guideline 6 (Rigorous, concise phrasing):** Excellent. Phrasing is precise, defining all conditions, including "stationary non-equilibrium state" and the "large $r$" limit.
+*   **Guideline 7 (Assumptions & Variables):** Excellent. All variables ($a, p, \Delta t, r, D, r_0$) are clearly defined, and assumptions (continuum limit, initial position, large $r$ limit, no other boundary effects) are well-stated.
+*   **Guideline 8 (Units & Notation):** Excellent. Standard notation, consistent units implicitly.
+*   **Guideline 9 (Not Multipart):** Excellent. Asks for a single quantity (MFPT).
+*   **Guideline 10 (Formatting):** Excellent. Correct LaTeX/Markdown and question tags.
+
+**Overall Feedback:** A very strong question. It's challenging and well-defined.
+
+---
+
+<question>
+Consider a hypercubic lattice in $d$ dimensions, where $d > 2$, with lattice spacing $a$. A particle performs a random walk on this lattice. The particle starts at the origin and seeks to reach a target located at the origin itself. The particle resets to the origin with rate $r_0$. Assume the lattice Green's function, $G(0)$, which represents the expected number of visits to the origin starting from the origin in a walk without resetting, is known. Derive the formula for the MFPT to return to the origin, accounting for the stochastic resetting. Your answer should be expressed in terms of $r_0$ and $G(0)$.
+</question>
+
+**Critique:**
+*   **Guideline 1 (Model Physics Scenario):** Excellent. Clearly describes a multi-dimensional random walk with resetting.
+*   **Guideline 2 (Answer Type):** Excellent. Asks for a symbolic expression.
+*   **Guideline 3 (Force Multi-Step Reasoning):** Excellent. Requires understanding the relationship between Green's function, MFPT, and the impact of resetting on the return probability/time. This involves constructing an appropriate equation (e.g., via renewal theory or first-passage principles) that incorporates the resetting term and links it to the standard Green's function.
+*   **Guideline 4 (Be Unique):** Fair. This is a very common and direct application of a known formula or a standard derivation in the context of random walks with resetting, particularly for return to the origin. It's less about a novel scenario and more about recalling/deriving a specific, known result.
+*   **Guideline 5 (Single Solution):** Excellent. Should yield a unique symbolic expression.
+*   **Guideline 6 (Rigorous, concise phrasing):** Excellent. Phrasing is precise, defining the Green's function clearly and specifying the dimensions.
+*   **Guideline 7 (Assumptions & Variables):** Excellent. All variables ($d, a, r_0, G(0)$) are clearly defined, and assumptions (starting at origin, target at origin, $G(0)$ known) are well-stated.
+*   **Guideline 8 (Units & Notation):** Excellent. Standard notation, consistent units implicitly.
+*   **Guideline 9 (Not Multipart):** Excellent. Asks for a single quantity (MFPT).
+*   **Guideline 10 (Formatting):** Excellent. Correct LaTeX/Markdown and question tags.
+
+**Overall Feedback:** A strong question, but it falls short on the "Be Unique" guideline as it's a very standard derivation/formula application.
+
+---
+
+<question>
+Consider a particle diffusing on a one-dimensional lattice with lattice spacing $a$. The particle starts at site $x = 0$ and is searching for a target at site $x = L = Na$, where $N$ is a large integer. Assume the continuum approximation is valid. The particle undergoes diffusion with diffusion coefficient $D$ and is subject to stochastic resetting to its initial position, $x=0$, with a rate $r_0$. Find the stationary non-equilibrium probability distribution, $P(x)$, in the range $0 < x < L$, given the resetting condition. Express the distribution as a function of $x$, $D$, and $r_0$, assuming the total probability is normalized to 1. You may assume an absorbing boundary at $x=L$.
+</question>
+
+**Critique:**
+*   **Guideline 1 (Model Physics Scenario):** Excellent. Clearly describes a 1D diffusion with resetting and an absorbing boundary.
+*   **Guideline 2 (Answer Type):** Excellent. Asks for a symbolic expression of the distribution $P(x)$.
+*   **Guideline 3 (Force Multi-Step Reasoning):** Excellent. Requires setting up the modified Fokker-Planck equation for diffusion with resetting, applying boundary conditions (resetting at $x=0$, absorption at $x=L$), solving the resulting differential equation for the stationary state, and finally normalizing the probability distribution over the given range. This clearly involves multiple principles and steps.
+*   **Guideline 4 (Be Unique):** Fair. Similar to Question 2 and 3, finding the stationary distribution for diffusion with resetting and an absorbing boundary is a common problem in the field. It's a standard derivation rather than a novel scenario.
+*   **Guideline 5 (Single Solution):** Excellent. Should yield a unique symbolic expression.
+*   **Guideline 6 (Rigorous, concise phrasing):** Excellent. Phrasing is precise, specifying the "stationary non-equilibrium probability distribution" and the normalization condition.
+*   **Guideline 7 (Assumptions & Variables):** Excellent. All variables ($a, x, L, D, r_0$) are clearly defined, and assumptions (continuum approximation, initial position, absorbing boundary, normalization) are well-stated.
+*   **Guideline 8 (Units & Notation):** Excellent. Standard notation, consistent units implicitly ($P(x)$ should have units of 1/length).
+*   **Guideline 9 (Not Multipart):** Excellent. Asks for a single quantity ($P(x)$).
+*   **Guideline 10 (Formatting):** Excellent. Correct LaTeX/Markdown and question tags.
+
+**Overall Feedback:** A strong question, but like Question 3, it's a relatively standard derivation for researchers in this area, falling short on the "Be Unique" guideline.
+
+---
+
+<question>
+Consider a two-dimensional square lattice with lattice spacing $a$. A random walker starts at a site adjacent to the origin (target location). In the limit of an infinite two-dimensional lattice, the Mean First Passage Time (MFPT) to the target is expected to approach a universal value. Assuming the diffusion constant $D$ is known, what is this *universal limiting value* of the MFPT in units of $a^2/D$, as $r\rightarrow \infty$, for a random walker that starts at a site *adjacent* to the target site?
+</question>
+
+**Critique:**
+*   **Guideline 1 (Model Physics Scenario):** Good. Describes a 2D random walk.
+*   **Guideline 2 (Answer Type):** Excellent. Asks for a single numerical value in specified units.
+*   **Guideline 3 (Force Multi-Step Reasoning):** Good, but the wording is problematic. This question concerns a very specific, known result in 2D random walks (related to Polya's recurrence theorem). The solution is effectively a numerical constant, not a multi-step derivation in the way the other questions are. It tests specific knowledge rather than multi-principle reasoning.
+*   **Guideline 4 (Be Unique):** Poor. This is a classic, well-known, and frequently cited result in random walk theory (the MFPT from an adjacent site to the origin in infinite 2D). It is not a novel problem.
+*   **Guideline 5 (Single Solution):** Fair. If interpreted as the MFPT from an adjacent site in an infinite lattice, it has a single value. However, the phrase "as $r \rightarrow \infty$" creates ambiguity. If the starting point is *adjacent* to the origin, its distance is fixed at $a$. The limit $r \rightarrow \infty$ typically refers to the starting distance from the target. This contradiction makes the question ambiguous and potentially unanswerable as stated, or at least highly confusing. This phrasing needs to be clarified or removed.
+*   **Guideline 6 (Rigorous, concise phrasing):** Poor. The phrase "as $r\rightarrow \infty$" directly contradicts "starts at a site adjacent to the origin." This makes the question confusing and potentially unanswerable depending on interpretation.
+*   **Guideline 7 (Assumptions & Variables):** Good. Variables ($a, D$) are defined, and assumptions (2D square lattice, infinite lattice) are stated.
+*   **Guideline 8 (Units & Notation):** Excellent. Standard notation, units are consistent ($a^2/D$ are units of time).
+*   **Guideline 9 (Not Multipart):** Excellent. Asks for a single quantity (MFPT value).
+*   **Guideline 10 (Formatting):** Excellent. Correct LaTeX/Markdown and question tags.
+
+**Overall Feedback:** This question has significant flaws in Guideline 4 (lack of uniqueness) and especially Guideline 6 (ambiguous phrasing due to "as $r \rightarrow \infty$" conflicting with "starts at a site adjacent"). It also requires recalling a specific constant rather than a multi-step derivation from principles.
+
+---
+
+**Summary of Recommendations for Improvement:**
+
+1.  **Guideline 4 (Be Unique):**
+    *   **Questions 3, 4, 5:** These questions ask for standard derivations or known values in the field of random walks/diffusion. To improve uniqueness, consider:
+        *   Introducing more complex geometries or boundary conditions (e.g., irregular boundaries, varying diffusion coefficients).
+        *   Combining different physical phenomena (e.g., diffusion with drift *and* resetting).
+        *   Asking for a different quantity that requires adapting standard methods (e.g., variance of first passage time, probability of reaching specific targets before others).
+        *   For Question 3, instead of asking for the known formula, ask for a derivation from first principles using a slightly more complex scenario.
+        *   For Question 5, if it's meant to be a derivation, rephrase it to require a derivation from underlying principles, rather than recalling a specific numerical result.
+
+2.  **Guideline 5 (Single Solution) & 6 (Rigorous, concise phrasing):**
+    *   **Question 5:** The phrase "as $r\rightarrow \infty$" creates a severe ambiguity when the starting point is explicitly stated as "adjacent to the origin." This needs to be resolved.
+        *   **Suggestion 1 (if asking for adjacent start in infinite lattice):** Remove "as $r \rightarrow \infty$". The question would then be: "...what is this *universal limiting value* of the MFPT in units of $a^2/D$, for a random walker that starts at a site *adjacent* to the target site?" (assuming the "infinite two-dimensional lattice" clarifies the context).
+        *   **Suggestion 2 (if $r \to \infty$ is key):** Rephrase the starting condition to be "at a large distance $r$ from the origin" and ask for the *correction term* or a *different aspect* of the MFPT that becomes universal, as the MFPT itself diverges. However, this may then lead back to a standard problem similar to Q1.
+
+Overall, Questions 1 and 2 are excellent. Questions 3 and 4 are strong in execution but could be made more unique. Question 5 needs significant revision due to its ambiguity and lack of uniqueness.
+=== Turn 2: Author refines questions ===
+```xml
+<question>
+Consider a two-dimensional square lattice with lattice spacing $a$. A particle starts at the origin and performs a random walk with equal probability of moving to any of its four nearest neighbors at each time step. A target is located at a distance $r$ from the origin, where $r >> a$. Assume the continuum approximation is valid. If the diffusion coefficient in the continuum is $D$, what is the asymptotic value of the Mean First Passage Time (MFPT) to reach *any* site within a small circle of radius $\epsilon$ around the target location, where $\epsilon$ is a small but finite radius of the target circle (i.e., $\epsilon \gg a$)? Assume that initially the particle starts at the origin. Obtain result in terms of $D$, $r$, and $\epsilon$.
+</question>
+
+<question>
+A particle diffuses on a one-dimensional lattice with lattice spacing $a$. The particle has a probability $p=1/2$ of hopping to the right and a probability $1-p=1/2$ of hopping to the left at each time step $\Delta t$. Assume a target is located at a large distance $r = Na$ from the starting point, where $N$ is a large integer. In the continuum limit, the diffusion coefficient is given by $D = a^2/(2\Delta t)$. The particle is subject to stochastic resetting to its initial position with a rate $r_0$. Calculate the Mean First Passage Time (MFPT) to the target in the limit of large $r$, assuming the system reaches a stationary non-equilibrium state, and give your answer as a symbolic expression in terms of $D$ and $r_0$. You can assume that the particle is initially at the origin and the target is far away ($r \to \infty$). Ignore any boundary effects.
+</question>
+
+<question>
+Consider a hypercubic lattice in $d$ dimensions, where $d > 2$, with lattice spacing $a$. A particle performs a random walk on this lattice. The particle starts at the origin and seeks to reach a target located at the origin itself. The particle resets to the origin with rate $r_0$. *Without assuming prior knowledge of the lattice Green's function*, derive an expression for the Mean First Passage Time (MFPT) to return to the origin, accounting for stochastic resetting. Express your answer in terms of $r_0$ and the probability, $P_{\text{esc}}$, that the walker *never* returns to the origin in the absence of resetting.
+</question>
+
+<question>
+Consider a particle diffusing on a one-dimensional lattice with lattice spacing $a$. The particle starts at site $x = 0$ and is searching for a target at site $x = L = Na$, where $N$ is a large integer. Assume the continuum approximation is valid. The particle undergoes diffusion with diffusion coefficient $D$ and is subject to stochastic resetting to its initial position, $x=0$, with a rate $r_0$. Find the stationary non-equilibrium probability distribution, $P(x)$, in the range $0 < x < L$, given the resetting condition. Express the distribution as a function of $x$, $D$, and $r_0$, assuming the total probability is normalized to 1. You may assume an absorbing boundary at $x=L$.  Furthermore, calculate the probability current $J$ in the stationary state as a function of $D$ and $r_0$.
+</question>
+
+<question>
+Consider a two-dimensional square lattice with lattice spacing $a$. A random walker starts at a site adjacent to the origin (target location).  In the limit of an infinite two-dimensional lattice, the Mean First Passage Time (MFPT) to the target approaches a universal value. What is this *universal limiting value* of the MFPT in units of $a^2/D$, assuming the diffusion constant is $D$, for a random walker that starts at a site *adjacent* to the target site?
+</question>
+```
+=== Final questions generated ===

@@ -1,0 +1,204 @@
+=== Turn 0: Author generates questions ===
+Here are some novel university-level physics questions based on the given topics, key concepts, and guidelines:
+
+1.  <question>Consider a sparse signal $x \in \mathbb{R}^n$ that we want to recover from noisy measurements $y = Ax + w$, where $A \in \mathbb{R}^{m \times n}$ is a subgaussian random matrix and $w \sim \mathcal{N}(0, \sigma^2 I_m)$ is Gaussian noise. Assume that $x$ has at most $k$ non-zero entries. Determine an upper bound on the number of samples $m$ (in terms of $n, k, \sigma^2$) required for a Bayesian recovery algorithm to achieve a mean squared error (MSE) of $\epsilon$, taking into account the density shift bounds induced by coherence in the matrix $A$. Provide the result as a function $m = f(n, k, \sigma^2, \epsilon)$.</question>
+
+2.  <question>Let $A \in \mathbb{R}^{m \times n}$ be a matrix used in a linear inverse problem $y = Ax + w$, where $x \in \mathbb{R}^n$ is the unknown signal and $w \in \mathbb{R}^m$ is noise. Suppose $A$ has restricted isometry property (RIP) constant $\delta_k$ for $k$-sparse vectors. If we use an $\ell_1$ minimization approach to recover $x$, determine an upper bound on the error $\| \hat{x} - x \|_2$ in terms of $\delta_k$, $\|w\|_2$, and the sparsity $k$, assuming $x$ is exactly $k$-sparse. Express the result in LaTeX notation.</question>
+
+3.  <question>Assume $A \in \mathbb{R}^{m \times n}$ is a subgaussian random matrix. We are solving the inverse problem $y = Ax + w$ where $x \in \mathbb{R}^n$ is $k$-sparse and $w$ is noise.  If we use approximate covering numbers to bound the complexity of a non-convex recovery algorithm, and the sample complexity $m$ scales as $m = Ck \log(n/k)$, find an explicit expression for the constant $C$ appearing in this sample complexity bound that ensures successful recovery with high probability, expressed in terms of parameters quantifying the subgaussian nature of $A$ and the desired accuracy.</question>
+
+4.  <question>In a Bayesian framework for solving the linear inverse problem $y = Ax + w$, where $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$, and $w \sim \mathcal{N}(0, \sigma^2 I_m)$, consider a prior distribution on $x$ given by $p(x) \propto \exp(-\lambda \|x\|_1)$.  Suppose the matrix $A$ has columns with a high degree of coherence, quantified by $\mu = \max_{i \neq j} \frac{|a_i^T a_j|}{\|a_i\|_2 \|a_j\|_2}$.  Derive an expression for the expected number of samples $m$ needed to accurately recover $x$ (in terms of $n, k, \lambda, \sigma, \mu$) when the posterior distribution is approximated using a variational inference technique that accounts for the coherence $\mu$. Express $m$ as a symbolic function of the other variables.</question>
+
+5.  <question>Consider the problem of recovering a signal $x \in \mathbb{R}^n$ from measurements $y = Ax + w$, where $A \in \mathbb{R}^{m \times n}$ is a subgaussian random matrix and $w$ is additive noise. Let $\epsilon > 0$ be the desired accuracy of the recovery. Using density shift bounds, determine the number of samples $m$ needed to ensure that the empirical distribution of the measurements $y$ is close to the true distribution (in some suitable statistical distance) with high probability. Assume that $x$ is $k$-sparse. Express $m$ as a function of $n, k$, $\epsilon$, and parameters characterizing the subgaussian properties of $A$ and the noise $w$.</question>
+=== Turn 0: Critic feedback ===
+Here's a critique of each question against the provided guidelines, with concise, actionable feedback:
+
+---
+
+**Question 1 Critique:**
+
+*   **Guideline 2 (Mathematical Structure):** "Bayesian recovery algorithm" is too broad; there are many. "Density shift bounds induced by coherence in the matrix A" is a very specific, advanced concept that might not have a single, universally accepted bound that directly leads to an MSE guarantee in terms of $m$ for *any* Bayesian algorithm. This makes the setup ambiguous and potentially unsolvable without more context.
+*   **Actionable Feedback:** Specify the exact Bayesian recovery algorithm (e.g., MMSE estimator with a specific prior like a sparse Gaussian or spike-and-slab). Clarify or reference the specific theoretical framework/result for "density shift bounds induced by coherence" that the student is expected to use, or simplify the phrasing if a more general bound is intended.
+
+---
+
+**Question 2 Critique:**
+
+*   **Guideline 3 (Solvable Target - No proofs/derivations):** The phrasing "determine an upper bound" often implies derivation in a university context. If it means "state the known theorem," it conflicts with Guideline 6. If it means "derive it," it directly violates Guideline 3. This is a fundamental, well-known result in compressed sensing.
+*   **Guideline 6 (Originality):** This is a very standard and widely published result in compressed sensing literature (e.g., from Candes, Romberg, Tao). Asking to "determine" it would be asking for a derivation of a textbook theorem, which is explicitly disallowed.
+*   **Actionable Feedback:** Rephrase the question to avoid asking for a derivation of a known theorem. Instead of "determine an upper bound," ask for an *application* of this bound, or a *comparison* of errors under different conditions, or a *condition* on parameters that ensures a certain error. This would require multi-step reasoning without being a direct derivation.
+
+---
+
+**Question 3 Critique:**
+
+*   **Overall Assessment:** This question is very well-formulated and adheres to all guidelines. It's highly specific, requires deep theoretical knowledge to recall or piece together the constant, and avoids asking for a full derivation while still requiring multi-step reasoning.
+*   **Actionable Feedback:** None. This question is excellent.
+
+---
+
+**Question 4 Critique:**
+
+*   **Guideline 3 (Solvable Target - No proofs/derivations):** The question explicitly states "Derive an expression for...". This directly violates Guideline 3.
+*   **Guideline 2 (Mathematical Structure):** "Accurately recover $x$" is vague. What metric of accuracy (e.g., $\ell_2$ error, support recovery)? What threshold constitutes "accurate"? This impacts the quantitative definition of "expected number of samples."
+*   **Actionable Feedback:** Change "Derive an expression for" to "Determine an expression for" or "State an expression for," implying the student should recall or apply a known theoretical result/formula structure. Define "accurately recover $x$" more precisely (e.g., "to achieve an $\ell_2$ error of $\epsilon$ with high probability").
+
+---
+
+**Question 5 Critique:**
+
+*   **Guideline 2 (Mathematical Structure):** The $\epsilon$ is defined as "desired accuracy of the recovery," but the question asks for $m$ to ensure "the empirical distribution of the measurements $y$ is close to the true distribution." These are different concepts. While related, the connection between $\epsilon$ (recovery error of $x$) and distributional closeness of $y$ is not explicitly defined, leading to ambiguity.
+*   **Guideline 5 (Concise and Relevant) & 9 (Language and Notation):** "Suitable statistical distance" is vague. The specific statistical distance (e.g., total variation, KL divergence, Wasserstein) matters for the bound. Also, the distribution of "additive noise" $w$ is not specified (e.g., Gaussian, subgaussian, bounded), which is crucial for density shift bounds.
+*   **Actionable Feedback:**
+    *   Clarify the role of $\epsilon$. Either define $\epsilon$ as a measure of the statistical distance between distributions, or link recovery accuracy to distributional closeness explicitly.
+    *   Specify the type of statistical distance (e.g., total variation distance).
+    *   Specify the distribution of the noise $w$ (e.g., Gaussian, subgaussian).
+=== Turn 1: Author refines questions ===
+```python
+questions = [
+    """<question>Consider a sparse signal $x \in \mathbb{R}^n$ that we want to recover from noisy measurements $y = Ax + w$, where $A \in \mathbb{R}^{m \times n}$ is a subgaussian random matrix and $w \sim \mathcal{N}(0, \sigma^2 I_m)$ is Gaussian noise. Assume that $x$ has at most $k$ non-zero entries. We use a Bayesian MMSE estimator with a Laplace prior to recover $x$.  Assuming a specific density shift bound relating the total variation distance between the posterior distribution under $A$ and a reference Gaussian posterior, determine an upper bound on the number of samples $m$ (in terms of $n, k, \sigma^2$) required to achieve a mean squared error (MSE) of $\epsilon$.  Assume the density shift bound scales linearly with the total variation distance. Provide the result as a function $m = f(n, k, \sigma^2, \epsilon)$.</question>""",
+    """<question>Let $A \in \mathbb{R}^{m \times n}$ be a matrix used in a linear inverse problem $y = Ax + w$, where $x \in \mathbb{R}^n$ is the unknown signal and $w \in \mathbb{R}^m$ is noise. Suppose $A$ has restricted isometry property (RIP) constant $\delta_k$ for $k$-sparse vectors. We use an $\ell_1$ minimization approach to recover $x$, resulting in an estimate $\hat{x}$.  Given that $\|w\|_2 \le \eta$ and $x$ is exactly $k$-sparse, determine a *condition* on $\delta_k$ such that the error $\| \hat{x} - x \|_2$ is less than or equal to $C \eta$ for some constant $C$. Express the result in LaTeX notation.</question>""",
+    """<question>Assume $A \in \mathbb{R}^{m \times n}$ is a subgaussian random matrix. We are solving the inverse problem $y = Ax + w$ where $x \in \mathbb{R}^n$ is $k$-sparse and $w$ is noise.  If we use approximate covering numbers to bound the complexity of a non-convex recovery algorithm, and the sample complexity $m$ scales as $m = Ck \log(n/k)$, find an explicit expression for the constant $C$ appearing in this sample complexity bound that ensures successful recovery with high probability, expressed in terms of parameters quantifying the subgaussian nature of $A$ and the desired accuracy.</question>""",
+    """<question>In a Bayesian framework for solving the linear inverse problem $y = Ax + w$, where $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$, and $w \sim \mathcal{N}(0, \sigma^2 I_m)$, consider a prior distribution on $x$ given by $p(x) \propto \exp(-\lambda \|x\|_1)$. Suppose the matrix $A$ has columns with a high degree of coherence, quantified by $\mu = \max_{i \neq j} \frac{|a_i^T a_j|}{\|a_i\|_2 \|a_j\|_2}$. Using a variational inference technique to approximate the posterior distribution, *state* an expression for the expected number of samples $m$ needed to achieve an $\ell_2$ recovery error of at most $\epsilon$ with high probability (in terms of $n, k, \lambda, \sigma, \mu$), assuming the variational inference method effectively reduces the coherence by a factor of $1/\mu$. Express $m$ as a symbolic function of the other variables.</question>""",
+    """<question>Consider the problem of recovering a signal $x \in \mathbb{R}^n$ from measurements $y = Ax + w$, where $A \in \mathbb{R}^{m \times n}$ is a subgaussian random matrix and $w \sim \mathcal{N}(0, \sigma^2 I_m)$ is additive Gaussian noise. Let $\epsilon > 0$. Using density shift bounds based on the total variation distance, determine the number of samples $m$ needed to ensure that the total variation distance between the empirical distribution of the measurements $y$ and the true distribution is less than $\epsilon$ with high probability. Assume that $x$ is $k$-sparse. Express $m$ as a function of $n, k$, $\epsilon$, parameters characterizing the subgaussian properties of $A$, and $\sigma$.</question>"""
+]
+
+for i, question in enumerate(questions):
+    print(f"{i+1}. {question}")
+```
+=== Turn 1: Critic feedback ===
+Here's a critique of each question based on your guidelines:
+
+---
+
+### Question 1 Critique:
+
+**Guidelines Met:**
+*   **1. Input Format:** Fully text-based.
+*   **3. Solvable Target:** Asks for a clear symbolic result ($m = f(\dots)$).
+*   **4. Single Output:** Expects a single function.
+*   **8. Solution Formatting:** Question uses LaTeX, expects LaTeX output.
+*   **9. Language and Notation:** Rigorous and consistent.
+*   **10. Single Part:** Asks for one single answer.
+*   **11. No Answers/Solutions:** Provides only the question.
+*   **12. No Numeric Approximations:** Requires a symbolic expression.
+
+**Guidelines Not Met / Areas for Improvement:**
+*   **2. Mathematical Structure / 7. Multi-Step Reasoning:** The phrasing "Assuming a specific density shift bound relating the total variation distance..." makes this question highly reliant on the student knowing a *very specific* and potentially obscure theoretical result from advanced research literature. It's unlikely that such a bound can be *derived* via "a logical sequence of algebraic or analytic steps" from commonly known definitions and theorems. Instead, it seems to require *recalling* a pre-derived formula. This leans towards a "recall" task rather than a "multi-step reasoning" task, and without providing the form of this "specific density shift bound," it makes the question unanswerable for most, bordering on a "puzzle-like" scenario if the exact bound is not universally taught or derivable.
+*   **5. Concise and Relevant:** The description of the required bound is specific but also vague in terms of its exact form, leading to the issue above.
+*   **6. Originality:** While it's not a standard textbook problem, its uniqueness also implies a high dependency on specialized knowledge, potentially making it too niche unless the target audience is expected to be intimately familiar with the exact research area it references.
+
+**Actionable Feedback:** To make this question generally solvable and align with "multi-step reasoning," the "specific density shift bound" should be *provided* in an explicit functional form (e.g., "$TVD \le C_1 \exp(-C_2 m/k)$ and $MSE \le C_3 TVD^2$ for some constants $C_1, C_2, C_3$ related to $\sigma^2$ and subgaussian parameters"). This would allow students to perform algebraic manipulation to find $m$, rather than recalling a very specific theoretical result.
+
+---
+
+### Question 2 Critique:
+
+**Guidelines Met:**
+*   **1. Input Format:** Fully text-based.
+*   **2. Mathematical Structure:** Well-defined setup, standard linear inverse problem with RIP.
+*   **3. Solvable Target:** Asks for a clear symbolic result (a condition on $\delta_k$).
+*   **4. Single Output:** Expects a single condition.
+*   **5. Concise and Relevant:** All information provided is essential.
+*   **8. Solution Formatting:** Question uses LaTeX, expects LaTeX output.
+*   **9. Language and Notation:** Rigorous and consistent.
+*   **10. Single Part:** Asks for one single answer.
+*   **11. No Answers/Solutions:** Provides only the question.
+*   **12. No Numeric Approximations:** Requires a symbolic expression.
+
+**Guidelines Not Met / Areas for Improvement:**
+*   **6. Originality:** This is a *very standard* and well-known result in compressed sensing (e.g., the condition $\delta_{2k} < \sqrt{2}-1$ or similar for exact $k$-sparse recovery error bounds). While it's fundamental, it might fall under "rewording standard textbook problems" if the intention is to avoid testing recall of highly specific, common theorems. If the goal is to assess foundational knowledge, it's acceptable. If the goal is truly original problem-solving requiring multi-step derivation from first principles, it might be too common.
+*   **7. Multi-Step Reasoning:** While deriving this condition from first principles involves several steps, it's often presented as a theorem. This means the question could be answered by direct recall for those familiar with the result, rather than by a multi-step derivation during the assessment.
+
+**Actionable Feedback:** Depending on the target audience and assessment goals, this question might be too common. To enhance originality and multi-step reasoning, consider a slight variation of the problem, such as:
+    *   A different sparsity model (e.g., compressible signals).
+    *   A different noise model (e.g., noise with specific distribution assumptions affecting the bound).
+    *   Asking for a specific intermediate step or a slightly less common condition.
+    *   Specifying the type of constants expected (e.g., universal, or dependent on specific subgaussian norms).
+
+---
+
+### Question 3 Critique:
+
+**Guidelines Met:**
+*   **1. Input Format:** Fully text-based.
+*   **3. Solvable Target:** Asks for a clear symbolic result (an explicit expression for $C$).
+*   **4. Single Output:** Expects a single expression.
+*   **8. Solution Formatting:** Question uses LaTeX, expects LaTeX output.
+*   **9. Language and Notation:** Rigorous and consistent.
+*   **10. Single Part:** Asks for one single answer.
+*   **11. No Answers/Solutions:** Provides only the question.
+*   **12. No Numeric Approximations:** Requires a symbolic expression.
+
+**Guidelines Not Met / Areas for Improvement:**
+*   **2. Mathematical Structure / 7. Multi-Step Reasoning:** Similar to Question 1, this question refers to "approximate covering numbers to bound the complexity of a non-convex recovery algorithm." The request for "an explicit expression for the constant $C$" in $m = Ck \log(n/k)$ is highly specific. Such constants are typically the result of very complex, advanced theoretical derivations in research papers. It is highly unlikely that a student could derive this constant in an assessment setting unless they are intimately familiar with a *very specific* paper and its derivations. This makes it a recall task of an advanced, specific result, violating the spirit of "multi-step reasoning" and potentially making it an "unsolvable" question without external, niche information. The problem setup also doesn't define what "parameters quantifying the subgaussian nature of A" means (e.g., subgaussian norm $\kappa$) or what "desired accuracy" refers to (e.g., $\epsilon$ or failure probability $\delta$).
+*   **5. Concise and Relevant:** While the request is concise, the implicit knowledge required makes the information insufficient for general solvability.
+*   **6. Originality:** While original in its specific wording, it relies on re-phrasing a very specific, advanced research result, which is problematic for a general assessment.
+
+**Actionable Feedback:** To make this question viable, you *must* provide the specific theoretical relationship from which $C$ can be extracted or derived. For example, "Assume a known theoretical result states that for successful recovery with high probability $1-\delta$, the sample complexity is given by $m \ge \frac{c_0}{\sigma^2_A} k \log(n/k) \log(1/\delta)$, where $\sigma^2_A$ is the subgaussian variance proxy of the matrix rows. Determine the constant $C$." Without such explicit information, it's unanswerable as a multi-step reasoning problem. Also, define the subgaussian parameters more clearly.
+
+---
+
+### Question 4 Critique:
+
+**Guidelines Met:**
+*   **1. Input Format:** Fully text-based.
+*   **3. Solvable Target:** Asks for a clear symbolic result (an expression for $m$).
+*   **4. Single Output:** Expects a single expression.
+*   **8. Solution Formatting:** Question uses LaTeX, expects LaTeX output.
+*   **9. Language and Notation:** Rigorous and consistent.
+*   **10. Single Part:** Asks for one single answer.
+*   **11. No Answers/Solutions:** Provides only the question.
+*   **12. No Numeric Approximations:** Requires a symbolic expression.
+
+**Guidelines Not Met / Areas for Improvement:**
+*   **2. Mathematical Structure / 7. Multi-Step Reasoning:** Similar to Questions 1 and 3, this question hinges on a very specific theoretical result. The assumption "assuming the variational inference method effectively reduces the coherence by a factor of $1/\mu$" is a strong, specific claim that points to a particular research finding. It's highly unlikely that a student could derive the full sample complexity $m$ under these specific conditions without recalling a specific advanced theorem. This makes it a retrieval task for a niche result rather than a problem requiring multi-step derivation from general principles. The problem formulation also asks to "state" the expression, which reinforces the idea of recall rather than derivation.
+*   **5. Concise and Relevant:** The specific assumption about coherence reduction is a hint, but still doesn't provide enough general information to derive the sample complexity *unless* that specific theoretical result is already known by the student.
+*   **6. Originality:** While original in its combination of elements, it seems to re-phrase a very specific advanced theoretical result, similar to the issues in Q1 and Q3.
+
+**Actionable Feedback:** To make this question solvable through multi-step reasoning, you must provide the underlying theoretical relationship. For example, "Assume a general sample complexity bound states $m$ is proportional to $k \cdot (\text{effective coherence})^2 \cdot \log(n)$ for some constant, and that the variational inference method implies an effective coherence of $\mu_{eff} = \mu_0 / \mu$. Determine $m$." This converts it into an algebraic manipulation problem. Also, clarify what "expected number of samples" means (e.g., sample complexity for successful recovery with high probability).
+
+---
+
+### Question 5 Critique:
+
+**Guidelines Met:**
+*   **1. Input Format:** Fully text-based.
+*   **3. Solvable Target:** Asks for a clear symbolic result (an expression for $m$).
+*   **4. Single Output:** Expects a single expression.
+*   **8. Solution Formatting:** Question uses LaTeX, expects LaTeX output.
+*   **9. Language and Notation:** Uses standard terms but creates a conceptual issue.
+*   **10. Single Part:** Asks for one single answer.
+*   **11. No Answers/Solutions:** Provides only the question.
+*   **12. No Numeric Approximations:** Requires a symbolic expression.
+
+**Guidelines Not Met / Areas for Improvement:**
+*   **2. Mathematical Structure:** This is the most significant issue. The phrase "total variation distance between the empirical distribution of the measurements $y$ and the true distribution" is conceptually flawed in this context. For a single realization of the measurement vector $y \in \mathbb{R}^m$, the "empirical distribution of $y$" is not standardly defined in a way that allows computing a TV distance to the "true distribution" $P_y = \mathcal{N}(Ax, \sigma^2 I_m)$.
+    *   An empirical distribution is typically formed from multiple independent and identically distributed (i.i.d.) samples (e.g., if you had $N$ independent measurement vectors $y_1, \dots, y_N$). If $y$ is treated as $m$ scalar measurements, they are *not* i.i.d. because of the $A$ matrix.
+    *   Standard density shift bounds relate distributions of estimators, posteriors, or observations under different underlying parameters/models, not "empirical" vs. "true" for a single observation vector.
+*   **5. Concise and Relevant:** The ill-defined target makes the question confusing and potentially irrelevant.
+*   **7. Multi-Step Reasoning:** Because the target concept is ill-defined, it's impossible to apply multi-step reasoning to reach a solution.
+
+**Actionable Feedback:** This question needs a complete re-conceptualization of its target. Instead of "empirical distribution of $y$," consider:
+    *   The total variation distance between the posterior distribution $p(x|y)$ and a reference distribution (e.g., a Gaussian approximation, or the posterior under a different $A'$ or $x'$).
+    *   A concentration bound on some statistic of $y$ (e.g., $\|A^T y - A^T A x\|_2$) related to subgaussian properties, where $m$ would determine the probability of concentration.
+    *   Relating the TV distance between the measurement distribution $P_y$ and $P_{y'}$ (for true signals $x$ and $x'$ respectively) to sample complexity, which is common in statistical decision theory.
+
+---
+
+**Overall Summary:**
+The questions demonstrate a good understanding of formatting and the desire for symbolic, multi-step answers. However, a pervasive issue, particularly in Questions 1, 3, and 4, is their over-reliance on highly specific and advanced theoretical results (often from cutting-edge research) without providing the necessary context or explicit functional forms. This transforms them into recall-based questions for niche knowledge rather than general multi-step reasoning problems. Question 5 suffers from a fundamental conceptual flaw in its definition of "empirical distribution" in this context. For future questions, focus on problems where the "multi-step reasoning" can be performed using standard mathematical tools and well-known theorems, or where critical, advanced relationships are explicitly provided within the problem statement.
+=== Turn 2: Author refines questions ===
+```python
+questions = [
+    """<question>Consider a sparse signal $x \in \mathbb{R}^n$ that we want to recover from noisy measurements $y = Ax + w$, where $A \in \mathbb{R}^{m \times n}$ is a subgaussian random matrix with independent rows and $w \sim \mathcal{N}(0, \sigma^2 I_m)$ is Gaussian noise. Assume that $x$ has at most $k$ non-zero entries. We use a Bayesian MMSE estimator with a Laplace prior to recover $x$.  Assume the total variation distance (TVD) between the posterior distribution under $A$ and a reference Gaussian posterior is bounded by $TVD \leq C_1 \sqrt{k/m}$, and the mean squared error (MSE) is bounded by $MSE \leq C_2 \sigma^2 TVD^2$, where $C_1$ and $C_2$ are constants depending on the subgaussian norm of the rows of A. Determine an upper bound on the number of samples $m$ (in terms of $n, k, \sigma^2, \epsilon, C_1, C_2$) required to achieve a mean squared error (MSE) of $\epsilon$. Provide the result as a function $m = f(n, k, \sigma^2, \epsilon, C_1, C_2)$.</question>""",
+    """<question>Let $A \in \mathbb{R}^{m \times n}$ be a matrix used in a linear inverse problem $y = Ax + w$, where $x \in \mathbb{R}^n$ is the unknown signal and $w \in \mathbb{R}^m$ is noise. Suppose $A$ has restricted isometry property (RIP) constant $\delta_{2k}$ for $2k$-sparse vectors. We use an $\ell_1$ minimization approach to recover $x$, resulting in an estimate $\hat{x}$. Given that $\|w\|_2 \le \eta$ and $x$ is exactly $k$-sparse, and assuming the recovery error satisfies $\| \hat{x} - x \|_2 \leq C_1 \frac{\|w\|_2}{\sqrt{1-\delta_{2k}}}$ for some constant $C_1$, determine a *condition* on $\delta_{2k}$ such that the error $\| \hat{x} - x \|_2$ is less than or equal to $C \eta$ for some constant $C$. Express the result in LaTeX notation. What is the largest possible value of $C$ for which this condition guarantees the error bound?</question>""",
+    """<question>Assume $A \in \mathbb{R}^{m \times n}$ is a subgaussian random matrix with independent rows and subgaussian variance proxy $\sigma_A^2$. We are solving the inverse problem $y = Ax + w$ where $x \in \mathbb{R}^n$ is $k$-sparse and $w$ is noise. Assume a known theoretical result states that for successful recovery with high probability $1-\delta$ using a specific non-convex algorithm, the sample complexity is given by $m \ge \frac{c_0}{\sigma^2_A} k \log(n/k) \log(1/\delta)$, where $c_0$ is a universal constant. Determine an explicit expression for the constant $C$ appearing in the sample complexity bound $m = C k \log(n/k)$ that ensures successful recovery with high probability $1-\delta$. Express the result in terms of $\sigma_A^2$, $\delta$, and $c_0$.</question>""",
+    """<question>In a Bayesian framework for solving the linear inverse problem $y = Ax + w$, where $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$, and $w \sim \mathcal{N}(0, \sigma^2 I_m)$, consider a prior distribution on $x$ given by $p(x) \propto \exp(-\lambda \|x\|_1)$. Suppose the matrix $A$ has columns with a high degree of coherence, quantified by $\mu = \max_{i \neq j} \frac{|a_i^T a_j|}{\|a_i\|_2 \|a_j\|_2}$. Assume a general sample complexity bound states $m$ is proportional to $k \cdot (\text{effective coherence})^2 \cdot \log(n)$, specifically $m \ge c \cdot k \cdot \mu_{eff}^2 \cdot \log(n)$ for some constant $c$. Suppose that a variational inference method reduces the effective coherence, such that $\mu_{eff} = \mu / K$, where $K$ is a factor representing the improvement in coherence due to variational inference. *State* an expression for the expected number of samples $m$ needed to achieve an $\ell_2$ recovery error of at most $\epsilon$ with high probability (in terms of $n, k, \mu, K, c$), assuming this bound holds. Express $m$ as a symbolic function of the other variables.</question>""",
+    """<question>Consider the problem of recovering a signal $x \in \mathbb{R}^n$ from measurements $y = Ax + w$, where $A \in \mathbb{R}^{m \times n}$ is a subgaussian random matrix with independent rows and $w \sim \mathcal{N}(0, \sigma^2 I_m)$ is additive Gaussian noise. Let $\epsilon > 0$. Define $P_y$ and $P_{y'}$ as the probability distributions of the measurement vectors $y = Ax + w$ and $y' = Ax' + w$, respectively, where $x$ and $x'$ are two different $k$-sparse signals satisfying $\|x - x'\|_2^2 \geq \epsilon$. Assume that the total variation distance between these distributions is bounded by $TV(P_y, P_{y'}) \leq \sqrt{m} \|A\| \|x - x'\|_2 / \sigma $, where $\|A\|$ represents the operator norm of the matrix $A$. Determine the number of samples $m$ needed to ensure that the total variation distance between $P_y$ and $P_{y'}$ is less than $\epsilon$ with high probability.  Express $m$ as a function of $n, k$, $\epsilon$, the operator norm $\|A\|$, and $\sigma$.</question>"""
+]
+
+for i, question in enumerate(questions):
+    print(f"{i+1}. {question}")
+```
+=== Final questions generated ===

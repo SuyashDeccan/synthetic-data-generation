@@ -1,0 +1,167 @@
+=== Turn 0: Author generates questions ===
+Here are some novel university-level mathematics questions:
+
+1.  <question>Let $G$ be a linear group acting on a vector space $V$. Suppose $G$ satisfies Kazhdan's Property (T). If $H$ is a subgroup of $G$ of finite index, and $\rho: G \to U(H)$ is a unitary representation of $G$, what is the dimension of the space of $H$-invariant vectors $V^H$ in terms of the dimension of the space of $G$-invariant vectors $V^G$ and the index $[G:H]$?</question>
+
+2.  <question>Consider a discrete subgroup $\Gamma$ of $SL(2, \mathbb{R})$. Assume that $\Gamma$ contains a free group on two generators. According to the Tits Alternative, $\Gamma$ is either virtually solvable or contains a non-abelian free subgroup. If $\Gamma$ is not virtually solvable, and $S$ is a symmetric generating set for $\Gamma$, what is the lower bound on the growth rate $\gamma$ of $\Gamma$ with respect to $S$, given that $\gamma$ is defined by $\gamma = \lim_{n \to \infty} |B_S(n)|^{1/n}$, where $B_S(n)$ is the ball of radius $n$ around the identity element?</question>
+
+3.  <question>Let $G$ be a compact topological group acting continuously on a Hausdorff space $X$. Consider the orbit equivalence relation on $X$ defined by $x \sim y$ if and only if there exists $g \in G$ such that $y = g \cdot x$. Let $X/G$ be the orbit space endowed with the quotient topology. If $f: X \to \mathbb{R}$ is a continuous $G$-invariant function, what is the expression for the induced function $\tilde{f}: X/G \to \mathbb{R}$ in terms of $f$ and the quotient map $q: X \to X/G$?</question>
+
+4.  <question>Let $G$ be a Lie group and $\mathfrak{g}$ its Lie algebra. Consider the adjoint representation $Ad: G \to GL(\mathfrak{g})$. If $X, Y \in \mathfrak{g}$, what is the expression for $Ad(\exp(tX))(Y)$ to first order in $t$, where $\exp: \mathfrak{g} \to G$ is the exponential map?</question>
+
+5.  <question>Let $G$ be a discrete group acting freely on a set $X$. Suppose there exists a paradoxical decomposition of $X$ with respect to $G$, i.e., $X = \bigcup_{i=1}^n A_i = \bigcup_{i=1}^n B_i$, where the $A_i$ and $B_i$ are pairwise disjoint, and there exist $g_1, \dots, g_n, h_1, \dots, h_n \in G$ such that $X = \bigcup_{i=1}^n g_i A_i = \bigcup_{i=1}^n h_i B_i$. If $\nu$ is a finitely additive $G$-invariant measure on $X$, what are the possible values of $\nu(X)$?</question>
+
+6.  <question>Consider the Heisenberg group $H$, a 3-dimensional Lie group with underlying manifold $\mathbb{R}^3$ and group law $(x_1, y_1, z_1) \cdot (x_2, y_2, z_2) = (x_1 + x_2, y_1 + y_2, z_1 + z_2 + x_1 y_2)$. Determine the commutator subgroup $[H, H]$ of $H$. Express your answer as a subset of $\mathbb{R}^3$.</question>
+
+7.  <question>Let $SU(2)$ be the special unitary group of degree 2.  Consider the map $\phi: S^3 \to SU(2)$ given by identifying $S^3$ with the unit quaternions.  If $q_1$ and $q_2$ are unit quaternions, and $A_1, A_2 \in SU(2)$ are their respective images under an isomorphism $\phi$, what is the element in $SU(2)$ that corresponds to the product $q_1q_2$ in terms of $A_1$ and $A_2$? </question>
+=== Turn 0: Critic feedback ===
+Here's a critique of each question, following your guidelines:
+
+**Question 1:**
+Let $G$ be a linear group acting on a vector space $V$. Suppose $G$ satisfies Kazhdan's Property (T). If $H$ is a subgroup of $G$ of finite index, and $\rho: G \to U(H)$ is a unitary representation of $G$, what is the dimension of the space of $H$-invariant vectors $V^H$ in terms of the dimension of the space of $G$-invariant vectors $V^G$ and the index $[G:H]$?
+
+*   **Critique:**
+    *   **Guideline 2 (Mathematical Structure) & 9 (Language and Notation):** The notation "$\rho: G \to U(H)$" is problematic. If $H$ is a subgroup of $G$, then $U(H)$ (unitary group of $H$) makes no sense as the target space for a representation of $G$. Representations map to $GL(V)$ or $U(V)$ where $V$ is a vector space (or Hilbert space for unitary representations). This makes the question ill-posed as stated. Assuming it means $\rho: G \to U(V)$ where $V$ is a Hilbert space, the question becomes clearer, but the current phrasing is a critical flaw.
+    *   **Guideline 5 (Concise and Relevant):** The statement "$\rho: G \to U(H)$" is confusing and irrelevant, likely a typo for $U(V)$.
+    *   **Guideline 6 (Originality) & 7 (Multi-Step Reasoning):** Even with correction, this is a very specific result in representation theory (e.g., related to induction/restriction or specific properties of Property (T) for *irreducible* representations). For general unitary representations, the relationship between $\dim(V^G)$ and $\dim(V^H)$ might not be a simple formula involving just $\dim(V^G)$ and $[G:H]$. This question might be too niche or complex for a single-expression answer unless a very specific result is targeted.
+
+*   **Actionable Feedback:** Correct the definition of the representation. Clarify the nature of $V$ (e.g., a Hilbert space for unitary representations). Re-evaluate if a simple symbolic answer exists for *any* unitary representation under these conditions, or if the question needs to specify irreducible representations or a particular construction.
+
+**Question 2:**
+Consider a discrete subgroup $\Gamma$ of $SL(2, \mathbb{R})$. Assume that $\Gamma$ contains a free group on two generators. According to the Tits Alternative, $\Gamma$ is either virtually solvable or contains a non-abelian free subgroup. If $\Gamma$ is not virtually solvable, and $S$ is a symmetric generating set for $\Gamma$, what is the lower bound on the growth rate $\gamma$ of $\Gamma$ with respect to $S$, given that $\gamma = \lim_{n \to \infty} |B_S(n)|^{1/n}$, where $B_S(n)$ is the ball of radius $n$ around the identity element?
+
+*   **Critique:**
+    *   **Guideline 5 (Concise and Relevant):** The condition "$\Gamma$ contains a free group on two generators" implies that $\Gamma$ is not virtually solvable (as solvable groups cannot contain non-abelian free groups). Therefore, the subsequent clause "If $\Gamma$ is not virtually solvable" is redundant.
+    *   **Guideline 6 (Originality):** While not a trivial textbook problem, the core idea (growth rate of a group containing a free group) is a direct consequence of growth definitions and fundamental group theory. It's a standard result that groups containing a non-abelian free subgroup have exponential growth. The specific lower bound is typically the growth rate of the free subgroup itself.
+
+*   **Actionable Feedback:** Remove the redundant clause "If $\Gamma$ is not virtually solvable". The question is otherwise well-posed.
+
+**Question 3:**
+Let $G$ be a compact topological group acting continuously on a Hausdorff space $X$. Consider the orbit equivalence relation on $X$ defined by $x \sim y$ if and only if there exists $g \in G$ such that $y = g \cdot x$. Let $X/G$ be the orbit space endowed with the quotient topology. If $f: X \to \mathbb{R}$ is a continuous $G$-invariant function, what is the expression for the induced function $\tilde{f}: X/G \to \mathbb{R}$ in terms of $f$ and the quotient map $q: X \to X/G$?
+
+*   **Critique:**
+    *   **Guideline 6 (Originality):** This is a very standard definition in topology (the universal property of quotient maps). It's essentially asking for the definition of an induced map on a quotient space given an invariant function. It's not novel.
+    *   **Guideline 7 (Multi-Step Reasoning):** It requires only a single conceptual step: recalling the definition of how a map factors through a quotient space. It doesn't involve complex algebraic or analytic steps.
+    *   **Guideline 5 (Concise and Relevant):** The conditions "$G$ compact" and "$X$ Hausdorff" are generally important for properties of the orbit space (e.g., $X/G$ being Hausdorff), but they are not necessary to define the induced function $\tilde{f}$. This makes the question slightly less concise than it could be for the specific task.
+
+*   **Actionable Feedback:** This question is too basic and lacks originality. Replace it with a problem that requires more advanced reasoning about group actions, orbit spaces, or invariant functions (e.g., involving slices, principal bundles, or specific properties that *do* depend on $G$ being compact and $X$ being Hausdorff).
+
+**Question 4:**
+Let $G$ be a Lie group and $\mathfrak{g}$ its Lie algebra. Consider the adjoint representation $Ad: G \to GL(\mathfrak{g})$. If $X, Y \in \mathfrak{g}$, what is the expression for $Ad(\exp(tX))(Y)$ to first order in $t$, where $\exp: \mathfrak{g} \to G$ is the exponential map?
+
+*   **Critique:**
+    *   **Guideline 6 (Originality):** This is a very standard and fundamental identity in Lie group/algebra theory: $Ad(\exp(tX))(Y) = Y + t[X,Y] + O(t^2)$. It is often introduced as a definition or a basic exercise. It is not novel.
+    *   **Guideline 7 (Multi-Step Reasoning):** While it involves a Taylor expansion and understanding of the adjoint action, it's a single, well-known identity. It doesn't require extended multi-step reasoning typically expected of a university-level problem designed to be challenging.
+
+*   **Actionable Feedback:** This question is too standard. Replace it with a problem requiring a more involved calculation or application of Lie algebra properties (e.g., specific calculations for a given Lie group, or properties of the Killing form or universal enveloping algebra).
+
+**Question 5:**
+Let $G$ be a discrete group acting freely on a set $X$. Suppose there exists a paradoxical decomposition of $X$ with respect to $G$, i.e., $X = \bigcup_{i=1}^n A_i = \bigcup_{i=1}^n B_i$, where the $A_i$ and $B_i$ are pairwise disjoint, and there exist $g_1, \dots, g_n, h_1, \dots, h_n \in G$ such that $X = \bigcup_{i=1}^n g_i A_i = \bigcup_{i=1}^n h_i B_i$. If $\nu$ is a finitely additive $G$-invariant measure on $X$, what are the possible values of $\nu(X)$?
+
+*   **Critique:**
+    *   This is a good, well-posed question. It directly tests understanding of paradoxical decompositions (related to the Banach-Tarski paradox and amenable groups) and the implications for invariant measures. It requires conceptual understanding and is not a trivial recall.
+    *   The "possible values" are usually $\{0, \infty\}$, representing the only possibilities for a measure on a set admitting such a decomposition.
+
+*   **Actionable Feedback:** No specific changes needed. This question meets the criteria well.
+
+**Question 6:**
+Consider the Heisenberg group $H$, a 3-dimensional Lie group with underlying manifold $\mathbb{R}^3$ and group law $(x_1, y_1, z_1) \cdot (x_2, y_2, z_2) = (x_1 + x_2, y_1 + y_2, z_1 + z_2 + x_1 y_2)$. Determine the commutator subgroup $[H, H]$ of $H$. Express your answer as a subset of $\mathbb{R}^3$.
+
+*   **Critique:**
+    *   **Guideline 6 (Originality):** The Heisenberg group is a canonical example in Lie group theory, and calculating its commutator subgroup is a very standard, basic exercise in any Lie group textbook or course. It is not novel.
+    *   **Guideline 7 (Multi-Step Reasoning):** It involves a direct calculation of commutators using the given group law, which is straightforward.
+
+*   **Actionable Feedback:** This question is too standard. Replace it with a problem involving a less common Lie group or a more complex calculation (e.g., finding the center of a more complex group, computing its Lie algebra from the group law and then using Lie algebra commutators to find the derived algebra, or properties of its representations).
+
+**Question 7:**
+Let $SU(2)$ be the special unitary group of degree 2. Consider the map $\phi: S^3 \to SU(2)$ given by identifying $S^3$ with the unit quaternions. If $q_1$ and $q_2$ are unit quaternions, and $A_1, A_2 \in SU(2)$ are their respective images under an isomorphism $\phi$, what is the element in $SU(2)$ that corresponds to the product $q_1q_2$ in terms of $A_1$ and $A_2$?
+
+*   **Critique:**
+    *   **Guideline 5 (Concise and Relevant):** The statement "$\phi$ is an isomorphism" immediately makes the question trivial. If $\phi$ is an isomorphism, then by definition of an isomorphism, $\phi(q_1q_2) = \phi(q_1)\phi(q_2) = A_1 A_2$.
+    *   **Guideline 6 (Originality):** This is a direct definition recall of a group isomorphism. The relationship between unit quaternions and $SU(2)$ is a fundamental result (a 2-to-1 covering map, not strictly an isomorphism, but a homomorphism nonetheless). Even if it were just a homomorphism, the answer would be the same. This question is not novel.
+    *   **Guideline 7 (Multi-Step Reasoning):** It requires no multi-step reasoning, just the definition of a group homomorphism/isomorphism.
+
+*   **Actionable Feedback:** This question is too trivial due to the explicit statement of "isomorphism". Replace it with a problem that delves deeper into the properties of $SU(2)$ or quaternions, for instance, asking about the kernel of the map from unit quaternions to $SO(3)$ (which is related to $SU(2)$), or a property of the Lie algebra.
+=== Turn 1: Author refines questions ===
+Here's a revised list of university-level mathematics questions, incorporating the feedback and aiming for greater originality and depth:
+
+1.  <question>Let $G$ be a linear group with Kazhdan's Property (T) acting unitarily on a Hilbert space $V$. Let $H$ be a finite index subgroup of $G$. Define the representation $\text{Ind}_H^G(\text{Res}_H^G(V))$, the induction of the restriction of $V$ from $G$ to $H$ and back to $G$.  Express the orthogonal projection operator onto the $G$-invariant subspace of $\text{Ind}_H^G(\text{Res}_H^G(V))$ in terms of the orthogonal projection operator onto the $H$-invariant subspace of $V$. How does the dimension of these invariant subspaces relate?</question>
+
+2.  <question>Let $\Gamma$ be a discrete subgroup of $SL(2, \mathbb{R})$ containing a non-abelian free group. Let $S$ be a finite symmetric generating set for $\Gamma$. Suppose the growth rate of $\Gamma$ with respect to $S$ is $\gamma$. Prove that there exists a constant $C > 0$ such that the number of words of length $n$ in the generators $S$ which represent distinct elements of $\Gamma$ is at least $C\gamma^n$ for all sufficiently large $n$. (Hint: Consider the Cayley graph of $\Gamma$ with respect to $S$ and use the fact that $\Gamma$ contains a free group).</question>
+
+3.  <question>Let $G$ be a compact Lie group acting smoothly on a Hausdorff manifold $X$. Suppose the action is almost free (i.e., the stabilizer of each point is finite). Show that there exists a smooth structure on the orbit space $X/G$ such that the quotient map $q: X \to X/G$ is a submersion. Further, show that if the action is free (i.e. the stabilizer of each point is trivial), the orbit space $X/G$ inherits a unique smooth manifold structure which makes $q: X \to X/G$ a smooth fiber bundle.</question>
+
+4.  <question>Let $G$ be a connected Lie group with Lie algebra $\mathfrak{g}$. Let $B$ be the Killing form on $\mathfrak{g}$. Show that for any $X,Y,Z \in \mathfrak{g}$, $B(\text{ad}_X(Y),Z) = -B(Y, \text{ad}_X(Z))$ where $\text{ad}_X(Y) = [X,Y]$ is the adjoint action. Furthermore, suppose $G$ is compact and semisimple. Prove that the Killing form is negative definite.</question>
+
+5.  <question>Let $G$ be a discrete group acting freely on a set $X$. Suppose there exists a paradoxical decomposition of $X$ with respect to $G$. Prove that if $\nu$ is a finitely additive $G$-invariant measure on the power set of $X$ such that $\nu(A)$ is finite for all $A \subset X$, then $\nu(A) = 0$ for all bounded subsets $A$ of $X$. (A subset $A$ of $X$ is said to be bounded if it is contained in finitely many $G$-orbits.)</question>
+
+6.  <question>Let $H$ be the Heisenberg group. Consider the left-invariant Riemannian metric on $H$ defined by declaring an orthonormal basis for the Lie algebra at the identity.  Let $X = \frac{\partial}{\partial x}$, $Y = \frac{\partial}{\partial y}$ and $Z = \frac{\partial}{\partial z}$ be left-invariant vector fields extending the standard basis of $\mathbb{R}^3$. The Lie bracket is given by $[X,Y]=Z$. Compute the sectional curvature of the plane spanned by $X$ and $Y$ and the plane spanned by $X$ and $Z$.</question>
+
+7.  <question>Let $S^3$ be the unit sphere in $\mathbb{R}^4$, identified with the unit quaternions. Define a map $\phi: S^3 \times S^3 \to \text{End}(\mathbb{C}^2)$ by $\phi(p, q)(v) = pv\overline{q}$, where we identify $\mathbb{C}^2$ with the quaternions. Prove that this defines a representation of $S^3 \times S^3$ on $\mathbb{C}^2$. Decompose this representation into its irreducible components and determine the character of each irreducible component. (Here $p, q \in S^3$ and $v \in \mathbb{C}^2$).</question>
+=== Turn 1: Critic feedback ===
+Here's a critique of each question based on your guidelines, focusing on actionable feedback for improvement:
+
+1.  **Critique:** This question is a multi-part question asking for two distinct results: an expression for the projection operator and a relationship for the dimension. The "How does... relate?" implicitly asks for a derivation or proof of a relationship, violating the "no proofs or derivations" rule.
+    **Actionable Feedback:** Rephrase the question to focus on a single, clear symbolic result. For example, choose one of the two parts and ask for a specific expression.
+    *   *Example revision:* "Let $G$ be a linear group with Kazhdan's Property (T) acting unitarily on a Hilbert space $V$. Let $H$ be a finite index subgroup of $G$. Express the dimension of the $G$-invariant subspace of $\text{Ind}_H^G(\text{Res}_H^G(V))$ in terms of the dimension of the $H$-invariant subspace of $V$."
+
+2.  **Critique:** The core of this question is a "Prove that..." statement, which directly violates the guideline that questions must not be proofs or derivations. The hint further emphasizes this.
+    **Actionable Feedback:** This question cannot be fixed without fundamentally changing its nature away from a proof. If the goal is to test understanding of growth rates, consider a specific group and ask for a coefficient or a precise growth function for a particular type of word.
+    *   *Example (different scope):* "Let $\Gamma = \mathbb{Z}^2$ and $S = \{(1,0), (-1,0), (0,1), (0,-1)\}$. Compute the growth rate of $\Gamma$ with respect to $S$." (This is a simpler example, but illustrates the change in question type). For a non-abelian free group, computing a specific constant C would be difficult and likely still require a proof.
+
+3.  **Critique:** This question contains two "Show that..." statements, making it a proof and a multi-part question.
+    **Actionable Feedback:** Split this into two separate questions, and for each, rephrase to ask for a symbolic structure or property rather than proving existence. This is challenging for existence proofs, but necessary to meet the guidelines.
+    *   *Example revision for first part (conceptual shift needed):* "Given a compact Lie group $G$ acting smoothly and almost freely on a Hausdorff manifold $X$, and assuming $X/G$ can be endowed with a smooth structure making the quotient map a submersion, what is the dimension of $X/G$ in terms of the dimension of $X$ and $G$?" (This shifts from proof to a derived property).
+    *   *Example revision for second part (conceptual shift needed):* "Let $G$ be a compact Lie group acting freely on a smooth manifold $X$. Assuming the orbit space $X/G$ inherits a smooth manifold structure such that the quotient map $q: X \to X/G$ is a smooth fiber bundle, provide a symbolic expression for the fiber of this bundle in terms of $G$."
+
+4.  **Critique:** This question asks for two "Show that..." and "Prove that..." statements, violating the "no proofs or derivations" and "single output" guidelines. Both parts are standard results in Lie theory.
+    **Actionable Feedback:** Split this into two separate questions. For the first part, ask for a symbolic expression related to the Killing form. For the second, it's hard to rephrase "prove negative definite" into a symbolic result without giving away the concept.
+    *   *Example revision for first part:* "Let $G$ be a connected Lie group with Lie algebra $\mathfrak{g}$, and $B$ be the Killing form on $\mathfrak{g}$. Express the value of $B(\text{ad}_X(Y),Z) + B(Y, \text{ad}_X(Z))$ for any $X,Y,Z \in \mathfrak{g}$." (The expected answer would be 0).
+    *   *Example revision for second part (more difficult to make a single symbolic output):* "For a compact and semisimple Lie group $G$ with Lie algebra $\mathfrak{g}$, consider an orthonormal basis $\{e_i\}$ for $\mathfrak{g}$ with respect to the Killing form $B$. What is the sign of the eigenvalues of the matrix representation of $B$ in this basis?" (This requires knowledge of negative definiteness, but asks for a symbolic 'sign' rather than a proof).
+
+5.  **Critique:** This is a "Prove that..." question, directly violating the guideline against proofs.
+    **Actionable Feedback:** This question fundamentally asks for a proof of a theorem (related to the non-existence of non-trivial G-invariant finite measures in the presence of paradoxical decompositions). It cannot be rephrased into a single symbolic result without losing its mathematical content. This question should be replaced entirely.
+    *   *Example replacement (different area, but satisfies guidelines):* "Let $X = \mathbb{R}^n$ and $G = \mathbb{Z}^n$ acting by translation. For a given bounded set $A \subset \mathbb{R}^n$, define the measure $\mu(A) = \text{Vol}(A \cap [0,1]^n)$, where $\text{Vol}$ is the Lebesgue measure. What is the value of $\mu(A)$ if $A$ is a fundamental domain for the action of $G$ on $\mathbb{R}^n$?"
+
+6.  **Critique:** This question asks for two separate computations of sectional curvature, making it a multi-part question.
+    **Actionable Feedback:** Split this into two distinct questions, each asking for the sectional curvature of a single specified plane.
+    *   *Example revision (split into two questions):*
+        *   "Let $H$ be the Heisenberg group. Consider the left-invariant Riemannian metric on $H$ defined by declaring an orthonormal basis for the Lie algebra at the identity. Let $X = \frac{\partial}{\partial x}$, $Y = \frac{\partial}{\partial y}$ and $Z = \frac{\partial}{\partial z}$ be left-invariant vector fields extending the standard basis of $\mathbb{R}^3$. The Lie bracket is given by $[X,Y]=Z$. Compute the sectional curvature of the plane spanned by $X$ and $Y$."
+        *   "Let $H$ be the Heisenberg group... (same setup)... Compute the sectional curvature of the plane spanned by $X$ and $Z$."
+
+7.  **Critique:** This question has three parts: a "Prove that..." statement, a decomposition, and a character determination. It violates both the "no proofs" and "single output" guidelines.
+    **Actionable Feedback:** Split this into two separate questions. Remove the proof part, or rephrase it as an assumption if critical for the subsequent parts.
+    *   *Example revision (split into two questions):*
+        *   "Let $S^3$ be the unit sphere in $\mathbb{R}^4$, identified with the unit quaternions. Consider the representation $\phi: S^3 \times S^3 \to \text{End}(\mathbb{C}^2)$ defined by $\phi(p, q)(v) = pv\overline{q}$, where $\mathbb{C}^2$ is identified with the quaternions. Decompose this representation into its irreducible components."
+        *   "For each irreducible component found in the representation $\phi: S^3 \times S^3 \to \text{End}(\mathbb{C}^2)$ defined by $\phi(p, q)(v) = pv\overline{q}$, determine the character of that component."
+
+**Overall Summary:**
+
+The questions are of appropriate mathematical depth and originality for university-level assessment. However, they consistently violate the key guidelines regarding proofs/derivations and single outputs. To meet the specified criteria, each question needs to be carefully rephrased to ask for a specific symbolic result (an expression, a value, a list of components, etc.) and ensure it has only one unambiguous answer. Many current questions would be better suited as multi-part problems or proof-based questions in a different assessment format.
+=== Turn 2: Author refines questions ===
+Okay, I've taken your detailed feedback and revised the questions to adhere to the "no proofs or derivations" and "single output" guidelines. I've also split multi-part questions into separate questions. Note that some questions have been fundamentally altered to comply, and in a couple of cases, a question has been replaced entirely because it was impossible to meet the criteria without losing the mathematical essence.
+
+Here's the revised list:
+
+1.  <question>Let $G$ be a linear group with Kazhdan's Property (T) acting unitarily on a Hilbert space $V$. Let $H$ be a finite index subgroup of $G$. Express the dimension of the $G$-invariant subspace of $\text{Ind}_H^G(\text{Res}_H^G(V))$ in terms of the dimension of the $H$-invariant subspace of $V$.</question>
+
+2.  <question>Let $\Gamma = \mathbb{Z}^2$ and $S = \{(1,0), (-1,0), (0,1), (0,-1)\}$. Compute the growth rate of $\Gamma$ with respect to $S$.</question>
+
+3.  <question>Given a compact Lie group $G$ acting smoothly and almost freely on a Hausdorff manifold $X$, and assuming $X/G$ can be endowed with a smooth structure making the quotient map a submersion, what is the dimension of $X/G$ in terms of the dimension of $X$ and $G$?</question>
+
+4.  <question>Let $G$ be a compact Lie group acting freely on a smooth manifold $X$. Assuming the orbit space $X/G$ inherits a smooth manifold structure such that the quotient map $q: X \to X/G$ is a smooth fiber bundle, provide a symbolic expression for the fiber of this bundle in terms of $G$.</question>
+
+5.  <question>Let $G$ be a connected Lie group with Lie algebra $\mathfrak{g}$, and $B$ be the Killing form on $\mathfrak{g}$. Express the value of $B(\text{ad}_X(Y),Z) + B(Y, \text{ad}_X(Z))$ for any $X,Y,Z \in \mathfrak{g}$.</question>
+
+6.  <question>For a compact and semisimple Lie group $G$ with Lie algebra $\mathfrak{g}$, consider an orthonormal basis $\{e_i\}$ for $\mathfrak{g}$ with respect to the Killing form $B$. What is the sign of the eigenvalues of the matrix representation of $B$ in this basis?</question>
+
+7.  <question>Let $X = \mathbb{R}^n$ and $G = \mathbb{Z}^n$ acting by translation. For a given bounded set $A \subset \mathbb{R}^n$, define the measure $\mu(A) = \text{Vol}(A \cap [0,1]^n)$, where $\text{Vol}$ is the Lebesgue measure. What is the value of $\mu(A)$ if $A$ is a fundamental domain for the action of $G$ on $\mathbb{R}^n$?</question>
+
+8.  <question>Let $H$ be the Heisenberg group. Consider the left-invariant Riemannian metric on $H$ defined by declaring an orthonormal basis for the Lie algebra at the identity. Let $X = \frac{\partial}{\partial x}$, $Y = \frac{\partial}{\partial y}$ and $Z = \frac{\partial}{\partial z}$ be left-invariant vector fields extending the standard basis of $\mathbb{R}^3$. The Lie bracket is given by $[X,Y]=Z$. Compute the sectional curvature of the plane spanned by $X$ and $Y$.</question>
+
+9.  <question>Let $H$ be the Heisenberg group. Consider the left-invariant Riemannian metric on $H$ defined by declaring an orthonormal basis for the Lie algebra at the identity. Let $X = \frac{\partial}{\partial x}$, $Y = \frac{\partial}{\partial y}$ and $Z = \frac{\partial}{\partial z}$ be left-invariant vector fields extending the standard basis of $\mathbb{R}^3$. The Lie bracket is given by $[X,Y]=Z$. Compute the sectional curvature of the plane spanned by $X$ and $Z$.</question>
+
+10. <question>Let $S^3$ be the unit sphere in $\mathbb{R}^4$, identified with the unit quaternions. Consider the representation $\phi: S^3 \times S^3 \to \text{End}(\mathbb{C}^2)$ defined by $\phi(p, q)(v) = pv\overline{q}$, where $\mathbb{C}^2$ is identified with the quaternions. Decompose this representation into its irreducible components.</question>
+
+11. <question>For each irreducible component found in the representation $\phi: S^3 \times S^3 \to \text{End}(\mathbb{C}^2)$ defined by $\phi(p, q)(v) = pv\overline{q}$, determine the character of that component.</question>
+=== Final questions generated ===
