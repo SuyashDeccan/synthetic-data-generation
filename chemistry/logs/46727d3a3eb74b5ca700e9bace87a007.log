@@ -1,0 +1,462 @@
+=== Turn 0: Author generates questions ===
+<question>  
+A concentrated protein solution is confined in an analytical ultracentrifugation-sedimentation equilibrium (AUC-SE) cell with an optical path length of 12 mm. The partial specific volume of the protein is 0.73 cm³/g, and the solvent density is 1.002 g/cm³. At steady state and 50,000 rpm, the concentration profile shows a 3.5-fold increase from the bottom to the top over the 12 mm path length at 293 K. Given Avogadro’s number $N_A = 6.022 \times 10^{23}$ mol⁻¹ and gas constant $R = 8.314$ J·mol⁻¹·K⁻¹, calculate the molar mass of the protein in kg·mol⁻¹. Use the sedimentation equilibrium equation  
+$$
+\frac{c(r)}{c(r_0)} = \exp\left[\frac{M(1-\bar{v}\rho)\omega^2(r^2 - r_0^2)}{2RT}\right],
+$$  
+where $r - r_0 = 0.012$ m, $\omega = 2\pi \times 50,000/60$ rad·s⁻¹, and the ratio $\frac{c(r)}{c(r_0)} = 3.5$.</question>
+
+<question>  
+A capillary cell designed by laser ablation yields an internal channel of circular cross-section with diameter $150 \pm 2$ µm and length 3 cm. The cell is used to measure the diffusion coefficient $D$ of an enzyme solution by monitoring concentration equilibration under a maintained concentration difference between the capillary and an external reservoir. Assuming laminar flow conditions and a viscosity of 1.1 mPa·s for the solution, calculate the expected Stokes-Einstein diffusion coefficient $D$ for an enzyme of hydrodynamic radius 4.5 nm at 298 K. Use Boltzmann constant $k_B = 1.38 \times 10^{-23}$ J·K⁻¹.</question>
+
+<question>  
+In a microfluidic compartment designed by mechanical drilling, a cylindrical cavity of radius 0.5 mm and height 1.2 mm holds a concentrated macromolecular solution. If the molar concentration is 500 µM and each macromolecule has a molecular weight of 80 kDa, calculate the total mass of macromolecules (in µg) inside the compartment. Use density approximations to neglect volume change and assume ideal solution behavior.</question>
+
+<question>  
+During sustained enzymatic activity measurements, a solution containing an enzyme with 120 kDa molecular weight is confined in a capillary cell fabricated by laser ablation, having an effective diffusion path length of 10 mm. The enzyme turnover number is 150 s⁻¹. If the concentration inside the cell is 2 µM and the enzyme activity sustains for 15 minutes without depletion, calculate the total moles of substrate converted in this time within the capillary. Provide the answer in nanomoles.</question>
+
+<question>  
+A mechanical drilling technique produces a capillary cell with a rectangular cross-section of dimensions 250 µm by 500 µm and length 2 cm for analytical ultracentrifugation. Given the cell holds a high concentration of macromolecules at 1.0 mM, and the sedimentation equilibrium constant $K$ is defined as  
+$$
+K = \frac{M(1-\bar{v}\rho)\omega^2 r}{RT},
+$$  
+estimate $K$ at radial distance $r = 7$ cm for a protein with molar mass $M=50$ kg·mol⁻¹, partial specific volume $\bar{v} = 0.72$ cm³·g⁻¹, solvent density $\rho = 1.00$ g·cm⁻³, rotor speed $\omega = 40,000$ rpm, temperature $T=300$ K. Express $K$ as a dimensionless number. (Use $R=8.314$ J·mol⁻¹·K⁻¹.)</question>
+=== Turn 0: Critic feedback ===
+Here's a critique of each question, clearly mapped to the assessment guidelines:
+
+---
+
+**1. Protein molar mass via AUC-SE calculation**
+- **Scenario/Originality**: Good—a research-like setting, not a rote textbook example.
+- **Stepwise Reasoning**: Requires multi-step calculations (angular velocity, exponent, molar mass) and integration of data.
+- **Units/nomenclature**: Units carefully specified; final unit requested (kg·mol⁻¹) is clear.
+- **Clarity/Conciseness**: The scenario is focused; only relevant info is included.
+- **Single solution**: Only one value is sought.
+- **Formatting**: Equations and numbers use LaTeX and Markdown syntax, as required.
+- **Possible improvements**:
+  - Make explicit the base radius ($r_0$) or state that the concentration increase occurs between $r_0$ and $r = r_0 + 0.012$ m, for maximal clarity.
+  - Indicate if all values are at standard conditions or if any densities/volumes are measured (not significant here, but good practice for rigor).
+- **Summary**: **Meets all guidelines. No substantial changes required.**
+
+---
+
+**2. Diffusion coefficient for enzyme in capillary**
+- **Scenario/Originality**: Capillary and cell design details add context, but most parameters are unused for Stokes-Einstein calculation.
+- **Multi-step**: Requires application of Stokes-Einstein equation.
+- **Redundancy**: Many described aspects (capillary geometry, external reservoir, flow type) don't impact the calculation or answer.
+- **Clarity/Conciseness**: The scenario can be trimmed to focus on what's needed for D.
+- **Units**: All variables provided, units consistent.
+- **Chemical Nomenclature**: Not relevant.
+- **Single solution**: Only one value (D) is sought.
+- **Formatting**: Equation provided; rendering is correct.
+- **Possible improvements**:
+  - **Trim extraneous info**: Only the hydrodynamic radius, viscosity, and temperature are needed for Stokes-Einstein.
+  - **Rephrase**: “Given an enzyme of hydrodynamic radius 4.5 nm, viscosity 1.1 mPa·s, and temperature 298 K, calculate $D$ using Stokes-Einstein law.”  
+  - **Justification**: Additional capillary details might mislead, as they don't affect the answer.
+- **Summary**: **Remove redundant context for maximal clarity and avoid confusion.**
+
+---
+
+**3. Mass of macromolecules in microfluidic cylinder**
+- **Scenario/Originality**: Microfluidic design is distinct; not a rote example.
+- **Multi-step**: Calculation requires volume, amount of substance, then mass.
+- **Redundancy**: Statement about “density approximation” and “ideal solution behavior” warns but isn't crucial—could be omitted for conciseness.
+- **Units/nomenclature**: Units are specified; final units in $\mu$g are clear.
+- **Single solution**: One value.
+- **Formatting**: Variables and units are clear.
+- **Possible improvements**:
+  - The word “concentrated” is not needed; “500 µM” suffices.
+  - Drop “density approximations...” unless non-ideality was a real possibility.
+  - Add “Provide your answer to two significant digits.”
+- **Summary**: **Streamline language and context for directness.**
+
+---
+
+**4. Enzyme activity in capillary cell**
+- **Scenario/Originality**: Original with several experimental features.
+- **Multi-step**: Turnover × amount × time—clear chain of steps.
+- **Redundancy**: Diffusion path length and capillary fabrication details don't affect answer; sustained for 15 min without depletion—could simply state “the substrate is present in excess.”
+- **Clarity/Conciseness**: Can omit fabrication and path details.
+- **Units**: Consistent; output is in nanomoles.
+- **Single solution**: One value.
+- **Formatting**: Clear.
+- **Possible improvements**:
+  - **Remove cell design and path length** (since not needed for the calculation).
+  - **Explicitly state “substrate is in large excess,”** or simply “Assume substrate is not rate limiting.”
+- **Summary**: **Remove unnecessary context and clarify assumptions for precision.**
+
+---
+
+**5. Sedimentation equilibrium constant in drilled cell**
+- **Scenario/Originality**: Unusual geometry; variable ($K$) is not a textbook standard, good for uniqueness.
+- **Stepwise/multi-step**: Requires several calculations: converting dimensions, calculating $\omega$, plugging values.
+- **Redundancy**: Capillary design/shape details not used; macromolecule concentration does not affect $K$.
+- **Units**: Final answer dimensionless; clear.
+- **Formatting**: Equation and syntax good.
+- **Single solution**: One value ($K$).
+- **Possible improvements**:
+  - Omit geometry and concentration details, as only $K$ calculation matters.
+  - Add “Express your answer with appropriate significant digits.”
+- **Summary**: **Trim scenario to focus on $K$ calculation only.**
+
+---
+
+**General feedback (actionable summary):**
+
+1. **Remove or minimize extraneous cell design/geometry context unless it changes the calculation or answer.**
+2. **Ensure all provided information is used or necessary for the calculation.**
+3. **Phrase the scenario so only the needed chemical/physical input is presented.**
+4. **State all explicit assumptions, rather than relying on context.**
+5. **Ensure final answers request a single number or name with clear units/nomenclature, and prompt for correct significant digits if appropriate.**
+6. **Keep scenario language concise and precise—avoid words like “concentrated” or “approximate” unless essential.**
+7. **Equations/variables are correctly formatted (LaTeX/Markdown) throughout—keep this standard.**
+8. **All questions present only one numerical or chemical answer—continue this practice.**
+9. **No ambiguous or colloquial language detected—maintain this formality.**
+10. **If an aspect of the scenario does not affect the calculation, omit it for clarity and focus.**
+
+**Summary Table:**
+
+| Q# | Meets Guidelines? | Key Fixes                                    |
+|----|:----------------:|:---------------------------------------------|
+| 1  | Yes (minor)      | Specify radius base; confirm density context |
+| 2  | No (redundant)   | Remove irrelevant cell/flow details          |
+| 3  | Yes (minor)      | Trim unnecessary “concentrated/density”      |
+| 4  | Yes (minor)      | Omit cell/path; clarify substrate excess     |
+| 5  | Yes (minor)      | Omit geometry/concentration                  |
+
+**In summary:** Your questions are technically strong and well-formatted; further focus and conciseness, with removal of non-contributory scenario details, will improve clarity and student focus in their problem solving.
+=== Turn 1: Author refines questions ===
+<question>  
+A concentrated protein solution is confined in an analytical ultracentrifugation-sedimentation equilibrium (AUC-SE) cell. The optical path length corresponds to a radial distance increase from \(r_0\) to \(r = r_0 + 0.012\) m. The partial specific volume of the protein is 0.73 cm³/g, and the solvent density is 1.002 g/cm³. At steady state and 50,000 rpm, the concentration profile shows a 3.5-fold increase over this 12 mm path length at 293 K. Given Avogadro’s number \(N_A = 6.022 \times 10^{23}\) mol⁻¹ and gas constant \(R = 8.314\) J·mol⁻¹·K⁻¹, calculate the molar mass \(M\) of the protein in kg·mol⁻¹. Use the sedimentation equilibrium equation  
+\[
+\frac{c(r)}{c(r_0)} = \exp\left[\frac{M(1-\bar{v}\rho)\omega^2 (r^2 - r_0^2)}{2RT}\right],
+\]  
+where \(\omega = \frac{2\pi \times 50,000}{60}\) rad·s⁻¹, and \(\frac{c(r)}{c(r_0)} = 3.5\). Assume all measurements are at standard laboratory conditions.  
+</question>
+
+<question>  
+An enzyme with a hydrodynamic radius of 4.5 nm is dissolved in a solution of viscosity 1.1 mPa·s at 298 K. Using the Stokes–Einstein equation, calculate the diffusion coefficient \(D\) of the enzyme. Use Boltzmann constant \(k_B = 1.38 \times 10^{-23}\) J·K⁻¹. Provide your answer in m²/s with appropriate significant digits.  
+</question>
+
+<question>  
+A cylindrical microfluidic compartment of radius 0.5 mm and height 1.2 mm contains a macromolecular solution at a molar concentration of 500 µM. Each macromolecule has a molecular weight of 80 kDa. Calculate the total mass of macromolecules inside the compartment, expressed in micrograms (µg). Provide your answer to two significant digits.  
+</question>
+
+<question>  
+An enzyme solution at 2 µM concentration, with enzyme molecular weight 120 kDa and turnover number 150 s⁻¹, catalyzes substrate conversion continuously for 15 minutes. Assume substrate is in large excess (no depletion). Calculate the total amount of substrate converted during this time within the volume, expressed in nanomoles (nmol). Provide your answer with appropriate significant digits.  
+</question>
+
+<question>  
+Calculate the sedimentation equilibrium constant \(K\) defined by  
+\[
+K = \frac{M(1-\bar{v}\rho)\omega^2 r}{RT}
+\]  
+for a protein with molar mass \(M=50\) kg·mol⁻¹, partial specific volume \(\bar{v} = 0.72\) cm³·g⁻¹, and solvent density \(\rho = 1.00\) g·cm⁻³. The rotor speed is 40,000 rpm, temperature \(T=300\) K, and radial distance \(r = 0.07\) m. Use the gas constant \(R = 8.314\) J·mol⁻¹·K⁻¹. Express your answer as a dimensionless number with appropriate significant digits.  
+</question>
+=== Turn 1: Critic feedback ===
+Certainly! Here is a detailed critique of each question, considering the provided guidelines:
+
+---
+
+### Question 1
+
+**Positives:**
+- Models a real research scenario (AUC-SE).
+- Requires significant multi-step calculation using experimental data.
+- Units are specified; only a single value is requested.
+
+**Areas for Improvement:**
+- Minor redundancy: "Assume all measurements are at standard laboratory conditions" is extraneous since T is given.
+- The variable $\frac{c(r)}{c(r_0)} = 3.5$ is clear, but you might clarify if "radial distance increase" means $r_0 = 0$, or if $r_0$ is arbitrary.
+- Requesting the answer in $\mathrm{kg\cdot mol^{-1}}$ is appropriate, but be explicit: "Express your answer to two significant digits."
+- The phrase "optical path length corresponds to a radial distance increase from $r_0$ to $r = r_0 + 0.012~\mathrm{m}$" is a bit convoluted; reword for clarity.
+
+**Revision Suggestion:**
+> Specify that "$r_0$ is the inner meniscus radius, and $r = r_0 + 0.012\,\mathrm{m}$ is the outer radius."  
+> Drop the "standard laboratory conditions" phrase.
+
+---
+
+### Question 2
+
+**Positives:**
+- Realistic biochemistry scenario (enzyme diffusion).
+- All parameters and constants defined; units are consistent.
+- Only a single value to be calculated, with explicit unit request.
+
+**Areas for Improvement:**
+- "Appropriate significant digits" is ambiguous. Specify the number (e.g., "two significant digits").
+- Otherwise, concise and rigorous with no extraneous info.
+
+**Revision Suggestion:**
+> Replace "appropriate significant digits" with a specific instruction.
+
+---
+
+### Question 3
+
+**Positives:**
+- Models a unique, non-textbook scenario (microfluidics).
+- Multi-step reasoning with geometry, units, and mole-mass conversions.
+- Units and rounding are specified.
+
+**Areas for Improvement:**
+- The question is clear. The only suggestion is, for rigor, explicitly state "Assume perfect filling and homogeneous solution," though it's likely implied.
+
+---
+
+### Question 4
+
+**Positives:**
+- Real-world, unique enzymology scenario.
+- Multi-step: requires calculation of product formed from kinetic parameters and time.
+- Only one answer, with units and significant digits requested.
+
+**Areas for Improvement:**
+- "Within the volume" is vague—no compartment volume given, suggesting the answer is per sample. Clarify that yield is total amount in the solution present, or assume a default.
+- Specify significant digits rather than "appropriate."
+
+**Revision Suggestion:**
+> Clarify "within the solution" refers to the total reaction mixture (no volume given, so amount per sample is correct).
+
+---
+
+### Question 5
+
+**Positives:**
+- Advanced calculation not lifted directly from textbooks.
+- Direct: calculates a well-defined physical parameter.
+- All variables, units, and constants provided; answer is a single dimensionless value.
+
+**Areas for Improvement:**
+- "Sedimentation equilibrium constant $K$" is not universally defined; best to clarify it's as given in your expression.
+- Specify significant digits for the answer.
+
+**Revision Suggestion:**
+> Add: "Express your answer to two significant digits."
+
+---
+
+## General Feedback
+
+**Strengths:**
+- All questions are original and require multi-step computation.
+- No redundancy or extraneous information in most cases.
+- Chemical and physical units, nomenclature are correct.
+- Formatting is clear, all necessary parameters defined.
+
+**Points to Refine:**
+1. **Significant Digits:** Be explicit ("two significant digits") rather than saying "appropriate."
+2. **Redundancy:** Remove phrases like "assume standard laboratory conditions" if all values are given.
+3. **Clarity:** For precise meaning, clarify variable definitions (especially regarding geometry or labeling of positions).
+4. **Consistent Phrasing:** Use consistent, rigorous phrasing (e.g., "Calculate..." or "Determine... Express your answer in units of...").
+5. **Single-Solution Assurance:** All questions already yield unique answers—this is good. Maintain this rigor going forward.
+
+---
+
+**Summary Table**
+
+| Q# | Adherence     | Issues                                        | Improvement                                              |
+|----|--------------|-----------------------------------------------|----------------------------------------------------------|
+| 1  | Strong       | Minor redundancy, clarify variable definitions | Remove extraneous phrases, specify significant digits    |
+| 2  | Strong       | Specify sig. digits                            | Be precise ("two significant digits")                    |
+| 3  | Strong       | Full clarity on homogeneity (minor)            | Explicitly state if relevant                             |
+| 4  | Good         | Clarify "within the volume," sig. digits       | Specify "total in solution," definite significant digits |
+| 5  | Strong       | Sig. digits, define "equilibrium constant"     | Specify two sig. digits, clarify variable definition     |
+
+---
+
+**Actionable Edits:**
+- Use "$...$" and "$$...$$" for Markdown LaTeX in all equations.
+- Specify **number of significant digits** in every answer request.
+- Remove unnecessary context when all needed data is given.
+- Clarify all variable definitions, especially those related to geometry or experimental setup.
+- Phrasing: Prefer "Calculate..." or "Determine..." over "Using...calculate..." for directness.
+
+---
+
+**Overall:** Excellent, original, multi-step problems. Only slight tweaks needed for full compliance and clarity.
+=== Turn 2: Author refines questions ===
+<question>  
+A concentrated protein solution is confined in an analytical ultracentrifugation sedimentation equilibrium (AUC-SE) cell. The radial positions measured correspond to \(r_0\) (inner meniscus radius) and \(r = r_0 + 0.012\,\mathrm{m}\). The partial specific volume of the protein is \(0.73\,\mathrm{cm}^3/\mathrm{g}\), and the solvent density is \(1.002\,\mathrm{g/cm}^3\). At steady state and 50,000 rpm, the concentration ratio is \(\frac{c(r)}{c(r_0)} = 3.5\) at temperature \(T=293\,\mathrm{K}\). Given Avogadro’s number \(N_A = 6.022 \times 10^{23}\,\mathrm{mol}^{-1}\) and the gas constant \(R = 8.314\,\mathrm{J\,mol}^{-1}\mathrm{K}^{-1}\), calculate the molar mass \(M\) of the protein in \(\mathrm{kg\,mol}^{-1}\). Use the sedimentation equilibrium equation:  
+\[
+\frac{c(r)}{c(r_0)} = \exp\left[\frac{M(1-\bar{v}\rho)\omega^2 (r^2 - r_0^2)}{2RT}\right],
+\]  
+where \(\omega = \frac{2\pi \times 50,000}{60}\,\mathrm{rad\,s}^{-1}\).  
+Express your answer to two significant digits.  
+</question>
+
+<question>  
+An enzyme with a hydrodynamic radius of \(4.5\,\mathrm{nm}\) is dissolved in a solution of viscosity \(1.1\,\mathrm{mPa \cdot s}\) at temperature \(298\,\mathrm{K}\). Using the Stokes–Einstein equation, calculate the diffusion coefficient \(D\) of the enzyme in \(\mathrm{m}^2/\mathrm{s}\):  
+\[
+D = \frac{k_B T}{6\pi \eta r},
+\]  
+where \(k_B = 1.38 \times 10^{-23}\,\mathrm{J\,K}^{-1}\) is the Boltzmann constant, \(\eta\) is the viscosity, and \(r\) is the radius.  
+Express your answer to two significant digits.  
+</question>
+
+<question>  
+A cylindrical microfluidic compartment has radius \(0.5\,\mathrm{mm}\) and height \(1.2\,\mathrm{mm}\). It contains a macromolecular solution at molar concentration \(500\,\mu\mathrm{M}\). Each macromolecule has a molecular weight of \(80\,\mathrm{kDa}\). Assume the compartment is perfectly filled with a homogeneous solution. Calculate the total mass of macromolecules inside the compartment, expressed in micrograms (\(\mu\mathrm{g}\)).  
+Express your answer to two significant digits.  
+</question>
+
+<question>  
+An enzyme solution at concentration \(2\,\mu\mathrm{M}\), with enzyme molecular weight \(120\,\mathrm{kDa}\) and turnover number \(150\,\mathrm{s}^{-1}\), catalyzes substrate conversion continuously for 15 minutes. Assume substrate is in large excess and not depleted. Calculate the total amount of substrate converted during this time, expressed in nanomoles (nmol).  
+Express your answer to two significant digits.  
+</question>
+
+<question>  
+Calculate the sedimentation equilibrium constant  
+\[
+K = \frac{M(1-\bar{v}\rho)\omega^2 r}{RT}
+\]  
+for a protein with molar mass \(M = 50\,\mathrm{kg\,mol}^{-1}\), partial specific volume \(\bar{v} = 0.72\,\mathrm{cm}^3/\mathrm{g}\), and solvent density \(\rho = 1.00\,\mathrm{g/cm}^3\). The rotor speed is 40,000 rpm, temperature \(T = 300\,\mathrm{K}\), and radial distance \(r = 0.07\,\mathrm{m}\). Use the gas constant \(R = 8.314\,\mathrm{J\,mol}^{-1}\mathrm{K}^{-1}\).  
+Express your answer as a dimensionless number to two significant digits.  
+</question>
+=== Turn 2: Critic feedback ===
+Here is a concise, actionable critique of your five questions, focusing on each of the guidelines and offering improvements where necessary:
+
+---
+
+### Question 1: Analytical Ultracentrifugation (AUC-SE)
+
+**Strengths:**
+- **Models a realistic biophysical experiment**
+- **Requires multi-step quantitative reasoning (identifying $\omega$, rearranging the exponential, solving for $M$)**
+- **Rigorous and concise scientific language**
+- **Unit consistency and significant digits requested**
+- **No extraneous information**
+
+**Improvements:**
+- **Nomenclature:** Specify that $\bar{v}$ and $\rho$ are in compatible units or ask students to convert if necessary, to reinforce critical unit analysis.
+- **Clarity:** Explicitly state whether $r^2 - r_0^2 \approx 2r_0 \Delta r$ (if approximation is allowed) or provide both $r_0$ and $r$ numerically for unambiguous computation.
+- **Minor issue:** Avogadro’s number is extraneous, as it is not needed for the calculation; remove for guideline 4 (avoid redundancy).
+
+---
+
+### Question 2: Stokes–Einstein Equation
+
+**Strengths:**
+- **Straightforward diffusion calculation, using real physical context**
+- **Clear instructions, concise phrasing**
+- **Enforces unit analysis and numerical precision**
+
+**Improvements:**
+- **Originality:** The scenario is standard textbook and could be made more unique (guideline 5). For instance, describe a specific biological situation or compare two radii/viscosities.
+- **Single step:** Only a single equation plug-and-chug is needed, so it does not satisfy “force multi-step reasoning” (guideline 3). Make it a two-step process, such as having the student first convert units or deduce $\eta$ from another parameter.
+- **Specify units:** Clarify that $\mathrm{mPa \cdot s} = 10^{-3} \mathrm{Pa \cdot s}$ for completeness and to prompt unit conversion (for multi-step demand).
+
+---
+
+### Question 3: Microfluidic Compartment, Macromolecule Mass
+
+**Strengths:**
+- **Realistic biochemical scenario**
+- **Multi-step (calculate volume, moles, mass)**
+- **Consistent units, concise phrasing**
+- **No redundancy**
+- **Single solution path**
+
+**Improvements:**
+- **Clarity:** Consider specifying whether “homogeneous filling” means “no air gap”, to remove ambiguity.
+- **Multi-step visibility:** If the intention is unit conversion practice, you might specify input units not already in SI (e.g., volume in $\mu L$), to ensure students must convert.
+
+---
+
+### Question 4: Enzyme Turnover, Substrate Consumed
+
+**Strengths:**
+- **Biochemically relevant scenario, well-formulated**
+- **Multi-step (need to calculate enzyme amount, total turnovers, overall product)**
+- **Numerical answer with units specified**
+- **Units and significant digits clearly requested**
+
+**Improvements:**
+- **Clarification:** Reword to explicitly state “how many nanomoles of substrate are converted in 15 min under these conditions?”
+- **Redundancy:** None apparent.
+- **Uniqueness:** Sufficiently original for biochemistry.
+
+---
+
+### Question 5: Sedimentation Equilibrium Constant
+
+**Strengths:**
+- **Quantitative, non-standard calculation**
+- **Multi-step numeric (unit conversions, plug values)**
+- **Concise, precise language and units**
+
+**Improvements:**
+- **Clarity:** Remind students to convert $\bar{v}$ units ($\mathrm{cm}^3/g$ to $\mathrm{m}^3/kg$) and check $M$ units are in SI for $R$.
+- **Redundancy:** All information is used.
+- **Originality:** Sufficiently unique.
+
+---
+
+## General Feedback/Actionable Summaries
+
+- **Maintain Multi-Step Reasoning:** Questions 2 and 3 may benefit from complexity by requiring intermediate conversions or combining more than one principle (e.g., estimating $\eta$ from experimental data in Q2).
+- **Unit Conversions as Pedagogy:** Frequently, SI vs. cgs conversion is crucial—consider omitting some final units or mixing input unit systems to require explicit conversions.
+- **Scenario Uniqueness:** Especially for diffusion (Q2), craft more distinctive scenarios or introduce context (e.g., the effect of glycosylation or a viscosity gradient).
+- **Avoid Redundant Constants:** Do not present constants that are unnecessary for the calculation.
+- **Equation Formatting:** All equations and variables should be properly formatted using $...$ for inline and $$...$$ for block LaTeX, which you have done.
+- **Precision and Units:** You enforce reporting rules and units well. Continue specifying precision and units, especially in more complex multi-step problems.
+- **Singularity:** All questions, except possibly Q2, have one solution and do not branch into multiple subquestions.
+
+---
+
+**Example improvements:**  
+- For Q2, add: "The viscosity is measured in $\mathrm{mPa \cdot s}$; provide the answer in $\mathrm{m}^2/\mathrm{s}$ after converting viscosity to SI units."
+- For Q1 or Q5, state: "Express all terms in SI units before using in the equation."  
+- For Q3, specify: "Assume the solution completely fills the compartment, with no trapped air or meniscus."  
+
+**Summary:**  
+Your questions are rigorous, generally unique, and well-phrased. Strengthen by enforcing multi-step reasoning (especially for Q2), ensuring all information is necessary and non-redundant, occasionally requiring explicit unit conversion, and injecting further originality where possible.
+=== Turn 3: Author refines questions ===
+<question>  
+A concentrated protein solution is confined in an analytical ultracentrifugation sedimentation equilibrium (AUC-SE) cell. The radial positions measured correspond to \(r_0 = 0.060\,\mathrm{m}\) (inner meniscus radius) and \(r = 0.072\,\mathrm{m}\). The protein’s partial specific volume is \(\bar{v} = 0.73\,\mathrm{cm}^3/\mathrm{g}\), and the solvent density is \(\rho = 1.002\,\mathrm{g/cm}^3\). At steady state and rotor speed 50,000 rpm, the ratio of concentrations is \(\frac{c(r)}{c(r_0)} = 3.5\) at temperature \(T = 293\,\mathrm{K}\). Given the gas constant \(R = 8.314\,\mathrm{J\,mol}^{-1}\mathrm{K}^{-1}\), calculate the molar mass \(M\) of the protein in \(\mathrm{kg\,mol}^{-1}\).  
+
+*Note:* Convert all quantities to SI units before calculation. Use the sedimentation equilibrium equation:  
+\[
+\frac{c(r)}{c(r_0)} = \exp\left[\frac{M (1-\bar{v}\rho) \omega^2 (r^2 - r_0^2)}{2RT}\right],
+\]  
+where \(\displaystyle \omega = \frac{2 \pi \times 50,000}{60}\,\mathrm{rad/s}\).   
+Express your answer to two significant digits.  
+</question>
+
+<question>  
+An enzyme with a hydrodynamic radius of \(4.5\,\mathrm{nm}\) is dissolved in a buffer solution at temperature \(298\,\mathrm{K}\) with viscosity \(\eta = 1.1\,\mathrm{mPa \cdot s}\). The viscosity was measured experimentally in \(\mathrm{mPa \cdot s}\) (where \(1\,\mathrm{mPa \cdot s} = 10^{-3}\,\mathrm{Pa \cdot s}\)). Using the Stokes–Einstein equation, calculate the diffusion coefficient \(D\) of the enzyme in \(\mathrm{m}^2/\mathrm{s}\):  
+\[
+D = \frac{k_B T}{6 \pi \eta r},
+\]  
+where \(k_B = 1.38 \times 10^{-23}\,\mathrm{J\,K}^{-1}\), \(\eta\) must be converted to \(\mathrm{Pa \cdot s}\), and \(r\) is the radius in meters.  
+Show your unit conversions explicitly, and express your final answer to two significant digits.  
+</question>
+
+<question>  
+A cylindrical microfluidic compartment with radius \(0.5\,\mathrm{mm}\) and height \(1.2\,\mathrm{mm}\) is completely filled with a homogeneous macromolecular solution at molar concentration \(500\,\mu\mathrm{M}\). Each macromolecule has a molecular weight of \(80\,\mathrm{kDa}\). Calculate the total mass of macromolecules inside the compartment, expressed in micrograms (\(\mu\mathrm{g}\)).  
+
+*Note:* Assume there are no air gaps or meniscus effects; convert all units to SI before calculations.  
+Express your answer to two significant digits.  
+</question>
+
+<question>  
+An enzyme solution at concentration \(2\,\mu\mathrm{M}\), with molecular weight \(120\,\mathrm{kDa}\) and turnover number \(k_{\mathrm{cat}}=150\,\mathrm{s}^{-1}\), catalyzes substrate conversion continuously for 15 minutes. Assume substrate is present in large excess and not depleted.  
+
+Calculate the total amount of substrate converted during this time in nanomoles (nmol).  
+
+*Hint:* Calculate the total enzyme amount first, then the total turnovers over 15 min.  
+Express your answer to two significant digits.  
+</question>
+
+<question>  
+Calculate the sedimentation equilibrium constant  
+\[
+K = \frac{M(1-\bar{v}\rho)\omega^2 r}{RT}
+\]  
+for a protein with molar mass \(M = 50\,\mathrm{kg\,mol}^{-1}\), partial specific volume \(\bar{v} = 0.72\,\mathrm{cm}^3/\mathrm{g}\), and solvent density \(\rho = 1.00\,\mathrm{g/cm}^3\). The rotor speed is 40,000 rpm, temperature \(T = 300\,\mathrm{K}\), and radial distance \(r = 0.07\,\mathrm{m}\). Use the gas constant \(R = 8.314\,\mathrm{J\,mol}^{-1}\mathrm{K}^{-1}\).  
+
+*Note:* Convert \(\bar{v}\) to \(\mathrm{m}^3/\mathrm{kg}\) and ensure all quantities are in SI units before substitution.  
+
+Express your answer as a dimensionless number to two significant digits.  
+</question>
+=== Final questions generated ===

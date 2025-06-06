@@ -1,0 +1,235 @@
+=== Turn 0: Author generates questions ===
+Here are five undergraduate-level biology questions based on your specifications:
+
+<question>
+A researcher is studying the effect of a novel drug on the cell cycle of HeLa cells. They treat a culture of HeLa cells with the drug for 24 hours and then perform flow cytometry to analyze the DNA content of the cells. The flow cytometry data reveals the following distribution: 60% of cells in G1 phase (2N DNA content), 10% of cells in S phase (DNA content between 2N and 4N), and 30% of cells in G2/M phase (4N DNA content). Assuming that without drug treatment a normal HeLa cell population has the following distribution: 50% G1, 30% S, and 20% G2/M, what is the percentage increase in the fraction of cells in the G2/M phase after drug treatment?
+</question>
+
+<question>
+A population of yeast cells is grown in a chemostat. The dilution rate (D) is set to $0.2 \, h^{-1}$, and the feed medium contains a limiting nutrient at a concentration ($S_R$) of $10 \, g/L$. The Monod equation parameters for this yeast are: maximum specific growth rate ($\mu_{max}$) = $0.5 \, h^{-1}$ and the saturation constant ($K_s$) = $2 \, g/L$. What is the steady-state concentration of the limiting nutrient ($S$) in the chemostat?
+</question>
+
+<question>
+In a study of bacterial growth, researchers inoculate $10^3$ bacterial cells into a nutrient broth. After 3 hours, the cell density reaches $8 \times 10^6$ cells/mL. Assuming exponential growth, what is the doubling time of the bacteria in minutes?
+</question>
+
+<question>
+Two linked genes, A and B, are separated by a distance of 10 map units on a chromosome. An individual with the genotype $AaBb$ in coupling (cis) phase undergoes meiosis. What percentage of the resulting gametes will have the genotype $ab$, assuming no crossover interference?
+</question>
+
+<question>
+An enzyme catalyzes a reaction with a $K_M$ of $5 \times 10^{-6} \, M$ and a $V_{max}$ of $20 \, \mu mol/min$. What is the initial velocity of the reaction, in $\mu mol/min$, when the substrate concentration is $1 \times 10^{-5} \, M$?
+</question>
+=== Turn 0: Critic feedback ===
+Here's a critique of the provided questions, evaluating them against your specified guidelines:
+
+---
+
+<question>
+A researcher is studying the effect of a novel drug on the cell cycle of HeLa cells. They treat a culture of HeLa cells with the drug for 24 hours and then perform flow cytometry to analyze the DNA content of the cells. The flow cytometry data reveals the following distribution: 60% of cells in G1 phase (2N DNA content), 10% of cells in S phase (DNA content between 2N and 4N), and 30% of cells in G2/M phase (4N DNA content). Assuming that without drug treatment a normal HeLa cell population has the following distribution: 50% G1, 30% S, and 20% G2/M, what is the percentage increase in the fraction of cells in the G2/M phase after drug treatment?
+</question>
+
+**Critique:** This is a strong question.
+*   **1. Model a biology Scenario:** Yes, a relevant and realistic scenario involving cell cycle analysis via flow cytometry.
+*   **2. Expect single word/numerical answer:** Yes, a single numerical percentage.
+*   **3. Force Multi-Step Reasoning:** Yes. It requires identifying initial and final G2/M percentages, calculating the absolute change, and then determining the percentage *increase* relative to the original value (i.e., (new - old) / old * 100).
+*   **4. Avoid How based questions:** Yes, asks for a specific quantitative result.
+*   **5. Be Unique:** While percentage change problems are common, applying it to specific cell cycle data from flow cytometry makes it a good application rather than a rephrased standard problem.
+*   **6. Single Solution:** Yes, one correct numerical answer.
+*   **7. Rigorous, concise phrasing:** Yes, clear and professional.
+*   **8. Units consistent; conventional notation:** Yes, percentages are used consistently, and the answer is a percentage.
+*   **9. Not multipart:** Yes, focuses on a single target quantity.
+
+**Actionable Feedback:** No significant improvements needed. This question effectively tests quantitative reasoning within a biological context.
+
+---
+
+<question>
+A population of yeast cells is grown in a chemostat. The dilution rate (D) is set to $0.2 \, h^{-1}$, and the feed medium contains a limiting nutrient at a concentration ($S_R$) of $10 \, g/L$. The Monod equation parameters for this yeast are: maximum specific growth rate ($\mu_{max}$) = $0.5 \, h^{-1}$ and the saturation constant ($K_s$) = $2 \, g/L$. What is the steady-state concentration of the limiting nutrient ($S$) in the chemostat?
+</question>
+
+**Critique:** This is an excellent question.
+*   **1. Model a biology Scenario:** Yes, a classic and fundamental bioprocess scenario (chemostat dynamics) involving microbial growth kinetics.
+*   **2. Expect single word/numerical answer:** Yes, a single numerical concentration.
+*   **3. Force Multi-Step Reasoning:** Yes. It requires recalling the steady-state principle ($\mu = D$), applying the Monod equation ($\mu = \mu_{max} \frac{S}{K_s + S}$), and then algebraically solving for S.
+*   **4. Avoid How based questions:** Yes, asks for a specific quantitative result.
+*   **5. Be Unique:** While Monod/chemostat problems exist, this specific parameter set and question focus (steady-state nutrient concentration) is a solid, non-trivial application.
+*   **6. Single Solution:** Yes, one correct numerical answer.
+*   **7. Rigorous, concise phrasing:** Yes, uses standard notation and is very clear.
+*   **8. Units consistent; conventional notation:** Yes, all units are consistent ($h^{-1}$, $g/L$) and the answer will have appropriate units.
+*   **9. Not multipart:** Yes, focuses on a single target quantity.
+
+**Actionable Feedback:** No improvements needed. This question perfectly aligns with all guidelines.
+
+---
+
+<question>
+In a study of bacterial growth, researchers inoculate $10^3$ bacterial cells into a nutrient broth. After 3 hours, the cell density reaches $8 \times 10^6$ cells/mL. Assuming exponential growth, what is the doubling time of the bacteria in minutes?
+</question>
+
+**Critique:** This is an excellent question.
+*   **1. Model a biology Scenario:** Yes, a common and fundamental scenario in microbiology (bacterial growth kinetics).
+*   **2. Expect single word/numerical answer:** Yes, a single numerical time in minutes.
+*   **3. Force Multi-Step Reasoning:** Yes. It requires using the exponential growth equation ($N_t = N_0 \cdot 2^{t/g}$ or $N_t = N_0 \cdot e^{\mu t}$), solving for the doubling time or specific growth rate, and critically, converting the time units from hours to minutes.
+*   **4. Avoid How based questions:** Yes, asks for a specific quantitative result.
+*   **5. Be Unique:** While exponential growth calculations are standard, the specific numbers and the requirement for unit conversion make it a good, non-trivial application.
+*   **6. Single Solution:** Yes, one correct numerical answer.
+*   **7. Rigorous, concise phrasing:** Yes, clear and uses standard notation.
+*   **8. Units consistent; conventional notation:** Yes, explicitly asks for the answer in minutes, requiring a unit conversion from the given hours, which is a good test of attention to detail.
+*   **9. Not multipart:** Yes, focuses on a single target quantity.
+
+**Actionable Feedback:** No improvements needed. This question perfectly aligns with all guidelines.
+
+---
+
+<question>
+Two linked genes, A and B, are separated by a distance of 10 map units on a chromosome. An individual with the genotype $AaBb$ in coupling (cis) phase undergoes meiosis. What percentage of the resulting gametes will have the genotype $ab$, assuming no crossover interference?
+</question>
+
+**Critique:** This is an excellent question.
+*   **1. Model a biology Scenario:** Yes, a core scenario in genetics (linked genes, recombination, meiosis).
+*   **2. Expect single word/numerical answer:** Yes, a single numerical percentage.
+*   **3. Force Multi-Step Reasoning:** Yes. It requires understanding that map units translate directly to recombination frequency (10 map units = 10% recombination frequency). Then, understanding that for linked genes in cis configuration ($AB/ab$), the parental gametes are $AB$ and $ab$, and recombinant gametes are $Ab$ and $aB$. The 10% recombination means 5% $Ab$ and 5% $aB$. The remaining 90% are parental, split equally: 45% $AB$ and 45% $ab$. This is clearly multi-step.
+*   **4. Avoid How based questions:** Yes, asks for a specific quantitative result.
+*   **5. Be Unique:** While linkage problems are standard, this specific setup (cis phase, calculating one specific parental gamete type) is a solid and clear application.
+*   **6. Single Solution:** Yes, one correct numerical answer.
+*   **7. Rigorous, concise phrasing:** Yes, uses standard genetic terminology (map units, coupling/cis phase, genotype notation).
+*   **8. Units consistent; conventional notation:** Yes, percentages are used appropriately.
+*   **9. Not multipart:** Yes, focuses on a single target quantity.
+
+**Actionable Feedback:** No improvements needed. This question perfectly aligns with all guidelines.
+
+---
+
+<question>
+An enzyme catalyzes a reaction with a $K_M$ of $5 \times 10^{-6} \, M$ and a $V_{max}$ of $20 \, \mu mol/min$. What is the initial velocity of the reaction, in $\mu mol/min$, when the substrate concentration is $1 \times 10^{-5} \, M$?
+</question>
+
+**Critique:** This is a good question for basic application, but has room for improvement regarding uniqueness and depth of multi-step reasoning.
+*   **1. Model a biology Scenario:** Yes, a fundamental scenario in biochemistry (enzyme kinetics).
+*   **2. Expect single word/numerical answer:** Yes, a single numerical velocity.
+*   **3. Force Multi-Step Reasoning:** Partially. It primarily requires recalling the Michaelis-Menten equation and substituting values. While this is technically "multi-step" (recall, substitute, calculate), it's a very direct application, which might not be considered "two or more biological principles" or particularly deep reasoning.
+*   **4. Avoid How based questions:** Yes, asks for a specific quantitative result.
+*   **5. Be Unique:** No. This is a highly standard, textbook "plug-and-chug" problem for the Michaelis-Menten equation. It does not present a "novel, conceptually rich scenario."
+*   **6. Single Solution:** Yes, one correct numerical answer.
+*   **7. Rigorous, concise phrasing:** Yes, clear and uses standard notation.
+*   **8. Units consistent; conventional notation:** Yes, all units are consistent and correct.
+*   **9. Not multipart:** Yes, focuses on a single target quantity.
+
+**Actionable Feedback:** To enhance its uniqueness and multi-step reasoning, consider revising it:
+*   **Option 1 (Reverse Calculation):** Ask for $V_{max}$ or $K_M$ given an initial velocity and substrate concentration, which forces rearrangement of the equation.
+    *   *Example:* "An enzyme catalyzes a reaction at an initial velocity of $13.33 \, \mu mol/min$ when the substrate concentration is $1 \times 10^{-5} \, M$. If the $K_M$ for this enzyme is $5 \times 10^{-6} \, M$, what is the $V_{max}$ of the reaction in $\mu mol/min$?"
+*   **Option 2 (Relative Change/Ratio):** Ask for a ratio or percentage change in velocity under different conditions, requiring multiple applications of the equation and then a comparison.
+    *   *Example:* "An enzyme has a $K_M$ of $5 \times 10^{-6} \, M$. By what factor does the initial velocity of the reaction increase when the substrate concentration is raised from $1 \times 10^{-6} \, M$ to $1 \times 10^{-5} \, M$, assuming a constant $V_{max}$?"
+*   **Option 3 (Conceptual Application):** Present a scenario that requires understanding the behavior of the equation at very high or very low substrate concentrations.
+    *   *Example:* "An enzyme has a $K_M$ of $5 \times 10^{-6} \, M$ and a $V_{max}$ of $20 \, \mu mol/min$. If the substrate concentration is $1 \times 10^{-7} \, M$, what is the approximate initial velocity of the reaction in $\mu mol/min$, assuming the reaction follows first-order kinetics under these conditions?" (This would test the understanding that at [S] << KM, V0 approx. (Vmax/KM)*[S]).
+
+---
+=== Turn 1: Author refines questions ===
+Here are the refined biology questions, incorporating the feedback provided:
+
+<question>
+A researcher is studying the effect of a novel drug on the cell cycle of HeLa cells. They treat a culture of HeLa cells with the drug for 24 hours and then perform flow cytometry to analyze the DNA content of the cells. The flow cytometry data reveals the following distribution: 60% of cells in G1 phase (2N DNA content), 10% of cells in S phase (DNA content between 2N and 4N), and 30% of cells in G2/M phase (4N DNA content). Assuming that without drug treatment a normal HeLa cell population has the following distribution: 50% G1, 30% S, and 20% G2/M, what is the percentage increase in the fraction of cells in the G2/M phase after drug treatment?
+</question>
+
+<question>
+A population of yeast cells is grown in a chemostat. The dilution rate (D) is set to $0.2 \, h^{-1}$, and the feed medium contains a limiting nutrient at a concentration ($S_R$) of $10 \, g/L$. The Monod equation parameters for this yeast are: maximum specific growth rate ($\mu_{max}$) = $0.5 \, h^{-1}$ and the saturation constant ($K_s$) = $2 \, g/L$. What is the steady-state concentration of the limiting nutrient ($S$) in the chemostat?
+</question>
+
+<question>
+In a study of bacterial growth, researchers inoculate $10^3$ bacterial cells into a nutrient broth. After 3 hours, the cell density reaches $8 \times 10^6$ cells/mL. Assuming exponential growth, what is the doubling time of the bacteria in minutes?
+</question>
+
+<question>
+Two linked genes, A and B, are separated by a distance of 10 map units on a chromosome. An individual with the genotype $AaBb$ in coupling (cis) phase undergoes meiosis. What percentage of the resulting gametes will have the genotype $ab$, assuming no crossover interference?
+</question>
+
+<question>
+An enzyme catalyzes a reaction at an initial velocity of $13.33 \, \mu mol/min$ when the substrate concentration is $1 \times 10^{-5} \, M$. If the $K_M$ for this enzyme is $5 \times 10^{-6} \, M$, what is the $V_{max}$ of the reaction in $\mu mol/min$?
+</question>
+=== Turn 1: Critic feedback ===
+Here's a critique of the provided biology questions:
+
+**General Feedback:**
+The questions are well-phrased, clear, and rigorously presented. They consistently ask for numerical answers, require multi-step reasoning, avoid "how-based" questions, are not multipart, and maintain consistent units and notation. They successfully model biological scenarios. However, the primary area for improvement across several questions is uniqueness.
+
+---
+
+<question>
+A researcher is studying the effect of a novel drug on the cell cycle of HeLa cells. They treat a culture of HeLa cells with the drug for 24 hours and then perform flow cytometry to analyze the DNA content of the cells. The flow cytometry data reveals the following distribution: 60% of cells in G1 phase (2N DNA content), 10% of cells in S phase (DNA content between 2N and 4N), and 30% of cells in G2/M phase (4N DNA content). Assuming that without drug treatment a normal HeLa cell population has the following distribution: 50% G1, 30% S, and 20% G2/M, what is the percentage increase in the fraction of cells in the G2/M phase after drug treatment?
+</question>
+*   **Critique:** This is an **excellent** question.
+    *   **Guideline 1 (Model Scenario):** Yes, it models a realistic experimental scenario (flow cytometry, drug treatment).
+    *   **Guideline 3 (Multi-Step Reasoning):** Yes, it requires identifying initial and final values, calculating the absolute change, and then determining the *percentage increase* relative to the initial value (not just the absolute percentage point change), which is a common point of error for students.
+    *   **Guideline 5 (Be Unique):** Reasonably unique. While cell cycle analysis is standard, the specific numerical comparison and the "percentage increase" calculation add a good twist.
+    *   Meets all other guidelines.
+
+---
+
+<question>
+A population of yeast cells is grown in a chemostat. The dilution rate (D) is set to $0.2 \, h^{-1}$, and the feed medium contains a limiting nutrient at a concentration ($S_R$) of $10 \, g/L$. The Monod equation parameters for this yeast are: maximum specific growth rate ($\mu_{max}$) = $0.5 \, h^{-1}$ and the saturation constant ($K_s$) = $2 \, g/L$. What is the steady-state concentration of the limiting nutrient ($S$) in the chemostat?
+</question>
+*   **Critique:** This is a **strong** question.
+    *   **Guideline 1 (Model Scenario):** Yes, it models a classic chemostat system.
+    *   **Guideline 3 (Multi-Step Reasoning):** Yes, it requires understanding the steady-state condition ($\mu = D$) and then applying the Monod equation, rearranging it to solve for $S$.
+    *   **Guideline 5 (Be Unique):** While applying the Monod equation in a chemostat is a common problem type, this specific formulation (solving for S directly) is a solid application of fundamental principles.
+    *   Meets all other guidelines.
+
+---
+
+<question>
+In a study of bacterial growth, researchers inoculate $10^3$ bacterial cells into a nutrient broth. After 3 hours, the cell density reaches $8 \times 10^6$ cells/mL. Assuming exponential growth, what is the doubling time of the bacteria in minutes?
+</question>
+*   **Critique:** This is a **good but standard** question.
+    *   **Guideline 5 (Be Unique):** This is a very common, almost textbook-standard problem for calculating bacterial doubling time from initial and final counts in exponential growth.
+    *   **Recommendation for Improvement:** To enhance uniqueness, consider adding a twist:
+        *   Introduce a lag phase or stationary phase to make the time calculation more nuanced.
+        *   Ask about the number of cells after a different time period, given the doubling time, forcing a conversion between growth rate and doubling time.
+        *   Include a scenario with different initial/final volumes, or a question involving a specific yield on substrate.
+
+---
+
+<question>
+Two linked genes, A and B, are separated by a distance of 10 map units on a chromosome. An individual with the genotype $AaBb$ in coupling (cis) phase undergoes meiosis. What percentage of the resulting gametes will have the genotype $ab$, assuming no crossover interference?
+</question>
+*   **Critique:** This is a **good but standard** question.
+    *   **Guideline 5 (Be Unique):** This is a very common, almost textbook-standard problem for calculating parental/recombinant gamete frequencies from map units in a dihybrid cross.
+    *   **Recommendation for Improvement:** To enhance uniqueness, consider:
+        *   Involving three linked genes and asking about double crossovers.
+        *   Providing test cross data and asking students to determine linkage distance or gene order.
+        *   Connecting it to a specific genetic disorder and asking for the probability of a certain phenotype in offspring from a test cross.
+
+---
+
+<question>
+An enzyme catalyzes a reaction at an initial velocity of $13.33 \, \mu mol/min$ when the substrate concentration is $1 \times 10^{-5} \, M$. If the $K_M$ for this enzyme is $5 \times 10^{-6} \, M$, what is the $V_{max}$ of the reaction in $\mu mol/min$?
+</question>
+*   **Critique:** This is a **good but standard** question.
+    *   **Guideline 5 (Be Unique):** This is a very common, almost textbook-standard problem that involves a direct application of the Michaelis-Menten equation to solve for $V_{max}$ given $V_0$, $[S]$, and $K_M$.
+    *   **Recommendation for Improvement:** To enhance uniqueness, consider:
+        *   Introducing an inhibitor (competitive, non-competitive, uncompetitive) and asking about its effect on $K_M$ or $V_{max}$, or calculating a new velocity in the presence of the inhibitor.
+        *   Asking about the turnover number ($k_{cat}$) or catalytic efficiency ($k_{cat}/K_M$).
+        *   Presenting data from a Lineweaver-Burk plot (intercepts or slopes) and asking for a parameter.
+=== Turn 2: Author refines questions ===
+Okay, here are the improved biology questions, incorporating the feedback provided to increase their uniqueness and sophistication, while maintaining the original constraints:
+
+<question>
+A researcher is investigating the effect of a novel drug on the cell cycle of HeLa cells. They treat two cultures of HeLa cells: one with the drug for 24 hours and another as a control. Flow cytometry analysis reveals the following: Drug-treated: 60% G1, 10% S, 30% G2/M. Control: 50% G1, 30% S, 20% G2/M.  If cells in G2/M with significant DNA damage undergo apoptosis *before* flow cytometry analysis, and assuming 10% of the drug-treated cells initially in G2/M undergo apoptosis, what is the *apparent* percentage increase in the fraction of cells in the G2/M phase *after* drug treatment, compared to the control?
+</question>
+
+<question>
+A population of yeast cells is grown in a chemostat. The dilution rate (D) is set to $0.2 \, h^{-1}$, and the feed medium contains a limiting nutrient at a concentration ($S_R$) of $10 \, g/L$. The Monod equation parameters for this yeast are: maximum specific growth rate ($\mu_{max}$) = $0.5 \, h^{-1}$ and the saturation constant ($K_s$) = $2 \, g/L$. At steady state, a sudden influx of a toxic compound reduces the maximum specific growth rate by 20%. Assuming the dilution rate remains constant, what is the *new* steady-state concentration of the limiting nutrient ($S$) in the chemostat?
+</question>
+
+<question>
+In a study of bacterial growth, researchers inoculate $10^3$ bacterial cells into 10 mL of nutrient broth. After a 1-hour lag phase, the cell density reaches $8 \times 10^6$ cells/mL after an additional 3 hours of exponential growth. Assuming exponential growth *after* the lag phase, what is the doubling time of the bacteria in minutes?
+</question>
+
+<question>
+Three linked genes in *Drosophila*, A, B, and C, are arranged in that order. A test cross ($abc/abc$) yields the following progeny:  *abc*: 450, *ABC*: 440, *Abc*: 30, *aBC*: 35, *ABc*: 12, *abC*: 8, *aBc*: 10, *AbC*: 15. What is the map distance (in map units) between genes A and C?
+</question>
+
+<question>
+An enzyme catalyzes a reaction at an initial velocity of $13.33 \, \mu mol/min$ when the substrate concentration is $1 \times 10^{-5} \, M$. If the $K_M$ for this enzyme is $5 \times 10^{-6} \, M$, and the enzyme concentration is $2 \times 10^{-9} \, M$, what is the turnover number ($k_{cat}$) of the enzyme in $min^{-1}$?
+</question>
+=== Final questions generated ===

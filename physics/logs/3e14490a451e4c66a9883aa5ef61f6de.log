@@ -1,0 +1,289 @@
+=== Turn 0: Author generates questions ===
+```
+<question>
+Consider a particle of mass $m$ confined to a one-dimensional infinite potential well of width $L$, defined by $V(x) = 0$ for $0 < x < L$ and $V(x) = \infty$ elsewhere. At time $t=0$, the particle's wave function is given by $\Psi(x, 0) = A \sin(\frac{\pi x}{L}) + B \sin(\frac{3\pi x}{L})$, where $A$ and $B$ are real constants. Determine the value of $A$ such that the wave function $\Psi(x,0)$ is normalized, given that $B = A/2$. Give your answer as a symbolic expression involving $L$.
+</question>
+
+<question>
+A particle of mass $m$ is in a one-dimensional potential well described by $V(x) = \frac{1}{2} m \omega^2 x^2$. At time $t=0$, the wave function is given by $\Psi(x,0) = N( \psi_0(x) + \psi_1(x))$, where $\psi_0(x)$ and $\psi_1(x)$ are the normalized ground state and first excited state wave functions of the harmonic oscillator, respectively, and $N$ is a normalization constant. Given that $\psi_0(x) = (\frac{m \omega}{\pi \hbar})^{1/4} e^{-\frac{m \omega x^2}{2 \hbar}}$ and $\psi_1(x) = (\frac{m \omega}{\pi \hbar})^{1/4} \sqrt{2} (\frac{m \omega}{\hbar})^{1/2} xe^{-\frac{m \omega x^2}{2 \hbar}}$, calculate the normalization constant $N$.
+</question>
+
+<question>
+An electron with mass $m_e$ is incident on a potential step described by $V(x) = 0$ for $x < 0$ and $V(x) = V_0$ for $x > 0$, where $V_0 > 0$. The electron's energy is $E = \frac{V_0}{4}$. Calculate the reflection coefficient $R$ for this electron. Give your answer as a numerical value.
+</question>
+
+<question>
+A particle of mass $m$ is confined to a one-dimensional box of length $L$, with potential $V(x) = 0$ for $0 < x < L$ and $V(x) = \infty$ elsewhere. If the particle is in the first excited state, calculate the probability of finding the particle in the region $0 < x < L/4$.
+</question>
+
+<question>
+Consider a particle of mass $m$ moving in a one-dimensional potential $V(x) = -V_0 \delta(x)$, where $V_0$ is a positive constant and $\delta(x)$ is the Dirac delta function. Determine the energy $E$ of the bound state for this potential. Express your answer in terms of $m$, $V_0$, and $\hbar$.
+</question>
+```
+=== Turn 0: Critic feedback ===
+Here's a critique of the provided questions, evaluating them against your guidelines with concise, actionable feedback for improvement:
+
+**General Strengths:**
+*   All questions excel in modeling a physics scenario, forcing multi-step reasoning, having a single solution, using rigorous and concise phrasing (no hints), clearly defining assumptions and variables, using consistent units/notation, being single-part, and adhering to the specified LaTeX formatting. These are strong points.
+
+**General Weakness (Primary Area for Improvement):**
+*   **Guideline 5 (Be Unique):** The most significant area for improvement across nearly all questions is uniqueness. Many of these are classic, standard textbook problems (e.g., probability in infinite well, potential step reflection coefficient, delta function bound state). To truly meet this guideline, the scenarios should be more novel or combine concepts in less common ways.
+
+---
+
+### Question 1 Critique
+
+```
+<question>
+Consider a particle of mass $m$ confined to a one-dimensional infinite potential well of width $L$, defined by $V(x) = 0$ for $0 < x < L$ and $V(x) = \infty$ elsewhere. At time $t=0$, the particle's wave function is given by $\Psi(x, 0) = A \sin(\frac{\pi x}{L}) + B \sin(\frac{3\pi x}{L})$, where $A$ and $B$ are real constants. Determine the value of $A$ such that the wave function $\Psi(x,0)$ is normalized, given that $B = A/2$. Give your answer as a symbolic expression involving $L$.
+</question>
+```
+**Critique:**
+*   **Guideline 5 (Be Unique):** This is a standard normalization problem for a superposition of states in an infinite well. While good for testing basics, it's not highly novel.
+*   **All other guidelines:** Met effectively.
+
+**Actionable Feedback:**
+*   **Improve Uniqueness:** Consider adding a time dependence (e.g., asking for the wave function at a later time, or the expectation value of energy/position/momentum). Alternatively, use a less common superposition or a slightly modified potential (e.g., a finite well for a similar problem, if the math remains tractable without becoming overwhelmingly complex for a single question).
+
+---
+
+### Question 2 Critique
+
+```
+<question>
+A particle of mass $m$ is in a one-dimensional potential well described by $V(x) = \frac{1}{2} m \omega^2 x^2$. At time $t=0$, the wave function is given by $\Psi(x,0) = N( \psi_0(x) + \psi_1(x))$, where $\psi_0(x)$ and $\psi_1(x)$ are the normalized ground state and first excited state wave functions of the harmonic oscillator, respectively, and $N$ is a normalization constant. Given that $\psi_0(x) = (\frac{m \omega}{\pi \hbar})^{1/4} e^{-\frac{m \omega x^2}{2 \hbar}}$ and $\psi_1(x) = (\frac{m \omega}{\pi \hbar})^{1/4} \sqrt{2} (\frac{m \omega}{\hbar})^{1/2} xe^{-\frac{m \omega x^2}{2 \hbar}}$, calculate the normalization constant $N$.
+</question>
+```
+**Critique:**
+*   **Guideline 3 (Force Multi-Step Reasoning) & Guideline 5 (Be Unique):** Providing the explicit, complex forms of $\psi_0(x)$ and $\psi_1(x)$ simplifies the problem too much if the student knows the orthogonality of harmonic oscillator eigenstates. The core skill being tested is the normalization of a superposition using orthogonality, not integration of complex Gaussians. Explicitly giving the wave functions reduces the "multi-step reasoning" by removing the need to recall or prove their properties (normalized and orthogonal).
+*   **All other guidelines:** Met effectively.
+
+**Actionable Feedback:**
+*   **Improve Multi-Step Reasoning & Uniqueness:** Remove the explicit definitions of $\psi_0(x)$ and $\psi_1(x)$. Simply state that they are the *normalized* ground and first excited states. This forces students to rely on the crucial concept of orthogonality of stationary states, which is the more elegant and physically insightful way to solve this problem.
+
+---
+
+### Question 3 Critique
+
+```
+<question>
+An electron with mass $m_e$ is incident on a potential step described by $V(x) = 0$ for $x < 0$ and $V(x) = V_0$ for $x > 0$, where $V_0 > 0$. The electron's energy is $E = \frac{V_0}{4}$. Calculate the reflection coefficient $R$ for this electron. Give your answer as a numerical value.
+</question>
+```
+**Critique:**
+*   **Guideline 5 (Be Unique):** This is *the* archetypal potential step problem, universally covered in introductory quantum mechanics. It lacks novelty significantly.
+*   **Guideline 9 (Consistent Units):** The guideline states "all numerical answers must include correct SI units." The reflection coefficient $R$ is dimensionless. This instruction is problematic for dimensionless quantities; it should be clarified that units are only required where applicable. The question itself correctly asks for a "numerical value" without implying units.
+*   **All other guidelines:** Met effectively.
+
+**Actionable Feedback:**
+*   **Improve Uniqueness:** Consider a more complex barrier (e.g., a finite square barrier or well), a different potential shape (e.g., linear), or ask for a less common quantity (e.g., tunneling time, or the probability current).
+*   **Clarify Unit Instruction:** For future reference, specify "with appropriate SI units *where applicable*".
+
+---
+
+### Question 4 Critique
+
+```
+<question>
+A particle of mass $m$ is confined to a one-dimensional box of length $L$, with potential $V(x) = 0$ for $0 < x < L$ and $V(x) = \infty$ elsewhere. If the particle is in the first excited state, calculate the probability of finding the particle in the region $0 < x < L/4$.
+</question>
+```
+**Critique:**
+*   **Guideline 5 (Be Unique):** This is a *very* common textbook problem for the infinite potential well, often among the first examples after introducing probability density. It significantly lacks novelty.
+*   **Guideline 9 (Consistent Units):** Similar to Q3, probability is dimensionless. The instruction "all numerical answers must include correct SI units" is problematic here.
+*   **All other guidelines:** Met effectively.
+
+**Actionable Feedback:**
+*   **Improve Uniqueness:** To make it more unique, consider:
+    *   A superposition of states instead of a single eigenstate.
+    *   A time-dependent probability calculation for a non-stationary state.
+    *   Asking for a different expectation value or uncertainty.
+    *   A different (but still solvable) potential.
+*   **Clarify Unit Instruction:** For future reference, specify "with appropriate SI units *where applicable*".
+
+---
+
+### Question 5 Critique
+
+```
+<question>
+Consider a particle of mass $m$ moving in a one-dimensional potential $V(x) = -V_0 \delta(x)$, where $V_0$ is a positive constant and $\delta(x)$ is the Dirac delta function. Determine the energy $E$ of the bound state for this potential. Express your answer in terms of $m$, $V_0$, and $\hbar$.
+</question>
+```
+**Critique:**
+*   **Guideline 5 (Be Unique):** This is *the* classic delta function potential problem for finding the bound state energy. It's a fundamental derivation but is standard textbook material.
+*   **All other guidelines:** Met effectively.
+
+**Actionable Feedback:**
+*   **Improve Uniqueness:** To make it more unique, consider:
+    *   Asking for the wave function of the bound state.
+    *   Analyzing scattering states (e.g., reflection/transmission coefficients for specific energy ranges).
+    *   A potential with two delta functions (e.g., $V(x) = -V_0 [\delta(x-a) + \delta(x+a)]$).
+    *   A time-dependent delta potential (though this might become multipart or excessively complex).
+
+---
+=== Turn 1: Author refines questions ===
+```
+<question>
+A particle of mass $m$ is confined to a one-dimensional infinite potential well of width $L$, defined by $V(x) = 0$ for $0 < x < L$ and $V(x) = \infty$ elsewhere. At time $t=0$, the particle's wave function is given by $\Psi(x, 0) = A \sin(\frac{\pi x}{L}) + \frac{A}{3} \sin(\frac{2\pi x}{L})$, where $A$ is a real constant.  Determine the expectation value of the energy, $\langle E \rangle$, for this particle. Give your answer as a symbolic expression involving $L$, $m$, and $\hbar$.
+</question>
+
+<question>
+A particle of mass $m$ is in a one-dimensional potential well described by $V(x) = \frac{1}{2} m \omega^2 x^2$. At time $t=0$, the wave function is given by $\Psi(x,0) = N( \psi_0(x) + \psi_1(x))$, where $\psi_0(x)$ and $\psi_1(x)$ are the normalized ground state and first excited state wave functions of the harmonic oscillator, respectively, and $N$ is a normalization constant. Calculate the normalization constant $N$.
+</question>
+
+<question>
+An electron with mass $m_e$ and initial kinetic energy $E$ is incident on a potential step described by $V(x) = 0$ for $x < 0$ and $V(x) = 2E$ for $x > 0$. Calculate the ratio of the de Broglie wavelength of the electron to the left of the step to the de Broglie wavelength of the electron to the right of the step. Give your answer as a numerical value.
+</question>
+
+<question>
+A particle of mass $m$ is confined to a one-dimensional box of length $L$, with potential $V(x) = 0$ for $0 < x < L$ and $V(x) = \infty$ elsewhere. The particle is in a superposition state described by the wave function $\Psi(x,t) = \frac{1}{\sqrt{2}} \psi_1(x)e^{-iE_1t/\hbar} + \frac{1}{\sqrt{2}} \psi_2(x)e^{-iE_2t/\hbar}$, where $\psi_1(x)$ and $\psi_2(x)$ are the normalized ground and first excited states, and $E_1$ and $E_2$ are their corresponding energies. Calculate the expectation value of the position, $\langle x \rangle$, at time $t=0$. Express your answer in terms of $L$.
+</question>
+
+<question>
+Consider a particle of mass $m$ moving in a one-dimensional potential $V(x) = -V_0 \delta(x)$, where $V_0$ is a positive constant and $\delta(x)$ is the Dirac delta function. A second, identical delta function potential is added a distance $2a$ away, so that $V(x) = -V_0 [\delta(x) + \delta(x-2a)]$. Assuming $V_0$ and $a$ are such that only one bound state exists, qualitatively sketch the approximate wave function of this bound state. In your sketch, clearly indicate any points of symmetry or antisymmetry. No calculations are required for this qualitative problem.
+</question>
+```
+=== Turn 1: Critic feedback ===
+Here's a critique of each question based on your guidelines:
+
+<question>
+A particle of mass $m$ is confined to a one-dimensional infinite potential well of width $L$, defined by $V(x) = 0$ for $0 < x < L$ and $V(x) = \infty$ elsewhere. At time $t=0$, the particle's wave function is given by $\Psi(x, 0) = A \sin(\frac{\pi x}{L}) + \frac{A}{3} \sin(\frac{2\pi x}{L})$, where $A$ is a real constant. Determine the expectation value of the energy, $\langle E \rangle$, for this particle. Give your answer as a symbolic expression involving $L$, $m$, and $\hbar$.
+</question>
+
+**Critique 1:**
+*   **Guideline 1 (Model a Physics Scenario):** Met. This is a standard and appropriate quantum mechanics scenario.
+*   **Guideline 2 (Expect answers as symbolic/numerical):** Met. The question asks for a symbolic expression.
+*   **Guideline 3 (Force Multi-Step Reasoning):** Met. The solution requires normalizing the given wave function (finding $A$), recognizing the components as energy eigenstates, and then using the formula for expectation value of energy in a superposition state, $\langle E \rangle = \sum_n |c_n|^2 E_n$. This involves multiple steps: normalization, identification of state energies, and calculation of the weighted sum.
+*   **Guideline 4 (Be Unique):** This is a fairly standard problem type involving superposition in an infinite well. While the specific coefficients chosen might make it slightly less common than just a sum of two states, it's still very close to a typical textbook example. It could be made more unique by presenting a wave function that isn't directly composed of a few eigenstates, requiring a Fourier series expansion to find the coefficients.
+*   **Guideline 5 (Single Solution):** Met. There is one correct symbolic expression for $\langle E \rangle$.
+*   **Guideline 6 (Rigorous, concise phrasing):** Met. The phrasing is clear, professional, and free of hints.
+*   **Guideline 7 (All assumptions must be clearly stated, and all variables must be defined):** Met. All variables ($m, L, \hbar, A$) are defined, and the potential is clearly specified.
+*   **Guideline 8 (Units must be consistent; all numerical answers must include correct SI units. Symbols should follow conventional physics notation):** Met. Symbols follow conventional notation. The answer is symbolic, so unit consistency is inherent to the formula.
+*   **Guideline 9 (Questions must not be multipart):** Met. Only one quantity ($\langle E \rangle$) is requested.
+*   **Guideline 10 (Question Formatting):** Met. LaTeX formatting is correctly applied.
+
+**Actionable Feedback:**
+*   The question is solid overall. To enhance uniqueness (Guideline 4), consider providing an initial wave function that is *not* a direct sum of a few energy eigenstates, but perhaps a general function within the well (e.g., a simple polynomial or a triangular pulse) that requires explicit calculation of the Fourier coefficients to find the energy probabilities. However, for the given problem type, this might add excessive computational burden beyond the core quantum concept being tested. As is, it's a good question.
+
+---
+
+<question>
+A particle of mass $m$ is in a one-dimensional potential well described by $V(x) = \frac{1}{2} m \omega^2 x^2$. At time $t=0$, the wave function is given by $\Psi(x,0) = N( \psi_0(x) + \psi_1(x))$, where $\psi_0(x)$ and $\psi_1(x)$ are the normalized ground state and first excited state wave functions of the harmonic oscillator, respectively, and $N$ is a normalization constant. Calculate the normalization constant $N$.
+</question>
+
+**Critique 2:**
+*   **Guideline 1 (Model a Physics Scenario):** Met. This is a standard and appropriate quantum mechanics scenario (harmonic oscillator).
+*   **Guideline 2 (Expect answers as symbolic/numerical):** Met. The question asks for a normalization constant, which in this case will be a numerical value ($1/\sqrt{2}$).
+*   **Guideline 3 (Force Multi-Step Reasoning):** Met. The solution requires applying the normalization condition ($\int |\Psi|^2 dx = 1$) and understanding the orthogonality and normalization properties of energy eigenstates ($\int \psi_i^* \psi_j dx = \delta_{ij}$). This involves multiple steps of setup and algebraic manipulation.
+*   **Guideline 4 (Be Unique):** **Not met.** This is a very common, almost trivial, textbook example for normalizing a superposition of two orthogonal and already normalized states. It lacks novelty and might be considered too basic for advanced learners if the intention is to truly test unique problem-solving.
+*   **Guideline 5 (Single Solution):** Met. There is one correct numerical value for $N$.
+*   **Guideline 6 (Rigorous, concise phrasing):** Met. The phrasing is clear, professional, and free of hints.
+*   **Guideline 7 (All assumptions must be clearly stated, and all variables must be defined):** Met. All variables ($m, \omega, \psi_0, \psi_1, N$) are defined.
+*   **Guideline 8 (Units must be consistent; all numerical answers must include correct SI units. Symbols should follow conventional physics notation):** Met. $N$ is a dimensionless constant, so no units are required. Symbols follow conventional notation.
+*   **Guideline 9 (Questions must not be multipart):** Met. Only one quantity ($N$) is requested.
+*   **Guideline 10 (Question Formatting):** Met. LaTeX formatting is correctly applied.
+
+**Actionable Feedback:**
+*   **Improve Uniqueness (Guideline 4):** To make this question more challenging and unique, consider providing an initial wave function that is *not* a simple sum of normalized eigenstates. For example, give a function like $\Psi(x,0) = C e^{-ax^2}$ (a Gaussian) and ask for its normalization constant, requiring explicit integration. Alternatively, if keeping the superposition format, perhaps make the component functions *not* normalized or *not* orthogonal initially, or ask for the normalization of a more complex superposition.
+
+---
+
+<question>
+An electron with mass $m_e$ and initial kinetic energy $E$ is incident on a potential step described by $V(x) = 0$ for $x < 0$ and $V(x) = 2E$ for $x > 0$. Calculate the ratio of the de Broglie wavelength of the electron to the left of the step to the de Broglie wavelength of the electron to the right of the step. Give your answer as a numerical value.
+</question>
+
+**Critique 3:**
+*   **Guideline 1 (Model a Physics Scenario):** Met. This is a standard potential step problem in quantum mechanics.
+*   **Guideline 2 (Expect answers as symbolic/numerical):** Met. The question asks for a numerical value.
+*   **Guideline 3 (Force Multi-Step Reasoning):** Met, if the problem were physically valid. It requires understanding kinetic energy, momentum, and the de Broglie wavelength definition.
+*   **Guideline 4 (Be Unique):** Not unique. This is a very common textbook problem involving a potential step.
+*   **Guideline 5 (Single Solution):** **NOT MET (Critical Flaw).** The core problem is fundamentally flawed. To the right of the step, the potential energy $V(x) = 2E$ is greater than the total incident energy $E$. This means the kinetic energy in the region $x > 0$ would be $E - V(x) = E - 2E = -E$. A negative kinetic energy implies that the region is classically forbidden. In quantum mechanics, the wave function in this region decays exponentially (it's an evanescent wave) and does not oscillate. Therefore, a de Broglie wavelength (which is associated with a propagating, oscillatory wave) is *not defined* in the region $x > 0$. The question asks for a ratio involving a non-existent physical quantity, making it unanswerable in a physically meaningful way.
+*   **Guideline 6 (Rigorous, concise phrasing):** **NOT MET.** The phrasing "de Broglie wavelength... to the right of the step" is not rigorous when the particle is in a classically forbidden region.
+*   **Guideline 7 (All assumptions must be clearly stated, and all variables must be defined):** Met. All variables ($m_e, E$) and the potential are defined.
+*   **Guideline 8 (Units must be consistent; all numerical answers must include correct SI units. Symbols should follow conventional physics notation):** Met (if the problem were valid). The ratio is dimensionless.
+*   **Guideline 9 (Questions must not be multipart):** Met. Only one quantity (the ratio) is requested.
+*   **Guideline 10 (Question Formatting):** Met. LaTeX formatting is correctly applied.
+
+**Actionable Feedback:**
+*   **Rectify Fundamental Flaw (Guideline 5 & 6):** The most crucial improvement is to ensure that the de Broglie wavelength is physically defined in both regions. Change the potential step such that the electron's total energy $E$ is *greater* than the potential $V(x)$ for $x > 0$. For example, change $V(x) = 2E$ to $V(x) = E/2$.
+    *   If $V(x) = E/2$ for $x > 0$:
+        *   Left: $p_L = \sqrt{2m_e E}$, $\lambda_L = h/p_L$.
+        *   Right: $E_{kinetic,R} = E - E/2 = E/2$, $p_R = \sqrt{2m_e (E/2)} = \sqrt{m_e E}$, $\lambda_R = h/p_R$.
+        *   The ratio $\lambda_L/\lambda_R = \frac{h/\sqrt{2m_e E}}{h/\sqrt{m_e E}} = \frac{\sqrt{m_e E}}{\sqrt{2m_e E}} = \frac{1}{\sqrt{2}}$. This would yield a valid numerical answer.
+*   **Improve Uniqueness (Guideline 4):** Even with the fix, this is a very standard problem. To make it more unique, consider asking for the ratio of momentum or kinetic energy rather than wavelength, or introduce a more complex potential structure (e.g., a barrier).
+
+---
+
+<question>
+A particle of mass $m$ is confined to a one-dimensional box of length $L$, with potential $V(x) = 0$ for $0 < x < L$ and $V(x) = \infty$ elsewhere. The particle is in a superposition state described by the wave function $\Psi(x,t) = \frac{1}{\sqrt{2}} \psi_1(x)e^{-iE_1t/\hbar} + \frac{1}{\sqrt{2}} \psi_2(x)e^{-iE_2t/\hbar}$, where $\psi_1(x)$ and $\psi_2(x)$ are the normalized ground and first excited states, and $E_1$ and $E_2$ are their corresponding energies. Calculate the expectation value of the position, $\langle x \rangle$, at time $t=0$. Express your answer in terms of $L$.
+</question>
+
+**Critique 4:**
+*   **Guideline 1 (Model a Physics Scenario):** Met. This is a standard and appropriate quantum mechanics scenario (infinite potential well).
+*   **Guideline 2 (Expect answers as symbolic/numerical):** Met. The question asks for a symbolic expression in terms of $L$.
+*   **Guideline 3 (Force Multi-Step Reasoning):** Met. This question requires a significant amount of multi-step reasoning. Students must:
+    1.  Recall or derive the functional form of $\psi_1(x)$ and $\psi_2(x)$ for the infinite well.
+    2.  Understand how to calculate an expectation value for a superposition state: $\langle x \rangle = \int \Psi^*(x,t) x \Psi(x,t) dx$.
+    3.  Recognize that at $t=0$, the exponential terms become 1.
+    4.  Perform the integration $\int_0^L \left(\frac{1}{\sqrt{2}} \psi_1(x) + \frac{1}{\sqrt{2}} \psi_2(x)\right) x \left(\frac{1}{\sqrt{2}} \psi_1(x) + \frac{1}{\sqrt{2}} \psi_2(x)\right) dx$.
+    5.  This simplifies to $\frac{1}{2} \left( \langle x \rangle_1 + \langle x \rangle_2 + 2 \int_0^L \psi_1(x) x \psi_2(x) dx \right)$.
+    6.  The individual expectation values $\langle x \rangle_1 = \langle x \rangle_2 = L/2$ for the infinite well.
+    7.  The cross-term integral $\int_0^L \psi_1(x) x \psi_2(x) dx$ is non-trivial and requires trigonometric identities and integration by parts. This is a robust test of analytical skills.
+*   **Guideline 4 (Be Unique):** While the setup (superposition in an infinite well) is common, calculating $\langle x \rangle$ for such a superposition is less trivial than $\langle E \rangle$ because of the non-zero cross-terms and the required integration. This question offers a good challenge and is sufficiently unique for an assessment.
+*   **Guideline 5 (Single Solution):** Met. There is one correct symbolic expression for $\langle x \rangle$.
+*   **Guideline 6 (Rigorous, concise phrasing):** Met. The phrasing is clear, professional, and correctly indicates evaluation at $t=0$, simplifying the time-dependent phase factors. No hints are provided.
+*   **Guideline 7 (All assumptions must be clearly stated, and all variables must be defined):** Met. All variables ($m, L, \psi_1, \psi_2, E_1, E_2$) are defined.
+*   **Guideline 8 (Units must be consistent; all numerical answers must include correct SI units. Symbols should follow conventional physics notation):** Met. The answer is in terms of $L$, ensuring consistency. Symbols follow conventional notation.
+*   **Guideline 9 (Questions must not be multipart):** Met. Only one quantity ($\langle x \rangle$) is requested.
+*   **Guideline 10 (Question Formatting):** Met. LaTeX formatting is correctly applied.
+
+**Actionable Feedback:**
+*   This is a strong question that effectively assesses multi-step problem-solving and analytical skills. No significant improvements are needed.
+
+---
+
+<question>
+Consider a particle of mass $m$ moving in a one-dimensional potential $V(x) = -V_0 \delta(x)$, where $V_0$ is a positive constant and $\delta(x)$ is the Dirac delta function. A second, identical delta function potential is added a distance $2a$ away, so that $V(x) = -V_0 [\delta(x) + \delta(x-2a)]$. Assuming $V_0$ and $a$ are such that only one bound state exists, qualitatively sketch the approximate wave function of this bound state. In your sketch, clearly indicate any points of symmetry or antisymmetry. No calculations are required for this qualitative problem.
+</question>
+
+**Critique 5:**
+*   **Guideline 1 (Model a Physics Scenario):** Met. This is a standard and appropriate quantum mechanics scenario (double delta function potential).
+*   **Guideline 2 (Expect answers as symbolic/numerical):** **NOT MET (Critical Flaw).** The guideline explicitly states: "Expect answers as either a symbolic expression (e.g., $F = ma$) or a single numerical value with appropriate SI units (e.g., $a = 9.8 \, \mathrm{m/s^2}$)." This question asks for a "qualitative sketch," which falls outside these acceptable formats.
+*   **Guideline 3 (Force Multi-Step Reasoning):** Met. Even though it's qualitative, it requires conceptual understanding of wave function behavior in different regions, boundary conditions at delta potentials (continuity of $\psi$, discontinuity of $\psi'$), and the implications of potential symmetry on wave function parity.
+*   **Guideline 4 (Be Unique):** The double delta potential is a classic problem. However, asking for a *qualitative sketch* under the specific condition of "only one bound state" (which implies the symmetric ground state) is a good conceptual test and is somewhat unique in its output requirement compared to typical quantitative problems.
+*   **Guideline 5 (Single Solution):** Met. While a qualitative sketch allows for some artistic variation, the essential features (shape, exponential decay, cusps, symmetry) should be consistent for the correct answer, leading to a single "type" of solution.
+*   **Guideline 6 (Rigorous, concise phrasing):** Met. The phrasing is clear and professional. No hints are provided beyond the explicit request for qualitative information.
+*   **Guideline 7 (All assumptions must be clearly stated, and all variables must be defined):** Met. All variables ($m, V_0, a$) are defined. The crucial assumption of "only one bound state" is clearly stated.
+*   **Guideline 8 (Units must be consistent; all numerical answers must include correct SI units. Symbols should follow conventional physics notation):** Not applicable for a sketch.
+*   **Guideline 9 (Questions must not be multipart):** Met. Only one request (the sketch) is made.
+*   **Guideline 10 (Question Formatting):** Met. LaTeX formatting is correctly applied.
+
+**Actionable Feedback:**
+*   **Rectify Output Format (Guideline 2):** The primary issue is that the question asks for a sketch, which violates the specified output format. To comply with the guidelines, you must rephrase the question to elicit a symbolic expression or a numerical value.
+    *   **Example (Symbolic):** "Assuming $V_0$ and $a$ are such that only one bound state exists, determine the energy of this bound state as a symbolic expression involving $m$, $V_0$, $a$, and $\hbar$."
+    *   **Example (Numerical/Symbolic Ratio):** "Assuming $V_0$ and $a$ are such that only one bound state exists, calculate the ratio of the probability density at $x=a$ to the probability density at $x=0$ for this bound state. Give your answer as a symbolic expression or numerical value."
+*   If the goal is specifically to test qualitative understanding of wave function shapes, this question is excellent, but it does not fit the assessment's format criteria.
+=== Turn 2: Author refines questions ===
+```
+<question>
+A particle of mass $m$ is confined to a one-dimensional infinite potential well of width $L$, defined by $V(x) = 0$ for $0 < x < L$ and $V(x) = \infty$ elsewhere. At time $t=0$, the particle's wave function is given by $\Psi(x, 0) = A x (L-x)$ for $0 < x < L$ and $\Psi(x,0) = 0$ elsewhere, where $A$ is a real constant. Determine the expectation value of the energy, $\langle E \rangle$, for this particle. Give your answer as a symbolic expression involving $L$, $m$, and $\hbar$.
+</question>
+
+<question>
+A particle of mass $m$ is in a one-dimensional potential well described by $V(x) = \frac{1}{2} m \omega^2 x^2$. At time $t=0$, the wave function is given by $\Psi(x,0) = C e^{-\alpha x^2}$, where $C$ is a normalization constant and $\alpha$ is a parameter. Determine the value of $C$ required to normalize the wave function. Express your answer in terms of $m$, $\omega$, and fundamental constants, eliminating $\alpha$. (Hint: Relate $\alpha$ to the parameters of the potential well using the ground state wave function).
+</question>
+
+<question>
+An electron with mass $m_e$ and initial kinetic energy $E$ is incident on a potential step described by $V(x) = 0$ for $x < 0$ and $V(x) = E/2$ for $x > 0$. Calculate the ratio of the de Broglie wavelength of the electron to the left of the step to the de Broglie wavelength of the electron to the right of the step. Give your answer as a numerical value.
+</question>
+
+<question>
+A particle of mass $m$ is confined to a one-dimensional box of length $L$, with potential $V(x) = 0$ for $0 < x < L$ and $V(x) = \infty$ elsewhere. The particle is in a superposition state described by the wave function $\Psi(x,t) = \frac{1}{\sqrt{2}} \psi_1(x)e^{-iE_1t/\hbar} + \frac{1}{\sqrt{2}} \psi_2(x)e^{-iE_2t/\hbar}$, where $\psi_1(x)$ and $\psi_2(x)$ are the normalized ground and first excited states, and $E_1$ and $E_2$ are their corresponding energies. Calculate the expectation value of the position, $\langle x \rangle$, at time $t=0$. Express your answer in terms of $L$.
+</question>
+
+<question>
+Consider a particle of mass $m$ moving in a one-dimensional potential $V(x) = -V_0 \delta(x)$, where $V_0$ is a positive constant and $\delta(x)$ is the Dirac delta function. A second, identical delta function potential is added a distance $2a$ away, so that $V(x) = -V_0 [\delta(x) + \delta(x-2a)]$. Assuming $V_0$ and $a$ are such that only one bound state exists, calculate the ratio of the probability density at $x=a$ to the probability density at $x=0$ for this bound state. Give your answer as a numerical value.
+</question>
+```
+=== Final questions generated ===

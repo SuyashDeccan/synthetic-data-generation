@@ -1,0 +1,542 @@
+### Question ID: BIO_06062025_1
+**Question:**
+A patient undergoing closed reduction of a mandibular fracture experiences significant discomfort. Their initial VAS score is 7. After local anesthesia (lidocaine), the score drops to 3.  Lidocaine's mechanism involves blocking sodium channels, thereby preventing nerve depolarization. Assume a linear relationship between the *rate of action potential firing* and the VAS score.  If lidocaine reduces the rate of action potential firing by the same percentage as it reduces the VAS score, and the resting membrane potential is -70 mV, calculate the *new* membrane potential required to initiate an action potential after lidocaine administration, given that the threshold potential *before* lidocaine was -55mV. (Assume a direct, proportional effect on the *difference* between resting and threshold potential).
+
+### Question ID: BIO_06062025_2
+**Question:**
+A clinical trial compares two methods for managing mandibular fractures: Method A (standard) and Method B (novel). Method A has a documented success rate of 85%. Method B is hypothesized to have a higher success rate.  The trial aims for 80% power to detect a clinically significant difference of 10% (absolute) in success rates between the two methods (alpha = 0.05, two-sided).  Using a one-sided Z-test approximation for sample size calculation, where $n = 2 * [(z_{\\alpha} + z_{\\beta})^2 * p(1-p)] / d^2$, and *assuming* p is the *lower* success rate (0.85) and d is the difference (0.1), what is the *approximate minimum* number of patients needed *per group* for this trial?  (z-score for alpha=0.05 one-sided = 1.645, z-score for power 80% = 0.84)
+
+### Question ID: BIO_06062025_3
+**Question:**
+A patient with a displaced mandibular fracture is being considered for ORIF. Pre-operative radiographs reveal a fracture gap of 4 mm. The surgeon uses a bone graft that reduces the gap by 1.5 mm. Assuming a bone regeneration rate of 0.5 mm per week for the remaining gap, and knowing that bone remodeling requires woven bone to be replaced by lamellar bone at a rate of 0.1 mm per week (meaning the newly regenerated bone is initially woven and needs remodeling), how many weeks will it take for the *lamellar bone front* to completely bridge the *original* fracture gap (ignoring any graft remodeling)?
+
+### Question ID: BIO_06062025_4
+**Question:**
+A study evaluates the inflammatory response following MMF versus RIF for mandibular fractures, measuring CRP.  The MMF group has an average CRP level of 15 mg/L, and the RIF group has 8 mg/L at 24 hours. CRP has a half-life of approximately 19 hours.  Assuming first-order kinetics decay, calculate the CRP level in the MMF group 48 hours *after* the initial 24-hour measurement.
+
+### Question ID: BIO_06062025_5
+**Question:**
+A surgeon evaluates two MMF techniques: stainless steel wires and composite resin splints. The wires provide 50 N over 0.0002 m², and the splints provide 75 N over 0.0003 m².  The fracture site's cross-sectional area is 0.0005 m². Bone's compressive strength is 170 MPa.  Calculate the difference in pressure exerted by the two techniques (as before). Then, *assuming* the *lower* pressure is the baseline, what *additional force* distributed evenly over the entire fracture site would be required to exceed 75% of the bone's compressive strength? Express the additional force in Newtons (N).
+
+### Question ID: BIO_06062025_1
+**Question:**
+A dental hygiene student is conducting a single-blinded, prospective clinical trial to compare two different methods of interdental cleaning on patients experiencing gingival inflammation. After two weeks, the patient's Modified Gingival Index (MGI) score is assessed. Assume a linear relationship between the MGI score and the number of inflammatory cells present, where an MGI score of 0 corresponds to a basal level of 1000 inflammatory cells per $\text{mm}^3$, and an MGI score of 1 corresponds to 2000 inflammatory cells/$\text{mm}^3$. Patient A, using method 1, shows a decrease in MGI from 2.5 to 1.0. Patient B, using method 2, exhibits a decrease from 2.0 to 1.2. What is the difference in the estimated number of inflammatory cells per $\text{mm}^3$ reduced between Patient A and Patient B?
+
+### Question ID: BIO_06062025_2
+**Question:**
+A researcher is evaluating oral hygiene methods following periodontal surgery, measuring patient discomfort using a visual analog scale (VAS) from 0 (no pain) to 10 (worst pain). Patients are randomly assigned to Group X (chlorhexidine mouthwash) or Group Y (saline rinses). Postoperative VAS scores are recorded at 24 and 48 hours. If the average VAS score for Group X decreases from 6.0 at 24 hours to 3.0 at 48 hours, and the average VAS score for Group Y decreases from 7.0 at 24 hours to 5.0 at 48 hours, what is the difference in the *rate* of perceived pain reduction (VAS units per hour) between Group X and Group Y over the 24-hour period?
+
+### Question ID: BIO_06062025_3
+**Question:**
+In a clinical trial assessing a novel mouthwash for gingival inflammation, researchers use the Modified Gingival Index (MGI). At baseline, the average MGI score for the treatment group (n=30) is 2.8. After two weeks, the average MGI score decreases to 1.4. Assume a linear relationship between MGI score and neutrophil count in the gingival crevicular fluid (GCF), where an MGI score of 3 corresponds to $6\times10^6$ neutrophils/mL, and an MGI score of 1 corresponds to $2\times10^6$ neutrophils/mL. What is the average decrease in neutrophils/mL in GCF per patient?
+
+### Question ID: BIO_06062025_4
+**Question:**
+A dental hygienist is comparing two powered toothbrushes for reducing gingival bleeding. The study involves 20 patients (10 using Toothbrush A, 10 using Toothbrush B). Bleeding on Probing (BOP) is assessed at six sites per tooth, recording the number of bleeding sites for each patient. Initially, the average number of bleeding sites is 24 per patient across both groups. After 4 weeks, the average number of bleeding sites decreases to 8 for Toothbrush A users and 12 for Toothbrush B users. What is the difference in the percentage reduction of bleeding sites between the two toothbrush groups?
+
+### Question ID: BIO_06062025_5
+**Question:**
+A dental hygiene student is conducting a single-blinded, prospective clinical trial to compare two different methods of interdental cleaning on patients experiencing gingival inflammation. After two weeks, the patient's Modified Gingival Index (MGI) score is assessed. Assume a linear relationship between the MGI score and the number of inflammatory cells present, where an MGI score of 0 corresponds to a basal level of 1000 inflammatory cells per $\text{mm}^3$, and an MGI score of 1 corresponds to 2000 inflammatory cells/$\text{mm}^3$. Patient A, using method 1, shows a decrease in MGI from 2.5 to 1.0. Patient B, using method 2, exhibits a decrease from 2.0 to 1.2. What is the difference in the estimated number of inflammatory cells per $\text{mm}^3$ reduced between Patient A and Patient B?
+
+### Question ID: BIO_06062025_6
+**Question:**
+A researcher is evaluating oral hygiene methods following periodontal surgery, measuring patient discomfort using a visual analog scale (VAS) from 0 (no pain) to 10 (worst pain). Patients are randomly assigned to Group X (chlorhexidine mouthwash) or Group Y (saline rinses). Postoperative VAS scores are recorded at 24 and 48 hours. If the average VAS score for Group X decreases from 6.0 at 24 hours to 3.0 at 48 hours, and the average VAS score for Group Y decreases from 7.0 at 24 hours to 5.0 at 48 hours, what is the difference in the *rate* of perceived pain reduction (VAS units per hour) between Group X and Group Y over the 24-hour period?
+
+### Question ID: BIO_06062025_7
+**Question:**
+In a clinical trial assessing a novel mouthwash for gingival inflammation, researchers use the Modified Gingival Index (MGI). At baseline, the average MGI score for the treatment group (n=30) is 2.8. After two weeks, the average MGI score decreases to 1.4. Assume a linear relationship between MGI score and neutrophil count in the gingival crevicular fluid (GCF), where an MGI score of 3 corresponds to $6\times10^6$ neutrophils/mL, and an MGI score of 1 corresponds to $2\times10^6$ neutrophils/mL. What is the average decrease in neutrophils/mL in GCF per patient?
+
+### Question ID: BIO_06062025_8
+**Question:**
+A dental hygienist is comparing two powered toothbrushes for reducing gingival bleeding. The study involves 20 patients (10 using Toothbrush A, 10 using Toothbrush B). Bleeding on Probing (BOP) is assessed at six sites per tooth, recording the number of bleeding sites for each patient. Initially, the average number of bleeding sites is 24 per patient across both groups. After 4 weeks, the average number of bleeding sites decreases to 8 for Toothbrush A users and 12 for Toothbrush B users. What is the difference in the percentage reduction of bleeding sites between the two toothbrush groups?
+
+### Question ID: BIO_06062025_1
+**Question:**
+A veterinary researcher is investigating the effects of dexmedetomidine and fentanyl on canine thermoregulation. A $12\\,\\mathrm{kg}$ dog under dexmedetomidine experiences a decrease in metabolic rate of $20\\%$.  If a $1\\%$ decrease in metabolic rate is known to correlate with a $0.05\\,{}^{\\circ}\\mathrm{C}$ decrease in body temperature, what is the expected change in the dog's body temperature (in ${}^{\\circ}\\mathrm{C}$) attributable to this change in metabolic rate? Give your answer as a negative number.
+
+### Question ID: BIO_06062025_2
+**Question:**
+An equine veterinarian is assessing the effects of fentanyl on respiratory parameters. A horse receiving fentanyl exhibits a respiratory rate of $8$ breaths per minute and a tidal volume of $5\\,\\mathrm{L}$.  Assuming a dead space volume of $1.5\\,\\mathrm{L}$, calculate the minute alveolar ventilation (in $\\mathrm{L/min}$), which represents the amount of fresh gas reaching the alveoli per minute. Give your answer to one decimal place.
+
+### Question ID: BIO_06062025_3
+**Question:**
+Researchers are studying the effects of dexmedetomidine on renal function in cats. A cat receiving dexmedetomidine shows a decrease in glomerular filtration rate (GFR) of $15\\%$. If the cat's baseline GFR was $3\\,\\mathrm{mL/min/kg}$ and its weight is $5\\,\\mathrm{kg}$, calculate the total decrease in GFR (in $\\mathrm{mL/min}$) attributable to dexmedetomidine.  Give your answer to two decimal places.
+
+### Question ID: BIO_06062025_4
+**Question:**
+A veterinary pharmacologist is comparing the potency of dexmedetomidine and fentanyl in producing analgesia in rats. Dexmedetomidine has a reported analgesic potency $100$ times greater than morphine. Fentanyl, meanwhile, is reported to have analgesic potency that is $80$ times greater than morphine. Considering that an ED50 dose of morphine is $10\\,\\mathrm{mg/kg}$, determine the ratio of the ED50 dose for dexmedetomidine to the ED50 dose for Fentanyl. Give your answer to two decimal places.
+
+### Question ID: BIO_06062025_5
+**Question:**
+A veterinary cardiologist is assessing the effects of fentanyl on heart rate variability (HRV) in dogs. A dog's HRV, as measured by the standard deviation of normal-to-normal (SDNN) intervals, decreases by $25\\%$ after fentanyl administration. If a decrease of $1\\,\\mathrm{ms}$ in SDNN is associated with an increased risk of arrhythmia of $0.02\\%$, and the dog's baseline SDNN was $80\\,\\mathrm{ms}$, calculate the percentage point increase in arrhythmia risk attributable to the fentanyl-induced HRV change. Give your answer to two decimal places.
+
+### Question ID: BIO_06062025_1
+**Question:**
+A researcher is investigating the prevalence of *Escherichia coli* strains exhibiting gas-forming capabilities in patients with Emphysematous Pyelonephritis (EPN). A sample of 200 patients diagnosed with EPN was analyzed. It was determined that 75% of the EPN cases were classified as Class 2. Further analysis revealed that 80% of the Class 2 EPN cases were associated with gas-forming *E. coli*.  Among patients with gas-forming *E. coli*, 60% require immediate percutaneous drainage due to the extent of gas production and associated tissue damage.  How many of the 200 patients diagnosed with EPN would be expected to require immediate percutaneous drainage based on the prevalence of Class 2 EPN and gas-forming *E. coli*?
+
+### Question ID: BIO_06062025_2
+**Question:**
+A hospital is evaluating the impact of minimally invasive management strategies on mortality rates in EPN patients. A retrospective study compared 150 patients who underwent open surgical nephrectomy with 250 patients who received minimally invasive interventions. The mortality rate in the surgical group was 32%, while the minimally invasive group exhibited a mortality rate of 18%.  Severe sepsis contributed to 40% of deaths in the surgical group, but only 15% of deaths in the minimally invasive group. How many deaths related to severe sepsis were *avoided* by using the minimally invasive approach in this cohort of 400 patients compared to if all patients had the open surgical nephrectomy?
+
+### Question ID: BIO_06062025_3
+**Question:**
+A clinical trial enrolled 120 diabetic patients with EPN. After treatment, 65% showed complete resolution without nephrectomy. Among the patients requiring nephrectomy, 40% developed subsequent chronic kidney disease (CKD) requiring dialysis within two years. If 15% of the patients who achieved complete resolution without nephrectomy also developed CKD requiring dialysis due to pre-existing conditions, what is the *total* number of patients from the trial who required dialysis within two years?
+
+### Question ID: BIO_06062025_4
+**Question:**
+A new imaging technique for EPN diagnosis has a sensitivity of 92% and a specificity of 85%. In a population where the prevalence of EPN is 5%, what is the Positive Predictive Value (PPV) of this technique, expressed as a percentage?
+
+### Question ID: BIO_06062025_5
+**Question:**
+Out of 300 EPN patients, 180 had diabetes mellitus. Among those with diabetes, 120 were classified as having severe EPN. For non-diabetic EPN patients, the incidence of severe EPN is 20%. A new treatment is 75% effective at down-staging severe EPN to non-severe status in diabetic patients, but only 50% effective in non-diabetic patients. How many total EPN patients would still be classified as severe after this treatment in the entire cohort of 300?
+
+### Question ID: BIO_06062025_1
+**Question:**
+A researcher is conducting a prospective, single-blinded, controlled clinical study on patients undergoing mandibular microfracture (MMF) to treat temporomandibular joint (TMJ) disorders. 30 patients (age 25-40, equal gender distribution) are enrolled. Post-surgery, all patients receive identical pain medication and oral hygiene instructions. Patients are divided into two groups: Group A undergoes MMF with standard surgical protocols, while Group B undergoes MMF with an enhanced, minimally invasive technique hypothesized to reduce soft tissue injury. The average post-operative infection rate in Group A was 7%, and in Group B was 4.2%. The researcher hypothesizes that Group B's minimally invasive technique results in a reduction in soft tissue trauma. If soft tissue trauma is directly proportional to the infection rate, what is the expected average infection rate (expressed as a percentage) if the researcher were to employ the standard surgical protocols (Group A) on a new group of 100 patients with a 50% reduction in soft tissue trauma?
+
+### Question ID: BIO_06062025_2
+**Question:**
+In a prospective clinical trial assessing patient tolerance to MMF, the discomfort level is measured using a visual analog scale (VAS) ranging from 0 (no pain) to 10 (worst pain). 40 patients undergoing MMF were enrolled, divided into two equal groups. Group 1 received standard pre-operative counseling. Group 2 received enhanced pre-operative counseling focused on managing expectations and relaxation techniques. The mean VAS score for Group 1 was 6.5 and the mean VAS score for Group 2 was 4.3. Assuming VAS scores are normally distributed and a single patient scores 5.4 on VAS, what is the probability that the patient belongs to Group 1? Assume equal prior probabilities of belonging to either group and a standard deviation of VAS scores of 1.8 for both groups. Give the answer as a decimal value between 0 and 1.
+
+### Question ID: BIO_06062025_3
+**Question:**
+A prospective clinical study is conducted to compare two MMF techniques (Technique A and Technique B) on 60 patients experiencing TMJ pain. 30 patients are randomly assigned to each group. Intraoperative data reveals that the average duration of surgery for Technique A is 90 minutes, while for Technique B it's 75 minutes. Postoperative data collected over 12 months shows that 8 patients in the Technique A group developed a minor infection, while only 3 patients in the Technique B group did. If the likelihood of infection is directly proportional to the square root of the surgery duration, what is the ratio of the actual infection rate of Technique B to the expected infection rate given its shorter surgical duration, rounded to two decimal places?
+
+### Question ID: BIO_06062025_4
+**Question:**
+A single-blinded clinical trial evaluates the impact of oral hygiene on infection rates post-MMF. 50 patients are enrolled and undergo the same MMF procedure. 25 are assigned to an intensive oral hygiene protocol (Group A) and 25 receive standard oral hygiene instructions (Group B). The number of patients who followed the instructions from Group A is 22, while those who followed the instructions from Group B is 18. Assuming, for each group, a direct proportionality between their observed rate of instruction following and the inverse of their infection rate, what is the difference of infection rate (Group A - Group B) between the two groups, assuming that everyone follows all instructions?
+
+### Question ID: BIO_06062025_5
+**Question:**
+Researchers performed MMF on 40 patients experiencing TMJ dysfunction. They categorized the patients into two groups of 20: one group (A) with no pre-existing conditions, and another group (B) with a history of smoking. All patients underwent the same MMF procedure and received identical postoperative care. Analysis revealed that 3 patients from group A experienced a Grade 1 soft tissue injury, while 8 patients from group B experienced a Grade 1 soft tissue injury. Given the number of patients in each group, determine the relative risk of Grade 1 soft tissue injury for patients with a history of smoking compared to those without any pre-existing conditions.
+
+### Question ID: BIO_06062025_1
+**Question:**
+A researcher is investigating the effects of Nordic Walking on cardiovascular function. Before the intervention, a participant's heart rate reserve (HRR) was 60 bpm. After a 10-week Nordic Walking program, the participant's resting heart rate decreased by 10%, while their maximum heart rate remained constant. Assuming that HRR is calculated as Maximum Heart Rate - Resting Heart Rate, by what percentage did the HRR increase after the intervention? Note that this calculation requires understanding how resting heart rate impacts HRR.
+
+### Question ID: BIO_06062025_2
+**Question:**
+A patient recovering from knee surgery is prescribed Nordic Walking as part of their rehabilitation. Initially, their step length is limited by pain and weakness, averaging 0.4 meters. After several weeks of Nordic Walking, their pain decreases, and their muscle strength improves, leading to a 30% increase in step length. Simultaneously, their cadence (steps per minute) increases from 90 steps/minute to 100 steps/minute. Given that walking speed (m/min) is the product of step length (m) and cadence (steps/min), what is the percentage increase in walking speed after the Nordic Walking intervention?
+
+### Question ID: BIO_06062025_3
+**Question:**
+A study examines the impact of Nordic Walking on pulmonary function in individuals with mild COPD. Baseline forced expiratory volume in 1 second (FEV1) is 2.5 liters. Following a Nordic Walking intervention, FEV1 increases by 15%.  Given that airflow resistance (R) is inversely proportional to FEV1 (R = k / FEV1, where k is a constant), by what percentage does the airflow resistance decrease after the intervention?  Assume k is such that R=1 at baseline.
+
+### Question ID: BIO_06062025_4
+**Question:**
+Researchers are studying the effect of Nordic Walking on bone density in postmenopausal women. A participant's baseline bone mineral density (BMD) in the hip is 0.8 g/cm². After a 6-month Nordic Walking program, BMD increases by 5%.  It is known that the risk of hip fracture is exponentially related to BMD, such that Risk = exp(-5 * BMD). By what percentage does the *relative* risk of hip fracture decrease (compared to baseline) after the intervention? This requires calculating the risk before and after the intervention and then calculating the percentage *decrease* in risk.
+
+### Question ID: BIO_06062025_5
+**Question:**
+A physical therapist is using Nordic Walking to improve balance in a patient with peripheral neuropathy. Before the intervention, the patient's center of pressure (COP) sway area during a single-leg stance was 10 cm². After the intervention, the COP sway area decreased by 40%.  Assume that COP sway area (S) is related to the probability of a loss of balance (P) by the equation P = 0.1 * S + 0.05. What is the change in the probability of loss of balance (ΔP) following the intervention?
+
+### Question ID: BIO_06062025_1
+**Question:**
+A geriatric rehabilitation specialist is investigating the effects of Rhythmic Auditory Stimulation (RAS) during Nordic Walking (NW) exercises on improving gait in older adults.  Baseline arm swing was quantified using Kinovea motion capture software, revealing a mean angle of $\\theta = 15^{\circ}$.  After a six-week RAS+NW intervention, the arm swing angle improved, following a logarithmic progression modeled as $\\theta_{new} = \\theta_{old} + A \\cdot ln(t+1)$, where $A = 5^{\circ}$ represents the therapy's effectiveness coefficient and $t$ is the number of weeks of therapy.  If gait speed ($v$) is directly proportional to the *square root* of the arm swing angle ($v = k \\sqrt{\\theta}$), where $k$ is a constant of proportionality, what is the percentage increase in gait speed attributable to the RAS+NW intervention?
+
+### Question ID: BIO_06062025_2
+**Question:**
+Neurologists are evaluating the efficacy of Rhythmic Auditory Stimulation (RAS) in alleviating motor symptoms in patients with Parkinson's disease. Using the Timed Up and Go (TUG) test, a patient initially required $t_1 = 15 \\,\\mathrm{seconds}$ to complete the task without RAS. With RAS, the same patient's TUG completion time decreased to $t_2 = 12 \\,\\mathrm{seconds}$. Assuming the TUG test covers a fixed distance ($d$), calculate the percentage increase in the patient's average speed ($v$) during the TUG test when using RAS, compared to the unassisted trial.
+
+### Question ID: BIO_06062025_3
+**Question:**
+Researchers are studying the impact of Rhythmic Auditory Stimulation (RAS) on rehabilitating gait function in stroke survivors, using the Functional Gait Assessment (FGA) as a primary outcome measure.  Prior to RAS therapy, a patient scored $FGA_1 = 20$ (out of 30), indicating significant impairments in balance and coordination.  Following a 4-week RAS intervention, the patient's FGA score improved to $FGA_2 = 25$. The FGA score is modeled as a function of gait speed ($v$) and balance ($b$) according to the equation $FGA = c \\cdot v^2 \\cdot \\sqrt{b}$, where $c$ is a proportionality constant.  If the intervention resulted in a 10% improvement in the patient's balance ($b$), determine the percentage increase in gait speed ($v$) as a result of the RAS therapy.
+
+### Question ID: BIO_06062025_4
+**Question:**
+Kinesiologists are using Kinovea software to analyze gait characteristics in a cohort of participants before and after Rhythmic Auditory Stimulation (RAS). An individual's baseline gait is characterized by a step length of $s_1 = 0.6 \\,\\mathrm{m}$ and a cadence of $c_1 = 100 \\,\\mathrm{steps/min}$.  Following RAS treatment, their step length increases to $s_2 = 0.7 \\,\\mathrm{m}$, while their cadence decreases slightly to $c_2 = 95 \\,\\mathrm{steps/min}$.  Quantify the change in gait speed, in meters per second ($\\mathrm{m/s}$), resulting from the RAS intervention.
+
+### Question ID: BIO_06062025_5
+**Question:**
+A physical therapy research team is comparing the effects of Nordic Walking (NW) and Rhythmic Auditory Stimulation (RAS) on postural stability. Participants underwent static balance testing, and their initial average sway area was measured as $A_1 = 50 \\,\\mathrm{cm^2}$. The NW intervention reduced the sway area by 15%. Subsequently, RAS was applied, leading to a further 10% reduction in sway area, calculated *relative to the sway area achieved after the NW intervention*.  Calculate the final sway area $A_2$, in $\\mathrm{cm^2}$, after both the NW and RAS interventions.
+
+### Question ID: BIO_06062025_1
+**Question:**
+An asthma clinical trial compares a new inhaler with a standard inhaler. Researchers use the Morisky Medication Adherence Scale-8 (MMAS-8) to assess adherence. The new inhaler group has an average MMAS-8 score of $6.5$, while the standard inhaler group has an average score of $5.0$. It is known that for every $1$-point increase in the MMAS-8 score, the risk of asthma exacerbation decreases by $15\\%$. Calculate the estimated percentage reduction in asthma exacerbations for the new inhaler group compared to the standard inhaler group, assuming a linear relationship.
+
+### Question ID: BIO_06062025_2
+**Question:**
+A clinical study of COPD patients uses both the MMAS-8 and the Device Appropriateness Index (DAI). Researchers find the following linear regression equation relating Forced Expiratory Volume in one second ($FEV_1$, in Liters) to MMAS-8 and DAI scores: $FEV_1 = 1.5 + 0.15(MMAS-8) + 0.05(DAI)$. If a patient's MMAS-8 score increases by 2 points and their DAI score decreases by 1, what is the net change in their predicted $FEV_1$ (in Liters)?
+
+### Question ID: BIO_06062025_3
+**Question:**
+A researcher designs a study to assess adherence to inhaled corticosteroids in children with asthma. The study involves weekly check-ins, and the researcher wants to quantify the potential cumulative impact of non-adherence over a $12$-week period. Suppose that the average daily adherence rate, $a$, for a patient, determined using an electronic monitoring device, is $0.75$ (where $1.0$ represents perfect adherence). Further suppose that for each $0.1$ decrease in $a$, the patient experiences an average of $0.5$ additional asthma symptoms per week. Calculate the total number of additional asthma symptoms expected for that patient over the $12$-week period, compared to perfect adherence.
+
+### Question ID: BIO_06062025_4
+**Question:**
+In a clinical trial, two groups of patients with COPD are treated with different inhalers. Group A has an average MMAS-8 score of $7$, and Group B has an average MMAS-8 score of $5$. Studies indicate that for every point increase in MMAS-8, lung function (measured in $FEV_1$) improves by $0.1\\,\\mathrm{L}$. Assuming a linear relationship, how much greater is the average $FEV_1$ (in liters) for patients in Group A compared to patients in Group B?
+
+### Question ID: BIO_06062025_5
+**Question:**
+A study investigates adherence to medication in asthma patients, employing the MMAS-8 scale. Patients are categorized into three adherence levels: high (MMAS-8 score of $8$), medium (MMAS-8 score of $6-7$), and low (MMAS-8 score of <$6$).  Further analysis reveals that patients with low adherence have a $20\\%$ greater risk of hospitalization compared to those with medium or high adherence. If the baseline hospitalization rate for the medium/high adherence group is $0.1\\,\\mathrm{hospitalizations\\,per\\,patient-year}$, what is the expected hospitalization rate (in hospitalizations per patient-year) for the low adherence group, rounded to two decimal places?
+
+### Question ID: BIO_06062025_1
+**Question:**
+` tags:
+
+1.  <question>A researcher is evaluating the efficacy of MMF screws versus Erich's arch bars for mandibular fracture stabilization. In a prospective, single-blinded clinical study, 20 patients receive MMF screws and 20 receive Erich's arch bars. Post-operative infection rates are recorded. 3 patients in the MMF screw group and 7 in the Erich's arch bar group develop infections.  Considering the proximity of the oral microbiome to the fracture site, and the different surface materials of MMF screws (typically titanium) and Erich's arch bars (typically stainless steel), which material is more likely to be a preferential site for biofilm formation by *Streptococcus mutans*, and propose *one* biological mechanism that explains the difference in observed infection rates based on this factor.  What percentage of all patients in the study did NOT develop an infection?
+
+### Question ID: BIO_06062025_2
+**Question:**
+A surgeon is deciding between using Erich's arch bars and MMF screws for a patient with a displaced mandibular fracture. Erich's arch bars are estimated to result in a 10-day healing time with a 2% risk of osteomyelitis. MMF screws are estimated to result in a 7-day healing time with a 5% risk of osteomyelitis. Assuming osteomyelitis prolongs overall healing time by 14 days, what is the expected (average) healing time in days for MMF Screws, considering the risk of osteomyelitis?
+
+### Question ID: BIO_06062025_3
+**Question:**
+A clinical trial is conducted to assess patient discomfort following mandibular fracture repair using either hybrid arch bars or MMF screws. Pain levels are assessed using a visual analog scale (VAS) ranging from 0 to 10. The mean VAS score for patients treated with hybrid arch bars is 3.2 ($n=30$), and the standard deviation is 1.5. The mean VAS score for patients treated with MMF screws is 4.8 ($n=30$), and the standard deviation is 2.0. Calculate the standard error of the difference between the means of the two treatment methods. Considering that the VAS scores are subjective, and pain perception can be influenced by the release of endogenous opioid peptides, how could the genetic variability in opioid receptor genes contribute to the observed standard deviations in pain scores within each treatment group?
+
+### Question ID: BIO_06062025_4
+**Question:**
+Following mandibular fracture repair, a patient exhibits signs of poor oral hygiene and a genetic predisposition to slower wound healing. The surgeon estimates the baseline risk of infection is 5%. Poor oral hygiene increases this risk by a factor of 3, and the genetic predisposition increases the risk by an additional 2 percentage points. Given that impaired angiogenesis is a characteristic of slower wound healing, explain how decreased vascularization at the fracture site could lead to an elevated risk of infection, and what is the patient's new estimated risk of infection (expressed as a percentage)?
+
+### Question ID: BIO_06062025_5
+**Question:**
+A surgeon is using MMF to realign a fractured mandible. The initial displacement of the fracture is 8 mm. The MMF application is estimated to reduce the displacement by 75% in the first week. Bone remodeling is occurring at a rate of 0.2 mm per day to further reduce the displacement.  Considering that osteoblasts are responsible for new bone formation during remodeling, and their activity is influenced by growth factors such as BMP-2, how would a localized deficiency in BMP-2 production affect the rate of bone remodeling?  Assuming the remodeling rate is 0.2mm/day if BMP-2 is functioning optimally, but is reduced by 25% with BMP-2 deficiency, how many days after the first week will it take for the remaining displacement to be reduced to 0 mm?
+
+### Question ID: BIO_06062025_1
+**Question:**
+A researcher is performing immunohistochemistry (IHC) on a series of endometrial tissue samples. They observe that a region in a proliferative phase sample displays strong PAX2 staining, with an average staining intensity score of 3 (on a scale of 0-3, with 0 being no staining and 3 being strong staining). In a subsequent endometrioid adenocarcinoma sample from the same patient, a similar region shows a significantly reduced PAX2 staining intensity, scoring an average of 0.5. Assuming the IHC staining intensity is directly proportional to the PAX2 protein concentration, and the PAX2 protein concentration in the proliferative phase is 1.5 $\\mu$g/cell, what is the estimated PAX2 protein concentration per cell in the endometrioid adenocarcinoma sample, in $\\mu$g/cell?
+
+### Question ID: BIO_06062025_2
+**Question:**
+A pathologist is analyzing PAX2 expression in a cohort of 500 endometrial cancer samples using IHC. Based on previous studies, they hypothesize that the mean PAX2 staining intensity in well-differentiated tumors will be significantly higher than in poorly differentiated tumors. They assign a differentiation grade (1-3, with 1 being well-differentiated and 3 being poorly differentiated) to each tumor based on histological analysis. After staining and scoring, the following data is obtained:
+Well-differentiated (Grade 1, n=150): Mean PAX2 intensity = 2.5
+Moderately differentiated (Grade 2, n=200): Mean PAX2 intensity = 1.8
+Poorly differentiated (Grade 3, n=150): Mean PAX2 intensity = 0.9
+Calculate the overall mean PAX2 staining intensity across all 500 samples.
+
+### Question ID: BIO_06062025_3
+**Question:**
+In a research study investigating the role of PAX2 in kidney development, embryonic kidney tissue sections are stained with an anti-PAX2 antibody using IHC. A specific region of interest containing 50 cells shows an average PAX2 staining intensity of 2.0 (on a scale of 0-3). Control tissue from a Pax2 knockout mouse shows an average staining intensity of 0.1 in the same region. What is the percentage increase in average PAX2 staining intensity in the wild type tissue compared to the Pax2 knockout control, considering the number of cells in both regions are equivalent? (Report your answer to the nearest whole percentage point)
+
+### Question ID: BIO_06062025_4
+**Question:**
+A clinical lab is evaluating a new ELISA-based diagnostic test for PAX8, a marker for ovarian cancer. The test correctly identifies 95 out of 100 known ovarian cancer samples as positive (true positives) and correctly identifies 190 out of 200 samples from healthy individuals as negative (true negatives). Calculate the sensitivity of this ELISA test for PAX8.
+
+### Question ID: BIO_06062025_5
+**Question:**
+A lab is optimizing their PAX2 IHC protocol for consistency and reproducibility. They run IHC on 10 control samples (known PAX2 positive expression), obtaining the following PAX2 staining scores (on a scale of 0-3): 2.5, 2.7, 2.3, 2.8, 2.6, 2.4, 2.9, 2.2, 2.7, 2.5. Calculate the *sample* standard deviation of these PAX2 staining scores.
+
+### Question ID: BIO_06062025_1
+**Question:**
+A geriatric rehabilitation center is assessing the long-term effectiveness of aquatic therapy on balance maintenance. Participants were initially treated with a structured Water-Specific Therapy (WST) protocol. At the start of the study, participants exhibited an average sway index of $8.5\,\mathrm{cm}$ during a single-leg stance test. After the WST intervention, the sway index improved to $5.2\,\mathrm{cm}$. Assuming that the *improvement in sway index* (the reduction from initial to post-intervention values) decreases linearly at a rate of 15% *of this initial improvement* per month after the intervention ceases, what is the predicted sway index ($\mathrm{cm}$) 6 months post-intervention, rounded to two decimal places?
+
+### Question ID: BIO_06062025_2
+**Question:**
+A study compares the effectiveness of Clinical Ai Chi (CAC) and Bad Ragaz Ring Method (BRRM) in improving gait speed in elderly patients. Group A received CAC and Group B received BRRM. Initially, both groups had an average gait speed of $0.6\,\mathrm{m/s}$. After 8 weeks, Group A’s gait speed increased by 25%, while Group B’s gait speed increased by 35%. If both groups experience a *linear* decline in gait speed at a rate of 5% *of their respective post-intervention gait speed* per month after the intervention ends, what is the difference in gait speed ($\mathrm{m/s}$) between the two groups 3 months post-intervention, rounded to three decimal places?
+
+### Question ID: BIO_06062025_3
+**Question:**
+An aquatic therapy trial is evaluating the impact of combining aquatic exercises with land-based exercises on muscle strength in older adults. The aquatic group showed an average increase in quadriceps strength of $18\,\mathrm{N}$ after 12 weeks. The land-based group showed an average increase of $14\,\mathrm{N}$ after the same period. If a combined aquatic and land-based group demonstrates an additive effect, what is the net average increase in quadriceps strength ($\mathrm{N}$) in the combined group after 12 weeks, *accounting for a 10% reduction in the combined strength gain due to participant non-compliance or other factors*? Round your answer to one decimal place.
+
+### Question ID: BIO_06062025_4
+**Question:**
+A research team is assessing the maintenance of balance improvements after a BRRM intervention. Initially, participants could stand on one leg for an average of 10 seconds. Following the intervention, this increased to 18 seconds. If balance deteriorates at a rate proportional to the difference between their current balance time and their initial balance time, with a proportionality constant $k = 0.08\,\mathrm{month^{-1}}$, how long (in seconds) can participants stand on one leg 4 months after the intervention, rounded to the nearest whole number?
+
+### Question ID: BIO_06062025_5
+**Question:**
+A study on geriatric rehabilitation employs aquatic therapy. Participants initially have a walking speed of $0.7 \, \mathrm{m/s}$. After an aquatic therapy intervention, their walking speed increases to $1.1 \, \mathrm{m/s}$. A follow-up shows a linear decrease in the walking speed gain, regressing back towards the original speed at a rate of $0.02 \, \mathrm{m/s}$ per month. After how many months will the participant's walking speed be $1 \, \mathrm{m/s}$?
+
+### Question ID: BIO_06062025_1
+**Question:**
+A physical therapist is evaluating a patient with early-stage Parkinson's disease. The patient exhibits a reduced arm swing during gait. Using Kinovea software, the therapist measures the patient's arm swing angle to be 20 degrees. A healthy individual of the same age and stature typically exhibits an arm swing angle of 30 degrees. Assuming that the *additional* fold increase in fall risk correlates linearly with the percentage reduction in arm swing, such that a 50% reduction is associated with an *additional* 0.5-fold increase in fall risk (beyond the baseline 1.0-fold for a healthy individual), what is the fold increase in fall risk for this patient, rounded to two decimal places?
+
+### Question ID: BIO_06062025_2
+**Question:**
+A researcher is investigating the effect of rhythmic auditory stimulation (RAS) and Nordic walking (NW) on gait parameters in Parkinson's disease patients. Before intervention, a patient's gait speed is measured using the Timed Up and Go (TUG) test, resulting in a time of 15 seconds to complete the test. After a 6-week combined RAS and NW therapy, the TUG test time decreases to 12 seconds. What is the percentage increase in gait speed, rounded to nearest integer, after the intervention?
+
+### Question ID: BIO_06062025_3
+**Question:**
+A study aims to assess the correlation between Functional Gait Assessment (FGA) scores and motor neuron excitability in Parkinson's disease patients undergoing rehabilitation. A patient's initial FGA score is 18. It is known that an FGA score of 15 corresponds to a baseline motor neuron excitability level of 50 mV. After a targeted rehabilitation program, the patient's FGA score improves to 22. Assuming that *each point increase in FGA score corresponds to a 2% increase in motor neuron excitability relative to the baseline excitability (50mV)*, what is the patient's percentage increase in motor neuron excitability, rounded to the nearest integer, after the rehabilitation program?
+
+### Question ID: BIO_06062025_4
+**Question:**
+A neurologist is monitoring the progression of Parkinson's disease in a patient. Initial arm swing velocity is recorded at $1.0\,\mathrm{m/s}$. Over a period of 6 months, the arm swing velocity decreases linearly to $0.75\,\mathrm{m/s}$. Assuming that the rate of decline in arm swing velocity remains constant, what will the arm swing velocity be, in $\mathrm{m/s}$, after an additional 12 months beyond the 6-month measurement point?
+
+### Question ID: BIO_06062025_5
+**Question:**
+During a research trial, Parkinson's patients are given either placebo or a novel treatment. Patients undergo the Timed Up and Go test (TUG). The treatment group averages a 20% decrease in TUG time, with the final TUG times having a standard deviation of 2 seconds, and the placebo group averages a 5% decrease in TUG time with standard deviation of 1 seconds. Given that initially both groups performed the TUG test in 18 seconds. If a single patient from the treatment group performs the TUG test in 13 seconds after the treatment, how many standard deviations better is the patient's TUG time than the treatment group average?
+
+### Question ID: BIO_06062025_1
+**Question:**
+A researcher is evaluating a new mouthwash designed to reduce gingival inflammation. In a single-blinded clinical trial, patients with moderate gingivitis are treated with a new mouthwash (Group A). After two weeks, the probing depth (PD) is measured. The average PD for Group A decreased from 3.5 mm to 2.8 mm. If the volume of the gingival crevicular fluid (GCF) is directly proportional to the PD, and Group A originally had 0.5 mL of GCF, what is the estimated change in GCF volume (in mL) for Group A?
+
+### Question ID: BIO_06062025_2
+**Question:**
+A patient undergoing mandibular advancement surgery for obstructive sleep apnea requires temporary maxillomandibular fixation (MMF). The surgeon considers using either arch bars or intermaxillary elastics. Arch bars provide a more rigid fixation but are associated with a higher risk of soft tissue injury requiring prolonged post-operative oral hygiene and healing. Suppose the oral hygiene index (OHI) increases by 0.2 units per day with arch bars due to increased plaque retention, while it increases by 0.1 units per day with elastics. If a critical OHI threshold of 3.0 units leads to a significant increase in infection risk and the patient starts with an OHI of 1.5 units, how many days will it take for the patient to reach the critical OHI threshold using arch bars?
+
+### Question ID: BIO_06062025_3
+**Question:**
+Researchers are comparing the efficacy of two MMF techniques: a novel bioresorbable plate system (System X) and traditional Erich arch bars for treating mandibular fractures. A prospective clinical study reveals that patients with System X experience 15% lower average C-reactive protein (CRP) levels postoperatively compared to patients with arch bars. If the average CRP level after surgery with Erich arch bars is 50 mg/L and the volume of blood is 5L, what is the difference in the total amount of CRP (in mg) between patients with System X and those with arch bars?
+
+### Question ID: BIO_06062025_4
+**Question:**
+An oral surgeon is planning a Le Fort I osteotomy. He must decide between using rigid internal fixation (RIF) or traditional MMF with arch bars. RIF allows for early mobilization but has a slightly higher risk of nerve damage. Studies show that RIF has a 5% probability of transient neuropraxia, which typically resolves within 3 months. However, in 10% of cases with transient neuropraxia, the nerve damage becomes permanent. If the surgery is performed on 200 patients using RIF, how many patients are expected to experience *permanent* nerve damage?
+
+### Question ID: BIO_06062025_5
+**Question:**
+Two different mouthwashes are tested for their ability to reduce gingival inflammation. Mouthwash A reduces the concentration of matrix metalloproteinases (MMPs) in the gingival crevicular fluid (GCF) by 30%, while Mouthwash B reduces it by 20%. If the initial MMP concentration is 100 ng/mL, and a sample of 500 µL of GCF is collected, what is the difference in the total mass of MMPs (in ng) remaining in the GCF after using Mouthwash A versus Mouthwash B?
+
+### Question ID: BIO_06062025_1
+**Question:**
+A researcher is investigating PAX2 expression in endometrial tissue samples to differentiate between normal endometrium and endometrial hyperplasia. In a control group of 20 normal endometrial samples, the average PAX2 staining intensity score (on a scale of 0-3, where 0 is no staining and 3 is strong staining) is 2.8. In a group of 15 endometrial hyperplasia samples, the average PAX2 staining intensity score is 1.5. Assume a score of 3 represents 100% of maximum possible PAX2 expression, and 0 represents 0%. Estimate the percentage reduction in PAX2 expression from normal endometrium to endometrial hyperplasia.
+
+### Question ID: BIO_06062025_2
+**Question:**
+A researcher is investigating PAX2 expression in endometrial tissue samples. PAX2 is a transcription factor promoting cell proliferation. In normal endometrium, a target gene of PAX2 increases cell proliferation by 20%. In endometrial hyperplasia, PAX2 expression is reduced.  Assuming the target gene expression changes linearly with PAX2 expression and that PAX2 expression in hyperplasia is 50% of normal, what is the predicted percentage of the normal 20% increase in cell proliferation due to this target gene observed in endometrial hyperplasia?
+
+### Question ID: BIO_06062025_3
+**Question:**
+In a pathology study examining PAX2 expression, immunohistochemistry is performed on 100 endometrial tissue samples. The staining intensity is graded on a scale of 0 to 3 (0 = no staining, 3 = strong staining). The mean staining intensity across all samples is calculated to be 1.8 with a standard deviation of 0.8. Assuming the staining intensity scores follow a normal distribution, calculate the probability of a randomly selected sample having a staining intensity score greater than 2.6.
+
+### Question ID: BIO_06062025_4
+**Question:**
+In a pathology study examining PAX2 expression, immunohistochemistry is performed on 100 endometrial tissue samples. The staining intensity is graded on a scale of 0 to 3 (0 = no staining, 3 = strong staining). Samples with staining intensity greater than 2.6 are considered 'high expressors' and are hypothesized to have a 1.5 times greater risk of disease progression. If the baseline disease progression risk is 10% in the remaining patients, what is the odds ratio of disease progression for high expressors compared to the remaining patients?
+
+### Question ID: BIO_06062025_5
+**Question:**
+A researcher is analyzing the correlation between PAX2 expression and tumor size in endometrial carcinoma. The study includes 50 patients. The correlation coefficient (r) between PAX2 staining intensity (graded from 0-3) and tumor diameter is -0.15. Calculate the percentage of variance in tumor diameter that can be explained by PAX2 staining intensity, based on the given correlation coefficient.
+
+### Question ID: BIO_06062025_6
+**Question:**
+A researcher is analyzing the correlation between PAX2 expression and tumor size in endometrial carcinoma. The study includes 50 patients. The correlation coefficient (r) between PAX2 staining intensity (graded from 0-3) and tumor diameter is -0.15. Given the weak correlation, the researcher hypothesizes that a microRNA (miRNA-X) might be influencing both PAX2 expression *and* tumor growth independently. If miRNA-X expression is negatively correlated with PAX2 expression (r = -0.6) and positively correlated with tumor diameter (r = 0.4), what is the expected *direction* of the correlation between PAX2 and tumor size if the confounding effect of miRNA-X were removed (increase, decrease, or stay the same)?
+
+### Question ID: BIO_06062025_7
+**Question:**
+A research team is conducting a follow-up study on endometrial cancer patients, focusing on PAX2 expression and disease recurrence. The original study (Study A) had a cohort of 30 patients followed for 2 years, detecting a statistically significant link between low PAX2 expression and early recurrence. The current follow-up study (Study B) aims for a larger sample size and longer duration. Assuming that the statistical power increases proportionally to the square root of the sample size and the square root of the duration, calculate the relative increase in statistical power if Study B includes 120 patients followed for 8 years, compared to Study A.
+
+### Question ID: BIO_06062025_8
+**Question:**
+A research team is planning a follow-up study on endometrial cancer patients, focusing on PAX2 expression and disease recurrence. A larger study might uncover more subtle effects. Which of the following is the PRIMARY ethical concern when increasing sample size and study duration in this patient population? (a) Increased cost of the study (b) Increased burden of follow-up for patients (c) Increased risk of false positive results (d) Slower publication of the results.
+
+### Question ID: BIO_06062025_9
+**Question:**
+A pathologist observes that in a set of endometrial carcinoma samples, 35% show complete loss of PAX2 expression (score = 0). If the true prevalence of PAX2 loss in endometrial carcinoma is known to be 40%, calculate the false negative rate (%) in the pathologist's observation, assuming the pathologist evaluated 100 samples.
+
+### Question ID: BIO_06062025_10
+**Question:**
+A pathologist observes that in a set of endometrial carcinoma samples, the assay designed to detect PAX2 loss has a false negative rate of 20%. Assuming a false positive rate of 5% and the true prevalence of PAX2 loss in endometrial carcinoma is 40%, calculate the Positive Predictive Value (PPV) of the assay in this patient population.
+
+### Question ID: BIO_06062025_1
+**Question:**
+A patient undergoing an elective upper endoscopy receives dexmedetomidine for sedation. Baseline SpO2 is 97% and the end-tidal CO2 is 38 mmHg. After the initial dose, the Ramsay Sedation Score (RSS) is 3, and the respiratory rate decreases slightly. Over the next 20 minutes, the patient's oxygen consumption decreases by 18%. Assuming the initial oxygen consumption was $275\,\mathrm{mL/min}$, and a constant respiratory quotient (RQ) of 0.8, calculate the change in carbon dioxide production rate in $\mathrm{mL/min}$.
+
+### Question ID: BIO_06062025_2
+**Question:**
+A researcher is comparing dexmedetomidine and propofol for sedation in a small clinical trial involving awake fiberoptic intubation. Twelve patients receive dexmedetomidine, and twelve receive propofol. In the dexmedetomidine group, a video recording analysis reveals an average of 0.4 cough events per patient during the intubation procedure. If each "cough event" expends approximately $85\,\mathrm{mJ}$ of energy, calculate the total energy expended in coughing across the dexmedetomidine group (in Joules) specifically due to intubation.
+
+### Question ID: BIO_06062025_3
+**Question:**
+During a diagnostic lumbar puncture, a patient's Ramsay Sedation Score (RSS) target is 3. Following the administration of dexmedetomidine, the RSS is observed to be 2. The anticipated Cerebral Metabolic Rate of Oxygen consumption (CMRO2) reduction is 15%. If the patient's baseline CMRO2 is $3.8\,\mathrm{mL\,O_2/100g\,brain/min}$, what is the expected CMRO2 in $\mathrm{mL\,O_2/100g\,brain/min}$ after dexmedetomidine administration?
+
+### Question ID: BIO_06062025_4
+**Question:**
+A patient is undergoing monitored anesthesia care (MAC) with dexmedetomidine. The patient's initial minute ventilation is $8.0\,\mathrm{L/min}$ with a respiratory rate of 16 breaths per minute. Dexmedetomidine reduces the patient's tidal volume by $125\,\mathrm{mL}$ per breath. Calculate the new respiratory rate (breaths per minute, rounded to the nearest whole number) necessary to maintain the original minute ventilation, assuming the new tidal volume remains constant.
+
+### Question ID: BIO_06062025_5
+**Question:**
+Two groups of patients are administered either dexmedetomidine or remifentanil during a minor surgical procedure. The dexmedetomidine group exhibits an average decrease in heart rate of 12 beats per minute (bpm). Given an average stroke volume of $65\,\mathrm{mL/beat}$ and an initial cardiac output of $5.2\,\mathrm{L/min}$, calculate the *magnitude* of the percentage change in cardiac output in the dexmedetomidine group, assuming stroke volume remains unchanged.
+
+### Question ID: BIO_06062025_1
+**Question:**
+A clinical trial investigates the effectiveness of a new counseling strategy on medication adherence in chronic obstructive pulmonary disease (COPD) patients. Initially, 200 patients are enrolled, and their adherence is assessed using the Morisky Medication Adherence Scale (MMAS-8). The mean MMAS-8 score at baseline is 4.0. After six months of the new counseling strategy, the mean MMAS-8 score increases to 6.0. Simultaneously, a control group of 200 patients receives standard care, and their mean MMAS-8 score increases from 4.0 to 4.5. Assuming a linear relationship between MMAS-8 score and the percentage of prescribed medication taken, and that a perfect MMAS-8 score of 8 represents 100% adherence, calculate the percentage by which the *specific improvement in adherence attributable to the counseling strategy* (i.e., the difference between the treatment group's adherence gain and the control group's adherence gain) *exceeds* the adherence improvement observed in the control group. Furthermore, if a minimum of 80% adherence is required to maintain therapeutic levels of inhaled corticosteroids known to suppress TNF-$\alpha$, and each 1% increase in adherence above 80% corresponds to a 0.5 pg/mL reduction in TNF-$\alpha$ levels, what would be the expected reduction in TNF-$\alpha$ levels (pg/mL) in the treatment group as a result of the *counseling strategy itself* (i.e., accounting for the control group's change)?
+
+### Question ID: BIO_06062025_2
+**Question:**
+Researchers are evaluating the impact of an educational intervention on asthma management in children. At the start of the study, the average peak expiratory flow (PEF) rate of children in the intervention group is $300\,\mathrm{L/min}$. After three months of the intervention, which includes tailored counseling and reinforcement techniques, their average PEF rate increases to $360\,\mathrm{L/min}$. In the control group, receiving standard asthma education, the average PEF rate increases from $300\,\mathrm{L/min}$ to $320\,\mathrm{L/min}$ over the same period. If the PEF rate is directly proportional to the forced expiratory volume in 1 second (FEV1), and FEV1 indicates lung function, what is the *net percentage increase* in FEV1 attributable to the educational intervention, above the effect of standard education?  Assuming that improved bronchodilation (resulting from the FEV1 increase due to the intervention) reduces the need for albuterol rescue inhaler use, and that a 1% increase in FEV1 translates to a 0.5% reduction in albuterol rescue inhaler puffs per week, what is the predicted percentage reduction in weekly albuterol rescue inhaler puffs specifically attributable to the educational intervention's impact on FEV1 *above and beyond the control group's change*?
+
+### Question ID: BIO_06062025_3
+**Question:**
+A study assesses the impact of pharmacist-led counseling on adherence to inhaled corticosteroids among individuals with chronic asthma. Before the intervention, the average score on the Adherence Inventory (AI) was 6 (where lower scores indicate better adherence). Following a clinical pharmacological intervention and counseling sessions, the average AI score decreased to 3. Concurrently, the average daily dose of inhaled corticosteroids decreased by 200 $\mu$g. Assuming a direct linear correlation between AI score and daily inhaled corticosteroid usage and that a score of 0 on the AI corresponds to complete cessation of medication usage, calculate the change in daily inhaled corticosteroid usage attributable per one point improvement in AI score ($\mu$g/AI point).
+
+### Question ID: BIO_06062025_4
+**Question:**
+A study assesses the impact of pharmacist-led counseling on adherence to inhaled corticosteroids among individuals with chronic asthma.  The average AI score before the intervention was 6. Following the intervention the average AI score continued to improve by an additional 2 points in the next 3 months.  If each 100 $\mu$g reduction in inhaled corticosteroid dose is associated with a 2% decrease in the incidence of oral candidiasis, what is the expected percentage decrease in the incidence of oral candidiasis due to the additional improvement in AI score?  Assume a linear relationship between corticosteroid dose and the incidence of oral candidiasis.
+
+### Question ID: BIO_06062025_5
+**Question:**
+Patients with chronic bronchitis were given both medication and counseling over a period of six months. Before the intervention, a group of 100 patients had an average Drug Adherence Index (DAI) score of 4. After the intervention, their average DAI score changed to 6. Each point on the DAI corresponds linearly to a specific impact on inflammatory marker IL-8, and if 1 point increase in DAI correlates to IL-8 levels decreasing by 5 pg/mL, and that each 1 pg/mL decrease in IL-8 is associated with a 0.01L increase in FVC, calculate the total improvement in FVC (in liters) across all 100 patients that is attributable to the intervention.
+
+### Question ID: BIO_06062025_6
+**Question:**
+A research team is investigating the efficacy of a comprehensive educational program designed to improve medication adherence among patients with cystic fibrosis. Before the intervention, the patients exhibit a median MMAS-8 score of 3.0. Following a 12-month intervention period, the median MMAS-8 score increases to 7.0. If perfect adherence (MMAS-8 score of 8) results in a 50% reduction in pulmonary exacerbations due to improved mucociliary clearance and reduced bacterial colonization, and the relationship between adherence and reduction in exacerbations is linear, calculate the expected percentage reduction in pulmonary exacerbations for the patients in this study. Furthermore, if each 10% reduction in pulmonary exacerbations correlates with a 0.1 increase in BMI, what is the expected increase in BMI in the patients in this study as a result of improved adherence?
+
+### Question ID: BIO_06062025_1
+**Question:**
+A diagnostic lab is evaluating a new PAX2 antibody for immunohistochemistry. They test the antibody on a set of 100 known endometrioid adenocarcinoma samples. The assay correctly identifies 92 samples as positive for PAX2 loss. The same antibody is used on 100 known normal endometrial samples and yields 5 false positive results for PAX2 loss. Calculate the *positive predictive value (PPV)* of the assay for diagnosing endometrioid adenocarcinoma in this cohort. Express your answer as a percentage, rounded to the nearest whole number. *Note:* Positive Predictive Value = (True Positives) / (True Positives + False Positives).
+
+### Question ID: BIO_06062025_2
+**Question:**
+A researcher is investigating the effects of estrogen on PAX2 expression in endometrial cells. They treat two groups of cells with different concentrations of estrogen: Group A receives $1\, \mathrm{nM}$ estrogen, and Group B receives $10\, \mathrm{nM}$ estrogen. After 24 hours, they measure PAX2 mRNA levels using RT-qPCR. Group A shows a 1.5-fold increase in PAX2 mRNA compared to untreated control cells. Group B shows a 2.5-fold increase in PAX2 mRNA compared to untreated control cells. However, Group B also shows a 20% decrease in cell viability compared to Group A. Assuming PAX2 mRNA levels directly correlate with PAX2 protein production *per viable cell*, what is the estimated *net* fold change in PAX2 protein production in Group B compared to Group A, considering both mRNA levels and cell viability? Round your answer to one decimal place.
+
+### Question ID: BIO_06062025_3
+**Question:**
+A clinician is evaluating the use of PAX2 immunohistochemistry as an adjunct diagnostic tool for differentiating between endometrial polyps with and without atypia. A study reveals the following: In 80% of endometrial polyps *without* atypia, PAX2 expression is normal. In 60% of endometrial polyps *with* atypia, PAX2 expression is lost. Given that the prevalence of endometrial polyps *with* atypia is 15% in the general population of women undergoing endometrial biopsy, what is the *probability* that an endometrial polyp with lost PAX2 expression will be diagnosed as a polyp *with* atypia? Express your answer as a decimal rounded to two places (e.g., 0.XX). *Hint: use Bayes' Theorem*.
+
+### Question ID: BIO_06062025_4
+**Question:**
+A researcher is performing a ChIP-qPCR experiment to investigate transcription factor binding to the PAX2 promoter region in endometrial cells. They find that a specific transcription factor, TF-X, binds to the PAX2 promoter with a binding affinity ($K_d$) of $5\, \mathrm{nM}$. In normal endometrial cells, the concentration of TF-X is $20\, \mathrm{nM}$. In endometrioid adenocarcinoma cells, the concentration of TF-X is reduced to $2\, \mathrm{nM}$. Assuming that the occupancy of the PAX2 promoter by TF-X is directly proportional to $\\frac{\\text{[TF-X]}}{K_d + \\text{[TF-X]}}$, calculate the *percent decrease* in TF-X occupancy of the PAX2 promoter in endometrioid adenocarcinoma cells compared to normal endometrial cells. Round your answer to the nearest whole number percent.
+
+### Question ID: BIO_06062025_5
+**Question:**
+A study investigates the synergistic effect of two drugs, Drug A and Drug B, on PAX2 expression in endometrial cancer cells. Drug A alone decreases PAX2 expression by 30%. Drug B alone decreases PAX2 expression by 20%. When used in combination, they decrease PAX2 expression by 60%. Assuming an *additive effect* is calculated by simply summing the individual effects of each drug, what is the *synergistic coefficient* of the drug combination? The synergistic coefficient is calculated as (Observed effect) / (Expected additive effect). Round your answer to one decimal place.
+
+### Question ID: BIO_06062025_6
+**Question:**
+` and `
+
+### Question ID: BIO_06062025_1
+**Question:**
+A neurorehabilitation study investigates the effects of Nordic Walking (NW) on gait parameters in Parkinson's Disease (PD) patients. Baseline measurements show that maintaining postural stability during walking requires an average energy expenditure of $0.15\,\mathrm{Joules}$ per step. After 8 weeks of NW training, an observed improvement in arm swing *improves trunk stability*, leading to a 5% reduction in the energy expenditure required for postural stability. Estimate the *decrease* in energy expenditure (in Joules) required for postural stability per step *after* the intervention. Assume that the initial energy expenditure includes the work done to counteract trunk rotational dynamics.
+
+### Question ID: BIO_06062025_2
+**Question:**
+Researchers are evaluating the effectiveness of Rhythmic Auditory Stimulation (RAS) combined with Nordic Walking (NW) for gait rehabilitation in PD patients. A patient walks 100 meters. Baseline measurements indicate a cadence of $90\,\mathrm{steps}$ per minute and an average step length of $0.5\,\mathrm{meters}$. Following 12 weeks of combined RAS and NW training, the patient's cadence increases to $105\,\mathrm{steps}$ per minute, and their average step length increases to $0.6\,\mathrm{meters}$. Determine the *decrease* in the time taken (in seconds) for the patient to cover the $100\,\mathrm{meter}$ distance after the intervention.
+
+### Question ID: BIO_06062025_3
+**Question:**
+A study examining gait stability in PD patients using posturography reveals that the average sway area of patients before a balance rehabilitation program is $25\,\mathrm{cm^2}$. Following a 6-week balance training intervention, the sway area is reduced to $18\,\mathrm{cm^2}$. Assume that this reduction in sway area is achieved because the average EMG activity of the tibialis anterior muscle during stance phase *increases inversely proportional* to the sway area, thereby improving ankle stability. If the baseline average EMG activity of the tibialis anterior was $50\,\mathrm{microvolts}$, what is the approximate *percentage increase* in average EMG activity of the tibialis anterior after the intervention, assuming background EMG noise is negligible, and all increase in EMG signal contributes to improving stability.
+
+### Question ID: BIO_06062025_4
+**Question:**
+In a clinical trial investigating the long-term effects of gait rehabilitation in PD, researchers recruit 30 participants. Based on pilot data, the expected dropout rate is 20% over a 12-month period. The primary reason for dropout is the worsening of motor symptoms, as measured by the Unified Parkinson's Disease Rating Scale (UPDRS). Suppose participants with a baseline UPDRS motor score above 30 have a 30% dropout rate, while those with a score of 30 or below have a 10% dropout rate. If, of the initial 30 participants, 10 have a UPDRS motor score above 30, and the researchers need at least $28$ participants to complete the study, how many *additional* participants should they recruit to account for the differential dropout rates? Assume that any additional participants recruited will maintain the same proportion of UPDRS motor scores (above 30 vs. 30 or below) as the initial cohort.
+
+### Question ID: BIO_06062025_5
+**Question:**
+A rehabilitation center implements a combined therapy approach for PD patients, involving Rhythmic Auditory Stimulation (RAS) and Nordic Walking (NW). Before intervention, the average gait speed of patients is $0.8\,\mathrm{m/s}$, achieved with a metabolic power consumption of $5\,\mathrm{Watts}$ per kilogram of body mass. After 10 weeks of combined therapy, the average gait speed increases to $1.1\,\mathrm{m/s}$. Assuming the efficiency of converting metabolic power into mechanical power remains constant at 25%, calculate the *increase* in mechanical power output (in Watts per kilogram) required to achieve the increased gait speed, given that mechanical power scales quadratically with gait speed. In the context of this question, assume power = force * velocity and force = mass * acceleration, therefore power is proportional to mass * velocity^2 .
+
+### Question ID: BIO_06062025_1
+**Question:**
+A researcher is studying the effects of a novel antibiotic on a bacterial culture. They start with an initial bacterial density of $5 \times 10^5$ cells/mL. After 4 hours of incubation with the antibiotic, the bacterial density drops to $2 \times 10^4$ cells/mL. Assuming exponential decay, determine the decay rate constant ($k$) in $\mathrm{h^{-1}}$. Then, calculate how much longer it would take for the population to drop to $1 \times 10^3$ cells/mL.
+
+### Question ID: BIO_06062025_2
+**Question:**
+A population of insects is found to have two distinct color morphs: red and blue. The allele for red color (R) is dominant over the allele for blue color (r). In a sample of 500 insects, 45 are blue. A subsequent natural disaster significantly alters the environment. A new sample of 500 insects reveals that the frequency of blue insects has increased to 0.15. Assuming the population *were* in Hardy-Weinberg equilibrium after the disaster (based on the new blue frequency), what would be the expected number of heterozygous ($Rr$) insects in the new sample?
+
+### Question ID: BIO_06062025_3
+**Question:**
+In a cell culture experiment, researchers are investigating the uptake of glucose by cells. They measure the initial glucose concentration in the medium as $10 \, \mathrm{mM}$. After 2 hours, the glucose concentration decreases to $6 \, \mathrm{mM}$. If the cells consume glucose at a constant rate, what is the per cell glucose consumption rate in a 1 mL culture volume, given that there are $1 \times 10^6$ cells/mL in the culture? Express your answer in units of $\mathrm{pmol\,cell^{-1}\,h^{-1}}$.
+
+### Question ID: BIO_06062025_4
+**Question:**
+Two linked genes, A and B, are located on the same chromosome. The recombination frequency between these genes is 8%. An individual with the genotype $Ab/aB$ is testcrossed with an individual with the genotype $ab/ab$. Out of 1000 offspring, what is the expected number of offspring that will display the recessive phenotype for both genes, assuming complete penetrance?
+
+### Question ID: BIO_06062025_5
+**Question:**
+A plant cell has a water potential ($\Psi_w$) of -0.6 MPa and a solute potential ($\Psi_s$) of -0.8 MPa. It is placed in a solution with a water potential of -0.4 MPa. Assuming the cell volume does not change significantly at equilibrium (e.g., due to a rigid cell wall), so its solute potential ($\Psi_s$) remains constant, what is the pressure potential ($\Psi_p$) of the cell at equilibrium, in MPa?
+
+### Question ID: BIO_06062025_1
+**Question:**
+A clinical trial evaluates a new intervention to boost medication adherence in heart failure patients. At baseline, the average score on the Medication Adherence Rating Scale (MARS) was 4.0. After 6 months, the intervention group's average MARS score rose to 7.0. A control group receiving standard care showed no change, remaining at 4.0. Given that the maximum possible MARS score is 10.0, what percentage of the potential adherence improvement was achieved by the intervention group?
+
+### Question ID: BIO_06062025_2
+**Question:**
+A study examines the effect of a tailored education program on proper inhaler use among asthma patients. Initially, patients exhibited an average Critical Inhaler Technique (CIT) score of 3. The education program increased the average CIT score to 7. A control group's CIT score stayed at 3. The CIT score ranges from 0 to 10. If the study included 75 patients in the intervention group, calculate the total increase in CIT 'points' attributable to the intervention across these patients.
+
+### Question ID: BIO_06062025_3
+**Question:**
+Researchers are investigating the impact of a support group on medication adherence in patients with type 2 diabetes. Initially, 35% of patients were considered adherent based on a validated adherence questionnaire. Following a 12-month support group intervention, the percentage of adherent patients increased to 65%. Assuming a study population of 200 patients, determine the increase in the number of adherent patients resulting from the support group intervention.
+
+### Question ID: BIO_06062025_4
+**Question:**
+A clinical study assesses the efficacy of a novel nebulizer device on pulmonary drug delivery in cystic fibrosis patients. Before the intervention, only 25% of the administered drug reached the lungs. After intervention, including device training and individualized dose adjustments, lung deposition increased to 55%. If the initial dose of the drug administered via the nebulizer is 5 mg, calculate the increase in the amount of drug (in mg) reaching the lungs due to the intervention.
+
+### Question ID: BIO_06062025_5
+**Question:**
+An osteoporosis clinical trial assessed adherence using both the MMAS-8 scale and medication event monitoring system (MEMS) caps. Patients with an MMAS-8 score of 6 or higher were considered adherent. Initially, MEMS data indicated 50% adherence in a group of 80 patients. Following a motivational interviewing intervention combined with weekly text message reminders, the percentage of patients adherent by MEMS increased to 85%. How many additional patients became adherent as a result of the intervention, based on MEMS data?
+
+### Question ID: BIO_06062025_1
+**Question:**
+An anesthesiologist is preparing for an Awake Fiberoptic Intubation (AFOI) on a patient with a history of difficult intubation. The anesthesiologist aims to achieve a Ramsay Sedation Score (RSS) of 3 prior to the procedure. They administer dexmedetomidine, an $\alpha_2$ adrenergic agonist. Based on pharmacokinetic studies, the drug has a linear relationship between infusion rate and plasma concentration. A plasma concentration of 0.4 $\text{ng/mL}$ is known to reliably produce an RSS of 3. The patient has a volume of distribution ($V_d$) of 70 L and the drug's clearance ($CL$) is 40 L/hr. Calculate the required infusion rate in $\mu\text{g/min}$ to maintain a plasma concentration of 0.4 $\text{ng/mL}$, assuming steady state is achieved.
+
+### Question ID: BIO_06062025_2
+**Question:**
+During an AFOI procedure on a patient with severe COPD, despite adequate sedation, the patient's oxygen saturation ($SpO_2$) drops from 96% to 88% due to increased airway resistance and decreased ventilation. The patient's baseline partial pressure of arterial oxygen ($PaO_2$) was 60 $\text{mmHg}$. For the *purposes of this simplified calculation*, assume a linear relationship between $PaO_2$ and $SpO_2$ where 100% $SpO_2$ corresponds to 100 $\text{mmHg}$ $PaO_2$. Calculate the approximate drop in $PaO_2$ (in $\text{mmHg}$) that corresponds to the observed $SpO_2$ decrease.
+
+### Question ID: BIO_06062025_3
+**Question:**
+In a clinical trial evaluating a novel sedative for AFOI, researchers are using the Ramsay Sedation Score (RSS) as a primary outcome measure. They observe that patients receiving the novel drug have a mean RSS of 2.5 with a standard deviation of 0.8 at the time of intubation. The control group, receiving standard sedation, has a mean RSS of 3.0 with a standard deviation of 0.7. The trial involves 50 patients in each group. Calculate the pooled standard deviation for the RSS scores across both groups.
+
+### Question ID: BIO_06062025_4
+**Question:**
+An anesthesiologist is performing AFOI on a patient with a known hypersensitivity to propofol. The chosen alternative is dexmedetomidine, targeting an RSS of 2. Dexmedetomidine is supplied as a solution of 100 $\mu\text{g/mL}$. The patient weighs 75 kg, and a loading dose of 1 $\mu\text{g/kg}$ is administered over 10 minutes, followed by a maintenance infusion. If the syringe pump delivers the loading dose at a rate of *x* mL/hr, calculate *x*.
+
+### Question ID: BIO_06062025_5
+**Question:**
+A research team is conducting a clinical trial to compare the effectiveness of two different AFOI techniques (Technique A and Technique B) in minimizing airway reflex responses. They are using a composite score that incorporates coughing, gagging, and laryngospasm, with a higher score indicating more intense reflex responses. In Technique A (n=40), the mean composite score is 3.2 with a standard error of 0.5. In Technique B (n=40), the mean composite score is 2.5 with a standard error of 0.4. Calculate the estimated difference in the means, $\Delta$, plus the combined standard error of the means, $SE_c$ i.e. report $\Delta + SE_c$.
+
+### Question ID: BIO_06062025_1
+**Question:**
+A clinical trial investigates a novel inhaled corticosteroid (ICS) and long-acting beta-agonist (LABA) combination for asthma management. Patient A, with an initial FEV1 of 2.5 L, is prescribed this combination. Research indicates that the ICS reduces airway inflammation, leading to improved lung function and reduced airway obstruction, as reflected in improved FEV1. Studies also show a correlation between reduction in inflammatory cytokine levels and FEV1 improvement: a 10% reduction in IL-5 and TNF-α corresponds to approximately 0.1 L increase in FEV1. If, after 3 months of treatment, Patient A experiences a 30% reduction in IL-5 and TNF-α levels, and accounting for the LABA's direct bronchodilatory effect contributing a fixed 0.15 L increase in FEV1 independently of inflammation, what is their predicted FEV1 (in liters) after these 3 months, rounded to one decimal place?
+
+### Question ID: BIO_06062025_2
+**Question:**
+A study examines the effectiveness of metformin in managing Type 2 Diabetes Mellitus (T2DM). Two groups are compared: a control group receiving standard dietary advice and an intervention group receiving metformin in addition to the same dietary advice. At baseline, both groups have an average fasting blood glucose level of 7.8 mmol/L and an average HbA1c of 7.0%. After 6 months, the control group's fasting blood glucose remains at 7.8 mmol/L, while the intervention group's fasting blood glucose decreases by 20%. Metformin's primary mechanism involves reducing hepatic glucose production and improving insulin sensitivity. Considering that each 1% reduction in HbA1c translates to an approximate 1.5 mmol/L reduction in average fasting blood glucose, what would be the *predicted* HbA1c level (in percentage) of a patient in the intervention group after 6 months, rounded to one decimal place, based *solely* on the fasting blood glucose change observed in the intervention group and the given relationship between HbA1c and fasting blood glucose? Assume a linear relationship and that the initial relationship between HbA1c and glucose holds for this patient.
+
+### Question ID: BIO_06062025_3
+**Question:**
+Researchers are assessing the effectiveness of an educational program on antibiotic stewardship in a hospital setting. Before the program, 60 out of 200 patients admitted with community-acquired pneumonia (CAP) received broad-spectrum antibiotics unnecessarily (i.e., when narrower-spectrum antibiotics would have been equally effective). After the program, the *number* of patients receiving unnecessary broad-spectrum antibiotics decreased by 50%. If each unnecessary broad-spectrum antibiotic prescription increases the risk of *C. difficile* infection by 0.05 (risk is dimensionless) per patient, how much has the overall risk of *C. difficile* infection (dimensionless) been reduced across all 200 patients because of the decrease in inappropriate antibiotic prescriptions?
+
+### Question ID: BIO_06062025_4
+**Question:**
+A research team investigates the impact of exercise on reducing insulin resistance in patients with metabolic syndrome. Before the intervention (a structured exercise program), the average HOMA-IR (Homeostatic Model Assessment for Insulin Resistance) score for the participants was 4.0 (dimensionless). After 12 weeks of the exercise program, the HOMA-IR score decreased by 25%. Given that a HOMA-IR score above 2.5 indicates insulin resistance, and that improvements in insulin sensitivity are linked to increased glucose uptake by skeletal muscle cells, calculate the percentage increase in glucose uptake (dimensionless) *in these patients* if for every 0.5 point decrease in HOMA-IR score, glucose uptake increases by 8%.
+
+### Question ID: BIO_06062025_5
+**Question:**
+A study evaluates the effectiveness of a new drug designed to inhibit the PD-1/PD-L1 interaction in cancer immunotherapy. Baseline tumor size is measured in cm3. A patient's initial tumor volume is 80 cm3. The drug is expected to stimulate T cell activity, leading to tumor regression. Studies show that for every 1 unit increase in the number of tumor-infiltrating lymphocytes (TILs) per mm2, the tumor volume decreases by 2 cm3. After 4 weeks of treatment, the patient's TIL count increases by 15 TILs/mm2. However, the tumor cells also exhibit an increased expression of PD-L1, reducing the drug's effectiveness. This PD-L1 upregulation counteracts the effect of the increased TILs, reducing the tumor volume reduction by 10%. What is the patient's predicted tumor volume (in cm3) after 4 weeks, accounting for both the increase in TILs and the counteracting effect of PD-L1 upregulation? Note: While cm3 and TILs/mm2 are not strict SI units, they are conventional units used in clinical and biological research and are acceptable for this question's context.
+
+### Question ID: BIO_06062025_1
+**Question:**
+A pathologist is analyzing endometrial tissue samples using immunohistochemistry to assess PAX2 expression. 100 cells are counted in each sample, and PAX2 staining intensity is graded on a scale of 0 (no staining) to 3 (strong staining). A normal proliferative endometrium sample shows an average PAX2 staining intensity of 2.8 per cell. An endometrial hyperplasia sample from the same patient shows an average PAX2 staining intensity of 1.4 per cell. If a subsequent endometrioid adenocarcinoma sample from the same patient shows a total PAX2 staining intensity score of 5 per 100 cells, what is the ratio of the average PAX2 staining intensity in the adenocarcinoma sample to that of the hyperplasia sample?
+
+### Question ID: BIO_06062025_2
+**Question:**
+In normal endometrial tissue, an average of 85% of cells stain positive for PAX2. In endometrial carcinoma tissue, only 5% of cells stain positive for PAX2. How many more cells out of 1000 cells stain positive in normal tissue samples compared to the number of cells staining positive in carcinoma tissue samples?
+
+### Question ID: BIO_06062025_3
+**Question:**
+Researchers are investigating the relationship between PAX2 expression and disease stage in endometrioid adenocarcinoma. They use immunohistochemistry to quantify PAX2 staining intensity in tumor samples from 30 patients. PAX2 staining intensity is scored on a scale of 0 to 3, with 0 representing no staining and 3 representing strong staining. The average PAX2 staining intensity score for Stage I tumors is 1.8. If the average PAX2 staining intensity score decreases by 50% from Stage I to Stage III, what is the average PAX2 staining intensity score for Stage III tumors?
+
+### Question ID: BIO_06062025_4
+**Question:**
+A research lab is analyzing PAX2 expression in endometrial biopsies using immunohistochemistry. They are using a semi-quantitative scoring system where the percentage of cells staining positive for PAX2 is multiplied by the average staining intensity (0-3). A normal endometrial sample shows 90% of cells staining positive with an average intensity of 2. An endometrial hyperplasia sample shows 50% of cells staining positive with an average intensity of 1. If an endometrial carcinoma sample shows 10% of cells staining positive, and the research team determines the semi-quantitative score must be less than or equal to 0.3 to diagnose the sample as a carcinoma, what is the maximum average staining intensity possible in this scoring system for a diagnosis of carcinoma?
+
+### Question ID: BIO_06062025_1
+**Question:**
+A physical therapist is using Kinovea software to analyze the gait of a patient with Parkinson's disease. During a 10-meter walk, the patient's right arm swing amplitude is consistently measured at $15^\circ$, while normative data for healthy individuals of the same age and height indicates an average arm swing amplitude of $30^\circ$.  Parkinson's disease is known to affect dopamine production, which impacts motor control. Assuming that reduced arm swing is directly proportional to reduced dopamine signaling in the basal ganglia, and that restoring dopamine signaling pharmacologically can improve arm swing by a maximum of 50%, what would be the *predicted* arm swing amplitude (in degrees) *after* optimal pharmacological intervention, assuming the intervention is successful in maximizing dopamine signaling and therefore arm swing?
+
+### Question ID: BIO_06062025_2
+**Question:**
+A researcher is evaluating the effectiveness of Nordic walking poles on improving balance in elderly individuals. A group of participants is assessed using the Functional Gait Assessment (FGA) before and after a 6-week Nordic walking program. The average FGA score at baseline is 20. After the intervention, the average FGA score increases to 22.  A clinically significant improvement in FGA score is associated with a reduction in fall risk. Assuming a linear relationship between FGA score and fall risk reduction such that each 1-point increase in FGA score reduces fall risk by 5%, but also knowing that fall risk cannot be reduced below zero, what is the percentage reduction in fall risk achieved by the intervention for this group?
+
+### Question ID: BIO_06062025_3
+**Question:**
+A neurologist is monitoring a patient with Parkinson's disease using the Timed Up and Go (TUG) test. At the initial assessment, the patient completes the TUG in 15 seconds. After implementing a gait and balance rehabilitation program including treadmill training and balance exercises, the patient's TUG time decreases to 12 seconds. Treadmill training is known to improve mitochondrial function in muscle cells, leading to increased ATP production and improved muscle power. Assuming the decrease in TUG time is directly proportional to the percentage increase in muscle power, and that a healthy individual completes the TUG in 10 seconds, what percentage *increase* in muscle power would the patient need to achieve *relative to their post-rehabilitation power output* to reach the healthy individual's TUG time, assuming this increase is achievable?
+
+### Question ID: BIO_06062025_4
+**Question:**
+A patient with a history of falls is undergoing gait analysis. It is determined that their gait speed is 0.8 m/s. The therapist prescribes a Nordic walking intervention aimed at increasing gait speed.  Increased gait speed is associated with improved activation of the dorsolateral prefrontal cortex (dlPFC), a brain region crucial for executive function and motor planning. If research suggests that optimal dlPFC activation requires a gait speed of at least 1.2 m/s for this patient's age group, and that the patient's dlPFC activation is linearly proportional to their gait speed relative to this optimal value, what is the *percentage* of optimal dlPFC activation achieved by the patient at their initial gait speed of 0.8 m/s? Express your answer as a percentage of the *optimal* 1.2 m/s.
+
+### Question ID: BIO_06062025_5
+**Question:**
+A rehabilitation center is evaluating the effect of a new balance training program on patients with Parkinson’s disease. Patients are assessed for their arm swing during a standard walking test. Before the program, the average arm swing is recorded as $10^\circ$. After 8 weeks of training, the average arm swing increases to $16^\circ$. It is known that balance training can improve proprioception by increasing the sensitivity of muscle spindles. Assuming that the increase in arm swing is directly proportional to the improvement in proprioceptive accuracy, and that healthy individuals have an arm swing of $32^\circ$, what is the percentage *increase* in muscle spindle sensitivity (relative to their *post*-intervention sensitivity) that the patients would need to achieve to reach the arm swing amplitude of healthy individuals, *assuming this further increase is proportional to further improvement in muscle spindle sensitivity*?
+
+### Question ID: BIO_06062025_1
+**Question:**
+A rural hospital, dependent on a local spring for its water supply, faces a cryptosporidium outbreak following heavy rainfall and agricultural runoff. Before the contamination, the spring supported a stable population of Daphnia magna, a filter-feeding crustacean, with a carrying capacity, $K = 8.0 \times 10^4$ individuals/L. After the outbreak, the spring's ability to support Daphnia is reduced due to increased turbidity and decreased food quality, resulting in a lower carrying capacity of $K = 3.0 \times 10^4$ individuals/L.  The cryptosporidium also directly affects the Daphnia, reducing their per capita birth rate.  If the Daphnia population's intrinsic rate of increase, $r$, was initially $0.8$ day$^{-1}$, and this is now reduced to $0.3$ day$^{-1}$ due to the parasite, and the initial Daphnia population density, $N_0$, immediately after the rainfall is $2.0 \times 10^4$ individuals/L, calculate the Daphnia population density (individuals/L) predicted by the logistic growth model three days later, assuming continuous growth. Report your answer to the nearest whole number.
+
+### Question ID: BIO_06062025_2
+**Question:**
+A hospital is treating patients exposed to a novel nerve agent. The primary treatment involves administering atropine, a competitive antagonist of acetylcholine receptors. The effective dose of atropine required to achieve 50% receptor occupancy is 2 mg (represented as the $EC_{50}$). A patient presents with severe symptoms requiring 80% receptor occupancy for therapeutic effect. Assuming a standard competitive binding model, calculate the atropine dose (in mg) needed to achieve the required 80% receptor occupancy. Report your answer to one decimal place.
+
+### Question ID: BIO_06062025_3
+**Question:**
+During a mass casualty event, a hospital must prioritize patients needing blood transfusions. The hospital has 10 units of Type O negative (O-) blood available. Based on current patient data, the predicted blood usage rate is as follows: 3 units will be used per hour due to immediate trauma cases and an additional usage rate of 0.5 unit will be used per hour for patients with ongoing internal bleeding. If the event is predicted to last for 6 hours, and after 6 hours additional O- blood arrives at the hospital, will the hospital run out of O- blood before additional blood is available? Respond either yes or no.
+
+### Question ID: BIO_06062025_4
+**Question:**
+A hospital needs to prepare a buffer solution for maintaining the pH of cell cultures. They require 1.5 L of a 0.2 M phosphate buffer at pH 7.2. They have access to stock solutions of 1 M $KH_2PO_4$ (monobasic) and 1 M $K_2HPO_4$ (dibasic). The $pK_a$ of the relevant phosphate equilibrium is 7.2. Using the Henderson-Hasselbalch equation, calculate the volume (in mL) of the 1 M $K_2HPO_4$ solution needed to prepare the required buffer. Report your answer to the nearest whole number.
+
+### Question ID: BIO_06062025_5
+**Question:**
+A hospital's HVAC system is compromised during a heatwave, affecting the temperature regulation of the neonatal intensive care unit (NICU). Premature infants in the NICU have a surface area to mass ratio of approximately $0.06 \ m^2/g$ and a metabolic rate of $200 \ J/kg/day$. The average mass of an infant in the NICU is 1 kg. If the room temperature increases by 5°C, increasing the rate of heat loss to the environment through radiation by $12 \ W/m^2$ (watts per square meter) due to increased radiation, will the infant’s metabolic rate be sufficient to counter heat loss if the excess radiative heatloss is the only consideration? Respond either yes or no.
+

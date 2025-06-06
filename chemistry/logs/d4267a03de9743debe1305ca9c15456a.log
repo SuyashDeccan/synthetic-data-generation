@@ -1,0 +1,659 @@
+=== Turn 0: Author generates questions ===
+<question>  
+A diagnostic reagent utilizing Loop-mediated Isothermal Amplification (LAMP) targets a single-stranded DNA region of SARS-CoV-2 with a length of 200 nucleotides. Assuming the average molecular weight of a nucleotide residue is 330 g·mol⁻¹, calculate the molar concentration (in nM) of target molecules in a 10 µL LAMP reaction if the reagent contains 1 µg of target DNA.  
+</question>
+
+<question>  
+Penn-RAMP enhances sensitivity by 10 to 100-fold compared to conventional LAMP, enabling detection from fewer target molecules. If the detection limit of LAMP is 5000 copies per reaction, determine the minimum number of viral RNA copies detectable by Penn-RAMP with 50-fold sensitivity improvement in a 25 µL reaction. Assume each RNA copy corresponds to one target molecule.  
+</question>
+
+<question>  
+A closed-tube isothermal amplification assay operates at 65 °C using the Eyring equation approximation with $\Delta H^\ddagger = 80 \text{ kJ·mol}^{-1}$ and $\Delta S^\ddagger = -50 \text{ J·mol}^{-1}\text{K}^{-1}$ for the rate-determining step. Calculate the activation Gibbs free energy $\Delta G^\ddagger$ at 65 °C and then calculate the ratio of reaction rates at 65 °C and 37 °C (temperature in K). Use $R=8.314 \text{ J·mol}^{-1}\text{K}^{-1}$.  
+</question>
+
+<question>  
+A point-of-care testing device uses a fluorescence probe specific to a unique guanine-rich sequence of the SARS-CoV-2 genome. The probe is 15 nucleotides long with 40% guanine content. Calculate the exact number of guanine bases in the probe and provide its IUPAC name if the sequence is 5'-GGATGCGGATCGTGG-3', assuming each nucleotide is named as a deoxyribonucleoside monophosphate.  
+</question>
+
+<question>  
+During a Penn-RAMP reaction, the nucleic acid amplification causes a pH decrease from 7.4 to 6.2 due to proton release. Given the buffering capacity of the reaction mixture is $0.02 \text{ mol·L}^{-1}\text{pH}^{-1}$, calculate the number of protons (in moles) released per 50 µL reaction volume to induce this pH change.  
+</question>
+
+<question>  
+A molecular test exploits the exponential amplification of target RNA via LAMP with an efficiency of 90% per 30 seconds cycle at 65 °C. Starting with 100 RNA copies, calculate the total number of copies after 15 minutes. Use exponential growth formula considering $N = N_0 (1 + e)^n$, where $e = 0.9$ and $n$ is number of amplification cycles.  
+</question>
+
+<question>  
+In a point-of-care immunoassay for COVID-19, the reaction volume is 100 µL and the antibody concentration is 5 µM. Calculate the total number of antibody molecules present in one test volume using Avogadro's number $6.022 \times 10^{23} \text{ mol}^{-1}$.  
+</question>
+
+<question>  
+A LAMP primer set targets a 180-base region of viral RNA with a melting temperature ($T_m$) of 68 °C under standard ionic strength. Using the Wallace rule ($T_m = 2(A+T) + 4(G+C)$), estimate the minimum number of guanine and cytosine bases combined in the primer template if the sequence length is 20 nucleotides.  
+</question>
+
+<question>  
+An RT-PCR assay includes a reverse transcription step producing cDNA from viral RNA followed by amplification. If the reverse transcriptase has a turnover number of 50 nucleotides per second, estimate the minimum time in seconds needed to synthesize a 10,000 base cDNA molecule from a single viral RNA template.  
+</question>
+
+<question>  
+A closed-tube Penn-RAMP assay preventing cross-contamination has a reaction volume of 20 µL containing 2 × 10⁵ nucleic acid template molecules initially. If after amplification the copy number increases by 10⁷ fold, calculate the final molar concentration of amplicons in mol·L⁻¹.  
+</question>
+=== Turn 0: Critic feedback ===
+Below is a critique for each question against your guidelines, plus actionable suggestions for improvement.
+
+---
+
+### Q1
+**Strengths:**  
+- Clearly presented chemistry scenario (LAMP, molecular weight, DNA mass, concentration calculation).
+- Requires multi-step calculation, with units required (nM).
+
+**Weaknesses:**  
+- Slightly wordy: "assuming the average molecular weight..." could be omitted.
+- Units must be checked for consistency (e.g., make sure µL and nM conversions will not trip up the student).
+- “Target molecules”—use the precise term: "single-stranded DNA molecules".
+- Could emphasize that the answer is a single value.
+
+**Suggestions:**  
+- Remove unnecessary phrases for conciseness.
+- Specify that the answer is to be given as a single number, in nM, with proper significant figures.
+- Example revision:  
+  > "A LAMP reaction targets a 200-nucleotide single-stranded DNA region of SARS-CoV-2. If $1~\mu\text{g}$ of target DNA (average nucleotide residue mass $330~\mathrm{g \cdot mol^{-1}}$) is present in $10~\mu\text{L}$, calculate the molar concentration of DNA molecules in nM. Give your answer as a single value."
+
+---
+
+### Q2
+**Strengths:**  
+- Real-world scenario about assay sensitivity, requires stepwise calculation.
+
+**Weaknesses:**  
+- Phrases like "enabling detection from fewer target molecules" add fluff.
+- The second sentence uses "minimum number", but this could be restated for formulaic clarity.
+- Redundant to explain "each RNA corresponds to one molecule" after mentioning "copies".
+
+**Suggestions:**  
+- Delete unneeded background.  
+- Collapse question into the essential:  
+  > "Conventional LAMP detects a minimum of $5000$ viral RNA copies per $25~\mu\text{L}$ reaction. If Penn-RAMP increases sensitivity $50$-fold, calculate the minimum number of detectable RNA copies per reaction. Provide a numerical answer."
+
+---
+
+### Q3
+**Strengths:**  
+- Focuses on thermodynamic/kinetic principles in isothermal chemistry.
+
+**Weaknesses:**  
+- Asks for two steps (calculate $\Delta G^\ddagger$ at $65^\circ$C and the rate ratio at two temperatures)—violates single-solution requirement (#10).
+
+**Suggestions:**  
+- Choose one: either ask for $\Delta G^\ddagger$ at $65^\circ$C **or** for the rate ratio between two temperatures (but not both).
+- Example rewrite:  
+  > "At $65^\circ$C, the rate-determining step of an isothermal amplification assay has $\Delta H^\ddagger = 80~\mathrm{kJ \cdot mol^{-1}}$ and $\Delta S^\ddagger = -50~\mathrm{J \cdot mol^{-1} \cdot K^{-1}}$. Calculate the activation Gibbs free energy, $\Delta G^\ddagger$, in $\mathrm{kJ \cdot mol^{-1}}$ at $65^\circ$C. Give a single value."
+
+---
+
+### Q4
+**Strengths:**  
+- Combines biochemistry with IUPAC nomenclature, requiring both counting and systematic naming.
+
+**Weaknesses:**  
+- Explicitly asks for two answers: the number of guanine bases **and** the IUPAC name.
+- Sequence and base content are somewhat redundant (you can just count in the sequence).
+- Clarity: "assuming each nucleotide is named as a deoxyribonucleoside monophosphate"—ambiguous for readers less familiar with naming conventions.
+
+**Suggestions:**  
+- Choose one: either base count **or** full IUPAC name, not both.
+- Clarify that the nucleotides are $5'$-monophosphates, and request the IUPAC name for the given sequence only.
+- Example revision:  
+  > "Given the 15-nucleotide sequence 5'-GGATGCGGATCGTGG-3', provide its full IUPAC name, naming each nucleotide as a $5'$-deoxyribonucleoside monophosphate. Give the complete compound name."
+
+---
+
+### Q5
+**Strengths:**  
+- Application of pH, buffering, and stoichiometry; requires calculation with explicit units.
+
+**Weaknesses:**  
+- "To induce this pH change" is unnecessary.
+- Explicitly state that answer should be a single value, with units.
+
+**Suggestions:**  
+- Trim for conciseness and clarity.
+- Example revision:  
+  > "A reaction mixture ($50~\mu\text{L}$, buffering capacity $0.02~\mathrm{mol \cdot L^{-1} \cdot pH^{-1}}$) undergoes a pH shift from $7.4$ to $6.2$. Calculate the amount, in moles, of $\mathrm{H^+}$ released."
+
+---
+
+### Q6
+**Strengths:**  
+- Exponential growth, aligns with LAMP and amplification calculations.
+
+**Weaknesses:**  
+- "Amplification cycles" in LAMP are nonstandard, but given "per 30 seconds" it is ok.
+- The formula could just say $N = N_0 (1 + e)^n$, with $e$ defined carefully.
+- Ask for a single value in scientific notation.
+
+**Suggestions:**  
+- Condense for clarity—don't restate formula unless necessary.
+- Example rewrite:  
+  > "In a LAMP reaction, each 30-second cycle has an efficiency of $90\%$ at $65^\circ$C. Starting from $100$ RNA copies, calculate the number of copies after $15$ minutes, using $N = N_0 (1+0.9)^n$. Give a single numerical answer."
+
+---
+
+### Q7
+**Strengths:**  
+- Simple mole calculation based on concentration and volume.
+
+**Weaknesses:**  
+- "Number of antibody molecules" is clear, but specify answer format.
+- Volume in $\mu$L and concentration in $\mu$M—check for convenient unit compatibility.
+
+**Suggestions:**  
+- Specify that the answer should be given as a single value (no intermediate steps needed).
+- Example revision:  
+  > "A $100~\mu\text{L}$ solution contains antibodies at $5~\mu\text{M}$. Using Avogadro’s number ($6.022 \times 10^{23}~\mathrm{mol^{-1}}$), calculate the total number of antibody molecules in the solution."
+
+---
+
+### Q8
+**Strengths:**  
+- Melting temperature and Wallace rule, relevant to experimental design.
+
+**Weaknesses:**  
+- "Estimate the minimum number..." is clear, but "primer template" is ambiguous—should it refer to "the 20-nt primer" instead of the full 180-nt template?
+- Ensure all numbers used are strictly needed—e.g., the 180-bp region is irrelevant when asking about the 20-mer.
+
+**Suggestions:**  
+- Focus on the primer sequence only.
+- Example revision:  
+  > "A 20-nucleotide LAMP primer has a melting temperature $T_m = 68^\circ\mathrm{C}$ by the Wallace rule: $T_m = 2(A+T) + 4(G+C)$. Estimate the minimum combined number of guanine and cytosine residues in the primer."
+
+
+---
+
+### Q9
+**Strengths:**  
+- Kinetics question—turnover number and time to synthesize a biopolymer.
+
+**Weaknesses:**  
+- "Minimum time"—is this about intrinsic enzyme kinetics? Make it clear: "Assume processive action with no pauses."
+- Specify answer in seconds.
+
+**Suggestions:**  
+- Slight phrasing refinement for clarity, answer format.
+- Example revision:  
+  > "A reverse transcriptase synthesizes cDNA at a rate of $50$ nucleotides per second. Calculate the minimum time, in seconds, to generate a $10{,}000$-base cDNA from a single RNA template. Give a numerical value."
+
+---
+
+### Q10
+**Strengths:**  
+- Amplification calculation—original but direct.
+
+**Weaknesses:**  
+- Be very explicit about the format of the answer (moles/L).
+- “Amplicons” is sometimes ambiguously used—just clarify that it's the final copy number divided by volume.
+
+**Suggestions:**  
+- Make sure all terms are unambiguous.
+- Example rewrite:  
+  > "A $20~\mu\text{L}$ Penn-RAMP reaction initially contains $2 \times 10^5$ nucleic acid template molecules. After amplification, copy number increases by $10^7$-fold. Calculate the final amplicon concentration in $\mathrm{mol \cdot L^{-1}}$."
+
+---
+
+### General Feedback
+
+- **Be rigorous and concise;** strip out background unless it directly impacts the calculation.
+- **One calculation per question:** if you use multi-part problems, split them into separate questions.
+- **Units and nomenclature:** Always specify expected units and IUPAC standards.
+- **Equation formatting:** Use $...$ for all inline equations and keep the question Markdown-friendly.
+- **Originality:** All questions above are acceptably original for advanced undergrad/grad biochemistry or analytical chemistry, but avoid generic buffer or molarity problems unless placed in an authentic testing/research context.
+- **No textbook duplication:** You’ve succeeded here; the questions are not standard textbook fare.
+
+---
+
+**In summary:**  
+- Remove all extraneous phrasing/background.
+- Each question should isolate a single unique, original multi-step calculation or chemically precise nomenclature assignment.
+- Provide clear expected answer format (units, IUPAC names, etc).
+- Write MarkDown/LaTeX equations consistently.
+- For two-step or compound-answer questions, split into two, or reduce to one.
+
+With these changes, your assessment will rigorously align with your stated guidelines!
+=== Turn 1: Author refines questions ===
+<question>  
+A LAMP reaction targets a 200-nucleotide single-stranded DNA region of SARS-CoV-2. If $1~\mu\mathrm{g}$ of target DNA (average nucleotide residue mass $330~\mathrm{g \cdot mol^{-1}}$) is present in $10~\mu\mathrm{L}$, calculate the molar concentration of DNA molecules in nM. Provide a single numerical value.  
+</question>  
+
+<question>  
+Conventional LAMP detects a minimum of $5000$ viral RNA copies per $25~\mu\mathrm{L}$ reaction. If Penn-RAMP increases sensitivity $50$-fold, calculate the minimum number of detectable RNA copies per reaction. Provide a single numerical value.  
+</question>  
+
+<question>  
+At $65^\circ$C, the rate-determining step of an isothermal amplification assay has $\Delta H^\ddagger = 80~\mathrm{kJ \cdot mol^{-1}}$ and $\Delta S^\ddagger = -50~\mathrm{J \cdot mol^{-1} \cdot K^{-1}}$. Calculate the activation Gibbs free energy, $\Delta G^\ddagger$, in kJ·mol⁻¹ at $65^\circ$C. Provide a single numerical value.  
+</question>  
+
+<question>  
+Given the 15-nucleotide sequence 5'-GGATGCGGATCGTGG-3', provide its full IUPAC name, naming each nucleotide as a $5'$-deoxyribonucleoside monophosphate. Provide the complete compound name.  
+</question>  
+
+<question>  
+A $50~\mu\mathrm{L}$ reaction mixture with buffering capacity $0.02~\mathrm{mol \cdot L^{-1} \cdot pH^{-1}}$ undergoes a pH change from 7.4 to 6.2. Calculate the amount, in moles, of $\mathrm{H^+}$ released during this change. Provide a single numerical value with units.  
+</question>  
+
+<question>  
+In a LAMP reaction, each 30-second cycle has an efficiency of 90% at 65 °C. Starting from 100 RNA copies, calculate the number of copies after 15 minutes using $N = N_0 (1+0.9)^n$, where $n$ is the number of cycles. Provide a single numerical value.  
+</question>  
+
+<question>  
+A $100~\mu\mathrm{L}$ solution contains antibodies at $5~\mu\mathrm{M}$. Using Avogadro’s number ($6.022 \times 10^{23}~\mathrm{mol^{-1}}$), calculate the total number of antibody molecules in the solution. Provide a single numerical value.  
+</question>  
+
+<question>  
+A 20-nucleotide LAMP primer has a melting temperature $T_m = 68^\circ\mathrm{C}$ by the Wallace rule: $T_m = 2(A+T) + 4(G+C)$. Estimate the minimum combined number of guanine and cytosine residues in the primer. Provide a single numerical value.  
+</question>  
+
+<question>  
+A reverse transcriptase synthesizes cDNA at a rate of 50 nucleotides per second. Calculate the minimum time, in seconds, to generate a 10,000-base cDNA from a single RNA template. Provide a single numerical value.  
+</question>  
+
+<question>  
+A $20~\mu\mathrm{L}$ Penn-RAMP reaction initially contains $2 \times 10^5$ nucleic acid template molecules. After amplification, the copy number increases $10^7$-fold. Calculate the final amplicon concentration in mol·L⁻¹. Provide a single numerical value.  
+</question>
+=== Turn 1: Critic feedback ===
+Here is a concise, actionable critique of each question against your 11 guidelines:
+
+---
+
+### 1. LAMP reaction molar concentration (Q1)
+**Strengths:**  
+- Realistic DNA quantification context.
+- Multi-step reasoning (mass $\to$ moles $\to$ concentration).
+- Requires correct unit conversion (nM).
+- Concise and uses appropriate notation.
+
+**Suggestions:**  
+- Specify whether the DNA is single-stranded or double-stranded, as this affects the calculation (mass per nucleotide applies to ssDNA).
+- Clarify "average nucleotide residue mass": explicitly say it applies to ssDNA to avoid ambiguity.
+- Instead of "Provide a single numerical value", specify "Answer in nanomolar (nM), rounded to one decimal place" for clarity.
+
+---
+
+### 2. Penn-RAMP vs. LAMP sensitivity (Q2)
+**Strengths:**  
+- Real method comparison, direct calculation.
+- Only one correct answer (simple division).
+- Concise and unambiguous.
+
+**Suggestions:**  
+- Add unit to answer requirement: "Provide a single numerical value (no units)."
+- Can say "minimum detectable number" for precision.
+
+---
+
+### 3. Activation Gibbs free energy calculation (Q3)
+**Strengths:**  
+- Requires multi-step thermodynamic calculation.
+- Values and units given are appropriate.
+
+**Suggestions:**  
+- Specify significant figures or rounding for final answer.
+- Add "Answer in $\mathrm{kJ \cdot mol^{-1}}$, to the nearest integer" for clarity.
+
+---
+
+### 4. IUPAC name of 15mer oligonucleotide (Q4)
+**Strengths:**  
+- Chemical nomenclature requirement, not a standard textbook task.
+- Requires step-by-step decoding and correct IUPAC naming.
+
+**Suggestions:**  
+- Specify "Provide the full IUPAC name as a single, uninterrupted line."
+- To avoid ambiguity, clarify if you want full systematic names or approved abbreviations.
+
+---
+
+### 5. Buffering capacity and $\mathrm{H^+}$ release (Q5)
+**Strengths:**  
+- Quantitative, multi-step calculation linking buffer capacity, volume, and $\Delta$pH.
+
+**Suggestions:**  
+- Specify units for the answer in the question statement.
+- Buffering capacity can be ambiguous; clarify it refers to moles of $\mathrm{H^+}$ per L per pH unit.
+
+---
+
+### 6. LAMP reaction amplification (Q6)
+**Strengths:**  
+- Exponential growth calculation with realistic parameters.
+- No ambiguity in notation.
+
+**Suggestions:**  
+- Specify required rounding (e.g., to nearest integer).
+- Clarify: "Provide your answer as an integer value (number of RNA copies)."
+
+---
+
+### 7. Counting molecules from molar concentration (Q7)
+**Strengths:**  
+- Requires concentration-volume-molecule calculation.
+- Avogadro's number given.
+
+**Suggestions:**  
+- Specify rounding instruction for the very large number ("to two significant figures", etc.).
+
+---
+
+### 8. LAMP primer GC content from Tm (Q8)
+**Strengths:**  
+- Application of Wallace rule, original scenario.
+- Requires algebraic manipulation.
+
+**Suggestions:**  
+- Clarify: "minimum integer number of (G+C) residues".
+- Specify if answer should be integer only.
+
+---
+
+### 9. cDNA synthesis time (Q9)
+**Strengths:**  
+- Real-world biochemistry calculation.
+- Clearly worded.
+
+**Suggestions:**  
+- Specify rounding instruction (integer seconds).
+- Could clarify "minimum time (in seconds, rounded up to the next whole number)".
+
+---
+
+### 10. Penn-RAMP amplicon molarity (Q10)
+**Strengths:**  
+- Realistic calculation; forces use of Avogadro’s number and unit conversion.
+- Problem statement is concise.
+
+**Suggestions:**  
+- Preempt confusion: clarify the final answer should be in $\mathrm{mol \cdot L^{-1}}$.
+- Specify rounding (e.g., "to two significant digits").
+
+---
+
+## General Feedback
+
+**Strengths of the Set:**
+- All questions model a (bio)chemical scenario, not just abstract math.
+- All expect single numerical or single compound answers.
+- Each requires multi-step reasoning or correct interpretation/calculation.
+- Not redundant; each is original and not a standard textbook repeat.
+
+**Points for Universal Improvement:**
+1. **Precision in Answer Demands:** For all numerical answers, always specify required units and level of rounding.
+2. **Clarity & Ambiguity:** Where terms may have alternative interpretations (e.g., oligo chemical names, buffer definition), clarify scope in the question.
+3. **Format:** For chemical names, explicitly require full IUPAC nomenclature if that is the intent.
+4. **Consistent Symbols:** When using abbreviations or compounds, spell them out once if non-standard.
+5. **Avoid Multiple Interpretations:** Reassure each question yields only a single answer by checking for ambiguity in data or definitions.
+6. **Use Markdown-LaTeX Syntax:** Your math formatting is already correctly specified.
+
+**Minor edits:**  
+- For phrases like "Provide a single numerical value", always add: "with units", or "rounded to X digits" if applicable.
+- For oligonucleotide naming, clarify the format (one line, or systematic names, etc.).
+- Make sure any units in the problem stem are consistent with those required in the answer.
+
+**Conclusion:**  
+These are high-quality, challenging questions. Implement the above refinements for maximal clarity, rigor, and unambiguous assessment.
+=== Turn 2: Author refines questions ===
+<question>  
+A LAMP reaction targets a 200-nucleotide single-stranded DNA region of SARS-CoV-2. If $1~\mu\mathrm{g}$ of target ssDNA (average nucleotide residue mass $330~\mathrm{g \cdot mol^{-1}}$ per single nucleotide) is present in $10~\mu\mathrm{L}$, calculate the molar concentration of DNA molecules in nanomolar (nM). Provide a single numerical value rounded to one decimal place.  
+</question>  
+
+<question>  
+Conventional LAMP detects a minimum of $5000$ viral RNA copies per $25~\mu\mathrm{L}$ reaction. If Penn-RAMP increases sensitivity 50-fold, calculate the minimum detectable number of RNA copies per reaction. Provide a single numerical value (no units).  
+</question>  
+
+<question>  
+At $65^\circ$C, the rate-determining step of an isothermal amplification assay has activation enthalpy $\Delta H^\ddagger = 80~\mathrm{kJ \cdot mol^{-1}}$ and activation entropy $\Delta S^\ddagger = -50~\mathrm{J \cdot mol^{-1} \cdot K^{-1}}$. Calculate the activation Gibbs free energy, $\Delta G^\ddagger$, in $\mathrm{kJ \cdot mol^{-1}}$ at $65^\circ$C. Provide a single numerical value rounded to the nearest integer.  
+</question>  
+
+<question>  
+Given the 15-nucleotide single-stranded sequence 5'-GGATGCGGATCGTGG-3', provide its full IUPAC chemical name, naming each nucleotide as a $5'$-deoxyribonucleoside monophosphate. Present the complete compound name as a single uninterrupted line, using systematic IUPAC nomenclature (no abbreviations).  
+</question>  
+
+<question>  
+A $50~\mu\mathrm{L}$ reaction mixture with buffering capacity $0.02~\mathrm{mol \cdot L^{-1} \cdot pH^{-1}}$ (defined as moles of $\mathrm{H^+}$ per liter per pH unit) undergoes a pH change from 7.4 to 6.2. Calculate the amount of $\mathrm{H^+}$ released during this change, in moles. Provide a single numerical value with units (moles), rounded to two significant figures.  
+</question>  
+
+<question>  
+In a LAMP reaction, each 30-second cycle has an efficiency of 90% at $65^\circ$C. Starting from 100 RNA copies, calculate the number of copies after 15 minutes using $N = N_0 (1+0.9)^n$, where $n$ is the number of cycles. Provide your answer as an integer (number of RNA copies).  
+</question>  
+
+<question>  
+A $100~\mu\mathrm{L}$ solution contains antibodies at $5~\mu\mathrm{M}$. Using Avogadro’s number ($6.022 \times 10^{23}~\mathrm{mol^{-1}}$), calculate the total number of antibody molecules in the solution. Provide a single numerical value rounded to two significant figures.  
+</question>  
+
+<question>  
+A 20-nucleotide LAMP primer has melting temperature $T_m = 68^\circ$C estimated by the Wallace rule: $T_m = 2(A+T) + 4(G+C)$. Estimate the minimum integer number of combined guanine and cytosine residues ($G+C$) in the primer. Provide a single numerical value (integer).  
+</question>  
+
+<question>  
+A reverse transcriptase synthesizes cDNA at a rate of 50 nucleotides per second. Calculate the minimum time, in seconds, required to generate a 10,000-base cDNA from a single RNA template. Provide a single numerical value rounded up to the next whole integer (seconds).  
+</question>  
+
+<question>  
+A $20~\mu\mathrm{L}$ Penn-RAMP reaction initially contains $2 \times 10^5$ nucleic acid template molecules. After amplification, the copy number increases $10^7$-fold. Calculate the final amplicon concentration in $\mathrm{mol \cdot L^{-1}}$. Provide a single numerical value rounded to two significant digits.  
+</question>
+=== Turn 2: Critic feedback ===
+Certainly! Here is a **concise, actionable critique for each question** based on your guidelines:
+
+---
+
+### Question 1
+
+**Critique:**  
+- **Model a Scenario:** Realistic nucleic acid quantification; relevant.
+- **Units:** Asks for nM; clear.
+- **Multi-Step Reasoning:** Requires mass $\rightarrow$ moles $\rightarrow$ concentration; excellent.
+- **Conciseness:** Phrasing is clear and technical.
+- **Redundancy:** None.
+- **Complexity:** Not a textbook example; appropriate.
+- **Single Solution:** Correct.
+- **Formatting:** Scientific notation and units are correct; question will render in Markdown.
+- **IUPAC/Nomenclature:** N/A.
+
+**Actionable Fixes:**  
+- To be more rigorous, replace "average nucleotide residue mass" with "average mass per nucleotide residue"; but it's clear as is.
+
+**Recommendation:**  
+*No revision needed; all criteria met.*
+
+---
+
+### Question 2
+
+**Critique:**  
+- **Scenario:** Realistic diagnostic setting.
+- **Units:** Asks for dimensionless number, but actual units are "copies"—should clarify.
+- **Multi-Step:** Requires understanding fold-change.
+- **Conciseness:** Clear.
+- **Redundancy:** None.
+- **Single Solution:** Yes.
+- **Formatting:** Good.
+
+**Actionable Fixes:**  
+- Specify "Provide a single numerical value (number of RNA copies, no units)" or state "Provide an integer value (no units)" to clarify.
+
+**Recommendation:**  
+*Add “number of RNA copies (no units)” for absolute clarity.*
+
+---
+
+### Question 3
+
+**Critique:**  
+- **Scenario:** Thermodynamic calculation.
+- **Units:** Asks for $kJ \cdot mol^{-1}$, matches input units.
+- **Multi-Step:** Requires enthalpy/entropy conversion and application.
+- **Conciseness:** Precise.
+- **Redundancy:** None.
+- **Single Solution:** Yes.
+- **Formatting:** Good.
+
+**Recommendation:**  
+*No significant revision needed.*
+
+---
+
+### Question 4
+
+**Critique:**  
+- **Scenario:** Unusual; naming a 15-mer single-stranded DNA chemically.
+- **Units/Chemical Name:** Requires full systematic IUPAC; matches criteria.
+- **Multi-Step:** Nomenclature application; rigorous.
+- **Redundancy:** None.
+- **Complexity:** Unique and challenging.
+- **Formatting:** Clear.
+- **Ambiguity:** "IUPAC chemical name" is correct, but students unfamiliar with such naming for oligonucleotides may struggle.
+
+**Actionable Fixes:**  
+- **Consider a note:** Specify "fully systematic IUPAC name, using the $5'$-deoxyribonucleoside monophosphate format for each nucleotide".  
+- **Possible Clarification:** Reference the IUPAC nucleic acids nomenclature source for unambiguous expectations.
+
+---
+
+### Question 5
+
+**Critique:**  
+- **Scenario:** Buffer calculation; realistic.
+- **Units:** Provides units; asks for "moles".
+- **Multi-Step:** Yes.
+- **Redundancy:** None.
+- **Single Solution:** Yes.
+- **Formatting:** Good.
+
+**Recommendation:**  
+*No revision needed.*
+
+---
+
+### Question 6
+
+**Critique:**  
+- **Scenario:** LAMP reaction; realistic.
+- **Units:** Integer; clear.
+- **Multi-Step:** Yes ($n = 30$ cycles in 15 min at 30s per cycle), then geometric progression.
+- **Conciseness:** Precise.
+- **Redundancy:** None.
+- **Single Solution:** Yes.
+- **Formatting:** Good.
+
+**Actionable Fixes:**  
+- **Clarification:** Implicitly assumes cycles are back-to-back, no lag; could state "Assume cycles are consecutive and each is 30 seconds."
+
+---
+
+### Question 7
+
+**Critique:**  
+- **Scenario:** Antibody quantification.
+- **Units:** Asks for molecules; rounds to 2 sf; clear.
+- **Multi-Step:** Yes (moles → molecules).
+- **Redundancy:** None.
+- **Single Solution:** Yes.
+- **Formatting:** Good.
+
+**Actionable Fixes:**  
+- Consider specifying "Provide a single numerical value (number of molecules, no units)."
+
+---
+
+### Question 8
+
+**Critique:**  
+- **Scenario:** Primer melting temperature; Wallace rule.
+- **Units:** Asks for integer count of $G+C$.
+- **Multi-Step:** Application of Wallace rule for a lower bound.
+- **Single Solution:** Yes.
+- **Formatting:** Good.
+- **Ambiguity:** None.
+
+**Recommendation:**  
+*No changes needed.*
+
+---
+
+### Question 9
+
+**Critique:**  
+- **Scenario:** Enzyme synthesis rate.
+- **Units:** Time in seconds (integer).
+- **Multi-Step:** Yes (division and rounding up).
+- **Conciseness:** Good.
+- **Single Solution:** Yes.
+- **Formatting:** Good.
+
+**Recommendation:**  
+*No changes needed.*
+
+---
+
+### Question 10
+
+**Critique:**  
+- **Scenario:** Amplification yield/concentration calculation.
+- **Units:** Asks for $\mathrm{mol \cdot L^{-1}}$, rounded to 2 sd.
+- **Multi-Step:** Copy $\rightarrow$ copy × amplification factor $\rightarrow$ divide by volume $\rightarrow$ convert to molarity.
+- **Single Solution:** Yes.
+- **Formatting:** Good.
+
+**Recommendation:**  
+*No changes needed.*
+
+---
+
+## **General Feedback Summary:**
+
+- **Units:** In a few cases (Q2, Q7), clarify "copies" or "number of molecules" as the answer to match "no units" specification, but be explicit.
+- **Ambiguity:** For nomenclature (Q4), consider referencing IUPAC nucleic acid naming or providing an example for clarity.
+- **Assumptions:** For kinetic/cycle questions, state that cycles or steps are continuous without delay if this is implicit.
+
+**Most other aspects (conciseness, multi-step reasoning, unique scenarios, single solution, LaTeX formatting, etc.) are excellent.**  
+*Just a few tweaks on answer format clarity and chemical nomenclature precision would make these questions exemplary for advanced chemistry assessment.*
+=== Turn 3: Author refines questions ===
+<question>  
+A LAMP reaction targets a 200-nucleotide single-stranded DNA region of SARS-CoV-2. If $1~\mu\mathrm{g}$ of target ssDNA (average mass per nucleotide residue $330~\mathrm{g \cdot mol^{-1}}$) is present in $10~\mu\mathrm{L}$, calculate the molar concentration of DNA molecules in nanomolar (nM). Provide a single numerical value rounded to one decimal place.  
+</question>  
+
+<question>  
+Conventional LAMP detects a minimum of $5000$ viral RNA copies per $25~\mu\mathrm{L}$ reaction. If Penn-RAMP increases sensitivity 50-fold, calculate the minimum detectable number of RNA copies per reaction. Provide a single numerical value representing the number of RNA copies (no units).  
+</question>  
+
+<question>  
+At $65^\circ$C, the rate-determining step of an isothermal amplification assay has activation enthalpy $\Delta H^\ddagger = 80~\mathrm{kJ \cdot mol^{-1}}$ and activation entropy $\Delta S^\ddagger = -50~\mathrm{J \cdot mol^{-1} \cdot K^{-1}}$. Calculate the activation Gibbs free energy, $\Delta G^\ddagger$, in $\mathrm{kJ \cdot mol^{-1}}$ at $65^\circ$C. Provide a single numerical value rounded to the nearest integer.  
+</question>  
+
+<question>  
+Given the 15-nucleotide single-stranded sequence 5'-GGATGCGGATCGTGG-3', provide its full IUPAC chemical name, naming each nucleotide as a $5'$-deoxyribonucleoside monophosphate. Present the complete compound name as a single uninterrupted line, using systematic IUPAC nomenclature without abbreviations. Assume the standard connectivity and stereochemistry of DNA nucleotides as per IUPAC guidelines.  
+</question>  
+
+<question>  
+A $50~\mu\mathrm{L}$ reaction mixture has a buffering capacity of $0.02~\mathrm{mol \cdot L^{-1} \cdot pH^{-1}}$ (moles of $\mathrm{H^+}$ per liter per pH unit). If the solution’s pH changes from 7.4 to 6.2, calculate the amount of $\mathrm{H^+}$ released in moles. Provide a single numerical value with units (moles), rounded to two significant figures.  
+</question>  
+
+<question>  
+In a LAMP reaction at $65^\circ$C, each 30-second amplification cycle has an efficiency of 90%. Starting from 100 RNA copies, calculate the number of copies after 15 minutes using $N = N_0 (1+0.9)^n$, where $n$ is the number of cycles. Assume cycles occur consecutively with no delay. Provide your answer as an integer number of RNA copies (no units).  
+</question>  
+
+<question>  
+A $100~\mu\mathrm{L}$ solution contains antibodies at $5~\mu\mathrm{M}$. Using Avogadro’s number ($6.022 \times 10^{23}~\mathrm{mol^{-1}}$), calculate the total number of antibody molecules in the solution. Provide a single numerical value representing the number of molecules (no units), rounded to two significant figures.  
+</question>  
+
+<question>  
+A 20-nucleotide LAMP primer has melting temperature $T_m = 68^\circ$C estimated by the Wallace rule: $T_m = 2(A+T) + 4(G+C)$. Estimate the minimum integer number of combined guanine and cytosine residues ($G+C$) in the primer. Provide a single numerical value (integer).  
+</question>  
+
+<question>  
+A reverse transcriptase synthesizes cDNA at a rate of 50 nucleotides per second. Calculate the minimum time required, in seconds, to synthesize a 10,000-base cDNA from a single RNA template. Provide a single numerical value rounded up to the next whole integer (seconds).  
+</question>  
+
+<question>  
+A $20~\mu\mathrm{L}$ Penn-RAMP reaction initially contains $2 \times 10^5$ nucleic acid template molecules. After amplification, the copy number increases $10^7$-fold. Calculate the final amplicon concentration in $\mathrm{mol \cdot L^{-1}}$. Provide a single numerical value rounded to two significant digits.  
+</question>
+=== Final questions generated ===

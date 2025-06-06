@@ -1,0 +1,605 @@
+=== Turn 0: Author generates questions ===
+<question>  
+A glycodendrimer attached to a planar surface via a TEG-N (triethylene glycol amine) linker displays surface-bound mannose residues for lectin recognition. Given the linker length as 1.1 nm and the receptor lectin CRD (carbohydrate recognition domain) spacing as 3.5 nm, estimate the maximum number of mannose residues that can simultaneously engage in multivalent binding on a 25 nm × 25 nm nanopatterned patch. Assume optimal flexible spacing and that each mannose can engage only one lectin domain. Provide the integer number of simultaneous binding events.  
+</question>  
+
+<question>  
+The Thomsen-Friedenreich (TF) antigen, Galβ1-3GalNAcα-O-Ser/Thr, mediates cancer cell aggregation by binding galectin-3. In a competition assay, a synthetic TF antigen derivative bearing a 6-O-sulfate on GalNAc shows a dissociation constant $K_D = 150$ nM versus $K_D = 450$ nM for the native TF antigen. Calculate the fold change in binding free energy $\Delta\Delta G^\circ$ at 310 K (human body temperature) due to sulfation using  
+$$\Delta G^\circ = RT \ln K_D$$  
+where $R = 8.314 \text{ J}\,\text{mol}^{-1}\text{K}^{-1}$. Express $\Delta\Delta G^\circ$ in kJ·mol$^{-1}$ rounded to two decimal places.  
+</question>  
+
+<question>  
+Regioselective sulfation of a trisaccharide proceeds with kinetic control following first-order kinetics with respect to reagent concentration. The monosulfated product at the 3-OH position forms with rate constant $k_3 = 0.012$ s$^{-1}$, while 6-OH sulfation proceeds with $k_6 = 0.004$ s$^{-1}$. If the initial trisaccharide concentration is 10 mM and sulfation reagent is in excess, calculate the ratio of 3-O sulfated to 6-O sulfated product after 5 minutes. Provide the ratio to two significant figures.  
+</question>  
+
+<question>  
+A synthetic glycan with a terminal sialic acid linked $\alpha$2-6 to galactose shows a $^{13}C$ NMR resonance at 101.2 ppm for the anomeric carbon. Upon enzymatic desialylation, the resonance shifts downfield by 2.8 ppm. Based on typical chemical shift changes, identify the IUPAC systematic name of the monosaccharide liberated and explain the expected direction and magnitude of the chemical shift change considering the electronic environment. Provide the monosaccharide name only.  
+</question>  
+
+<question>  
+In a lectin binding study, the Hill equation describes the cooperative binding of Concanavalin A (ConA) to a synthetic glycan with a valency of 4. Measured in molar ligand concentration $[L]$, the fractional saturation $\theta$ is  
+$$\theta = \frac{[L]^n}{K_D + [L]^n}$$  
+with Hill coefficient $n=2.4$ and $K_D = 180$ nM. Calculate the ligand concentration $[L]$ (in nM) required to achieve $\theta = 0.75$. Round your answer to the nearest integer.  
+</question>  
+
+<question>  
+A glycodendrimer with TEG-N linkers displays 8 terminal glucose units. In an aqueous solution at 298 K, binding to a glucose-specific lectin shows enthalpy change $\Delta H = -32$ kJ·mol$^{-1}$ and entropy change $\Delta S = -75$ J·mol$^{-1}$·K$^{-1}$. Calculate the Gibbs free energy change $\Delta G$ (in kJ·mol$^{-1}$) at 298 K for a single glucose-lectin interaction, rounded to one decimal place.  
+</question>  
+
+<question>  
+A synthetic N-acetyllactosamine (LacNAc) trisaccharide undergoes regioselective sulfation at the 6-position of galactose catalyzed by a sulfur trioxide–pyridine complex. The reaction yields a major product with a molecular ion peak at m/z 505 (negative mode) corresponding to [M – H]$^{-}$. Calculate the nominal molecular weight (g·mol$^{-1}$) of the trisaccharide prior to sulfation. Use the following atomic weights: C=12, H=1, O=16, S=32, N=14.  
+</question>  
+
+<question>  
+During molecular dynamics simulations of a glycodendrimer linked by TEG-N units, the radius of gyration tightens from 3.2 nm to 2.5 nm upon binding to a lectin trimer. Calculate the percent decrease in volume assuming spherical symmetry (volume scales as $V = \frac{4}{3}\pi r^3$). Express your answer as a percentage rounded to the nearest whole number.  
+</question>  
+
+<question>  
+The TF antigen exhibits cancer cell aggregation through lectin binding with a binding free energy of –35 kJ·mol$^{-1}$. A synthetic glycodendrimer presenting 12 TF antigens exhibits an avidity effect increasing overall binding free energy by a factor proportional to $\ln(n)$, where $n$ is the number of antigens. Calculate the total binding free energy (in kJ·mol$^{-1}$) contributed by the 12 antigens, rounded to the nearest integer. Use natural logarithm and assume additive logarithmic scaling.  
+</question>  
+
+<question>  
+Lectin binding affinity to a sulfated glycan shows a $K_D$ of 75 nM at pH 7.4 and 150 nM at pH 5. Calculate the change in binding free energy $\Delta\Delta G^\circ$ (kJ·mol$^{-1}$) between these pH conditions at 298 K, given  
+$$\Delta G^\circ = RT \ln K_D.$$  
+Use $R = 8.314$ J·mol$^{-1}$·K$^{-1}$, $T=298$ K, and express answer rounded to two decimal places.  
+</question>
+=== Turn 0: Critic feedback ===
+**Overall Impression**  
+These questions are generally strong, display creativity, and most fit the guidelines well—particularly around originality, calculation-required reasoning, and clarity. However, several questions can be further improved to better align with the criteria provided, mainly regarding single-solution focus, removing ambiguous or redundant details, and IUPAC or units rigor.
+
+Below is concise, actionable feedback for each question, mapped to the numbered guidelines where relevant:
+
+---
+
+### 1. Glycodendrimer Mannose Multivalency
+- **Positives**: Scenario is original, realistic; units and quantities given.
+- **Concerns**:
+    - Ambiguous physical reasoning: "optimal flexible spacing" is not precisely defined; real patch coverage/multivalency needs clarifying (is a geometric or surface density calculation intended?).
+    - The possible configurations or calculation approach for "maximum" is not explicit—clarify if overlapping, edge effects, density, or packing rules apply.
+    - *Action*: Explicitly state any necessary geometric or density assumptions. Remove terms like "optimal flexible spacing" if not quantified; specify whether linkers behave as fully-extended or Gaussian chains, etc.
+    - *Guidelines*: [4], [8], [10] — refocus to a strictly calculable single answer.
+
+---
+
+### 2. TF Antigen $\Delta\Delta G^\circ$ Calculation
+- **Positives**: Concise, units correct, single calculation, IUPAC naming good.
+- **Concerns**: None—meets all guidelines.
+
+---
+
+### 3. Regioselective Sulfation Kinetics
+- **Positives**: Unique, requires stepwise chemical reasoning, data clear.
+- **Concerns**:
+    - The term "ratio ... after 5 minutes": clarify if you want [product]/[product], or [product formed]/[initial substrate]; as written, [ratio] means "formed product".
+    - *Action*: Consider restating as "Calculate $[\text{3-O}"
+
+product] divided by $[\text{6-O product] after 5 minutes."  
+    - *Guidelines*: [7], [8] — be as precise as possible in the definition of "ratio."
+
+---
+
+### 4. NMR Resonance Assignment (IUPAC)
+- **Positives**: Original, scientific scenario, uses NMR data, IUPAC requested.
+- **Concerns**:
+    - The "and explain" clause prompts for more than a single value (conflicts with [10]).
+    - *Action*: Restrict to "Provide the IUPAC systematic name of the monosaccharide liberated." Omit the discussion prompt.
+    - *Guidelines*: [10] — remove multi-part aspect.
+
+---
+
+### 5. Hill Equation for Cooperative Binding
+- **Positives**: Requires nontrivial calculation, clear, single solution.
+- **Concerns**: None.
+
+---
+
+### 6. Gibbs Free Energy from Enthalpy/Entropy
+- **Positives**: Concise, single value, correct units.
+- **Concerns**: None.
+
+---
+
+### 7. Mass Spec Sulfation (Molecular Weight)
+- **Positives**: Unique, practical; all needed info provided.
+- **Concerns**: None.
+
+---
+
+### 8. Radius of Gyration Volume Percent Change
+- **Positives**: Clear chemistry context, single calculation, units clear.
+- **Concerns**: None.
+
+---
+
+### 9. TF Antigen Multivalency Avidity Question
+- **Positives**: Original system, clear formula, single value.
+- **Concerns**: Slight ambiguity in "total binding free energy": clarify if additive per antigen or a single total value with the logarithmic correction.
+- *Action*: Restate as: "Calculate the overall binding free energy (in kJ·mol$^{-1}$) for the glycodendrimer," specifying "the result including the $\ln(n)$ scaling."
+- *Guidelines*: [7], [8].
+
+---
+
+### 10. pH-Dependent $\Delta\Delta G^\circ$ Calculation
+- **Positives**: Concise, units and context correct, clear ask.
+- **Concerns**: None.
+
+---
+
+### **Summary of Recommendations**
+
+- **Clarify language** wherever ambiguity may influence calculation, e.g., "optimal flexible spacing," "ratio of products."
+- **Remove any multi-part prompts** (see question 4), so each question yields exactly one answer.
+- **Be explicit about assumptions** for geometry/packing if relevant to calculation, especially for nanostructures or supramolecular systems.
+- **Consistent Units** and **request IUPAC nomenclature only** when naming chemicals. Do not ask for "name and explanation."
+- **Use precise terms**—avoid colloquialisms or undefined technical expressions.
+
+**Conclusion:**  
+Almost all questions are well constructed and model chemical assessment scenarios that demand multistep reasoning and a single well-defined answer. Address minor issues with ambiguity or multi-part requests for perfection.
+=== Turn 1: Author refines questions ===
+<question>  
+A glycodendrimer is attached to a planar surface via a TEG-N (triethylene glycol amine) linker of length 1.1 nm. Surface-bound mannose residues are presented to match the spacing between carbohydrate recognition domains (CRDs) of a lectin, separated by 3.5 nm. Assuming each mannose residue can bind to only one CRD and that mannose residues can be arranged on the 25 nm × 25 nm nanopatterned patch in a square lattice matching the lectin CRD spacing, estimate the maximum number of mannose residues that can simultaneously engage in multivalent binding on the patch. Provide the integer number of simultaneous binding events.  
+</question>  
+
+<question>  
+The Thomsen-Friedenreich (TF) antigen, Galβ1-3GalNAcα-O-Ser/Thr, binds galectin-3 with dissociation constant $K_D = 450$ nM. A synthetic TF antigen derivative bearing a 6-O-sulfate on GalNAc binds with $K_D = 150$ nM. Calculate the change in binding free energy $\Delta\Delta G^\circ$ (in kJ·mol$^{-1}$) at 310 K caused by sulfation, using  
+$$\Delta G^\circ = RT \ln K_D,$$  
+where $R = 8.314 \text{ J·mol}^{-1}\text{K}^{-1}$. Express $\Delta\Delta G^\circ$ rounded to two decimal places.  
+</question>  
+
+<question>  
+Regioselective sulfation of a trisaccharide proceeds via first-order kinetics with respect to reagent concentration under conditions where reagent is in excess. The rate constant for 3-OH sulfation is $k_3 = 0.012\ \mathrm{s}^{-1}$, and for 6-OH sulfation is $k_6 = 0.004\ \mathrm{s}^{-1}$. Starting from 10 mM trisaccharide, calculate the ratio of concentrations of 3-O-sulfated product to 6-O-sulfated product after 5 minutes of reaction. Provide the ratio rounded to two significant figures.  
+</question>  
+
+<question>  
+A synthetic glycan with a terminal sialic acid linked $\alpha$2-6 to galactose shows a $^{13}$C NMR resonance at 101.2 ppm for its anomeric carbon. After enzymatic desialylation, the resonance shifts downfield by 2.8 ppm. Identify the IUPAC systematic name of the monosaccharide released by desialylation. Provide the name only.  
+</question>  
+
+<question>  
+The fractional saturation $\theta$ of Concanavalin A (ConA) binding to a synthetic glycan with valency 4 follows the Hill equation:  
+$$\theta = \frac{[L]^n}{K_D + [L]^n},$$  
+where $n = 2.4$, $K_D = 180$ nM, and $[L]$ is the ligand concentration in nM. Calculate the ligand concentration $[L]$ (in nM) required to achieve $\theta = 0.75$. Round your answer to the nearest integer.  
+</question>  
+
+<question>  
+A glycodendrimer displaying 8 terminal glucose units binds a glucose-specific lectin with enthalpy change $\Delta H = -32$ kJ·mol$^{-1}$ and entropy change $\Delta S = -75$ J·mol$^{-1}$·K$^{-1}$ at 298 K. Calculate the Gibbs free energy change $\Delta G$ (in kJ·mol$^{-1}$) of binding for a single glucose-lectin interaction at 298 K. Round to one decimal place.  
+</question>  
+
+<question>  
+A synthetic N-acetyllactosamine (LacNAc) trisaccharide is sulfated at the 6-position of galactose using sulfur trioxide–pyridine complex. The major sulfated product shows a molecular ion peak at m/z 505 ([M – H]$^{-}$) in negative ion mode mass spectrometry. Calculate the nominal molecular weight (g·mol$^{-1}$) of the trisaccharide substrate prior to sulfation. Atomic weights: C=12, H=1, O=16, S=32, N=14.  
+</question>  
+
+<question>  
+During molecular dynamics simulations, the radius of gyration $r_g$ of a glycodendrimer linked by TEG-N units decreases from 3.2 nm to 2.5 nm upon binding to a lectin trimer. Assuming spherical symmetry, calculate the percentage decrease in volume, where volume $V = \frac{4}{3}\pi r_g^3$. Round your answer to the nearest whole percent.  
+</question>  
+
+<question>  
+The TF antigen has an individual binding free energy of –35 kJ·mol$^{-1}$ for galectin-3. A synthetic glycodendrimer presenting 12 TF antigens exhibits an avidity effect modeled by a scaling factor proportional to $\ln(n)$, where $n$ is the number of antigens. Calculate the overall binding free energy (in kJ·mol$^{-1}$) contributed by the 12 antigens using the formula  
+$$\Delta G_\mathrm{total} = \Delta G_\mathrm{single} \times \ln(n).$$  
+Round your answer to the nearest integer.  
+</question>  
+
+<question>  
+A lectin binds a sulfated glycan with dissociation constants $K_D = 75$ nM at pH 7.4 and $K_D = 150$ nM at pH 5.0. Calculate the difference in standard binding free energy, $\Delta\Delta G^\circ$ (in kJ·mol$^{-1}$), between these pH values at 298 K, using  
+$$\Delta G^\circ = RT \ln K_D,$$  
+with $R = 8.314$ J·mol$^{-1}$·K$^{-1}$. Express your answer rounded to two decimal places.  
+</question>
+=== Turn 1: Critic feedback ===
+**Overall Evaluation:**
+These questions are advanced, original, and chemistry-specific. They mostly meet the guidelines, but certain refinements are needed for clarity, consistency, and unambiguity. Feedback below is organized by question, followed by cross-cutting improvement points.
+
+---
+
+### **Question-by-Question Critique**
+---
+
+#### **Q1 (Glycodendrimer spacing / multivalent binding)**
+- **Strengths:** Realistic scenario, single numerical answer, multi-step geometric reasoning, concise.
+- **Improvement:**  
+    - "Simultaneously engage in multivalent binding" could cause minor ambiguity—does it mean each residue binds a separate lectin or one multivalent lectin?  
+    - Specify clearly whether residues may only bind one lectin molecule, and if edge effects should be excluded.
+    - Rephrase "number of simultaneous binding events" for clarity.
+    - Indicate that only integer (whole) numbers are valid.
+- **Action:**  
+    - E.g.: "...estimate the maximum integer number of mannose residues that can bind simultaneously to a single lectin trimer (each CRD binding one mannose) on the patch."
+
+---
+
+#### **Q2 (TF antigen free energy difference)**
+- **Strengths:** Direct, concise, well-specified equation, units given.
+- **Improvement:**  
+    - Use consistent unit formatting (e.g., $K_D$ in M, not nM, if $R$ is per molarity).
+    - Indicate which compound is "reference" and which is "modified."
+    - "Change in binding free energy" could be clarified as "$\Delta\Delta G^\circ = \Delta G^\circ_\mathrm{sulfated} - \Delta G^\circ_\mathrm{native}$."
+- **Action:**  
+    - Specify order of subtraction (native → sulfated) and ensure unit conversion step is explicit.
+  
+---
+
+#### **Q3 (Sulfation kinetics; product ratio)**
+- **Strengths:** Real scenario, numerical answer, forces proper kinetic reasoning.
+- **Improvement:**  
+    - "Ratio of concentrations" is clear, but explicitly state "concentration of 3-O-sulfated product divided by that of 6-O-sulfated product."
+    - Mention that only single sulfation occurs (i.e., products are mono-sulfated), unless that's impossible, to prevent ambiguity.
+    - Specify that excess reagent means first-order kinetics w.r.t. starting trisaccharide only.
+- **Action:**  
+    - Add: "Assume only mono-sulfated products are formed, and that the reaction is pseudo-first order in trisaccharide."
+
+---
+
+#### **Q4 (Released monosaccharide, IUPAC name)**
+- **Strengths:** Unambiguous single answer, clear analytical method.
+- **Improvement:**  
+    - "IUPAC systematic name" could be interpreted in various levels of detail (full configuration, ring form, etc.).
+    - Clarify which ring form (e.g., pyranose or furanose) and full stereochemistry, or state "provide the full systematic IUPAC name including configuration."
+    - Give the structure of the glycan, or the linkage position unambiguously.
+- **Action:**  
+    - E.g.: "Give the full IUPAC systematic name (including stereochemistry and ring form) of the monosaccharide released."
+
+---
+
+#### **Q5 (Hill equation / fractional saturation)**
+- **Strengths:** Proper chemical context, forces manipulation of Hill equation.
+- **Improvement:**  
+    - $[L]$ in the denominator should be $[L]^n$ for proper Hill equation; clarify units and form.
+    - Minor: Confirm equation syntax matches the required form.
+    - Provide explicit instructions on numerical method if inversion is required (i.e., to solve for $[L]$).
+- **Action:**  
+    - Write: "Given $\theta = 0.75$, solve for $[L]$ in the Hill equation above."
+
+---
+
+#### **Q6 (Binding thermodynamics, $\Delta G$ calculation)**
+- **Strengths:** Units, scenario and data are clear. Standard $\Delta G$ calculation.
+- **Improvement:**  
+    - Minor: State that answer is per glucose unit, not for whole dendrimer.
+- **Action:**  
+    - Add: "...per single glucose–lectin binding event..."
+
+---
+
+#### **Q7 (Nominal molecular weight pre-sulfation)**
+- **Strengths:** Real analytical context, all data provided, requires reasoning.
+- **Improvement:**  
+    - Confirm that the only difference between substrate and product is a single sulfate addition; specify so to prevent ambiguity.
+    - Specify what "nominal" means (integer sum ignoring isotopic patterns).
+- **Action:**  
+    - Add: "...single sulfate group is the only modification. Provide integer nominal mass."
+
+---
+
+#### **Q8 (Radius of gyration, percent change in volume)**
+- **Strengths:** Clear, requires multi-step calculation.
+- **Improvement:**  
+    - Confirm that only the volume formula (assuming sphere) is to be used (as per question)—explicitly refer to usage of $r_g$ for "radius" in formula.
+    - State explicitly any assumptions (e.g., neglect hydration shell).
+- **Action:**  
+    - E.g..: "Assume $r_g$ may be treated as the radius in the volume formula."
+
+---
+
+#### **Q9 (Avidity effect, scaling, $\ln n$)**
+- **Strengths:** Original, concise, context-rich.
+- **Improvement:**  
+    - Explain the scaling factor “proportional to $\ln n$” means “equals $\ln n$” or provide the proportionality constant.
+    - Add units to clarify context ($\Delta G_\mathrm{single}$ per mole, $\ln n$ unitless).
+    - Be explicit whether total refers to a single dendrimer or per binding event.
+- **Action:**  
+    - E.g.: "...where $\Delta G_\mathrm{single}$ is per antigen–lectin pair, and $n$ is the number of antigens per dendrimer."
+
+---
+
+#### **Q10 (Binding free energy, pH-dependence)**
+- **Strengths:** Realistic, calculation-based, single answer.
+- **Improvement:**  
+    - Explicitly define which value is subtracted from which in $\Delta\Delta G^\circ$ ("pH 5.0 minus pH 7.4" or vice versa).
+    - Ensure $K_D$ units provide clarity for $R$ used ($M$, not $nM$).
+    - Reminder to have students convert $K_D$ to same units (e.g., $M$).
+- **Action:**  
+    - "...Calculate $\Delta\Delta G^\circ = \Delta G^\circ_\mathrm{pH\,5.0} - \Delta G^\circ_\mathrm{pH\,7.4}$..."
+
+---
+
+### **Cross-cutting / General Feedback**
+
+1. **Clarity of Units:**  
+    Always state explicitly when units must be converted (nM $\to$ M) for $R$ values in energy calculations.
+
+2. **Unambiguity:**  
+    Where multiple reasonable interpretations exist (e.g., full IUPAC name, product ratios), clarify what is and isn't included in the answer.
+
+3. **Equation Formatting:**  
+    All equations and variables are already in LaTeX—continue this best practice, ensure questions are renderable in Markdown.
+
+4. **Eliminate Redundancy:**  
+    No major extraneous details seen.
+
+5. **Question Structure:**  
+    Each question is single-part, expects one answer—this is good. Maintain this.
+
+6. **Originality:**  
+    Questions are sufficiently unique, not standard textbook exercises.
+
+7. **Phrasing:**  
+    Most phrasing is rigorous and concise. Where minor ambiguity exists, tighten as above.
+
+---
+
+### **Summary (Action Steps)**
+- Ensure every term is defined precisely (especially subtraction order, ratio numerators/denominators, IUPAC naming scope).
+- Consistently specify or reminder for unit conversions in equations involving $K_D$ and $R$.
+- Clearly state answer expectations (e.g., integer values, number of decimal places, significant figures, per event or per molecule).
+- For chemical names, specify the depth of nomenclature required (full configuration, ring form, etc.).
+- For equations, restate them fully and match the variable units as used in input data.
+- Make explicit any required assumptions (e.g., pseudo-first-order, mono-sulfation, ignoring hydration, sphere symmetry).
+- Maintain rigorous, concise phrasing and LaTeX formatting for clarity.
+
+---
+
+### **Conclusion**
+The set is strong and close to optimal, requiring only minor clarifications to eliminate all ambiguity and ensure consistent, self-contained, and fully rigorous questions.
+=== Turn 2: Author refines questions ===
+<question>  
+A glycodendrimer is attached to a planar surface via a TEG-N (triethylene glycol amine) linker of length 1.1 nm. Surface-bound mannose residues are arranged on a 25 nm × 25 nm nanopatterned patch in a square lattice matching the 3.5 nm spacing between carbohydrate recognition domains (CRDs) of a single lectin trimer. Assuming each mannose residue can bind to only one CRD and that multiple residues can bind simultaneously to a single lectin, estimate the maximum integer number of mannose residues on the patch that can simultaneously engage in multivalent binding with the lectin trimer (one residue per CRD per lectin). Provide this integer number.  
+</question>  
+
+<question>  
+The Thomsen-Friedenreich (TF) antigen, Galβ1-3GalNAcα-O-Ser/Thr, binds galectin-3 with dissociation constant $K_D = 450$ nM. A synthetic TF derivative bearing a 6-O-sulfate on GalNAc binds with $K_D = 150$ nM. Using  
+$$\Delta G^\circ = RT \ln K_D,$$  
+with $R = 8.314\ \mathrm{J\cdot mol}^{-1}\mathrm{K}^{-1}$ and $T = 310\ \mathrm{K}$, calculate the change in standard binding free energy caused by sulfation, defined as  
+$$\Delta\Delta G^\circ = \Delta G^\circ_\mathrm{sulfated} - \Delta G^\circ_\mathrm{native}.$$  
+Convert $K_D$ values to molar units before calculation. Express $\Delta\Delta G^\circ$ in kJ·mol$^{-1}$ rounded to two decimal places.  
+</question>  
+
+<question>  
+Regioselective sulfation of a trisaccharide proceeds under pseudo-first-order kinetics with respect to trisaccharide concentration due to excess reagent. The first-order rate constants are $k_3 = 0.012\ \mathrm{s}^{-1}$ for 3-OH sulfation and $k_6 = 0.004\ \mathrm{s}^{-1}$ for 6-OH sulfation. Starting from 10 mM trisaccharide, assume only mono-sulfated products form. Calculate the ratio of concentrations of 3-O-sulfated product to 6-O-sulfated product after 5 minutes of reaction, defined as  
+$$\frac{[\mathrm{3\text{-}O\text{-}sulfated}]}{[\mathrm{6\text{-}O\text{-}sulfated}]}.$$  
+Round your answer to two significant figures.  
+</question>  
+
+<question>  
+A synthetic glycan terminating in sialic acid linked $\alpha$2-6 to galactose exhibits a $^{13}$C NMR resonance at 101.2 ppm for the anomeric carbon of the sialic acid. After enzymatic removal of sialic acid, this resonance shifts downfield by 2.8 ppm. Identify the full IUPAC systematic name of the released monosaccharide, including stereochemistry and ring form (e.g., pyranose or furanose). Provide the name only.  
+</question>  
+
+<question>  
+The fractional saturation $\theta$ of Concanavalin A (ConA) binding to a synthetic glycan with ligand valency 4 follows the Hill equation:  
+$$\theta = \frac{[L]^n}{K_D + [L]^n},$$  
+where the Hill coefficient $n = 2.4$, dissociation constant $K_D = 180$ nM, and ligand concentration $[L]$ is in nM. Given $\theta = 0.75$, calculate the required ligand concentration $[L]$ in nM. Round your answer to the nearest integer.  
+</question>  
+
+<question>  
+A glycodendrimer displays 8 terminal glucose units and binds a glucose-specific lectin with enthalpy change $\Delta H = -32$ kJ·mol$^{-1}$ and entropy change $\Delta S = -75$ J·mol$^{-1}$·K$^{-1}$ at 298 K. Calculate the Gibbs free energy change $\Delta G$ per single glucose–lectin binding event at 298 K using  
+$$\Delta G = \Delta H - T \Delta S.$$  
+Express $\Delta G$ in kJ·mol$^{-1}$ rounded to one decimal place.  
+</question>  
+
+<question>  
+A synthetic N-acetyllactosamine (LacNAc) trisaccharide is sulfated at the galactose 6-position using sulfur trioxide–pyridine complex. The major sulfated product shows a molecular ion peak at $m/z = 505$ ([M – H]$^{-}$) in negative ion mode mass spectrometry. Assuming the only difference between the substrate and sulfated product is a single sulfate group (SO$_3$), calculate the nominal molecular weight (integer mass in g·mol$^{-1}$) of the trisaccharide substrate before sulfation. Atomic weights: C = 12, H = 1, O = 16, S = 32, N = 14.  
+</question>  
+
+<question>  
+During molecular dynamics simulations, the radius of gyration $r_g$ of a glycodendrimer linked by TEG-N units decreases from 3.2 nm to 2.5 nm upon binding to a lectin trimer. Assuming spherical symmetry and treating $r_g$ as the radius in the volume formula  
+$$V = \frac{4}{3} \pi r_g^3,$$  
+calculate the percentage decrease in volume upon binding. Round your answer to the nearest whole percent.  
+</question>  
+
+<question>  
+The Thomsen-Friedenreich (TF) antigen binds galectin-3 with an individual binding free energy of –35 kJ·mol$^{-1}$. A synthetic glycodendrimer presents 12 TF antigens and exhibits an avidity effect described by:  
+$$\Delta G_\mathrm{total} = \Delta G_\mathrm{single} \times \ln(n),$$  
+where $\Delta G_\mathrm{single} = -35$ kJ·mol$^{-1}$ is the free energy per antigen–lectin interaction, $n = 12$ is the number of antigens, and $\ln$ denotes the natural logarithm. Calculate the overall binding free energy $\Delta G_\mathrm{total}$ in kJ·mol$^{-1}$ contributed by the 12 antigens. Round your answer to the nearest integer.  
+</question>  
+
+<question>  
+A lectin binds a sulfated glycan with dissociation constants $K_D = 75$ nM at pH 7.4 and $K_D = 150$ nM at pH 5.0. Using  
+$$\Delta G^\circ = RT \ln K_D,$$  
+with $R = 8.314\ \mathrm{J\cdot mol}^{-1}\mathrm{K}^{-1}$ and $T = 298\ \mathrm{K}$, calculate the difference in standard binding free energy between pH 5.0 and pH 7.4 defined as:  
+$$\Delta\Delta G^\circ = \Delta G^\circ_{\mathrm{pH}\,5.0} - \Delta G^\circ_{\mathrm{pH}\,7.4}.$$  
+Convert $K_D$ values to molar units before calculation. Express your answer in kJ·mol$^{-1}$ rounded to two decimal places.  
+</question>
+=== Turn 2: Critic feedback ===
+**Overall Assessment (Strengths):**
+- All questions model authentic chemistry/biochemistry scenarios (Guideline 1).
+- Questions expect single numerical/compound answers as required (Guideline 2, 6).
+- Each question is unique, non-standard, and generally avoids redundancy (Guideline 4, 5).
+- Most questions force multi-step reasoning/calculations (Guideline 3).
+- Phrasing is technical and concise (Guideline 7).
+- Units are (with very minor exceptions) specified and consistent (Guideline 9).
+- Chemical names requested are in IUPAC when required (Guideline 9).
+- Each question expects only one solution (Guideline 10).
+- LaTeX is used and Markdown-format is appropriate (Guideline 11).
+
+**Itemized Feedback:**
+
+---
+
+### Q1 (Glycodendrimer maximum binding to CRDs)
+**Strengths:** Realistic, requires multi-step spatial reasoning and integer output.
+**Actionable Feedback:**
+- Clarify if the patch is “25 nm × 25 nm with square lattice” means LATTICE points spaced 3.5 nm apart or that ALL points are connected at 3.5 nm distances (some ambiguity in lattice arrangement).
+- Explicitly state that the answer should be an integer.
+- Remove the parenthetical “(one residue per CRD per lectin)” as it is duplicate information.
+- Otherwise, meets all guidelines.
+
+---
+
+### Q2 (TF antigen $\Delta\Delta G^\circ$ calculation)
+**Strengths:** Requires logarithmic conversion, clear multi-step calculation, units consistently specified.
+**Actionable Feedback:**
+- State explicitly that the $K_D$ values must be converted to units of $\mathrm{mol\,L^{-1}}$, not just “molar units”—specification helps avoid ambiguity, but this is minor.
+- The “Express $\Delta\Delta G^\circ$ in kJ·mol$^{-1}$” is redundant with “rounded to two decimal places” clause—just combine.
+- Otherwise, excellent.
+
+---
+
+### Q3 (Sulfation kinetics ratio)
+**Strengths:** Pseudo-first-order, two rate constants, ratio after finite time—good multi-step kinetic question.
+**Actionable Feedback:**
+- Specify: “Assume no trisulfated or disulfated products form, only monosulfated products” for clarity.
+- Alternatively, ask candidates to “show calculation” if full workings needed, but as phrased, okay.
+- Minor: “mono-sulfated” should be “monosulfated”.
+- Otherwise, strong.
+
+---
+
+### Q4 (NMR Shift, sialic acid removal, IUPAC name)
+**Strengths:** Testing chemical nomenclature, requires knowledge of chemical structure changes.
+**Actionable Feedback:**
+- “Provide the name only” is slightly abrupt—could read: “Provide only the IUPAC systematic name of the compound.”
+- Clarify if “including stereochemistry” means all chiral centers (e.g. specifying D/L), and specify the ring state (pyranose/furanose) as you do.
+- Minor: The context could specify that the “released monosaccharide” is expected to be the free sialic acid, so the ask is clear.
+- Otherwise, good.
+
+---
+
+### Q5 (Hill equation, required [L] for given $\theta$)
+**Strengths:** Quantitative, and requires algebraic manipulation; units given.
+**Actionable Feedback:**
+- Check phrasing: “where the Hill coefficient $n = 2.4$, dissociation constant $K_D = 180$ nM, and ligand concentration $[L]$ is in nM.”—perhaps better as: “…$K_D = 180$ nM, and $[L]$ is entered in nM.”
+- Otherwise, clear.
+
+---
+
+### Q6 ($\Delta G$ from $\Delta H$, $\Delta S$ for glucose–lectin binding)
+**Strengths:** Straightforward, requires careful unit conversion.
+**Actionable Feedback:**
+- Clarify: “Calculate the Gibbs free energy change $\Delta G$ \emph{per} binding event” (to reinforce single-event context).
+- Specify: “Express your answer as a numerical value in kJ·mol$^{-1}$ rounded to one decimal place.”
+- Otherwise fine.
+
+---
+
+### Q7 (Trisaccharide substrate mass from MS data)
+**Strengths:** Good for mass spectrometry skills; atomic weights specified.
+**Actionable Feedback:**
+- “Nominal molecular weight (integer mass in g·mol$^{-1}$)” is very clear.
+- Consider adding a reminder that $[M-H]^-$ means the nominal mass is $M-1$, so students do not lose marks to a technicality.
+- Otherwise, excellent.
+
+---
+
+### Q8 (Glycodendrimer volume contraction in MD)
+**Strengths:** Simple principle but must apply $r_g$ and volumetric formula, percent computation.
+**Actionable Feedback:**
+- No improvement needed; units and rounding clear.
+
+---
+
+### Q9 (Avidity, $\Delta G_\mathrm{total}$ from $\ln n$)
+**Strengths:** Creative, non-textbook, tests logarithmic application and binding energy theory.
+**Actionable Feedback:**
+- Formula is a little nonstandard; consider defining if it’s “$\ln(n)$-fold” enhancement.
+- Otherwise, question is concise and rigorous.
+
+---
+
+### Q10 (pH dependence of binding free energy)
+**Strengths:** Calculation uses different $K_D$s, real-world context.
+**Actionable Feedback:**
+- Good; possibly clarify “$K_D$ values to molar units (mol·L$^{-1}$)” for total clarity.
+- Minor: You specify pH 7.4 and pH 5.0; perhaps clarify that the definition is “…pH 5.0 minus pH 7.4…” so sign conventions are clear.
+
+---
+
+**Summary Table:**
+
+| Q# | Meets Guidelines | Key Weakness            | How to Improve                         |
+|----|------------------|-------------------------|----------------------------------------|
+| 1  | Y                | Minor ambiguity, wording| Clarify lattice arrangement            |
+| 2  | Y                | Redundant unit phrasing | Specify “mol·L$^{-1}$” if possible     |
+| 3  | Y                | Clarity about products  | State “only monosulfated products”     |
+| 4  | Y                | Clarity on naming       | Reformulate “name only” clause         |
+| 5  | Y                | Minor clarity in phrasing| Slightly clarify $[L]$ units           |
+| 6  | Y                | Per-event clarity       | Add “per binding event” if needed      |
+| 7  | Y                | MS notation             | Clarify $[M-H]^-$ means $M-1$          |
+| 8  | Y                | -                       | None                                   |
+| 9  | Y                | Formula could confuse   | Specify how formula is derived         |
+| 10 | Y                | Minor clarity, units    | Mention “mol·L$^{-1}$”, clarify sign   |
+
+---
+
+**General Recommendations:**
+1. **Clarify all units** unambiguously (especially for concentrations: always specify “mol·L$^{-1}$”).
+2. **Disambiguate chemical nomenclature asks:** When requesting systematic names, specify exactly what level of stereochemistry or ring isomer detail is expected.
+3. **Explicitly exclude edge cases:** When multiple isomeric or substituted products are possible, state which to consider.
+4. **Ensure context is succinct but sufficient:** Avoid redundancies or ambiguous wording.
+5. **Where conventions may differ (e.g., MS peak notation, sign conventions), spell out your expectations clearly.**
+
+**Conclusion:**  
+Overall, these questions are well-constructed, original, and adhere closely to the guidelines. Minor improvements relate mostly to clarity and rigor of phrasing, not to fundamental flaws in question design.
+=== Turn 3: Author refines questions ===
+<question>  
+A glycodendrimer is attached to a planar surface via a TEG-N (triethylene glycol amine) linker of length 1.1 nm. Surface-bound mannose residues are arranged on a 25 nm × 25 nm nanopatterned patch in a square lattice with 3.5 nm spacing between neighboring residues, matching the spacing between carbohydrate recognition domains (CRDs) of a lectin trimer. Assume each mannose residue can bind to only one CRD, and multiple residues can bind simultaneously to a single lectin. Estimate the maximum integer number of mannose residues on the patch that can simultaneously engage in multivalent binding with the lectin trimer. Provide this integer number.  
+</question>  
+
+<question>  
+The Thomsen-Friedenreich (TF) antigen, Galβ1-3GalNAcα-O-Ser/Thr, binds galectin-3 with dissociation constant \(K_D = 450\) nM. A synthetic TF derivative bearing a 6-O-sulfate on GalNAc binds with \(K_D = 150\) nM. Using  
+\[
+\Delta G^\circ = RT \ln K_D,
+\]  
+where \(R = 8.314\ \mathrm{J\cdot mol^{-1} K^{-1}}\), \(T = 310\ \mathrm{K}\), and \(K_D\) values expressed in \(\mathrm{mol\cdot L^{-1}}\), calculate the change in standard binding free energy caused by sulfation, defined as  
+\[
+\Delta\Delta G^\circ = \Delta G^\circ_{\mathrm{sulfated}} - \Delta G^\circ_{\mathrm{native}}.
+\]  
+Express \(\Delta\Delta G^\circ\) in kJ·mol\(^{-1}\) rounded to two decimal places.  
+</question>  
+
+<question>  
+Regioselective sulfation of a trisaccharide proceeds under pseudo-first-order kinetics with respect to trisaccharide concentration due to excess reagent. The first-order rate constants are \(k_3 = 0.012\ \mathrm{s}^{-1}\) for 3-OH sulfation and \(k_6 = 0.004\ \mathrm{s}^{-1}\) for 6-OH sulfation. Starting from 10 mM trisaccharide, assume that only monosulfated products form (no di- or trisulfated species). Calculate the ratio of concentrations of 3-O-sulfated product to 6-O-sulfated product after 5 minutes of reaction, defined as  
+\[
+\frac{[\mathrm{3\text{-}O\text{-}sulfated}]}{[\mathrm{6\text{-}O\text{-}sulfated}]}.
+\]  
+Round your answer to two significant figures.  
+</question>  
+
+<question>  
+A synthetic glycan terminating in sialic acid linked \(\alpha2\text{-}6\) to galactose exhibits a \({}^{13}\mathrm{C}\) NMR resonance at 101.2 ppm for the anomeric carbon of the sialic acid. After enzymatic removal of sialic acid, this resonance shifts downfield by 2.8 ppm. Provide only the full IUPAC systematic name of the released monosaccharide, including absolute stereochemistry and ring form (pyranose or furanose).  
+</question>  
+
+<question>  
+The fractional saturation \(\theta\) of Concanavalin A (ConA) binding to a synthetic glycan with ligand valency 4 follows the Hill equation:  
+\[
+\theta = \frac{[L]^n}{K_D + [L]^n},
+\]  
+where the Hill coefficient \(n = 2.4\), dissociation constant \(K_D = 180\) nM, and ligand concentration \([L]\) is in nM. Given \(\theta = 0.75\), calculate the required ligand concentration \([L]\) in nM. Round your answer to the nearest integer.  
+</question>  
+
+<question>  
+A glycodendrimer displays 8 terminal glucose units and binds a glucose-specific lectin with enthalpy change \(\Delta H = -32\ \mathrm{kJ\cdot mol^{-1}}\) and entropy change \(\Delta S = -75\ \mathrm{J\cdot mol^{-1}\cdot K^{-1}}\) at 298 K. Calculate the Gibbs free energy change \(\Delta G\) per single glucose–lectin binding event at 298 K using  
+\[
+\Delta G = \Delta H - T \Delta S.
+\]  
+Express \(\Delta G\) in kJ·mol\(^{-1}\) rounded to one decimal place.  
+</question>  
+
+<question>  
+A synthetic N-acetyllactosamine (LacNAc) trisaccharide is sulfated at the galactose 6-position using sulfur trioxide–pyridine complex. The major sulfated product shows a molecular ion peak at \(m/z = 505\) ([M – H]\(^{-}\)) in negative ion mode mass spectrometry. Assuming the only difference between the substrate and the sulfated product is a single sulfate group (SO\(_3\)), and that the measured ion corresponds to the molecular ion minus one proton, calculate the nominal molecular weight (integer mass in g·mol\(^{-1}\)) of the trisaccharide substrate before sulfation. Atomic weights: C = 12, H = 1, O = 16, S = 32, N = 14.  
+</question>  
+
+<question>  
+During molecular dynamics simulations, the radius of gyration \(r_g\) of a glycodendrimer linked by TEG-N units decreases from 3.2 nm to 2.5 nm upon binding to a lectin trimer. Assuming spherical symmetry and treating \(r_g\) as the radius in the volume formula  
+\[
+V = \frac{4}{3} \pi r_g^3,
+\]  
+calculate the percentage decrease in volume upon binding. Round your answer to the nearest whole percent.  
+</question>  
+
+<question>  
+The Thomsen-Friedenreich (TF) antigen binds galectin-3 with an individual binding free energy of \(-35\ \mathrm{kJ\cdot mol^{-1}}\). A synthetic glycodendrimer presents 12 TF antigens and exhibits an avidity effect described by:  
+\[
+\Delta G_{\mathrm{total}} = \Delta G_{\mathrm{single}} \times \ln(n),
+\]  
+where \(\Delta G_{\mathrm{single}} = -35\ \mathrm{kJ\cdot mol^{-1}}\) is the free energy per antigen–lectin interaction, \(n = 12\) is the number of antigens, and \(\ln\) denotes the natural logarithm. Calculate the overall binding free energy \(\Delta G_{\mathrm{total}}\) in kJ·mol\(^{-1}\) contributed by the 12 antigens. Round your answer to the nearest integer.  
+</question>  
+
+<question>  
+A lectin binds a sulfated glycan with dissociation constants \(K_D = 75\) nM at pH 7.4 and \(K_D = 150\) nM at pH 5.0. Using  
+\[
+\Delta G^\circ = RT \ln K_D,
+\]  
+where \(R = 8.314\ \mathrm{J\cdot mol^{-1} K^{-1}}\), \(T = 298\ \mathrm{K}\), and all \(K_D\) values expressed in \(\mathrm{mol\cdot L^{-1}}\), calculate the difference in standard binding free energy between pH 5.0 and pH 7.4 defined as  
+\[
+\Delta\Delta G^\circ = \Delta G^\circ_{\mathrm{pH}\,5.0} - \Delta G^\circ_{\mathrm{pH}\,7.4}.
+\]  
+Express \(\Delta\Delta G^\circ\) in kJ·mol\(^{-1}\) rounded to two decimal places.  
+</question>
+=== Final questions generated ===

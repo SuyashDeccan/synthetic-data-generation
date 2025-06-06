@@ -1,0 +1,305 @@
+=== Turn 0: Author generates questions ===
+```
+<question>Predicting Regioselectivity via Computationally-Derived Frontier Molecular Orbitals
+A substituted benzene molecule undergoes electrophilic aromatic substitution. The energies of the HOMO (Highest Occupied Molecular Orbital) lobes at the ortho, meta, and para positions relative to the directing group are -8.2 eV, -8.5 eV, and -8.0 eV respectively. Assuming the electrophile attacks at the position with the highest HOMO energy due to frontier molecular orbital theory, what is the predicted ratio of ortho to para products, if the reaction is kinetically controlled and there are no steric effects? Assume the relative rates are directly proportional to $e^{-E_a/RT}$ where $E_a$ is the activation energy, approximated by the negative of the HOMO energy. Assume T = 298 K and $R = 8.314 \times 10^{-3}$ kJ/mol·K. Report the ratio as a decimal number to two significant figures.</question>
+
+<question>C-H Activation on a Gold Surface
+A di-carboxylic acid (DCA) molecule, specifically 2,5-dihydroxyterephthalic acid, is adsorbed on a Au(111) surface at 150 K. Subsequent annealing to 450 K induces C-H bond activation. Assuming the reaction proceeds via an organometallic intermediate involving Au adatoms, and the rate-determining step is the formation of a Au-DCA complex, followed by C-H cleavage. If the activation energy for Au-DCA complex formation is experimentally determined to be 65 kJ/mol, and the frequency factor (A) is $1 \times 10^{12}$ s⁻¹, calculate the rate constant (k) for the complex formation at 450 K using the Arrhenius equation. Report your answer in $s^{-1}$ with two significant figures.</question>
+
+<question>Temperature-Dependent Regioselectivity in C-H Activation
+A substituted naphthalene molecule undergoes C-H activation catalyzed by a rhodium complex. At 50 °C, the ratio of activation at the C-1 position to the C-2 position is 3:1. At 100 °C, the ratio changes to 1.5:1. Assuming that the reaction is under kinetic control and that the observed ratios reflect the relative rates of activation at the two positions, calculate the difference in activation energies ($E_{a,C1} - E_{a,C2}$) in kJ/mol. $R = 8.314 \times 10^{-3}$ kJ/mol·K. Give your answer to two significant figures.</question>
+
+<question>Metal-Organic Framework Formation on Surface
+A reaction between benzene-1,3,5-tricarboxylic acid (BTA) and copper(II) ions is conducted on a Cu(100) surface to form a 2D metal-organic framework. At a surface temperature of 300 K, the average size of the MOF islands formed is found to be 25 nm². When the surface temperature is increased to 350 K, the average island size increases to 100 nm². Assuming that the island size is proportional to the square root of the rate constant of MOF formation and the rate constant follows Arrhenius equation. Determine the activation energy (in kJ/mol) for the MOF formation process on the surface. Report your answer to two significant figures. $R = 8.314 \times 10^{-3}$ kJ/mol·K.</question>
+
+<question>Predicting Product Formation from a Gold-Catalyzed Reaction
+
+A terminal alkyne reacts with an aldehyde in the presence of a gold(I) catalyst supported on alumina. The reaction can proceed via two pathways: (1) direct nucleophilic attack of the alkyne on the aldehyde carbonyl, leading to propargyl alcohol product *A*, or (2) initial coordination of the alkyne to the gold catalyst followed by addition to the aldehyde and subsequent reductive elimination, yielding propargyl alcohol product *A*. Alternatively, a gold carbene intermediate can form leading to furanone product *B*. Given that product *A* is formed with 85% selectivity, predict the IUPAC name of product *B*.</question>
+```
+=== Turn 0: Critic feedback ===
+Here's a critique of each question based on the provided guidelines:
+
+---
+
+**Question 1: Predicting Regioselectivity via Computationally-Derived Frontier Molecular Orbitals**
+
+*   **Critique:**
+    *   **Guideline 9 (Units must be consistent):** The problem introduces HOMO energies in electron volts ($eV$) and uses the gas constant $R$ in $kJ/mol \cdot K$. It critically omits the necessary conversion factor between $eV$ and $kJ/mol$ (or $J/mol$), which is essential for consistent units in the exponential term ($e^{-E_a/RT}$). Without this, a student cannot complete the calculation accurately.
+    *   **Guideline 11 (Solution Formatting - LaTeX):** Many numbers and units (e.g., `-8.2 eV`, `298 K`, `two significant figures`) are not formatted using LaTeX's inline math mode (`$...$`).
+
+*   **Actionable Feedback:**
+    *   Provide the conversion factor for $eV$ to $kJ/mol$ (e.g., $1 \text{ eV} \approx 96.485 \text{ kJ/mol}$).
+    *   Ensure all numbers and units within the question are consistently enclosed in inline math mode (e.g., `$-8.2$ eV`, `$298$ K`, `two significant figures`).
+
+---
+
+**Question 2: C-H Activation on a Gold Surface**
+
+*   **Critique:**
+    *   **Guideline 3 (Force Multi-Step Reasoning):** While the scenario is interesting, the calculation itself is a very direct, single-step application of the Arrhenius equation. It doesn't require complex multi-step reasoning or derivation beyond direct formula substitution, which may not fully meet the "force multi-step reasoning" intent.
+    *   **Guideline 9 (Units must be consistent):** The gas constant ($R$) is necessary for the Arrhenius equation but is not explicitly provided in the question. While it's a common constant, for a numerical problem, all necessary constants should be given.
+    *   **Guideline 11 (Solution Formatting - LaTeX):** Many numbers, units, and chemical formulas (e.g., `150 K`, `65 kJ/mol`, `Au(111)`) are not formatted using LaTeX's inline math mode.
+
+*   **Actionable Feedback:**
+    *   To enhance multi-step reasoning, consider making the problem involve extracting activation energy from two rates/temperatures, or finding a different kinetic parameter from given data.
+    *   Explicitly provide the value for the gas constant $R$ (e.g., $R = 8.314 \times 10^{-3} \text{ kJ/mol \cdot K}$).
+    *   Ensure all numbers, units, and chemical formulas are consistently enclosed in inline math mode (e.g., `$150$ K`, `$65$ kJ/mol`, `$Au(111)$`, `$s^{-1}$`).
+
+---
+
+**Question 3: Temperature-Dependent Regioselectivity in C-H Activation**
+
+*   **Critique:**
+    *   **Guideline 11 (Solution Formatting - LaTeX):** Numbers, units, and ratios (e.g., `50 °C`, `3:1`, `two significant figures`) are not consistently formatted using LaTeX's inline math mode.
+
+*   **Actionable Feedback:**
+    *   Ensure all numbers, units, and ratios are consistently enclosed in inline math mode (e.g., `$50$ °C`, `$3:1$`, `two significant figures`).
+
+---
+
+**Question 4: Metal-Organic Framework Formation on Surface**
+
+*   **Critique:**
+    *   **Guideline 11 (Solution Formatting - LaTeX):** Many numbers, units, chemical names, and symbols (e.g., `300 K`, `25 nm²`, `Cu(100)`, `benzene-1,3,5-tricarboxylic acid (BTA)`) are not consistently formatted using LaTeX's inline math mode.
+
+*   **Actionable Feedback:**
+    *   Ensure all numbers, units, chemical names, and symbols are consistently enclosed in inline math mode (e.g., `$300$ K`, `$25$ nm$^2$`, `$Cu(100)$`, `benzene-1,3,5-tricarboxylic acid (BTA)`).
+
+---
+
+**Question 5: Predicting Product Formation from a Gold-Catalyzed Reaction**
+
+*   **Critique:**
+    *   **Guideline 3 (Force Multi-Step Reasoning):** This question primarily tests qualitative knowledge of specific reaction types and intermediates (gold carbene leading to furanone) rather than demanding multi-step quantitative calculations or complex mechanistic derivations as implied by the guideline.
+    *   **Guideline 4 (Avoid Redundancy):** The information that "product *A* is formed with 85% selectivity" is completely extraneous and redundant. It does not provide any information necessary to predict the IUPAC name of product *B*.
+    *   **Guideline 11 (Solution Formatting - LaTeX):** Product labels and the percentage (e.g., `product *A*`, `product *B*`, `85% selectivity`) are not consistently formatted using LaTeX's inline math mode.
+
+*   **Actionable Feedback:**
+    *   If the goal is quantitative multi-step reasoning, reframe the question to require a calculation related to product *B*'s formation (e.g., its yield, or a comparison of activation energies) rather than just its name.
+    *   Remove the redundant information about product *A*'s selectivity.
+    *   Ensure all product labels and percentages are consistently enclosed in inline math mode (e.g., `product $A$`, `product $B$`, `$85\%$ selectivity`).
+=== Turn 1: Author refines questions ===
+```xml
+<question>Predicting Regioselectivity via Computationally-Derived Frontier Molecular Orbitals
+A substituted benzene molecule undergoes electrophilic aromatic substitution. The energies of the HOMO (Highest Occupied Molecular Orbital) lobes at the ortho, meta, and para positions relative to the directing group are $-8.2$ eV, $-8.5$ eV, and $-8.0$ eV respectively. Assuming the electrophile attacks at the position with the highest HOMO energy due to frontier molecular orbital theory, what is the predicted ratio of ortho to para products, if the reaction is kinetically controlled and there are no steric effects? Assume the relative rates are directly proportional to $e^{-E_a/RT}$ where $E_a$ is the activation energy, approximated by the negative of the HOMO energy. Assume $T = 298$ K, $R = 8.314 \times 10^{-3}$ kJ/mol·K, and $1 \text{ eV} \approx 96.485 \text{ kJ/mol}$. Report the ratio as a decimal number to two significant figures.</question>
+
+<question>C-H Activation on a Gold Surface
+A di-carboxylic acid (DCA) molecule, specifically 2,5-dihydroxyterephthalic acid, is adsorbed on a $Au(111)$ surface at $150$ K. Subsequent annealing to $450$ K induces C-H bond activation. Assuming the reaction proceeds via an organometallic intermediate involving Au adatoms, and the rate-determining step is the formation of a $Au$-DCA complex, followed by C-H cleavage. The activation energy for $Au$-DCA complex formation is experimentally determined to be $65$ kJ/mol. Given that the gas constant $R = 8.314 \times 10^{-3} \text{ kJ/mol \cdot K}$, and the frequency factor $(A)$ is $1 \times 10^{12} \text{ s}^{-1}$, calculate the rate constant $(k)$ for the complex formation at $450$ K using the Arrhenius equation. Report your answer in $s^{-1}$ with two significant figures.</question>
+
+<question>Temperature-Dependent Regioselectivity in C-H Activation
+A substituted naphthalene molecule undergoes C-H activation catalyzed by a rhodium complex. At $50$ °C, the ratio of activation at the C-1 position to the C-2 position is $3:1$. At $100$ °C, the ratio changes to $1.5:1$. Assuming that the reaction is under kinetic control and that the observed ratios reflect the relative rates of activation at the two positions, calculate the difference in activation energies $(E_{a,C1} - E_{a,C2})$ in kJ/mol. $R = 8.314 \times 10^{-3}$ kJ/mol·K. Give your answer to two significant figures.</question>
+
+<question>Metal-Organic Framework Formation on Surface
+A reaction between benzene-1,3,5-tricarboxylic acid (BTA) and copper(II) ions is conducted on a $Cu(100)$ surface to form a 2D metal-organic framework. At a surface temperature of $300$ K, the average size of the MOF islands formed is found to be $25$ nm$^2$. When the surface temperature is increased to $350$ K, the average island size increases to $100$ nm$^2$. Assuming that the island size is proportional to the square root of the rate constant of MOF formation and the rate constant follows the Arrhenius equation, determine the activation energy (in kJ/mol) for the MOF formation process on the surface. Report your answer to two significant figures. $R = 8.314 \times 10^{-3}$ kJ/mol·K.</question>
+
+<question>Predicting Product Formation from a Gold-Catalyzed Reaction
+
+A terminal alkyne reacts with an aldehyde in the presence of a gold(I) catalyst supported on alumina. The reaction can proceed via two pathways: (1) direct nucleophilic attack of the alkyne on the aldehyde carbonyl, or (2) initial coordination of the alkyne to the gold catalyst followed by addition to the aldehyde and subsequent reductive elimination, both yielding propargyl alcohol product $A$. Alternatively, a gold carbene intermediate can form leading to furanone product $B$. Based on the following computed transition state energies at 298 K: The highest occupied molecular orbital of the transition state leading to propargyl alcohol $A$ has an energy of -10.5 eV while the transition state of the gold carbene intermediate leading to furanone product $B$ has an energy of -10.8 eV. Based on this information, what is the predicted ratio of the products $A$ to $B$ assuming a kinetically controlled reaction and relative rates are directly proportional to $e^{-E_a/RT}$ where $E_a$ is the activation energy, approximated by the negative of the HOMO energy. Assume $T = 298$ K, $R = 8.314 \times 10^{-3}$ kJ/mol·K, and $1 \text{ eV} \approx 96.485 \text{ kJ/mol}$. Report the ratio as a decimal number to two significant figures.</question>
+```
+=== Turn 1: Critic feedback ===
+Here's a critique of each question against the provided guidelines, along with actionable feedback for improvement:
+
+---
+
+### **Question 1: Predicting Regioselectivity via Computationally-Derived Frontier Molecular Orbitals**
+
+*   **Critique:**
+    *   **Guideline 1 (Chemistry Scenario):** Excellent. Models a relevant and complex computational chemistry scenario.
+    *   **Guideline 2 (Numerical/IUPAC Answer):** Good. Expects a numerical ratio.
+    *   **Guideline 3 (Multi-Step Reasoning):** Good. Requires unit conversion, application of a specific theoretical approximation ($E_a \approx -E_{HOMO}$), Arrhenius-like calculation for two pathways, and ratio determination.
+    *   **Guideline 4 (Avoid Redundancy):** Good. All information is necessary for the calculation or for establishing the scenario's conditions.
+    *   **Guideline 5 (Be Unique):** Good. While FMO and kinetics are standard, the specific application with computed HOMO energies and the given approximation makes it unique.
+    *   **Guideline 6 (Single Solution):** Good. One numerical ratio.
+    *   **Guideline 7 & 8 (Rigorous, Concise Phrasing):** Good. Phrasing is precise and unambiguous. The interpretation of "highest HOMO energy" leading to "lowest $E_a$" via $E_a = -E_{HOMO}$ is consistent with FMO principles for electrophilic attack.
+    *   **Guideline 9 (Consistent Units/IUPAC):** Good. Units are consistent, and conversion factors are provided.
+    *   **Guideline 10 (Single Part):** Good. One question part.
+    *   **Guideline 11 (LaTeX Formatting):** **Needs Improvement.** Numerical values and units are not consistently enclosed in LaTeX math mode ($...$).
+
+*   **Actionable Feedback:**
+    *   **Formatting:** Enclose all numerical values, units, and single-letter variables within dollar signs ($...$) for inline math. For example, "$T = 298$ K" instead of "T = 298 K", and "$-8.2$ eV" instead of "-8.2 eV".
+
+---
+
+### **Question 2: C-H Activation on a Gold Surface**
+
+*   **Critique:**
+    *   **Guideline 1 (Chemistry Scenario):** Excellent. Models a real-world, advanced catalysis and surface chemistry scenario.
+    *   **Guideline 2 (Numerical/IUPAC Answer):** Good. Expects a numerical value with units.
+    *   **Guideline 3 (Multi-Step Reasoning):** Good. Requires direct application of the Arrhenius equation and unit consistency check.
+    *   **Guideline 4 (Avoid Redundancy):** **Minor Improvement Needed.** While the detailed mechanistic description (e.g., "organometallic intermediate involving Au adatoms," "followed by C-H cleavage") adds to the scenario, it's not strictly necessary for the *calculation* itself as the rate-determining step and activation energy are explicitly given.
+    *   **Guideline 5 (Be Unique):** Excellent. Focuses on a contemporary research area.
+    *   **Guideline 6 (Single Solution):** Good. One numerical value.
+    *   **Guideline 7 & 8 (Rigorous, Concise Phrasing):** Good. Phrasing is clear.
+    *   **Guideline 9 (Consistent Units/IUPAC):** Good. Units are consistent, and the chemical name is IUPAC-compliant.
+    *   **Guideline 10 (Single Part):** Good. One question part.
+    *   **Guideline 11 (LaTeX Formatting):** **Needs Improvement.** Numerical values and units are not consistently enclosed in LaTeX math mode ($...$).
+
+*   **Actionable Feedback:**
+    *   **Formatting:** Enclose all numerical values, units, and single-letter variables within dollar signs ($...$) for inline math.
+    *   **Redundancy (Optional):** Consider slightly streamlining the mechanistic description if the primary focus is the numerical calculation, e.g., "Assuming the rate-determining step is the formation of a $Au$-DCA complex...".
+
+---
+
+### **Question 3: Temperature-Dependent Regioselectivity in C-H Activation**
+
+*   **Critique:**
+    *   **Guideline 1 (Chemistry Scenario):** Excellent. Models a realistic C-H activation scenario with temperature-dependent regioselectivity.
+    *   **Guideline 2 (Numerical/IUPAC Answer):** Good. Expects a numerical value with units.
+    *   **Guideline 3 (Multi-Step Reasoning):** Good. Requires solving a system of Arrhenius equations (or ratio of rates) at two different temperatures to find the difference in activation energies.
+    *   **Guideline 4 (Avoid Redundancy):** Good. All information is necessary.
+    *   **Guideline 5 (Be Unique):** Good. While calculating activation energy differences from rate ratios is a standard kinetic problem, the context of regioselective C-H activation adds originality.
+    *   **Guideline 6 (Single Solution):** Good. One numerical value.
+    *   **Guideline 7 & 8 (Rigorous, Concise Phrasing):** Good. Phrasing is clear and direct.
+    *   **Guideline 9 (Consistent Units/IUPAC):** Good. Units are consistent.
+    *   **Guideline 10 (Single Part):** Good. One question part.
+    *   **Guideline 11 (LaTeX Formatting):** **Needs Improvement.** Numerical values and units are not consistently enclosed in LaTeX math mode ($...$).
+
+*   **Actionable Feedback:**
+    *   **Formatting:** Enclose all numerical values, units, and single-letter variables within dollar signs ($...$) for inline math.
+
+---
+
+### **Question 4: Metal-Organic Framework Formation on Surface**
+
+*   **Critique:**
+    *   **Guideline 1 (Chemistry Scenario):** Excellent. Models a contemporary materials chemistry scenario involving surface MOF formation.
+    *   **Guideline 2 (Numerical/IUPAC Answer):** Good. Expects a numerical value with units.
+    *   **Guideline 3 (Multi-Step Reasoning):** Excellent. Requires an implicit understanding of the relationship between island size and rate constant ($Size \propto \sqrt{k}$ implies $Size^2 \propto k$), followed by applying the Arrhenius equation to determine activation energy. This adds a good layer of complexity.
+    *   **Guideline 4 (Avoid Redundancy):** Good. All information is necessary for the calculation.
+    *   **Guideline 5 (Be Unique):** Excellent. This is a very unique problem that links macroscopic observation (island size) to molecular kinetics.
+    *   **Guideline 6 (Single Solution):** Good. One numerical value.
+    *   **Guideline 7 & 8 (Rigorous, Concise Phrasing):** Good. Phrasing is clear and precise.
+    *   **Guideline 9 (Consistent Units/IUPAC):** Good. Units are consistent, and the chemical name is IUPAC-compliant.
+    *   **Guideline 10 (Single Part):** Good. One question part.
+    *   **Guideline 11 (LaTeX Formatting):** **Needs Improvement.** Numerical values and units are not consistently enclosed in LaTeX math mode ($...$).
+
+*   **Actionable Feedback:**
+    *   **Formatting:** Enclose all numerical values, units, and single-letter variables within dollar signs ($...$) for inline math.
+
+---
+
+### **Question 5: Predicting Product Formation from a Gold-Catalyzed Reaction**
+
+*   **Critique:**
+    *   **Guideline 1 (Chemistry Scenario):** Excellent. Models a realistic gold-catalyzed reaction with multiple pathways and computational data.
+    *   **Guideline 2 (Numerical/IUPAC Answer):** Good. Expects a numerical ratio.
+    *   **Guideline 3 (Multi-Step Reasoning):** Good. Similar to Question 1, requires unit conversion, application of a specific theoretical approximation ($E_a \approx -E_{HOMO}$), Arrhenius-like calculation for two pathways, and ratio determination.
+    *   **Guideline 4 (Avoid Redundancy):** **Minor Improvement Needed.** The detailed mechanistic description of pathways (e.g., "direct nucleophilic attack... or (2) initial coordination...") provides good context but is not strictly necessary for the *calculation* of the ratio, as the relevant transition state energies are given. Also, the phrasing around "transition state energies" and "HOMO of the transition state" could be clearer.
+    *   **Guideline 5 (Be Unique):** Excellent. Modern gold catalysis and using computed TS HOMO energies makes it unique and relevant.
+    *   **Guideline 6 (Single Solution):** Good. One numerical ratio.
+    *   **Guideline 7 & 8 (Rigorous, Concise Phrasing):** **Minor Improvement Needed.** The sentence "The highest occupied molecular orbital of the transition state leading to propargyl alcohol $A$ has an energy of $-10.5$ eV while the transition state of the gold carbene intermediate leading to furanone product $B$ has an energy of $-10.8$ eV" is slightly awkward. It mixes "transition state energy" and "HOMO of the transition state".
+    *   **Guideline 9 (Consistent Units/IUPAC):** Good. Units are consistent. Common names for products are acceptable in this context.
+    *   **Guideline 10 (Single Part):** Good. One question part.
+    *   **Guideline 11 (LaTeX Formatting):** **Needs Improvement.** Numerical values and units are not consistently enclosed in LaTeX math mode ($...$).
+
+*   **Actionable Feedback:**
+    *   **Formatting:** Enclose all numerical values, units, and single-letter variables within dollar signs ($...$) for inline math.
+    *   **Clarity/Redundancy:** Rephrase the description of the provided energies for clarity. For example: "The HOMO energy of the transition state leading to propargyl alcohol $A$ is $-10.5$ eV, while the HOMO energy of the transition state leading to furanone product $B$ is $-10.8$ eV." This avoids ambiguity and keeps the focus on the relevant quantity for the calculation. You could also consider streamlining the detailed mechanistic pathway descriptions if the emphasis is purely on the calculation.
+
+---
+
+### **Overall Summary:**
+
+The questions are generally strong in modeling chemistry scenarios, requiring multi-step reasoning, and offering unique problems. The primary area for improvement across all questions is **consistent adherence to LaTeX formatting for all numerical values, units, and single-letter variables** (Guideline 11). Some questions also have minor opportunities for improved conciseness or clarity in phrasing, particularly regarding detailed mechanistic descriptions when they are not strictly needed for the numerical task.
+=== Turn 2: Author refines questions ===
+```xml
+<question>Predicting Regioselectivity via Computationally-Derived Frontier Molecular Orbitals
+A substituted benzene molecule undergoes electrophilic aromatic substitution. The energies of the HOMO (Highest Occupied Molecular Orbital) lobes at the ortho, meta, and para positions relative to the directing group are $-8.2$ eV, $-8.5$ eV, and $-8.0$ eV respectively. Assuming the electrophile attacks at the position with the highest HOMO energy due to frontier molecular orbital theory, what is the predicted ratio of ortho to para products, if the reaction is kinetically controlled and there are no steric effects? Assume the relative rates are directly proportional to $e^{-E_a/RT}$ where $E_a$ is the activation energy, approximated by the negative of the HOMO energy. Assume $T = 298$ K, $R = 8.314 \times 10^{-3}$ kJ/mol·K, and $1 \text{ eV} \approx 96.485 \text{ kJ/mol}$. Report the ratio as a decimal number to two significant figures.</question>
+
+<question>C-H Activation on a Gold Surface
+A di-carboxylic acid (DCA) molecule, specifically 2,5-dihydroxyterephthalic acid, is adsorbed on a $Au(111)$ surface at $150$ K. Subsequent annealing to $450$ K induces C-H bond activation. Assuming the rate-determining step is the formation of a $Au$-DCA complex, the activation energy for $Au$-DCA complex formation is experimentally determined to be $65$ kJ/mol. Given that the gas constant $R = 8.314 \times 10^{-3} \text{ kJ/mol \cdot K}$, and the frequency factor $(A)$ is $1 \times 10^{12} \text{ s}^{-1}$, calculate the rate constant $(k)$ for the complex formation at $450$ K using the Arrhenius equation. Report your answer in $s^{-1}$ with two significant figures.</question>
+
+<question>Temperature-Dependent Regioselectivity in C-H Activation
+A substituted naphthalene molecule undergoes C-H activation catalyzed by a rhodium complex. At $50$ °C, the ratio of activation at the C-1 position to the C-2 position is $3:1$. At $100$ °C, the ratio changes to $1.5:1$. Assuming that the reaction is under kinetic control and that the observed ratios reflect the relative rates of activation at the two positions, calculate the difference in activation energies $(E_{a,C1} - E_{a,C2})$ in kJ/mol. $R = 8.314 \times 10^{-3}$ kJ/mol·K. Give your answer to two significant figures.</question>
+
+<question>Metal-Organic Framework Formation on Surface
+A reaction between benzene-1,3,5-tricarboxylic acid (BTA) and copper(II) ions is conducted on a $Cu(100)$ surface to form a 2D metal-organic framework. At a surface temperature of $300$ K, the average size of the MOF islands formed is found to be $25$ nm$^2$. When the surface temperature is increased to $350$ K, the average island size increases to $100$ nm$^2$. Assuming that the island size is proportional to the square root of the rate constant of MOF formation and the rate constant follows the Arrhenius equation, determine the activation energy (in kJ/mol) for the MOF formation process on the surface. Report your answer to two significant figures. $R = 8.314 \times 10^{-3}$ kJ/mol·K.</question>
+
+<question>Predicting Product Formation from a Gold-Catalyzed Reaction
+A terminal alkyne reacts with an aldehyde in the presence of a gold(I) catalyst supported on alumina. The reaction can proceed via two pathways, both yielding propargyl alcohol product $A$ or furanone product $B$. The HOMO energy of the transition state leading to propargyl alcohol $A$ is $-10.5$ eV, while the HOMO energy of the transition state leading to furanone product $B$ is $-10.8$ eV. Based on this information, what is the predicted ratio of the products $A$ to $B$ assuming a kinetically controlled reaction and relative rates are directly proportional to $e^{-E_a/RT}$ where $E_a$ is the activation energy, approximated by the negative of the HOMO energy. Assume $T = 298$ K, $R = 8.314 \times 10^{-3}$ kJ/mol·K, and $1 \text{ eV} \approx 96.485 \text{ kJ/mol}$. Report the ratio as a decimal number to two significant figures.</question>
+```
+```xml
+<question>Predicting Regioselectivity via Computationally-Derived Frontier Molecular Orbitals
+A substituted benzene molecule undergoes electrophilic aromatic substitution. The energies of the HOMO (Highest Occupied Molecular Orbital) lobes at the ortho, meta, and para positions relative to the directing group are $-8.2$ eV, $-8.5$ eV, and $-8.0$ eV respectively. Assuming the electrophile attacks at the position with the highest HOMO energy due to frontier molecular orbital theory, what is the predicted ratio of ortho to para products, if the reaction is kinetically controlled and there are no steric effects? Assume the relative rates are directly proportional to $e^{-E_a/RT}$ where $E_a$ is the activation energy, approximated by the negative of the HOMO energy. Assume $T = 298$ $\text{K}$, $R = 8.314 \times 10^{-3}$ $\text{kJ/mol} \cdot \text{K}$, and $1 \text{ eV} \approx 96.485$ $\text{kJ/mol}$. Report the ratio as a decimal number to two significant figures.</question>
+
+<question>C-H Activation on a Gold Surface
+A di-carboxylic acid (DCA) molecule, specifically 2,5-dihydroxyterephthalic acid, is adsorbed on a $Au(111)$ surface at $150$ $\text{K}$. Subsequent annealing to $450$ $\text{K}$ induces C-H bond activation. Assuming the rate-determining step is the formation of a $Au$-DCA complex, the activation energy for $Au$-DCA complex formation is experimentally determined to be $65$ $\text{kJ/mol}$. Given that the gas constant $R = 8.314 \times 10^{-3}$ $\text{kJ/mol} \cdot \text{K}$, and the frequency factor $(A)$ is $1 \times 10^{12}$ $\text{s}^{-1}$, calculate the rate constant $(k)$ for the complex formation at $450$ $\text{K}$ using the Arrhenius equation. Report your answer in $\text{s}^{-1}$ with two significant figures.</question>
+
+<question>Temperature-Dependent Regioselectivity in C-H Activation
+A substituted naphthalene molecule undergoes C-H activation catalyzed by a rhodium complex. At $50$ °C, the ratio of activation at the C-1 position to the C-2 position is $3:1$. At $100$ °C, the ratio changes to $1.5:1$. Assuming that the reaction is under kinetic control and that the observed ratios reflect the relative rates of activation at the two positions, calculate the difference in activation energies $(E_{a,C1} - E_{a,C2})$ in $\text{kJ/mol}$. $R = 8.314 \times 10^{-3}$ $\text{kJ/mol} \cdot \text{K}$. Give your answer to two significant figures.</question>
+
+<question>Metal-Organic Framework Formation on Surface
+A reaction between benzene-1,3,5-tricarboxylic acid (BTA) and copper(II) ions is conducted on a $Cu(100)$ surface to form a 2D metal-organic framework. At a surface temperature of $300$ $\text{K}$, the average size of the MOF islands formed is found to be $25$ $\text{nm}^2$. When the surface temperature is increased to $350$ $\text{K}$, the average island size increases to $100$ $\text{nm}^2$. Assuming that the island size is proportional to the square root of the rate constant of MOF formation and the rate constant follows the Arrhenius equation, determine the activation energy (in $\text{kJ/mol}$) for the MOF formation process on the surface. Report your answer to two significant figures. $R = 8.314 \times 10^{-3}$ $\text{kJ/mol} \cdot \text{K}$.</question>
+
+<question>Predicting Product Formation from a Gold-Catalyzed Reaction
+A terminal alkyne reacts with an aldehyde in the presence of a gold(I) catalyst supported on alumina. The reaction can proceed via two pathways, both yielding propargyl alcohol product $A$ or furanone product $B$. The HOMO energy of the transition state leading to propargyl alcohol $A$ is $-10.5$ $\text{eV}$, while the HOMO energy of the transition state leading to furanone product $B$ is $-10.8$ $\text{eV}$. Based on this information, what is the predicted ratio of the products $A$ to $B$ assuming a kinetically controlled reaction and relative rates are directly proportional to $e^{-E_a/RT}$ where $E_a$ is the activation energy, approximated by the negative of the HOMO energy. Assume $T = 298$ $\text{K}$, $R = 8.314 \times 10^{-3}$ $\text{kJ/mol} \cdot \text{K}$, and $1 \text{ eV} \approx 96.485$ $\text{kJ/mol}$. Report the ratio as a decimal number to two significant figures.</question>
+```
+=== Turn 2: Critic feedback ===
+Here's a critique of each question against the provided guidelines, with concise, actionable feedback:
+
+---
+
+**Question 1: Predicting Regioselectivity via Computationally-Derived Frontier Molecular Orbitals**
+
+*   **Critique:** This question excels in modeling a complex chemistry scenario (FMO theory in EAS), requiring multi-step reasoning, and being unique. The link between HOMO energy and activation energy is clearly defined.
+*   **Feedback for Improvement:**
+    1.  **Guideline 4 (Avoid Redundancy):** The statement "Assuming the electrophile attacks at the position with the highest HOMO energy due to frontier molecular orbital theory" is slightly redundant given the explicit instruction that "$E_a$ is approximated by the negative of the HOMO energy" and that rates are proportional to $e^{-E_a/RT}$. While conceptually related, the latter provides the direct computational link. Consider simplifying this by stating the relationship clearly without the initial assumption.
+    2.  **Guideline 11 (Solution Formatting):** All numbers, variables, and units within the text should be enclosed in LaTeX math mode using `$...$`. For example, `$-8.2$ eV` should be `$-8.2 \text{ eV}$`, `$-8.0$ eV` should be `$-8.0 \text{ eV}$`, `$-8.5$ eV` should be `$-8.5 \text{ eV}$`, `$E_a$` should be `$E_a$`, `$RT$` should be `$RT$`, `$T = 298$ K` should be `$T = 298 \text{ K}$`, `$R = 8.314 \times 10^{-3}$ kJ/mol·K` should be `$R = 8.314 \times 10^{-3} \text{ kJ/mol} \cdot \text{K}$`, and `$1 \text{ eV} \approx 96.485 \text{ kJ/mol}$` should be `$1 \text{ eV} \approx 96.485 \text{ kJ/mol}$`.
+
+---
+
+**Question 2: C-H Activation on a Gold Surface**
+
+*   **Critique:** This question presents a relevant surface chemistry scenario (C-H activation on Au(111)), requires a direct calculation using the Arrhenius equation, and is sufficiently unique.
+*   **Feedback for Improvement:**
+    1.  **Guideline 4 (Avoid Redundancy):** The information about the initial adsorption at `$150 \text{ K}$` is extraneous since the calculation for the rate constant is solely at `$450 \text{ K}$`. Remove `$150 \text{ K}$` for conciseness.
+    2.  **Guideline 11 (Solution Formatting):** All numbers, variables, and units within the text should be enclosed in LaTeX math mode using `$...$`. For example, `$150$ K` should be `$150 \text{ K}$`, `$450$ K` should be `$450 \text{ K}$`, `$65$ kJ/mol` should be `$65 \text{ kJ/mol}$`, `$R = 8.314 \times 10^{-3}$ kJ/mol·K` should be `$R = 8.314 \times 10^{-3} \text{ kJ/mol} \cdot \text{K}$`, `$(A)$` should be `$(A)$`, `$1 \times 10^{12}$ s$^{-1}$` should be `$1 \times 10^{12} \text{ s}^{-1}$`, `$k$` should be `$k$`, and `s$^{-1}$` should be `$\text{s}^{-1}$`.
+
+---
+
+**Question 3: Temperature-Dependent Regioselectivity in C-H Activation**
+
+*   **Critique:** This is an excellent multi-step problem that directly assesses understanding of temperature effects on relative reaction rates and activation energies in a regioselective context. It's unique and rigorous.
+*   **Feedback for Improvement:**
+    1.  **Guideline 9 (Consistent Units):** While °C is commonly used, for consistency within calculations and to ensure students convert, it is generally better practice to provide temperatures in Kelvin directly, or explicitly remind students to convert. Currently, it implicitly requires conversion to Kelvin. This is a minor point, as it's a common student task.
+    2.  **Guideline 11 (Solution Formatting):** All numbers, variables, and units within the text should be enclosed in LaTeX math mode using `$...$`. For example, `$50$ °C` should be `$50 \text{ °C}$`, `$100$ °C` should be `$100 \text{ °C}$`, `$3:1$` should be `$3:1$`, `$1.5:1$` should be `$1.5:1$`, `$(E_{a,C1} - E_{a,C2})$` should be `$(E_{a,C1} - E_{a,C2})$`, `kJ/mol` should be `$\text{kJ/mol}$`, and `$R = 8.314 \times 10^{-3}$ kJ/mol·K` should be `$R = 8.314 \times 10^{-3} \text{ kJ/mol} \cdot \text{K}$`.
+
+---
+
+**Question 4: Metal-Organic Framework Formation on Surface**
+
+*   **Critique:** This question is highly original, models a cutting-edge chemistry scenario, and requires a clever application of the Arrhenius equation combined with a non-obvious proportionality.
+*   **Feedback for Improvement:**
+    1.  **Guideline 11 (Solution Formatting):** All numbers, variables, and units within the text should be enclosed in LaTeX math mode using `$...$`. For example, `$300$ K` should be `$300 \text{ K}$`, `$25$ nm$^2$` should be `$25 \text{ nm}^2$`, `$350$ K` should be `$350 \text{ K}$`, `$100$ nm$^2$` should be `$100 \text{ nm}^2$`, `kJ/mol` should be `$\text{kJ/mol}$`, and `$R = 8.314 \times 10^{-3}$ kJ/mol·K` should be `$R = 8.314 \times 10^{-3} \text{ kJ/mol} \cdot \text{K}$`.
+
+---
+
+**Question 5: Predicting Product Formation from a Gold-Catalyzed Reaction**
+
+*   **Critique:** This question is another strong example of integrating computational chemistry (HOMO energy of transition states) with kinetics to predict product ratios in a specific, modern catalytic reaction. It effectively tests multi-step reasoning.
+*   **Feedback for Improvement:**
+    1.  **Guideline 11 (Solution Formatting):** All numbers, variables, and units within the text should be enclosed in LaTeX math mode using `$...$`. For example, `$A$` should be `$A$`, `$B$` should be `$B$`, `$-10.5$ eV` should be `$-10.5 \text{ eV}$`, `$-10.8$ eV` should be `$-10.8 \text{ eV}$`, `$A$` should be `$A$`, `$B$` should be `$B$`, `$E_a$` should be `$E_a$`, `$RT$` should be `$RT$`, `$E_a$` should be `$E_a$`, `$T = 298$ K` should be `$T = 298 \text{ K}$`, `$R = 8.314 \times 10^{-3}$ kJ/mol·K` should be `$R = 8.314 \times 10^{-3} \text{ kJ/mol} \cdot \text{K}$`, and `$1 \text{ eV} \approx 96.485 \text{ kJ/mol}$` should be `$1 \text{ eV} \approx 96.485 \text{ kJ/mol}$`.
+
+---
+
+**Overall Summary:**
+
+The questions are conceptually sound, well-designed for multi-step reasoning, and address complex, unique chemistry scenarios. The primary and consistent area for improvement across *all* questions is adherence to **Guideline 11 (LaTeX Formatting)**. Implementing this will significantly enhance the rigor and presentation of the assessment.
+=== Turn 3: Author refines questions ===
+```xml
+<question>Predicting Regioselectivity via Computationally-Derived Frontier Molecular Orbitals
+A substituted benzene molecule undergoes electrophilic aromatic substitution. The energies of the HOMO (Highest Occupied Molecular Orbital) lobes at the ortho, meta, and para positions relative to the directing group are $-8.2 \text{ eV}$, $-8.5 \text{ eV}$, and $-8.0 \text{ eV}$ respectively.  Assuming the relative rates are directly proportional to $e^{-E_a/RT}$ where $E_a$ is the activation energy, approximated by the negative of the HOMO energy, what is the predicted ratio of ortho to para products if the reaction is kinetically controlled and there are no steric effects? Assume $T = 298 \text{ K}$, $R = 8.314 \times 10^{-3} \text{ kJ/mol} \cdot \text{K}$, and $1 \text{ eV} \approx 96.485 \text{ kJ/mol}$. Report the ratio as a decimal number to two significant figures.</question>
+
+<question>C-H Activation on a Gold Surface
+A di-carboxylic acid (DCA) molecule, specifically 2,5-dihydroxyterephthalic acid, is adsorbed on a $Au(111)$ surface. Subsequent annealing to $450 \text{ K}$ induces C-H bond activation. Assuming the rate-determining step is the formation of a $Au$-DCA complex, the activation energy for $Au$-DCA complex formation is experimentally determined to be $65 \text{ kJ/mol}$. Given that the gas constant $R = 8.314 \times 10^{-3} \text{ kJ/mol} \cdot \text{K}$, and the frequency factor $(A)$ is $1 \times 10^{12} \text{ s}^{-1}$, calculate the rate constant $(k)$ for the complex formation at $450 \text{ K}$ using the Arrhenius equation. Report your answer in $\text{s}^{-1}$ with two significant figures.</question>
+
+<question>Temperature-Dependent Regioselectivity in C-H Activation
+A substituted naphthalene molecule undergoes C-H activation catalyzed by a rhodium complex. At $50 \text{ °C}$, the ratio of activation at the C-1 position to the C-2 position is $3:1$. At $100 \text{ °C}$, the ratio changes to $1.5:1$. Assuming that the reaction is under kinetic control and that the observed ratios reflect the relative rates of activation at the two positions, calculate the difference in activation energies $(E_{a,C1} - E_{a,C2})$ in $\text{kJ/mol}$. $R = 8.314 \times 10^{-3} \text{ kJ/mol} \cdot \text{K}$. Give your answer to two significant figures.</question>
+
+<question>Metal-Organic Framework Formation on Surface
+A reaction between benzene-1,3,5-tricarboxylic acid (BTA) and copper(II) ions is conducted on a $Cu(100)$ surface to form a 2D metal-organic framework. At a surface temperature of $300 \text{ K}$, the average size of the MOF islands formed is found to be $25 \text{ nm}^2$. When the surface temperature is increased to $350 \text{ K}$, the average island size increases to $100 \text{ nm}^2$. Assuming that the island size is proportional to the square root of the rate constant of MOF formation and the rate constant follows the Arrhenius equation, determine the activation energy (in $\text{kJ/mol}$) for the MOF formation process on the surface. Report your answer to two significant figures. $R = 8.314 \times 10^{-3} \text{ kJ/mol} \cdot \text{K}$.</question>
+
+<question>Predicting Product Formation from a Gold-Catalyzed Reaction
+A terminal alkyne reacts with an aldehyde in the presence of a gold(I) catalyst supported on alumina. The reaction can proceed via two pathways, both yielding propargyl alcohol product $A$ or furanone product $B$. The HOMO energy of the transition state leading to propargyl alcohol $A$ is $-10.5 \text{ eV}$, while the HOMO energy of the transition state leading to furanone product $B$ is $-10.8 \text{ eV}$. Based on this information, what is the predicted ratio of the products $A$ to $B$ assuming a kinetically controlled reaction and relative rates are directly proportional to $e^{-E_a/RT}$ where $E_a$ is the activation energy, approximated by the negative of the HOMO energy. Assume $T = 298 \text{ K}$, $R = 8.314 \times 10^{-3} \text{ kJ/mol} \cdot \text{K}$, and $1 \text{ eV} \approx 96.485 \text{ kJ/mol}$. Report the ratio as a decimal number to two significant figures.</question>
+```
+=== Final questions generated ===

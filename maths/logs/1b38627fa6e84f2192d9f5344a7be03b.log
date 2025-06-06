@@ -1,0 +1,125 @@
+=== Turn 0: Author generates questions ===
+Here are five novel university-level mathematics questions based on the given topics, concepts, and guidelines:
+
+1.  <question>
+Consider the Heisenberg group $\mathbb{H}^1$ with exponential coordinates $(x, y, z)$ and group law $(x, y, z) \cdot (x', y', z') = (x+x', y+y', z+z' + \frac{1}{2}(xy'-x'y))$. Let $f: \mathbb{H}^1 \to \mathbb{R}$ be a Lipschitz function with Lipschitz constant $L$. Suppose the horizontal gradient of $f$ is given by $\nabla_H f = (Xf, Yf)$, where $X = \frac{\partial}{\partial x} + \frac{y}{2}\frac{\partial}{\partial z}$ and $Y = \frac{\partial}{\partial y} - \frac{x}{2}\frac{\partial}{\partial z}$. Determine the maximal possible value of $|Zf(x,y,z)|$ where $Z = \frac{\partial}{\partial z}$, in terms of $L$.
+</question>
+
+2.  <question>
+Let $f: \mathbb{R}^n \to \mathbb{R}$ be a function. We say that $f$ is directionally pliable at $x \in \mathbb{R}^n$ if for every direction $v \in \mathbb{S}^{n-1}$, the directional derivative $D_v f(x)$ exists and is finite. Further assume $f$ is Lipschitz with constant $K$. Find an upper bound for the measure of the set of points where $f$ is not differentiable.
+</question>
+
+3.  <question>
+Let $G$ be a Carnot group of step $r$. Consider a smooth function $f: G \to \mathbb{R}$. Assume that the horizontal gradient $\nabla_H f$ exists everywhere in $G$. Using exponential coordinates associated with a basis $\{X_1, \dots, X_m\}$ of the first layer of the Lie algebra of $G$, and let $g = \exp(\sum_{i=1}^m x_i X_i)$. Provide a symbolic expression of the second order horizontal derivative $X_i X_j f(g)$ in terms of partial derivatives with respect to the exponential coordinates.
+</question>
+
+4.  <question>
+Consider a function $f: \mathbb{R}^2 \to \mathbb{R}$ defined on the metric space $(\mathbb{R}^2, d)$, where $d(x,y) = |x-y|$ is the Euclidean distance. Suppose $f$ satisfies the Lipschitz condition $|f(x) - f(y)| \leq M|x-y|$, for all $x, y \in \mathbb{R}^2$. Let $S$ be the set of points in $\mathbb{R}^2$ where $f$ is differentiable. Find a condition involving $M$ for the area of $S$ to be non-zero using Lusin's theorem.
+</question>
+
+5.  <question>
+Let $G$ be a Carnot group of step $2$. Let $f : G \to \mathbb{R}$ be a Lipschitz function. Suppose $\{X_1, \dots, X_m\}$ form a basis for the first layer of the Lie algebra and $\{X_{m+1}, \dots, X_n\}$ forms a basis for the second layer. Assume that $[X_i, X_j] = \sum_{k=m+1}^n c_{ij}^k X_k$. Express the $k$-th component of the second layer, $X_k$, in terms of Lie brackets of the first layer vector fields, that is, find an expression for $X_k$ for $k=m+1, \dots, n$.
+</question>
+=== Turn 0: Critic feedback ===
+Here's a critique of each question against the provided guidelines:
+
+---
+**Critique of Question 1:**
+
+*   **Adherence to Guidelines:** This question adheres well to all the provided guidelines. It defines a clear setup, asks for a single symbolic result, requires multi-step reasoning in a specialized area of mathematics (sub-Riemannian geometry/analysis on Lie groups), and maintains rigorous notation.
+*   **Feedback for Improvement:** No specific improvements needed. The question is well-posed, challenging, and meets the criteria for a university-level assessment.
+
+---
+**Critique of Question 2:**
+
+*   **Adherence to Guidelines:** Largely adheres, but falls short on "Originality" and "Multi-Step Reasoning."
+*   **Feedback for Improvement:**
+    *   **Originality & Multi-Step Reasoning:** The question asks for an upper bound for the measure of the set of points where a Lipschitz function is not differentiable. By Rademacher's Theorem, a Lipschitz function on $\mathbb{R}^n$ is differentiable almost everywhere. This implies that the Lebesgue measure of the set of non-differentiable points is always zero. Thus, the maximal possible value for the measure is $0$. This makes the question somewhat trivial for a student familiar with Rademacher's Theorem, requiring only a single step of direct recall rather than multi-step reasoning to *find* the bound.
+    *   **Suggestion:** To make it more non-trivial and require multi-step reasoning, consider:
+        *   Asking for a property of the *density* of differentiable points.
+        *   Modifying the setup to a non-Euclidean metric space where Rademacher's Theorem might not directly apply in the same form, or where a non-zero upper bound might exist.
+        *   Asking for a quantitative estimate related to the measure of the singular set under specific non-Lipschitz conditions that are "close" to Lipschitz.
+
+---
+**Critique of Question 3:**
+
+*   **Adherence to Guidelines:** This question adheres well to all the provided guidelines. It sets up a complex mathematical environment (Carnot groups, exponential coordinates), asks for a specific symbolic expression that requires knowledge of vector fields as differential operators and their action on functions, and demands multi-step algebraic/analytic reasoning.
+*   **Feedback for Improvement:** No specific improvements needed. The question is excellent, challenging, and appropriate for the intended level.
+
+---
+**Critique of Question 4:**
+
+*   **Adherence to Guidelines:** Fails on "Mathematical Structure," "Concise and Relevant," "Originality," and "Multi-Step Reasoning."
+*   **Feedback for Improvement:**
+    *   **Conceptual Error/Relevance:** The question incorrectly invokes Lusin's Theorem. The correct and relevant theorem for the differentiability of Lipschitz functions is Rademacher's Theorem. Lusin's Theorem is primarily about measurable functions being "almost continuous."
+    *   **Triviality & Solvable Target:** By Rademacher's Theorem, a Lipschitz function is differentiable almost everywhere. This implies that the set $S$ of differentiable points always has full measure (e.g., infinite area in $\mathbb{R}^2$ if the domain is $\mathbb{R}^2$). Therefore, the condition for its area to be non-zero is always true for *any* Lipschitz function, regardless of the constant $M$. This makes the question trivial and the "condition involving $M$" non-existent (as any finite $M$ implies the condition holds). This does not test multi-step reasoning to find a condition.
+    *   **Suggestion:** This question needs to be fundamentally revised or replaced. If the intent was to test understanding of differentiability of Lipschitz functions, it should correctly reference Rademacher's Theorem and ask for a non-trivial property, perhaps related to the properties of the tangent space, subgradient, or the behavior of Lipschitz functions on a specific compact domain.
+
+---
+**Critique of Question 5:**
+
+*   **Adherence to Guidelines:** Fails on "Concise and Relevant," "Originality," and "Multi-Step Reasoning."
+*   **Feedback for Improvement:**
+    *   **Irrelevant Information:** The mention of "$f: G \to \mathbb{R}$ be a Lipschitz function" is entirely irrelevant to the question, which is purely about the structural definition of the Lie algebra of a Carnot group. This violates the "Concise and Relevant" guideline.
+    *   **Triviality/Definition:** The question asks to express $X_k$ (a basis element of the second layer) in terms of Lie brackets of first-layer vector fields. By the very definition of a Carnot group (specifically, its associated stratified Lie algebra), the second layer $V_2$ is precisely the span of the Lie brackets of elements from the first layer $V_1$. The problem statement itself provides the relation $[X_i, X_j] = \sum_{k=m+1}^n c_{ij}^k X_k$. This implies that $X_k$ can be expressed as a linear combination of the brackets (with coefficients $c_{ij}^k$ if they are known or derived). This question essentially asks to state a fundamental definition or directly re-arrange a given formula, making it too definitional and lacking in multi-step reasoning or originality.
+    *   **Suggestion:** To make this question more challenging and original, it could involve:
+        *   Asking for specific coordinate expressions for $X_k$ in a concrete Carnot group (e.g., the Heisenberg group) by computing actual Lie brackets and then expressing the resulting vector fields in terms of the given basis.
+        *   Asking about a more subtle property relating the different layers of the Lie algebra, or requiring a computation involving these structural properties.
+=== Turn 1: Author refines questions ===
+Okay, here's a revised list of questions, attempting to address the feedback and align more closely with university-level mathematics standards focusing on originality and multi-step reasoning.
+
+1.  <question>Consider the Heisenberg group $\mathbb{H}^1$ with exponential coordinates $(x, y, z)$ and group law $(x, y, z) \cdot (x', y', z') = (x+x', y+y', z+z' + \frac{1}{2}(xy'-x'y))$. Let $f: \mathbb{H}^1 \to \mathbb{R}$ be a Lipschitz function with Lipschitz constant $L$. Suppose the horizontal gradient of $f$ is given by $\nabla_H f = (Xf, Yf)$, where $X = \frac{\partial}{\partial x} + \frac{y}{2}\frac{\partial}{\partial z}$ and $Y = \frac{\partial}{\partial y} - \frac{x}{2}\frac{\partial}{\partial z}$. Determine the maximal possible value of $|Zf(x,y,z)|$ where $Z = \frac{\partial}{\partial z}$, in terms of $L$.</question>
+
+2.  <question>Let $f: \mathbb{R}^n \to \mathbb{R}$ be a locally Lipschitz function with Lipschitz constant $K$ on a bounded domain $\Omega \subset \mathbb{R}^n$. Let $D \subset \Omega$ be the set of points where $f$ is differentiable.  Prove that for any $\epsilon > 0$, there exists a compact set $C \subset D$ such that the Lebesgue measure of $\Omega \setminus C$ is less than $\epsilon$. Furthermore, show that for any $x \in C$, the magnitude of the gradient $|\nabla f(x)|$ is bounded above by $K$. Finally, provide an example of a Lipschitz function on $\mathbb{R}$ where the set of points where $|\nabla f(x)| = K$ has measure zero.</question>
+
+3.  <question>Let $G$ be a Carnot group of step $r$. Consider a smooth function $f: G \to \mathbb{R}$. Assume that the horizontal gradient $\nabla_H f$ exists everywhere in $G$. Using exponential coordinates associated with a basis $\{X_1, \dots, X_m\}$ of the first layer of the Lie algebra of $G$, and let $g = \exp(\sum_{i=1}^m x_i X_i)$. Provide a symbolic expression of the second order horizontal derivative $X_i X_j f(g)$ in terms of partial derivatives with respect to the exponential coordinates. Furthermore, demonstrate that if $f$ is horizontally harmonic (i.e., $\sum_{i=1}^m X_i X_i f = 0$), then $\int_G |\nabla_H f|^2 \phi \, dg = 0$ for any smooth, compactly supported function $\phi$ satisfying $\sum_{i=1}^m X_i^2 \phi = 0$.</question>
+
+4.  <question>Let $f: \mathbb{R}^2 \to \mathbb{R}$ be a Lipschitz function with Lipschitz constant $M$. Consider a compact rectangle $R \subset \mathbb{R}^2$. Let $S$ be the set of points in $R$ where $f$ is differentiable. Using Rademacher's theorem and the definition of differentiability, show that for any $\epsilon > 0$, there exists a subset $S_\epsilon \subset S$ with measure greater than the measure of $R$ minus $\epsilon$, such that the total variation of $f$ over $S_\epsilon$ is bounded by $M \cdot \text{Area}(S_\epsilon)$. Explain why this doesn't directly imply that f is absolutely continuous.</question>
+
+5.  <question>Consider the Heisenberg group $\mathbb{H}^1$, with basis for the Lie algebra given by $X = \frac{\partial}{\partial x} + \frac{y}{2}\frac{\partial}{\partial z}$, $Y = \frac{\partial}{\partial y} - \frac{x}{2}\frac{\partial}{\partial z}$, and $Z = \frac{\partial}{\partial z}$.  Prove that $Z = [X,Y]$. Subsequently, find explicit expressions for the horizontal derivatives $X(z)$ and $Y(z)$, where $z$ is the coordinate function $z(x,y,z) = z$. Finally, use these expressions to verify that $[X,Y](f) = X(Y(f)) - Y(X(f))$ for an arbitrary smooth function $f: \mathbb{H}^1 \to \mathbb{R}$.</question>
+Key Changes and Rationale:
+
+*   **Question 2 (Revised):** Builds on Rademacher's theorem. It asks to demonstrate the existence of a compact set, bound on gradient magnitude, and provide a counterexample showing that equality of Lipschitz constant and gradient magnitude isn't guaranteed on a set of positive measure. Requires applying Rademacher's Theorem and understanding Lipschitz function properties.
+
+*   **Question 3 (Revised):** Retains the symbolic expression aspect.  Adds a second part requiring the student to *use* the coordinate expressions to derive a property related to horizontally harmonic functions and integration by parts on the Carnot group. This forces application of the symbolic result.
+
+*   **Question 4 (Revised):**  Now correctly references Rademacher's theorem. It requires showing a connection between Lipschitz constant, the set of differentiable points, and total variation. Then it challenges them to consider absolute continuity.
+
+*   **Question 5 (Revised):** Focused on the Heisenberg Group. Directly requires proving the Lie bracket relationship. Then asks to compute specific derivatives and verify the Lie bracket action, removing the irrelevant information about Lipschitz functions and the definitional nature of the original. Now it demands *computation and verification.*
+
+These revised questions aim to better satisfy the requirements of multi-step reasoning, originality, and relevance.  The triviality of some of the original questions should now be resolved.
+=== Turn 1: Critic feedback ===
+Here's a critique of the revised questions based on your guidelines:
+
+**Question 1:**
+*   **Critique:** This question largely adheres to the guidelines. It asks for a single symbolic value as an answer and requires multi-step reasoning.
+*   **Actionable Feedback:** No major changes needed.
+
+**Question 2:**
+*   **Critique:** Violates Guideline 3, 4, and 10. It asks for proofs ("Prove that...", "show that...") and multiple distinct outputs (two proofs and an example function), rather than a single symbolic result.
+*   **Actionable Feedback:** Rephrase to ask for a single, specific symbolic result (e.g., the value of a constant, a function, a limit) that requires the application of Rademacher's theorem, instead of asking for proofs or an example.
+
+**Question 3:**
+*   **Critique:** Violates Guideline 3, 4, and 10. It asks for a symbolic expression AND a demonstration/proof ("demonstrate that..."), making it a multi-part question with a derivation.
+*   **Actionable Feedback:** Separate into two distinct questions if both parts are desired, and rephrase the "demonstrate" part to ask for a specific symbolic output, such as a value or a closed-form expression derived from the given conditions, if possible. Otherwise, eliminate the proof part.
+
+**Question 4:**
+*   **Critique:** Violates Guideline 3, 4, and 10. It asks for a demonstration/proof ("show that...") and an explanation ("Explain why..."), which are not single symbolic answers. It also contains multiple parts.
+*   **Actionable Feedback:** Rephrase to ask for a single, unambiguous symbolic result (e.g., the measure of a specific set or a derived bound on a quantity) that necessitates the use of Rademacher's theorem, rather than asking for proofs or explanations.
+
+**Question 5:**
+*   **Critique:** Violates Guideline 3, 4, 6, and 10. It asks for a proof ("Prove that..."), explicit expressions, AND a verification ("verify that..."). This is a multi-part question with proofs/derivations. Additionally, computing Lie brackets for the Heisenberg group is a very standard, non-original problem.
+*   **Actionable Feedback:** Rephrase to ask for a single symbolic expression (e.g., a specific value of a Lie bracket, or the result of a specific derivative calculation for a *general* function that implies the understanding of the operators). Remove the proof/verification aspects and the non-original standard computations.
+=== Turn 2: Author refines questions ===
+Okay, here's the list of revised questions, attempting to adhere to the stringent guidelines (single symbolic output, multi-step reasoning, originality where possible, avoidance of proofs and multi-part questions). These are designed to be *challenging* problems that might appear on a very difficult exam.
+
+1.  <question>Consider the Heisenberg group $\mathbb{H}^1$ with exponential coordinates $(x, y, z)$ and group law $(x, y, z) \cdot (x', y', z') = (x+x', y+y', z+z' + \frac{1}{2}(xy'-x'y))$. Let $f(x, y, z) = x^2 + y^2 + z^2$. Calculate the value of $X(Y(f))(0, 0, 0)$, where $X = \frac{\partial}{\partial x} + \frac{y}{2}\frac{\partial}{\partial z}$ and $Y = \frac{\partial}{\partial y} - \frac{x}{2}\frac{\partial}{\partial z}$.</question>
+
+2.  <question>Let $f: \mathbb{R}^2 \to \mathbb{R}$ be a Lipschitz function with Lipschitz constant $K$ on a bounded domain $\Omega \subset \mathbb{R}^2$. Suppose that at every point where $f$ is differentiable in $\Omega$, the directional derivative of $f$ in the direction $v = (1,1)$ is 0.  Using Rademacher's theorem, determine the maximal possible value of the integral $\int_\Omega |\nabla f(x,y)|^2 \, dx \, dy$ in terms of $K$ and the area of $\Omega$, assuming that the set where $f$ is differentiable has measure equal to the area of $\Omega$.</question>
+
+3.  <question>Let $G$ be a Carnot group with a homogeneous dimension $Q$. Let $X_1, \dots, X_m$ be a basis for the horizontal layer of the Lie algebra. Define the horizontal Laplacian as $\Delta_H = \sum_{i=1}^m X_i^2$. Suppose $f: G \to \mathbb{R}$ is a smooth function such that $\Delta_H f = 1$. If $B_r$ denotes the Carnot ball of radius $r$ centered at the origin, estimate the order of magnitude of $\int_{B_r} |\nabla_H f|^2 dg$ as $r$ approaches zero, expressing your answer as $O(r^p)$ for some $p$.</question>
+
+4.  <question>Let $f: \mathbb{R}^2 \to \mathbb{R}$ be a Lipschitz function with Lipschitz constant $M$ on a compact rectangle $R$.  Let $S$ be the set of points in $R$ where $f$ is differentiable. Suppose $|\nabla f(x, y)| = M$ almost everywhere on $S$.  Let $g(x,y) = f(x, y) + Mx$.  Calculate the value of $\int_R |\nabla g(x,y)|^2 \, dx \, dy$ in terms of $M$ and the area of $R$, again assuming that the set where $f$ is differentiable has measure equal to the area of $R$.</question>
+
+5.  <question>Consider the Heisenberg group $\mathbb{H}^1$ with Lie algebra generators $X = \frac{\partial}{\partial x} + \frac{y}{2}\frac{\partial}{\partial z}$ and $Y = \frac{\partial}{\partial y} - \frac{x}{2}\frac{\partial}{\partial z}$. Let $f(x,y,z) = x^3 + y^3 + z^3$.  Determine the coefficient of the term $x^2y$ in the expression for $X(Y(f))$.</question>
+=== Final questions generated ===

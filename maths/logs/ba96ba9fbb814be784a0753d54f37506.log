@@ -1,0 +1,162 @@
+=== Turn 0: Author generates questions ===
+Here are some novel university-level physics questions:
+
+1.  <question>Consider a system of $N$ identical non-interacting particles of mass $m$ confined to move on the surface of a sphere of radius $R$. The Hamiltonian of the system is given by $$H = \sum_{i=1}^N \frac{L_i^2}{2mR^2}$$, where $L_i$ is the angular momentum of the $i$-th particle. If the system is in thermal equilibrium at a temperature $T$, calculate the mean squared angular momentum of a single particle, $\langle L^2 \rangle$. Express the answer in terms of $m$, $R$, $T$, and the Boltzmann constant $k_B$.</question>
+
+2.  <question>A relativistic particle of rest mass $m$ and charge $q$ moves in a uniform magnetic field $\vec{B} = B\hat{z}$. Initially, the particle has a velocity $\vec{v}(0) = v_0 \hat{x}$. Find the average value of the particle's $x$-coordinate, $\langle x(t) \rangle$, over one period of its motion, where the period is defined in the particle's rest frame. Express your answer in terms of $m$, $q$, $B$, $v_0$, and the speed of light $c$.</question>
+
+3.  <question>A quantum particle of mass $m$ is confined to a one-dimensional infinite potential well of width $L$, defined by $V(x) = 0$ for $0 < x < L$ and $V(x) = \infty$ otherwise. At time $t=0$, the particle is in a superposition state described by the wave function $\Psi(x, 0) = A \sin(\frac{\pi x}{L}) \cos(\frac{\pi x}{L})$, where $A$ is a normalization constant. Determine the expectation value of the energy, $\langle E \rangle$, of the particle in this state at time $t=0$. Express your answer in terms of $m$, $L$, and $\hbar$.</question>
+
+4.  <question>A thin, uniformly charged rod of length $L$ has a total charge $Q$. It is rotated about one end with a constant angular velocity $\omega$. Calculate the magnetic dipole moment, $\mu$, of the rotating rod. Express your answer in terms of $Q$, $L$, and $\omega$.</question>
+
+5.  <question>Consider a black hole of mass $M$. A particle of mass $m$ approaches the black hole from infinity with an initial velocity $v_0$ and an impact parameter $b$. Calculate the critical impact parameter $b_c$ such that if $b < b_c$, the particle will be captured by the black hole. Assume the motion is in the equatorial plane and use the Schwarzschild metric. Express your answer in terms of $M$, $G$, $v_0$, and $c$ (the speed of light). Note: you do not need to solve the full geodesic equations, but rather consider the effective potential.</question>
+
+6.  <question>A cylindrical capacitor of length $L$ consists of two coaxial conducting cylinders of radii $a$ and $b$ ($a < b$). The space between the cylinders is filled with a dielectric material whose dielectric constant varies as $\epsilon(r) = \epsilon_0 (1 + kr)$, where $r$ is the radial distance from the axis and $k$ is a constant. Determine the capacitance $C$ of this capacitor. Express your answer in terms of $a$, $b$, $L$, $\epsilon_0$, and $k$.</question>
+
+7.  <question>A particle of mass $m$ is subject to a force given by $F(x) = -kx + \lambda x^3$, where $k > 0$ and $\lambda > 0$. Find the period $T$ of small oscillations around the equilibrium point $x = 0$. Express your answer to first order in $\lambda$ in terms of $m$, $k$, and $\lambda$, assuming that $\lambda$ is small enough to use a perturbative approach and that the initial amplitude is A.</question>
+
+8.  <question>A laser emits pulses of light with a duration of $\tau$ and a central wavelength of $\lambda_0$. Due to the uncertainty principle, the laser light has a certain spectral width $\Delta \lambda$. Find the minimum possible value of the product $\tau \Delta \lambda$. Express your answer in terms of $\lambda_0$ and the speed of light $c$. You may assume a Gaussian pulse shape.</question>
+
+9.  <question>Consider a one-dimensional chain of $N$ atoms, each of mass $m$, connected by springs with spring constant $K$. Assume periodic boundary conditions. There is also a defect at one site which lowers the spring constant to $K' = (1 - \alpha)K$, where $0 < \alpha < 1$. Find the change in the zero-point energy, $\Delta E_0$, due to the presence of the defect to first order in $\alpha$. Express your answer in terms of $N$, $K$, $m$, and $\alpha$.</question>
+
+10. <question>A non-relativistic electron is moving in a circular orbit of radius $r$ around a proton. Assuming that the electron can only lose energy by emitting radiation, calculate the total time, $T$, it takes for the electron to spiral into the proton, starting from an initial radius $r_0$. Express your answer in terms of $r_0$, the electron charge $e$, the electron mass $m$, the permittivity of free space $\epsilon_0$, and the speed of light $c$.</question>
+=== Turn 0: Critic feedback ===
+Here's a critique of each question against your guidelines, with concise, actionable feedback for improvement:
+
+**General Feedback:**
+The questions are generally well-structured, clear, use appropriate LaTeX formatting, and adhere to most of your guidelines (1-5, 7-12). They consistently ask for a single symbolic output and avoid proofs or derivations. However, the primary area for improvement across almost all questions is **Guideline 6 (Originality)**. Many of these problems are very standard, even canonical, textbook examples frequently used in university-level physics courses. To make them truly "novel," they would need a more unique twist, a less common application, or a more complex scenario that goes beyond the direct application of a standard formula or method.
+
+---
+
+**1. Question 1:**
+*   **Critique:**
+    *   **Guideline 6 (Originality):** This is a very standard application of the equipartition theorem or partition function for a 2-degree-of-freedom classical rotator (a particle on a sphere). It's a common textbook problem in statistical mechanics.
+*   **Actionable Feedback:** To enhance originality, consider a quantum version of the problem (e.g., mean squared angular momentum in a thermal ensemble for quantum particles on a sphere), introduce a non-uniform potential on the sphere, or make the particles interact.
+
+**2. Question 2:**
+*   **Critique:**
+    *   **Guideline 6 (Originality) & 5 (Concise and Relevant):** For a particle starting at the origin with velocity perpendicular to the magnetic field, its motion is purely circular in the $xy$-plane. The average $x$-coordinate over any full period of this circular motion is simply the $x$-coordinate of the center of the orbit, which is either $0$ or the Larmor radius depending on the exact initial position. This makes the answer potentially trivial (e.g., $0$ if the particle starts at $x=-R_L$, or $R_L$ if it starts at $x=0$ and the center is at $x=R_L$). The "period defined in the particle's rest frame" affects the *duration* of the period in the lab frame ($T_{lab} = \gamma T_0$), but doesn't change the *average value* of a purely oscillating coordinate over a full period.
+*   **Actionable Feedback:** Clarify the initial position (e.g., "Initially, the particle is at the origin $(0,0,0)$ and has a velocity $\vec{v}(0) = v_0 \hat{x}$"). If the intent is a non-trivial average, consider introducing an electric field (resulting in a drift velocity, making the average non-zero and non-trivial) or ask for a different quantity (e.g., average kinetic energy).
+
+**3. Question 3:**
+*   **Critique:**
+    *   **Guideline 6 (Originality) & 7 (Multi-Step Reasoning):** The given wave function $\Psi(x, 0) = A \sin(\frac{\pi x}{L}) \cos(\frac{\pi x}{L})$ simplifies using a trigonometric identity to $\frac{A}{2} \sin(\frac{2\pi x}{L})$. This means the state is proportional to the $n=2$ energy eigenstate ($\psi_2(x)$). The expectation value of energy for an eigenstate is simply its eigenvalue. This makes the problem too straightforward for university level, as it only requires recognizing a trigonometric identity and recalling the energy formula, rather than decomposing a superposition into multiple distinct eigenstates.
+*   **Actionable Feedback:** Change the initial wave function to a genuine superposition of *multiple distinct* energy eigenstates, e.g., $\Psi(x, 0) = A(\sin(\frac{\pi x}{L}) + \sin(\frac{3\pi x}{L}))$. This would require calculating the normalization constant, identifying the coefficients of the energy eigenstates, and then computing $\langle E \rangle = \sum_n |c_n|^2 E_n$.
+
+**4. Question 4:**
+*   **Critique:**
+    *   **Guideline 6 (Originality):** This is a very common textbook problem found in almost every introductory or intermediate electromagnetism course. It's a standard example of calculating the magnetic dipole moment for a rotating charge distribution.
+*   **Actionable Feedback:** To increase originality, consider a more complex charge distribution (e.g., a rotating charged disk with a non-uniform surface charge density $\sigma(r)$), a non-constant angular velocity, or ask for the magnetic field at a specific point on the axis.
+
+**5. Question 5:**
+*   **Critique:**
+    *   **Guideline 6 (Originality):** This is a canonical problem in general relativity, typically covered in a first course on the subject. Calculating the critical impact parameter for capture by a Schwarzschild black hole using the effective potential is a fundamental application of GR.
+*   **Actionable Feedback:** While a good problem, it lacks novelty. To improve originality, one could introduce a different scenario (e.g., particle scattering, calculating the deflection angle for a specific impact parameter), consider a spinning black hole (Kerr metric, though significantly more complex for this level), or ask for a different aspect of geodesic motion.
+
+**6. Question 6:**
+*   **Critique:**
+    *   **Guideline 6 (Originality):** While not a basic capacitor problem, calculating capacitance with a radially varying dielectric constant is a fairly common exercise in advanced electromagnetism courses. The linear dependence $\epsilon(r) = \epsilon_0 (1 + kr)$ makes the integration straightforward.
+*   **Actionable Feedback:** To increase originality, consider a more complex dielectric variation (e.g., $\epsilon(r) = \epsilon_0 (1 + kr^2)$, or $\epsilon(r) = \epsilon_0 / r$), or a multi-layered dielectric, or ask for the electric field energy stored in the capacitor.
+
+**7. Question 7:**
+*   **Critique:**
+    *   **Guideline 6 (Originality):** This is a very standard problem in classical mechanics (non-linear oscillations) or mathematical physics (perturbation theory). Calculating the period to first order for a non-linear oscillator like this (Duffing oscillator without damping or driving) is a classic example used to demonstrate perturbative methods.
+*   **Actionable Feedback:** To improve originality, consider a different form of perturbation (e.g., non-linear damping, or a time-dependent perturbation), or a system with multiple degrees of freedom subject to non-linear forces.
+
+**8. Question 8:**
+*   **Critique:**
+    *   **Guideline 6 (Originality):** This is a very standard and well-known result in optics and quantum mechanics – the time-frequency uncertainty relation (or time-bandwidth product) for a transform-limited pulse, specifically for a Gaussian profile which yields the minimum product. It's a direct application of Fourier transform properties.
+*   **Actionable Feedback:** To enhance originality, ask for the spectral width for a non-Gaussian pulse shape (e.g., a rectangular pulse, which would require an actual Fourier transform calculation), or consider the effect of group velocity dispersion on the pulse duration and spectral width.
+
+**9. Question 9:**
+*   **Critique:**
+    *   **Guideline 6 (Originality):** This is a well-known problem in solid-state physics, dealing with lattice vibrations and point defects. Calculating the change in zero-point energy due to a defect is a standard application of perturbation theory in lattice dynamics (e.g., using Green's functions or by summing frequency shifts). It is challenging but not "novel."
+*   **Actionable Feedback:** To increase originality, one could introduce a more complex defect (e.g., a defect affecting multiple spring constants, or a defect that introduces a localized vibrational mode and ask for its frequency), or a more complex lattice structure (e.g., a diatomic chain).
+
+**10. Question 10:**
+*   **Critique:**
+    *   **Guideline 6 (Originality):** This is arguably *the most canonical* problem in classical electrodynamics, used to illustrate the failure of classical physics to explain atomic stability and thus motivate quantum mechanics. It's an iconic textbook example of applying the Larmor formula to a spiraling electron. It is the opposite of "unique and non-trivial" or "avoid rewording standard textbook problems."
+*   **Actionable Feedback:** This problem is too fundamental and widely known to be considered "novel." To make it novel, one would need to drastically change the scenario, perhaps by making it relativistic, or considering the radiation from a particle in a different, more complex classical potential, or by asking about angular momentum loss due to radiation.
+=== Turn 1: Author refines questions ===
+Here's a revised list of university-level physics questions, incorporating the feedback provided. The goal is to increase originality while maintaining clarity, appropriate difficulty, and adherence to the established guidelines. Changes primarily focus on making the physical scenarios less standard or requiring more nuanced reasoning beyond direct formula application.
+
+1.  <question>Consider $N$ identical *bosonic* particles of mass $m$ confined to move on the surface of a sphere of radius $R$. The Hamiltonian of the system is given by $$H = \sum_{i=1}^N \frac{L_i^2}{2mR^2}$$, where $L_i$ is the angular momentum of the $i$-th particle. The bosons interact weakly via a contact interaction of strength $U$, approximated by $V(\theta_{ij}) = U \delta(\cos\theta_{ij} - 1)$, where $\theta_{ij}$ is the angle between the position vectors of the $i$-th and $j$-th particles. Using perturbation theory, calculate the shift in the *ground state energy* of the system to first order in $U$. Express your answer in terms of $N$, $m$, $R$, $U$, and $\hbar$.</question>
+
+2.  <question>A relativistic particle of rest mass $m$ and charge $q$ moves in a uniform magnetic field $\vec{B} = B\hat{z}$. Initially, the particle is at the origin $(0,0,0)$ and has a velocity $\vec{v}(0) = v_0 \hat{x}$. In addition to the magnetic field, there is a weak uniform electric field $\vec{E} = E\hat{y}$, with $E \ll cB$.  Find the average $x$-coordinate, $\langle x(t) \rangle$, of the particle's motion after a very long time, averaging over many cyclotron periods. Express your answer in terms of $m$, $q$, $B$, $E$, $v_0$, and the speed of light $c$.</question>
+
+3.  <question>A quantum particle of mass $m$ is confined to a one-dimensional infinite potential well of width $L$, defined by $V(x) = 0$ for $0 < x < L$ and $V(x) = \infty$ otherwise. At time $t=0$, the particle is in a superposition state described by the wave function $\Psi(x, 0) = A [\sin(\frac{\pi x}{L}) + \frac{1}{2}\sin(\frac{3\pi x}{L})]$, where $A$ is a normalization constant.  Determine the expectation value of the position, $\langle x \rangle$, of the particle *as a function of time* $t$. Express your answer in terms of $m$, $L$, $\hbar$, and $t$.</question>
+
+4.  <question>A thin disk of radius $R$ has a non-uniform surface charge density given by $\sigma(r) = \sigma_0 (1 - r/R)$, where $\sigma_0$ is a constant and $r$ is the distance from the center of the disk. The disk is rotated about its axis with a constant angular velocity $\omega$. Calculate the magnetic dipole moment, $\mu$, of the rotating disk. Express your answer in terms of $R$, $\sigma_0$, and $\omega$.</question>
+
+5.  <question>Consider a Schwarzschild black hole of mass $M$. A photon approaches the black hole from infinity with an initial energy $E$ and an impact parameter $b$. Calculate the *minimum* value of the impact parameter $b_c$ for which the photon can escape to infinity. Express your answer in terms of $M$, $G$, and $c$. Then give a qualitative description of what would happen to photons with $b < b_c$.</question>
+
+6.  <question>A cylindrical capacitor of length $L$ consists of two coaxial conducting cylinders of radii $a$ and $b$ ($a < b$). The space between the cylinders is filled with a dielectric material whose dielectric constant varies as $\epsilon(r) = \epsilon_0 e^{kr}$, where $r$ is the radial distance from the axis and $k$ is a constant. Determine the capacitance $C$ of this capacitor. Express your answer in terms of $a$, $b$, $L$, $\epsilon_0$, and $k$.</question>
+
+7.  <question>A particle of mass $m$ is subject to a force given by $F(x) = -kx + \lambda x^3 - \gamma \dot{x}$, where $k > 0$, $\lambda > 0$, and $\gamma > 0$. Assuming $\lambda$ and $\gamma$ are small, find the *approximate* amplitude $A(t)$ of the oscillation as a function of time, using the method of slowly varying amplitudes (averaging method) to first order in $\lambda$ and $\gamma$. Assume that the initial amplitude is A, and solve for $A(t)$. Express your answer in terms of $m$, $k$, $\lambda$, $\gamma$, and $A$.</question>
+
+8.  <question>A laser emits pulses of light with a duration of $\tau$ and a central wavelength of $\lambda_0$. The pulse shape is described by $f(t) = \text{sech}(t/\tau)$, where sech is the hyperbolic secant function.  Find the spectral width $\Delta \lambda$ (defined as the full width at half maximum, FWHM) of the laser light. Express your answer in terms of $\lambda_0$, $c$, and $\tau$.  (You may need to consult a table of Fourier transforms.)</question>
+
+9.  <question>Consider a one-dimensional chain of $N$ atoms, each of mass $m$, connected by springs with spring constant $K$. Assume periodic boundary conditions. One of the atoms has a mass $m' = (1 + \beta)m$, where $0 < \beta \ll 1$.  Find the approximate frequency $\omega_d$ of the localized vibrational mode introduced by the defect (to first order in $\beta$), assuming it exists *outside* the band of allowed frequencies for the perfect chain. Express your answer in terms of $K$, $m$, and $\beta$.</question>
+
+10. <question>A non-relativistic electron (charge $-e$, mass $m$) is initially in a highly excited circular Rydberg state with a large principal quantum number $n$ around a proton. Instead of spiraling inward, the electron makes a *quantum jump* from the state $n$ to the state $n-1$, emitting a photon. Calculate the total energy $\Delta E$ radiated away in this single quantum jump in terms of $m, e, \epsilon_0, \hbar,$ and $n$. Also, determine whether the frequency of this radiated photon matches what would be predicted by the classical Larmor formula in the limit of large $n$ (the correspondence principle).</question>
+=== Turn 1: Critic feedback ===
+Here's a critique of each question against your specified guidelines:
+
+**Question 1:**
+*   **Critique:** This is a strong question. It's well-defined, focuses on a single solvable target, and requires multi-step reasoning involving quantum mechanics (angular momentum, many-body systems, perturbation theory). It manages to feel original by applying standard techniques to a less common (but physically sound) scenario for bosonic particles on a sphere, which distinguishes it from a direct textbook problem. It adheres to all guidelines.
+
+**Question 2:**
+*   **Critique:** This is a classic problem (relativistic particle in crossed E and B fields leading to drift). While the "relativistic" aspect adds a layer, the calculation of average position/drift velocity is very standard. It adheres to all guidelines, but falls short on the explicit goal of "increasing originality" and "avoid rewording standard textbook problems" compared to other options.
+
+**Question 3:**
+*   **Critique:** This is a fundamental, entry-level quantum mechanics problem found in almost every textbook (time evolution of a superposition state in an infinite well and expectation value calculation). It adheres to the technical guidelines but fails significantly on the stated goal of "increasing originality" and "avoid rewording standard textbook problems."
+*   **Actionable Feedback:** This question is too standard. Consider a more complex potential or a superposition of more unusual states to increase originality.
+
+**Question 4:**
+*   **Critique:** This is a good electromagnetism problem. The non-uniform charge density adds a necessary level of complexity that moves it beyond the most basic textbook examples, contributing to originality. It requires careful integration and application of definitions. It adheres to all guidelines.
+
+**Question 5:**
+*   **Critique:** This question violates **Guideline 4 (Single Output)** and **Guideline 10 (Single Part)**. It asks for a symbolic calculation AND a qualitative description. Furthermore, calculating the critical impact parameter for photon capture by a Schwarzschild black hole is a very standard and well-known problem in General Relativity, failing on **Guideline 6 (Originality)**.
+*   **Actionable Feedback:** Remove the second part of the question ("Then give a qualitative description of what would happen to photons with $b < b_c$."). The problem itself is standard, so consider a less direct GR calculation for future questions if originality is paramount.
+
+**Question 6:**
+*   **Critique:** This is an excellent electromagnetism problem. The spatially varying dielectric constant makes it significantly more challenging and original than a standard capacitor problem, requiring a deeper understanding of dielectric materials and field calculations. It adheres to all guidelines.
+
+**Question 7:**
+*   **Critique:** This is a standard application of the method of slowly varying amplitudes (or averaging method) to a common non-linear oscillator type (Duffing oscillator with linear damping). While it requires multi-step reasoning and a specific technique, it is a canonical example used to teach this method and thus lacks significant originality. It adheres to all other guidelines.
+*   **Actionable Feedback:** While a good problem, it's a standard exercise for this method. To increase originality, consider a more unusual non-linear force or damping term that still permits this method.
+
+**Question 8:**
+*   **Critique:** This is a standard problem in Fourier optics/signal processing. Calculating the spectral width (FWHM) from a given pulse shape using Fourier transforms is a common exercise, and the sech function transform is well-known. The hint "You may need to consult a table of Fourier transforms" further indicates it's an application of known results rather than a novel derivation. It lacks originality. It adheres to all other guidelines.
+*   **Actionable Feedback:** This is a very standard problem. To increase originality, consider a pulse shape that requires a more involved or less common Fourier transform, or ask for a different spectral characteristic that requires more nuanced understanding.
+
+**Question 9:**
+*   **Critique:** This is a very standard problem in solid-state physics/lattice dynamics. The localized mode due to a mass defect in a 1D chain is a canonical example used to illustrate the effects of defects in crystals. While it's a good problem, it lacks originality. It adheres to all other guidelines.
+*   **Actionable Feedback:** This is a standard problem. To increase originality, consider a more complex defect (e.g., spring constant defect, multiple defects) or a 2D/3D lattice, if appropriate for the level.
+
+**Question 10:**
+*   **Critique:** This question violates **Guideline 4 (Single Output)** and **Guideline 10 (Single Part)**. It asks for a symbolic calculation AND a qualitative determination/comparison regarding the correspondence principle. Both parts, individually, are very standard problems/concepts in quantum mechanics and atomic physics.
+*   **Actionable Feedback:** Remove the second part of the question ("Also, determine whether the frequency of this radiated photon matches..."). Even the first part is a very common energy calculation for Rydberg atoms.
+=== Turn 2: Author refines questions ===
+Here's an improved list of physics questions, addressing the feedback and aiming for increased originality while maintaining clarity and appropriate difficulty. The problems now are revised to address the specific critiques, particularly focusing on making scenarios less standard or requiring more nuanced reasoning.
+
+1.  <question>Consider $N$ identical *bosonic* particles of mass $m$ confined to move on the surface of a sphere of radius $R$. The Hamiltonian of the system is given by $$H = \sum_{i=1}^N \frac{L_i^2}{2mR^2}$$, where $L_i$ is the angular momentum of the $i$-th particle. The bosons interact weakly via a *dipole-dipole* interaction, $V(\theta_{ij}) = \frac{U}{(R\sin\theta_{ij})^3}$, where $\theta_{ij}$ is the angle between the position vectors of the $i$-th and $j$-th particles, and $U$ is a constant. Using perturbation theory, calculate the shift in the *ground state energy* of the system to first order in $U$. You may assume the angular integrations are known, and focus on the relevant degeneracy of the ground state. Express your answer in terms of $N$, $m$, $R$, $U$, and $\hbar$.</question>
+
+2.  <question>A relativistic particle of rest mass $m$ and charge $q$ moves in a uniform magnetic field $\vec{B} = B\hat{z}$. Initially, the particle is at the origin $(0,0,0)$ and has a velocity $\vec{v}(0) = v_0 \hat{x}$. In addition to the magnetic field, there is a weak *time-dependent* electric field $\vec{E}(t) = E_0 \cos(\omega t)\hat{y}$, with $E_0 \ll cB$. Assuming the relativistic cyclotron frequency $\omega_c = \frac{qB}{\gamma m}$ (where $\gamma$ is the Lorentz factor) is significantly different from $\omega$, find the *approximate* long-time average $x$-coordinate, $\langle x(t) \rangle$, of the particle's motion. Ignore radiation effects. Express your answer in terms of $m$, $q$, $B$, $E_0$, $\omega$, $\omega_c$, $v_0$, and the speed of light $c$.</question>
+
+3.  <question>A quantum particle of mass $m$ is confined to a one-dimensional potential well defined by $V(x) = 0$ for $0 < x < L/2$, $V(x) = V_0$ for $L/2 < x < L$, and $V(x) = \infty$ otherwise, where $V_0$ is a finite potential.  At time $t=0$, the particle is in the ground state. Suddenly, the potential $V_0$ is switched off, so that the potential becomes a standard infinite square well from $0$ to $L$. Calculate the probability that, after a long time, the particle will be found in the *second excited state* of the new (width L) infinite square well. Express your answer in terms of $L$, $m$, $V_0$, and $\hbar$.</question>
+
+4.  <question>A thin disk of radius $R$ has a non-uniform, *time-dependent* surface charge density given by $\sigma(r, t) = \sigma_0 (1 - r/R) \cos(\Omega t)$, where $\sigma_0$ is a constant, $r$ is the distance from the center of the disk, and $\Omega$ is a constant angular frequency. Calculate the *time-averaged* radiated power due to this oscillating charge distribution, assuming that $R\Omega/c \ll 1$. Express your answer in terms of $R$, $\sigma_0$, $\Omega$, and the speed of light $c$.</question>
+
+5.  <question>Consider a Schwarzschild black hole of mass $M$. A photon approaches the black hole from infinity with an initial energy $E$ and an impact parameter $b$. Calculate the *minimum* value of the impact parameter $b_c$ for which the photon can escape to infinity. Express your answer in terms of $M$, $G$, and $c$.</question>
+
+6.  <question>A cylindrical capacitor of length $L$ consists of two coaxial conducting cylinders of radii $a$ and $b$ ($a < b$). The space between the cylinders is filled with a dielectric material whose dielectric constant varies as $\epsilon(r) = \epsilon_0 e^{kr^2}$, where $r$ is the radial distance from the axis and $k$ is a constant. Determine the capacitance $C$ of this capacitor. Express your answer in terms of $a$, $b$, $L$, $\epsilon_0$, and $k$.</question>
+
+7.  <question>A particle of mass $m$ is subject to a force given by $F(x) = -kx + \lambda x^3 - \gamma \dot{x} + \eta x^2 \dot{x}$, where $k > 0$, $\lambda > 0$, $\gamma > 0$, and $\eta > 0$. Assuming $\lambda$, $\gamma$, and $\eta$ are small, find the *approximate* equation for the amplitude $A$ of the oscillation as a function of time, $dA/dt$, using the method of slowly varying amplitudes (averaging method) to first order in $\lambda$, $\gamma$, and $\eta$. Do *not* solve the equation for A(t), only find the equation for dA/dt. Assume the solution can be written as $x(t) = A(t) \cos (\omega t)$. Express your answer in terms of $m$, $k$, $\lambda$, $\gamma$, $\eta$, and $A$.</question>
+
+8.  <question>A laser emits pulses of light with a duration of $\tau$ and a central wavelength of $\lambda_0$. The pulse shape is described by $f(t) = \text{sinc}(t/\tau) = \frac{\sin(t/\tau)}{t/\tau}$. Find the spectral width $\Delta \lambda$ (defined as the full width at half maximum, FWHM) of the laser light. Express your answer in terms of $\lambda_0$, $c$, and $\tau$. (You may need to consult a table of Fourier transforms or approximate the sinc function's Fourier transform.)</question>
+
+9.  <question>Consider a one-dimensional chain of $N$ atoms, each of mass $m$, connected by springs with spring constant $K$. Assume periodic boundary conditions. Two adjacent atoms have masses $m' = (1 + \beta)m$, where $0 < \beta \ll 1$.  Find the approximate *splitting* $\Delta \omega$ between the two localized vibrational modes introduced by the defect (to first order in $\beta$), assuming both modes exist *outside* the band of allowed frequencies for the perfect chain. Express your answer in terms of $K$, $m$, and $\beta$.</question>
+
+10. <question>A non-relativistic electron (charge $-e$, mass $m$) is initially in a highly excited circular Rydberg state with a large principal quantum number $n$ around a proton. The electron makes a *quantum jump* from the state $n$ to the state $n-1$, emitting a photon. Calculate the total energy $\Delta E$ radiated away in this single quantum jump in terms of $m, e, \epsilon_0, \hbar,$ and $n$.</question>
+=== Final questions generated ===

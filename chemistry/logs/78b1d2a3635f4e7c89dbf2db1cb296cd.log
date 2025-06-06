@@ -1,0 +1,548 @@
+=== Turn 0: Author generates questions ===
+<question>  
+A phenylalanine-based hypervalent iodine macrocycle (HIM) adopts a supramolecular architecture by coordinating lithium ions with an average I–Li–I bond angle of 95°. Assuming an idealized planar square geometry with four iodine atoms coordinating one lithium ion, calculate the difference in lattice energy (ΔU, in kJ·mol⁻¹) between the HIM·Li complex and the corresponding HIM·Na complex if the ionic radii are 0.76 Å for Li⁺, 1.02 Å for Na⁺, and the dominant interaction energy is approximated by Coulombic attraction:
+
+$$
+U = -\frac{Z^2 e^2}{4\pi \varepsilon_0 r}
+$$
+
+where $Z = +1$ (metal ion charge), $e = 1.602 \times 10^{-19}$ C, $\varepsilon_0 = 8.854 \times 10^{-12}$ C²·J⁻¹·m⁻¹, and $r$ is the metal-iodine distance approximated as the sum of ionic radii ($r_{\mathrm{I}}=2.06$ Å fixed). Express your answer as $U_{\mathrm{Li}} - U_{\mathrm{Na}}$ in kJ·mol⁻¹ (rounded to two decimal places). (Avogadro’s number: $6.022 \times 10^{23}$ mol⁻¹.)  
+</question>
+
+<question>  
+A solution of a phenylalanine-based hypervalent iodine macrocycle (HIM) exhibits secondary bonding interactions via iodine–oxygen contacts. Given that the iodine–oxygen secondary bond length is 2.85 Å and that the estimated bond dissociation energy follows an inverse sixth power distance dependence from the Lennard-Jones potential, calculate the relative change in dissociation energy when the bond length decreases by 0.10 Å. Express the percentage increase in bond dissociation energy, assuming all other parameters remain constant.  
+</question>
+
+<question>  
+A phenylalanine-derived HIM selectively binds lithium ions over sodium ions due to size and bonding differences. If titration calorimetry yields an equilibrium constant $K_{\mathrm{Li}} = 1.8 \times 10^5$ M⁻¹ at 298 K for lithium binding, estimate the corresponding standard Gibbs free energy change ΔG° (in kJ·mol⁻¹). Then, based on an enthalpy change ΔH° of –45 kJ·mol⁻¹ measured under the same conditions, calculate the standard entropy change ΔS° in J·mol⁻¹·K⁻¹. Use $R = 8.314$ J·mol⁻¹·K⁻¹. Report ΔG° and ΔS° with two decimal places.  
+</question>
+
+<question>  
+Consider a supramolecular assembly of a phenylalanine-based hypervalent iodine macrocycle (HIM) with a lithium ion in solution, modeled as a coordination of four iodine atoms arranged tetrahedrally around Li⁺. If the Li–I distance is 2.60 Å and the HOMO–LUMO gap of the HIM decreases by 0.25 eV upon complexation, estimate the expected red shift (in nm) in the absorption maximum from 290 nm, assuming the energy change corresponds directly to a shift in the photon energy. Use $E = \frac{hc}{\lambda}$ where $h=6.626 \times 10^{-34}$ J·s and $c=3.00 \times 10^{8}$ m·s⁻¹. (1 eV = $1.602 \times 10^{-19}$ J.)  
+</question>
+
+<question>  
+In the solid-state architecture of a phenylalanine-based hypervalent iodine macrocycle (HIM) coordinating sodium ions, the average Na–I bond length is observed to be 3.10 Å with a deviation of ±0.05 Å due to thermal vibration. Using the harmonic oscillator approximation and assuming a force constant of 150 N·m⁻¹ for the Na–I bond, calculate the zero-point vibrational energy (ZPVE) in kJ·mol⁻¹. Use the reduced mass approximation for Na (23.0 u) and iodine (126.9 u), $1 u = 1.6605 \times 10^{-27}$ kg, Planck’s constant $h=6.626 \times 10^{-34}$ J·s, and frequency $\nu = \frac{1}{2\pi} \sqrt{\frac{k}{\mu}}$.  
+</question>
+=== Turn 0: Critic feedback ===
+**General Feedback**  
+All five questions show originality, involve multi-step calculations, require precise chemistry knowledge, and largely avoid redundancy or textbook repetition. Chemical nomenclature and units are generally accurate. The phrasing is concise and technical. However, based on your guidelines, some areas need refinement, notably regarding single-solution focus (avoiding multiple sub-steps that could each yield an answer), strict avoidance of multi-part queries, and clarity on what is required as a final answer.
+
+---
+
+---
+### **Question 1**
+
+**Feedback:**
+- **Strengths**: Excellent scenario modeling; advanced multi-step calculation; parameters and units are clear; unique context; equations and units formatted in LaTeX.
+- **Improvements**:
+  - The question implicitly expects calculation of $U_\mathrm{Li}$, $U_\mathrm{Na}$, and then their difference—three calculations effectively, not just one answer. This might conflict with guideline #10 (only one answer required).
+  - "Assuming an idealized planar square geometry..." — the bond angle mentioned (95°) is not used in any calculation (it distracts from the core calculation per guideline #4).
+  - The phrase "difference in lattice energy" is acceptable, but rephrase to make it explicit: "What is $U_\mathrm{Li}-U_\mathrm{Na}$ in kJ·mol⁻¹ (rounded to two decimal places)?"
+
+**Actionable Suggestions:**  
+- Remove reference to bond angles since they don't affect the Coulomb calculation.
+- Structure the question so ONLY the difference is calculated—not both energies and then the difference.
+- State all constants at the start to avoid overload.
+
+---
+
+### **Question 2**
+
+**Feedback:**
+- **Strengths**: Clear scenario; demands a quantitative calculation; consistent units; original context.
+- **Improvements**:
+  - The calculation requires two steps: compute new $E$ value and then percentage change. This is acceptable if combined as a single final answer (percentage increase only). If not, clarify only the percentage is required.
+  - Wording "express the percentage increase..." is precise, but could be more explicit: "Give your answer as a percentage increase to two decimal places."
+  - Avoid mentioning "all other parameters remain constant," as it's redundant—this is implied by the setup.
+
+**Actionable Suggestions:**  
+- Clearly specify that only the percentage increase is to be calculated and reported.
+- Consider restating for greater mathematical clarity: "Compute the percentage increase in dissociation energy when the bond length changes from 2.85 Å to 2.75 Å."
+
+---
+
+### **Question 3**
+
+**Feedback:**
+- **Strengths**: Realistic; involves chemical thermodynamics; variables, constants, and LaTeX formatting are correct.
+- **Improvements**:
+  - The problem has two required answers: $\Delta G^\circ$ and $\Delta S^\circ$, violating guideline #10.
+  - To conform, ask only for one (preferably $\Delta G^\circ$ or $\Delta S^\circ$, not both).
+  - The question is otherwise well-formulated.
+
+**Actionable Suggestions:**  
+- Focus the question on calculating only $\Delta S^\circ$ or $\Delta G^\circ$ (not both).
+- If desire both, split into two questions.
+
+---
+
+### **Question 4**
+
+**Feedback:**
+- **Strengths**: Superb integration of supramolecular, coordination, and photophysical chemistry; uses correct units and constants; the equation is well-formatted.
+- **Improvements**:
+  - Currently, two pieces of information are implicitly requested: (1) calculate the new wavelength and (2) the red shift (the difference). To fully comply, ask for ONLY the wavelength shift, *not* both the new wavelength and the difference.
+  - Phrase for single solution: e.g., "Calculate the red shift in nm, accurate to two decimal places."
+
+**Actionable Suggestions:**  
+- Specify that a single value (the red shift in nm) is the required answer.
+
+---
+
+### **Question 5**
+
+**Feedback:**
+- **Strengths**: Advanced application of quantum chemistry to the solid-state; correct use of reduced mass, harmonic oscillator physics; well-annotated variables/constants.
+- **Improvements**:
+  - The information about bond length deviation could be extraneous as only average length is used.
+  - The focus is solely on ZPVE, which is good—single solution.
+  - Consider clarifying *precisely* which values should be used for reduced mass; wording could be even more direct.
+
+**Actionable Suggestions:**  
+- Remove mention of bond length deviation if not relevant to the calculation.
+- Reiterate: "Calculate the zero-point vibrational energy (ZPVE) in kJ·mol⁻¹ (rounded to two decimal places)."
+
+---
+
+### **Summary Table**
+
+| Q# | Issue(s)                           | Complaint Type                  | Fix                                        |
+|----|-------------------------------------|----------------------------------|---------------------------------------------|
+| 1  | Multiple implicit calculations; extra info (bond angle) | Single-answer/Redundancy        | Focus question; remove unused info          |
+| 2  | Slight ambiguity on what to report  | Clarity/Conciseness             | Directly specify that *only* one percentage increase is required |
+| 3  | Two parts, violates guideline #10   | Single-answer                   | Ask for only $\Delta G^\circ$ or $\Delta S^\circ$ |
+| 4  | Potential for reporting two results | Single-answer                   | Ask only for wavelength shift               |
+| 5  | Minor extraneous info               | Redundancy                      | Remove bond length deviation if unused      |
+
+---
+
+## **General Actionable Guidelines for Improvement**
+
+1. **Single Solution**: Require only *one* numerical or chemical formula/compound name as the final answer per question.
+2. **Omit Redundant/Unused Information**: Don’t include data (e.g., bond angles, deviations) not used in the computation.
+3. **Precise, Unambiguous Requirements**: Clearly state *exactly* what is to be calculated and reported.
+4. **Equation and Variable Formatting**: Continue using $...$ for inline math and $$...$$ for displayed equations, following Markdown conventions.
+
+---
+
+**In summary:**  
+Your questions are advanced and well-constructed, but should be refined to require *only one final, unique answer per prompt*, and any extraneous or unused data should be omitted to avoid confusion or redundancy.
+=== Turn 1: Author refines questions ===
+<question>  
+A phenylalanine-based hypervalent iodine macrocycle (HIM) coordinates lithium and sodium ions via four iodine atoms arranged in an idealized planar square geometry. Using the Coulombic interaction energy formula
+
+$$
+U = -\frac{Z^2 e^2}{4\pi \varepsilon_0 r}
+$$
+
+where $Z = +1$, $e = 1.602 \times 10^{-19}$ C, $\varepsilon_0 = 8.854 \times 10^{-12}$ C²·J⁻¹·m⁻¹, and $r$ is the metal–iodine distance approximated as the sum of ionic radii ($r_{\mathrm{I}} = 2.06$ Å fixed), calculate the difference in interaction energy per mole between the HIM·Li and HIM·Na complexes expressed as:
+
+$$
+\Delta U = U_{\mathrm{Li}} - U_{\mathrm{Na}}
+$$
+
+in kJ·mol⁻¹, rounded to two decimal places. Use ionic radii of 0.76 Å for Li⁺ and 1.02 Å for Na⁺, and Avogadro’s number $6.022 \times 10^{23}$ mol⁻¹.  
+</question>
+
+<question>  
+A phenylalanine-based hypervalent iodine macrocycle exhibits iodine–oxygen secondary bonding with a bond length of 2.85 Å. Assuming the bond dissociation energy varies inversely with the sixth power of bond length, calculate the percentage increase in bond dissociation energy when the bond length decreases from 2.85 Å to 2.75 Å. Report your answer as a percentage increase rounded to two decimal places.  
+</question>
+
+<question>  
+A phenylalanine-derived HIM binds lithium ions with an equilibrium constant $K_{\mathrm{Li}} = 1.8 \times 10^5$ M⁻¹ at 298 K. Calculate the standard Gibbs free energy change, $\Delta G^\circ$, in kJ·mol⁻¹, rounded to two decimal places. Use $R = 8.314$ J·mol⁻¹·K⁻¹ and $T = 298$ K.  
+</question>
+
+<question>  
+Upon complexation of a phenylalanine-based hypervalent iodine macrocycle (HIM) with a lithium ion, the HOMO–LUMO gap decreases by 0.25 eV. If the original absorption maximum of HIM is at 290 nm, estimate the red shift in the absorption maximum wavelength (in nm) corresponding to this energy change. Use the relation $E = \frac{hc}{\lambda}$ with $h=6.626 \times 10^{-34}$ J·s, $c=3.00 \times 10^{8}$ m·s⁻¹, and $1$ eV $= 1.602 \times 10^{-19}$ J. Report the red shift (difference in nm) rounded to two decimal places.  
+</question>
+
+<question>  
+In the solid-state structure of a phenylalanine-based hypervalent iodine macrocycle coordinating sodium ions, the Na–I bond can be approximated as a harmonic oscillator with force constant $k = 150$ N·m⁻¹. Using reduced mass for Na (23.0 u) and I (126.9 u), where $1$ u $= 1.6605 \times 10^{-27}$ kg, calculate the zero-point vibrational energy (ZPVE) in kJ·mol⁻¹. Use Planck’s constant $h=6.626 \times 10^{-34}$ J·s and frequency
+
+$$
+\nu = \frac{1}{2\pi} \sqrt{\frac{k}{\mu}}
+$$
+
+where $\mu$ is the reduced mass. Report ZPVE rounded to two decimal places.  
+</question>
+=== Turn 1: Critic feedback ===
+Here is an expert critique of your questions against the provided guidelines:
+
+---
+
+### Question 1
+
+**Strengths:**
+- Models a chemistry scenario (hypervalent iodine macrocycle with Li⁺/Na⁺)—original, not a textbook example (Guidelines 1, 5).
+- Requires multi-step reasoning: ionic radius addition, unit conversion, and Coulombic calculation (Guideline 3).
+- Clear request for a single numerical value, with units (Guidelines 2, 6).
+- Uses rigorous and concise phrasing, and no colloquial language (Guidelines 7, 8).
+- Variables and equations are formatted in LaTeX/Markdown (Guideline 11).
+
+**Areas for Improvement:**
+- **Redundancy:** The mention that the geometry is 'idealized planar square' is extraneous since it doesn't affect the Coulombic energy calculation for a single bond; you only use distance, not geometry (Guideline 4).  
+  **Action:** Remove reference to geometry unless it's necessary for the calculation.
+- **Units:** The formula gives energy per interaction—since the question asks for energy "per mole", clarify that summing over 4 M–I interactions is or is not required (Guideline 9).  
+  **Action:** Explicitly specify if $\Delta U$ is for one M–I bond or sum over four bonds, for transparency and to enforce a single solution (Guideline 6, 10).
+
+---
+
+### Question 2
+
+**Strengths:**
+- Unique and non-textbook scenario (Guideline 5).
+- Asks for a single percentage increase—clear single solution (Guidelines 2, 6, 10).
+- Multi-step reasoning: inverse sixth power law, percentage math (Guideline 3).
+- No extraneous details (Guideline 4).
+- Equations in proper LaTeX/Markdown (Guideline 11).
+
+**Areas for Improvement:**
+- **Explicit Equation Reference:** The law “varies inversely with the sixth power” could be misread. A formula like $D \propto 1/r^6$ should be given explicitly for rigor.
+  **Action:** State $D \propto \frac{1}{r^6}$ directly.
+- **Units:** Short phrase on "bond dissociation energy" units (e.g., kJ·mol⁻¹), even if not required in the final percentage, for completeness.
+
+---
+
+### Question 3
+
+**Strengths:**
+- Realistic supramolecular chemistry example (Guideline 1).
+- Requires calculation via standard thermodynamics, not a rote calculation (Guideline 3).
+- Asks for a single numerical value (Guideline 6, 10).
+- All variables and constants provided in LaTeX (Guideline 11).
+- Units and rounding clearly specified (Guidelines 2, 9).
+
+**Areas for Improvement:**
+- **Explicit Equation:** Could improve by stating the standard equation used, for clarity and to reinforce best assessment practices.
+  **Action:** Add “using $\Delta G^\circ = -RT \ln K$”.
+
+---
+
+### Question 4
+
+**Strengths:**
+- Very original, connects spectroscopy with supramolecular binding (Guideline 5).
+- Explicit energy–wavelength equation and conversion constants; multi-step calculation (Guideline 3).
+- Requests a single numerical value, with units (Guidelines 2, 6, 10).
+- LaTeX/Markdown formatting is appropriate (Guideline 11).
+
+**Areas for Improvement:**
+- **Assumptions:** The problem assumes a direct correspondence between the HOMO–LUMO gap and $\lambda_{\max}$. This is often, but not always, correct and should be stated for clarity (Guideline 7).
+  **Action:** Briefly note that this approximation is being made.
+- **Units:** The phrase “difference in nm” is clear, but could state explicitly $|\lambda_\text{new} - \lambda_\text{old}|$ for absolute clarity (Guideline 9).
+
+---
+
+### Question 5
+
+**Strengths:**
+- Non-textbook, new scenario (Guideline 5).
+- Requires unit conversions, reduced mass, frequency, and energy calculations (Guideline 3).
+- Single numerical value requested (Guidelines 2, 6, 10).
+- Mathematical formatting is good (Guideline 11).
+
+**Areas for Improvement:**
+- **Explicit Equation:** For full rigor, include the formula for ZPVE being used: $E_\text{ZPVE} = \frac{1}{2} h\nu$.
+  **Action:** State explicitly in the problem text.
+- **Units:** Units are specified, but make explicit that all masses must be in kg for the formulas (Guideline 9).
+
+---
+
+## General Recommendations
+
+**Actionable Summary:**
+
+1. **Remove Extraneous Details:** Only describe features relevant to the solution.
+2. **Make All Assumptions and Laws Explicit:** Clearly state all proportionalities, formulae, and approximations.
+3. **Clarify Unit Conversions and Aggregation Steps:** Specify when to sum over multiple bonds/interactions, and ensure all units are coherent.
+4. **Explicit Single-Answer Focus:** Emphasize that only one value should result, and clarify precisely what that value represents.
+5. **State All Needed Equations Clearly:** Don't implicitly expect recall—write all equations used in the question body.
+
+---
+
+**Overall, these questions are very strong, original, and meet most guidelines. Small improvements in the explicitness of assumptions, equations, and units will make them exemplary assessment tools for advanced chemistry.**
+=== Turn 2: Author refines questions ===
+<question>  
+A phenylalanine-based hypervalent iodine macrocycle (HIM) coordinates lithium and sodium ions via four iodine atoms. Using the Coulombic interaction energy formula for a single metal–iodine interaction:  
+
+$$  
+U = -\frac{Z^2 e^2}{4\pi \varepsilon_0 r}  
+$$  
+
+where \(Z = +1\), \(e = 1.602 \times 10^{-19}\) C, \(\varepsilon_0 = 8.854 \times 10^{-12}\) C\(^2\cdot\)J\(^{-1}\cdot\)m\(^{-1}\), and \(r\) is the metal–iodine distance approximated as the sum of ionic radii (\(r_\mathrm{I} = 2.06\) Å fixed), calculate the difference in total interaction energy between the HIM·Li and HIM·Na complexes, assuming each metal ion interacts with four iodine atoms:  
+
+$$  
+\Delta U = U_{\mathrm{Li}} - U_{\mathrm{Na}}  
+$$  
+
+Express \(\Delta U\) in kJ·mol\(^{-1}\), rounded to two decimal places. Use ionic radii of 0.76 Å for Li\(^+\) and 1.02 Å for Na\(^+\), and Avogadro’s number \(6.022 \times 10^{23}\) mol\(^{-1}\).  
+</question>  
+
+<question>  
+A phenylalanine-based hypervalent iodine macrocycle exhibits iodine–oxygen secondary bonding with a bond length of 2.85 Å. Assuming the bond dissociation energy \(D\) is inversely proportional to the sixth power of bond length:  
+
+$$  
+D \propto \frac{1}{r^6}  
+$$  
+
+calculate the percentage increase in bond dissociation energy when the bond length decreases from 2.85 Å to 2.75 Å. Report your answer as a percentage increase rounded to two decimal places.  
+</question>  
+
+<question>  
+A phenylalanine-derived HIM binds lithium ions with an equilibrium constant \(K_{\mathrm{Li}} = 1.8 \times 10^5\) M\(^{-1}\) at 298 K. Using the relation  
+
+$$  
+\Delta G^\circ = -RT \ln K  
+$$  
+
+calculate the standard Gibbs free energy change, \(\Delta G^\circ\), in kJ·mol\(^{-1}\), rounded to two decimal places. Use \(R = 8.314\) J·mol\(^{-1}\)·K\(^{-1}\) and \(T = 298\) K.  
+</question>  
+
+<question>  
+Upon complexation of a phenylalanine-based hypervalent iodine macrocycle (HIM) with a lithium ion, the HOMO–LUMO gap decreases by 0.25 eV. Assuming the absorption maximum wavelength \(\lambda_{\max}\) corresponds approximately to the HOMO–LUMO gap via the relation  
+
+$$  
+E = \frac{hc}{\lambda}  
+$$  
+
+with Planck’s constant \(h = 6.626 \times 10^{-34}\) J·s, speed of light \(c = 3.00 \times 10^8\) m·s\(^{-1}\), and \(1\) eV \(= 1.602 \times 10^{-19}\) J, estimate the red shift in the absorption maximum wavelength (i.e., \(\lambda_{\text{new}} - \lambda_{\text{old}}\)) corresponding to this change. The original absorption maximum of HIM is at 290 nm. Report the red shift in nm rounded to two decimal places.  
+</question>  
+
+<question>  
+In the solid-state structure of a phenylalanine-based hypervalent iodine macrocycle coordinating sodium ions, the Na–I bond can be approximated as a harmonic oscillator with force constant \(k = 150\) N·m\(^{-1}\).  
+
+Given the reduced mass \(\mu\) calculated from Na (\(23.0\) u) and I (\(126.9\) u), where \(1\) u \(= 1.6605 \times 10^{-27}\) kg, and the vibrational frequency  
+
+$$  
+\nu = \frac{1}{2\pi} \sqrt{\frac{k}{\mu}}  
+$$  
+
+calculate the zero-point vibrational energy (ZPVE), using  
+
+$$  
+E_{\mathrm{ZPVE}} = \frac{1}{2} h \nu  
+$$  
+
+Express the result in kJ·mol\(^{-1}\), rounded to two decimal places. Use Planck’s constant \(h=6.626 \times 10^{-34}\) J·s.  
+</question>
+=== Turn 2: Critic feedback ===
+Here's a critique of each question according to your guidelines:
+
+---
+
+## Question 1 (Coulombic Interaction Energy for Li⁺ vs Na⁺ in HIM)
+
+**Strengths**
+- **Modeled Scenario:** Uses an advanced, non-textbook complex (hypervalent iodine macrocycle) with explicit real-world context.
+- **Single Numerical Output:** Requires calculation of a single value, $\Delta U$, with units.
+- **Forces Multistep Reasoning:** Students must compute $r$ for both complexes, the interaction for one contact, multiply by four, convert to per mole, then difference.
+- **Units and Constants:** All constants and units clearly specified.
+
+**Improvements**
+- **Equation Clarity:** Specify whether $Z$ refers to the formal charge of the metal ion; perhaps clarify that both Li⁺ and Na⁺ are $+1$.
+- **Redundancy:** The mention that the macrocycle is "phenylalanine-based" is chemically interesting but not necessary unless the phenylalanine moiety influences calculation; if not, omit.
+- **Unambiguous Language:** State explicitly that all metal–iodine contacts are equivalent.
+- **Rounding Instructions:** Good detail.
+- **Parameter Values:** Possibly add "Assume additivity of energies, i.e., no cooperativity between interactions" for extra rigor.
+
+---
+
+## Question 2 (I–O Bond; $D \propto \frac{1}{r^6}$)
+
+**Strengths**
+- **Nonstandard Relationship:** The $1/r^6$ scaling is uncommon, making for a unique scenario.
+- **Numerical Value Output:** Answer is a specific numerical percentage.
+- **Units and Description:** No confusion in units.
+- **Stepwise Reasoning:** Implied—student must compute the ratio, then percentage increase.
+
+**Improvements**
+- **Model/Physical Justification:** Briefly qualify that this $1/r^6$ is hypothetical/empirical (few secondary bonds follow this exactly).
+- **Nomenclature:** "Bond dissociation energy $D$" is standard.
+- **Redundancy:** The compound origin (phenylalanine-based macrocycle) is extraneous unless it impacts the calculation.
+- **Ambiguity:** None evident.
+- **Equation Formatting:** Excellent.
+- **Consistency:** Use $\%$ symbol explicitly for the final answer.
+
+---
+
+## Question 3 (Gibbs Free Energy from $K$)
+
+**Strengths**
+- **Direct Model/Calculation:** Standard equilibrium thermodynamics in context of a unique macrocycle.
+- **Single Answer:** Only one solution, in correct units.
+- **Multi-step Reasoning:** $K \rightarrow \Delta G^\circ$; converting units (J to kJ) included.
+- **Units Text:** Clearly stated.
+
+**Improvements**
+- **Originality:** The calculation is standard, only the context is unique. Could increase difficulty by, e.g., asking for $K$ given $\Delta G^\circ$ or involving competing equilibria.
+- **Redundancy:** Macrocycle origin not needed for calculation unless binding context or competition is involved.
+- **Clarity:** All constants well defined.
+
+---
+
+## Question 4 (HOMO–LUMO gap and UV–Vis Red Shift)
+
+**Strengths**
+- **Integrates Multiple Concepts:** Relates quantum, spectroscopy, and molecular orbital theory.
+- **Unique Context:** Macrocycle complexation effect on absorbance is original, not a textbook default.
+- **All Units and Conversions Provided.**
+- **Forces Multistep Reasoning:** Requires unit conversions, application of $E = hc/\lambda$, and finding the shift.
+
+**Improvements**
+- **Clarity:** State clearly that the new gap is old minus 0.25 eV.
+- **Ambiguity:** None.
+- **Redundancy:** Compound derivation not strictly needed for calculation.
+- **Equation Formatting:** Correct.
+- **Rounding/Answer Units:** Explicitly states requirement.
+
+---
+
+## Question 5 (Zero Point Vibrational Energy for Na–I Bond)
+
+**Strengths**
+- **Novelty:** Na–I bond in macrocycle as harmonic oscillator is fresh.
+- **Required Constants/Units Listed.**
+- **Single Answer, Units Required.**
+- **Multistep Reasoning:** Compute reduced mass, frequency, ZPVE, then scale to kJ/mol.
+
+**Improvements**
+- **Model Clarity:** Justify harmonic oscillator model for secondary/ionic bonds—realistic for context?
+- **Redundancy:** The context (solid-state structure, phenylalanine basis) is not needed.
+- **Ambiguity:** None apparent.
+- **Equation Formatting:** Good.
+
+---
+
+## OVERALL/GENERAL FEEDBACK
+
+### **Strengths**
+- All questions are unique, complex, and require multi-step calculations with clear, single solutions.
+- Proper use of LaTeX in Markdown.
+- Constants/values clearly specified.
+- Requests for rounding and units explicit.
+
+### **Areas to Improve**
+1. **Local Relevance of Context:**  
+   - The repeated reference to "phenylalanine-based hypervalent iodine macrocycle" is only contextually relevant for scenario modeling—unless the calculation requires properties unique to this structure, drop such details for brevity and focus unless building a linked assessment set.
+
+2. **Avoid Redundancy:**  
+   - Only background that materially influences the required calculation should be included. E.g., "phenylalanine-based" is likely extraneous.
+
+3. **Explicit Assumptions:**  
+   - Where physical realities deviate from the approximation being used (harmonic oscillator for ionic bonds, $U$ additivity, $1/r^6$ relationships), briefly note "Assume..." to avoid unintended ambiguity.
+
+4. **Clarity:**  
+   - For situations with potential multiple interpretations (bonding environment, number of interactions), state all values/assumptions directly.
+
+5. **Formatting Consistency:**  
+   - Ensure units are always grouped with answers (e.g., kJ·mol$^{-1}$), and numeric rounding instructions are explicit (as you do).
+
+6. **Equation Referencing:**  
+   - Use numbering for referenced equations, particularly if more than one is supplied.
+
+### **Sample Revision for Brevity and Precision**
+- Original: "A phenylalanine-based hypervalent iodine macrocycle (HIM) coordinates lithium and sodium ions via four iodine atoms."
+- Revised: "A macrocyclic ligand coordinates Li$^+$ and Na$^+$ via four iodine atoms."
+
+---
+
+**Summary Table**
+
+| Guideline               | Met? | Comments                                                                          |
+|-------------------------|------|-----------------------------------------------------------------------------------|
+| 1. Chemistry Scenario   | Yes  | Unique macrocycle context, though arguably wordy                                   |
+| 2. Numerical/Chemical   | Yes  | Single numerical values or explicit compounds                                     |
+| 3. Multi-step Reasoning | Yes  | All demand several sequential calculations                                       |
+| 4. No Redundancy        | Partial| Extraneous context details recur; can be trimmed                                 |
+| 5. Uniqueness           | Yes  | Not standard textbook questions                                                   |
+| 6. One Solution         | Yes  | Each is a single-answer task                                                      |
+| 7. Rigorous, Concise    | Partial| Slightly verbose, can remove irrelevant background                                |
+| 8. No Ambiguity         | Yes  | All variables and units defined; assumptions sometimes implicit                   |
+| 9. Unit/Nomenclature    | Yes  | Units consistent, nomenclature correct                                            |
+| 10. Single-part Answer  | Yes  | Each question demands only one solution                                           |
+| 11. Markdown/LaTeX      | Yes  | Questions are fully renderable in Markdown                                        |
+
+
+**Actionable Suggestions:**
+- Remove unnecessary chemical descriptors unless needed for the calculation.
+- State or clarify all physical/chemical assumptions (additivity, equivalency, model validity).
+- Briefly qualify non-standard formulae or relationships.
+- Where possible, condense scenarios to essential details for calculation.
+- For even further rigor, numerically number equations if multiple per problem.
+
+**Overall:**  
+Your questions are well-designed for advanced chemistry assessment, requiring meaningful and multi-step computation, clarity in expected answers, and suitable uniqueness. Minor trimming of context and explicit assumption documentation will make them even stronger and more aligned with your guidelines.
+=== Turn 3: Author refines questions ===
+<question>  
+A macrocyclic ligand coordinates Li\(^+\) and Na\(^+\) ions via four equivalent iodine atoms. The Coulombic interaction energy for a single metal–iodine contact is approximated as  
+
+\[
+U = -\frac{Z^2 e^2}{4\pi \varepsilon_0 r}
+\]
+
+where \(Z = +1\) (ionic charge), \(e = 1.602 \times 10^{-19}\) C, \(\varepsilon_0 = 8.854 \times 10^{-12}\) C\(^2\cdot\)J\(^{-1}\cdot\)m\(^{-1}\), and \(r\) is the metal–iodine distance taken as the sum of ionic radii (fixed \(r_\mathrm{I} = 2.06\) Å). Assume all four metal–iodine contacts are equivalent and additive, with no cooperativity.  
+
+Using ionic radii \(r_{\mathrm{Li}^+} = 0.76\) Å and \(r_{\mathrm{Na}^+} = 1.02\) Å, calculate the difference in total interaction energy between the ligand–Li\(^+\) and ligand–Na\(^+\) complexes:  
+
+\[
+\Delta U = U_{\mathrm{Li}} - U_{\mathrm{Na}}
+\]
+
+Express \(\Delta U\) in kJ·mol\(^{-1}\), rounded to two decimal places. Use Avogadro’s number \(6.022 \times 10^{23}\) mol\(^{-1}\).  
+</question>  
+
+<question>  
+Assuming the bond dissociation energy \(D\) of an iodine–oxygen secondary bond varies inversely with the sixth power of bond length \(r\), i.e.,  
+
+\[
+D \propto \frac{1}{r^{6}}
+\]
+
+calculate the percentage increase in bond dissociation energy when the bond length decreases from 2.85 Å to 2.75 Å. Express your answer as a percentage increase (\(\%\)) rounded to two decimal places.  
+
+*Note: This inverse sixth-power dependence is an empirical approximation for this secondary bonding interaction.*  
+</question>  
+
+<question>  
+A ligand binds lithium ions with an equilibrium constant \(K_{\mathrm{Li}} = 1.8 \times 10^{5}\) M\(^{-1}\) at 298 K. Using the relation  
+
+\[
+\Delta G^\circ = -RT \ln K
+\]
+
+where \(R = 8.314\) J·mol\(^{-1}\)·K\(^{-1}\) and \(T = 298\) K, calculate the standard Gibbs free energy change \(\Delta G^\circ\) in kJ·mol\(^{-1}\), rounded to two decimal places.  
+</question>  
+
+<question>  
+Upon binding a lithium ion, the HOMO–LUMO gap of a ligand decreases by 0.25 eV. The absorption maximum wavelength \(\lambda\) relates to the gap energy \(E\) by  
+
+\[
+E = \frac{hc}{\lambda}
+\]
+
+where \(h = 6.626 \times 10^{-34}\) J·s, \(c = 3.00 \times 10^{8}\) m·s\(^{-1}\), and 1 eV \(= 1.602 \times 10^{-19}\) J. The original absorption maximum is at 290 nm.  
+
+Estimate the red shift in the absorption maximum wavelength (i.e., \(\lambda_{\text{new}} - \lambda_{\text{old}}\)) in nm, rounded to two decimal places.  
+</question>  
+
+<question>  
+In a sodium–iodine bond modeled as a harmonic oscillator with force constant \(k = 150\) N·m\(^{-1}\), the reduced mass \(\mu\) is calculated from atomic masses Na (23.0 u) and I (126.9 u), where \(1\) u \(= 1.6605 \times 10^{-27}\) kg.  
+
+Given the vibrational frequency  
+
+\[
+\nu = \frac{1}{2\pi} \sqrt{\frac{k}{\mu}}
+\]
+
+and the zero-point vibrational energy (ZPVE)  
+
+\[
+E_{\mathrm{ZPVE}} = \frac{1}{2} h \nu,
+\]
+
+calculate \(E_{\mathrm{ZPVE}}\) in kJ·mol\(^{-1}\), rounded to two decimal places. Use Planck’s constant \(h=6.626 \times 10^{-34}\) J·s.  
+
+*Assume the harmonic oscillator model is valid for this bond.*  
+</question>
+=== Final questions generated ===

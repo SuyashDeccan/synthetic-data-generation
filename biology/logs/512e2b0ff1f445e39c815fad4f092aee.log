@@ -1,0 +1,214 @@
+=== Turn 0: Author generates questions ===
+Here are your biology questions:
+
+1.  <question>A researcher is studying PAX2 expression in endometrial tissue samples using immunohistochemistry. They have a tissue sample from a patient in the proliferative phase of the menstrual cycle, where the average PAX2 staining intensity is scored as 3+ (strong). The researcher then analyzes a sample from an endometrioid adenocarcinoma derived from the same patient and finds a significant decrease in PAX2 staining. If a decrease of one staining grade corresponds to a $40\%$ reduction in the amount of PAX2 protein, what percentage of the original PAX2 protein is present in the adenocarcinoma tissue if the staining intensity is scored as 1+?</question>
+
+2.  <question>In an immunohistochemistry experiment, a researcher uses a primary antibody that binds specifically to PAX2. The researcher then uses a secondary antibody conjugated to horseradish peroxidase (HRP). After adding the substrate 3,3'-diaminobenzidine (DAB), a brown precipitate forms, indicating the presence of PAX2. If the initial DAB concentration is $5 \mathrm{mM}$ and the HRP enzyme converts $2\%$ of the DAB to its colored product per minute, what is the concentration of the colored DAB product after 5 minutes in $\mathrm{mM}$?</question>
+
+3.  <question>A pathology lab is optimizing an immunohistochemistry protocol for PAX2. They are testing two different antigen retrieval methods: Method A, which increases PAX2 detection by $30\%$, and Method B, which increases PAX2 detection by $50\%$. If the baseline PAX2 detection level without any antigen retrieval is assigned a value of 1, and the lab wants to use a combination of the methods. They apply Method A, and then apply Method B to the same sample. What is the final PAX2 detection level achieved by the combined effect of both antigen retrieval methods?</question>
+
+4.  <question>Researchers are investigating the role of PAX2 in kidney development. They analyze kidney tissue sections from wild-type mice and PAX2 knockout mice using immunohistochemistry. In the wild-type mice, the average number of PAX2-positive cells per microscopic field is 50. In the PAX2 knockout mice, due to non-specific antibody binding, they observe an average of 5 cells per microscopic field that appear to be PAX2-positive. What is the actual number of PAX2-positive cells per microscopic field in the wild-type mice attributable to PAX2 expression, after accounting for the background signal in the knockout mice?</question>
+
+5.  <question>A research team is performing a study on PAX2 expression in different grades of endometrioid adenocarcinoma. They have a cohort of 100 patients, with tumor grades categorized as follows: Grade 1 (30 patients), Grade 2 (40 patients), and Grade 3 (30 patients). The average PAX2 staining intensity for each grade is: Grade 1 (2+), Grade 2 (1+), and Grade 3 (0+). They assign numerical values to the staining intensities: 0+ = 0, 1+ = 1, 2+ = 2, 3+ = 3. What is the weighted average PAX2 staining intensity across the entire patient cohort?</question>
+
+6.  <question>In a study examining the correlation between PAX2 expression and tumor size in renal cell carcinoma, researchers measure the tumor volume (V) using imaging techniques. They then perform immunohistochemistry to quantify PAX2 expression, expressed as the percentage (P) of tumor cells staining positive for PAX2. The relationship between V and P is described by the equation: $V = 100 - 2P$. If a tumor has a PAX2 expression level of $25\%$, what is the estimated volume (V) of the tumor in $\mathrm{cm}^3$?</question>
+=== Turn 0: Critic feedback ===
+Here's a critique of your biology questions, evaluated against your guidelines:
+
+---
+
+1.  <question>A researcher is studying PAX2 expression in endometrial tissue samples using immunohistochemistry. They have a tissue sample from a patient in the proliferative phase of the menstrual cycle, where the average PAX2 staining intensity is scored as 3+ (strong). The researcher then analyzes a sample from an endometrioid adenocarcinoma derived from the same patient and finds a significant decrease in PAX2 staining. If a decrease of one staining grade corresponds to a $40\%$ reduction in the amount of PAX2 protein, what percentage of the original PAX2 protein is present in the adenocarcinoma tissue if the staining intensity is scored as 1+?</question>
+
+    **Critique:**
+    *   **Guideline 1 (Model a biology Scenario):** Excellent. A relevant and realistic IHC scenario.
+    *   **Guideline 3 (Force Multi-Step Reasoning):** Good. Requires calculating successive reductions.
+    *   **Guideline 7 (Rigorous, concise phrasing):** **Needs improvement.** The phrase "a decrease of one staining grade corresponds to a $40\%$ reduction in the amount of PAX2 protein" is ambiguous. It can be interpreted as either:
+        1.  A $40\%$ reduction *relative to the previous grade's level* (multiplicative: 3+ -> 100%, 2+ -> 60% of 100%, 1+ -> 60% of 60%). This is the more common interpretation for successive percentage changes.
+        2.  A $40\%$ reduction *of the original amount* for each grade drop (additive: 3+ -> 100%, 2+ -> 60% of 100%, 1+ -> 20% of 100%).
+        This ambiguity leads to multiple possible correct answers depending on interpretation.
+
+    **Actionable Feedback:** Clarify the nature of the $40\%$ reduction. For example, "a decrease of one staining grade means the protein level is $60\%$ of the previous grade's level" (for multiplicative) or "each decrease of one staining grade corresponds to a $40\%$ reduction from the original PAX2 protein amount" (for additive).
+
+---
+
+2.  <question>In an immunohistochemistry experiment, a researcher uses a primary antibody that binds specifically to PAX2. The researcher then uses a secondary antibody conjugated to horseradish peroxidase (HRP). After adding the substrate 3,3'-diaminobenzidine (DAB), a brown precipitate forms, indicating the presence of PAX2. If the initial DAB concentration is $5 \mathrm{mM}$ and the HRP enzyme converts $2\%$ of the DAB to its colored product per minute, what is the concentration of the colored DAB product after 5 minutes in $\mathrm{mM}$?</question>
+
+    **Critique:**
+    *   **Guideline 1 (Model a biology Scenario):** Good. Accurately describes an IHC detection step.
+    *   **Guideline 3 (Force Multi-Step Reasoning):** Good. Requires calculating rate per minute and then total over time.
+    *   **Guideline 7 (Rigorous, concise phrasing):** **Needs improvement.** The phrase "HRP enzyme converts $2\%$ of the DAB to its colored product per minute" is ambiguous. It can be interpreted as:
+        1.  $2\%$ of the *initial* DAB concentration is converted each minute (linear rate).
+        2.  $2\%$ of the *remaining* DAB concentration is converted each minute (exponential decay).
+        For a simple problem, linear is usually assumed, but the ambiguity should be removed.
+
+    **Actionable Feedback:** Specify whether the conversion rate is based on the initial concentration or the remaining concentration. For example, "HRP enzyme converts a constant $2\%$ of the initial DAB concentration to its colored product per minute".
+
+---
+
+3.  <question>A pathology lab is optimizing an immunohistochemistry protocol for PAX2. They are testing two different antigen retrieval methods: Method A, which increases PAX2 detection by $30\%$, and Method B, which increases PAX2 detection by $50\%$. If the baseline PAX2 detection level without any antigen retrieval is assigned a value of 1, and the lab wants to use a combination of the methods. They apply Method A, and then apply Method B to the same sample. What is the final PAX2 detection level achieved by the combined effect of both antigen retrieval methods?</question>
+
+    **Critique:**
+    *   **Guideline 1 (Model a biology Scenario):** Excellent. Represents a common lab optimization scenario.
+    *   **Guideline 3 (Force Multi-Step Reasoning):** Excellent. Clearly requires sequential, multiplicative calculation.
+    *   **Guideline 7 (Rigorous, concise phrasing):** Excellent. The phrasing "apply Method A, and then apply Method B to the same sample" clearly implies a multiplicative, sequential effect.
+
+    **Actionable Feedback:** No specific improvements needed. This question is well-designed.
+
+---
+
+4.  <question>Researchers are investigating the role of PAX2 in kidney development. They analyze kidney tissue sections from wild-type mice and PAX2 knockout mice using immunohistochemistry. In the wild-type mice, the average number of PAX2-positive cells per microscopic field is 50. In the PAX2 knockout mice, due to non-specific antibody binding, they observe an average of 5 cells per microscopic field that appear to be PAX2-positive. What is the actual number of PAX2-positive cells per microscopic field in the wild-type mice attributable to PAX2 expression, after accounting for the background signal in the knockout mice?</question>
+
+    **Critique:**
+    *   **Guideline 1 (Model a biology Scenario):** Excellent. A very realistic and conceptually important scenario (background subtraction).
+    *   **Guideline 3 (Force Multi-Step Reasoning):** Good. Requires identifying the background and subtracting it, which is a key analytical step in biological experiments.
+    *   **Guideline 7 (Rigorous, concise phrasing):** Excellent. Clear and unambiguous.
+
+    **Actionable Feedback:** No specific improvements needed. This question is well-designed.
+
+---
+
+5.  <question>A research team is performing a study on PAX2 expression in different grades of endometrioid adenocarcinoma. They have a cohort of 100 patients, with tumor grades categorized as follows: Grade 1 (30 patients), Grade 2 (40 patients), and Grade 3 (30 patients). The average PAX2 staining intensity for each grade is: Grade 1 (2+), Grade 2 (1+), and Grade 3 (0+). They assign numerical values to the staining intensities: 0+ = 0, 1+ = 1, 2+ = 2, 3+ = 3. What is the weighted average PAX2 staining intensity across the entire patient cohort?</question>
+
+    **Critique:**
+    *   **Guideline 1 (Model a biology Scenario):** Excellent. A realistic patient cohort study scenario.
+    *   **Guideline 3 (Force Multi-Step Reasoning):** Excellent. Requires calculating a weighted average, which involves multiple arithmetic steps.
+    *   **Guideline 7 (Rigorous, concise phrasing):** Excellent. Clear and unambiguous.
+
+    **Actionable Feedback:** No specific improvements needed. This question is well-designed.
+
+---
+
+6.  <question>In a study examining the correlation between PAX2 expression and tumor size in renal cell carcinoma, researchers measure the tumor volume (V) using imaging techniques. They then perform immunohistochemistry to quantify PAX2 expression, expressed as the percentage (P) of tumor cells staining positive for PAX2. The relationship between V and P is described by the equation: $V = 100 - 2P$. If a tumor has a PAX2 expression level of $25\%$, what is the estimated volume (V) of the tumor in $\mathrm{cm}^3$?</question>
+
+    **Critique:**
+    *   **Guideline 1 (Model a biology Scenario):** Good. Realistic scenario involving correlation.
+    *   **Guideline 3 (Force Multi-Step Reasoning):** **Needs improvement.** While it involves numbers, the reasoning is a direct substitution into a given formula. This is more of a mathematical "plug and play" problem than a multi-step *biological* reasoning problem. It doesn't require connecting multiple biological principles or calculations from raw biological data.
+    *   **Guideline 5 (Be Unique):** While the context is unique, the problem type (solving a given equation) is standard and common.
+    *   **Guideline 7 (Rigorous, concise phrasing):** Good.
+
+    **Actionable Feedback:** To enhance multi-step *biological* reasoning, consider adding a step where the student needs to infer or calculate P from other biological data, or derive the relationship from a trend, rather than being given the direct equation. For example, provide a small data set and ask them to use it to predict V, or provide information on how P changes under certain conditions and then ask for the volume.
+=== Turn 1: Author refines questions ===
+Here's an improved set of biology questions based on the feedback provided, addressing the identified ambiguities and weaknesses:
+
+1.  <question>A researcher is studying PAX2 expression in endometrial tissue samples using immunohistochemistry. They have a tissue sample from a patient in the proliferative phase of the menstrual cycle, where the average PAX2 staining intensity is scored as 3+ (strong). The researcher then analyzes a sample from an endometrioid adenocarcinoma derived from the same patient and finds a significant decrease in PAX2 staining. If a decrease of one staining grade means the PAX2 protein level is 60% of the level of the *previous* staining grade (e.g., 2+ is 60% of 3+), what percentage of the original PAX2 protein (at 3+) is present in the adenocarcinoma tissue if the staining intensity is scored as 1+?</question>
+
+2.  <question>In an immunohistochemistry experiment, a researcher uses a primary antibody that binds specifically to PAX2. The researcher then uses a secondary antibody conjugated to horseradish peroxidase (HRP). After adding the substrate 3,3'-diaminobenzidine (DAB), a brown precipitate forms, indicating the presence of PAX2. If the initial DAB concentration is $5 \mathrm{mM}$ and the HRP enzyme converts a *constant* $2\%$ of the *initial* DAB concentration to its colored product per minute, what is the concentration of the colored DAB product after 5 minutes in $\mathrm{mM}$?</question>
+
+3.  <question>A pathology lab is optimizing an immunohistochemistry protocol for PAX2. They are testing two different antigen retrieval methods: Method A, which increases PAX2 detection by $30\%$, and Method B, which increases PAX2 detection by $50\%$. If the baseline PAX2 detection level without any antigen retrieval is assigned a value of 1, and the lab wants to use a combination of the methods. They apply Method A, and then apply Method B to the same sample. What is the final PAX2 detection level achieved by the combined effect of both antigen retrieval methods?</question>
+
+4.  <question>Researchers are investigating the role of PAX2 in kidney development. They analyze kidney tissue sections from wild-type mice and PAX2 knockout mice using immunohistochemistry. In the wild-type mice, the average number of PAX2-positive cells per microscopic field is 50. In the PAX2 knockout mice, due to non-specific antibody binding, they observe an average of 5 cells per microscopic field that appear to be PAX2-positive. What is the actual number of PAX2-positive cells per microscopic field in the wild-type mice attributable to PAX2 expression, after accounting for the background signal in the knockout mice?</question>
+
+5.  <question>A research team is performing a study on PAX2 expression in different grades of endometrioid adenocarcinoma. They have a cohort of 100 patients, with tumor grades categorized as follows: Grade 1 (30 patients), Grade 2 (40 patients), and Grade 3 (30 patients). The average PAX2 staining intensity for each grade is: Grade 1 (2+), Grade 2 (1+), and Grade 3 (0+). They assign numerical values to the staining intensities: 0+ = 0, 1+ = 1, 2+ = 2, 3+ = 3. What is the weighted average PAX2 staining intensity across the entire patient cohort?</question>
+
+6.  <question>In a study examining the correlation between PAX2 expression and tumor size in renal cell carcinoma, researchers observe the following data in a pilot study. Tumors with 10% PAX2 positive cells have an average volume of 80 cm<sup>3</sup>, and tumors with 20% PAX2 positive cells have an average volume of 60 cm<sup>3</sup>. Assuming a linear relationship between tumor volume (V) and the percentage (P) of tumor cells staining positive for PAX2, what is the estimated volume (V) of a tumor in cm<sup>3</sup>, if immunohistochemistry reveals that 25% of its cells stain positive for PAX2?</question>
+=== Turn 1: Critic feedback ===
+Here's a critique of each question against your guidelines:
+
+**Overall Assessment:** This is an excellent set of questions. They are well-structured, biologically relevant, and effectively test multi-step reasoning. The improvements from previous iterations are evident, particularly in the clarity regarding percentage calculations and sequential effects.
+
+---
+
+**Question 1:**
+<question>A researcher is studying PAX2 expression in endometrial tissue samples using immunohistochemistry. They have a tissue sample from a patient in the proliferative phase of the menstrual cycle, where the average PAX2 staining intensity is scored as 3+ (strong). The researcher then analyzes a sample from an endometrioid adenocarcinoma derived from the same patient and finds a significant decrease in PAX2 staining. If a decrease of one staining grade means the PAX2 protein level is 60% of the level of the *previous* staining grade (e.g., 2+ is 60% of 3+), what percentage of the original PAX2 protein (at 3+) is present in the adenocarcinoma tissue if the staining intensity is scored as 1+?</question>
+*   **Critique:** Excellent.
+    *   **1. Model a biology Scenario:** Yes, realistic IHC scenario.
+    *   **2. Expect answers of single word answer, numerical answer:** Yes, numerical percentage.
+    *   **3. Force Multi-Step Reasoning:** Yes, requires sequential percentage calculation.
+    *   **4. Avoid How based questions:** Yes.
+    *   **5. Be Unique:** Yes, specific values and scenario.
+    *   **6. Single Solution:** Yes, "60% of the *previous* staining grade" makes it unambiguous.
+    *   **7. Use rigorous, concise phrasing:** Yes.
+    *   **9. Units must be consistent:** Yes, percentage.
+    *   **10. Questions must not be multipart:** Yes.
+
+---
+
+**Question 2:**
+<question>In an immunohistochemistry experiment, a researcher uses a primary antibody that binds specifically to PAX2. The researcher then uses a secondary antibody conjugated to horseradish peroxidase (HRP). After adding the substrate 3,3'-diaminobenzidine (DAB), a brown precipitate forms, indicating the presence of PAX2. If the initial DAB concentration is $5 \mathrm{mM}$ and the HRP enzyme converts a *constant* $2\%$ of the *initial* DAB concentration to its colored product per minute, what is the concentration of the colored DAB product after 5 minutes in $\mathrm{mM}$?</question>
+*   **Critique:** Excellent.
+    *   **1. Model a biology Scenario:** Yes, accurate IHC detection step.
+    *   **2. Expect answers of single word answer, numerical answer:** Yes, numerical concentration.
+    *   **3. Force Multi-Step Reasoning:** Yes, calculates amount per minute, then total over time.
+    *   **4. Avoid How based questions:** Yes.
+    *   **5. Be Unique:** Yes, specific numbers and "constant 2% of initial DAB concentration" makes it unique.
+    *   **6. Single Solution:** Yes, explicitly stating "constant 2% of the *initial* DAB concentration" prevents ambiguity.
+    *   **7. Use rigorous, concise phrasing:** Yes.
+    *   **9. Units must be consistent:** Yes, mM.
+    *   **10. Questions must not be multipart:** Yes.
+
+---
+
+**Question 3:**
+<question>A pathology lab is optimizing an immunohistochemistry protocol for PAX2. They are testing two different antigen retrieval methods: Method A, which increases PAX2 detection by $30\%$, and Method B, which increases PAX2 detection by $50\%$. If the baseline PAX2 detection level without any antigen retrieval is assigned a value of 1, and the lab wants to use a combination of the methods. They apply Method A, and then apply Method B to the same sample. What is the final PAX2 detection level achieved by the combined effect of both antigen retrieval methods?</question>
+*   **Critique:** Excellent.
+    *   **1. Model a biology Scenario:** Yes, realistic protocol optimization.
+    *   **2. Expect answers of single word answer, numerical answer:** Yes, numerical value.
+    *   **3. Force Multi-Step Reasoning:** Yes, sequential percentage increases.
+    *   **4. Avoid How based questions:** Yes.
+    *   **5. Be Unique:** Yes, specific methods and sequential application.
+    *   **6. Single Solution:** Yes, "apply Method A, and then apply Method B" clearly indicates sequential/multiplicative effect.
+    *   **7. Use rigorous, concise phrasing:** Yes.
+    *   **9. Units must be consistent:** Yes, unitless level.
+    *   **10. Questions must not be multipart:** Yes.
+
+---
+
+**Question 4:**
+<question>Researchers are investigating the role of PAX2 in kidney development. They analyze kidney tissue sections from wild-type mice and PAX2 knockout mice using immunohistochemistry. In the wild-type mice, the average number of PAX2-positive cells per microscopic field is 50. In the PAX2 knockout mice, due to non-specific antibody binding, they observe an average of 5 cells per microscopic field that appear to be PAX2-positive. What is the actual number of PAX2-positive cells per microscopic field in the wild-type mice attributable to PAX2 expression, after accounting for the background signal in the knockout mice?</question>
+*   **Critique:** Excellent.
+    *   **1. Model a biology Scenario:** Yes, fundamental concept of experimental controls and background subtraction.
+    *   **2. Expect answers of single word answer, numerical answer:** Yes, numerical count.
+    *   **3. Force Multi-Step Reasoning:** Yes, identifies specific signal, background, and then subtraction.
+    *   **4. Avoid How based questions:** Yes.
+    *   **5. Be Unique:** Yes, while concept is common, specific numbers and context make it unique.
+    *   **6. Single Solution:** Yes.
+    *   **7. Use rigorous, concise phrasing:** Yes, "attributable to PAX2 expression, after accounting for background signal" is very clear.
+    *   **9. Units must be consistent:** Yes, cells per microscopic field.
+    *   **10. Questions must not be multipart:** Yes.
+
+---
+
+**Question 5:**
+<question>A research team is performing a study on PAX2 expression in different grades of endometrioid adenocarcinoma. They have a cohort of 100 patients, with tumor grades categorized as follows: Grade 1 (30 patients), Grade 2 (40 patients), and Grade 3 (30 patients). The average PAX2 staining intensity for each grade is: Grade 1 (2+), Grade 2 (1+), and Grade 3 (0+). They assign numerical values to the staining intensities: 0+ = 0, 1+ = 1, 2+ = 2, 3+ = 3. What is the weighted average PAX2 staining intensity across the entire patient cohort?</question>
+*   **Critique:** Excellent.
+    *   **1. Model a biology Scenario:** Yes, realistic clinical research and data analysis.
+    *   **2. Expect answers of single word answer, numerical answer:** Yes, numerical value.
+    *   **3. Force Multi-Step Reasoning:** Yes, requires mapping scores to numbers, then calculating weighted average.
+    *   **4. Avoid How based questions:** Yes.
+    *   **5. Be Unique:** Yes, specific patient numbers and grade-intensity correlation.
+    *   **6. Single Solution:** Yes.
+    *   **7. Use rigorous, concise phrasing:** Yes.
+    *   **9. Units must be consistent:** Yes, unitless average intensity score.
+    *   **10. Questions must not be multipart:** Yes.
+
+---
+
+**Question 6:**
+<question>In a study examining the correlation between PAX2 expression and tumor size in renal cell carcinoma, researchers observe the following data in a pilot study. Tumors with 10% PAX2 positive cells have an average volume of 80 cm<sup>3</sup>, and tumors with 20% PAX2 positive cells have an average volume of 60 cm<sup>3</sup>. Assuming a linear relationship between tumor volume (V) and the percentage (P) of tumor cells staining positive for PAX2, what is the estimated volume (V) of a tumor in cm<sup>3</sup>, if immunohistochemistry reveals that 25% of its cells stain positive for PAX2?</question>
+*   **Critique:** Excellent.
+    *   **1. Model a biology Scenario:** Yes, relevant correlation study in cancer biology.
+    *   **2. Expect answers of single word answer, numerical answer:** Yes, numerical volume.
+    *   **3. Force Multi-Step Reasoning:** Yes, requires deriving a linear equation and then solving for a new point.
+    *   **4. Avoid How based questions:** Yes.
+    *   **5. Be Unique:** Yes, specific numbers and scenario.
+    *   **6. Single Solution:** Yes, "Assuming a linear relationship" ensures a single solution.
+    *   **7. Use rigorous, concise phrasing:** Yes.
+    *   **9. Units must be consistent:** Yes, cm<sup>3</sup>.
+    *   **10. Questions must not be multipart:** Yes.
+
+---
+=== Turn 2: Author refines questions ===
+```python
+improved_questions = [
+    "<question>A researcher is studying PAX2 expression in endometrial tissue samples using immunohistochemistry. They have a tissue sample from a patient in the proliferative phase of the menstrual cycle, where the average PAX2 staining intensity is scored as 3+ (strong). The researcher then analyzes a sample from an endometrioid adenocarcinoma derived from the same patient and finds a significant decrease in PAX2 staining. If a decrease of one staining grade means the PAX2 protein level is 60% of the level of the *previous* staining grade (e.g., 2+ is 60% of 3+), what percentage of the original PAX2 protein (at 3+) is present in the adenocarcinoma tissue if the staining intensity is scored as 1+?</question>",
+    "<question>In an immunohistochemistry experiment, a researcher uses a primary antibody that binds specifically to PAX2. The researcher then uses a secondary antibody conjugated to horseradish peroxidase (HRP). After adding the substrate 3,3'-diaminobenzidine (DAB), a brown precipitate forms, indicating the presence of PAX2. If the initial DAB concentration is $5 \mathrm{mM}$ and the HRP enzyme converts a *constant* $2\%$ of the *initial* DAB concentration to its colored product per minute, what is the concentration of the colored DAB product after 5 minutes in $\mathrm{mM}$?</question>",
+    "<question>A pathology lab is optimizing an immunohistochemistry protocol for PAX2. They are testing two different antigen retrieval methods: Method A, which increases PAX2 detection by $30\%$, and Method B, which increases PAX2 detection by $50\%$. If the baseline PAX2 detection level without any antigen retrieval is assigned a value of 1, and the lab wants to use a combination of the methods. They apply Method A, and then apply Method B to the same sample. What is the final PAX2 detection level achieved by the combined effect of both antigen retrieval methods?</question>",
+    "<question>Researchers are investigating the role of PAX2 in kidney development. They analyze kidney tissue sections from wild-type mice and PAX2 knockout mice using immunohistochemistry. In the wild-type mice, the average number of PAX2-positive cells per microscopic field is 50. In the PAX2 knockout mice, due to non-specific antibody binding, they observe an average of 5 cells per microscopic field that appear to be PAX2-positive. What is the actual number of PAX2-positive cells per microscopic field in the wild-type mice attributable to PAX2 expression, after accounting for the background signal in the knockout mice?</question>",
+    "<question>A research team is performing a study on PAX2 expression in different grades of endometrioid adenocarcinoma. They have a cohort of 100 patients, with tumor grades categorized as follows: Grade 1 (30 patients), Grade 2 (40 patients), and Grade 3 (30 patients). The average PAX2 staining intensity for each grade is: Grade 1 (2+), Grade 2 (1+), and Grade 3 (0+). They assign numerical values to the staining intensities: 0+ = 0, 1+ = 1, 2+ = 2, 3+ = 3. What is the weighted average PAX2 staining intensity across the entire patient cohort?</question>",
+    "<question>In a study examining the correlation between PAX2 expression and tumor size in renal cell carcinoma, researchers observe the following data in a pilot study. Tumors with 10% PAX2 positive cells have an average volume of 80 cm<sup>3</sup>, and tumors with 20% PAX2 positive cells have an average volume of 60 cm<sup>3</sup>. Assuming a linear relationship between tumor volume (V) and the percentage (P) of tumor cells staining positive for PAX2, what is the estimated volume (V) of a tumor in cm<sup>3</sup>, if immunohistochemistry reveals that 25% of its cells stain positive for PAX2?</question>"
+]
+
+for i, question in enumerate(improved_questions):
+    print(f"{i+1}. {question}")
+```
+=== Final questions generated ===

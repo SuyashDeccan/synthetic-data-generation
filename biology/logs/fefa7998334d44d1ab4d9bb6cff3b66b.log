@@ -1,0 +1,192 @@
+=== Turn 0: Author generates questions ===
+Here are some undergraduate-level biology questions based on the provided topics, key concepts, and guidelines:
+
+1.  <question>A prospective, single-blinded clinical study is conducted to compare two different methods of Maxillomandibular Fixation (MMF) for jaw fracture management. 50 patients are enrolled in each group. Group A receives MMF using arch bars and intermaxillary elastics, while Group B undergoes MMF with IMF screws. After 1 week, the mean Gingival Index (GI) score in Group A is 1.8 and in Group B is 1.2. The GI scale ranges from 0 to 3, with 0 indicating healthy gingiva and 3 indicating severe inflammation. Assuming a linear relationship between GI score and the concentration of inflammatory mediator IL-6 in the gingival crevicular fluid, and that a GI score of 0 corresponds to an IL-6 concentration of $5\,\mathrm{pg/mL}$ and a GI score of 3 corresponds to an IL-6 concentration of $50\,\mathrm{pg/mL}$, calculate the difference in the mean IL-6 concentration (in $\mathrm{pg/mL}$) between Group A and Group B after 1 week.</question>
+
+2.  <question>Following MMF, a patient develops a localized infection around an IMF screw site. Culture results identify *Streptococcus mutans* with a density of $10^6$ colony-forming units (CFU) per mL. The minimum inhibitory concentration (MIC) of chlorhexidine for this particular *S. mutans* strain is $2\,\mathrm{\mu g/mL}$. The patient is instructed to use a chlorhexidine mouthwash containing $0.12\%$ chlorhexidine. Assuming the patient uses $15\,\mathrm{mL}$ of mouthwash and retains it in the oral cavity for 1 minute, and considering a first-order decay of chlorhexidine concentration in saliva with a half-life ($t_{1/2}$) of 10 minutes due to salivary flow and binding, calculate the chlorhexidine concentration (in $\mathrm{\mu g/mL}$) in the oral cavity immediately after rinsing, assuming the concentration decays from time of rinsing itself.</question>
+
+3.  <question>A clinical trial evaluates the impact of oral hygiene instructions on gingival inflammation following MMF. 30 patients undergoing MMF are randomly assigned to either Group 1 (standard oral hygiene instructions) or Group 2 (intensive oral hygiene instructions and professional cleaning). The plaque index (PI) is measured at baseline and at 7 days post-MMF. In Group 1, the mean PI increases from 0.8 to 1.5. In Group 2, the mean PI increases from 0.7 to 0.9. The PI ranges from 0 to 5, with 0 representing no plaque and 5 representing heavy plaque coverage. Each unit increase in PI corresponds to a bacterial load increase of $2 \times 10^5$ CFU. Calculate the difference in the change in bacterial load (in CFU) between Group 1 and Group 2 after 7 days.</question>
+
+4.  <question>A retrospective study analyzes the incidence of soft tissue injuries associated with different MMF methods. Among 200 patients undergoing MMF with arch bars, 15 experience lip lacerations. Among 150 patients undergoing MMF with IMF screws, 5 experience buccal mucosa perforations. Assuming lacerations have a repair cost of $50 per instance, and perforations have a repair cost of $80 per instance, calculate the difference in mean soft tissue injury repair cost per patient (in $) between the arch bar group and the IMF screw group.</question>
+
+5.  <question>Consider a patient undergoing MMF with intermaxillary elastics. The elastics exert a constant force of $1\,\mathrm{N}$ across the dental arch. The average width of the interdental space is $2\,\mathrm{mm}$, and the elastics compress this space by $0.5\,\mathrm{mm}$. Assuming the periodontal ligament (PDL) behaves as a linear spring, and that the force exerted by the elastics is solely resisted by the PDL of the compressed teeth, calculate the effective spring constant (in $\mathrm{N/mm}$) of the PDL in this region.</question>
+=== Turn 0: Critic feedback ===
+Here's a critique of the provided questions, focusing on conciseness and actionable feedback for improvement:
+
+---
+
+**Overall Strengths:**
+*   **Strong Biology Scenarios:** All questions successfully model real-world clinical or biological scenarios.
+*   **Quantitative Focus:** They consistently require numerical answers, moving beyond simple recall.
+*   **Adherence to Guidelines:** Most guidelines (single solution, no "how-based," unique scenarios, consistent units) are well-met.
+*   **Good LaTeX Formatting:** The LaTeX syntax for units and symbols is correctly applied.
+
+---
+
+### **Question 1 Critique:**
+
+<question>A prospective, single-blinded clinical study is conducted to compare two different methods of Maxillomandibular Fixation (MMF) for jaw fracture management. 50 patients are enrolled in each group. Group A receives MMF using arch bars and intermaxillary elastics, while Group B undergoes MMF with IMF screws. After 1 week, the mean Gingival Index (GI) score in Group A is 1.8 and in Group B is 1.2. The GI scale ranges from 0 to 3, with 0 indicating healthy gingiva and 3 indicating severe inflammation. Assuming a linear relationship between GI score and the concentration of inflammatory mediator IL-6 in the gingival crevicular fluid, and that a GI score of 0 corresponds to an IL-6 concentration of $5\,\mathrm{pg/mL}$ and a GI score of 3 corresponds to an IL-6 concentration of $50\,\mathrm{pg/mL}$, calculate the difference in the mean IL-6 concentration (in $\mathrm{pg/mL}$) between Group A and Group B after 1 week.</question>
+
+*   **Critique:** Excellent question. It effectively combines a clinical scenario with quantitative reasoning, requiring students to derive a linear relationship and apply it to calculate new biological values, then find a difference. It clearly meets all specified guidelines.
+*   **Actionable Feedback:** No significant improvements needed.
+
+---
+
+### **Question 2 Critique:**
+
+<question>Following MMF, a patient develops a localized infection around an IMF screw site. Culture results identify *Streptococcus mutans* with a density of $10^6$ colony-forming units (CFU) per mL. The minimum inhibitory concentration (MIC) of chlorhexidine for this particular *S. mutans* strain is $2\,\mathrm{\mu g/mL}$. The patient is instructed to use a chlorhexidine mouthwash containing $0.12\%$ chlorhexidine. Assuming the patient uses $15\,\mathrm{mL}$ of mouthwash and retains it in the oral cavity for 1 minute, and considering a first-order decay of chlorhexidine concentration in saliva with a half-life ($t_{1/2}$) of 10 minutes due to salivary flow and binding, calculate the chlorhexidine concentration (in $\mathrm{\mu g/mL}$) in the oral cavity immediately after rinsing, assuming the concentration decays from time of rinsing itself.</question>
+
+*   **Critique:** Conceptually strong, integrating pharmacokinetics with an infection scenario. However, the phrasing creates ambiguity regarding the exact time point for the final calculation. "immediately after rinsing" usually implies t=0, but the inclusion of "1 minute retention" and "decay from time of rinsing itself" suggests a calculation *after* that minute. This violates the "Single Solution" guideline due to potential misinterpretation. The percentage concentration (0.12%) should also specify if it's w/v or v/v for clarity.
+*   **Actionable Feedback:**
+    1.  **Clarify Time Point:** Rephrase the target quantity to explicitly state the time point. For example: "calculate the chlorhexidine concentration (in $\mathrm{\mu g/mL}$) in the oral cavity *after 1 minute of retention*."
+    2.  **Specify % Basis:** State "0.12% (w/v)" or "0.12 g/100 mL" for the chlorhexidine concentration for precision.
+
+---
+
+### **Question 3 Critique:**
+
+<question>A clinical trial evaluates the impact of oral hygiene instructions on gingival inflammation following MMF. 30 patients undergoing MMF are randomly assigned to either Group 1 (standard oral hygiene instructions) or Group 2 (intensive oral hygiene instructions and professional cleaning). The plaque index (PI) is measured at baseline and at 7 days post-MMF. In Group 1, the mean PI increases from 0.8 to 1.5. In Group 2, the mean PI increases from 0.7 to 0.9. The PI ranges from 0 to 5, with 0 representing no plaque and 5 representing heavy plaque coverage. Each unit increase in PI corresponds to a bacterial load increase of $2 \times 10^5$ CFU. Calculate the difference in the change in bacterial load (in CFU) between Group 1 and Group 2 after 7 days.</question>
+
+*   **Critique:** Excellent question. It effectively links a clinical index (Plaque Index) to a biological quantity (bacterial load) and requires multi-step comparative calculations. It models a plausible clinical trial scenario well and adheres to all guidelines.
+*   **Actionable Feedback:** No significant improvements needed.
+
+---
+
+### **Question 4 Critique:**
+
+<question>A retrospective study analyzes the incidence of soft tissue injuries associated with different MMF methods. Among 200 patients undergoing MMF with arch bars, 15 experience lip lacerations. Among 150 patients undergoing MMF with IMF screws, 5 experience buccal mucosa perforations. Assuming lacerations have a repair cost of $50 per instance, and perforations have a repair cost of $80 per instance, calculate the difference in mean soft tissue injury repair cost per patient (in $) between the arch bar group and the IMF screw group.</question>
+
+*   **Critique:** This question is well-structured and mathematically sound. It adheres to all guidelines regarding format and calculation steps. However, while the *scenario* (soft tissue injuries) is biological, the *target quantity* ("repair cost") is more an economic/administrative outcome than a direct biological measurement. For a pure "biology assessment," this might slightly dilute the biological focus.
+*   **Actionable Feedback:** Consider if a more directly biological or epidemiological outcome would be preferred for a core biology assessment. For example, asking for the "difference in mean *incidence rate* of injury per patient" (which removes the financial aspect) or the "difference in mean *number of injuries* per patient" would keep the calculation more centered on biological/epidemiological data. If the curriculum includes health economics in biology, then this question is appropriate.
+
+---
+
+### **Question 5 Critique:**
+
+<question>Consider a patient undergoing MMF with intermaxillary elastics. The elastics exert a constant force of $1\,\mathrm{N}$ across the dental arch. The average width of the interdental space is $2\,\mathrm{mm}$, and the elastics compress this space by $0.5\,\mathrm{mm}$. Assuming the periodontal ligament (PDL) behaves as a linear spring, and that the force exerted by the elastics is solely resisted by the PDL of the compressed teeth, calculate the effective spring constant (in $\mathrm{N/mm}$) of the PDL in this region.</question>
+
+*   **Critique:** Good question that effectively applies a fundamental physics principle (Hooke's Law) to a biological structure (PDL) in a relevant clinical context. It clearly meets most guidelines. The "multi-step reasoning" is present in interpreting the given values into the correct variables for Hooke's Law, even if it's a single formula application.
+*   **Actionable Feedback:** While it's a good application, for "multi-step reasoning," consider if a slightly more involved calculation or derivation could be introduced if the target audience is expected to handle greater complexity (e.g., calculating stress or strain from given dimensions, or combining forces from multiple structures). However, as is, it's a solid question for testing the application of physical principles in biology.
+=== Turn 1: Author refines questions ===
+Here's the improved set of biology questions, incorporating the feedback provided:
+
+1.  <question>A prospective, single-blinded clinical study is conducted to compare two different methods of Maxillomandibular Fixation (MMF) for jaw fracture management. 50 patients are enrolled in each group. Group A receives MMF using arch bars and intermaxillary elastics, while Group B undergoes MMF with IMF screws. After 1 week, the mean Gingival Index (GI) score in Group A is 1.8 and in Group B is 1.2. The GI scale ranges from 0 to 3, with 0 indicating healthy gingiva and 3 indicating severe inflammation. Assuming a linear relationship between GI score and the concentration of inflammatory mediator IL-6 in the gingival crevicular fluid, and that a GI score of 0 corresponds to an IL-6 concentration of $5\,\mathrm{pg/mL}$ and a GI score of 3 corresponds to an IL-6 concentration of $50\,\mathrm{pg/mL}$, calculate the difference in the mean IL-6 concentration (in $\mathrm{pg/mL}$) between Group A and Group B after 1 week.</question>
+
+2.  <question>Following MMF, a patient develops a localized infection around an IMF screw site. Culture results identify *Streptococcus mutans* with a density of $10^6$ colony-forming units (CFU) per mL. The minimum inhibitory concentration (MIC) of chlorhexidine for this particular *S. mutans* strain is $2\,\mathrm{\mu g/mL}$. The patient is instructed to use a chlorhexidine mouthwash containing 0.12% (w/v) chlorhexidine. Assuming the patient uses $15\,\mathrm{mL}$ of mouthwash and retains it in the oral cavity for 1 minute, and considering a first-order decay of chlorhexidine concentration in saliva with a half-life ($t_{1/2}$) of 10 minutes due to salivary flow and binding, calculate the chlorhexidine concentration (in $\mathrm{\mu g/mL}$) in the oral cavity *after 1 minute of retention*.</question>
+
+3.  <question>A clinical trial evaluates the impact of oral hygiene instructions on gingival inflammation following MMF. 30 patients undergoing MMF are randomly assigned to either Group 1 (standard oral hygiene instructions) or Group 2 (intensive oral hygiene instructions and professional cleaning). The plaque index (PI) is measured at baseline and at 7 days post-MMF. In Group 1, the mean PI increases from 0.8 to 1.5. In Group 2, the mean PI increases from 0.7 to 0.9. The PI ranges from 0 to 5, with 0 representing no plaque and 5 representing heavy plaque coverage. Each unit increase in PI corresponds to a bacterial load increase of $2 \times 10^5$ CFU. Calculate the difference in the change in bacterial load (in CFU) between Group 1 and Group 2 after 7 days.</question>
+
+4.  <question>A retrospective study analyzes the incidence of soft tissue injuries associated with different MMF methods. Among 200 patients undergoing MMF with arch bars, 15 experience lip lacerations. Among 150 patients undergoing MMF with IMF screws, 5 experience buccal mucosa perforations. Calculate the difference in mean number of soft tissue injuries per patient between the arch bar group and the IMF screw group.</question>
+
+5.  <question>Consider a patient undergoing MMF with intermaxillary elastics. The elastics exert a constant force of $1\,\mathrm{N}$ across the dental arch. The average width of the interdental space is $2\,\mathrm{mm}$, and the elastics compress this space by $0.5\,\mathrm{mm}$. Assuming the periodontal ligament (PDL) behaves as a linear spring, and that the force exerted by the elastics is solely resisted by the PDL of the compressed teeth, calculate the effective spring constant (in $\mathrm{N/mm}$) of the PDL in this region.</question>
+=== Turn 1: Critic feedback ===
+Here's a critique of each question against the provided guidelines:
+
+---
+
+### Question 1
+
+<question>A prospective, single-blinded clinical study is conducted to compare two different methods of Maxillomandibular Fixation (MMF) for jaw fracture management. 50 patients are enrolled in each group. Group A receives MMF using arch bars and intermaxillary elastics, while Group B undergoes MMF with IMF screws. After 1 week, the mean Gingival Index (GI) score in Group A is 1.8 and in Group B is 1.2. The GI scale ranges from 0 to 3, with 0 indicating healthy gingiva and 3 indicating severe inflammation. Assuming a linear relationship between GI score and the concentration of inflammatory mediator IL-6 in the gingival crevicular fluid, and that a GI score of 0 corresponds to an IL-6 concentration of $5\,\mathrm{pg/mL}$ and a GI score of 3 corresponds to an IL-6 concentration of $50\,\mathrm{pg/mL}$, calculate the difference in the mean IL-6 concentration (in $\mathrm{pg/mL}$) between Group A and Group B after 1 week.</question>
+
+**Critique:**
+*   **Strengths:**
+    *   **Guideline 1 (Model Biology Scenario):** Excellent. Presents a clear clinical study scenario involving MMF and inflammatory markers.
+    *   **Guideline 2 (Single/Numerical Answer):** Yes, expects a numerical answer.
+    *   **Guideline 3 (Multi-Step Reasoning):** Yes. Requires determining the linear relationship (slope and intercept) between GI and IL-6, converting two GI scores to IL-6 concentrations, and then calculating the difference. Involves biological concepts (inflammation, indices, mediators).
+    *   **Guideline 4 (Avoid How-based):** Yes, asks for a calculation.
+    *   **Guideline 5 (Unique):** Seems novel, integrating clinical scores with biochemical conversion.
+    *   **Guideline 6 (Single Solution):** Yes.
+    *   **Guideline 7 (Rigorous/Concise Phrasing):** Clear and professional.
+    *   **Guideline 9 (Units/Symbols):** Consistent units ($\mathrm{pg/mL}$) and conventional symbols.
+    *   **Guideline 10 (Not multipart):** Yes, focuses on a single target quantity.
+*   **Actionable Feedback:** This is a very strong question. While the "biological principle" of the GI-IL6 relationship is *given* as a linear assumption, it still requires understanding how to apply this relationship to clinical data. No significant improvements needed.
+
+---
+
+### Question 2
+
+<question>Following MMF, a patient develops a localized infection around an IMF screw site. Culture results identify *Streptococcus mutans* with a density of $10^6$ colony-forming units (CFU) per mL. The minimum inhibitory concentration (MIC) of chlorhexidine for this particular *S. mutans* strain is $2\,\mathrm{\mu g/mL}$. The patient is instructed to use a chlorhexidine mouthwash containing 0.12% (w/v) chlorhexidine. Assuming the patient uses $15\,\mathrm{mL}$ of mouthwash and retains it in the oral cavity for 1 minute, and considering a first-order decay of chlorhexidine concentration in saliva with a half-life ($t_{1/2}$) of 10 minutes due to salivary flow and binding, calculate the chlorhexidine concentration (in $\mathrm{\mu g/mL}$) in the oral cavity *after 1 minute of retention*.</question>
+
+**Critique:**
+*   **Strengths:**
+    *   **Guideline 1 (Model Biology Scenario):** Excellent. Highly realistic clinical scenario involving infection, mouthwash, and pharmacokinetics.
+    *   **Guideline 2 (Single/Numerical Answer):** Yes, expects a numerical answer.
+    *   **Guideline 3 (Multi-Step Reasoning):** Excellent. Requires converting % (w/v) to concentration, calculating the initial concentration, and then applying first-order decay kinetics using the half-life. Integrates microbiology (MIC, *S. mutans*) and pharmacology (concentration, decay, half-life).
+    *   **Guideline 4 (Avoid How-based):** Yes, asks for a calculation.
+    *   **Guideline 5 (Unique):** Very unique and well-constructed.
+    *   **Guideline 6 (Single Solution):** Yes.
+    *   **Guideline 7 (Rigorous/Concise Phrasing):** Clear, professional, and well-structured.
+    *   **Guideline 9 (Units/Symbols):** Consistent units ($\mathrm{\mu g/mL}$) and conventional symbols.
+    *   **Guideline 10 (Not multipart):** Yes, focuses on a single target quantity.
+*   **Actionable Feedback:** This is an outstanding question that perfectly meets all guidelines. No improvements needed.
+
+---
+
+### Question 3
+
+<question>A clinical trial evaluates the impact of oral hygiene instructions on gingival inflammation following MMF. 30 patients undergoing MMF are randomly assigned to either Group 1 (standard oral hygiene instructions) or Group 2 (intensive oral hygiene instructions and professional cleaning). The plaque index (PI) is measured at baseline and at 7 days post-MMF. In Group 1, the mean PI increases from 0.8 to 1.5. In Group 2, the mean PI increases from 0.7 to 0.9. The PI ranges from 0 to 5, with 0 representing no plaque and 5 representing heavy plaque coverage. Each unit increase in PI corresponds to a bacterial load increase of $2 \times 10^5$ CFU. Calculate the difference in the change in bacterial load (in CFU) between Group 1 and Group 2 after 7 days.</question>
+
+**Critique:**
+*   **Strengths:**
+    *   **Guideline 1 (Model Biology Scenario):** Excellent. Realistic clinical trial scenario related to oral hygiene and inflammation.
+    *   **Guideline 2 (Single/Numerical Answer):** Yes, expects a numerical answer.
+    *   **Guideline 3 (Multi-Step Reasoning):** Excellent. Requires calculating the change in PI for each group, converting these PI changes to changes in bacterial load for each group, and then finding the difference between these bacterial load changes. Integrates clinical indices with quantitative bacterial load.
+    *   **Guideline 4 (Avoid How-based):** Yes, asks for a calculation.
+    *   **Guideline 5 (Unique):** Unique scenario, combining clinical scores with quantitative bacterial changes.
+    *   **Guideline 6 (Single Solution):** Yes.
+    *   **Guideline 7 (Rigorous/Concise Phrasing):** Clear, professional, and well-structured.
+    *   **Guideline 9 (Units/Symbols):** Consistent units (CFU) and conventional symbols.
+    *   **Guideline 10 (Not multipart):** Yes, focuses on a single target quantity.
+*   **Actionable Feedback:** This is another excellent question that fully adheres to all guidelines. No improvements needed.
+
+---
+
+### Question 4
+
+<question>A retrospective study analyzes the incidence of soft tissue injuries associated with different MMF methods. Among 200 patients undergoing MMF with arch bars, 15 experience lip lacerations. Among 150 patients undergoing MMF with IMF screws, 5 experience buccal mucosa perforations. Calculate the difference in mean number of soft tissue injuries per patient between the arch bar group and the IMF screw group.</question>
+
+**Critique:**
+*   **Strengths:**
+    *   **Guideline 1 (Model Biology Scenario):** Good. Presents a plausible retrospective clinical study.
+    *   **Guideline 2 (Single/Numerical Answer):** Yes, expects a numerical answer.
+    *   **Guideline 4 (Avoid How-based):** Yes, asks for a calculation.
+    *   **Guideline 5 (Unique):** Scenario is specific, but the calculation type is common.
+    *   **Guideline 6 (Single Solution):** Yes.
+    *   **Guideline 7 (Rigorous/Concise Phrasing):** Clear and professional.
+    *   **Guideline 9 (Units/Symbols):** Units (per patient) are implicitly handled.
+    *   **Guideline 10 (Not multipart):** Yes, focuses on a single target quantity.
+*   **Actionable Feedback:**
+    *   **Guideline 3 (Force Multi-Step Reasoning):** This is the weakest point. The "multi-step reasoning" here is primarily basic statistical calculation of incidence rates (15/200 vs 5/150) and then finding the difference. While part of a biology scenario, it doesn't involve multiple distinct *biological principles* or conceptual steps beyond calculating rates. The biological understanding required is minimal beyond knowing what soft tissue injuries are.
+    *   **Suggestion:** To enhance biological depth, consider adding a layer that involves a biological mechanism, a physiological response, or a biomechanical property. For example, relating injury incidence to a stress threshold for a specific tissue type, or considering the healing time based on injury severity which could be related to cellular processes. As it stands, it feels more like a simple epidemiology/rate calculation problem than a deep biology question.
+
+---
+
+### Question 5
+
+<question>Consider a patient undergoing MMF with intermaxillary elastics. The elastics exert a constant force of $1\,\mathrm{N}$ across the dental arch. The average width of the interdental space is $2\,\mathrm{mm}$, and the elastics compress this space by $0.5\,\mathrm{mm}$. Assuming the periodontal ligament (PDL) behaves as a linear spring, and that the force exerted by the elastics is solely resisted by the PDL of the compressed teeth, calculate the effective spring constant (in $\mathrm{N/mm}$) of the PDL in this region.</question>
+
+**Critique:**
+*   **Strengths:**
+    *   **Guideline 1 (Model Biology Scenario):** Excellent. Presents a clear biomechanical scenario involving MMF, elastics, and the PDL.
+    *   **Guideline 2 (Single/Numerical Answer):** Yes, expects a numerical answer.
+    *   **Guideline 3 (Multi-Step Reasoning):** Yes. Requires identifying the compression distance (change in length) and then applying Hooke's Law (F=kx) to calculate the spring constant. Involves biomechanical principles (force, displacement, spring constant) applied to a biological structure (PDL).
+    *   **Guideline 4 (Avoid How-based):** Yes, asks for a calculation.
+    *   **Guideline 5 (Unique):** Unique and effective application of physics to a biological context.
+    *   **Guideline 6 (Single Solution):** Yes.
+    *   **Guideline 7 (Rigorous/Concise Phrasing):** Clear, professional, and well-structured.
+    *   **Guideline 9 (Units/Symbols):** Consistent units ($\mathrm{N/mm}$) and conventional symbols.
+    *   **Guideline 10 (Not multipart):** Yes, focuses on a single target quantity.
+*   **Actionable Feedback:** This is a very strong question that effectively integrates physics and biology (biomechanics). No significant improvements needed.
+=== Turn 2: Author refines questions ===
+Here's the improved list of biology questions, with revisions based on the feedback provided. The primary change is to Question 4, to increase its biological depth:
+
+1.  <question>A prospective, single-blinded clinical study is conducted to compare two different methods of Maxillomandibular Fixation (MMF) for jaw fracture management. 50 patients are enrolled in each group. Group A receives MMF using arch bars and intermaxillary elastics, while Group B undergoes MMF with IMF screws. After 1 week, the mean Gingival Index (GI) score in Group A is 1.8 and in Group B is 1.2. The GI scale ranges from 0 to 3, with 0 indicating healthy gingiva and 3 indicating severe inflammation. Assuming a linear relationship between GI score and the concentration of inflammatory mediator IL-6 in the gingival crevicular fluid, and that a GI score of 0 corresponds to an IL-6 concentration of $5\,\mathrm{pg/mL}$ and a GI score of 3 corresponds to an IL-6 concentration of $50\,\mathrm{pg/mL}$, calculate the difference in the mean IL-6 concentration (in $\mathrm{pg/mL}$) between Group A and Group B after 1 week.</question>
+
+2.  <question>Following MMF, a patient develops a localized infection around an IMF screw site. Culture results identify *Streptococcus mutans* with a density of $10^6$ colony-forming units (CFU) per mL. The minimum inhibitory concentration (MIC) of chlorhexidine for this particular *S. mutans* strain is $2\,\mathrm{\mu g/mL}$. The patient is instructed to use a chlorhexidine mouthwash containing 0.12% (w/v) chlorhexidine. Assuming the patient uses $15\,\mathrm{mL}$ of mouthwash and retains it in the oral cavity for 1 minute, and considering a first-order decay of chlorhexidine concentration in saliva with a half-life ($t_{1/2}$) of 10 minutes due to salivary flow and binding, calculate the chlorhexidine concentration (in $\mathrm{\mu g/mL}$) in the oral cavity *after 1 minute of retention*.</question>
+
+3.  <question>A clinical trial evaluates the impact of oral hygiene instructions on gingival inflammation following MMF. 30 patients undergoing MMF are randomly assigned to either Group 1 (standard oral hygiene instructions) or Group 2 (intensive oral hygiene instructions and professional cleaning). The plaque index (PI) is measured at baseline and at 7 days post-MMF. In Group 1, the mean PI increases from 0.8 to 1.5. In Group 2, the mean PI increases from 0.7 to 0.9. The PI ranges from 0 to 5, with 0 representing no plaque and 5 representing heavy plaque coverage. Each unit increase in PI corresponds to a bacterial load increase of $2 \times 10^5$ CFU. Calculate the difference in the change in bacterial load (in CFU) between Group 1 and Group 2 after 7 days.</question>
+
+4.  <question>A retrospective study analyzes the incidence and healing time of soft tissue injuries associated with different MMF methods. Among 200 patients undergoing MMF with arch bars, 15 experience lip lacerations. The mean laceration length in this group is 1.5 cm. Among 150 patients undergoing MMF with IMF screws, 5 experience buccal mucosa perforations. The mean perforation diameter in this group is 0.5 cm. Assume that the rate of epithelial cell migration during wound healing is approximately 0.5 mm per day. Calculate the difference in the *estimated* mean time (in days) required for complete closure of the *largest* wound in each group, based *solely* on the epithelial cell migration rate.</question>
+
+5.  <question>Consider a patient undergoing MMF with intermaxillary elastics. The elastics exert a constant force of $1\,\mathrm{N}$ across the dental arch. The average width of the interdental space is $2\,\mathrm{mm}$, and the elastics compress this space by $0.5\,\mathrm{mm}$. Assuming the periodontal ligament (PDL) behaves as a linear spring, and that the force exerted by the elastics is solely resisted by the PDL of the compressed teeth, calculate the effective spring constant (in $\mathrm{N/mm}$) of the PDL in this region.</question>
+=== Final questions generated ===

@@ -1,0 +1,421 @@
+=== Turn 0: Author generates questions ===
+Here are five novel, high-quality chemistry questions based on the provided topics, key concepts, and guidelines:
+
+1.  <question>Thermal decomposition of a precursor, $(NH_4)_2MSe_4$ ($M$ = Mo, W), occurs at $T = 573$ K with a heating rate of $5$ K/min to form $MSe_2$. Assuming first-order kinetics with an Arrhenius pre-exponential factor $A = 10^{13}$ s$^{-1}$, and knowing that $95\%$ of the precursor decomposes into $MSe_2$ at this temperature, calculate the activation energy, $E_a$, in kJ/mol, for the thermal decomposition process.</question>
+
+2.  <question>A monoclinic $M_3Se_4$ nanoparticle ($M = V$) exhibits a unit cell with dimensions $a = 9.12$ Å, $b = 3.25$ Å, $c = 9.12$ Å, and $\beta = 109.3^\circ$. Given a vanadium atomic weight of $50.94$ g/mol and selenium atomic weight of $78.97$ g/mol, calculate the theoretical density of $V_3Se_4$ in g/cm$^3$. Consider $Z = 2$ (number of formula units per unit cell).</question>
+
+3.  <question>A photocatalytic reactor using $CdSe$ nanoparticles is illuminated with $450$ nm light at an intensity of $10$ mW/cm$^2$. Assuming that each absorbed photon generates one electron-hole pair and the quantum yield for hydrogen production is $25\%$, calculate the rate of hydrogen production in $\mu$mol/s, considering the illuminated area is $5$ cm$^2$. Assume all incident photons are absorbed.</question>
+
+4.  <question>The Hartman-Perdok theory is applied to the crystal structure of $NbSe_2$ (space group $P6_3/mmc$). Given the lattice parameters $a = 3.44$ Å and $c = 12.55$ Å and a two-layer structure, calculate the $d$-spacing (in Å) corresponding to the (002) plane. Use Bragg's law, $n\lambda = 2d\sin\theta$ where $n = 1$, and $\lambda = 1.54$ Å (Cu Kα radiation) to find the angle $\theta$ (in degrees). The $d$-spacing of the (002) plane is then used to calculate the repeat distance along the $c$-axis.</question>
+
+5.  <question>A novel $MoSe_2$ based photocatalyst is synthesized for CO$_2$ reduction. X-ray diffraction analysis reveals the presence of the (002) peak at $2\theta = 13.7^\circ$ (using Cu Kα radiation with $\lambda = 1.54$ Å). Post-photocatalysis, the (002) peak shifts to $2\theta = 13.5^\circ$ due to intercalation of lithium ions. Assuming this shift corresponds directly to an increase in the $c$-axis dimension only, calculate the percentage change in the $c$-axis lattice parameter of $MoSe_2$ after lithium intercalation. Report the absolute value. </question>
+=== Turn 0: Critic feedback ===
+Here's a critique of each question, along with actionable feedback for improvement:
+
+---
+
+### **General Feedback (Applies to all questions):**
+
+*   **Guideline 11 (Solution Formatting - LaTeX):** This guideline is consistently violated across all questions. All inline mathematical expressions, numbers, variables, and units should be enclosed within `$ ... $` and block math within `$$ ... $$`. This is a critical formatting requirement.
+
+---
+
+### **Critique of Question 1:**
+
+1.  **Model a Chemistry Scenario:** Yes, thermal decomposition kinetics. (Pass)
+2.  **Numerical Answer:** Yes, $E_a$ in kJ/mol. (Pass)
+3.  **Multi-Step Reasoning:** Yes, requires use of integrated rate law for first-order kinetics and then the Arrhenius equation. (Pass on concept, but issue below).
+4.  **Avoid Redundancy:**
+    *   **FAIL (Redundancy/Missing Information):** The "heating rate of $5$ K/min" is redundant for an isothermal kinetic calculation. More critically, for $95\%$ decomposition in first-order kinetics, the *time* at which this decomposition occurs at $T = 573$ K is missing. Without a time, the rate constant $k$ cannot be calculated, and thus $E_a$ cannot be determined. The statement "95% of the precursor decomposes... at this temperature" implies an equilibrium or a fixed point without a time component, which is incongruous with kinetic calculations.
+5.  **Unique:** Yes, it's a specific application of kinetic principles. (Pass)
+6.  **Single Solution:** No, it cannot be solved as stated due to missing information. (Fail)
+7.  **Rigorous, Concise Phrasing:** The phrasing implies an isothermal process, but then introduces an irrelevant heating rate and lacks the necessary time parameter. (Fail)
+8.  **Avoid Colloquial/Ambiguous:** "at this temperature" is ambiguous without a time context for the given extent of reaction. (Fail)
+9.  **Units Consistency/IUPAC:** Units are consistent if the problem were solvable. (Pass on consistency, but not solvable).
+10. **Single Part:** Yes, asks for $E_a$. (Pass, if solvable).
+11. **LaTeX Formatting:** (Fail - See General Feedback)
+
+**Actionable Feedback for Question 1:**
+*   **Crucial Missing Information:** Add a specific *time* for the $95\%$ decomposition to occur at $T = 573$ K. For example: "...knowing that $95\%$ of the precursor decomposes into $MSe_2$ in $120$ minutes at this temperature..."
+*   **Remove Redundancy:** Remove the "heating rate of $5$ K/min" as it's not relevant for an isothermal kinetic calculation.
+*   **Apply LaTeX Formatting:** Format all numbers, variables ($T, E_a, A$), and units ($K, s^{-1}, kJ/mol$) using `$ ... $` or `$$ ... $$`.
+
+---
+
+### **Critique of Question 2:**
+
+1.  **Model a Chemistry Scenario:** Yes, theoretical density of a nanoparticle. (Pass)
+2.  **Numerical Answer:** Yes, density in g/cm$^3$. (Pass)
+3.  **Multi-Step Reasoning:** Yes, requires calculating the unit cell volume for a monoclinic system, then applying the density formula ($\rho = ZM/V_a N_A$). (Pass)
+4.  **Avoid Redundancy:** No apparent redundancy. All information (dimensions, angle, atomic weights, $Z$) is necessary. (Pass)
+5.  **Unique:** Good application, not a standard cubic cell. (Pass)
+6.  **Single Solution:** Yes. (Pass)
+7.  **Rigorous, Concise Phrasing:** Yes. (Pass)
+8.  **Avoid Colloquial/Ambiguous:** Yes. (Pass)
+9.  **Units Consistency/IUPAC:** Yes, Å, g/mol, g/cm$^3$ are consistent with necessary conversions. (Pass)
+10. **Single Part:** Yes, asks for density. (Pass)
+11. **LaTeX Formatting:** (Fail - See General Feedback)
+
+**Actionable Feedback for Question 2:**
+*   **Apply LaTeX Formatting:** Format all numbers, variables ($a, b, c, \beta, V, Z, M, N_A, \rho$), and units (Å, g/mol, g/cm$^3$) using `$ ... $` or `$$ ... $$`.
+
+---
+
+### **Critique of Question 3:**
+
+1.  **Model a Chemistry Scenario:** Yes, photocatalytic hydrogen production. (Pass)
+2.  **Numerical Answer:** Yes, rate in $\mu$mol/s. (Pass)
+3.  **Multi-Step Reasoning:** Yes, calculate photon energy, then photon flux, then rate of H$_2$ production considering quantum yield and illuminated area. (Pass)
+4.  **Avoid Redundancy:** No apparent redundancy. Assumptions like "each absorbed photon generates one electron-hole pair" and "all incident photons are absorbed" are crucial clarifications, not redundancy. (Pass)
+5.  **Unique:** Good applied problem in photocatalysis. (Pass)
+6.  **Single Solution:** Yes. (Pass)
+7.  **Rigorous, Concise Phrasing:** Yes. (Pass)
+8.  **Avoid Colloquial/Ambiguous:** Yes. (Pass)
+9.  **Units Consistency/IUPAC:** Yes, units are consistent and require appropriate constants. (Pass)
+10. **Single Part:** Yes, asks for H$_2$ production rate. (Pass)
+11. **LaTeX Formatting:** (Fail - See General Feedback)
+
+**Actionable Feedback for Question 3:**
+*   **Apply LaTeX Formatting:** Format all numbers, variables ($\lambda, I, A, \Phi_{H_2}, h, c, N_A$), and units (nm, mW/cm$^2$, cm$^2$, $\mu$mol/s) using `$ ... $` or `$$ ... $$`.
+
+---
+
+### **Critique of Question 4:**
+
+1.  **Model a Chemistry Scenario:** Yes, X-ray diffraction and crystal structure. (Pass)
+2.  **Numerical Answer:** **FAIL (Multiple Parts/Outputs):** The question asks for: 1) $d$-spacing (in Å), 2) angle $\theta$ (in degrees), and 3) repeat distance along the $c$-axis. This violates guideline 10 ("Questions must not have multiple parts to answer, there should be only 1 solution to each question").
+3.  **Multi-Step Reasoning:** Yes, calculate $d$-spacing, then $\theta$, then relate $d_{002}$ to $c$. (Pass on concept, but too many outputs).
+4.  **Avoid Redundancy:**
+    *   **FAIL (Redundancy):** "The Hartman-Perdok theory is applied to the crystal structure of $NbSe_2$ (space group $P6_3/mmc$)" is completely irrelevant for calculating $d$-spacing or $\theta$ using Bragg's law from given lattice parameters. This is extraneous information and violates guideline 4.
+    *   "a two-layer structure" is also likely irrelevant for this calculation.
+    *   For a hexagonal system, $d_{00L} = c/L$. So $d_{002} = c/2$. The statement "The $d$-spacing of the (002) plane is then used to calculate the repeat distance along the $c$-axis" is circular and redundant, as the $c$-axis parameter is already given.
+5.  **Unique:** Standard XRD calculation. The extraneous information makes it confusing rather than unique. (Neutral/Fail)
+6.  **Single Solution:** No, asks for multiple values. (Fail)
+7.  **Rigorous, Concise Phrasing:** No, the phrasing is confusing due to redundant information and asking for multiple outputs. (Fail)
+8.  **Avoid Colloquial/Ambiguous:** No, the phrase "repeat distance along the $c$-axis" is confusing when $c$ is already a given lattice parameter. (Fail)
+9.  **Units Consistency/IUPAC:** Units are consistent. (Pass)
+10. **Single Part:** No. (Fail)
+11. **LaTeX Formatting:** (Fail - See General Feedback)
+
+**Actionable Feedback for Question 4:**
+*   **Address Multiple Parts:** Revise the question to ask for *only one* specific numerical value (e.g., just the angle $\theta$, or just the $d$-spacing for one specific plane).
+*   **Remove Redundancy:** Remove all irrelevant information such as "Hartman-Perdok theory", "space group $P6_3/mmc$", and "two-layer structure". Remove the redundant instruction to calculate the "repeat distance along the $c$-axis" if the $c$ parameter is already given.
+*   **Clarify Purpose:** Ensure the question focuses on one clear objective (e.g., calculating $\theta$ from $c$ and $\lambda$, or $d$-spacing from $c$).
+*   **Apply LaTeX Formatting:** Format all numbers, variables ($a, c, d, \theta, \lambda, n$), and units (Å, degrees) using `$ ... $` or `$$ ... $$`.
+
+---
+
+### **Critique of Question 5:**
+
+1.  **Model a Chemistry Scenario:** Yes, XRD analysis of peak shift due to intercalation. (Pass)
+2.  **Numerical Answer:** Yes, percentage change in $c$-axis. (Pass)
+3.  **Multi-Step Reasoning:** Yes, requires calculating $d_{002}$ from $2\theta$ for two different states using Bragg's law, then relating $d_{002}$ to the $c$-axis (for (00L) planes, $d_{00L} = c/L$), and finally calculating the percentage change. (Pass)
+4.  **Avoid Redundancy:** No apparent redundancy. The context "novel $MoSe_2$ based photocatalyst... for CO$_2$ reduction" and the assumption about $c$-axis change are appropriate. (Pass)
+5.  **Unique:** Good applied problem in material science using XRD. (Pass)
+6.  **Single Solution:** Yes. (Pass)
+7.  **Rigorous, Concise Phrasing:** Yes. (Pass)
+8.  **Avoid Colloquial/Ambiguous:** Yes. (Pass)
+9.  **Units Consistency/IUPAC:** Yes, degrees, Å, % are consistent. (Pass)
+10. **Single Part:** Yes, asks for percentage change. (Pass)
+11. **LaTeX Formatting:** (Fail - See General Feedback)
+
+**Actionable Feedback for Question 5:**
+*   **Apply LaTeX Formatting:** Format all numbers, variables ($2\theta, \lambda, d, c, \% \text{change}$), and units (degrees, Å, %) using `$ ... $` or `$$ ... $$`.
+=== Turn 1: Author refines questions ===
+```python
+def apply_latex(text):
+  """Applies LaTeX formatting to numbers, variables, and units in the given text."""
+  import re
+
+  # Regular expression to find numbers, variables (single characters, Greek letters), and common units.  Allows for exponents and decimal points.  Handles hyphenated compound units.
+  pattern = r"""
+  (?<![\\\$])  # Negative lookbehind to avoid already LaTeX formatted sections
+  (
+    (?:
+      \b(?:[a-zA-Zα-ωΑ-Ω])\b  # Single character variables (including Greek)
+      |
+      \b(?:[0-9]+(?:\.[0-9]*)?|\.[0-9]+)(?:e[+-]?[0-9]+)?\b # Numerical values (integers, decimals, scientific notation)
+      |
+      (?:Å|K|s|min|mol|cm|g|J|eV|V|W|Pa|Hz)\b   # Common units (whole word)
+      |
+      (?:%|°)\b # Special characters
+    )
+    (?:/(?:Å|K|s|min|mol|cm|g|J|eV|V|W|Pa|Hz)\b)* # Allow for compound units (e.g., cm/s)
+    (?:[-](?:Å|K|s|min|mol|cm|g|J|eV|V|W|Pa|Hz)\b)* # Allow for hyphenated compound units.
+    (?:[-](?:[a-zA-Zα-ωΑ-Ω])\b)* # Allow hyphenated variables.
+    (?:\^[0-9]+)?       #Optional Exponents
+  )
+  """
+
+  def replace(match):
+    return f"${match.group(1)}$"
+
+  return re.sub(pattern, replace, text, flags=re.VERBOSE)
+
+questions = [
+    """Thermal decomposition of a precursor, $(NH_4)_2MSe_4$ ($M$ = Mo, W), occurs at $T = 573$ $K$. Knowing that $95\%$ of the precursor decomposes into $MSe_2$ in $120$ $min$ at this temperature, and assuming first-order kinetics with an Arrhenius pre-exponential factor $A = 10^{13}$ $s^{-1}$, calculate the activation energy, $E_a$, in $kJ/mol$ for the thermal decomposition process.""",
+    """A monoclinic $M_3Se_4$ nanoparticle ($M = V$) exhibits a unit cell with dimensions $a = 9.12$ Å, $b = 3.25$ Å, $c = 9.12$ Å, and $\beta = 109.3^\circ$. Given a vanadium atomic weight of $50.94$ $g/mol$ and selenium atomic weight of $78.97$ $g/mol$, calculate the theoretical density of $V_3Se_4$ in $g/cm^3$. Consider $Z = 2$ (number of formula units per unit cell).""",
+    """A photocatalytic reactor using $CdSe$ nanoparticles is illuminated with $450$ $nm$ light at an intensity of $10$ $mW/cm^2$. Assuming that each absorbed photon generates one electron-hole pair and the quantum yield for hydrogen production is $25\%$, calculate the rate of hydrogen production in $\mu mol/s$, considering the illuminated area is $5$ $cm^2$. Assume all incident photons are absorbed.""",
+    """$NbSe_2$ has lattice parameters $a = 3.44$ Å and $c = 12.55$ Å.  Using Bragg's law, $n\lambda = 2d\sin\theta$ where $n = 1$, and $\lambda = 1.54$ Å (Cu Kα radiation), calculate the diffraction angle $\theta$ (in degrees) for the (002) plane.""",
+    """A novel $MoSe_2$ based photocatalyst is synthesized for $CO_2$ reduction. X-ray diffraction analysis reveals the presence of the (002) peak at $2\theta = 13.7^\circ$ (using Cu Kα radiation with $\lambda = 1.54$ Å). Post-photocatalysis, the (002) peak shifts to $2\theta = 13.5^\circ$ due to intercalation of lithium ions. Assuming this shift corresponds directly to an increase in the $c$-axis dimension only, calculate the absolute value of the percentage change in the $c$-axis lattice parameter of $MoSe_2$ after lithium intercalation."""
+]
+
+for i in range(len(questions)):
+  questions[i] = apply_latex(questions[i])
+
+output = ""
+for i, question in enumerate(questions):
+  output += f"<question>{i+1}. {question}</question>\n"
+
+print(output)
+```
+=== Turn 1: Critic feedback ===
+Overall, these are well-structured chemistry assessment questions that demonstrate a strong understanding of the subject matter and pedagogical goals. They generally adhere very well to most of your guidelines.
+
+Here's a detailed critique against each guideline:
+
+### General Strengths Across All Questions:
+
+1.  **Model a Chemistry Scenario:** Excellent. Each question presents a realistic or idealized chemistry scenario (thermal decomposition, nanoparticle crystallography, photocatalysis, X-ray diffraction of materials), making them relevant and engaging.
+2.  **Expect answers as numerical values with appropriate units or chemical compounds named using official IUPAC nomenclature:** All questions clearly ask for numerical values with specified units ($kJ/mol$, $g/cm^3$, $\mu mol/s$, degrees, percentage change). This is well-executed.
+3.  **Force Multi-Step Reasoning:** All questions inherently require multiple calculation steps, demonstrating a good level of complexity suitable for advanced students. For example, Q1 requires calculation of rate constant, then $E_a$; Q2 requires unit cell volume and then density calculation; Q3 requires photon energy, photon flux, and quantum yield application; Q4/Q5 require $d$-spacing calculation before applying Bragg's law.
+4.  **Avoid Redundancy:** The information provided in each question is pertinent and necessary for solving the problem. No extraneous data was observed. Simplifications (e.g., "assuming first-order kinetics", "assume all incident photons are absorbed") are clearly stated and contribute to problem solvability, not redundancy.
+5.  **Be Unique:** The scenarios (e.g., specific inorganic compounds, real-world applications like photocatalysis, lithium intercalation effects) are more unique and less generic than typical textbook examples, contributing to their originality and complexity.
+6.  **Single solution:** Each question clearly asks for a single numerical value as an answer, avoiding ambiguity.
+7.  **Use rigorous, concise phrasing:** The language is clear, precise, and professional.
+8.  **Avoid colloquial or ambiguous terminology:** No colloquialisms or ambiguous terms were found.
+9.  **Units must be consistent; chemical nomenclature must follow IUPAC rules:** Units are consistently presented, and chemical formulas/names follow accepted conventions (though IUPAC naming for complex compounds isn't required here, the formulas are standard). Required conversions (e.g., Å to cm, minutes to seconds) are implicit parts of the multi-step reasoning.
+10. **Questions must not have multiple parts to answer, there should be only 1 solution to each question:** Perfectly adhered to.
+
+### Areas for Improvement (Primarily LaTeX Formatting - Guideline 11):
+
+The most significant area for improvement lies in the LaTeX formatting generated by the `apply_latex` function, specifically how it handles numbers immediately followed by units or special characters.
+
+11. **Solution Formatting: Format the equations, numbers and variables using LaTeX syntax such that all inline math, numbers, variables are enclosed by $...$ and block math is enclosed by $$...$$ and avoid using Markdown for all unformatted data.**
+
+    *   **Numbers and Units Separation:** The `apply_latex` function frequently places a number and its subsequent unit in *separate* inline math environments.
+        *   **Problem Examples:**
+            *   `$T = 573$ $K$` (Should be `$T = 573 \text{ K}$` or `$T = 573\ K$`)
+            *   `$120$ $min$` (Should be `$120 \text{ min}$`)
+            *   `$9.12$ Å` (Should be `$9.12 \text{ Å}$` or `$9.12\text{Å}$`)
+            *   `$50.94$ $g/mol$` (Should be `$50.94 \text{ g/mol}$`)
+            *   `$450$ $nm$` (Should be `$450 \text{ nm}$`)
+            *   `$10$ $mW/cm^2$` (Should be `$10 \text{ mW/cm}^2$`)
+            *   `$5$ $cm^2$` (Should be `$5 \text{ cm}^2$`)
+            *   `$1.54$ Å` (Should be `$1.54 \text{ Å}$`)
+        *   **Why this is an issue:** While syntactically correct for LaTeX, `$573$ $K$` results in a small gap between the number and unit, which can be visually distracting and is not standard practice for scientific notation. Combining them in a single math environment using `\text{}` or a small space `\` before the unit produces cleaner, more conventional output.
+        *   **Actionable Feedback:** Modify the `apply_latex` regex to capture numbers *and* their immediate units together within a single math environment. For example, a regex that captures `(\b\d+(\.\d*)?)\s*([A-Za-z%°\/]+(?:[-][A-Za-z]+)?)\b` could be improved to group number and unit. Or, for simpler units, directly including them: `(\b(?:[0-9]+(?:\.[0-9]*)?|\.[0-9]+)(?:e[+-]?[0-9]+)?\s*(?:Å|K|s|min|mol|cm|g|J|eV|V|W|Pa|Hz|%|°|/cm\^2|/s|/mol)?)\b`. This might require a more sophisticated regex or multiple passes.
+
+    *   **Miller Indices Formatting:** While not a critical error, the Miller indices `(002)` are formatted as `($002$)` by the current `apply_latex` (i.e., `002` is in math mode, but the parentheses are not).
+        *   **Problem Examples:** `(002) plane`, `(002) peak`
+        *   **Why this is an issue:** Miller indices are often convention to be formatted as `$(hkl)$` with the parentheses included within the math environment, or simply left as plain text if it's unambiguous.
+        *   **Actionable Feedback:** Consider adjusting `apply_latex` to either include the parentheses within the math mode for Miller indices `$(hkl)$` or to specifically exclude common Miller index patterns from automatic number-to-math conversion if they are meant to be plain text.
+
+By addressing the LaTeX formatting issues, especially the separation of numbers and units, the questions will fully meet the high standard set by your guidelines.
+=== Turn 2: Author refines questions ===
+```python
+def apply_latex(text):
+  """Applies LaTeX formatting to numbers, variables, and units in the given text."""
+  import re
+
+  # Regular expression to find numbers, variables (single characters, Greek letters), and common units.  Allows for exponents and decimal points.  Handles hyphenated compound units.  Includes parentheses for miller indices.
+  pattern = r"""
+  (?<![\\\$])  # Negative lookbehind to avoid already LaTeX formatted sections
+  (
+    (?:
+      \b(?:[a-zA-Zα-ωΑ-Ω])\b  # Single character variables (including Greek)
+      |
+      \b(?:[0-9]+(?:\.[0-9]*)?|\.[0-9]+)(?:e[+-]?[0-9]+)?\s*(?:Å|K|s|min|mol|cm|g|J|eV|V|W|Pa|Hz|%|°|/cm\^2|/s|/mol)?\b # Numerical values (integers, decimals, scientific notation) with optional units. The \s* allows a space.
+      |
+      \([0-9]{3}\) #Miller indices
+    )
+    (?:/(?:Å|K|s|min|mol|cm|g|J|eV|V|W|Pa|Hz)\b)* # Allow for compound units (e.g., cm/s)
+    (?:[-](?:Å|K|s|min|mol|cm|g|J|eV|V|W|Pa|Hz)\b)* # Allow for hyphenated compound units.
+    (?:[-](?:[a-zA-Zα-ωΑ-Ω])\b)* # Allow hyphenated variables.
+    (?:\^[0-9]+)?       #Optional Exponents
+  )
+  """
+
+  def replace(match):
+    return f"${match.group(1)}$"
+
+  return re.sub(pattern, replace, text, flags=re.VERBOSE)
+
+questions = [
+    """Thermal decomposition of a precursor, $(NH_4)_2MSe_4$ ($M$ = Mo, W), occurs at $T = 573$ $K$. Knowing that $95\%$ of the precursor decomposes into $MSe_2$ in $120$ $min$ at this temperature, and assuming first-order kinetics with an Arrhenius pre-exponential factor $A = 10^{13}$ $s^{-1}$, calculate the activation energy, $E_a$, in $kJ/mol$ for the thermal decomposition process.""",
+    """A monoclinic $M_3Se_4$ nanoparticle ($M = V$) exhibits a unit cell with dimensions $a = 9.12$ Å, $b = 3.25$ Å, $c = 9.12$ Å, and $\beta = 109.3^\circ$. Given a vanadium atomic weight of $50.94$ $g/mol$ and selenium atomic weight of $78.97$ $g/mol$, calculate the theoretical density of $V_3Se_4$ in $g/cm^3$. Consider $Z = 2$ (number of formula units per unit cell).""",
+    """A photocatalytic reactor using $CdSe$ nanoparticles is illuminated with $450$ $nm$ light at an intensity of $10$ $mW/cm^2$. Assuming that each absorbed photon generates one electron-hole pair and the quantum yield for hydrogen production is $25\%$, calculate the rate of hydrogen production in $\mu mol/s$, considering the illuminated area is $5$ $cm^2$. Assume all incident photons are absorbed.""",
+    """$NbSe_2$ has lattice parameters $a = 3.44$ Å and $c = 12.55$ Å.  Using Bragg's law, $n\lambda = 2d\sin\theta$ where $n = 1$, and $\lambda = 1.54$ Å (Cu Kα radiation), calculate the diffraction angle $\theta$ (in degrees) for the (002) plane.""",
+    """A novel $MoSe_2$ based photocatalyst is synthesized for $CO_2$ reduction. X-ray diffraction analysis reveals the presence of the (002) peak at $2\theta = 13.7^\circ$ (using Cu Kα radiation with $\lambda = 1.54$ Å). Post-photocatalysis, the (002) peak shifts to $2\theta = 13.5^\circ$ due to intercalation of lithium ions. Assuming this shift corresponds directly to an increase in the $c$-axis dimension only, calculate the absolute value of the percentage change in the $c$-axis lattice parameter of $MoSe_2$ after lithium intercalation."""
+]
+
+for i in range(len(questions)):
+  questions[i] = apply_latex(questions[i])
+
+output = ""
+for i, question in enumerate(questions):
+  output += f"<question>{i+1}. {question}</question>\n"
+
+print(output)
+```
+=== Turn 2: Critic feedback ===
+Here's a critique of the provided chemistry questions based on your guidelines:
+
+**General Feedback on LaTeX Formatting (Guideline 11):**
+The `apply_latex` function is *not* effective at correctly formatting all numbers, variables, and units as per Guideline 11. Many crucial elements, including chemical formulas (e.g., $NH_4)_2MSe_4$, $MSe_2$, $V_3Se_4$, $CdSe$, $NbSe_2$, $MoSe_2$), subscripted variables (e.g., $E_a$), multi-character variables (e.g., $T$, $A$, $Z$, $n$, $d$, $\theta$, $\lambda$, $2\theta$, $a$, $b$, $c$), specific crystallographic planes (e.g., $(002)$), and even some units (e.g., $\%$, $K\alpha$) are *not* enclosed in `$` delimiters. This is a critical failure point across all questions. The current regex largely only captures single digits and isolated units.
+
+**Critique of Individual Questions:**
+
+**<question>1. Thermal decomposition of a precursor, $(NH_4)_2MSe_4$ ($M$ = Mo, W), occurs at $T = 573$ $K$. Knowing that $95\%$ of the precursor decomposes into $MSe_2$ in $120$ $min$ at this temperature, and assuming first-order kinetics with an Arrhenius pre-exponential factor $A = 10^{13}$ $s^{-1}$, calculate the activation energy, $E_a$, in $kJ/mol$ for the thermal decomposition process.</question>**
+
+*   **G1 (Model Chemistry Scenario):** Good. Presents a clear chemical kinetics problem.
+*   **G2 (Numerical/IUPAC answers):** Good. Expects a numerical value for activation energy with units.
+*   **G3 (Multi-Step Reasoning):** Good. Requires calculating the rate constant from concentration change over time for first-order kinetics, then applying the Arrhenius equation.
+*   **G4 (Avoid Redundancy):** Good. "($M$ = Mo, W)" is contextual but doesn't affect the calculation, which is acceptable. All other data are essential.
+*   **G5 (Be Unique):** Good. It's a standard problem type but contextualized well with specific inorganic precursors.
+*   **G6 (Single Solution):** Good.
+*   **G7 (Rigorous, Concise Phrasing):** Good.
+*   **G8 (Avoid Colloquial/Ambiguous):** Good.
+*   **G9 (Units Consistency/IUPAC):** Good. Requires careful unit conversion (min to s, J to kJ).
+*   **G10 (Single Part):** Good.
+*   **G11 (LaTeX Formatting):** **Poor.**
+    *   Variables like $(NH_4)_2MSe_4$, $M$, $MSe_2$, $T$, $A$, $E_a$ are not formatted correctly.
+    *   Units like $\%$ are not formatted correctly.
+    *   The degree symbol is correctly formatted by the `apply_latex` function, but other elements are not.
+
+**<question>2. A monoclinic $M_3Se_4$ nanoparticle ($M = V$) exhibits a unit cell with dimensions $a = 9.12$ Å, $b = 3.25$ Å, $c = 9.12$ Å, and $\beta = 109.3^\circ$. Given a vanadium atomic weight of $50.94$ $g/mol$ and selenium atomic weight of $78.97$ $g/mol$, calculate the theoretical density of $V_3Se_4$ in $g/cm^3$. Consider $Z = 2$ (number of formula units per unit cell).</question>**
+
+*   **G1 (Model Chemistry Scenario):** Good. A solid-state chemistry scenario involving crystallographic calculations.
+*   **G2 (Numerical/IUPAC answers):** Good. Expects a numerical value for density with units.
+*   **G3 (Multi-Step Reasoning):** Good. Requires calculating the volume of a monoclinic unit cell and the total mass of atoms within it, using atomic weights and Avogadro's number implicitly.
+*   **G4 (Avoid Redundancy):** Good. All information is necessary for the calculation.
+*   **G5 (Be Unique):** Good. A standard density calculation for a specific crystal system.
+*   **G6 (Single Solution):** Good.
+*   **G7 (Rigorous, Concise Phrasing):** Good.
+*   **G8 (Avoid Colloquial/Ambiguous):** Good.
+*   **G9 (Units Consistency/IUPAC):** Good. Requires Å to cm conversion for density calculation.
+*   **G10 (Single Part):** Good.
+*   **G11 (LaTeX Formatting):** **Poor.**
+    *   Variables like $M_3Se_4$, $M$, $V_3Se_4$, $a$, $b$, $c$, $\beta$, $Z$ are not formatted correctly.
+    *   Units like $g/mol$ are only partially formatted ($g/mol$ is picked up, but in "atomic weight of $50.94$ $g/mol$" the number is picked up, but the unit string "g/mol" is not). The `apply_latex` function's handling of `g/mol` specifically is inconsistent.
+    *   The degree symbol is correctly formatted.
+
+**<question>3. A photocatalytic reactor using $CdSe$ nanoparticles is illuminated with $450$ $nm$ light at an intensity of $10$ $mW/cm^2$. Assuming that each absorbed photon generates one electron-hole pair and the quantum yield for hydrogen production is $25\%$, calculate the rate of hydrogen production in $\mu mol/s$, considering the illuminated area is $5$ $cm^2$. Assume all incident photons are absorbed.</question>**
+
+*   **G1 (Model Chemistry Scenario):** Excellent. A highly relevant scenario in materials and environmental chemistry.
+*   **G2 (Numerical/IUPAC answers):** Good. Expects a numerical value for rate of production with units.
+*   **G3 (Multi-Step Reasoning):** Excellent. Requires calculating photon energy, photon flux from intensity, total photon absorption, and then applying quantum yield.
+*   **G4 (Avoid Redundancy):** Good. All assumptions and values are necessary for the calculation.
+*   **G5 (Be Unique):** Excellent. A non-trivial, practical application of photochemistry principles.
+*   **G6 (Single Solution):** Good.
+*   **G7 (Rigorous, Concise Phrasing):** Good.
+*   **G8 (Avoid Colloquial/Ambiguous):** Good.
+*   **G9 (Units Consistency/IUPAC):** Good. Requires careful conversion of $nm$, $mW$, $cm^2$ to base units for energy/power calculations, then conversion to moles.
+*   **G10 (Single Part):** Good.
+*   **G11 (LaTeX Formatting):** **Poor.**
+    *   Chemical formula $CdSe$ is not formatted correctly.
+    *   The $\%$ unit is not formatted correctly.
+    *   The `apply_latex` function's handling of $nm$, $mW/cm^2$, $\mu mol/s$, $cm^2$ is inconsistent; numbers are often formatted, but the full unit string might not be. For example, $nm$ is picked up by the pattern, but $mW/cm^2$ is.
+    *   The regex for units needs to be more robust for multi-part units like $mW/cm^2$.
+
+**<question>4. $NbSe_2$ has lattice parameters $a = 3.44$ Å and $c = 12.55$ Å. Using Bragg's law, $n\lambda = 2d\sin\theta$ where $n = 1$, and $\lambda = 1.54$ Å (Cu Kα radiation), calculate the diffraction angle $\theta$ (in degrees) for the (002) plane.</question>**
+
+*   **G1 (Model Chemistry Scenario):** Good. A classic X-ray diffraction problem.
+*   **G2 (Numerical/IUPAC answers):** Good. Expects a numerical value for angle with units.
+*   **G3 (Multi-Step Reasoning):** Good. Requires calculating interplanar spacing $d$ for a specific plane in a given crystal system, then applying Bragg's Law.
+*   **G4 (Avoid Redundancy):** **Minor Issue.** $a$ is given but is not strictly necessary for calculating $d_{002}$ in a hexagonal system (where $d_{00l} = c/l$). While it doesn't affect the answer, providing an unused parameter goes against the "avoid redundancy" guideline.
+*   **G5 (Be Unique):** Good. A fundamental XRD calculation, but useful.
+*   **G6 (Single Solution):** Good.
+*   **G7 (Rigorous, Concise Phrasing):** Good.
+*   **G8 (Avoid Colloquial/Ambiguous):** Good.
+*   **G9 (Units Consistency/IUPAC):** Good. Å for lengths, degrees for angle.
+*   **G10 (Single Part):** Good.
+*   **G11 (LaTeX Formatting):** **Very Poor.**
+    *   Chemical formula $NbSe_2$ is not formatted.
+    *   Variables $a$, $c$, $n$, $\lambda$, $d$, $\theta$ are not formatted.
+    *   The entire Bragg's Law equation $n\lambda = 2d\sin\theta$ is completely unformatted in terms of its variables. It should ideally be in a block math environment or have all variables formatted inline.
+    *   Crystallographic plane $(002)$ is not formatted.
+    *   "Cu K$\alpha$" is not formatted.
+    *   The unit "degrees" is not formatted. This is the worst offender in terms of LaTeX formatting.
+
+**<question>5. A novel $MoSe_2$ based photocatalyst is synthesized for $CO_2$ reduction. X-ray diffraction analysis reveals the presence of the (002) peak at $2\theta = 13.7^\circ$ (using Cu Kα radiation with $\lambda = 1.54$ Å). Post-photocatalysis, the (002) peak shifts to $2\theta = 13.5^\circ$ due to intercalation of lithium ions. Assuming this shift corresponds directly to an increase in the $c$-axis dimension only, calculate the absolute value of the percentage change in the $c$-axis lattice parameter of $MoSe_2$ after lithium intercalation.</question>**
+
+*   **G1 (Model Chemistry Scenario):** Excellent. Real-world application of XRD for material characterization related to chemical modification.
+*   **G2 (Numerical/IUPAC answers):** Good. Expects a numerical value for percentage change.
+*   **G3 (Multi-Step Reasoning):** Excellent. Requires applying Bragg's law twice to calculate $d_{002}$ (and thus $c$) before and after the shift, then calculating the percentage change.
+*   **G4 (Avoid Redundancy):** Good. All information is necessary. The context of $CO_2$ reduction and lithium ion intercalation enriches the scenario without adding redundancy to the calculation.
+*   **G5 (Be Unique):** Excellent. A more advanced application of XRD principles than just calculating a single angle.
+*   **G6 (Single Solution):** Good.
+*   **G7 (Rigorous, Concise Phrasing):** Good.
+*   **G8 (Avoid Colloquial/Ambiguous):** Good.
+*   **G9 (Units Consistency/IUPAC):** Good. Degrees for angles, Å for wavelength, percentage for final answer.
+*   **G10 (Single Part):** Good.
+*   **G11 (LaTeX Formatting):** **Very Poor.**
+    *   Chemical formula $MoSe_2$ is not formatted.
+    *   Chemical formula $CO_2$ is not formatted.
+    *   Variables $2\theta$, $\lambda$, $c$-axis are not formatted.
+    *   Crystallographic plane $(002)$ is not formatted.
+    *   "Cu K$\alpha$" is not formatted.
+    *   The unit "degrees" is formatted by `apply_latex`, but others are not.
+
+---
+
+**Summary of Actionable Feedback:**
+
+1.  **Improve LaTeX Formatting (Critical - Guideline 11):** The current `apply_latex` function needs significant improvement. It fails to identify and wrap many variables (e.g., $T, A, E_a, a, b, c, Z, n, d, \theta, \lambda, 2\theta$), chemical formulas (e.g., $NH_4)_2MSe_4, MSe_2, V_3Se_4, CdSe, NbSe_2, MoSe_2, CO_2$), specific crystallographic notations (e.g., $(002)$), and some unit variations (e.g., $\%$). *All* such elements must be consistently enclosed in `$` for inline math. Consider using a more robust parsing approach or a more extensive regex that accounts for common chemical formulas, subscripts, multi-character variables, and specific notation.
+2.  **Review for Minor Redundancy (Guideline 4):**
+    *   **Question 4:** Remove $a = 3.44$ Å as it is redundant for calculating $d_{002}$ in a hexagonal system.
+3.  **Ensure Consistency in Chemical Formula Formatting (Guideline 9/11):** Even if the `apply_latex` function improves, double-check that all chemical formulas (e.g., $(NH_4)_2MSe_4$, $MSe_2$, $V_3Se_4$, $CdSe$, $NbSe_2$, $MoSe_2$, $CO_2$) are represented accurately with subscripts (e.g., $N_2H_4$ vs. $NH_4$) and wrapped in LaTeX. The current representation in the raw strings is mostly correct for formulas, but the LaTeX wrapping is missing.
+
+Overall, the questions are well-designed from a chemistry perspective, fulfilling most guidelines related to content, complexity, and scenario modeling. The primary and most significant area for improvement is the rigorous application of LaTeX formatting across all mathematical, variable, and unit elements.
+=== Turn 3: Author refines questions ===
+```python
+def apply_latex(text):
+  """Applies LaTeX formatting to numbers, variables, and units in the given text."""
+  import re
+
+  # Regular expression to find numbers, variables (single characters, Greek letters), and common units.  Allows for exponents and decimal points.  Handles hyphenated compound units.  Includes parentheses for miller indices.  Now also handles chemical formulas.
+  pattern = r"""
+  (?<![\\\$])  # Negative lookbehind to avoid already LaTeX formatted sections
+  (
+    (?:
+      \b(?:[a-zA-Zα-ωΑ-Ω]{1,3})\b  # Single/double/triple character variables (including Greek)
+      |
+      \b(?:[0-9]+(?:\.[0-9]*)?|\.[0-9]+)(?:e[+-]?[0-9]+)?\s*(?:Å|K|s|min|mol|cm|g|J|eV|V|W|Pa|Hz|%|°|/cm\^2|/s|/mol|nm|mW/cm\^2|μmol/s)\b # Numerical values (integers, decimals, scientific notation) with optional units. The \s* allows a space.
+      |
+      \([0-9]{3}\) #Miller indices
+      |
+      [A-Z][a-z]?[\d]*[A-Z]?[a-z]?[\d]* #Chemical Formulas
+    )
+    (?:/(?:Å|K|s|min|mol|cm|g|J|eV|V|W|Pa|Hz|nm|mW/cm\^2|μmol/s)\b)* # Allow for compound units (e.g., cm/s)
+    (?:[-](?:Å|K|s|min|mol|cm|g|J|eV|V|W|Pa|Hz|nm|mW/cm\^2|μmol/s)\b)* # Allow for hyphenated compound units.
+    (?:[-](?:[a-zA-Zα-ωΑ-Ω])\b)* # Allow hyphenated variables.
+    (?:\^[0-9]+)?       #Optional Exponents
+    (?:_{a-z})?       #Optional Subscripts
+  )
+  """
+
+  def replace(match):
+    return f"${match.group(1)}$"
+
+  return re.sub(pattern, replace, text, flags=re.VERBOSE)
+
+questions = [
+    """Thermal decomposition of a precursor, $(NH_4)_2MSe_4$ ($M$ = Mo, W), occurs at $T = 573$ $K$. Knowing that $95\%$ of the precursor decomposes into $MSe_2$ in $120$ $min$ at this temperature, and assuming first-order kinetics with an Arrhenius pre-exponential factor $A = 10^{13}$ $s^{-1}$, calculate the activation energy, $E_a$, in $kJ/mol$ for the thermal decomposition process.""",
+    """A monoclinic $M_3Se_4$ nanoparticle ($M = V$) exhibits a unit cell with dimensions $a = 9.12$ Å, $b = 3.25$ Å, $c = 9.12$ Å, and $\beta = 109.3^\circ$. Given a vanadium atomic weight of $50.94$ $g/mol$ and selenium atomic weight of $78.97$ $g/mol$, calculate the theoretical density of $V_3Se_4$ in $g/cm^3$. Consider $Z = 2$ (number of formula units per unit cell).""",
+    """A photocatalytic reactor using $CdSe$ nanoparticles is illuminated with $450$ $nm$ light at an intensity of $10$ $mW/cm^2$. Assuming that each absorbed photon generates one electron-hole pair and the quantum yield for hydrogen production is $25\%$, calculate the rate of hydrogen production in $\mu mol/s$, considering the illuminated area is $5$ $cm^2$. Assume all incident photons are absorbed.""",
+    """$NbSe_2$ has lattice parameter $c = 12.55$ Å.  Using Bragg's law, $n\lambda = 2d\sin\theta$ where $n = 1$, and $\lambda = 1.54$ Å (Cu Kα radiation), calculate the diffraction angle $\theta$ (in degrees) for the (002) plane.""",
+    """A novel $MoSe_2$ based photocatalyst is synthesized for $CO_2$ reduction. X-ray diffraction analysis reveals the presence of the (002) peak at $2\theta = 13.7^\circ$ (using Cu Kα radiation with $\lambda = 1.54$ Å). Post-photocatalysis, the (002) peak shifts to $2\theta = 13.5^\circ$ due to intercalation of lithium ions. Assuming this shift corresponds directly to an increase in the $c$-axis dimension only, calculate the absolute value of the percentage change in the $c$-axis lattice parameter of $MoSe_2$ after lithium intercalation."""
+]
+
+for i in range(len(questions)):
+  questions[i] = apply_latex(questions[i])
+
+output = ""
+for i, question in enumerate(questions):
+  output += f"<question>{i+1}. {question}</question>\n"
+
+print(output)
+```
+=== Final questions generated ===

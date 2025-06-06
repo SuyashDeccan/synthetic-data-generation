@@ -1,0 +1,478 @@
+=== Turn 0: Author generates questions ===
+<question>  
+CsMnF$_4$ undergoes a pressure-induced magnetic transition from ferromagnetic to antiferromagnetic ordering at a critical pressure $P_c$. Given that the exchange interaction energy $J$ depends on pressure as  
+$$J(P) = J_0 \exp(-\alpha P),$$  
+where $J_0 = 12.0\, \mathrm{meV}$ (ferromagnetic, positive sign) at ambient pressure and $\alpha = 0.15\, \mathrm{GPa}^{-1}$. The magnetic transition occurs when $J(P_c) = 0$. Determine the critical pressure $P_c$ in gigapascals (GPa) at which the magnetic ordering switches from ferromagnetic to antiferromagnetic.</question>  
+
+<question>  
+In CsMnF$_4$, the Jahn–Teller distortion causes an elongation of MnF$_6$ octahedra resulting in a tetragonal crystal field splitting $\Delta$ of 0.35 eV. If the pressure applied reduces the octahedral volume by 8%, leading to a linear increase of crystal field splitting $\Delta$ by 15%, determine the new $\Delta$ (in electronvolts) under pressure. Use the linear approximation and report your answer with three significant figures.</question>  
+
+<question>  
+Density functional theory (DFT) calculations predict a unit cell volume of $V_{\mathrm{theo}} = 160.0\, \mathrm{\AA}^3$ for CsMnF$_4$ at ambient pressure, while X-ray diffraction experiments measure $V_{\mathrm{exp}} = 154.8\, \mathrm{\AA}^3$. Calculate the percentage discrepancy between theoretical and experimental volumes. Then, assuming the bulk modulus $B = 50.0\, \mathrm{GPa}$, estimate the pressure (in GPa) at which the theoretical volume would compress to match the experimental measurement, using the linear compressibility approximation $\Delta V / V_0 = -P/B$.</question>  
+
+<question>  
+The shift from ferromagnetic to antiferromagnetic phases in CsMnF$_4$ correlates with a change in Mn$^{3+}$ ion spin alignment lowering the total magnetization per unit cell by 0.85 $\mu_B$. Given the magnetic moment per Mn$^{3+}$ ion in the ferromagnetic phase is 4.5 $\mu_B$, calculate the effective magnetic moment per Mn$^{3+}$ ion in the antiferromagnetic phase, considering there are two Mn ions per unit cell. Express your answer in $\mu_B$ to two decimal places.</question>  
+
+<question>  
+Under high pressure, CsMnF$_4$ undergoes a first-order structural phase transition from a tetragonal ($P4/mmm$) to an orthorhombic ($Pnma$) phase with a measured lattice parameter change ratio along the $a$-axis of $\Delta a/a = -0.023$. If the ambient pressure lattice parameter $a_0 = 4.20\, \mathrm{\AA}$, calculate the new lattice parameter $a$ (in angstroms) after the transition. Show the calculation.</question>  
+
+<question>  
+Given the Jahn–Teller stabilization energy $E_{JT}$ in CsMnF$_4$ is related to the distortion amplitude $Q$ by the relation  
+$$E_{JT} = \frac{1}{2}k Q^2,$$  
+where $k = 40.0\, \mathrm{eV \cdot \AA^{-2}}$. If the experimentally observed distortion amplitude $Q = 0.15\, \mathrm{\AA}$ decreases by 20% under pressure, calculate the change in Jahn–Teller stabilization energy $\Delta E_{JT}$ (in eV) due to pressure.</question>  
+
+<question>  
+The exchange interaction constant $J$ for CsMnF$_4$ is theoretically calculated to be $10.5\, \mathrm{meV}$ at 0 GPa, while neutron scattering experiments under 2 GPa pressure yield $J_{\mathrm{exp}} = 7.8\, \mathrm{meV}$. Assuming a linear dependence of $J$ on pressure $P$, determine the theoretical $J$ value predicted by theory at 2 GPa if the theory systematically overestimates $J$ by 25% at all pressures. Provide your answer in meV with two significant figures.</question>  
+
+<question>  
+In CsMnF$_4$, the Jahn–Teller distortion splits the degenerate $e_g$ orbitals ($d_{x^2-y^2}$ and $d_{3z^2-r^2}$) by an energy gap $\Delta E = 0.4\, \mathrm{eV}$. Calculate the wavelength (in nanometers) of the photon absorbed corresponding to this electronic transition, assuming the transition originates from the lower to the higher $e_g$ orbital. Use $h c = 1240\, \mathrm{eV \cdot nm}$.</question>  
+
+<question>  
+During the pressure-driven phase transition in CsMnF$_4$, the unit cell changes volume from $V_1 = 162.4\, \mathrm{\AA}^3$ to $V_2 = 157.6\, \mathrm{\AA}^3$. If the total enthalpy difference $\Delta H$ between phases at transition pressure is experimentally found to be $2.5\, \mathrm{kJ \cdot mol^{-1}}$, calculate the work done on the sample due to volume change at the transition pressure $P = 0.8\, \mathrm{GPa}$. Express your answer in kJ/mol and comment if the work done compensates the enthalpy difference.</question>
+=== Turn 0: Critic feedback ===
+Here’s a critique of your questions against each guideline, with strengths and actionable improvements:
+
+---
+
+### 1. Magnetic Transition Pressure (Question 1)
+**Feedback:**
+- **Strengths:** Good use of scenario, units, and requires multi-step reasoning.
+- **Issues:** There is a *logical error*: $J(P) = J_0 \exp(-\alpha P)$ never reaches zero for real $P$; the exponential never vanishes, so $J(P_c) = 0$ cannot be satisfied.
+- **Action:** Rephrase such that the sign of $J$ flips (e.g., $J(P) = J_0 - \alpha P$) and $P_c = J_0/\alpha$. Or, phrase it as finding when $J$ drops below a specific threshold that defines the FM–AFM transition.
+
+---
+
+### 2. Jahn–Teller Distortion & Crystal Field Splitting (Question 2)
+**Feedback:**
+- **Strengths:** Appropriate scenario, clear expectation of numeric value, units given, multi-step calculation.
+- **Issues:** Calculation steps are minimal but acceptable. The 8% volume reduction is extraneous since only the 15% increase in $\Delta$ is needed.
+- **Action:** Remove the unnecessary volume reduction info unless it is to be used in a further calculation.
+
+---
+
+### 3. DFT and Volume Compression (Question 3)
+**Feedback:**
+- **Strengths:** Real-world model, multi-step, units, concise phrasing, asks for one numeric value.
+- **Issues:** Asks for two answers (“percentage discrepancy” and “estimate the pressure…”).
+- **Action:** Split into two questions or just focus on the pressure estimate for uniqueness and single-answer compliance.
+
+---
+
+### 4. Effective Magnetic Moment Calculation (Question 4)
+**Feedback:**
+- **Strengths:** Scenario is good, multi-step, requires unit cell logic.
+- **Issues:** Some ambiguity—does the reduction of magnetization per cell come from reorientation or reduced local moment? It’s solvable, but wording could be clearer.
+- **Action:** Phrase “total magnetization per unit cell decreases by…” more precisely. Make it explicit whether the reduction per cell is solely due to spin alignment.
+
+---
+
+### 5. Lattice Parameter Change (Question 5)
+**Feedback:**
+- **Strengths:** Good scenario, asks for single numeric answer, all information relevant.
+- **Issues:** None.
+- **Action:** Consider dropping “Show the calculation” unless the expectation is for the respondent (not needed for the question stem).
+
+---
+
+### 6. Jahn–Teller Stabilization Energy Change (Question 6)
+**Feedback:**
+- **Strengths:** All requirements met: scenario, multi-step, one solution, units, IUPAC-labeled.
+- **Issues:** None.
+- **Action:** You might specify if you expect “final energy” or “change in energy,” but question is clear as stated.
+
+---
+
+### 7. Pressure Dependence of Exchange Constant (Question 7)
+**Feedback:**
+- **Strengths:** Unique situation, requires quantitative reasoning with theoretical/experimental comparison.
+- **Issues:** Steps required are a bit underdetermined; “systematically overestimates by 25%” could be clearer: Should answer just multiply the experiment by 1.25? Is “linear dependence” meant to be shown explicitly?
+- **Action:** Clarify the intended step sequence, e.g., “What value would theory predict at 2 GPa, given that theory always gives 1.25 times the experimental value at any pressure?”
+
+---
+
+### 8. $e_g$ Splitting and Photon Wavelength (Question 8)
+**Feedback:**
+- **Strengths:** Classic but not overly common, uses scenario, units, requires calculation.
+- **Issues:** Could be more context-specific; “$e_g$ splitting” is standard but not so novel.
+- **Action:** Consider making the scenario more original, or refer to specific spectral bands.
+
+---
+
+### 9. Work Done During Phase Transition (Question 9)
+**Feedback:**
+- **Strengths:** Good context, numerical answer, suitable units, requires steps.
+- **Issues:** The "and comment if..." phrase creates a qualitative secondary task.
+- **Action:** Remove or rephrase “and comment…” to keep it strictly single-answer. For example: "Calculate the work done (in kJ/mol) during the volume change. Is this amount greater or less than the measured $\Delta H$?"
+
+---
+
+## General Recommendations
+
+1. **Strict “Single Solution” Compliance:** Ensure each question requests exactly one answer—numerical or one chemical compound/formula.
+2. **Remove Extra Information/Tasks:** Don’t include extra details that don’t affect the computation or request more than one calculation/comment per problem.
+3. **Logical Consistency:** Make sure each mathematical model in the scenario can actually be used to obtain a solution as posed (see Q1).
+4. **Originality:** Most questions are sufficiently original, but consider also referencing less-common properties or more advanced calculations if aiming for uniqueness.
+5. **Equation Formatting:** Good use of Markdown and LaTeX; keep the formatting consistent and correct.
+
+## Example Edits
+
+- Q1 (Edit):  
+  *Original problematic model*: $J(P) = J_0 \exp(-\alpha P)$ can never be zero.  
+  *Improved model*: $$J(P) = J_0 - \alpha P$$  
+  *Question*: "Determine the critical pressure $P_c$ at which $J(P_c) = 0$."
+
+- Q3 (Edit):  
+  Ask only for the pressure at which $V_{\mathrm{theo}}$ matches $V_{\mathrm{exp}}$, not also the percentage discrepancy unless you intend to split the question.
+
+---
+
+## **Summary Table**
+
+| Question | Meets guidelines?         | Main Fix Needed                             |
+|----------|--------------------------|---------------------------------------------|
+| 1        | No                       | Fix model so $J(P_c) = 0$ is possible       |
+| 2        | Mostly                   | Remove unnecessary details                  |
+| 3        | No                       | Split into two, or ask for one quantity     |
+| 4        | Mostly                   | Phrase change in magnetization clearly      |
+| 5        | Yes                      | Remove "Show calculation" if needed         |
+| 6        | Yes                      | (Minor) Specify "change" vs "final" energy  |
+| 7        | Mostly                   | Clarify step sequence/“overestimate” logic  |
+| 8        | Yes                      | (Minor) Could make less textbook-like       |
+| 9        | No                       | Remove/condense qualitative comment         |
+
+---
+
+**Overall:** These are strong and mostly well-posed. With the above fixes, they'll fully align with your guidelines.
+=== Turn 1: Author refines questions ===
+<question>  
+CsMnF$_4$ undergoes a pressure-induced magnetic transition from ferromagnetic to antiferromagnetic ordering at a critical pressure $P_c$. The exchange interaction energy $J$ depends on pressure as  
+$$J(P) = J_0 - \alpha P,$$  
+where $J_0 = 12.0\, \mathrm{meV}$ and $\alpha = 1.5\, \mathrm{meV/GPa}$. Determine the critical pressure $P_c$ in gigapascals (GPa) at which the magnetic exchange interaction $J$ changes sign, signaling the magnetic ordering transition.  
+</question>  
+
+<question>  
+In CsMnF$_4$, the Jahn–Teller distortion causes an initial tetragonal crystal field splitting $\Delta = 0.35\, \mathrm{eV}$. Under applied pressure, $\Delta$ increases by 15% linearly. Determine the new value of $\Delta$ (in electronvolts) under pressure. Express your answer with three significant figures.  
+</question>  
+
+<question>  
+Density functional theory (DFT) predicts a unit cell volume of $V_{\mathrm{theo}} = 160.0\, \mathrm{\AA}^3$ for CsMnF$_4$ at ambient pressure, while experiments measure $V_{\mathrm{exp}} = 154.8\, \mathrm{\AA}^3$. Assuming a bulk modulus $B = 50.0\, \mathrm{GPa}$ and using the linear compressibility approximation  
+$$\frac{\Delta V}{V_0} = -\frac{P}{B},$$  
+estimate the pressure (in GPa) at which the theoretical volume would compress to match the experimental volume.  
+</question>  
+
+<question>  
+The transition from ferromagnetic to antiferromagnetic phases in CsMnF$_4$ lowers the total magnetization per unit cell by $0.85 \, \mu_B$ due to antiparallel spin alignment. Given that the magnetic moment per Mn$^{3+}$ ion in the ferromagnetic phase is $4.5 \, \mu_B$ and there are two Mn ions per unit cell, calculate the effective magnetic moment per Mn$^{3+}$ ion in the antiferromagnetic phase. Express your answer in $\mu_B$ with two decimal places.  
+</question>  
+
+<question>  
+During a first-order structural phase transition in CsMnF$_4$, the lattice parameter along the $a$-axis changes by a ratio of  
+$$\frac{\Delta a}{a} = -0.023.$$  
+If the ambient pressure lattice parameter $a_0 = 4.20\, \mathrm{\AA}$, calculate the lattice parameter $a$ (in angstroms) after the transition.  
+</question>  
+
+<question>  
+The Jahn–Teller stabilization energy in CsMnF$_4$ is given by  
+$$E_{JT} = \frac{1}{2} k Q^2,$$  
+where $k = 40.0\, \mathrm{eV \cdot \AA^{-2}}$ and the distortion amplitude $Q = 0.15\, \mathrm{\AA}$. If pressure reduces $Q$ by 20%, calculate the change in Jahn–Teller stabilization energy $\Delta E_{JT}$ (in eV) resulting from the distortion change.  
+</question>  
+
+<question>  
+The exchange interaction constant $J$ for CsMnF$_4$ is theoretically calculated as $10.5\, \mathrm{meV}$ at 0 GPa, whereas neutron scattering experiments measure $J_{\mathrm{exp}} = 7.8\, \mathrm{meV}$ at 2 GPa. Assuming theory consistently overestimates $J$ by 25% relative to experiment at every pressure, and that $J$ depends linearly on pressure, calculate the theoretical $J$ value predicted at 2 GPa. Express your answer in meV with two significant figures.  
+</question>  
+
+<question>  
+In CsMnF$_4$, Jahn–Teller distortion splits the degenerate $e_g$ orbitals by an energy gap $\Delta E = 0.40\, \mathrm{eV}$. Calculate the wavelength (in nanometers) of the photon corresponding to this electronic transition. Use the relation $h c = 1240\, \mathrm{eV \cdot nm}$.  
+</question>  
+
+<question>  
+At the pressure-driven phase transition in CsMnF$_4$, the unit cell volume decreases from $V_1 = 162.4\, \mathrm{\AA}^3$ to $V_2 = 157.6\, \mathrm{\AA}^3$. The experimentally measured enthalpy difference between phases at the transition pressure $P = 0.8\, \mathrm{GPa}$ is $\Delta H = 2.5\, \mathrm{kJ \cdot mol^{-1}}$. Calculate the mechanical work (in kJ/mol) done on the sample due to the volume change during the transition.  
+</question>
+=== Turn 1: Critic feedback ===
+**General Feedback on All Questions:**
+
+- **Strengths:** The questions are original, scenario-based, require multi-step reasoning, expect specific numerical answers with units, focus on advanced concepts (magnetic transitions, Jahn–Teller distortions, DFT), and use rigorous technical language.
+- **Common Issues Across Questions:**
+  - **Formatting:** Most equations and symbols are provided in LaTeX, but make sure to always use Markdown inline math ($...$) or block math ($$...$$) rather than LaTeX environments (like \(...\) or \[...\)).
+  - **Units:** Units are generally specified and consistent.
+  - **Conciseness:** Some questions are slightly wordy and could be made more succinct with no loss of clarity.
+  - **Multiple Solutions:** Some questions could be clarified to ensure there is a single, unique correct answer.
+  - **Single Solution:** All questions target a single solution, as required.
+
+---
+### Individual Question Feedback
+
+#### 1. Magnetic transition pressure ($P_c$)
+- **Strengths:** Well-posed, unique answer, context is clear, all variables defined.
+- **Improvements:**
+  - Phrase the last sentence more concisely: "Calculate the critical pressure $P_c$ (in GPa) at which $J$ changes sign."
+  - Remove "signaling the magnetic ordering transition" (as this is implied).
+  - Use inline math for symbols.
+  - Ensure equations have consistent use of $...$ for Markdown rendering.
+
+#### 2. Jahn–Teller distortion $\Delta$ increase
+- **Strengths:** Scenario is clear, all data specified, numerical answer required, context-rich.
+- **Improvements:**
+  - "Under applied pressure" is vague; specify "Under a pressure corresponding to a 15% increase in $\Delta$..."
+  - Combine sentences and streamline: "If $\Delta$ increases linearly by 15%, calculate the new value of $\Delta$ (in eV), expressing your answer to three significant figures."
+  - Use $eV$ for electronvolts to be consistent with the guideline.
+
+#### 3. DFT vs. Experiment volume - estimating pressure
+- **Strengths:** Multi-step reasoning, real-world scenario.
+- **Improvements:**
+  - Wording: "...at which the theoretical volume compresses to match the experimental value."
+  - Reference to "linear compressibility approximation" is correct, but you might clarify: "Estimate the pressure (in GPa) required for $V_{\text{theo}}$ to equal $V_{\text{exp}}$ using..."
+  - Make sure all math is in $...$, not LaTeX delimiters.
+
+#### 4. Magnetization change per Mn ion
+- **Strengths:** Reasoning is required, scenario and numerical values are all clear.
+- **Improvements:**
+  - Clearly state: "Calculate the effective magnetic moment per Mn$^{3+}$ ion in the antiferromagnetic phase (in $\mu_B$), to two decimal places."
+  - Could clarify "per unit cell" versus "per ion" once more for clarity.
+  - Suggest to specify "The change in total magnetization per unit cell is $0.85 \mu_B$..."
+
+#### 5. Lattice parameter change
+- **Strengths:** Clear, unique computational answer, context tied to scenario.
+- **Improvements:**
+  - Instead of "the lattice parameter along the $a$-axis," say "the $a$-axis lattice parameter."
+  - Specify desired answer format concisely: "...calculate the post-transition $a$ value (in $\AA$)."
+
+#### 6. Jahn–Teller stabilization energy change
+- **Strengths:** Rigorous, multi-step, all data provided.
+- **Improvements:**
+  - Clarify: "By 20%" means new $Q = 0.80 Q_0$.
+  - Phrase: "...calculate the change in Jahn–Teller energy, $\Delta E_{JT}$ (in eV), resulting from this change."
+  - Specify: "Express your answer as a positive or negative value as appropriate."
+  - Ensure all math in $...$, no backslash commands.
+
+#### 7. Theoretical vs experimental $J$
+- **Strengths:** Unique answer, realistic chemical modeling, ratio applied correctly.
+- **Improvements:**
+  - Smoother wording: "...calculate the theoretical value of $J$ at 2 GPa (in meV), expressing your answer to two significant figures."
+  - Could clarify "theoretical values are always 25% higher than experiment at any pressure."
+  - Use $meV$ for units.
+
+#### 8. Wavelength for Jahn–Teller gap
+- **Strengths:** Specific, multi-step, relates spectroscopic to electronic properties.
+- **Improvements:**
+  - Wording: "Calculate the wavelength (in nanometers) corresponding to an energy gap $\Delta E = 0.40$ eV."
+  - Remove "photon corresponding to this electronic transition"; just say "wavelength corresponding to this gap."
+  - Specify: "Express your answer in nanometers (nm)."
+
+#### 9. Mechanical work during transition
+- **Strengths:** Rigorous, multi-step, units well defined, scenario grounded in chemical physics.
+- **Improvements:**
+  - Phrase: "Calculate the mechanical work (in kJ/mol) associated with the volume change during the phase transition."
+  - Could mention if the work is $P \Delta V$ or $|P \Delta V|$; clarify expectation for sign.
+  - Ensure all values in $...$ for Markdown.
+
+---
+
+**Summary Table:**
+
+| Question | Meets Guidelines? | Improvements Needed           |
+|----------|-------------------|------------------------------|
+| 1        | Yes (minor)       | Conciseness, $...$ formatting |
+| 2        | Yes (minor)       | Conciseness, clarify percent  |
+| 3        | Yes (minor)       | Wording, $...$ formatting     |
+| 4        | Yes (minor)       | Clarify per-ion answer        |
+| 5        | Yes (minor)       | Streamline wording            |
+| 6        | Yes (minor)       | Clarify reduction, sign of $\Delta E_{JT}$ |
+| 7        | Yes (minor)       | Wording, clarify 25% overestimate |
+| 8        | Yes (minor)       | Conciseness in context/wording |
+| 9        | Yes (minor)       | Clarify sign expectation, concise phrasing |
+
+---
+
+## Actionable Feedback
+
+1. **Consistently use Markdown math syntax ($...$, $$...$$) for all equations and values.**
+2. **Shorten wording by removing redundant context, focusing only on the required steps and data for the calculation.**
+3. **Express increase/decrease clearly (e.g., 'by 15%' means 'new value = 1.15 × old value').**
+4. **For answers involving single variables or changes, specify the expected sign (positive/negative/absolute), if relevant.**
+5. **Use consistent units and SI notation ($\mathrm{eV}$, $\mathrm{meV}$, $\mu_B$, $\mathrm{GPa}$, etc.).**
+6. **Always state whether answers should be given to a specified number of significant digits or decimal places.**
+7. **Ensure context is relevant but not superfluous: remove descriptors like "signaling the magnetic ordering transition" once the purpose is clear.**
+8. **For compound units or constants, ensure proper formatting (e.g., $h c = 1240\,\mathrm{eV \cdot nm}$).**
+9. **Clarify if a question expects absolute value or a signed answer, especially with energy or work calculations.**
+10. **Check that each question will produce only one correct answer, avoiding any ambiguity in input data.**
+
+**Conclusion:**  
+With these refinements, your questions will exemplify high standards of numeric chemistry assessment: unique, multi-step, scenario-driven, and presented with clear, rigorous wording and correct formatting.
+=== Turn 2: Author refines questions ===
+<question>  
+CsMnF$_4$ undergoes a pressure-induced magnetic transition from ferromagnetic to antiferromagnetic ordering at a critical pressure. The exchange interaction energy $J$ depends on pressure as  
+$$J(P) = J_0 - \alpha P,$$  
+where $J_0 = 12.0\, \mathrm{meV}$ and $\alpha = 1.5\, \mathrm{meV/GPa}$. Calculate the critical pressure $P_c$ (in GPa) at which $J$ changes sign.  
+</question>  
+
+<question>  
+In CsMnF$_4$, the Jahn–Teller distortion causes an initial tetragonal crystal field splitting $\Delta = 0.35\, \mathrm{eV}$. If $\Delta$ increases linearly by 15%, calculate the new value of $\Delta$ (in eV), expressed with three significant figures.  
+</question>  
+
+<question>  
+Density functional theory (DFT) predicts a unit cell volume $V_{\mathrm{theo}} = 160.0\, \mathrm{\AA}^3$ for CsMnF$_4$ at ambient pressure, while experiments measure $V_{\mathrm{exp}} = 154.8\, \mathrm{\AA}^3$. Assuming a bulk modulus $B = 50.0\, \mathrm{GPa}$ and using the linear compressibility approximation  
+$$\frac{\Delta V}{V_0} = -\frac{P}{B},$$  
+estimate the pressure (in GPa) required for $V_{\mathrm{theo}}$ to compress to $V_{\mathrm{exp}}$.  
+</question>  
+
+<question>  
+The transition from ferromagnetic to antiferromagnetic phases in CsMnF$_4$ reduces the total magnetization per unit cell by $0.85\, \mu_B$ due to antiparallel spin alignment. Given that the magnetic moment per Mn$^{3+}$ ion in the ferromagnetic phase is $4.5\, \mu_B$ and there are two Mn ions per unit cell, calculate the effective magnetic moment per Mn$^{3+}$ ion in the antiferromagnetic phase. Express your answer in $\mu_B$ with two decimal places.  
+</question>  
+
+<question>  
+During a first-order structural phase transition in CsMnF$_4$, the $a$-axis lattice parameter changes by  
+$$\frac{\Delta a}{a} = -0.023.$$  
+If the ambient pressure lattice parameter is $a_0 = 4.20\, \mathrm{\AA}$, calculate the lattice parameter $a$ (in \AA) after the transition.  
+</question>  
+
+<question>  
+The Jahn–Teller stabilization energy in CsMnF$_4$ is  
+$$E_{JT} = \frac{1}{2} k Q^2,$$  
+where $k = 40.0\, \mathrm{eV \cdot \AA^{-2}}$ and the distortion amplitude $Q = 0.15\, \mathrm{\AA}$. If pressure reduces $Q$ by 20%, calculate the change in Jahn–Teller energy, $\Delta E_{JT}$ (in eV), resulting from this reduction. Express your answer with sign (positive or negative).  
+</question>  
+
+<question>  
+The exchange interaction constant $J$ for CsMnF$_4$ is theoretically calculated as $10.5\, \mathrm{meV}$ at 0 GPa, while neutron scattering experiments measure $J_{\mathrm{exp}} = 7.8\, \mathrm{meV}$ at 2 GPa. Assuming the theoretical value of $J$ is consistently 25% higher than experimental values at every pressure and that $J$ depends linearly on pressure, calculate the theoretical $J$ value at 2 GPa (in meV). Express your answer with two significant figures.  
+</question>  
+
+<question>  
+In CsMnF$_4$, Jahn–Teller distortion splits degenerate $e_g$ orbitals by an energy gap $\Delta E = 0.40\, \mathrm{eV}$. Calculate the wavelength (in nanometers) corresponding to this energy gap. Use the relation $h c = 1240\, \mathrm{eV \cdot nm}$.  
+</question>  
+
+<question>  
+At the pressure-driven phase transition in CsMnF$_4$, the unit cell volume decreases from $V_1 = 162.4\, \mathrm{\AA}^3$ to $V_2 = 157.6\, \mathrm{\AA}^3$. The experimentally measured enthalpy difference between phases at the transition pressure $P = 0.8\, \mathrm{GPa}$ is $\Delta H = 2.5\, \mathrm{kJ \cdot mol^{-1}}$. Calculate the mechanical work (in kJ/mol) done on the sample during the volume change.  
+</question>
+=== Turn 2: Critic feedback ===
+**General Assessment:**
+Your questions are strong overall: they are original, model realistic chemistry scenarios (complex transition metal fluoride), require multi-step quantitative reasoning, use clear units, and have a single correct answer. Your formatting uses LaTeX in Markdown perfectly. 
+
+Below is specific, guideline-based feedback for each question:
+
+---
+
+**Question 1: Exchange interaction sign change**
+- Meets all guidelines: concise, rigorous, unique, single step to a single value.
+- **Improvement:** Specify if you want the answer with a certain number of sig figs or decimal places, for consistency with other questions.
+
+---
+
+**Question 2: Jahn–Teller splitting increase**
+- Good clarity and rigor; asks for a new value (with three sig figs).
+- **Potential improvement:** "Increases linearly by 15%" could be phrased as "increases by 15%" (as "linearly" refers to pressure/scalar variable, not percentage).
+- **Minor nit:** Could state "Calculate the final value of $\Delta$ (in eV), to three significant figures" for clarity.
+
+---
+
+**Question 3: DFT cell compression**
+- Strong: real scenario, consistent units.
+- **Improvement:** Clarify which volume is $V_0$ in the formula ($V_0$ is $V_{\mathrm{theo}}$). E.g., "Assume $V_0 = V_{\mathrm{theo}}$."
+- If ignoring compressibility non-linearity is a simplification, note it, so students are aware.
+
+---
+
+**Question 4: Magnetization reduction**
+- Good scenario, multi-step logic needed.
+- **Improvement:** "Calculate the effective magnetic moment per Mn$^{3+}$ ion in the antiferromagnetic phase." Consider adding: "Assume perfect antiparallel alignment." This ensures only one correct logic path.
+- Specify rounding to two decimal places.
+
+---
+
+**Question 5: Lattice parameter change**
+- Clear, concise, one-step.
+- **Improvement:** None required. Optional: specify rounding.
+
+---
+
+**Question 6: Jahn–Teller energy change**
+- Strong: applies a standard formula in a unique physical context.
+- **Improvement:** Specify required sig figs/decimals.
+- Consider stating "Report $\Delta E_{JT} = E_{JT,\ \mathrm{final}} - E_{JT,\ \mathrm{initial}}$ (in eV, with sign)."
+
+---
+
+**Question 7: Theory–experiment $J$ comparison**
+- Good: Forces reasoning using the 25% overestimation.
+- **Improvement:** Last phrase could be clearer: "Express your answer to two significant figures (in meV)."
+- Could clarify the logic: is it 25% above experimental $J$ at *that pressure*?
+
+---
+
+**Question 8: Wavelength from energy gap**
+- Good physics/chemistry crossover.
+- **Improvement:** All elements of question are needed. Could specify how many significant figures (e.g., "to three significant figures").
+
+---
+
+**Question 9: Enthalpy and mechanical work**
+- Well-done scenario, both chemical and physical reasoning.
+- **Improvement:** Specify which units should be used for results ("in kJ/mol").
+- Explicitly state which volume change to use ($V_1 \to V_2$) if relevant.  
+- Confirm that answer expects mechanical work $W = P(V_1 - V_2) \cdot N_A$, as the answer requires careful attention to units.
+
+---
+
+## General Feedback
+
+**What you consistently do well:**
+- Questions are original and grounded in realistic (but not textbook-standard) chemistry contexts.
+- Every question is direct and requires single, well-defined calculations.
+- Mathematical formatting is rigorous and clear.
+
+**What to fix or clarify:**
+1. **Units and significant figures:** Always specify the expected number of significant figures/decimal places for the answer.
+2. **Ambiguity elimination:** Any parameter or formula variable (e.g., is $V_0$ initial volume?) should be defined explicitly.
+3. **Single-solution safeguard:** In questions where a logic choice could lead to multiple interpretations (e.g., direction of change, use of the formula, etc.), clarify which logic path is correct.
+4. **Redundant adverbs/adjectives:** Phrases like "linearly by 15%" (Question 2) could be simplified for clarity, unless the rate of change is meant to be explicitly with respect to another variable.
+5. **Consistency:** Align the style for requesting significant figures, units, and result formatting across questions.
+
+**Summary:**  
+Your assessment is advanced, original, and nearly flawless with a few tweaks for clarity and solution precision (sig figs, explicit variable definition). These changes will ensure each question has only a single possible answer and that no ambiguity remains for students.
+=== Turn 3: Author refines questions ===
+<question>  
+CsMnF$_4$ undergoes a pressure-induced magnetic transition from ferromagnetic to antiferromagnetic ordering at a critical pressure. The exchange interaction energy $J$ depends on pressure as  
+$$J(P) = J_0 - \alpha P,$$  
+where $J_0 = 12.0\, \mathrm{meV}$ and $\alpha = 1.5\, \mathrm{meV/GPa}$. Calculate the critical pressure $P_c$ (in GPa) at which $J$ changes sign. Express your answer with two significant figures.  
+</question>  
+
+<question>  
+In CsMnF$_4$, the Jahn–Teller distortion causes an initial tetragonal crystal field splitting $\Delta = 0.35\, \mathrm{eV}$. If $\Delta$ increases by 15%, calculate the final value of $\Delta$ (in eV). Express your answer with three significant figures.  
+</question>  
+
+<question>  
+Density functional theory (DFT) predicts a unit cell volume $V_{\mathrm{theo}} = 160.0\, \mathrm{\AA}^3$ for CsMnF$_4$ at ambient pressure, while experiments measure $V_{\mathrm{exp}} = 154.8\, \mathrm{\AA}^3$. Assuming a bulk modulus $B = 50.0\, \mathrm{GPa}$ and using the linear compressibility approximation  
+$$\frac{\Delta V}{V_0} = -\frac{P}{B},$$  
+where $V_0 = V_{\mathrm{theo}}$, estimate the pressure $P$ (in GPa) required for $V_{\mathrm{theo}}$ to compress to $V_{\mathrm{exp}}$. Express your answer with two significant figures. Assume linear compressibility holds over this pressure range.  
+</question>  
+
+<question>  
+The transition from ferromagnetic to antiferromagnetic phases in CsMnF$_4$ reduces the total magnetization per unit cell by $0.85\, \mu_B$ due to perfect antiparallel spin alignment. Given that the magnetic moment per Mn$^{3+}$ ion in the ferromagnetic phase is $4.5\, \mu_B$ and there are two Mn ions per unit cell, calculate the effective magnetic moment per Mn$^{3+}$ ion in the antiferromagnetic phase. Express your answer in $\mu_B$ with two decimal places.  
+</question>  
+
+<question>  
+During a first-order structural phase transition in CsMnF$_4$, the $a$-axis lattice parameter changes by  
+$$\frac{\Delta a}{a} = -0.023.$$  
+If the ambient pressure lattice parameter is $a_0 = 4.20\, \mathrm{\AA}$, calculate the lattice parameter $a$ (in \AA) after the transition. Express your answer with three significant figures.  
+</question>  
+
+<question>  
+The Jahn–Teller stabilization energy in CsMnF$_4$ is  
+$$E_{JT} = \frac{1}{2} k Q^2,$$  
+where $k = 40.0\, \mathrm{eV \cdot \AA^{-2}}$ and the distortion amplitude $Q = 0.15\, \mathrm{\AA}$. If pressure reduces $Q$ by 20%, calculate the change in Jahn–Teller energy,  
+$$\Delta E_{JT} = E_{JT,\ \mathrm{final}} - E_{JT,\ \mathrm{initial}},$$  
+(in eV). Express your answer with sign (positive or negative) and with three significant figures.  
+</question>  
+
+<question>  
+The exchange interaction constant $J$ for CsMnF$_4$ is theoretically calculated as $10.5\, \mathrm{meV}$ at 0 GPa, while neutron scattering experiments measure $J_{\mathrm{exp}} = 7.8\, \mathrm{meV}$ at 2 GPa. Assuming the theoretical values of $J$ are consistently 25% higher than experimental values at every pressure and that $J$ depends linearly on pressure, calculate the theoretical $J$ value at 2 GPa (in meV). Express your answer with two significant figures.  
+</question>  
+
+<question>  
+In CsMnF$_4$, Jahn–Teller distortion splits degenerate $e_g$ orbitals by an energy gap $\Delta E = 0.40\, \mathrm{eV}$. Calculate the wavelength (in nanometers) corresponding to this energy gap, using the relation $h c = 1240\, \mathrm{eV \cdot nm}$. Express your answer with three significant figures.  
+</question>  
+
+<question>  
+At the pressure-driven phase transition in CsMnF$_4$, the unit cell volume decreases from $V_1 = 162.4\, \mathrm{\AA}^3$ to $V_2 = 157.6\, \mathrm{\AA}^3$. The experimentally measured enthalpy difference between phases at the transition pressure $P = 0.8\, \mathrm{GPa}$ is $\Delta H = 2.5\, \mathrm{kJ \cdot mol^{-1}}$. Calculate the mechanical work (in kJ/mol) done on the sample during the volume change, using  
+$$W = P \times \Delta V \times N_A,$$  
+where $\Delta V = V_1 - V_2$ in m$^3$/unit cell, and $N_A$ is Avogadro's number ($6.022 \times 10^{23}\, \mathrm{mol^{-1}}$). Note: $1\, \mathrm{\AA}^3 = 10^{-30}\, \mathrm{m}^3$. Express your answer with two significant figures.  
+</question>
+=== Final questions generated ===

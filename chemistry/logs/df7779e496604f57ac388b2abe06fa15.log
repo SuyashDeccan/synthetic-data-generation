@@ -1,0 +1,592 @@
+=== Turn 0: Author generates questions ===
+<question>  
+A two-dimensional perovskite exhibits a charge transfer rate constant $k_{\text{CT}}$ governed by non-adiabatic Marcus theory:
+
+$$k_{\text{CT}} = \frac{2\pi}{\hbar} |V|^2 \frac{1}{\sqrt{4\pi \lambda k_B T}} \exp\left[-\frac{(\Delta G^\circ + \lambda)^2}{4\lambda k_B T}\right],$$
+
+where $|V| = 25\,\text{meV}$ is the electronic coupling, reorganization energy $\lambda = 0.22\,\text{eV}$, driving force $\Delta G^\circ = -0.18\,\text{eV}$, $T=298\,K$, $\hbar = 6.582 \times 10^{-16}\,\text{eV}\cdot \text{s}$, and Boltzmann constant $k_B = 8.617\times 10^{-5}\,\text{eV}\cdot K^{-1}$. 
+
+Calculate the charge transfer rate constant $k_{\text{CT}}$ in units of $\text{s}^{-1}$. Express your answer in scientific notation with three significant figures.</question>
+
+<question>  
+Considering an organic cation with a rigid, planar ammonium headgroup and variable alkyl chain length, the binding energy $E_b$ to a layered lead iodide perovskite surface follows:
+
+$$E_b = E_0 - \alpha n,$$
+
+where $E_0 = -1.12\,\text{eV}$ is the binding energy of the base cation ($n=0$), $\alpha = 0.015\,\text{eV}$ per methylene unit, and $n$ is the number of $-\mathrm{CH}_2-$ units in the alkyl chain. 
+
+For an organic cation with $n=8$, compute the binding energy $E_b$ in eV. Report your answer to three decimal places.</question>
+
+<question>  
+In a hybrid perovskite film, the selection of an organic cation affects the interfacial interaction energy between the cation and the 2D material layer. Given that the dipole moment $\mu$ of the ammonium headgroup is $3.5$ D and the distance $d$ between the ammonium nitrogen and the perovskite surface is $3.2\,\text{\AA}$, estimate the classical electrostatic interaction energy $E_{\mathrm{int}}$ in eV, modeled as:
+
+$$E_{\mathrm{int}} = -\frac{\mu e}{4\pi \varepsilon_0 \varepsilon_r d^2},$$
+
+where the electronic charge $e = 1.602 \times 10^{-19}\,C$, vacuum permittivity $\varepsilon_0 = 8.854 \times 10^{-12}\,C^2/(J\cdot m)$, and relative permittivity $\varepsilon_r=6.5$. Convert Debye to Coulomb-meter using $1\,D = 3.336 \times 10^{-30}\,C\cdot m$. Provide the interaction energy in eV with three significant figures.</question>
+
+<question>  
+A 2D perovskite material demonstrates a binding energy dependence on the conformation of the organic passivating cation. Given a planar-cis and a pyramidal trans conformation of the passivant, their gas-phase energies differ by $\Delta E = 0.085\,\text{eV}$. The adsorption binding energies on the perovskite surface are $E_{b,\text{cis}} = -1.07\,\text{eV}$ and $E_{b,\text{trans}} = -0.92\,\text{eV}$. Considering Boltzmann statistics at $T=298\,K$, calculate the ratio of surface coverage $R = \theta_{\text{cis}}/\theta_{\text{trans}}$ assuming adsorption-limited occupancy. Use $k_B = 8.617 \times 10^{-5}\,\text{eV/K}$. Express your answer as a dimensionless number with two decimal places.</question>
+
+<question>  
+An organic ammonium cation passivating a lead iodide perovskite has two possible protonation states, with pKa values of 9.3 and 5.6 for the ammonium moiety. At pH 7.0, determine the fraction of fully protonated organic cations at equilibrium using the Henderson-Hasselbalch equation. Express the fraction as a decimal rounded to three significant figures.</question>
+=== Turn 0: Critic feedback ===
+Here's an expert critique of the provided questions with concise, actionable feedback per question, according to your specified guidelines:
+
+---
+
+**General Observations**
+- **Strengths:** All questions model authentic chemical scenarios (perovskites, organic cations, etc.), are original (not standard textbook fare), use rigorous phrasing, and expect one numerical answer with units.
+- **Improvements Needed:** Some minor issues with clarity, units, ambiguous wording, and solution uniqueness as below.
+
+---
+
+## Question 1
+
+**Feedback:**
+- ✔ Model is original and rigorous; scenario is advanced and contextualized.
+- ✔ Multi-step calculation is required; all parameters provided with correct units.
+- ✔ Numerical value (with units, $s^{-1}$) required.
+- ✔ Only one numerical answer with correct significant figures.
+- ✔ No extraneous information.
+- ✔ Rigorous, concise phrasing.
+- ✔ Units and LaTeX formatting are consistent.
+- **Suggestion:** Specify how much rounding should occur in intermediate steps for clarity, e.g., “Keep at least 4 significant digits in intermediate calculations for accuracy.”
+- **No action needed.**
+
+---
+
+## Question 2
+
+**Feedback:**
+- ✔ Realistic, specific scenario involving perovskite-binding energetics.
+- ✔ Requires straightforward, single-step numerical calculation.
+- ✔ No ambiguity; one answer with correct units and significant digits.
+- ✔ No extraneous information.
+- ✔ Nomenclature and units are correct.
+- **Minor Improvement:** For completeness of information, explicitly define “base cation ($n=0$)” as a generic ammonium cation, for full clarity.
+- **No further action needed.**
+
+---
+
+## Question 3
+
+**Feedback:**
+- ✔ Models a physical chemistry scenario with realistic parameters.
+- ✔ Requires multi-step calculation (unit conversion, formula substitution); all constants provided.
+- ✔ Only one value to compute, clearly specified units.
+- ✔ Proper parameter units and LaTeX formatting.
+- **Minor issues:**
+  - The variable $\mu$ is described as “ammonium headgroup” dipole moment; clarify (e.g., “point dipole moment of the headgroup”).
+  - “Estimate” could be replaced with “Calculate” for stricter scientific phrasing.
+- **Action:** Replace “estimate” with “calculate”. Clarify “headgroup dipole” as “point dipole moment”.
+
+---
+
+## Question 4
+
+**Feedback:**
+- ✔ Good use of Boltzmann distribution and surface energetics in perovskite chemistry.
+- ✔ Single, dimensionless answer requested; all constants provided.
+- ✔ Requires multi-step reasoning.
+- ✔ No ambiguity in phrasing.
+- ✔ Units and LaTeX formatting are consistent.
+- **Minor Improvement:** The instruction “surface coverage…assuming adsorption-limited occupancy” may be clarified. For maximal rigor, you might prepend: “Assume equilibrium coverage is proportional to the Boltzmann factor of the binding energy.” Alternatively, add “assuming no lateral interactions.”
+- **Action:** Clarify what “adsorption-limited occupancy” entails, e.g., “Assume equilibrium fractional coverage ratio is given by the Boltzmann factor based on binding energy difference.”
+- **Consider:** Remove the phrase “conformation of the passivant” in favor of “adsorbed conformer”.
+
+---
+
+## Question 5
+
+**Feedback:**
+- ✔ Involves acid-base equilibrium for a passivating cation using real pKa values.
+- ✔ Requires multi-step calculation, including the contribution from both protonation states.
+- **Potential Ambiguity:** The phrase “fraction of fully protonated cations” is not fully clear for a molecule with two ionizable sites: Should the respondent calculate the fraction where both sites are protonated (i.e., fully protonated form only), or should they include partial protonation as well?
+- **Action:** Explicitly specify: “Determine the equilibrium fraction of organic cations having both sites protonated…” or “in the fully protonated (dication) form…”
+- **Units:** None needed here, as answer is a pure fraction (decimal).
+
+---
+
+### **Summary Table (Actionable Points)**
+
+| Q# | Actionable Feedback                                                                                                                      |
+|----|-----------------------------------------------------------------------------------------------------------------------------------------|
+| 1  | Specify instructions on intermediate calculation rounding for clarity (optional, minor).                                                |
+| 2  | Consider explicitly describing “base cation ($n=0$)” as a generic ammonium cation for completeness (minor).                             |
+| 3  | Replace “estimate” with “calculate”; clarify $\mu$ as a “point dipole moment”.                                                         |
+| 4  | Clarify meaning of “adsorption-limited occupancy”, e.g., “assume coverage ratio follows Boltzmann distribution of binding energies”.    |
+| 5  | Explicitly state what is meant by “fully protonated”—that is, the fraction with both sites protonated (dication form).                  |
+
+---
+
+**Overall:**  
+Excellent use of technical, original, and complex chemical scenarios with appropriate mathematical rigor and specificity. Minor phrasing tweaks will improve clarity and instructional precision. No concerns regarding redundancy, IUPAC units/naming, multidimensionality, or ambiguity except as noted above.
+=== Turn 1: Author refines questions ===
+<question>  
+A two-dimensional perovskite exhibits a charge transfer rate constant \( k_{\text{CT}} \) governed by non-adiabatic Marcus theory:
+
+\[
+k_{\text{CT}} = \frac{2\pi}{\hbar} |V|^2 \frac{1}{\sqrt{4\pi \lambda k_B T}} \exp\left[-\frac{(\Delta G^\circ + \lambda)^2}{4\lambda k_B T}\right],
+\]
+
+where \(|V| = 25\,\text{meV}\) is the electronic coupling, reorganization energy \(\lambda = 0.22\,\text{eV}\), driving force \(\Delta G^\circ = -0.18\,\text{eV}\), temperature \(T=298\,K\), reduced Planck constant \(\hbar = 6.582 \times 10^{-16}\,\text{eV}\cdot \text{s}\), and Boltzmann constant \(k_B = 8.617\times 10^{-5}\,\text{eV}\cdot K^{-1}\).
+
+Calculate the charge transfer rate constant \(k_{\text{CT}}\) in units of \(\text{s}^{-1}\). Keep at least four significant digits in intermediate steps for accuracy, and express your final answer in scientific notation with three significant figures.</question>
+
+<question>  
+Considering an organic ammonium cation with a rigid, planar ammonium headgroup and variable alkyl chain length, the binding energy \(E_b\) to a layered lead iodide perovskite surface follows:
+
+\[
+E_b = E_0 - \alpha n,
+\]
+
+where \(E_0 = -1.12\,\text{eV}\) is the binding energy of the base ammonium cation (\(n=0\)), \(\alpha = 0.015\,\text{eV}\) per methylene unit, and \(n\) is the number of \(-\mathrm{CH}_2-\) units in the alkyl chain. 
+
+For an organic cation with \(n=8\), compute the binding energy \(E_b\) in eV. Report your answer to three decimal places.</question>
+
+<question>  
+In a hybrid perovskite film, the selection of an organic cation affects the interfacial interaction energy between the cation and the 2D material layer. Given that the point dipole moment \(\mu\) of the ammonium headgroup is \(3.5\) D and the distance \(d\) between the ammonium nitrogen and the perovskite surface is \(3.2\,\text{\AA}\), calculate the classical electrostatic interaction energy \(E_{\mathrm{int}}\) in eV, modeled as:
+
+\[
+E_{\mathrm{int}} = -\frac{\mu e}{4\pi \varepsilon_0 \varepsilon_r d^2},
+\]
+
+where the electronic charge \(e = 1.602 \times 10^{-19}\,C\), vacuum permittivity \(\varepsilon_0 = 8.854 \times 10^{-12}\,C^2/(J\cdot m)\), and relative permittivity \(\varepsilon_r=6.5\). Use the conversion \(1\,D = 3.336 \times 10^{-30}\,C\cdot m\).
+
+Calculate \(E_{\mathrm{int}}\) in eV and provide your answer with three significant figures.</question>
+
+<question>  
+A 2D perovskite material demonstrates binding energy differences between two adsorbed conformers of an organic passivating cation: planar-cis and pyramidal-trans. Their gas-phase energies differ by \(\Delta E = 0.085\,\text{eV}\). The adsorption binding energies on the perovskite surface are \(E_{b,\mathrm{cis}} = -1.07\,\text{eV}\) and \(E_{b,\mathrm{trans}} = -0.92\,\text{eV}\).
+
+Assuming equilibrium fractional surface coverage is proportional to the Boltzmann factor of the total energy (gas-phase plus binding), and neglecting lateral interactions, calculate the ratio of surface coverage 
+
+\[
+R = \frac{\theta_{\mathrm{cis}}}{\theta_{\mathrm{trans}}}
+\]
+
+at temperature \(T=298\,K\). Use \(k_B = 8.617 \times 10^{-5}\,\text{eV/K}\). Express your answer as a dimensionless number with two decimal places.</question>
+
+<question>  
+An organic ammonium cation passivating a lead iodide perovskite possesses two protonation sites with pKa values of 9.3 and 5.6 for the ammonium moieties. At pH 7.0, determine the equilibrium fraction of organic cations fully protonated at both sites (i.e., the dication form) using the Henderson-Hasselbalch equation and appropriate acid-base equilibria.
+
+Express the fraction as a decimal rounded to three significant figures.</question>
+=== Turn 1: Critic feedback ===
+**Overall Evaluation**  
+Your questions are high-quality, challenging, and adhere closely to advanced chemistry assessment design. They have clear real or idealized scenarios, precise requests for numerical answers, force detailed calculations, and use rigorous language. Below are specific critiques and improvement suggestions against each of your listed guidelines.
+
+---
+
+## 1. **Charge Transfer Rate (Non-Adiabatic Marcus Theory)**
+
+**Strengths:**
+- Scenario is realistic for materials chemistry.
+- Requires multi-step calculation (unit conversions, exponentials).
+- Phrasing is concise and technical.
+- All necessary constants are provided.
+
+**Improvements:**
+- *Units Consistency:* State explicitly that all energy terms must be in eV.
+- *Clarity:* It may help to remind students to convert $|V|$ to eV if there is any ambiguity.
+- *Redundancy:* Consider omitting "Keep at least four significant digits..." since you specify the required precision in the answer; instead, just require final answer with three significant digits.
+- *Formatting:* No major issues; your Markdown/LaTeX formatting appears correct.
+
+**Actionable Revision:**  
+- Remove the instruction about significant digits in intermediate steps.
+- Make sure to specify energy units (all in eV) at the top of the parameter list.
+
+---
+
+## 2. **Binding Energy vs Alkyl Chain Length**
+
+**Strengths:**
+- Scenario is concrete and grounded in surface science.
+- Calculation is very clear and direct.
+- Units are consistent and numerical answer is specified.
+
+**Improvements:**
+- *Step Complexity:* Only single step (substitution in a linear equation). While this is not strictly against your guidelines, it is a less complex calculation compared to your others.
+- *Suggestion:* Consider requiring calculation for two values of $n$ (e.g., for $n=8$ and $n=4$ and have them compare), or alternatively have the student solve for $n$ given a target $E_b$ — but only if you can preserve a single answer.
+- *Formatting:* Well-presented.
+
+**Actionable Revision:**  
+- Consider adding a step (e.g., "If the experimental binding energy for $n=8$ is $-1.24$ eV, does the model over- or underestimate binding?") but only if it **does not introduce a second answer**.
+
+---
+
+## 3. **Electrostatic Interaction Energy Calculation**
+
+**Strengths:**
+- Scenario is authentic for materials chemistry.
+- Multi-step conversion and calculation required.
+- Phrasing is rigorous.
+- Units and conversion factors are clearly specified.
+
+**Improvements:**
+- *Over-Specification:* Explicitly stating the value of $e$ in the equation may not be necessary since $\mu$ is in Debye and could cause confusion—clarify dimensional analysis.
+- *Clarity:* Consider clarifying that $d$ must be converted to meters to avoid inadvertent unit errors.
+
+**Actionable Revision:**  
+- Add "Convert all quantities to SI units before calculating" or specify units for $d$ at the point of its introduction.
+
+---
+
+## 4. **Surface Coverage Ratio Calculation (Boltzmann Equilibrium)**
+
+**Strengths:**
+- Scenario is clear, specific, and not a textbook clone.
+- Requires multi-step reasoning (sum of energies, calculation of exponent, Boltzmann relation).
+- Units consistent and answer format unambiguous.
+
+**Improvements:**
+- *Ambiguity:* The phrase "their gas-phase energies differ by..." can be misinterpreted as which is higher; instead, specify the energy of each or which is lower/higher.
+- *Step Clarity:* Consider defining "total energy" formally in the question (i.e., total = binding + gas phase) to avoid confusion.
+
+**Actionable Revision:**  
+- Specify which conformation has the lower gas-phase energy.
+- Explicitly state that total energy per conformation is $E_\text{tot} = E_\text{gas-phase} + E_b$.
+
+---
+
+## 5. **Fraction of Dication at pH (Henderson-Hasselbalch)**
+
+**Strengths:**
+- Realistic acid-base scenario for surface chemistry.
+- Requires stepwise equilibrium constant analysis.
+- Clear about final answer format.
+
+**Improvements:**
+- *Single Solution:* Good — only one value must be computed.
+- *Clarity:* Specify that the two ammonium groups are *chemically distinct* (to avoid confusion if they're equivalent).
+- *Redundancy:* None.
+- *Nomenclature:* Avoid ambiguity—use "fully protonated (dicationic) form" instead of "dication".
+
+**Actionable Revision:**  
+- Briefly state that the two ammonium groups are distinguishable (if intended).
+- Add a clarifying parenthetical: "...the fraction of fully protonated (dicationic) cations..."
+
+---
+
+### **General Formatting and Phrasing**
+
+- Your Markdown/LaTeX formatting is excellent and compatible with rendering engines.
+- Phrasing is concise and formal.
+- Units are given throughout.
+- There are no multiple-answer or multi-part questions.
+
+---
+
+## **Summary Table of Actionable Feedback**
+
+| Question | Key Area to Improve      | Suggested Revision                                               |
+|----------|-------------------------|------------------------------------------------------------------|
+| 1        | Redundancy/Clarity      | Remove intermediate digit instruction. Specify energy units.      |
+| 2        | Complexity              | Optionally add a further reasoning step if consistent with rubric|
+| 3        | Clarity                 | Clarify SI units for all quantities versus input units.           |
+| 4        | Ambiguity in Energy Diff| Explicitly define gas-phase energy reference and total energy     |
+| 5        | Clarity of Protons      | State that ammonium groups are distinguishable; clarify "dication"|
+
+---
+
+**General Advice:**  
+- Maintain your rigorous standard and clear answer format.
+- Whenever calculations require unit conversions, reiterate the need to use SI units.
+- Ensure every provided datum is used, otherwise remove it to maximize efficiency.
+- Avoid ambiguous wording by always defining comparative statements and chemical states.
+
+**Conclusion:**  
+Your assessment items are strong, novel, and technically appropriate. Implement the above minor clarifications to further enhance quality, rigor, and unambiguity.
+=== Turn 2: Author refines questions ===
+<question>  
+A two-dimensional perovskite exhibits a charge transfer rate constant \( k_{\text{CT}} \) governed by non-adiabatic Marcus theory:
+
+\[
+k_{\text{CT}} = \frac{2\pi}{\hbar} |V|^2 \frac{1}{\sqrt{4\pi \lambda k_B T}} \exp\left[-\frac{(\Delta G^\circ + \lambda)^2}{4\lambda k_B T}\right],
+\]
+
+where all energy terms are in electronvolts (eV): the electronic coupling \(|V| = 25\,\text{meV} = 0.025\,\text{eV}\), reorganization energy \(\lambda = 0.22\,\text{eV}\), driving force \(\Delta G^\circ = -0.18\,\text{eV}\), temperature \(T=298\,K\), reduced Planck constant \(\hbar = 6.582 \times 10^{-16}\,\text{eV}\cdot \text{s}\), and Boltzmann constant \(k_B = 8.617 \times 10^{-5}\,\text{eV}\cdot K^{-1}\).
+
+Calculate the charge transfer rate constant \(k_{\text{CT}}\) in units of \(\text{s}^{-1}\). Express your final answer in scientific notation with three significant figures.</question>
+
+<question>  
+Considering an organic ammonium cation with a rigid, planar ammonium headgroup and variable alkyl chain length, the binding energy \(E_b\) to a layered lead iodide perovskite surface follows:
+
+\[
+E_b = E_0 - \alpha n,
+\]
+
+where \(E_0 = -1.12\,\text{eV}\) is the binding energy of the base ammonium cation (\(n=0\)), \(\alpha = 0.015\,\text{eV}\) per methylene unit, and \(n\) is the number of \(-\mathrm{CH}_2-\) units in the alkyl chain. 
+
+Calculate the binding energies \(E_b\) (in eV) for alkyl chain lengths \(n=4\) and \(n=8\). Report each answer to three decimal places.</question>
+
+<question>  
+In a hybrid perovskite film, the organic cation’s ammonium headgroup has a point dipole moment \(\mu = 3.5\,\mathrm{D}\), and the distance between the ammonium nitrogen and the perovskite surface is \(d = 3.2\,\text{\AA}\).
+
+Using the classical electrostatic interaction energy modeled as
+
+\[
+E_{\mathrm{int}} = -\frac{\mu e}{4\pi \varepsilon_0 \varepsilon_r d^2},
+\]
+
+where the electronic charge \(e = 1.602 \times 10^{-19}\,C\), vacuum permittivity \(\varepsilon_0 = 8.854 \times 10^{-12}\,C^2/(J\cdot m)\), and relative permittivity \(\varepsilon_r = 6.5\), calculate \(E_{\mathrm{int}}\) in electronvolts (eV).
+
+*Note:* Convert all quantities to SI units before calculating (1 D \(= 3.336 \times 10^{-30}\,C \cdot m\), and \(1\,\text{\AA} = 1.0 \times 10^{-10}\,m\)).
+
+Express your final answer with three significant figures.</question>
+
+<question>  
+A 2D perovskite material exhibits two adsorbed conformers of an organic passivating cation: planar-cis and pyramidal-trans. The planar-cis conformation has a gas-phase energy lower than that of pyramidal-trans by \(\Delta E = 0.085\,\text{eV}\) (i.e., \(E_{\text{gas, cis}} = E_{\text{gas, trans}} - 0.085\,\text{eV}\)). Their adsorption binding energies on the perovskite surface are
+
+\[
+E_{b,\mathrm{cis}} = -1.07\,\text{eV}, \quad E_{b,\mathrm{trans}} = -0.92\,\text{eV}.
+\]
+
+Define the total energy of each conformer on the surface as the sum of its gas-phase and binding energies:
+
+\[
+E_{\text{tot}} = E_{\text{gas}} + E_b.
+\]
+
+Assuming equilibrium fractional surface coverage is proportional to the Boltzmann factor \(\exp(-E_{\text{tot}}/k_B T)\), and neglecting lateral interactions, calculate the ratio of surface coverage
+
+\[
+R = \frac{\theta_{\mathrm{cis}}}{\theta_{\mathrm{trans}}}
+\]
+
+at temperature \(T=298\,K\), where \(k_B = 8.617 \times 10^{-5}\,\text{eV/K}\).
+
+Express your answer as a dimensionless number with two decimal places.</question>
+
+<question>  
+An organic ammonium cation passivating a lead iodide perovskite possesses two chemically distinct ammonium groups with pKa values of 9.3 and 5.6, respectively. At pH 7.0, determine the equilibrium fraction of cations fully protonated at both sites (i.e., the fully protonated dicationic form) using the Henderson-Hasselbalch equation and appropriate acid-base equilibria.
+
+Express the fraction as a decimal rounded to three significant figures.</question>
+=== Turn 2: Critic feedback ===
+Here's a **detailed critique** of each question against your provided guidelines, followed by **general and individual feedback for improvement**.
+
+---
+
+### **General Strengths**
+- All questions model plausible physical/chemical scenarios rooted in materials/physical chemistry.
+- Units are specified and consistent.
+- Numerical answers are requested with precision/units indicated.
+- Multi-step quantitative reasoning is needed in each problem.
+- Wording is concise and non-colloquial.
+- Each problem appears to have one defined numerical solution.
+
+### **General Weaknesses**
+- Some questions border on being multi-part because they require calculating several intermediate quantities before a final answer.
+- Some background information might be excessive, which could distract from the core problem.
+- The use of equations, while necessary, could be formatted more clearly in markdown.
+- None of the questions require IUPAC nomenclature (so that part of your objectives is untested, but not necessarily a flaw for this set).
+- A few prompts could clarify precisely what is meant by “the answer” (e.g., "the fraction fully protonated" leaves open questions about number format or whether to report as a percentage).
+- Some equation references or variable definitions could be more explicit for self-contained clarity.
+
+---
+
+## **Question-by-Question Feedback**
+
+---
+
+### **Question 1 (Marcus Theory $k_{\text{CT}}$ Calculation)**
+
+**Strengths:**
+- Realistic scenario based on Marcus theory; not a textbook example.
+- All variables defined, units given, and conversion directions (meV to eV) provided.
+- Equation provided in full, with notation explained.
+
+**Weaknesses:**
+- Requires a lengthy multi-step calculation (could be argued as several mini-steps).
+- The exponential term needs careful unit consistency, which could be clarified for test-takers.
+- While clear, there’s *slight* redundancy in the parameter listing ($V$ given as both 25 meV and 0.025 eV).
+- The phrase "all energy terms are in electronvolts (eV)" is somewhat redundant since all quantities are already in eV.
+
+**Actionable Improvements:**
+- State explicitly that all numbers are already in eV to avoid confusion.
+- Consider removing the extra conversion of $|V|$ for brevity.
+- Ensure the Markdown can render all equations ($$...$$ or $...$ appropriately).
+
+---
+
+### **Question 2 (Binding Energy vs Alkyl Chain Length)**
+
+**Strengths:**
+- Direct calculation, chemical scenario (surface binding).
+- Variables and constants well defined with units.
+- Explicitly requests answers for $n=4$ and $n=8$.
+
+**Weaknesses:**
+- *Slightly* multi-part, as it requires two distinct answers (could be argued as two separate items).
+- The calculation is almost trivial; it lacks depth or complexity.
+
+**Actionable Improvements:**
+- To adhere to single-solution policy, restrict to one $n$ value (“Calculate $E_b$ for $n = 8$”).
+- Or, make the question more interpretive by asking at which $n$ the binding energy crosses a specific threshold, requiring algebra and reasoning.
+
+---
+
+### **Question 3 (Electrostatic Interaction Energy of Dipole)**
+
+**Strengths:**
+- Realistic scenario; uses real dipole and permittivity data.
+- All variables, conjugations, and unit conversion factors clearly supplied.
+- Requires careful unit management for a multi-step computation.
+- Solution format request is precise.
+
+**Weaknesses:**
+- Slight redundancy in restating the need to convert everything to SI: can reduce verbosity.
+- Could clarify what sign the energy should carry (though formula is defined with negative explicit).
+
+**Actionable Improvements:**
+- Remove redundant “*Note:* Convert all quantities...” (since SI is standard), or just retain as a brief parenthetical.
+- Confirm equation renders correctly in markdown (use $$...$$ for block).
+
+---
+
+### **Question 4 (Boltzmann Ratio of Surface Coverage Between Conformers)**
+
+**Strengths:**
+- Real-world scenario, not a textbook example.
+- Variables all explicitly defined.
+- Calculation demands combining relative energies, Boltzmann factor, careful attention to sign conventions.
+
+**Weaknesses:**
+- The problem almost requires two steps: compute total energies, then Boltzmann ratio; may border on "two parts".
+- The phrasing "Assuming equilibrium fractional surface coverage is proportional to..." could be tightened.
+
+**Actionable Improvements:**
+- State in the question: "Compute $R$" (rather than "Calculate the ratio...")
+- Consider giving one set of energies and stating the energy difference only, to reduce input steps.
+
+---
+
+### **Question 5 (Equivalent Fraction Protonated Using pKa and Henderson-Hasselbalch)**
+
+**Strengths:**
+- Scenario is plausible, not a textbook acid-base example.
+- Requires chemical reasoning around multiple pKa events and application of equations.
+- Solution expected as a number in defined format.
+
+**Weaknesses:**
+- Slight ambiguity in the phrase “fully protonated at both sites”—could define in the molecular context (e.g., "the fraction of cations present as $[\mathrm{R(NH_3)_2}]^{2+}$")
+- No need to say “using the Henderson–Hasselbalch equation and appropriate acid-base equilibria”—could just say “determine the fraction...”.
+- Calculation is reasonably straightforward; could benefit from more subtlety or context.
+
+**Actionable Improvements:**
+- Tighten phrasing: explicitly state “Report as a decimal rounded to three significant figures.”
+- Remove direction to 'use Henderson-Hasselbalch;' let that be implied by context.
+- (optional) Could further specify that IUPAC names be given for the species involved, but not strictly necessary.
+
+---
+
+## **Summary Table**
+
+| Q # | Models Chem? | Numerical w/ Units? | Multi-Step? | Redundancy? | Original? | One Solution? | Concise? | Units ok? | Nomenclature? | Single Part? | Markdown? | Suggestions |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | Y | Y | Y | Slight | Y | Y | Y | Y | N/A | Y | Almost | Remove conversions, tighten param list |
+| 2 | Y | Y | Minimal | N | Y | Borderline | Y | Y | N/A | Border | Y | Only one $n$ value, or make more analytical |
+| 3 | Y | Y | Y | Some | Y | Y | Y | Y | N/A | Y | Y | Remove redundant instructions |
+| 4 | Y | Y | Y | N | Y | Y | Y | Y | N/A | Border | Y | Condense/clarify phrasing |
+| 5 | Y | Y | Y | Slight | Y | Y | Y | Y | Weak | Y | Y | Clarify species, tighten wording |
+
+---
+
+## **Actionable, Concise Feedback for the Set**
+
+### **General**
+- For strict adherence to single-part solutions, restrict each problem to yield one final answer (e.g., a single numerical value).
+- Avoid redundant restatement of inputs or conversions if inputs are already in appropriate units.
+- State all equations and variable definitions only once, with utmost clarity.
+- Prefer scenarios that require a little more interpretation or reasoning, especially for otherwise straightforward linear calculations.
+- Ensure the question stem and answer format specification are as concise as possible while still being unambiguous.
+- Double-check that all LaTeX expressions will render correctly in markdown, using $...$ (inline) or $$...$$ (block).
+- Avoid phrases like "using the Henderson-Hasselbalch equation" if the needed equations are evident from the scenario.
+
+### **For Each Problem**
+1. **Marcus Theory:**  
+   - Remove multi-unit listing for $|V|$, only state in eV.
+   - Remove statement "all energy terms are in eV" if all are given as such.
+2. **Binding Energy:**  
+   - Only require one $n$ value per question, or ask for a threshold analysis for added depth.
+3. **Electrostatics:**  
+   - Remove "convert all values" note; simply specify all in SI units.
+4. **Boltzmann Ratio:**  
+   - Tighten phrasing for proportionality and clarify exactly what's being computed; consider if it is possible to further unify steps.
+5. **Acid-Base:**  
+   - Define "fully protonated" molecular species explicitly.
+   - Tighten instruction on reporting answer.
+   - Remove explicit equation usage instruction; context suffices.
+
+---
+
+**In summary:**  
+Your questions are nearly fully in line with advanced assessment best practice, but can be further improved by (i) eliminating minor redundancy, (ii) tightening question wordings, (iii) ensuring strict adherence to "single solution per question," and (iv) simplifying instructions regarding units and calculation steps. Markdown/LaTeX formatting is generally good, but ensure all displays will work in student-facing material. No substantial issues with chemical rigor or ambiguity.
+=== Turn 3: Author refines questions ===
+<question>  
+A two-dimensional perovskite exhibits a charge transfer rate constant given by non-adiabatic Marcus theory:
+
+\[
+k_{\mathrm{CT}} = \frac{2\pi}{\hbar} |V|^2 \frac{1}{\sqrt{4\pi \lambda k_B T}} \exp\left[-\frac{(\Delta G^\circ + \lambda)^2}{4 \lambda k_B T}\right].
+\]
+
+Here, the electronic coupling \(|V| = 0.025\,\text{eV}\), reorganization energy \(\lambda = 0.22\,\text{eV}\), driving force \(\Delta G^\circ = -0.18\,\text{eV}\), temperature \(T = 298\,K\), reduced Planck constant \(\hbar = 6.582 \times 10^{-16}\,\text{eV}\cdot \text{s}\), and Boltzmann constant \(k_B = 8.617 \times 10^{-5}\,\text{eV/K}\).
+
+Calculate the charge transfer rate constant \(k_{\mathrm{CT}}\) in \(\mathrm{s}^{-1}\). Express your final answer in scientific notation with three significant figures.  
+</question>
+
+<question>  
+An organic ammonium cation binds to a layered lead iodide perovskite surface with a binding energy \(E_b\) that depends linearly on alkyl chain length \(n\):
+
+\[
+E_b = E_0 - \alpha n,
+\]
+
+where \(E_0 = -1.12\,\text{eV}\) and \(\alpha = 0.015\,\text{eV per methylene unit}\).
+
+Calculate the binding energy \(E_b\) for an alkyl chain with \(n = 8\). Report your answer in eV to three decimal places.  
+</question>
+
+<question>  
+A hybrid perovskite film includes an organic cation whose ammonium headgroup has a dipole moment \(\mu = 3.5\,\mathrm{D}\), located at a distance \(d = 3.2\,\text{\AA}\) from the perovskite surface.
+
+Using the classical electrostatic interaction energy
+
+\[
+E_{\mathrm{int}} = -\frac{\mu e}{4 \pi \varepsilon_0 \varepsilon_r d^2},
+\]
+
+where the elementary charge \(e = 1.602 \times 10^{-19}\,C\), vacuum permittivity \(\varepsilon_0 = 8.854 \times 10^{-12}\,C^2/(J \cdot m)\), and relative permittivity \(\varepsilon_r = 6.5\):
+
+- Convert \(\mu\) from Debye to Coulomb·meters (\(1\,\mathrm{D} = 3.336 \times 10^{-30} \,C \cdot m\)),  
+- Convert \(d\) from \(\text{\AA}\) to meters (\(1\,\text{\AA} = 1.0 \times 10^{-10} \,m\)),
+
+then calculate \(E_{\mathrm{int}}\) in electronvolts (eV). Express your final answer with three significant figures.  
+</question>
+
+<question>  
+A 2D perovskite material adsorbs an organic passivating cation in two conformations: planar-cis and pyramidal-trans. Their gas-phase energies differ by \(\Delta E = 0.085\,\text{eV}\), with the planar-cis conformer lower in energy:
+
+\[
+E_{\mathrm{gas, cis}} = E_{\mathrm{gas, trans}} - 0.085\,\text{eV}.
+\]
+
+Their adsorption binding energies are
+
+\[
+E_{b,\mathrm{cis}} = -1.07\,\text{eV}, \quad E_{b,\mathrm{trans}} = -0.92\,\text{eV}.
+\]
+
+The total energy on the surface is \(E_{\mathrm{tot}} = E_{\mathrm{gas}} + E_b\). Assuming equilibrium surface coverage is proportional to the Boltzmann factor \(\exp(-E_{\mathrm{tot}} / k_B T)\), and neglecting lateral interactions, calculate the ratio
+
+\[
+R = \frac{\theta_{\mathrm{cis}}}{\theta_{\mathrm{trans}}}
+\]
+
+at \(T = 298\,K\) (with \(k_B = 8.617 \times 10^{-5} \,\text{eV/K}\)). Express your answer as a dimensionless number rounded to two decimal places.  
+</question>
+
+<question>  
+An organic ammonium cation passivating a lead iodide perovskite has two chemically distinct ammonium groups with \( \mathrm{p}K_a \) values of 9.3 and 5.6. At pH 7.0, determine the equilibrium fraction of cations fully protonated at both sites (i.e., the dicationic form) assuming independent acid-base equilibria at each site.
+
+Express your answer as a decimal rounded to three significant figures.  
+</question>
+=== Final questions generated ===

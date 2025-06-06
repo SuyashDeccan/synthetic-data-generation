@@ -1,0 +1,191 @@
+=== Turn 0: Author generates questions ===
+Here are some undergraduate-level biology questions based on your specified criteria:
+
+1.  <question>A patient with poorly controlled diabetes mellitus develops emphysematous pyelonephritis (EPN) caused by *E. coli*. Imaging reveals gas within the renal parenchyma, classifying the EPN as Class 2. Studies indicate that minimally invasive management strategies are associated with a 15% mortality rate, while open surgical nephrectomy carries a 28% mortality rate. A hospital treated 200 such patients with Minimally invasive management, calculate the number of expected deaths in this set of patients.</question>
+
+2.  <question>In a study investigating EPN, researchers analyzed data from 150 patients. They found that gas-forming *E. coli* isolates were present in 85% of the EPN cases. If the total number of EPN patients treated was 200, estimate the number of patients infected by gas-forming *E. coli*.</question>
+
+3.  <question>A clinical trial evaluates the efficacy of renal-preserving strategies in managing EPN. Patients are randomly assigned to either renal-preserving treatment (Group A) or standard nephrectomy (Group B). In Group A (n=80), the success rate (no need for subsequent nephrectomy) is 75%. Calculate how many patients will be expected to require a subsequent nephrectomy.</question>
+
+4.  <question>A meta-analysis comparing minimally invasive interventions versus open surgery for EPN reports the following odds ratio (OR) for mortality: OR = 0.55 (minimally invasive as reference). Calculate the number of patients of 200 EPN patients that would die if they had minimally invasive surgery assuming a mortality rate of 28% with open surgery.</question>
+
+5.  <question>A study investigating the correlation between HbA1c levels and the severity of EPN used Pearson correlation coefficient ($r$). The calculated $r$ value for HbA1c and EPN severity score was 0.65, with a $p$-value of 0.002. The sample size for this study was 120 patients. Calculate the coefficient of determination ($R^2$).</question>
+
+6.  <question>In an EPN study population, it was observed that 60% of patients had Class 2 EPN. If a researcher randomly selects 15 patients from this population, what is the approximate probability (expressed as a percentage) that exactly 9 of them will have Class 2 EPN?</question>
+
+7. <question>In a statistical analysis of EPN treatment outcomes, a researcher aims to determine if a new renal-preserving strategy significantly reduces mortality compared to standard treatment. The mortality rate in the standard treatment group (n=100) is 25%, while in the new treatment group (n=100), it is 15%. Assuming a chi-square test is performed to compare these proportions, what is the number of more patients surviving with the new treatment?</question>
+=== Turn 0: Critic feedback ===
+Here's a critique of each question against your specified guidelines, along with concise, actionable feedback for improvement:
+
+---
+
+### General Observations:
+
+Many of these questions lean heavily on basic arithmetic or statistical formulas rather than requiring deep, multi-step *biological* reasoning. The biological context often provides numbers but doesn't necessitate conceptual understanding of complex biological principles for the solution steps themselves. This often fails the "Force Multi-Step Reasoning" guideline from a biological perspective. Distractor information is also prevalent, which, while not strictly prohibited, can make questions less concise if not serving a clear purpose within a more complex problem.
+
+---
+
+1.  <question>A patient with poorly controlled diabetes mellitus develops emphysematous pyelonephritis (EPN) caused by *E. coli*. Imaging reveals gas within the renal parenchyma, classifying the EPN as Class 2. Studies indicate that minimally invasive management strategies are associated with a 15% mortality rate, while open surgical nephrectomy carries a 28% mortality rate. A hospital treated 200 such patients with Minimally invasive management, calculate the number of expected deaths in this set of patients.</question>
+
+    *   **Critique:**
+        *   **Multi-Step Reasoning (Biological):** Fails. This is a single-step percentage calculation (`200 * 0.15`). The biological scenario provides context but does not require multi-step biological conceptual understanding or reasoning for the calculation itself.
+        *   **Uniqueness:** The calculation is standard, despite the specific clinical scenario.
+        *   **Rigorous Phrasing:** Clear, but the simplicity of the calculation undermines its "undergraduate-level biology" claim.
+    *   **Actionable Feedback:**
+        *   **Improvement:** Introduce a variable dependent on a biological factor (e.g., patient's HbA1c level influencing efficacy of minimally invasive management, leading to a modified mortality rate that first needs to be calculated based on the HbA1c). This would require interpreting biological data to derive a new input for the final calculation.
+
+2.  <question>In a study investigating EPN, researchers analyzed data from 150 patients. They found that gas-forming *E. coli* isolates were present in 85% of the EPN cases. If the total number of EPN patients treated was 200, estimate the number of patients infected by gas-forming *E. coli*.</question>
+
+    *   **Critique:**
+        *   **Multi-Step Reasoning (Biological):** Fails. Another single-step percentage calculation (`200 * 0.85`). The "150 patients" datum is irrelevant and serves only as a distractor.
+        *   **Uniqueness:** Standard arithmetic problem in biological wrapping.
+    *   **Actionable Feedback:**
+        *   **Improvement:** Integrate the "150 patients" data. For instance, describe *why* that sample size is important (e.g., for statistical power of an *initial* finding) and then ask to apply a derived prevalence to a *different* population given differences in patient demographics that might influence infection rates (e.g., specific risk factors that alter the base prevalence percentage, requiring an adjustment based on biological understanding).
+
+3.  <question>A clinical trial evaluates the efficacy of renal-preserving strategies in managing EPN. Patients are randomly assigned to either renal-preserving treatment (Group A) or standard nephrectomy (Group B). In Group A (n=80), the success rate (no need for subsequent nephrectomy) is 75%. Calculate how many patients will be expected to require a subsequent nephrectomy.</question>
+
+    *   **Critique:**
+        *   **Multi-Step Reasoning (Biological):** Fails. A very simple, single-step subtraction/percentage calculation (`80 * (1 - 0.75)`). "Group B" is irrelevant.
+        *   **Uniqueness:** Standard.
+    *   **Actionable Feedback:**
+        *   **Improvement:** Create a scenario where the "success rate" is a function of multiple biological factors (e.g., a specific pathogen load and immune response) that need to be quantified and combined. Alternatively, use Group B data to calculate a clinically relevant metric like Number Needed to Treat (NNT), which would require understanding of proportions and an extra calculation step, though NNT is more for preventing negative outcomes.
+
+4.  <question>A meta-analysis comparing minimally invasive interventions versus open surgery for EPN reports the following odds ratio (OR) for mortality: OR = 0.55 (minimally invasive as reference). Calculate the number of patients of 200 EPN patients that would die if they had minimally invasive surgery assuming a mortality rate of 28% with open surgery.</question>
+
+    *   **Critique:**
+        *   **Multi-Step Reasoning (Statistical/Applied Biology):** Pass. This requires converting mortality rate to odds, using the OR to find the new odds, and converting back to probability, then calculating the number of deaths. This is a legitimate multi-step calculation frequently encountered in clinical biology.
+        *   **Rigorous Phrasing:** *Needs improvement.* The phrasing "minimally invasive as reference" is ambiguous for an Odds Ratio. Standard practice usually states "OR of X vs Y" or "OR comparing X to Y". If OR=0.55 (minimally invasive as reference) means Odds(Open)/Odds(MI) = 0.55, then open surgery has lower mortality than minimally invasive, which contradicts common clinical expectation and perhaps the intent (if MI is better). If it means Odds(MI)/Odds(Open) = 0.55 (i.e., comparing MI to Open, with Open as the actual reference/denominator), then it's consistent with MI being better. Assume the latter for a sensible clinical context.
+    *   **Actionable Feedback:**
+        *   **Improvement:** Clarify the Odds Ratio phrasing: "The Odds Ratio (OR) for mortality of minimally invasive interventions compared to open surgery is 0.55." (This implies OR = Odds(MI) / Odds(Open)). This removes ambiguity and focuses the student on the calculation rather than interpretation of potentially confusing terminology.
+
+5.  <question>A study investigating the correlation between HbA1c levels and the severity of EPN used Pearson correlation coefficient ($r$). The calculated $r$ value for HbA1c and EPN severity score was 0.65, with a $p$-value of 0.002. The sample size for this study was 120 patients. Calculate the coefficient of determination ($R^2$).</question>
+
+    *   **Critique:**
+        *   **Multi-Step Reasoning (Biological):** Fails. This is a single-step calculation ($R^2 = r^2$). The p-value and sample size are irrelevant distractors for this specific calculation. While $r$ and $R^2$ are relevant in biology, the calculation is purely mathematical and trivial.
+        *   **Uniqueness:** Standard statistical identity.
+    *   **Actionable Feedback:**
+        *   **Improvement:** Integrate the $R^2$ into a more complex biological interpretation or application. For example, "Given the $R^2$ value, if a therapeutic intervention could reduce HbA1c levels by X%, how much of the variation in EPN severity might hypothetically be explained by this intervention's impact on HbA1c?" This would require interpreting the meaning of $R^2$ and applying it to a potential outcome.
+
+6.  <question>In an EPN study population, it was observed that 60% of patients had Class 2 EPN. If a researcher randomly selects 15 patients from this population, what is the approximate probability (expressed as a percentage) that exactly 9 of them will have Class 2 EPN?</question>
+
+    *   **Critique:**
+        *   **Multi-Step Reasoning (Statistical/Applied Biology):** Pass. This requires applying the binomial probability formula, involving combinations, powers, and multiplication. This is a solid multi-step statistical calculation directly applicable in biological studies.
+        *   **Rigorous Phrasing:** "Approximate probability" is slightly vague. For an exact binomial calculation, it's not an approximation unless specified (e.g., using a normal approximation for binomial, which isn't suitable for n=15).
+    *   **Actionable Feedback:**
+        *   **Improvement:** Remove "approximate" unless there's a specific reason for an approximation method to be used (e.g., "Use a normal approximation to calculate the probability..."). Also, consider adding a follow-up interpretive step, e.g., "Based on this probability, would it be surprising to find such a sample? What might this imply about the population?" (though this might push it towards "how based").
+
+7.  <question>In a statistical analysis of EPN treatment outcomes, a researcher aims to determine if a new renal-preserving strategy significantly reduces mortality compared to standard treatment. The mortality rate in the standard treatment group (n=100) is 25%, while in the new treatment group (n=100), it is 15%. Assuming a chi-square test is performed to compare these proportions, what is the number of more patients surviving with the new treatment?</question>
+
+    *   **Critique:**
+        *   **Multi-Step Reasoning (Biological):** Fails. While technically multi-step arithmetic (calculate survivors in each group, then find difference), it's very simple. The mention of "chi-square test" is a complete distractor; it provides no information needed for the calculation and serves only to confuse. This does not test understanding of biological principles beyond basic survival rates.
+        *   **Rigorous Phrasing:** The distractor information makes it less concise and rigorous.
+    *   **Actionable Feedback:**
+        *   **Improvement:** Either remove the irrelevant chi-square mention and make the *arithmetic* more complex (e.g., integrate cost-benefit analysis where increased survival has an associated value, requiring an additional calculation), or reformulate the question to actually require understanding or calculation related to the chi-square test itself (e.g., "Calculate the expected number of survivors in the new treatment group if the null hypothesis of no difference in mortality rates were true," which is a component of chi-square calculation).
+=== Turn 1: Author refines questions ===
+Here's an improved set of biology questions, revised based on your feedback. The goal is to increase the degree of multi-step *biological* reasoning required, reduce irrelevant information, and enhance the overall rigor of the questions while retaining the undergraduate level and EPN context.
+
+1.  <question>A patient with poorly controlled diabetes mellitus develops emphysematous pyelonephritis (EPN) caused by *E. coli*. Imaging reveals gas within the renal parenchyma, classifying the EPN as Class 2.  Studies indicate that minimally invasive management strategies are typically associated with a 15% mortality rate *when HbA1c levels are below 8%*.  However, the mortality rate increases linearly by 2 percentage points for every 1% increase in HbA1c above 8%.  This patient's HbA1c is 11%. Calculate the number of expected deaths if a hospital treated 200 such patients with minimally invasive management, taking into account the patient's HbA1c level.</question>
+
+2.  <question>Researchers investigating EPN prevalence initially analyzed data from 150 patients in a general hospital setting and found that gas-forming *E. coli* isolates were present in 85% of the EPN cases.  A subsequent study is planned for a specialized renal unit known to treat a disproportionately high number of patients with pre-existing ureteral stents, which are known to increase the risk of *E. coli* infections by 1.3-fold.  If the total number of EPN patients to be treated in the renal unit is 200, estimate the number of patients expected to be infected by gas-forming *E. coli*, adjusting for the increased risk associated with ureteral stents.</question>
+
+3.  <question>A clinical trial evaluates the efficacy of renal-preserving strategies in managing EPN. Patients are randomly assigned to renal-preserving treatment (Group A, n=80). A successful renal-preserving treatment is defined as no need for subsequent nephrectomy. The success rate in Group A is found to be dependent on the patient's pathogen load (bacterial burden in CFU/mL of urine) and their neutrophil count (cells/µL). For every 1 log increase in pathogen load, the success rate decreases by 5%. For every 1000 cells/µL increase in neutrophil count *above a baseline of 2000 cells/µL*, the success rate increases by 2%. The average patient in Group A has a pathogen load of 5x10^5 CFU/mL and a neutrophil count of 4500 cells/µL. Calculate how many patients in Group A will be expected to require a subsequent nephrectomy.</question>
+
+4.  <question>A meta-analysis comparing minimally invasive interventions versus open surgery for EPN reports the following Odds Ratio (OR) for mortality: The Odds Ratio (OR) for mortality of minimally invasive interventions compared to open surgery is 0.55. Assume a mortality rate of 28% with open surgery. Of 200 EPN patients, how many deaths would be expected if all 200 received minimally invasive surgery?</question>
+
+5.  <question>A study investigates the correlation between HbA1c levels and the severity of EPN, using the Pearson correlation coefficient ($r$). The calculated $r$ value for HbA1c and EPN severity score was 0.65. The study aims to determine if lowering HbA1c through lifestyle intervention can significantly reduce EPN severity. If a similar intervention is applied to a new cohort of patients with a baseline average EPN severity score of 7, and HbA1c levels are reduced by 1%, what is the predicted change in the EPN severity score, given that the variance in EPN severity is best explained by the $R^2$ value derived from the original correlation?</question>
+
+6.  <question>In an EPN study population, it was observed that 60% of patients had Class 2 EPN. If a researcher randomly selects 15 patients from this population, what is the probability (expressed as a percentage) that exactly 9 of them will have Class 2 EPN? Based on this probability, if the researcher repeated this sampling 100 times, how many times would you expect to observe exactly 9 patients with Class 2 EPN?</question>
+
+7.  <question>In a statistical analysis of EPN treatment outcomes, a researcher aims to determine if a new renal-preserving strategy significantly reduces mortality compared to standard treatment. The mortality rate in the standard treatment group (n=100) is 25%, while in the new treatment group (n=100), it is 15%. Assuming a chi-square test is performed to compare these proportions, calculate the expected number of survivors in the new treatment group if the null hypothesis of no difference in mortality rates were true.</question>
+=== Turn 1: Critic feedback ===
+Here's a critique of each question against your guidelines, focusing on enhancing *biological* reasoning.
+
+**General Feedback:**
+The questions are strong in terms of being quantitative, multi-step (mathematically), and set in a relevant clinical scenario. However, the primary challenge in most questions is mathematical/statistical manipulation, not multi-step *biological* reasoning. The biological context often serves as labels for variables rather than requiring a deep understanding of underlying biological mechanisms or processes to derive the solution. To meet the goal of increasing "multi-step *biological* reasoning," the questions need to embed biological principles more deeply into the problem-solving steps, beyond just defining the context.
+
+---
+
+**1. Question 1:**
+<question>A patient with poorly controlled diabetes mellitus develops emphysematous pyelonephritis (EPN) caused by *E. coli*. Imaging reveals gas within the renal parenchyma, classifying the EPN as Class 2. Studies indicate that minimally invasive management strategies are typically associated with a 15% mortality rate *when HbA1c levels are below 8%*. However, the mortality rate increases linearly by 2 percentage points for every 1% increase in HbA1c above 8%. This patient's HbA1c is 11%. Calculate the number of expected deaths if a hospital treated 200 such patients with minimally invasive management, taking into account the patient's HbA1c level.</question>
+
+*   **Critique:**
+    *   **Guideline 3 (Multi-Step *Biological* Reasoning):** Fails. The multi-step reasoning is purely arithmetic (linear extrapolation of a percentage). While HbA1c and mortality are biological concepts, the calculation itself doesn't require any biological understanding beyond knowing what the terms mean. It's a math problem with biological labels.
+    *   **Actionable Feedback:** To improve biological reasoning, consider: Instead of a given linear increase, describe the *biological impacts* of high HbA1c (e.g., impaired neutrophil function, reduced tissue perfusion, increased bacterial glucose availability) and ask the student to infer or calculate a *consequence* (e.g., how impaired neutrophil function might increase bacterial load by a certain factor, which then translates to a change in success rate or mortality based on a deeper biological model). Alternatively, provide a biological pathway that *explains* the increase in mortality.
+
+---
+
+**2. Question 2:**
+<question>Researchers investigating EPN prevalence initially analyzed data from 150 patients in a general hospital setting and found that gas-forming *E. coli* isolates were present in 85% of the EPN cases. A subsequent study is planned for a specialized renal unit known to treat a disproportionately high number of patients with pre-existing ureteral stents, which are known to increase the risk of *E. coli* infections by 1.3-fold. If the total number of EPN patients to be treated in the renal unit is 200, estimate the number of patients expected to be infected by gas-forming *E. coli*, adjusting for the increased risk associated with ureteral stents.</question>
+
+*   **Critique:**
+    *   **Guideline 3 (Multi-Step *Biological* Reasoning):** Fails. Similar to Q1, this is a percentage calculation and risk factor application. The biological context (ureteral stents, *E. coli* infection) is present, but the reasoning is purely mathematical. The *reason* stents increase risk (e.g., biofilm formation, impaired drainage, host defense evasion) is not explored or required for the calculation.
+    *   **Actionable Feedback:** To improve, describe the biological mechanism by which ureteral stents increase infection risk (e.g., "Ureteral stents promote biofilm formation by *E. coli*, providing a protective niche against antibiotics and host immune defenses. This biological advantage is observed to increase bacterial survival by a factor of X in the urinary tract."). Then, based on this biological principle, ask for a prediction or calculation that integrates the *biological consequence* rather than a simple pre-stated "1.3-fold increase."
+
+---
+
+**3. Question 3:**
+<question>A clinical trial evaluates the efficacy of renal-preserving strategies in managing EPN. Patients are randomly assigned to renal-preserving treatment (Group A, n=80). A successful renal-preserving treatment is defined as no need for subsequent nephrectomy. The success rate in Group A is found to be dependent on the patient's pathogen load (bacterial burden in CFU/mL of urine) and their neutrophil count (cells/µL). For every 1 log increase in pathogen load, the success rate decreases by 5%. For every 1000 cells/µL increase in neutrophil count *above a baseline of 2000 cells/µL*, the success rate increases by 2%. The average patient in Group A has a pathogen load of 5x10^5 CFU/mL and a neutrophil count of 4500 cells/µL. Calculate how many patients in Group A will be expected to require a subsequent nephrectomy.</question>
+
+*   **Critique:**
+    *   **Guideline 3 (Multi-Step *Biological* Reasoning):** Partial success. It uses relevant biological variables (pathogen load, neutrophil count). However, the relationship between these variables and success rate is given as a direct linear percentage, requiring arithmetic rather than biological deduction. It describes *what* happens quantitatively, not *why* biologically.
+    *   **Actionable Feedback:** This question is closer to the target. To further enhance, consider:
+        *   Instead of "success rate decreases by 5%," describe how a higher pathogen load overwhelms immune defenses, leading to a certain proportion of immune cell failure, which then links to the success rate.
+        *   Instead of "success rate increases by 2%," describe how higher neutrophil counts improve phagocytosis or bacterial clearance rates, leading to a biological consequence that impacts the success rate.
+        *   Introduce a threshold or non-linear biological response (e.g., beyond a certain neutrophil count, the benefit plateaus).
+
+---
+
+**4. Question 4:**
+<question>A meta-analysis comparing minimally invasive interventions versus open surgery for EPN reports the following Odds Ratio (OR) for mortality: The Odds Ratio (OR) for mortality of minimally invasive interventions compared to open surgery is 0.55. Assume a mortality rate of 28% with open surgery. Of 200 EPN patients, how many deaths would be expected if all 200 received minimally invasive surgery?</question>
+
+*   **Critique:**
+    *   **Guideline 3 (Multi-Step *Biological* Reasoning):** Fails. This is a pure biostatistics question requiring the interpretation and manipulation of an Odds Ratio to convert between odds and probabilities. The biological context is superficial to the core calculation.
+    *   **Actionable Feedback:** To integrate biological reasoning, the question should involve understanding the biological mechanisms by which "minimally invasive interventions" or "open surgery" *differentially impact* the patient's physiology to lead to different mortality rates (e.g., reduced surgical stress response, less immune suppression, faster recovery, reduced risk of secondary infections, or specific effects on renal function/inflammation). The OR could then be a *result* of these biological factors, or the question could ask for an *implication* for patient management based on these biological differences.
+
+---
+
+**5. Question 5:**
+<question>A study investigates the correlation between HbA1c levels and the severity of EPN, using the Pearson correlation coefficient ($r$). The calculated $r$ value for HbA1c and EPN severity score was 0.65. The study aims to determine if lowering HbA1c through lifestyle intervention can significantly reduce EPN severity. If a similar intervention is applied to a new cohort of patients with a baseline average EPN severity score of 7, and HbA1c levels are reduced by 1%, what is the predicted change in the EPN severity score, given that the variance in EPN severity is best explained by the $R^2$ value derived from the original correlation?</question>
+
+*   **Critique:**
+    *   **Guideline 3 (Multi-Step *Biological* Reasoning):** Fails. This is a pure statistical question about correlation and variance explanation ($R^2$). It attempts to use $R^2$ for a *prediction* of a specific change, which is a common misconception. $R^2$ tells you the proportion of variance explained, not the slope of a regression line required for specific predictions. This question is likely unanswerable or requires an unstated assumption (e.g., assuming a specific linear regression equation not provided).
+    *   **Guideline 6 (Single Solution):** Fails. As noted, the question is not well-posed for a single, correct numerical answer based solely on $r$ or $R^2$. To predict a specific change in Y for a unit change in X, one needs the regression coefficient (slope), not just the correlation coefficient.
+    *   **Actionable Feedback:** This question needs a significant re-work.
+        *   **Biological:** Focus on *why* HbA1c correlates with EPN severity (e.g., biological mechanisms of hyperglycemia on immune response, vascular health, or kidney function).
+        *   **Statistical/Biological Integration:** If quantitative prediction is desired, provide the regression equation (slope), and then ask a biological interpretation of that slope within the context of EPN pathophysiology. Or, ask about the *strength* of the association and its *implications* for clinical management, rather than a precise prediction.
+
+---
+
+**6. Question 6:**
+<question>In an EPN study population, it was observed that 60% of patients had Class 2 EPN. If a researcher randomly selects 15 patients from this population, what is the probability (expressed as a percentage) that exactly 9 of them will have Class 2 EPN? Based on this probability, if the researcher repeated this sampling 100 times, how many times would you expect to observe exactly 9 patients with Class 2 EPN?</question>
+
+*   **Critique:**
+    *   **Guideline 3 (Multi-Step *Biological* Reasoning):** Fails entirely. This is a classic binomial probability problem. The biological context (EPN, Class 2) is completely interchangeable with any other binary outcome (e.g., coin flips, defective items). No biological understanding is required.
+    *   **Guideline 10 (Questions must not be multipart):** Fails. It asks for two distinct quantities (a probability percentage and an expected count).
+    *   **Actionable Feedback:** This question should be removed if the goal is *biological* reasoning. It is a pure statistics question. If a statistics question is desired, make it single-part.
+
+---
+
+**7. Question 7:**
+<question>In a statistical analysis of EPN treatment outcomes, a researcher aims to determine if a new renal-preserving strategy significantly reduces mortality compared to standard treatment. The mortality rate in the standard treatment group (n=100) is 25%, while in the new treatment group (n=100), it is 15%. Assuming a chi-square test is performed to compare these proportions, calculate the expected number of survivors in the new treatment group if the null hypothesis of no difference in mortality rates were true.</question>
+
+*   **Critique:**
+    *   **Guideline 3 (Multi-Step *Biological* Reasoning):** Fails. This is a pure statistics question testing the understanding of expected values under a null hypothesis for a chi-square test. While the context is biological (mortality rates, treatments), the reasoning required is entirely statistical.
+    *   **Actionable Feedback:** Similar to other questions, this is excellent for a biostatistics course. To inject biological reasoning, the question would need to delve into the *biological basis* of the "new renal-preserving strategy" and ask for predictions or implications that connect to the underlying biological mechanisms, rather than a statistical calculation of expected values under a null hypothesis. For example, "If the new treatment reduces inflammation by X%, how would that affect the expected survival rate, assuming inflammation is a key determinant of mortality?" (This would require a model for that relationship).
+=== Turn 2: Author refines questions ===
+Okay, here's a revised set of questions addressing the feedback. The focus is on weaving biological principles more deeply into the problem-solving process, requiring reasoning beyond simple arithmetic or statistical manipulation.  Each question aims to have a single, clear solution.
+
+1.  <question>A patient with poorly controlled diabetes mellitus develops emphysematous pyelonephritis (EPN) caused by *E. coli*. High glucose levels in the urine promote bacterial growth and biofilm formation. *In vitro* studies show that *E. coli* strains isolated from this patient exhibit a 2-fold increase in biofilm formation for every 1% increase in ambient glucose concentration above a baseline of 100 mg/dL. Biofilm formation reduces the effectiveness of antibiotics by preventing drug penetration, decreasing antibiotic efficacy by 10% for every 2-fold increase in biofilm formation (relative to baseline). If the patient's current blood glucose is 250 mg/dL, by what percentage is the antibiotic efficacy reduced due to the increased biofilm formation?</question>
+
+2.  <question>Ureteral stents are known to increase the risk of *E. coli* EPN due to promoting biofilm formation. *E. coli* within biofilms exhibit increased expression of efflux pumps, which actively transport antibiotics out of the bacterial cell. Researchers found that *E. coli* isolated from stent-associated EPN cases exhibit a 3-fold increase in efflux pump activity compared to planktonic (free-floating) *E. coli*. Assuming that increased efflux pump activity is directly correlated with antibiotic resistance and that the probability of treatment failure increases linearly with the fold increase in efflux pump activity, estimate the probability of treatment failure (as a percentage) if the baseline probability of treatment failure in planktonic infections is 10%.</question>
+
+3.  <question>A clinical trial evaluates a renal-preserving strategy for EPN. The strategy aims to reduce inflammation, which is known to contribute to renal damage and subsequent need for nephrectomy.  The inflammatory response is primarily mediated by TNF-α.  The renal-preserving treatment reduces TNF-α levels by 40%. Studies show that TNF-α directly inhibits the activity of tubular epithelial cells. If renal tubular epithelial cell dysfunction (due to inflammation) increases the likelihood of requiring nephrectomy by 20% for every 10% increase in TNF-α, what percentage reduction in the likelihood of needing a nephrectomy can be attributed to the reduction in TNF-α levels achieved by the renal-preserving strategy?</question>
+
+4.  <question>Minimally invasive interventions for EPN often result in reduced surgical stress compared to open surgery. The surgical stress response triggers the release of cortisol, a glucocorticoid hormone, which can suppress the immune system.  Cortisol is known to inhibit neutrophil chemotaxis (the ability of neutrophils to migrate to the site of infection). Assume minimally invasive surgery reduces cortisol levels by 30% compared to open surgery. If a 10% reduction in cortisol levels is associated with a 5% improvement in neutrophil chemotaxis and neutrophil chemotaxis is directly proportional to successful bacterial clearance, what percentage improvement in bacterial clearance is expected with minimally invasive surgery due to the reduced cortisol levels?</question>
+
+5.  <question>Hyperglycemia in poorly controlled diabetes mellitus increases the risk of EPN and impairs neutrophil function. Specifically, high glucose concentrations inhibit neutrophil phagocytosis by interfering with actin polymerization, which is essential for engulfing bacteria.  A study reveals that a patient with HbA1c of 10% exhibits a 25% reduction in neutrophil phagocytosis efficiency compared to a patient with HbA1c of 6%.  Knowing that reduced phagocytosis efficiency directly correlates with increased bacterial survival, if a standard treatment regimen effectively eliminates 95% of bacteria in a patient with normal phagocytosis, what percentage of the initial bacterial population would remain in the patient with impaired phagocytosis due to a HbA1c of 10% following the same standard treatment regimen?</question>
+
+6. <question>Anaerobic bacteria thrive in the gas-filled environment characteristic of EPN, and their survival is significantly influenced by the availability of nutrients, particularly glucose.  Gas-forming *E. coli* in EPN utilize glucose to produce CO2 and H2 contributing to the gas accumulation. Imagine that blocking the Embden-Meyerhof-Parnas (EMP) pathway (glycolysis) in gas-forming *E. coli* reduces the amount of gas produced by 80%. If gas accumulation causes pressure on kidney tissue, and renal damage is linearly related to the amount of gas pressure, what is the percentage reduction in renal damage, that can be attributed to the EMP pathway block?</question>
+
+7. <question>Patients with EPN sometimes experience systemic inflammatory response syndrome (SIRS), characterized by an overproduction of cytokines, including IL-1β, which can lead to septic shock and multi-organ failure. A novel treatment strategy aims to block the IL-1β receptor. Assuming that IL-1β blockage reduces the likelihood of developing SIRS by 60%, and that SIRS increases the probability of death during treatment by 40% compared to that of patients without SIRS, calculate the reduction in mortality associated with the new treatment in a cohort of EPN patients that have SIRS at the start of treatment.</question>
+=== Final questions generated ===

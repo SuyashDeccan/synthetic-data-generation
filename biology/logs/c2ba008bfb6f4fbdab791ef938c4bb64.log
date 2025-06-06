@@ -1,0 +1,186 @@
+=== Turn 0: Author generates questions ===
+Here are some novel, medium-novel undergraduate-level biology questions based on your specified topics, key concepts, and guidelines:
+
+<question>A physical therapist is evaluating a patient with early-stage Parkinson's disease. The patient exhibits a reduced arm swing during gait. Using Kinovea software, the therapist measures the patient's arm swing angle to be 15 degrees. A healthy individual of the same age and stature typically exhibits an arm swing angle of 30 degrees. Assuming that arm swing angle reduction correlates linearly with an increased risk of falls, and a 50% reduction in arm swing is associated with a 1.5-fold increase in fall risk, what is the fold increase in fall risk for this patient, rounded to two decimal places?</question>
+
+<question>A researcher is investigating the effect of rhythmic auditory stimulation (RAS) and Nordic walking (NW) on gait parameters in Parkinson's disease patients.  Before intervention, a patient's gait speed is measured using the Timed Up and Go (TUG) test, resulting in a time of 15 seconds to complete the test. After a 6-week combined RAS and NW therapy, the TUG test time decreases to 12 seconds.  If improvement in TUG test time is directly proportional to an increase in gait speed, what is the percentage increase in gait speed, rounded to nearest integer, after the intervention? </question>
+
+<question>A study aims to assess the correlation between Functional Gait Assessment (FGA) scores and motor neuron excitability in Parkinson's disease patients undergoing rehabilitation.  A patient's initial FGA score is 18. After a targeted rehabilitation program, the patient's FGA score improves to 22. Assuming that each point increase in FGA score corresponds to a 2% increase in motor neuron excitability, what is the percentage increase in motor neuron excitability, rounded to nearest integer, for this patient due to the rehabilitation program?</question>
+
+<question>A neurologist is monitoring the progression of Parkinson's disease in a patient. Initial arm swing velocity is recorded at $1.0\,\mathrm{m/s}$.  Over a period of 6 months, the arm swing velocity decreases linearly to $0.75\,\mathrm{m/s}$. Assuming that the rate of decline in arm swing velocity remains constant, what will the arm swing velocity be, in $\mathrm{m/s}$, after another 12 months from the initial measurement?</question>
+
+<question>During a research trial, Parkinson's patients are given either placebo or a novel treatment. Patients undergo the Timed Up and Go test (TUG). The treatment group averages a 20% decrease in TUG time with standard deviation of 2 seconds, and the placebo group averages a 5% decrease in TUG time with standard deviation of 1 seconds. Given that initially both groups performed the TUG test in 18 seconds. If a single patient from the treatment group performs the TUG test in 13 seconds after the treatment, how many standard deviations better is the patient's TUG time than the treatment group average?</question>
+=== Turn 0: Critic feedback ===
+Here's a critique of your questions based on the provided guidelines:
+
+<question>A physical therapist is evaluating a patient with early-stage Parkinson's disease. The patient exhibits a reduced arm swing during gait. Using Kinovea software, the therapist measures the patient's arm swing angle to be 15 degrees. A healthy individual of the same age and stature typically exhibits an arm swing angle of 30 degrees. Assuming that arm swing angle reduction correlates linearly with an increased risk of falls, and a 50% reduction in arm swing is associated with a 1.5-fold increase in fall risk, what is the fold increase in fall risk for this patient, rounded to two decimal places?</question>
+
+**Critique:**
+*   **Guideline 1 (Model a biology Scenario):** Excellent. Realistic and relevant to biology/rehabilitation.
+*   **Guideline 3 (Force Multi-Step Reasoning):** **Weakness.** The patient's arm swing reduction (50%) directly matches the example provided (50% reduction -> 1.5-fold increase). This makes the question a direct lookup rather than requiring linear interpolation/calculation, bypassing the intended multi-step reasoning.
+*   **All other guidelines (2, 4, 5, 6, 7, 9, 10, 11, 12):** Met.
+
+**Actionable Feedback:**
+*   **Improvement:** Change the patient's measured arm swing angle so that the reduction is *not* exactly 50%. For example, if the patient's arm swing was 20 degrees, the reduction would be $(30-20)/30 = 33.33\%$. This would force the student to use the linear correlation to calculate the fall risk increase: $(33.33\% / 50\%) \times 1.5$.
+
+---
+
+<question>A researcher is investigating the effect of rhythmic auditory stimulation (RAS) and Nordic walking (NW) on gait parameters in Parkinson's disease patients. Before intervention, a patient's gait speed is measured using the Timed Up and Go (TUG) test, resulting in a time of 15 seconds to complete the test. After a 6-week combined RAS and NW therapy, the TUG test time decreases to 12 seconds. If improvement in TUG test time is directly proportional to an increase in gait speed, what is the percentage increase in gait speed, rounded to nearest integer, after the intervention? </question>
+
+**Critique:**
+*   **Guideline 1 (Model a biology Scenario):** Excellent. Realistic research scenario.
+*   **Guideline 3 (Force Multi-Step Reasoning):** Strong. Requires understanding the inverse relationship between time and speed, calculating the new speed relative to the old, and then converting to a percentage increase.
+*   **All other guidelines (2, 4, 5, 6, 7, 9, 10, 11, 12):** Met.
+
+**Actionable Feedback:**
+*   **Improvement:** None, this question is well-designed.
+
+---
+
+<question>A study aims to assess the correlation between Functional Gait Assessment (FGA) scores and motor neuron excitability in Parkinson's disease patients undergoing rehabilitation. A patient's initial FGA score is 18. After a targeted rehabilitation program, the patient's FGA score improves to 22. Assuming that each point increase in FGA score corresponds to a 2% increase in motor neuron excitability, what is the percentage increase in motor neuron excitability, rounded to nearest integer, for this patient due to the rehabilitation program?</question>
+
+**Critique:**
+*   **Guideline 1 (Model a biology Scenario):** Excellent. Realistic study scenario.
+*   **Guideline 3 (Force Multi-Step Reasoning):** **Weakness.** While technically two steps (calculate score change, then multiply), the reasoning is very simplistic (direct multiplication). It doesn't require deeper conceptual understanding or a complex application of principles beyond basic arithmetic.
+*   **All other guidelines (2, 4, 5, 6, 7, 9, 10, 11, 12):** Met.
+
+**Actionable Feedback:**
+*   **Improvement:** To increase the multi-step reasoning complexity and conceptual depth, consider:
+    *   Introduce a non-linear relationship (e.g., "each point increase in FGA score corresponds to a 2% *of the initial excitability* increase, but excitability itself is calculated from a base score").
+    *   Require a calculation where the percentage increase in excitability is relative to an *initial* excitability value that needs to be determined or inferred from the initial FGA score. For example, "If an FGA score of 18 corresponds to a motor neuron excitability of X, what is the *new* excitability percentage relative to X when the score improves to 22?"
+
+---
+
+<question>A neurologist is monitoring the progression of Parkinson's disease in a patient. Initial arm swing velocity is recorded at $1.0\,\mathrm{m/s}$. Over a period of 6 months, the arm swing velocity decreases linearly to $0.75\,\mathrm{m/s}$. Assuming that the rate of decline in arm swing velocity remains constant, what will the arm swing velocity be, in $\mathrm{m/s}$, after another 12 months from the initial measurement?</question>
+
+**Critique:**
+*   **Guideline 1 (Model a biology Scenario):** Excellent. Realistic clinical monitoring scenario.
+*   **Guideline 3 (Force Multi-Step Reasoning):** Strong. Requires calculating the rate of change, determining the total elapsed time, and then extrapolating to find the future velocity.
+*   **All other guidelines (2, 4, 5, 6, 7, 9, 10, 11, 12):** Met. (Note on 9: Correctly uses LaTeX for units, which is good).
+
+**Actionable Feedback:**
+*   **Improvement:** None, this question is well-designed.
+
+---
+
+<question>During a research trial, Parkinson's patients are given either placebo or a novel treatment. Patients undergo the Timed Up and Go test (TUG). The treatment group averages a 20% decrease in TUG time with standard deviation of 2 seconds, and the placebo group averages a 5% decrease in TUG time with standard deviation of 1 seconds. Given that initially both groups performed the TUG test in 18 seconds. If a single patient from the treatment group performs the TUG test in 13 seconds after the treatment, how many standard deviations better is the patient's TUG time than the treatment group average?</question>
+
+**Critique:**
+*   **Guideline 1 (Model a biology Scenario):** Excellent. Realistic research trial scenario, incorporating statistical concepts.
+*   **Guideline 3 (Force Multi-Step Reasoning):** Strong. Requires calculating the treatment group's average TUG time after intervention, then calculating the difference from the patient's time, and finally expressing that difference in terms of standard deviations (a Z-score calculation).
+*   **All other guidelines (2, 4, 5, 6, 7, 9, 10, 11, 12):** Met.
+
+**Actionable Feedback:**
+*   **Improvement:** None, this question is very well-designed.
+=== Turn 1: Author refines questions ===
+Okay, here are the refined questions, incorporating your feedback and aiming for greater multi-step reasoning where indicated:
+
+<question>A physical therapist is evaluating a patient with early-stage Parkinson's disease. The patient exhibits a reduced arm swing during gait. Using Kinovea software, the therapist measures the patient's arm swing angle to be 20 degrees. A healthy individual of the same age and stature typically exhibits an arm swing angle of 30 degrees. Assuming that arm swing angle reduction correlates linearly with an increased risk of falls, and a 50% reduction in arm swing is associated with a 1.5-fold increase in fall risk, what is the fold increase in fall risk for this patient, rounded to two decimal places?</question>
+
+<question>A researcher is investigating the effect of rhythmic auditory stimulation (RAS) and Nordic walking (NW) on gait parameters in Parkinson's disease patients. Before intervention, a patient's gait speed is measured using the Timed Up and Go (TUG) test, resulting in a time of 15 seconds to complete the test. After a 6-week combined RAS and NW therapy, the TUG test time decreases to 12 seconds. If improvement in TUG test time is directly proportional to an increase in gait speed, what is the percentage increase in gait speed, rounded to nearest integer, after the intervention? </question>
+
+<question>A study aims to assess the correlation between Functional Gait Assessment (FGA) scores and motor neuron excitability in Parkinson's disease patients undergoing rehabilitation. A patient's initial FGA score is 18.  It is known that an FGA score of 15 corresponds to a baseline motor neuron excitability level of 50 mV. After a targeted rehabilitation program, the patient's FGA score improves to 22. Assuming that *each point increase in FGA score corresponds to a 2% increase in motor neuron excitability relative to the baseline excitability (50mV)*, what is the patient's percentage increase in motor neuron excitability, rounded to the nearest integer, after the rehabilitation program?</question>
+
+<question>A neurologist is monitoring the progression of Parkinson's disease in a patient. Initial arm swing velocity is recorded at $1.0\,\mathrm{m/s}$. Over a period of 6 months, the arm swing velocity decreases linearly to $0.75\,\mathrm{m/s}$. Assuming that the rate of decline in arm swing velocity remains constant, what will the arm swing velocity be, in $\mathrm{m/s}$, after another 12 months from the initial measurement?</question>
+
+<question>During a research trial, Parkinson's patients are given either placebo or a novel treatment. Patients undergo the Timed Up and Go test (TUG). The treatment group averages a 20% decrease in TUG time with standard deviation of 2 seconds, and the placebo group averages a 5% decrease in TUG time with standard deviation of 1 seconds. Given that initially both groups performed the TUG test in 18 seconds. If a single patient from the treatment group performs the TUG test in 13 seconds after the treatment, how many standard deviations better is the patient's TUG time than the treatment group average?</question>
+=== Turn 1: Critic feedback ===
+Here's a critique of your questions, evaluated against your guidelines, with concise, actionable feedback for improvement:
+
+---
+
+### Question 1 Critique
+
+<question>A physical therapist is evaluating a patient with early-stage Parkinson's disease. The patient exhibits a reduced arm swing during gait. Using Kinovea software, the therapist measures the patient's arm swing angle to be 20 degrees. A healthy individual of the same age and stature typically exhibits an arm swing angle of 30 degrees. Assuming that arm swing angle reduction correlates linearly with an increased risk of falls, and a 50% reduction in arm swing is associated with a 1.5-fold increase in fall risk, what is the fold increase in fall risk for this patient, rounded to two decimal places?</question>
+
+**Critique:**
+*   **Guideline 1 (Biology Scenario):** Excellent. Real-world and relevant.
+*   **Guideline 3 (Multi-Step Reasoning):** Good. Requires calculating percentage reduction, then using the linear correlation to find the fold increase. The interpretation of "linear correlation" for "increased risk of falls" is key (i.e., is it the *additional* risk that is linear, or total risk from zero reduction?). Your phrasing makes it solvable with a reasonable assumption (linear increase in the *additional* risk factor).
+*   **Guideline 6 (Single Solution):** Yes, with the common interpretation of such linear correlations.
+*   **Guideline 7 (Rigorous, Concise Phrasing):** Good.
+*   **Guideline 9 (Units/Notation):** Consistent.
+
+**Recommendation:**
+*   **Minor refinement:** The phrasing "a 50% reduction in arm swing is associated with a 1.5-fold increase in fall risk" could be slightly clearer about the baseline for linearity. For example: "Assuming that the *additional* fold increase in fall risk correlates linearly with the percentage reduction in arm swing, such that a 50% reduction is associated with an *additional* 0.5-fold increase in fall risk (beyond the baseline 1.0-fold for a healthy individual)." This removes any potential ambiguity, although the current phrasing is typically interpreted this way in such problems.
+
+---
+
+### Question 2 Critique
+
+<question>A researcher is investigating the effect of rhythmic auditory stimulation (RAS) and Nordic walking (NW) on gait parameters in Parkinson's disease patients. Before intervention, a patient's gait speed is measured using the Timed Up and Go (TUG) test, resulting in a time of 15 seconds to complete the test. After a 6-week combined RAS and NW therapy, the TUG test time decreases to 12 seconds. If improvement in TUG test time is directly proportional to an increase in gait speed, what is the percentage increase in gait speed, rounded to nearest integer, after the intervention? </question>
+
+**Critique:**
+*   **Guideline 1 (Biology Scenario):** Excellent. Relevant clinical context.
+*   **Guideline 3 (Multi-Step Reasoning):** Intended to be multi-step, but the core premise is flawed.
+*   **Guideline 6 (Single Solution):** No, the phrasing leads to ambiguity/incorrect reasoning.
+*   **Guideline 7 (Rigorous, Concise Phrasing):** **Major Flaw.**
+
+**Recommendation:**
+*   **Crucial Correction:** The statement "If improvement in TUG test time is directly proportional to an increase in gait speed" is **physically incorrect**. Gait speed is *inversely* proportional to the TUG test time (Speed = Distance/Time). A decrease in TUG time indicates an *increase* in speed.
+*   **Actionable Feedback:** **Remove or correct this misleading statement.** The question should rely on the student's understanding that speed is inversely proportional to time. For example, simply ask: "...what is the percentage increase in gait speed, rounded to nearest integer, after the intervention?" The student must infer the inverse relationship. This makes it a stronger test of conceptual understanding.
+
+---
+
+### Question 3 Critique
+
+<question>A study aims to assess the correlation between Functional Gait Assessment (FGA) scores and motor neuron excitability in Parkinson's disease patients undergoing rehabilitation. A patient's initial FGA score is 18. It is known that an FGA score of 15 corresponds to a baseline motor neuron excitability level of 50 mV. After a targeted rehabilitation program, the patient's FGA score improves to 22. Assuming that *each point increase in FGA score corresponds to a 2% increase in motor neuron excitability relative to the baseline excitability (50mV)*, what is the patient's percentage increase in motor neuron excitability, rounded to the nearest integer, after the rehabilitation program?</question>
+
+**Critique:**
+*   **Guideline 1 (Biology Scenario):** Excellent. Realistic and detailed.
+*   **Guideline 3 (Multi-Step Reasoning):** Excellent. Requires careful calculation of the absolute change in excitability per FGA point relative to the baseline, then calculating the patient's initial and final excitability, and finally determining their *own* percentage increase. This effectively tests detailed understanding.
+*   **Guideline 6 (Single Solution):** Yes, if the phrasing is carefully followed.
+*   **Guideline 7 (Rigorous, Concise Phrasing):** Excellent. The specific phrasing "relative to the baseline excitability (50mV)" is precise and crucial for a unique solution.
+*   **Guideline 9 (Units/Notation):** Consistent.
+
+**Recommendation:**
+*   **None.** This is a very strong and well-designed question.
+
+---
+
+### Question 4 Critique
+
+<question>A neurologist is monitoring the progression of Parkinson's disease in a patient. Initial arm swing velocity is recorded at $1.0\,\mathrm{m/s}$. Over a period of 6 months, the arm swing velocity decreases linearly to $0.75\,\mathrm{m/s}$. Assuming that the rate of decline in arm swing velocity remains constant, what will the arm swing velocity be, in $\mathrm{m/s}$, after another 12 months from the initial measurement?</question>
+
+**Critique:**
+*   **Guideline 1 (Biology Scenario):** Good.
+*   **Guideline 3 (Multi-Step Reasoning):** Requires calculating the rate of decline and then extrapolating.
+*   **Guideline 6 (Single Solution):** **Major Flaw.** The time point is ambiguous.
+*   **Guideline 7 (Rigorous, Concise Phrasing):** **Major Flaw.**
+
+**Recommendation:**
+*   **Crucial Correction:** The phrase "after another 12 months from the initial measurement" is highly ambiguous.
+    *   Does it mean *total* of 12 months from the initial measurement? (i.e., $t=12$ months)
+    *   Or does it mean *an additional* 12 months *beyond* the 6-month mark? (i.e., $t=18$ months total)
+    *   The word "another" strongly suggests the latter, but "from the initial measurement" typically refers to the total elapsed time.
+*   **Actionable Feedback:** **Clarify the target time point explicitly.**
+    *   Option A (if $t=12$ months is intended): "what will the arm swing velocity be, in $\mathrm{m/s}$, at a total of 12 months from the initial measurement?"
+    *   Option B (if $t=18$ months is intended): "what will the arm swing velocity be, in $\mathrm{m/s}$, after an additional 12 months beyond the 6-month measurement point?" or "...after a total of 18 months from the initial measurement?"
+
+---
+
+### Question 5 Critique
+
+<question>During a research trial, Parkinson's patients are given either placebo or a novel treatment. Patients undergo the Timed Up and Go test (TUG). The treatment group averages a 20% decrease in TUG time with standard deviation of 2 seconds, and the placebo group averages a 5% decrease in TUG time with standard deviation of 1 seconds. Given that initially both groups performed the TUG test in 18 seconds. If a single patient from the treatment group performs the TUG test in 13 seconds after the treatment, how many standard deviations better is the patient's TUG time than the treatment group average?</question>
+
+**Critique:**
+*   **Guideline 1 (Biology Scenario):** Excellent. Relevant to clinical research.
+*   **Guideline 3 (Multi-Step Reasoning):** Good. Requires calculating the group's post-treatment average TUG time, finding the difference for the individual, and then expressing it in terms of standard deviations.
+*   **Guideline 6 (Single Solution):** Yes, with the standard interpretation of the standard deviation phrasing.
+*   **Guideline 7 (Rigorous, Concise Phrasing):** Good, with a minor potential for ambiguity.
+
+**Recommendation:**
+*   **Minor refinement:** Clarify what the "standard deviation of 2 seconds" refers to. While context suggests it's the standard deviation of the *final TUG time* for the treatment group, stating it explicitly removes any doubt.
+*   **Actionable Feedback:** Reword to "The treatment group averages a 20% decrease in TUG time, with the final TUG times having a standard deviation of 2 seconds..." (or similar).
+=== Turn 2: Author refines questions ===
+Okay, here are the improved questions based on your feedback:
+
+<question>A physical therapist is evaluating a patient with early-stage Parkinson's disease. The patient exhibits a reduced arm swing during gait. Using Kinovea software, the therapist measures the patient's arm swing angle to be 20 degrees. A healthy individual of the same age and stature typically exhibits an arm swing angle of 30 degrees. Assuming that the *additional* fold increase in fall risk correlates linearly with the percentage reduction in arm swing, such that a 50% reduction is associated with an *additional* 0.5-fold increase in fall risk (beyond the baseline 1.0-fold for a healthy individual), what is the fold increase in fall risk for this patient, rounded to two decimal places?</question>
+
+<question>A researcher is investigating the effect of rhythmic auditory stimulation (RAS) and Nordic walking (NW) on gait parameters in Parkinson's disease patients. Before intervention, a patient's gait speed is measured using the Timed Up and Go (TUG) test, resulting in a time of 15 seconds to complete the test. After a 6-week combined RAS and NW therapy, the TUG test time decreases to 12 seconds. What is the percentage increase in gait speed, rounded to nearest integer, after the intervention?</question>
+
+<question>A study aims to assess the correlation between Functional Gait Assessment (FGA) scores and motor neuron excitability in Parkinson's disease patients undergoing rehabilitation. A patient's initial FGA score is 18. It is known that an FGA score of 15 corresponds to a baseline motor neuron excitability level of 50 mV. After a targeted rehabilitation program, the patient's FGA score improves to 22. Assuming that *each point increase in FGA score corresponds to a 2% increase in motor neuron excitability relative to the baseline excitability (50mV)*, what is the patient's percentage increase in motor neuron excitability, rounded to the nearest integer, after the rehabilitation program?</question>
+
+<question>A neurologist is monitoring the progression of Parkinson's disease in a patient. Initial arm swing velocity is recorded at $1.0\,\mathrm{m/s}$. Over a period of 6 months, the arm swing velocity decreases linearly to $0.75\,\mathrm{m/s}$. Assuming that the rate of decline in arm swing velocity remains constant, what will the arm swing velocity be, in $\mathrm{m/s}$, after an additional 12 months beyond the 6-month measurement point?</question>
+
+<question>During a research trial, Parkinson's patients are given either placebo or a novel treatment. Patients undergo the Timed Up and Go test (TUG). The treatment group averages a 20% decrease in TUG time, with the final TUG times having a standard deviation of 2 seconds, and the placebo group averages a 5% decrease in TUG time with standard deviation of 1 seconds. Given that initially both groups performed the TUG test in 18 seconds. If a single patient from the treatment group performs the TUG test in 13 seconds after the treatment, how many standard deviations better is the patient's TUG time than the treatment group average?</question>
+=== Final questions generated ===

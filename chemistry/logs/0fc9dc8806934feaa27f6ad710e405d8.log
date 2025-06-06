@@ -1,0 +1,692 @@
+=== Turn 0: Author generates questions ===
+<question>  
+A perovskite oxide undergoes a pressure-induced structural phase transition from tetragonal to monoclinic at 5 GPa. The unit cell parameters at ambient pressure are $a = 3.90 \, \text{Å}$, $c = 4.15 \, \text{Å}$, and at 6 GPa (monoclinic phase), the parameters become $a = 3.85 \, \text{Å}$, $b = 3.88 \, \text{Å}$, $c = 4.10 \, \text{Å}$, with monoclinic angle $\beta = 91.2^\circ$.  
+
+Calculate the percentage decrease in the unit cell volume upon the transition. Use the formulas:  
+- Tetragonal volume: $V_{\text{tet}} = a^2 c$  
+- Monoclinic volume: $V_{\text{mon}} = a b c \sin \beta$  
+
+Express your answer as a positive percentage with two significant figures.</question>
+
+<question>  
+A Jahn–Teller active octahedral complex of Cu$^{2+}$ distort under pressure, reducing the axial elongation from 0.18 Å at ambient pressure to 0.07 Å at 8 GPa. Assuming the ligand field splitting parameter $\Delta$ depends inversely on the axial bond length $d$ as $\Delta \propto 1/d$, and the initial axial bond length is 2.30 Å, calculate the percentage increase in $\Delta$ at 8 GPa compared to ambient pressure due to the pressure-induced reduction of axial length. Express your answer to one decimal place.</question>
+
+<question>  
+A magnetic material exhibits a transition from ferromagnetic to antiferromagnetic ordering at 4 GPa, accompanied by a change of the exchange integral $J$ from +12 meV to -8 meV. Assuming the magnetic transition temperature $T_C$ or $T_N$ relates to $J$ by the mean-field approximation $k_B T = \frac{z |J| S (S+1)}{3}$ where $S=1/2$, $k_B=8.617 \times 10^{-5}$ eV/K, and the coordination number $z=6$, calculate the ratio $\frac{T_N}{T_C}$. Give your answer rounded to two decimal places.</question>
+
+<question>  
+An optical absorption edge in a tetragonal crystal shifts from 2.15 eV to 2.42 eV when pressure increases from ambient to 7 GPa, concomitant with a structural phase change to monoclinic. Calculate the wavelength shift (in nm) of the absorption edge corresponding to this transition. Use $hc = 1240$ eV·nm and give the difference $\Delta \lambda = \lambda_{\text{initial}} - \lambda_{\text{final}}$ rounded to the nearest integer.</question>
+
+<question>  
+In a Jahn-Teller distorted octahedral complex, the axial and equatorial metal–ligand bond lengths differ by 0.12 Å, causing splitting of the $e_g$ orbitals by 0.25 eV. If in an anisotropic monoclinic phase the axial elongation increases by 50%, compute the expected new $e_g$ splitting energy (in eV), assuming linear dependence of splitting on elongation. Provide the answer with two decimal places.</question>
+
+<question>  
+A transition metal oxide undergoes a pressure-induced structural change causing anisotropic compression: $a$-axis shrinks by 3%, $b$-axis by 5%, and $c$-axis by 7%. If the initial octahedral local structure has bond lengths of 2.00 Å equal along all three axes, calculate the new average bond length assuming bond length scales with the corresponding lattice parameter percentage change. Provide your answer with three decimal places in Å.</question>
+
+<question>  
+In a tetragonal crystal, the local crystal field splitting is determined by the average metal-oxygen bond length $d$ according to $10Dq \propto d^{-5}$. If under pressure the axial bond length decreases by 4%, while equatorial bonds remain unchanged, calculate the percentage increase in the average crystal field splitting $10Dq$. Express your answer with one decimal place.</question>
+
+<question>  
+A spin crossover complex exhibits a high-spin to low-spin transition driven by pressure, accompanied by a Jahn-Teller inactive to active distortion reducing the symmetry from $D_{4h}$ to $C_{2h}$. Predict the new point group symmetry and the expected qualitative change in degeneracy of the $t_{2g}$ orbitals after distortion. Provide the point group symbol and specify whether the degeneracy increases, decreases, or remains unchanged.</question>
+
+<question>  
+The pressure dependence of the magnetic susceptibility $\chi$ near a structural phase transition is modeled as $\chi(p) = \chi_0 \exp\left(-\frac{\Delta E(p)}{k_B T}\right)$, where $\Delta E(p) = \Delta E_0 + \alpha p$ (pressure in GPa, energy in meV). Given $\Delta E_0 = 10$ meV, $\alpha = 2.5$ meV/GPa, $\chi_0 = 1.0 \times 10^{-3}$ emu/mol, and $T=300$ K, compute $\chi$ at $p=4$ GPa. Use $k_B = 8.617 \times 10^{-2}$ meV/K. Provide your answer in emu/mol with three significant figures.</question>
+
+<question>  
+A copper(II) oxide compound shows pressure-induced suppression of Jahn-Teller distortion reflected in the ratio $r = d_{\text{axial}} / d_{\text{equatorial}}$. Initially, $r_0 = 1.10$ at 0 GPa, and at 9 GPa, $r = 1.03$. Assuming a linear dependence $r(p) = r_0 - m p$, calculate the slope $m$ in GPa$^{-1}$ with three decimal places.</question>
+=== Turn 0: Critic feedback ===
+**General Feedback on All Questions:**
+
+**Strengths:**
+- The questions are advanced, unique, and require multi-step reasoning.
+- Units are mostly specified and appropriate for the context.
+- Phrasing is concise and avoids ambiguity or colloquialism.
+- There’s generally only one answer per question.
+
+**Points for Improvement (by guideline):**
+
+---
+
+### 1. Model a Chemistry Scenario
+**Strength:** All questions model a real or plausible chemistry scenario—solid-state, magnetism, spectroscopy, or crystal field.
+
+**Improvement:** None required.
+
+---
+
+### 2. Require Answers as Numerical Values or Proper IUPAC Compound Names
+**Strength:** Answers are clearly expected to be numerical with units.
+
+**Improvement:** For the one question (#8) asking for both a point group and a trend, see below (Guideline 10 & 11).
+
+---
+
+### 3. Force Multi-Step Reasoning
+**Strength:** Each question requires more than one step of calculation.
+
+**Improvement:** None required.
+
+---
+
+### 4. Avoid Redundancy
+**Strength:** There is no apparent extraneous information.
+
+**Improvement:** None required.
+
+---
+
+### 5. Be Unique (avoid standard textbook examples)
+**Strength:** The questions are novel or nonstandard for undergraduate curricula.
+
+**Improvement:** None required.
+
+---
+
+### 6. Single Solution
+**Feedback:** Most questions have only one correct answer.
+
+**Improvement:**  
+- **Question 8** violates this: it asks for both the point group and a qualitative trend, producing a multi-part answer.  
+  **Fix:** Separate into two questions or ask for just one feature (preferably the calculated/definite one).
+
+---
+
+### 7. Use Rigorous, Concise Phrasing
+**Strength:** Most questions are clear and succinct.
+
+**Improvement:**  
+- Minor: Specify assumptions/definitions clearly (see #2 on “axial bond length” vs. “elongation”).
+
+---
+
+### 8. Avoid Colloquial or Ambiguous Terms
+**Strength:** Terminology is almost always precise.
+
+**Improvement:**  
+- **Question 8:** The phrase "expected qualitative change in degeneracy" is a bit mild for a quantitative question; a simple “increase, decrease, or unchanged” is okay if clearly defined as mutually exclusive.
+
+---
+
+### 9. Consistent Units and IUPAC Nomenclature
+**Strength:** Units are explicit and consistent.
+
+**Improvement:** None required.
+
+---
+
+### 10. Questions Must Not Have Multiple Parts; One Solution Only
+**Issue:**  
+- **Question 8** clearly asks for two things (point group, and degeneracy trend).
+
+**Improvement:**  
+- Split into two questions or only ask one: for example, "What is the new point group?" OR "Does the degeneracy of the $t_{2g}$ orbitals increase, decrease, or remain unchanged?" (But not both in one question.)
+
+---
+
+### 11. Formatting (LaTeX/Markdown syntax)
+**Strength:** Equations are enclosed in proper $...$ or $$...$$ delimiters.
+
+**Improvement:**  
+- Double-check in actual Markdown cell to ensure rendering, but this is correct per instructions.
+
+---
+
+---
+
+## Specific Suggestions (Per Question)
+
+---
+
+**1. Perovskite, Pressure-induced phase change:**  
+- Well-phrased, concise, single numeric answer.  
+- Units clear, scenario plausible.  
+- **No changes needed.**
+
+---
+
+**2. Jahn-Teller axial bond change:**  
+- The phrase “reducing the axial elongation from 0.18 Å” could cause confusion, since elongation and “axial bond length” are different – clarify that “initial axial bond length” is the elongated length, and “elongation” is the difference from equatorial.
+- Prefer to have all parameters with explicit values (i.e., if axial and equatorial bond lengths are involved, state both).
+- **Suggestion:** Clarify if “axial bond length” means the longer axis, not the elongation.
+
+---
+
+**3. Magnetic transition, $J$ change:**  
+- Clean, concise, well-formatted, one answer.
+- **No changes needed.**
+
+---
+
+**4. Optical absorption edge, pressure-induced shift**:  
+- Phrasing is clear. Scenario is unique.  
+- Units and constants given.  
+- **No changes needed.**
+
+---
+
+**5. Jahn-Teller splitting and elongation:**  
+- Well-phrased, all units clear, linear relationship stated.  
+- **No changes needed.**
+
+---
+
+**6. Anisotropic compression, bond length scaling:**  
+- Clear, unique. Slightly wordy in the specification — can omit explicit mention of “local structure” unless necessary.
+- **Minor:** Could specify “octahedral metal–ligand bond” explicitly at start.
+
+---
+
+**7. Crystal field splitting, tetragonal/axial compression:**  
+- Clear and concise, single answer.
+- **No changes needed.**
+
+---
+
+**8. Spin crossover, Jahn-Teller symmetry change:**  
+- **Problem: This is a double-barreled question (see above).**
+- **Fix required:** Split into two single-answer questions.
+
+---
+
+**9. Magnetic susceptibility, pressure dependence:**  
+- Detailed, units provided, all variables specified.
+- **No changes needed.**
+
+---
+
+**10. $r = d_{\text{axial}}/d_{\text{equatorial}}$ suppression:**  
+- Clear, concise, unique answer.
+- **No changes needed.**
+
+---
+
+## Summary of Most Important Fixes
+
+**1.** **Revise Question 8 to require only one answer.**
+- For example: “What is the new point group?” OR “Does the degeneracy...increase, decrease, or remain unchanged?”
+- If you still want both, split into two separate questions.
+
+**2.** **For Question 2:** Clarify whether “axial elongation” is the *difference* or the absolute bond length.
+
+**3.** **Minor:** Double-check that all questions are strictly single-answer.
+
+**4.** **General:** All other formatting and guidelines are well met. Excellent rigor, originality and phrasing.
+
+---
+
+## Example Fix (Question 8):
+
+> A spin crossover complex exhibits a high-spin to low-spin transition driven by pressure, accompanied by a Jahn-Teller inactive to active distortion reducing the symmetry from $D_{4h}$ to $C_{2h}$.  
+>  
+> **What is the new point group symmetry?**  
+> Provide the answer using standard Schönflies notation (e.g., $C_{2h}$).
+
+Or:
+
+> ...  
+> **Does the degeneracy of the $t_{2g}$ orbitals increase, decrease, or remain unchanged after distortion?**  
+> Select one: increase / decrease / unchanged.
+
+---
+
+## Final recommendation  
+
+**Address the double-barrel in Question 8**; minor clarifications in Question 2. Otherwise, your questions are exemplary for advanced chemistry assessment!
+=== Turn 1: Author refines questions ===
+<question>  
+A perovskite oxide undergoes a pressure-induced structural phase transition from tetragonal to monoclinic at 5 GPa. The unit cell parameters at ambient pressure are $a = 3.90 \, \text{Å}$, $c = 4.15 \, \text{Å}$, and at 6 GPa (monoclinic phase), the parameters become $a = 3.85 \, \text{Å}$, $b = 3.88 \, \text{Å}$, $c = 4.10 \, \text{Å}$, with monoclinic angle $\beta = 91.2^\circ$.  
+
+Calculate the percentage decrease in the unit cell volume upon the transition. Use the formulas:  
+- Tetragonal volume: $V_{\text{tet}} = a^2 c$  
+- Monoclinic volume: $V_{\text{mon}} = a b c \sin \beta$  
+
+Express your answer as a positive percentage with two significant figures.  
+</question>
+
+<question>  
+A Jahn–Teller active octahedral complex of Cu$^{2+}$ exhibits an axial metal–ligand bond length of 2.48 Å at ambient pressure, which decreases to 2.39 Å at 8 GPa. Assuming the ligand field splitting parameter $\Delta$ depends inversely on the axial bond length $d$ as $\Delta \propto 1/d$, calculate the percentage increase in $\Delta$ at 8 GPa compared to ambient pressure due to the axial bond length contraction. Express your answer to one decimal place.  
+</question>
+
+<question>  
+A magnetic material exhibits a transition from ferromagnetic to antiferromagnetic ordering at 4 GPa, accompanied by a change of the exchange integral $J$ from +12 meV to -8 meV. Assuming the magnetic transition temperature $T_C$ or $T_N$ relates to $J$ by the mean-field approximation  
+\[
+k_B T = \frac{z |J| S (S+1)}{3}
+\]  
+where $S = \frac{1}{2}$, $k_B = 8.617 \times 10^{-5}$ eV/K, and the coordination number $z = 6$, calculate the ratio $\frac{T_N}{T_C}$. Give your answer rounded to two decimal places.  
+</question>
+
+<question>  
+An optical absorption edge in a tetragonal crystal shifts from 2.15 eV to 2.42 eV when pressure increases from ambient to 7 GPa, concomitant with a structural phase transition to monoclinic. Calculate the wavelength shift (in nm) of the absorption edge corresponding to this transition. Use $hc = 1240$ eV·nm and give the difference $\Delta \lambda = \lambda_{\text{initial}} - \lambda_{\text{final}}$ rounded to the nearest integer.  
+</question>
+
+<question>  
+In a Jahn-Teller distorted octahedral complex, the axial and equatorial metal–ligand bond lengths differ by 0.12 Å, causing splitting of the $e_g$ orbitals by 0.25 eV. If in an anisotropic monoclinic phase the axial elongation increases by 50%, compute the expected new $e_g$ splitting energy (in eV), assuming linear dependence of splitting on elongation. Provide the answer with two decimal places.  
+</question>
+
+<question>  
+A transition metal oxide undergoes a pressure-induced structural change causing anisotropic compression: the $a$-axis shrinks by 3%, the $b$-axis by 5%, and the $c$-axis by 7%. If the initial octahedral metal–ligand bond lengths are 2.00 Å and equal along all three axes, calculate the new average bond length assuming bond lengths scale proportionally with the corresponding lattice parameter percentage change. Provide your answer with three decimal places in Å.  
+</question>
+
+<question>  
+In a tetragonal crystal, the local crystal field splitting $10Dq$ depends on the average metal–oxygen bond length $d$ as $10Dq \propto d^{-5}$. If under pressure the axial bond length decreases by 4%, while equatorial bonds remain unchanged, calculate the percentage increase in the average crystal field splitting $10Dq$. Express your answer with one decimal place.  
+</question>
+
+<question>  
+A spin crossover complex undergoes a high-spin to low-spin transition driven by pressure, accompanied by a Jahn-Teller inactive to active distortion reducing the molecular symmetry from $D_{4h}$ to a lower-symmetry point group.  
+
+What is the most likely new point group symmetry resulting from this distortion? Provide the answer using standard Schönflies notation (e.g., $C_{2h}$).  
+</question>
+
+<question>  
+The pressure dependence of the magnetic susceptibility $\chi$ near a structural phase transition is modeled as  
+\[
+\chi(p) = \chi_0 \exp\left(-\frac{\Delta E(p)}{k_B T}\right),
+\]  
+where $\Delta E(p) = \Delta E_0 + \alpha p$ (pressure $p$ in GPa, energy in meV). Given $\Delta E_0 = 10$ meV, $\alpha = 2.5$ meV/GPa, $\chi_0 = 1.0 \times 10^{-3}$ emu/mol, $T=300$ K, and $k_B = 8.617 \times 10^{-2}$ meV/K, compute $\chi$ at $p=4$ GPa. Provide your answer in emu/mol with three significant figures.  
+</question>
+
+<question>  
+A copper(II) oxide compound shows pressure-induced suppression of Jahn-Teller distortion reflected in the ratio $r = d_{\text{axial}} / d_{\text{equatorial}}$. Initially, $r_0 = 1.10$ at 0 GPa, and at 9 GPa, $r = 1.03$. Assuming a linear dependence $r(p) = r_0 - m p$, calculate the slope $m$ in GPa$^{-1}$. Express your answer with three decimal places.  
+</question>
+=== Turn 1: Critic feedback ===
+Certainly! Here is a **concise, point-by-point critique** for each question in relation to your eleven guidelines, with *actionable feedback marked in bold*.
+
+---
+
+**Question 1:** (Perovskite volume change)
+- **Strengths:** Well-scaffolded; models a real scenario with plausible parameters. Multi-step calculation; units and formula provided; phrasing is concise, and the answer is a clear percentage.
+- **Weaknesses/Improvements:**  
+  - Could clarify if $a, b, c$ always refer to the same crystallographic directions or not, as different notations exist; in high-pressure crystallography, axis assignment may vary.
+  - *Action: Explicitly state that $a$/$b$/$c$ correspond to the same directions pre- and post-transition if relevant.*
+
+---
+
+**Question 2:** (Jahn–Teller, ligand field change)
+- **Strengths:** Original scenario, direct question, asks for a unique numerical percentage; multi-step; consistent units.
+- **Improvements:**  
+  - The proportionality $\Delta \propto 1/d$ is not standard unless further assumptions are made about the geometry. It is defendable in this problem, but a brief phrase like “neglecting other factors” could make it airtight.
+  - *Action: Add "neglecting all other structural changes" to be explicit about the idealization.*
+
+---
+
+**Question 3:** (Magnetic ordering, $J$, mean-field $T_C$, $T_N$)
+- **Strengths:** Creative, single-solution, concise, clearly defined constants, and correct use of the modulus for $J$.
+- **Improvements:**
+  - Units are clear, but a reminder (e.g., "No unit conversions required for meV/eV; $k_B$ is in eV/K") could avoid misinterpretation.
+  - *Action: Add "All energies are in eV/meV as appropriate; no conversion required."*
+
+---
+
+**Question 4:** (Optical absorption edge, wavelength shift)
+- **Strengths:** Numerical answer requested, units are clear, formula for $hc$ provided, scenario is interesting.
+- **Improvements:**
+  - The “concomitant with phase transition” is superfluous since the calculation does not depend on the phase. 
+  - *Action: Remove the phrase "concomitant with a structural phase transition to monoclinic" as it does not affect the calculation or solution.*
+
+---
+
+**Question 5:** (Jahn-Teller splitting and elongation)
+- **Strengths:** Intellectually interesting, requires multi-step reasoning (percent increase applied to bond length difference, then linear scaling for splitting).
+- **Improvements:**
+  - Avoid the ambiguous “elongation increases by 50%”—does it mean the difference increases (relative to the original difference), or the axial bond increases but not the equatorial? Context suggests the former, but be explicit.
+  - *Action: Change “axial elongation increases by 50%” to “the difference between axial and equatorial bond lengths increases by 50%”.*
+
+---
+
+**Question 6:** (Anisotropic compression, new average bond length)
+- **Strengths:** Multi-step, real-world relevance; clear directional changes; single numerical answer (Å).
+- **Improvements:**
+  - If bond length changes are directional, does "average" refer to mean of compressed values along all axes? Specify calculation ("arithmetic mean of the three new bond lengths").
+  - *Action: Add “Compute the arithmetic mean of the three resulting bond lengths after scaling.”*
+
+---
+
+**Question 7:** (Crystal field, bond length, $10Dq \propto d^{-5}$)
+- **Strengths:** Single calculation with high intellectual content; $10Dq$ formula stated unambiguously.
+- **Improvements:**
+  - The “average” $10Dq$ can be ambiguous because $d$ is not defined for mixed changes; specify calculation (mean bond length or some appropriate average) or state if $10Dq$ is dominated by the axial change.
+  - *Action: Specify how the new $d$ (average) should be computed: “Compute the new average bond length as the mean of the axial and equatorial values.”*
+
+---
+
+**Question 8:** (Spin crossover, symmetry group)
+- **Strengths:** Single unique answer, high-level reasoning needed, concise.
+- **Improvements:**
+  - There is some ambiguity: which symmetry group is most likely depends on the distortion pathway; “most likely” could yield controversy.
+  - *Action: Specify the nature of the distortion (e.g., “Assume an axial elongation consistent with a typical Jahn–Teller active distortion in octahedral geometry.”).*
+
+---
+
+**Question 9:** (Magnetic susceptibility under pressure)
+- **Strengths:** Requires correct substitutions and unit handling, direct unique answer with specified significant digits. Scenario is both plausible and not a textbook example.
+- **Improvements:**
+  - State clearly if exponentials should be kept dimensionless, since denominator is $k_B T$ (in meV).
+  - *Action: Clarify: “Note: Ensure that all energy values are used in meV for the exponential.”*
+
+---
+
+**Question 10:** (Suppression of Jahn-Teller effect, linear $r(p)$ slope)
+- **Strengths:** Multi-step, unique numerical answer; not a textbook example; uses proper notation.
+- **Improvements:**
+  - No major issues. Could specify “Express $m$ as a positive value” if “suppression” only refers to $r$ decreasing.
+  - *Action: Specify: “Express $m$ as a positive value.” (if relevant to the marking scheme).*
+
+---
+
+## **General Feedback (for all):**
+
+- **All questions are original and go well beyond standard textbook scenarios, modeling real or realistic chemical/solid-state phenomena.**
+- **Question phrasing is concise, unambiguous, and employs consistent units and chemical terminology.**
+- **All questions require multi-step reasoning.**
+- **Each question requests a single, uniquely formatted answer.**
+- **No explicit multi-part questions, so only one answer per question.**
+- Equations and expressions are formatted with proper LaTeX, compatible with Markdown.
+
+## **Summary Table of Improvements**
+
+| Q# | Actionable Fix                                                                                           |
+|----|----------------------------------------------------------------------------------------------------------|
+|  1 | Clarify correspondence of axes $a$, $b$, $c$ if relevant.                                                |
+|  2 | State that only axial bond length changes affect the answer.                                              |
+|  3 | Note units for $J$ and $k_B$ to avoid conversion errors.                                                 |
+|  4 | Remove superfluous phrase not affecting the answer.                                                      |
+|  5 | Specify the meaning of “elongation increases by 50%.”                                                    |
+|  6 | Specify that “average” means arithmetic mean of three compressed lengths.                                |
+|  7 | Clarify how to compute the new average bond length for $10Dq$.                                           |
+|  8 | Specify the nature of the symmetry-lowering distortion.                                                  |
+|  9 | Remind the student that energies must all be handled in the same (meV) unit.                            |
+| 10 | Specify sign convention for $m$ (e.g., "as a positive value").                                           |
+
+---
+
+**Overall: Excellent set, very minor clarifications would make for perfect assessment questions.**  
+**Most improvements involve making explicit the conventions or assumptions that are implicit in technically trained chemists but may not be obvious to an advanced undergraduate/graduate student under exam conditions.**
+=== Turn 2: Author refines questions ===
+<question>  
+A perovskite oxide undergoes a pressure-induced structural phase transition from tetragonal to monoclinic at 5 GPa. The unit cell parameters at ambient pressure are \(a = 3.90 \, \text{Å}\) and \(c = 4.15 \, \text{Å}\), and at 6 GPa (monoclinic phase) the parameters become \(a = 3.85 \, \text{Å}\), \(b = 3.88 \, \text{Å}\), \(c = 4.10 \, \text{Å}\), with monoclinic angle \(\beta = 91.2^\circ\). Assume that the crystallographic axes \(a, b, c\) correspond to the same directions before and after the transition.  
+
+Calculate the percentage decrease in the unit cell volume upon the transition. Use the formulas:  
+- Tetragonal volume: \(V_{\text{tet}} = a^2 c\)  
+- Monoclinic volume: \(V_{\text{mon}} = a b c \sin \beta\)  
+
+Express your answer as a positive percentage with two significant figures.  
+</question>
+
+<question>  
+A Jahn–Teller active octahedral complex of Cu\(^{2+}\) exhibits an axial metal–ligand bond length of 2.48 Å at ambient pressure, which decreases to 2.39 Å at 8 GPa. Assuming the ligand field splitting parameter \(\Delta\) depends inversely on the axial bond length \(d\) as \(\Delta \propto 1/d\), neglecting all other structural changes, calculate the percentage increase in \(\Delta\) at 8 GPa compared to ambient pressure due to the axial bond length contraction. Express your answer to one decimal place.  
+</question>
+
+<question>  
+A magnetic material exhibits a transition from ferromagnetic to antiferromagnetic ordering at 4 GPa, accompanied by a change of the exchange integral \(J\) from +12 meV to -8 meV. Assuming the magnetic transition temperature \(T_C\) or \(T_N\) relates to \(J\) by the mean-field approximation  
+\[
+k_B T = \frac{z |J| S (S+1)}{3}
+\]  
+where \(S = \frac{1}{2}\), \(k_B = 8.617 \times 10^{-5}\) eV/K, and the coordination number \(z = 6\). All energies are given in eV or meV as appropriate; no conversion between units is necessary.  
+
+Calculate the ratio \(\frac{T_N}{T_C}\). Give your answer rounded to two decimal places.  
+</question>
+
+<question>  
+An optical absorption edge in a tetragonal crystal shifts from 2.15 eV to 2.42 eV when pressure increases from ambient to 7 GPa. Calculate the wavelength shift (in nm) of the absorption edge corresponding to this transition. Use \(hc = 1240\) eV·nm and give the difference \(\Delta \lambda = \lambda_{\text{initial}} - \lambda_{\text{final}}\) rounded to the nearest integer.  
+</question>
+
+<question>  
+In a Jahn-Teller distorted octahedral complex, the axial and equatorial metal–ligand bond lengths differ by 0.12 Å, causing splitting of the \(e_g\) orbitals by 0.25 eV. If in an anisotropic monoclinic phase the difference between axial and equatorial bond lengths increases by 50%, compute the expected new \(e_g\) splitting energy (in eV), assuming linear dependence of splitting on elongation. Provide the answer with two decimal places.  
+</question>
+
+<question>  
+A transition metal oxide undergoes a pressure-induced structural change causing anisotropic compression: the \(a\)-axis shrinks by 3%, the \(b\)-axis by 5%, and the \(c\)-axis by 7%. If the initial octahedral metal–ligand bond lengths are 2.00 Å and equal along all three axes, calculate the new average bond length, defined as the arithmetic mean of the three resulting bond lengths after scaling each bond length proportionally with the corresponding lattice parameter change. Provide your answer with three decimal places in Å.  
+</question>
+
+<question>  
+In a tetragonal crystal, the local crystal field splitting \(10Dq\) depends on the average metal–oxygen bond length \(d\) as \(10Dq \propto d^{-5}\). If under pressure the axial bond length decreases by 4%, while equatorial bonds remain unchanged, compute the new average bond length as the mean of the axial and equatorial bond lengths. Then calculate the percentage increase in the average crystal field splitting \(10Dq\). Express your answer with one decimal place.  
+</question>
+
+<question>  
+A spin crossover complex undergoes a high-spin to low-spin transition driven by pressure, accompanied by a Jahn-Teller inactive to active distortion reducing the molecular symmetry from \(D_{4h}\) to a lower-symmetry point group. Assume an axial elongation consistent with a typical Jahn–Teller active distortion in octahedral geometry.  
+
+What is the most likely new point group symmetry resulting from this distortion? Provide the answer using standard Schönflies notation (e.g., \(C_{2h}\)).  
+</question>
+
+<question>  
+The pressure dependence of the magnetic susceptibility \(\chi\) near a structural phase transition is modeled as  
+\[
+\chi(p) = \chi_0 \exp\left(-\frac{\Delta E(p)}{k_B T}\right),
+\]  
+where \(\Delta E(p) = \Delta E_0 + \alpha p\) (pressure \(p\) in GPa, energy in meV). Given \(\Delta E_0 = 10\) meV, \(\alpha = 2.5\) meV/GPa, \(\chi_0 = 1.0 \times 10^{-3}\) emu/mol, \(T=300\) K, and \(k_B = 8.617 \times 10^{-2}\) meV/K, note that all energies should be used in meV for the exponential calculation.  
+
+Compute \(\chi\) at \(p = 4\) GPa. Provide your answer in emu/mol with three significant figures.  
+</question>
+
+<question>  
+A copper(II) oxide compound shows pressure-induced suppression of Jahn–Teller distortion reflected in the ratio \(r = \frac{d_{\text{axial}}}{d_{\text{equatorial}}}\). Initially, \(r_0 = 1.10\) at 0 GPa, and at 9 GPa, \(r = 1.03\). Assuming a linear dependence \(r(p) = r_0 - m p\), express the slope \(m\) as a positive value in GPa\(^{-1}\). Calculate \(m\) and express your answer with three decimal places.  
+</question>
+=== Turn 2: Critic feedback ===
+**General Feedback on All Questions**
+
+**Strengths:**
+- All questions are rooted in advanced inorganic/solid-state chemistry or physical chemistry, showing originality and real-world relevance (Guideline 1, 5).
+- Answers are expected as single numerical values or a single chemical compound/point group (Guideline 2, 6, 10).
+- Multi-step reasoning is required in almost every question (Guideline 3).
+- No evident redundancy or extraneous steps (Guideline 4).
+- Units and nomenclature appear largely consistent and correct, and phrasing is concise and technical (Guidelines 7, 8, 9).
+- Questions use LaTeX/Markdown formatting for all formulas and numbers (Guideline 11).
+
+**Question-by-Question Critique:**
+
+---
+
+### 1. Perovskite phase transition and volume decrease
+**Strengths:**
+- Realistic scenario, multi-step numerical calculation.
+- Consistent units and clear equations.
+
+**Suggested Improvements:**
+- Clarify that the calculated percentage is $[(V_{tet}-V_{mon})/V_{tet}]\times 100\%$, as some students might interpret as the other way around.
+- Specify significant figures for input data (e.g., 3.90), as this controls answer precision.
+
+---
+
+### 2. Jahn–Teller active Cu(II) complex, ligand field change
+**Strengths:**
+- Analytical proportionality, clear numerical expectation.
+- Requires understanding of crystal field theory.
+
+**Suggested Improvements:**
+- The assumption "neglecting all other structural changes" could be omitted for brevity unless other changes are plausible.
+
+---
+
+### 3. Magnetism, exchange constant and transition temperatures
+**Strengths:**
+- Clear use of mean-field theory, single ratio expected as an answer.
+
+**Suggested Improvements:**
+- "No conversion between units is necessary": slightly ambiguous. State that both $J$ values are in meV rather than "no conversion necessary".
+- Clarify if "ratio" means $|T_N/T_C|$ or allow for a negative ratio; best to say "Give the ratio $T_N/T_C$ rounded to..."
+
+---
+
+### 4. Band gap pressure shift and wavelength change
+**Strengths:**
+- Uses real physical constants, requires multistep calculation.
+- No superfluous information.
+
+**Suggested Improvements:**
+- Specify how to handle the significant digits involved (e.g., ambiguous if initial energies are to three sig. figs., and request answer to nearest integer).
+
+---
+
+### 5. Jahn–Teller splitting, bond difference change
+**Strengths:**
+- Asks for a final, concrete value with consistent units.
+
+**Suggested Improvements:**
+- Since the increase is 50%, clarify whether this refers to the difference ($\Delta d$) or the absolute bond lengths; otherwise, clear.
+
+---
+
+### 6. Anisotropic compression, new bond length
+**Strengths:**
+- Well-posed, direct, realistic.
+
+**Suggested Improvements:**
+- No problems—very clear and concise.
+
+---
+
+### 7. Crystal field, nonuniform bond changes, $\Delta$
+**Strengths:**
+- Well-defined, demanding multiple steps.
+
+**Suggested Improvements:**
+- "Then calculate": potentially interpreted as a second part. Better to state all steps in a single-sentence instruction: "Compute the new average bond length ... and calculate the percentage increase in $10Dq$ ... Provide the percentage increase (one decimal place)." This avoids any hint of multipart responses.
+
+---
+
+### 8. Jahn–Teller symmetry change / point group
+**Strengths:**
+- Originality in symmetry change scenario, single solution.
+
+**Suggested Improvements:**
+- Slight ambiguity: there are several possible outcomes for the lower-symmetry point group, depending on distortion direction. You might add "assuming an axial elongation along one axis only" or specify "the most canonical outcome" or similar, to ensure a single correct IUPAC/Schönflies answer.
+- "Jahn–Teller inactive to active distortion": perhaps restate as "from undistorted to Jahn–Teller distorted geometry".
+
+---
+
+### 9. Susceptibility, $\chi$, pressure and exponential energy gap change
+**Strengths:**
+- All variables well defined; realistic pressure dependence.
+
+**Suggested Improvements:**
+- No major issues, some minor ambiguity on significant figures in input vs. output but overall excellent.
+
+---
+
+### 10. Copper oxide JT suppression, bond ratio change
+**Strengths:**
+- Precise, direct, numerical answer expected.
+
+**Suggested Improvements:**
+- Good; clarify exactly which quantities $r$ and $r_0$ refer to (they are defined, so this is minor).
+
+---
+
+## Overall Actionable Recommendations
+
+1. **Eliminate Minor Ambiguity in Multi-Part Prompting:**  
+   Where two calculation steps are expected for a single answer (e.g., average bond length then property change), phrase in single-sentence instructions, so students give only one solution (Guideline 10, see Q7). For example:  
+   *"Compute the new average bond length ... and hence the percentage increase in $10 Dq$. Provide the final percentage increase to one decimal place."*
+
+2. **Precision and Significant Figures:**  
+   Specify the significant figures for input and output, in particular for numerical values given to students (see Q1, Q4).
+
+3. **Clarify Input Values and Directions:**  
+   In symmetry or distortion scenarios, describe the nature of the distortion unambiguously so only a single answer is possible (see Q8).
+
+4. **Consistent Units/Notation:**  
+   In cases like Q3, make sure all units are clearly specified and consistent throughout the question.
+
+5. **Avoid Colloquialism:**  
+   Avoid phrases such as "neglect all other changes" unless truly needed; prefer concise, technical phrasing.
+
+**Summary Table**
+
+| Q# | Strengths                                                       | Improvements                                      |
+|----|-----------------------------------------------------------------|---------------------------------------------------|
+| 1  | Real scenario, good units, multi-step                           | Clearer output formula, significant figures       |
+| 2  | Requires reasoning, concise                                     | Remove “neglect all other…” unless needed         |
+| 3  | Unambiguous, single answer                                      | Clarify ratio meaning and units                   |
+| 4  | Concrete, direct                                                | Clarify significant figures for energies/output   |
+| 5  | Single calculation, linear reasoning                            | Clarify increase refers to bond length difference |
+| 6  | Clear compression scenario                                      | None                                              |
+| 7  | Good physics, original                                          | Combine steps to avoid multipart feel             |
+| 8  | Real symmetry change, concise                                   | Tighter distortion description for uniqueness     |
+| 9  | Clear physics, good instruction                                 | None                                              |
+| 10 | Bond ratio, unique answer                                       | Minor clarifying definitions                      |
+
+**Overall:**
+Your questions are exemplary in rigor, scenario choice, and formatting. Minor tweaks for precision and clarity would ensure all guidelines are perfectly met.
+=== Turn 3: Author refines questions ===
+<question>  
+A perovskite oxide undergoes a pressure-induced structural phase transition from tetragonal to monoclinic at 5 GPa. The unit cell parameters at ambient pressure (given to three significant figures) are \(a = 3.90 \, \text{Å}\) and \(c = 4.15 \, \text{Å}\), and at 6 GPa (monoclinic phase) the parameters become \(a = 3.85 \, \text{Å}\), \(b = 3.88 \, \text{Å}\), \(c = 4.10 \, \text{Å}\), with monoclinic angle \(\beta = 91.2^\circ\). Assume that the crystallographic axes \(a, b, c\) correspond to the same directions before and after the transition.  
+
+Calculate the percentage decrease in unit cell volume upon the transition, defined as  
+\[
+\text{Percentage decrease} = \frac{V_{\text{tet}} - V_{\text{mon}}}{V_{\text{tet}}} \times 100\%
+\]  
+Use the formulas:  
+- Tetragonal volume: \(V_{\text{tet}} = a^2 c\)  
+- Monoclinic volume: \(V_{\text{mon}} = a b c \sin \beta\)  
+
+Express your answer as a positive percentage with two significant figures.  
+</question>
+
+<question>  
+A Jahn–Teller active octahedral complex of Cu\(^{2+}\) exhibits an axial metal–ligand bond length of 2.48 Å at ambient pressure, which decreases to 2.39 Å at 8 GPa. Assuming the ligand field splitting parameter \(\Delta\) depends inversely on the axial bond length \(d\) as \(\Delta \propto 1/d\), calculate the percentage increase in \(\Delta\) at 8 GPa relative to ambient pressure due solely to this axial bond length contraction.  
+
+Express your answer to one decimal place.  
+</question>
+
+<question>  
+A magnetic material exhibits a transition from ferromagnetic to antiferromagnetic ordering at 4 GPa, accompanied by a change of the exchange integral \(J\) from \(+12\) meV to \(-8\) meV. The magnetic transition temperature \(T_C\) or \(T_N\) is related to \(J\) by the mean-field approximation:  
+\[
+k_B T = \frac{z |J| S (S+1)}{3}
+\]  
+where \(S = \frac{1}{2}\), \(k_B = 8.617 \times 10^{-5}\) eV/K, and the coordination number \(z = 6\). Both \(J\) values are given in meV.
+
+Calculate the ratio \(\frac{T_N}{T_C}\). Give your answer rounded to two decimal places.  
+</question>
+
+<question>  
+An optical absorption edge in a tetragonal crystal shifts from 2.15 eV to 2.42 eV as pressure increases from ambient to 7 GPa. Using \(hc = 1240\) eV·nm, calculate the wavelength shift \(\Delta \lambda = \lambda_{\text{initial}} - \lambda_{\text{final}}\) corresponding to this band edge change.  
+
+Express \(\Delta \lambda\) in nanometers, rounded to the nearest integer.  
+</question>
+
+<question>  
+In a Jahn-Teller distorted octahedral complex, the difference between the axial and equatorial metal–ligand bond lengths is 0.12 Å, which produces an \(e_g\) orbital splitting of 0.25 eV. In an anisotropic monoclinic phase, this bond length difference increases by 50%.  
+
+Assuming the \(e_g\) splitting depends linearly on the bond length difference, calculate the expected new splitting energy (in eV). Provide your answer with two decimal places.  
+</question>
+
+<question>  
+A transition metal oxide undergoes anisotropic compression under pressure: the \(a\)-axis shrinks by 3%, the \(b\)-axis by 5%, and the \(c\)-axis by 7%. If the initial octahedral metal–ligand bond lengths along all three axes are equal to 2.00 Å, and each bond length scales proportionally with the corresponding lattice parameter, calculate the new average bond length defined as the arithmetic mean of the three compressed bond lengths.  
+
+Provide your answer in Å with three decimal places.  
+</question>
+
+<question>  
+In a tetragonal crystal, the local crystal field splitting \(10Dq\) depends on the average metal–oxygen bond length \(d\) as \(10Dq \propto d^{-5}\). Under pressure, the axial bond length decreases by 4%, while the equatorial bond lengths remain unchanged.  
+
+Calculate the new average bond length (the mean of the axial and equatorial bond lengths) and then compute the corresponding percentage increase in the average crystal field splitting \(10Dq\).  
+
+Express the percentage increase with one decimal place.  
+</question>
+
+<question>  
+A spin-crossover complex undergoes a high-spin to low-spin transition driven by pressure, accompanied by a Jahn-Teller distortion that reduces the molecular symmetry from \(D_{4h}\) to a lower-symmetry point group. Assume this distortion is an axial elongation consistent with a typical Jahn–Teller active distortion of an octahedral geometry.  
+
+What is the most likely new point group symmetry resulting from this distortion? Provide your answer using standard Schönflies notation (e.g., \(C_{2h}\)).  
+</question>
+
+<question>  
+The pressure dependence of the magnetic susceptibility \(\chi\) near a structural phase transition is described by  
+\[
+\chi(p) = \chi_0 \exp\left(-\frac{\Delta E(p)}{k_B T}\right),
+\]  
+with \(\Delta E(p) = \Delta E_0 + \alpha p\), where pressure \(p\) is in GPa and energies in meV. Given:  
+\[
+\Delta E_0 = 10 \text{ meV}, \quad \alpha = 2.5 \text{ meV/GPa}, \quad \chi_0 = 1.0 \times 10^{-3} \text{ emu/mol}, \quad T = 300 \text{ K}, \quad k_B = 8.617 \times 10^{-2} \text{ meV/K},
+\]  
+calculate \(\chi\) at \(p = 4\) GPa. Use meV consistently for energy in the exponential.  
+
+Provide your answer in emu/mol with three significant figures.  
+</question>
+
+<question>  
+A copper(II) oxide compound shows pressure-induced suppression of Jahn–Teller distortion, reflected in the ratio \(r = \frac{d_{\text{axial}}}{d_{\text{equatorial}}}\). At 0 GPa, \(r_0 = 1.10\), which decreases linearly to \(r = 1.03\) at 9 GPa, following \(r(p) = r_0 - m p\).  
+
+Calculate the slope \(m\) as a positive value in GPa\(^{-1}\). Express your answer with three decimal places.  
+</question>
+=== Final questions generated ===

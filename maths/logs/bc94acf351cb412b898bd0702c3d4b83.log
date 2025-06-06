@@ -1,0 +1,155 @@
+=== Turn 0: Author generates questions ===
+Here are some university-level physics questions based on the provided topics, key concepts, and guidelines:
+
+1.  <question>Consider a system where observations of a signal are made across a spectrum of frequencies. In the high-frequency regime, the noise is modeled as Gaussian with a variance that increases linearly with frequency, while in the low-frequency regime, the noise is uniform. Let $n$ be the number of observations. Determine the minimax rate of estimation for a function $f$ in a Sobolev space of smoothness $\alpha$ when estimating $f$ using observations from both frequency regimes.</question>
+
+2.  <question>Let $X_1, X_2, ..., X_n$ be i.i.d. random variables with an unknown probability density function $f$. We wish to estimate $f$ non-parametrically. Suppose we use Lepskii's method for adaptation with a collection of estimators indexed by a parameter $\lambda$. Let $\hat{f}_{\lambda}$ be the estimator corresponding to parameter $\lambda$. Determine the form of the bandwidth selection rule derived from Lepskii's method that minimizes the mean integrated squared error (MISE) between $\hat{f}_{\lambda}$ and $f$. Express the rule symbolically in terms of the risk estimate $\hat{R}(\lambda)$ and a penalty term $\varphi(n)$.</question>
+
+3.  <question>Given a collection of $n$ independent and identically distributed random variables $X_1, \dots, X_n$ with characteristic function $\phi(t) = E[e^{itX}]$, define the empirical characteristic function as $\hat{\phi}_n(t) = \frac{1}{n}\sum_{j=1}^n e^{itX_j}$. Suppose we are interested in estimating a parameter $\theta$ of the distribution based on $\phi(t)$. Find an upper bound for the uniform fluctuations of the empirical characteristic function, i.e., find a bound for $\sup_{t \in \mathbb{R}} |\hat{\phi}_n(t) - \phi(t)|$ with probability at least $1 - \delta$.</question>
+
+4.  <question>Assume that the unknown density $f(x)$ belongs to a Besov space $B_{p,q}^\alpha$. Utilizing wavelet thresholding for adaptive nonparametric estimation, and knowing the minimax rate of convergence for estimating $f$ in $L_2$ norm is $n^{-\frac{\alpha}{2\alpha+1}}$, derive the asymptotic expression for the optimal threshold level $t_n$ as a function of the sample size $n$ that achieves this minimax rate, considering the decay properties of the wavelet coefficients.</question>
+
+5.  <question>Consider a signal corrupted by additive Gaussian noise. The noise has different spectral properties in the high and low-frequency regions. To adaptively estimate the signal, a wavelet decomposition is used, and thresholding is applied to the wavelet coefficients. Assume we use a false discovery rate (FDR) control procedure for selecting the thresholds. Formulate the asymptotic behavior of the total number of kept wavelet coefficients when $n$ goes to infinity, as a function of the significance level $\alpha$ of the FDR procedure, the noise levels, and the sparsity of the true signal.</question>
+=== Turn 0: Critic feedback ===
+Here's a critique of each question against your guidelines, providing concise and actionable feedback for improvement:
+
+---
+
+**Question 1:**
+<question>Consider a system where observations of a signal are made across a spectrum of frequencies. In the high-frequency regime, the noise is modeled as Gaussian with a variance that increases linearly with frequency, while in the low-frequency regime, the noise is uniform. Let $n$ be the number of observations. Determine the minimax rate of estimation for a function $f$ in a Sobolev space of smoothness $\alpha$ when estimating $f$ using observations from both frequency regimes.</question>
+
+*   **Guideline 2 (Mathematical Structure):** **Critique:** The setup is too vague. It lacks a precise mathematical model for the observations. What does "observations across a spectrum of frequencies" mean (discrete points, continuous observation)? How is $n$ related to frequency distribution? "Uniform noise" is ambiguous (uniform distribution? uniform variance?). The specific form of the linear increase in variance for Gaussian noise (e.g., constant of proportionality) is missing. The boundary between "high-frequency" and "low-frequency" regimes is undefined.
+    **Actionable Feedback:** Provide a precise observation model, e.g., $Y_i = f(\nu_i) + \epsilon_i$, defining the distribution of $\nu_i$, the exact noise distributions for $\epsilon_i$ in each regime (e.g., $\epsilon_i \sim \mathcal{N}(0, c\nu_i)$ for $\nu_i > \nu_0$ and $\epsilon_i \sim U[-A, A]$ for $\nu_i \le \nu_0$), and how $n$ observations are distributed across frequencies.
+*   **Guideline 3 (Solvable Target):** **Critique:** "Determine the minimax rate" implicitly asks for a derivation or proof of why that rate is achieved, which violates the "Questions must not be proves or derivations" rule.
+    **Actionable Feedback:** Rephrase to "What is the minimax rate..." or "State the minimax rate..." to avoid implying a derivation, if the intent is to ask for the symbolic result only.
+*   **Guideline 9 (Language and Notation):** **Critique:** "Uniform noise" is imprecise. "High-frequency regime" and "low-frequency regime" need clearer mathematical definitions (e.g., specific frequency ranges or thresholds).
+    **Actionable Feedback:** Define "uniform noise" precisely (e.g., "noise drawn from a uniform distribution on $[-A, A]$"). Specify the cutoff frequency distinguishing the two regimes.
+
+---
+
+**Question 2:**
+<question>Let $X_1, X_2, ..., X_n$ be i.i.d. random variables with an unknown probability density function $f$. We wish to estimate $f$ non-parametrically. Suppose we use Lepskii's method for adaptation with a collection of estimators indexed by a parameter $\lambda$. Let $\hat{f}_{\lambda}$ be the estimator corresponding to parameter $\lambda$. Determine the form of the bandwidth selection rule derived from Lepskii's method that minimizes the mean integrated squared error (MISE) between $\hat{f}_{\lambda}$ and $f$. Express the rule symbolically in terms of the risk estimate $\hat{R}(\lambda)$ and a penalty term $\varphi(n)$.</question>
+
+*   **Guideline 6 (Originality):** **Critique:** This question asks for the direct recall or statement of a standard form of Lepskii's method. While important knowledge, it does not present a unique or non-trivial problem that requires deeper multi-step reasoning beyond remembering the standard construction.
+    **Actionable Feedback:** To enhance originality and multi-step reasoning, present a specific scenario (e.g., a particular kernel, specific noise structure, or a different loss function) where the standard Lepskii method needs to be *adapted* or applied to derive a *modified* form of the rule, rather than stating the general one.
+
+---
+
+**Question 3:**
+<question>Given a collection of $n$ independent and identically distributed random variables $X_1, \dots, X_n$ with characteristic function $\phi(t) = E[e^{itX}]$, define the empirical characteristic function as $\hat{\phi}_n(t) = \frac{1}{n}\sum_{j=1}^n e^{itX_j}$. Suppose we are interested in estimating a parameter $\theta$ of the distribution based on $\phi(t)$. Find an upper bound for the uniform fluctuations of the empirical characteristic function, i.e., find a bound for $\sup_{t \in \mathbb{R}} |\hat{\phi}_n(t) - \phi(t)|$ with probability at least $1 - \delta$.</question>
+
+*   **Guideline 3 (Solvable Target):** **Critique:** "Find an upper bound" implies a derivation process, which conflicts with "Questions must not be proves or derivations." If it's meant as a direct recall, it conflicts with originality (see next point).
+    **Actionable Feedback:** If a derivation is truly forbidden, rephrase to "State a known upper bound..." or "What is an upper bound..." Also consider if the scope (uniform bound over $\mathbb{R}$) is too broad for a concise answer without specific assumptions on the distribution (e.g., existence of moments).
+*   **Guideline 5 (Concise and Relevant):** **Critique:** The information "Suppose we are interested in estimating a parameter $\theta$ of the distribution based on $\phi(t)$" is irrelevant to the question asked, which focuses solely on the uniform fluctuation of the empirical characteristic function.
+    **Actionable Feedback:** Remove the irrelevant sentence "Suppose we are interested in estimating a parameter $\theta$ of the distribution based on $\phi(t)$."
+*   **Guideline 6 (Originality):** **Critique:** Finding a uniform bound for empirical characteristic functions is a well-known result in empirical process theory (e.g., variants of Dvoretzky-Kiefer-Wolfowitz inequality for complex functions). It is a standard textbook result, lacking a unique problem setup.
+    **Actionable Feedback:** To make it more original, specify a particular context (e.g., a specific class of distributions for $X_i$) or a different type of fluctuation that requires a non-standard adaptation or combination of known results.
+
+---
+
+**Question 4:**
+<question>Assume that the unknown density $f(x)$ belongs to a Besov space $B_{p,q}^\alpha$. Utilizing wavelet thresholding for adaptive nonparametric estimation, and knowing the minimax rate of convergence for estimating $f$ in $L_2$ norm is $n^{-\frac{\alpha}{2\alpha+1}}$, derive the asymptotic expression for the optimal threshold level $t_n$ as a function of the sample size $n$ that achieves this minimax rate, considering the decay properties of the wavelet coefficients.</question>
+
+*   **Guideline 3 (Solvable Target):** **Critique:** The question explicitly states "derive the asymptotic expression," which directly violates the guideline "Questions must not be proves or derivations."
+    **Actionable Feedback:** Change "derive the asymptotic expression" to "What is the asymptotic expression for the optimal threshold level $t_n$..." or "State the asymptotic expression for the optimal threshold level $t_n$..."
+*   **Guideline 6 (Originality):** **Critique:** Determining the optimal threshold level to achieve minimax rates in wavelet estimation is a standard result presented in textbooks on adaptive estimation. It's not unique in its problem formulation.
+    **Actionable Feedback:** To enhance originality, consider a variation. For example, a thresholding scheme with a different penalty, or estimation in a non-standard norm, leading to a new, non-trivial $t_n$ expression.
+
+---
+
+**Question 5:**
+<question>Consider a signal corrupted by additive Gaussian noise. The noise has different spectral properties in the high and low-frequency regions. To adaptively estimate the signal, a wavelet decomposition is used, and thresholding is applied to the wavelet coefficients. Assume we use a false discovery rate (FDR) control procedure for selecting the thresholds. Formulate the asymptotic behavior of the total number of kept wavelet coefficients when $n$ goes to infinity, as a function of the significance level $\alpha$ of the FDR procedure, the noise levels, and the sparsity of the true signal.</question>
+
+*   **Guideline 2 (Mathematical Structure):** **Critique:** The setup is too vague. "Different spectral properties in the high and low-frequency regions" is not a precise mathematical model for the noise. The "sparsity of the true signal" needs a mathematical definition (e.g., membership in a specific function space or decay rate of coefficients). Without these specifics, it's impossible to "formulate the asymptotic behavior."
+    **Actionable Feedback:** Provide precise mathematical models for the noise (e.g., Gaussian noise with specific scale-dependent variances for wavelet coefficients, or specific covariance structure) and the signal's sparsity (e.g., $f \in B_{p,q}^\alpha$ for specific $p,q,\alpha$).
+*   **Guideline 3 & 4 (Solvable Target & Single Output):** **Critique:** "Formulate the asymptotic behavior" is an ambiguous instruction. It is highly unlikely to result in a single, unambiguous symbolic answer. This type of question typically requires a complex derivation and a detailed description of the limiting process, which violates "Questions must not be proves or derivations" and "Expects a single, unambiguous symbolic answer." This is closer to a research problem than a concise assessment question.
+    **Actionable Feedback:** Refine the question to ask for a very specific, single symbolic result, e.g., "What is the *order* of the expected number of kept wavelet coefficients?" or "What is the asymptotic proportion of kept coefficients, assuming a specific signal model?"
+*   **Guideline 6 (Originality):** **Critique:** This is a very high-level, current research question. While highly original, it might be too complex for a standard university-level assessment where a concise, derivable answer is expected.
+    **Actionable Feedback:** Consider simplifying the problem significantly, perhaps by focusing on a specific, simpler noise model or signal class where the asymptotic behavior might be more tractable and expressible as a single symbolic output.
+*   **Guideline 9 (Language and Notation):** **Critique:** "Noise levels" and "sparsity of the true signal" need precise mathematical definitions or parameters.
+    **Actionable Feedback:** Define the parameters for noise levels (e.g., variance parameters) and the mathematical representation of signal sparsity (e.g., Besov space parameters).
+
+---
+
+**Overall Feedback on the Set of Questions:**
+
+The set of questions targets advanced concepts in nonparametric statistics and adaptive estimation, which are valuable areas. However, there's a recurring issue with the most critical guideline: **"Questions must not be proves or derivations."** Many questions either explicitly ask for a derivation or implicitly require one to "find" or "determine" a result that is not a direct recall of a trivial formula.
+
+To improve, focus on rephrasing questions so that the student needs to *apply* concepts and known theorems to a specific, perhaps slightly modified scenario, leading to a unique symbolic result, without presenting the full proof/derivation steps as the output. Also, ensure all aspects of the problem setup are rigorously and unambiguously defined mathematically.
+=== Turn 1: Author refines questions ===
+Here's the refined set of questions, addressing the feedback provided. Each question is aimed to elicit a specific symbolic answer, minimizes the need for full derivations, and provides a more concrete mathematical setup.
+
+1.  <question>Consider a system observing a signal $f(\nu)$ at frequencies $\nu_i$, $i=1, \dots, n$, where $\nu_i$ are uniformly distributed in $[0, 1]$. The observations are $Y_i = f(\nu_i) + \epsilon_i$. For $\nu_i > \nu_0 = 0.5$, the noise is Gaussian: $\epsilon_i \sim \mathcal{N}(0, c\nu_i)$, where $c > 0$. For $\nu_i \le \nu_0$, the noise is uniform: $\epsilon_i \sim U[-A, A]$, where $A > 0$. If $f$ belongs to a Sobolev space $H^{\alpha}([0,1])$ with $\alpha > 0$, what is the minimax rate of estimation for $f$ in the $L_2$ norm?</question>
+
+2.  <question>Let $X_1, X_2, ..., X_n$ be i.i.d. random variables with an unknown probability density function $f$ on $[0, 1]$. We estimate $f$ using kernel density estimators $\hat{f}_{\lambda}(x) = \frac{1}{n} \sum_{i=1}^n K_{\lambda}(x - X_i)$, where $K_{\lambda}(x) = \frac{1}{\lambda}K(\frac{x}{\lambda})$ and $K(x)$ is a Gaussian kernel. We adaptively choose the bandwidth $\lambda$ using Lepskii's method. Given a risk estimate $\hat{R}(\lambda) = \int (\hat{f}_{\lambda}(x) - f(x))^2 dx$ approximated by $\frac{1}{n}\sum_{i=1}^n(\hat{f}_{\lambda}(X_i)- \hat{f}_{\lambda'}(X_i))^2 $ and a penalty term $\varphi(n) = C \frac{\log(n)}{n\lambda}$, where $\lambda'$ is a fixed, small bandwidth and C is a constant greater than 1, state the bandwidth selection rule resulting from Lepskii's method, i.e., express the selected bandwidth $\hat{\lambda}$ in terms of $\hat{R}(\lambda)$ and $\varphi(n)$ as an inequality.</question>
+
+3.  <question>Given a collection of $n$ independent and identically distributed random variables $X_1, \dots, X_n$ with characteristic function $\phi(t) = E[e^{itX}]$, define the empirical characteristic function as $\hat{\phi}_n(t) = \frac{1}{n}\sum_{j=1}^n e^{itX_j}$. Suppose $X_i$ have a finite second moment, i.e. $E[X_i^2] < \infty$. State a known upper bound for $\sup_{t \in [-M,M]} |\hat{\phi}_n(t) - \phi(t)|$ that holds with probability at least $1 - \delta$, where $M > 0$ is a fixed constant.</question>
+
+4.  <question>Assume that the unknown density $f(x)$ belongs to a Besov space $B_{2, \infty}^\alpha([0,1])$ with $\alpha > 1/2$. We use wavelet thresholding with hard thresholding at level $t_n$ to estimate $f$ nonparametrically. Knowing the minimax rate of convergence for estimating $f$ in $L_2$ norm is $n^{-\frac{\alpha}{2\alpha+1}}$, and that the wavelet coefficients decay as $|d_{j,k}| \le 2^{-j\alpha}$, what is the asymptotic order (in terms of $n$) of the optimal threshold level $t_n$ that would achieve this minimax rate?</question>
+
+5.  <question>Consider a signal with wavelet coefficients $d_{j,k}$ corrupted by additive Gaussian white noise with variance $\sigma^2$.  Assume the signal's wavelet coefficients decay as $|d_{j,k}| \le C 2^{-j \gamma}$ for some $\gamma > 0$ and constant C.  We apply wavelet thresholding using Benjamini-Hochberg False Discovery Rate (FDR) control at level $\alpha$ to select significant coefficients. What is the expected asymptotic order (in terms of $n$) of the number of *rejected* wavelet coefficients, assuming a typical wavelet decomposition with $j < \log_2(n)$ levels?</question>
+=== Turn 1: Critic feedback ===
+Here's a critique of each question against your guidelines, with actionable feedback for improvement:
+
+---
+
+**Question 1: Minimax Rate with Heterogeneous Noise**
+
+*   **Critique:** This is an excellent, well-posed question. It clearly defines a non-standard noise model (mixed Gaussian and Uniform, with varying variance for Gaussian) combined with a standard function space and estimation goal. This setup makes it challenging enough to require deeper reasoning about how noise characteristics influence minimax rates, rather than a simple recall of a formula. It adheres very well to all guidelines.
+*   **Suggestions for Improvement:**
+    *   **Clarity on $L_2$ norm:** While standard, explicitly stating $L_2([0,1])$ norm might add a touch more rigor, but it's implied by the domain of $f$.
+    *   **Impact:** This question effectively probes an understanding of how local noise properties aggregate to determine a global minimax rate, potentially involving a "bottleneck" analysis or an integral of inverse variance.
+
+---
+
+**Question 2: Lepskii's Bandwidth Selection Rule**
+
+*   **Critique:** The question accurately sets up the context of kernel density estimation and Lepskii's method, providing the necessary components for the risk estimate and penalty term. It asks for a specific inequality or rule, which is a clear symbolic target. The challenge lies in accurately recalling or inferring the structure of Lepskii's criterion, which often involves comparing estimates at different bandwidths.
+*   **Suggestions for Improvement:**
+    *   **Precision on Lepskii's Rule:** Lepskii's method typically involves comparing $\hat{f}_\lambda$ with $\hat{f}_{\lambda'}$ for different bandwidths $\lambda, \lambda'$ and selecting the largest $\lambda$ for which the difference is controlled by the penalty. The provided risk estimate $\hat{R}(\lambda)$ is already a data-driven approximation, often involving such differences. To avoid potential ambiguity in how "the rule" is formulated (e.g., minimizing $R(\lambda) + \varphi(\lambda)$ vs. the comparison-based Lepskii criterion), ensure the intended exact form is unique. If the intent is for the student to state the selection rule for a grid of bandwidths $\{\lambda_k\}$, it could be phrased slightly more explicitly (e.g., "State the condition on $\lambda_k$ that determines the selected bandwidth $\hat{\lambda}$ in Lepskii's method for a given grid of bandwidths").
+    *   **Impact:** This question tests knowledge of adaptive bandwidth selection techniques beyond simple cross-validation or plugin methods.
+
+---
+
+**Question 3: Uniform Bound for Empirical Characteristic Function**
+
+*   **Critique:** This is a well-structured and precise question. It defines the empirical characteristic function and asks for a uniform high-probability bound. The condition of finite second moment ($E[X_i^2] < \infty$) is crucial and guides the type of bound expected (e.g., related to uniform Glivenko-Cantelli theorems for smooth functions). It successfully asks for a known symbolic result without demanding a full derivation. It adheres very well to all guidelines.
+*   **Suggestions for Improvement:**
+    *   **No immediate improvements.** This question is clear and targets a specific, non-trivial result in empirical process theory.
+
+---
+
+**Question 4: Optimal Threshold Level in Wavelet Estimation**
+
+*   **Critique:** This is an excellent question that probes a fundamental concept in nonparametric estimation using wavelets: the choice of an optimal threshold to achieve a minimax rate. It provides all necessary context (Besov space, coefficient decay, known minimax rate, hard thresholding) and asks for a symbolic order. It requires understanding the bias-variance trade-off implicitly. It adheres very well to all guidelines.
+*   **Suggestions for Improvement:**
+    *   **No immediate improvements.** This question is very well-designed and targets core understanding.
+
+---
+
+**Question 5: Expected Number of Rejected Wavelet Coefficients with FDR Control**
+
+*   **Critique:** This is a sophisticated and highly relevant question, combining nonparametric wavelet estimation with multiple hypothesis testing (Benjamini-Hochberg FDR control). It correctly specifies the noise, coefficient decay, and the type of result expected (asymptotic order of rejected coefficients). This is a challenging problem that requires integrating knowledge from several advanced statistical areas.
+*   **Suggestions for Improvement:**
+    *   **Clarity on "rejected":** While technically correct in hypothesis testing, in wavelet thresholding, "rejected" coefficients are usually the ones deemed "significant" and kept, while "non-rejected" or "accepted" are thresholded to zero. To prevent any slight confusion, one could phrase it as "expected asymptotic order (in terms of $n$) of the number of *selected significant* wavelet coefficients". This is a minor semantic point but could improve clarity for some students.
+    *   **Dependence on $\sigma^2$ and $C$**: The asymptotic order (in terms of $n$) typically means leading order in $n$, with constants (like $\sigma^2$, $C$, $\alpha$) absorbed. This is standard, but if there's any ambiguity, one could add "up to logarithmic factors and constants" or similar phrasing, though the current phrasing is acceptable for an "asymptotic order".
+    *   **Impact:** This question tests an advanced understanding of how to apply formal statistical inference procedures (like FDR) in a high-dimensional estimation context.
+
+---
+
+**Overall Assessment:**
+
+The refined set of questions is of very high quality. They are challenging, precise, and effectively assess deep understanding of advanced nonparametric statistics and adaptive estimation techniques. They successfully avoid asking for derivations and instead target specific symbolic answers that require multi-step reasoning. The use of LaTeX for mathematical notation is consistent and correct within the questions provided.
+=== Turn 2: Author refines questions ===
+Okay, I've incorporated the feedback and present a slightly revised version of the questions.  I've focused on improving clarity and slightly nudging the questions toward even more precise "symbolic answers" where possible, and addressed the few concerns raised in the critique.
+
+1.  <question>Consider a system observing a signal $f(\nu)$ at frequencies $\nu_i$, $i=1, \dots, n$, where $\nu_i$ are uniformly distributed in $[0, 1]$. The observations are $Y_i = f(\nu_i) + \epsilon_i$. For $\nu_i > \nu_0 = 0.5$, the noise is Gaussian: $\epsilon_i \sim \mathcal{N}(0, c\nu_i)$, where $c > 0$. For $\nu_i \le \nu_0$, the noise is uniform: $\epsilon_i \sim U[-A, A]$, where $A > 0$. If $f$ belongs to a Sobolev space $H^{\alpha}([0,1])$ with $\alpha > 0$, what is the minimax rate of estimation for $f$ in the $L_2([0,1])$ norm? Express your answer in the form $n^{-x}$ (specifying $x$).</question>
+
+2.  <question>Let $X_1, X_2, ..., X_n$ be i.i.d. random variables with an unknown probability density function $f$ on $[0, 1]$. We estimate $f$ using kernel density estimators $\hat{f}_{\lambda}(x) = \frac{1}{n} \sum_{i=1}^n K_{\lambda}(x - X_i)$, where $K_{\lambda}(x) = \frac{1}{\lambda}K(\frac{x}{\lambda})$ and $K(x)$ is a Gaussian kernel. We adaptively choose the bandwidth $\lambda$ using Lepskii's method, considering a grid of bandwidths $\{\lambda_k\}$. Given a risk estimate $\hat{R}(\lambda) = \int (\hat{f}_{\lambda}(x) - f(x))^2 dx$ approximated by $\frac{1}{n}\sum_{i=1}^n(\hat{f}_{\lambda}(X_i)- \hat{f}_{\lambda'}(X_i))^2$ and a penalty term $\varphi(n) = C \frac{\log(n)}{n\lambda}$, where $\lambda'$ is a fixed, small bandwidth and $C > 1$, state the condition on $\lambda_k$ that determines the selected bandwidth $\hat{\lambda}$ in Lepskii's method. Express your answer as an inequality involving $\hat{R}(\lambda_k)$, $\hat{R}(\lambda')$, and $\varphi(n)$.</question>
+
+3.  <question>Given a collection of $n$ independent and identically distributed random variables $X_1, \dots, X_n$ with characteristic function $\phi(t) = E[e^{itX}]$, define the empirical characteristic function as $\hat{\phi}_n(t) = \frac{1}{n}\sum_{j=1}^n e^{itX_j}$. Suppose $X_i$ have a finite second moment, i.e. $E[X_i^2] < \infty$.  What is the exponent $x$ in a known upper bound of the form $\sup_{t \in [-M,M]} |\hat{\phi}_n(t) - \phi(t)| \le C \sqrt{\frac{\log(1/\delta)}{n}}$ that holds with probability at least $1 - \delta$, where $M > 0$ is a fixed constant and $C$ may depend on $M$ and $E[X_i^2]$.</question>
+
+4.  <question>Assume that the unknown density $f(x)$ belongs to a Besov space $B_{2, \infty}^\alpha([0,1])$ with $\alpha > 1/2$. We use wavelet thresholding with hard thresholding at level $t_n$ to estimate $f$ nonparametrically. Knowing the minimax rate of convergence for estimating $f$ in $L_2$ norm is $n^{-\frac{\alpha}{2\alpha+1}}$, and that the wavelet coefficients decay as $|d_{j,k}| \le 2^{-j\alpha}$, what is the asymptotic order (in terms of $n$) of the optimal threshold level $t_n$ that would achieve this minimax rate? Express your answer in the form $n^{-x}$ (specifying $x$).</question>
+
+5.  <question>Consider a signal with wavelet coefficients $d_{j,k}$ corrupted by additive Gaussian white noise with variance $\sigma^2$.  Assume the signal's wavelet coefficients decay as $|d_{j,k}| \le C 2^{-j \gamma}$ for some $\gamma > 0$ and constant C.  We apply wavelet thresholding using Benjamini-Hochberg False Discovery Rate (FDR) control at level $\alpha$ to select significant coefficients. What is the expected asymptotic order (in terms of $n$) of the number of *selected significant* wavelet coefficients, assuming a typical wavelet decomposition with $j < \log_2(n)$ levels? Express your answer in the form $n^x$ (specifying $x$).</question>
+=== Final questions generated ===

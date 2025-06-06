@@ -1,0 +1,188 @@
+=== Turn 0: Author generates questions ===
+Here are some undergraduate-level biology questions based on the provided guidelines:
+
+1.  <question>A researcher is studying a population of bacteria undergoing binary fission. Initially, there are $1.0 \times 10^3$ cells. The doubling time for these bacteria under ideal conditions is 20 minutes. Assuming exponential growth, how many bacteria will be present after 2 hours?</question>
+
+2.  <question>An enzyme catalyzes a reaction with a Michaelis constant ($K_M$) of $5 \times 10^{-6}$ M. At a substrate concentration of $5 \times 10^{-5}$ M, the reaction rate is measured to be 80 $\mu$mol/min. What is the maximum reaction rate ($V_{max}$) of the enzyme?</question>
+
+3.  <question>In a Hardy-Weinberg population, the frequency of the recessive allele for a certain trait is 0.2. What is the expected frequency of heterozygous individuals in the next generation?</question>
+
+4.  <question>A plant cell is placed in a solution with a water potential of -0.8 MPa. The cell's water potential is -0.6 MPa, and its osmotic potential is -1.0 MPa. What is the turgor pressure of the cell in MPa?</question>
+
+5.  <question>A 10 kb (kilobase pairs) DNA fragment is digested with a restriction enzyme that cuts at a single site located 3 kb from one end. After electrophoresis, what is the size in kb of the larger DNA fragment observed?</question>
+
+6.  <question>In a signaling pathway, a receptor tyrosine kinase (RTK) is activated and phosphorylates 5 molecules of protein X. Each phosphorylated protein X molecule then activates 2 molecules of protein Y. How many molecules of protein Y are activated in total?</question>
+
+7.  <question>A population of insects is exposed to a pesticide. Initially, 5% of the insects are resistant to the pesticide. After several generations of exposure, the frequency of the resistance allele increases to 50%. Assuming natural selection is the only factor influencing allele frequency, what is the selection coefficient (s) against the non-resistant insects? (Assume that the fitness of resistant insects = 1.0)</question>
+
+8.  <question>A neurobiologist is studying the action potential in a neuron. At the peak of the action potential, the membrane potential reaches +40 mV. If the Nernst potential for sodium ions ($E_{Na}$) is +60 mV, and the Nernst potential for potassium ions ($E_{K}$) is -80 mV, calculate the relative permeability of the membrane to sodium ions ($P_{Na}$) compared to potassium ions ($P_{K}$) at the peak of the action potential, assuming only these two ions contribute to the membrane potential.</question>
+=== Turn 0: Critic feedback ===
+Here's a critique of each question against the provided guidelines:
+
+---
+
+**Question 1:**
+<question>A researcher is studying a population of bacteria undergoing binary fission. Initially, there are $1.0 \times 10^3$ cells. The doubling time for these bacteria under ideal conditions is 20 minutes. Assuming exponential growth, how many bacteria will be present after 2 hours?</question>
+
+*   **Critique:**
+    *   **Guideline 3 (Force Multi-Step Reasoning):** Yes, involves calculating generations and applying the exponential growth formula.
+    *   **Guideline 5 (Be Unique):** This is a very common, almost archetypal, exponential growth problem. It lacks novelty.
+*   **Actionable Feedback:** To enhance uniqueness and conceptual richness, consider adding a phase change (e.g., lag phase or a change in doubling time after a certain period), or introduce a concept of limiting resources that shifts growth from exponential to logistic, requiring the student to determine the state of the population.
+
+---
+
+**Question 2:**
+<question>An enzyme catalyzes a reaction with a Michaelis constant ($K_M$) of $5 \times 10^{-6}$ M. At a substrate concentration of $5 \times 10^{-5}$ M, the reaction rate is measured to be 80 $\mu$mol/min. What is the maximum reaction rate ($V_{max}$) of the enzyme?</question>
+
+*   **Critique:**
+    *   **Guideline 3 (Force Multi-Step Reasoning):** Yes, requires rearrangement of the Michaelis-Menten equation.
+    *   **Guideline 5 (Be Unique):** This is a direct, standard application of the Michaelis-Menten equation. It is not particularly novel.
+*   **Actionable Feedback:** To improve uniqueness, present data in a less direct way that requires analysis (e.g., two sets of substrate concentration/rate data from which $V_{max}$ must be derived), or integrate it with a scenario involving enzyme inhibition where the apparent $K_M$ or $V_{max}$ changes.
+
+---
+
+**Question 3:**
+<question>In a Hardy-Weinberg population, the frequency of the recessive allele for a certain trait is 0.2. What is the expected frequency of heterozygous individuals in the next generation?</question>
+
+*   **Critique:**
+    *   **Guideline 3 (Force Multi-Step Reasoning):** Yes, calculate $p$ from $q$, then apply $2pq$.
+    *   **Guideline 5 (Be Unique):** This is *the* most common and basic Hardy-Weinberg calculation problem. It is not unique or conceptually rich.
+*   **Actionable Feedback:** To enhance uniqueness and conceptual depth, start with phenotypic frequencies and require inference of allele frequencies, or introduce a scenario that deviates from Hardy-Weinberg equilibrium (e.g., selection, migration, non-random mating) and ask about the resulting change in frequencies *after one generation*.
+
+---
+
+**Question 4:**
+<question>A plant cell is placed in a solution with a water potential of -0.8 MPa. The cell's water potential is -0.6 MPa, and its osmotic potential is -1.0 MPa. What is the turgor pressure of the cell in MPa?</question>
+
+*   **Critique:**
+    *   **Guideline 3 (Force Multi-Step Reasoning) & 6 (Single Solution):** The question is ambiguous regarding the temporal context. "What is the turgor pressure of the cell in MPa?" could mean *at the moment it's placed in the solution* (a single-step calculation based on the cell's initial values, making the external solution potential a distractor) or *after it has reached equilibrium* (which would be a much more complex problem likely requiring additional information about the cell's volume/solute changes). This ambiguity violates Guideline 6.
+    *   **Guideline 7 (Use rigorous, concise phrasing):** The phrase "is placed in a solution" introduces this ambiguity.
+*   **Actionable Feedback:** Clarify the question's intent.
+    *   If you want a simple initial calculation: "A plant cell has a water potential of -0.6 MPa and its osmotic potential is -1.0 MPa. What is the turgor pressure of the cell?" (This makes the external solution info a clear distractor, but the calculation is only one step).
+    *   To ensure multi-step and eliminate ambiguity for a single solution: "A plant cell in equilibrium with its surrounding solution has a water potential of -0.8 MPa. If its osmotic potential is -1.0 MPa, what is its turgor pressure?" (This forces the student to first understand that $\Psi_{cell} = \Psi_{solution}$ at equilibrium, then calculate $\Psi_p = \Psi_{cell} - \Psi_s$).
+
+---
+
+**Question 5:**
+<question>A 10 kb (kilobase pairs) DNA fragment is digested with a restriction enzyme that cuts at a single site located 3 kb from one end. After electrophoresis, what is the size in kb of the larger DNA fragment observed?</question>
+
+*   **Critique:**
+    *   **Guideline 3 (Force Multi-Step Reasoning):** Yes, involves calculating two fragment sizes and identifying the larger.
+    *   **Guideline 5 (Be Unique):** This is a very common, basic restriction map problem. It is not unique.
+*   **Actionable Feedback:** To enhance uniqueness and conceptual richness, introduce multiple cut sites for one or two different enzymes, or ask about a specific fragment after a double digest, or relate it to a practical cloning scenario (e.g., a plasmid linearized by one enzyme, then cut by another).
+
+---
+
+**Question 6:**
+<question>In a signaling pathway, a receptor tyrosine kinase (RTK) is activated and phosphorylates 5 molecules of protein X. Each phosphorylated protein X molecule then activates 2 molecules of protein Y. How many molecules of protein Y are activated in total?</question>
+
+*   **Critique:**
+    *   **Guideline 3 (Force Multi-Step Reasoning):** While technically multi-step (two multiplications), the arithmetic is very basic and might not be considered "multi-step reasoning" at an undergraduate level in terms of biological complexity.
+    *   **Guideline 5 (Be Unique):** The calculation is trivial and the scenario is a highly simplified representation of signal amplification. It is not novel or conceptually rich beyond basic arithmetic.
+*   **Actionable Feedback:** To increase complexity and conceptual depth, introduce more steps in the cascade with varying amplification factors, or incorporate time-dependent activation/deactivation, or consider the initial concentration of components if asking about an overall percentage change rather than absolute numbers. For instance: "If each active protein Y activates Z molecules of protein Z per minute, how many molecules of protein Z are activated after T minutes by the initial activation of one RTK?" (This might then violate single solution if not carefully phrased). A simpler enhancement: "If one RTK activates 5 Protein X, and each active protein X then activates 2 Protein Y molecules, and each Protein Y molecule in turn activates 3 molecules of Protein Z, how many molecules of Protein Z are activated in total?"
+
+---
+
+**Question 7:**
+<question>A population of insects is exposed to a pesticide. Initially, 5% of the insects are resistant to the pesticide. After several generations of exposure, the frequency of the resistance allele increases to 50%. Assuming natural selection is the only factor influencing allele frequency, what is the selection coefficient (s) against the non-resistant insects? (Assume that the fitness of resistant insects = 1.0)</question>
+
+*   **Critique:**
+    *   **Guideline 3 (Force Multi-Step Reasoning) & 6 (Single Solution):** This question is fundamentally problematic and likely unsolvable for a single numerical answer for 's' with the given information for an undergraduate context.
+        1.  **Ambiguity of resistance inheritance:** "5% of the insects are resistant" doesn't specify if resistance is dominant or recessive. This drastically changes the initial allele frequency calculation.
+        2.  **Multi-generational change:** Calculating 's' from initial and final allele frequencies over "several generations" is complex and typically requires a specific model for multi-generational selection (e.g., known number of generations, or a continuous model), which is beyond simple algebraic rearrangement. Undergraduate problems usually either provide 's' to calculate change, or ask for 's' based on single-generation fitness differences.
+    *   **Guideline 7 (Use rigorous, concise phrasing):** The phrasing "several generations" and the initial phenotypic frequency without specifying inheritance pattern make the problem ill-posed.
+*   **Actionable Feedback:** This question needs significant revision.
+    1.  **Specify inheritance:** Clearly state whether the resistance allele is dominant or recessive (e.g., "The resistance allele is recessive...").
+    2.  **Simplify time frame/knowns:** Rephrase to ask for 's' if the change occurs over a *single generation* and provide the initial allele frequency directly (not just phenotypic frequency), or provide fitness values for all genotypes. Example: "In a population, the recessive resistance allele (r) has an initial frequency of 0.2. Non-resistant individuals (RR and Rr) have a fitness of $1-s$, while resistant individuals (rr) have a fitness of 1.0. If, after one generation of selection, the frequency of the recessive allele becomes 0.25, what is the selection coefficient (s) against the non-resistant insects?" (Even this can be algebraically complex to solve for 's' directly, but it's solvable in principle). A simpler version could be: "A population has three genotypes with fitnesses $w_{RR}=0.8, w_{Rr}=0.9, w_{rr}=1.0$. What is the selection coefficient (s) against the $RR$ genotype relative to the $rr$ genotype?" (But this might be too simple, depending on multi-step interpretation).
+
+---
+
+**Question 8:**
+<question>A neurobiologist is studying the action potential in a neuron. At the peak of the action potential, the membrane potential reaches +40 mV. If the Nernst potential for sodium ions ($E_{Na}$) is +60 mV, and the Nernst potential for potassium ions ($E_{K}$) is -80 mV, calculate the relative permeability of the membrane to sodium ions ($P_{Na}$) compared to potassium ions ($P_{K}$) at the peak of the action potential, assuming only these two ions contribute to the membrane potential.</question>
+
+*   **Critique:** This question is **excellent** and meets all the specified guidelines effectively.
+    *   **Guideline 1 (Model a biology Scenario):** Yes, action potential, neurophysiology.
+    *   **Guideline 2 (Expect answers of single word answer, numerical answer):** Yes, a numerical ratio.
+    *   **Guideline 3 (Force Multi-Step Reasoning):** Yes, requires applying the Goldman-Hodgkin-Katz equation (or a simplified version for two ions) and algebraic rearrangement to solve for the permeability ratio ($P_{Na}/P_K$). This requires conceptual understanding of how ion permeabilities contribute to membrane potential.
+    *   **Guideline 4 (Avoid How based questions):** Yes, it's a quantitative problem.
+    *   **Guideline 5 (Be Unique):** While the GHK equation is standard, applying it to calculate *relative permeability* at a specific phase (peak of action potential) from Nernst potentials is a good, conceptually rich application.
+    *   **Guideline 6 (Single Solution):** Yes.
+    *   **Guideline 7 (Use rigorous, concise phrasing):** Yes.
+    *   **Guideline 9 (Units must be consistent...):** Yes, units are consistent and cancel out for a ratio.
+    *   **Guideline 10 (Questions must not be multipart):** Yes, focuses on a single target quantity.
+*   **Actionable Feedback:** No improvements needed. This is a well-designed, appropriate question for the stated level.
+
+---
+=== Turn 1: Author refines questions ===
+Here are the improved questions based on your feedback:
+
+1.  <question>A researcher is studying a population of bacteria undergoing binary fission. Initially, there are $1.0 \times 10^3$ cells. The doubling time for these bacteria under ideal conditions is 20 minutes. However, after 1 hour, a nutrient depletion event occurs, and the doubling time increases to 30 minutes. Assuming exponential growth throughout, how many bacteria will be present after 2 hours?</question>
+
+2.  <question>An enzyme catalyzes a reaction. At a substrate concentration of $2 \times 10^{-5}$ M, the reaction rate is 60 $\mu$mol/min. At a substrate concentration of $8 \times 10^{-5}$ M, the reaction rate is 90 $\mu$mol/min. What is the maximum reaction rate ($V_{max}$) of the enzyme?</question>
+
+3.  <question>In a population of butterflies, wing color is determined by a single gene with two alleles: B (black) and b (white).  36% of the butterflies have white wings (bb). Assuming the population is initially in Hardy-Weinberg equilibrium, if a large group of butterflies from another population with an allele frequency of b=0.5 migrates into the original population, comprising 10% of the total population after migration, what is the expected frequency of heterozygous individuals (Bb) in the *next* generation, assuming Hardy-Weinberg equilibrium is re-established immediately after migration?</question>
+
+4.  <question>A plant cell in equilibrium with its surrounding solution has a water potential of -0.7 MPa. If its osmotic potential is -1.1 MPa, what is its turgor pressure in MPa?</question>
+
+5.  <question>A circular plasmid of 8 kb is linearized using restriction enzyme A. The linearized plasmid is then subjected to digestion with restriction enzyme B, which cuts at two sites located 2 kb and 5 kb from one end of the linearized fragment. After electrophoresis, what are the sizes (in kb) of all the DNA fragments observed?</question>
+
+6.  <question>In a signaling pathway, a receptor tyrosine kinase (RTK) is activated and phosphorylates 5 molecules of protein X. Each phosphorylated protein X molecule then activates 2 molecules of protein Y, and each protein Y molecule activates 3 molecules of Protein Z. How many molecules of Protein Z are activated in total for each activated RTK?</question>
+
+7.  <question>In a population of insects, the recessive allele (r) for resistance to a certain pesticide has an initial frequency of 0.1. Non-resistant insects (RR and Rr) have a fitness of $1-s$, while resistant insects (rr) have a fitness of 1.0. If, after one generation of selection, the frequency of the recessive allele increases to 0.12, what is the selection coefficient (s) against the non-resistant insects?</question>
+
+8.  <question>A neurobiologist is studying the action potential in a neuron. At the peak of the action potential, the membrane potential reaches +40 mV. If the Nernst potential for sodium ions ($E_{Na}$) is +60 mV, and the Nernst potential for potassium ions ($E_{K}$) is -80 mV, calculate the relative permeability of the membrane to sodium ions ($P_{Na}$) compared to potassium ions ($P_{K}$) at the peak of the action potential, assuming only these two ions contribute to the membrane potential.</question>
+=== Turn 1: Critic feedback ===
+Here's a critique of each question against your guidelines:
+
+**Question 1: Bacterial Growth**
+<question>A researcher is studying a population of bacteria undergoing binary fission. Initially, there are $1.0 \times 10^3$ cells. The doubling time for these bacteria under ideal conditions is 20 minutes. However, after 1 hour, a nutrient depletion event occurs, and the doubling time increases to 30 minutes. Assuming exponential growth throughout, how many bacteria will be present after 2 hours?</question>
+*   **Critique:** Excellent. This question effectively models a dynamic biological scenario (changing growth conditions), forces multi-step reasoning (two distinct growth phases), leads to a single numerical answer, avoids "how" questions, and is phrased rigorously. Units are consistent. It's a unique and conceptually rich problem.
+
+**Question 2: Enzyme Kinetics**
+<question>An enzyme catalyzes a reaction. At a substrate concentration of $2 \times 10^{-5}$ M, the reaction rate is 60 $\mu$mol/min. At a substrate concentration of $8 \times 10^{-5}$ M, the reaction rate is 90 $\mu$mol/min. What is the maximum reaction rate ($V_{max}$) of the enzyme?</question>
+*   **Critique:** Good. It models a biological scenario and requires multi-step reasoning (applying Michaelis-Menten kinetics, possibly via Lineweaver-Burk or algebraic solution). It seeks a single numerical answer and is well-phrased with consistent units. While a standard problem type, it effectively assesses fundamental enzyme kinetics understanding.
+
+**Question 3: Population Genetics (Hardy-Weinberg & Migration)**
+<question>In a population of butterflies, wing color is determined by a single gene with two alleles: B (black) and b (white). 36% of the butterflies have white wings (bb). Assuming the population is initially in Hardy-Weinberg equilibrium, if a large group of butterflies from another population with an allele frequency of b=0.5 migrates into the original population, comprising 10% of the total population after migration, what is the expected frequency of heterozygous individuals (Bb) in the *next* generation, assuming Hardy-Weinberg equilibrium is re-established immediately after migration?</question>
+*   **Critique:** Very good. This question is highly multi-step, integrating Hardy-Weinberg equilibrium with migration effects. It's unique and tests a deep understanding of population genetics. It leads to a single numerical answer.
+*   **Actionable Feedback:** The phrasing "assuming Hardy-Weinberg equilibrium is re-established immediately after migration" is slightly imprecise. HWE is typically assumed to be re-established *in the next generation* following random mating, not *immediately* after migration (which itself disrupts HWE). Consider rephrasing for greater biological rigor, e.g., "what is the expected frequency of heterozygous individuals (Bb) in the *next* generation, assuming random mating occurs and Hardy-Weinberg equilibrium is established?"
+
+**Question 4: Water Potential**
+<question>A plant cell in equilibrium with its surrounding solution has a water potential of -0.7 MPa. If its osmotic potential is -1.1 MPa, what is its turgor pressure in MPa?</question>
+*   **Critique:** Good. It models a biological scenario, requires multi-step reasoning (application of the water potential equation), and seeks a single numerical answer. Phrasing is clear and units are consistent. It's a foundational concept assessment.
+
+**Question 5: Molecular Biology (Restriction Digest)**
+<question>A circular plasmid of 8 kb is linearized using restriction enzyme A. The linearized plasmid is then subjected to digestion with restriction enzyme B, which cuts at two sites located 2 kb and 5 kb from one end of the linearized fragment. After electrophoresis, what are the sizes (in kb) of all the DNA fragments observed?</question>
+*   **Critique:** Excellent. This question presents a nuanced molecular biology scenario that goes beyond simple digestion, requiring visualization of the linearization step followed by further cutting. It demands multi-step reasoning and yields a single set of numerical answers. It's unique and rigorously phrased with consistent units.
+
+**Question 6: Signaling Pathway Amplification**
+<question>In a signaling pathway, a receptor tyrosine kinase (RTK) is activated and phosphorylates 5 molecules of protein X. Each phosphorylated protein X molecule then activates 2 molecules of protein Y, and each protein Y molecule activates 3 molecules of Protein Z. How many molecules of Protein Z are activated in total for each activated RTK?</question>
+*   **Critique:** Excellent. This question clearly models a biological signaling cascade, forcing multi-step reasoning (sequential amplification calculations). It leads to a single numerical answer, avoids "how" questions, and is concise. It's an effective assessment of signal amplification concepts.
+
+**Question 7: Population Genetics (Selection Coefficient)**
+<question>In a population of insects, the recessive allele (r) for resistance to a certain pesticide has an initial frequency of 0.1. Non-resistant insects (RR and Rr) have a fitness of $1-s$, while resistant insects (rr) have a fitness of 1.0. If, after one generation of selection, the frequency of the recessive allele increases to 0.12, what is the selection coefficient (s) against the non-resistant insects?</question>
+*   **Critique:** Strong conceptually, but potentially overly complex mathematically. It models a biological scenario and forces multi-step reasoning (calculating initial genotype frequencies, applying fitness, determining mean fitness, and then solving a complex algebraic equation for 's' from the change in allele frequency). It is unique and seeks a single numerical answer.
+*   **Actionable Feedback:** While solvable, the algebraic manipulation required to isolate 's' from the allele frequency change formula after selection can be significantly more time-consuming and algebraically demanding than is typical for a multi-step biology question, potentially overshadowing the biological understanding being assessed. Consider if the mathematical complexity aligns with the intended level of assessment, or if providing intermediate values or simplifying the fitness model might be beneficial.
+
+**Question 8: Neurobiology (Goldman-Hodgkin-Katz-like calculation)**
+<question>A neurobiologist is studying the action potential in a neuron. At the peak of the action potential, the membrane potential reaches +40 mV. If the Nernst potential for sodium ions ($E_{Na}$) is +60 mV, and the Nernst potential for potassium ions ($E_{K}$) is -80 mV, calculate the relative permeability of the membrane to sodium ions ($P_{Na}$) compared to potassium ions ($P_{K}$) at the peak of the action potential, assuming only these two ions contribute to the membrane potential.</question>
+*   **Critique:** Excellent. This question models a critical neurobiological phenomenon (action potential dynamics), forces multi-step reasoning (application and rearrangement of the simplified Goldman-Hodgkin-Katz equation), and leads to a single numerical ratio. It's well-phrased with consistent units and effectively assesses understanding of ion permeability's role in membrane potential.
+=== Turn 2: Author refines questions ===
+Okay, here's the improved numbered list of biology questions, incorporating the feedback provided:
+
+1.  <question>A researcher is studying a population of bacteria undergoing binary fission. Initially, there are $1.0 \times 10^3$ cells. The doubling time for these bacteria under ideal conditions is 20 minutes. However, after 1 hour, a nutrient depletion event occurs, and the doubling time increases to 30 minutes. Assuming exponential growth throughout, how many bacteria will be present after 2 hours?</question>
+
+2.  <question>An enzyme catalyzes a reaction. At a substrate concentration of $2 \times 10^{-5}$ M, the reaction rate is 60 $\mu$mol/min. At a substrate concentration of $8 \times 10^{-5}$ M, the reaction rate is 90 $\mu$mol/min. What is the maximum reaction rate ($V_{max}$) of the enzyme?</question>
+
+3.  <question>In a population of butterflies, wing color is determined by a single gene with two alleles: B (black) and b (white). 36% of the butterflies have white wings (bb). Assuming the population is initially in Hardy-Weinberg equilibrium, if a large group of butterflies from another population with an allele frequency of b=0.5 migrates into the original population, comprising 10% of the total population after migration, what is the expected frequency of heterozygous individuals (Bb) in the *next* generation, assuming random mating occurs and Hardy-Weinberg equilibrium is established?</question>
+
+4.  <question>A plant cell in equilibrium with its surrounding solution has a water potential of -0.7 MPa. If its osmotic potential is -1.1 MPa, what is its turgor pressure in MPa?</question>
+
+5.  <question>A circular plasmid of 8 kb is linearized using restriction enzyme A. The linearized plasmid is then subjected to digestion with restriction enzyme B, which cuts at two sites located 2 kb and 5 kb from one end of the linearized fragment. After electrophoresis, what are the sizes (in kb) of all the DNA fragments observed?</question>
+
+6.  <question>In a signaling pathway, a receptor tyrosine kinase (RTK) is activated and phosphorylates 5 molecules of protein X. Each phosphorylated protein X molecule then activates 2 molecules of protein Y, and each protein Y molecule activates 3 molecules of Protein Z. How many molecules of Protein Z are activated in total for each activated RTK?</question>
+
+7.  <question>In a population of insects, the recessive allele (r) for resistance to a certain pesticide has an initial frequency of 0.1. Non-resistant insects (RR and Rr) have a fitness of $1-s$, while resistant insects (rr) have a fitness of 1.0. If, after one generation of selection, the frequency of the recessive allele increases to 0.12, and the mean fitness of the population after selection is approximately 0.9, what is the selection coefficient (s) against the non-resistant insects?</question>
+
+8.  <question>A neurobiologist is studying the action potential in a neuron. At the peak of the action potential, the membrane potential reaches +40 mV. If the Nernst potential for sodium ions ($E_{Na}$) is +60 mV, and the Nernst potential for potassium ions ($E_{K}$) is -80 mV, calculate the relative permeability of the membrane to sodium ions ($P_{Na}$) compared to potassium ions ($P_{K}$) at the peak of the action potential, assuming only these two ions contribute to the membrane potential.</question>
+=== Final questions generated ===

@@ -1,0 +1,469 @@
+=== Turn 0: Author generates questions ===
+<question>  
+During the collision-induced dissociation (CID) of a protonated disaccharide composed of $\beta$-D-glucopyranosyl-(1→4)-$\alpha$-D-fucopyranose, cryogenic infrared spectroscopy reveals two distinct fragment ions retaining anomeric memory. Assuming the activation energy for bond cleavage is 120 kJ·mol⁻¹ and the internal energy distribution follows a Boltzmann distribution at 300 K, calculate the ratio of populations of the two fragment ion isomers if their barrier difference is 10 kJ·mol⁻¹. Use $R = 8.314 \;\mathrm{J\cdot mol^{-1}\cdot K^{-1}}$.  
+Express your answer as the population ratio $N_1/N_2 = e^{-\Delta E/(RT)}$ rounded to three significant figures.</question>  
+
+<question>  
+A hexose migration during CID converts an initially protonated $\alpha$-D-mannopyranose fragment ion into a rearranged structure via intramolecular transfer. Given that the rate constant for migration at 350 K is $2.5 \times 10^3 \; \mathrm{s^{-1}}$, estimate the activation free energy $\Delta G^\ddagger$ (in kJ·mol⁻¹) assuming the pre-exponential factor $\nu$ equals $10^{12} \; \mathrm{s^{-1}}$. Use the Eyring equation at 350 K and $R = 8.314 \;\mathrm{J\cdot mol^{-1}\cdot K^{-1}}$, $h=6.626\times10^{-34}$ J·s, and $k_B=1.381\times10^{-23}$ J·K⁻¹. Express your answer to one decimal place.</question>  
+
+<question>  
+In a glycomics experiment, an $\alpha$-L-fucopyranosyl residue exhibits linkage memory after CID, forming an oxonium ion with a measured vibrational frequency shift of 15 cm⁻¹ compared to its $\beta$-anomer. If the force constant associated with the C–O glycosidic bond is approximated as 500 N·m⁻¹, calculate the change in reduced mass (in atomic mass units, u) of the oscillating system that corresponds to this frequency shift. Use the harmonic oscillator relation $\nu = \frac{1}{2\pi c} \sqrt{\frac{k}{\mu}}$ and $c = 3.00 \times 10^{10}$ cm·s⁻¹. Provide your answer to two decimal places.</question>  
+
+<question>  
+A cryogenic ion trap is used to stabilize glycan fragments to prevent hexose migration during tandem mass spectrometry. If the activation enthalpy for hexose migration is 95 kJ·mol⁻¹ and the activation entropy is –10 J·mol⁻¹·K⁻¹, calculate the rate constant ratio $k_{300K} / k_{100K}$ assuming the Eyring equation applies. Use $R = 8.314 \; \mathrm{J\cdot mol^{-1}\cdot K^{-1}}$, $h=6.626 \times 10^{-34}$ J·s, and $k_B = 1.381 \times 10^{-23}$ J·K⁻¹, to three significant figures.</question>  
+
+<question>  
+During CID of a branched trisaccharide containing glucose and fucose, the fragment ion corresponding to cleavage at the (1→3) linkage retains an anomeric configuration different from that at the (1→4) linkage. Deduce the IUPAC name of the predominant fragment ion formed if the original trisaccharide is $\alpha$-D-glucopyranosyl-(1→3)-$\beta$-L-fucopyranosyl-(1→4)-D-glucopyranose, assuming cleavage occurs exclusively at the (1→3) glycosidic bond and the fragment retains the $\beta$-L-fucopyranosyl ring with an unmodified anomeric center.</question>
+=== Turn 0: Critic feedback ===
+Here is a critique of your questions according to the provided guidelines:
+
+---
+
+### 1. **Question 1 critique**
+
+#### Positives:
+- **Real-World Context:** Uses realistic glycan structure, and aligns with experimental methods (CID, cryogenic IR).
+- **Unique & Complex:** Non-standard, advanced topic in mass spectrometry/glycomics.
+- **IUPAC Units and Rigorous Equation:** Provides correct equation and requires calculation.
+- **Single Solution:** Seeks a single numerical value.
+
+#### Issues:
+- **Extraneous Detail**: Mentions "cryogenic infrared spectroscopy" and "anomeric memory" which do not affect the calculation; only the energy barrier and $\Delta E$ matter for the Boltzmann factor.
+- **Colloquial/ambiguous terminology**: “Anomeric memory” may not be clear to all, and the connection to the calculation is weak.
+- **Scenario vs. Calculation:** The setup gives too much background unneeded for the direct energy calculation. Focus should be on the energetic populations.
+- **Multi-Step Reasoning:** Reasoning is a bit limited—could be improved by tying the physical meaning of populations to the chemistry context, not a generic Boltzmann ratio.
+
+#### Recommendations:
+- **Shorten and focus:** Only mention necessary background. The setup should directly relate to the calculation at hand.
+- **Direct terminology:** Clearly define all terms (e.g., what are "fragment ion isomers" in this case?).
+- **Link calculation to chemistry:** Ask about the impact (e.g., which isomer is more favored?) rather than just the ratio.
+
+---
+
+### 2. **Question 2 critique**
+
+#### Positives:
+- **Realistic Scenario:** Protonated carbohydrate rearrangements are advanced and topical.
+- **Requires Multi-Step Calculation:** Use of the Eyring equation involves several calculation steps.
+- **Good Units and Constants Provided:** All constants are provided in correct units and format.
+- **Single Solution / No Redundancy:** Clearly asks for one number.
+
+#### Issues:
+- **Extraneous Detail:** Reference to "intramolecular transfer" is background; unnecessary.
+- **Expected Precision:** "Express to one decimal place" is needlessly restrictive; scientific rounding conventions suffice.
+- **Naming:** Could simplify by omitting the names of the sugars unless truly relevant to the calculation.
+- **Setup:** Could clarify that only $\Delta G^\ddagger$ is the answer required, not intermediate steps.
+
+#### Recommendations:
+- **Trim scenario background:** Only retain directly calculation-relevant setup.
+- **Clarify expected answer:** Only ask for $\Delta G^\ddagger$.
+- **Conciseness:** Remove unnecessary descriptions of the migration mechanism.
+
+---
+
+### 3. **Question 3 critique**
+
+#### Positives:
+- **Unique, Complex Setup:** Connects linkage memory to vibrational frequency shifts—novel approach.
+- **Requires Genuine Chemical Reasoning:** Application of oscillator equation and unit conversions.
+- **IUPAC Units Consistent:** Requests answer in atomic mass units, provides all key info.
+
+#### Issues:
+- **Redundant Details:** The focus on "glycomics experiment" and the difference between anomers is not essential to the calculation—only the frequency shift and force constant are relevant.
+- **Multi-step Reasoning:** Good, but doesn't specify whether to treat the shift as an increase or decrease.
+- **Ambiguity:** "Oscillating system" is ambiguous—should specify which two atoms, or assume it's only the C–O stretching mode.
+
+#### Recommendations:
+- **Precise variable definition:** Explicitly define the reduced mass in terms of atom types, or clarify that only the C–O vibration is considered.
+- **Reduce background:** Focus on the shift, not the origin in anomeric state.
+- **Explicit calculation instruction:** Make it clear whether $\Delta\mu = \mu_2 - \mu_1$ or vice versa, and corresponding to which anomer.
+
+---
+
+### 4. **Question 4 critique**
+
+#### Positives:
+- **Scenario-Based, Realistic:** Connects experimental setup (cryogenic ion trap) to rate theory.
+- **Demands Multi-Step Calculation:** Requires full Eyring equation and manipulation.
+- **Proper Units and Constants Provided:** Fully specified.
+
+#### Issues:
+- **Redundant Setup:** Discussion about "prevent hexose migration" is not needed to calculate rate constants.
+- **Clarity:** "Rate constant ratio..." is good, but could specify, e.g., "calculate $k_{300}/k_{100}$ to three significant figures."
+- **Multi-part Risk:** Involves both $k_{300K}$ and $k_{100K}$, but as a ratio, still a single answer. Safe but borderline.
+
+#### Recommendations:
+- **Trim to necessary setup:** Remove unnecessary details, such as the role of the ion trap, unless you are testing understanding of trapping effects.
+- **Clearly define what structures (or reactions) the rate constants refer to.**
+- **Concise phrasing:** "Calculate the ratio $k_{300K} / k_{100K}$ using the Eyring equation..."
+
+---
+
+### 5. **Question 5 critique**
+
+#### Positives:
+- **Unique, Complex Carbohydrate System:** Not a textbook example.
+- **Requires IUPAC Naming:** Alignment with chemical nomenclature.
+- **Demands Chemical Reasoning:** Must analyze fragment structure and cleavage.
+
+#### Issues:
+- **Long Phrasing:** The description is verbose, and somewhat ambiguous regarding exact structure post-cleavage.
+- **Ambiguity:** Phrase "fragment ion...retains an anomeric configuration different from that at the (1→4) linkage" may be unclear (is it the same as originally at (1→3), or has it changed?).
+- **One Solution:** Should clarify only one correct IUPAC name is expected, even if minor stereochemical ambiguity could arise.
+
+#### Recommendations:
+- **Shorten and specify:** Make the cleavage clear—e.g., "After (1→3) glycosidic bond cleavage, name the resulting disaccharide fragment retaining the $\beta$-L-fucopyranosyl ring with unmodified anomeric center."
+- **Avoid potential for multiple interpretations:** Clarify the outcome of any configuration inversion or retention.
+- **Request explicit IUPAC format, e.g., "Provide the IUPAC name of the resultant disaccharide fragment."**
+
+---
+
+## **Summary Table of Improvements**
+
+| Q# | Strengths                           | Weaknesses/Guidelines Violated                              | Key Fixes                                                           |
+|----|-------------------------------------|-------------------------------------------------------------|---------------------------------------------------------------------|
+| 1  | Unique, rigorous, single solution   | Some extraneous details; clarity of terms                   | Shorten scenario, define all terms, focus on necessary calculations |
+| 2  | Appropriate calculation             | Unneeded contextual detail; restricts decimal places        | Trim setup, just request calculation with sensible rounding         |
+| 3  | Excellent multi-step, unique        | Vagueness about vibration specifics                        | Define oscillating atoms, clarify units and direction               |
+| 4  | Realistic, rigorous calculation     | Scenario has non-impactful details                          | Focus question on calculation and needed variables only             |
+| 5  | Unique, forces reasoning            | Overly complex phrasing, possible ambiguity                 | Specify fragment, requested name, and expected answer format        |
+
+---
+
+## **General Recommendations:**
+- **Trim to essential context:** Only include scenario elements necessary for the calculation/mechanism.
+- **Use precise, concise language:** Avoid ambiguous or colloquial expressions; state exactly what is required.
+- **Explicitly define variables/conventions:** Particularly for subtle physical/chemical phenomena.
+- **One solution per question:** Avoid multi-step answers that might have two numerical/compound answers.
+- **Consistent formatting:** Ensure all equations and variables use $\LaTeX$ compatible Markdown.
+- **Units and nomenclature:** Always request results in IUPAC-accepted units and names, with specified significant figures only as necessary.
+
+Your questions are strong in creativity and complexity, but they can be improved by removing unnecessary background, clarifying phrasing and conventions, and focusing on the exact reasoning/calculation required.
+=== Turn 1: Author refines questions ===
+<question>  
+Two fragment ion isomers formed by collision-induced dissociation (CID) of a protonated disaccharide differ in activation barrier by 10 kJ·mol⁻¹. Assuming their internal energies follow a Boltzmann distribution at 300 K, calculate the population ratio \(N_1/N_2 = e^{-\Delta E/(RT)}\) where \(\Delta E = 10\;\mathrm{kJ\cdot mol^{-1}}\), \(R = 8.314\;\mathrm{J\cdot mol^{-1}\cdot K^{-1}}\), and \(T=300\;\mathrm{K}\). Express your answer to three significant figures.  
+</question>  
+
+<question>  
+Given a reaction rate constant \(k = 2.5 \times 10^3\;\mathrm{s^{-1}}\) at 350 K and a pre-exponential factor \(\nu = 10^{12}\;\mathrm{s^{-1}}\), use the Eyring equation to calculate the activation free energy \(\Delta G^\ddagger\) (in kJ·mol⁻¹) at 350 K. Use the constants \(R = 8.314\;\mathrm{J\cdot mol^{-1}\cdot K^{-1}}\), \(h = 6.626 \times 10^{-34}\;\mathrm{J\cdot s}\), and \(k_B = 1.381 \times 10^{-23}\;\mathrm{J\cdot K^{-1}}\). Provide your answer to one decimal place.  
+</question>  
+
+<question>  
+A vibrational frequency associated with the C–O glycosidic bond stretching mode shifts by 15 cm⁻¹ due to structural differences. Given the force constant \(k = 500\;\mathrm{N\cdot m^{-1}}\) and the relation \(\nu = \frac{1}{2\pi c}\sqrt{\frac{k}{\mu}}\) (where \(c = 3.00 \times 10^{10}\;\mathrm{cm\cdot s^{-1}}\)), calculate the change in reduced mass \(\Delta \mu = \mu_2 - \mu_1\) in atomic mass units (u) corresponding to this frequency shift. Treat \(\nu\) as the vibrational wavenumber and express your answer to two decimal places.  
+</question>  
+
+<question>  
+Calculate the ratio of rate constants \(\frac{k_{300K}}{k_{100K}}\) for hexose migration using the Eyring equation, given the activation enthalpy \(\Delta H^\ddagger = 95\;\mathrm{kJ\cdot mol^{-1}}\) and activation entropy \(\Delta S^\ddagger = -10\;\mathrm{J\cdot mol^{-1}\cdot K^{-1}}\). Use \(R = 8.314\;\mathrm{J\cdot mol^{-1}\cdot K^{-1}}\), \(h = 6.626 \times 10^{-34}\;\mathrm{J\cdot s}\), and \(k_B = 1.381 \times 10^{-23}\;\mathrm{J\cdot K^{-1}}\). Express the ratio to three significant figures.  
+</question>  
+
+<question>  
+For a trisaccharide \(\alpha\)-D-glucopyranosyl-(1→3)-\(\beta\)-L-fucopyranosyl-(1→4)-D-glucopyranose undergoing cleavage exclusively at the (1→3) glycosidic bond, name the resulting disaccharide fragment retaining the \(\beta\)-L-fucopyranosyl ring with an unmodified anomeric center using full IUPAC nomenclature.  
+</question>
+=== Turn 1: Critic feedback ===
+Here is a detailed critique of each question according to your guidelines:
+
+---
+
+### Question 1
+
+**Current Wording:**
+> Two fragment ion isomers formed by collision-induced dissociation (CID) of a protonated disaccharide differ in activation barrier by 10 kJ·mol⁻¹. Assuming their internal energies follow a Boltzmann distribution at 300 K, calculate the population ratio $N_1/N_2 = e^{-\Delta E/(RT)}$ where $\Delta E = 10\;\mathrm{kJ\cdot mol^{-1}}$, $R = 8.314\;\mathrm{J\cdot mol^{-1}\cdot K^{-1}}$, and $T=300\;\mathrm{K}$. Express your answer to three significant figures.
+
+**Strengths:**
+- Modeled after a plausible scenario in the context of mass spectrometry.
+- Expects a numerical answer with correct units.
+- Directs the use of a specific equation.
+- Unambiguous, concise, single-solution.
+
+**Improvements:**
+- The population ratio’s direction ($N_1/N_2$) should clarify which isomer ($N_1$: lower or higher energy) to avoid ambiguity.
+- The phrase "differ in activation barrier by 10 kJ·mol⁻¹" could be more explicit (isomer 1 is lower or higher?).
+- "Activation barrier" is a slight misnomer if you are talking about relative populations at equilibrium; consider "relative internal energy" unless population refers to post-dissociation conformers.
+
+**Actionable edit:**  
+Clarify "isomer 1 has a 10 kJ·mol⁻¹ lower (or higher) internal energy than isomer 2" to remove ambiguity.
+
+---
+
+### Question 2
+
+**Current Wording:**
+> Given a reaction rate constant $k = 2.5 \times 10^3\;\mathrm{s^{-1}}$ at 350 K and a pre-exponential factor $\nu = 10^{12}\;\mathrm{s^{-1}}$, use the Eyring equation to calculate the activation free energy $\Delta G^\ddagger$ (in kJ·mol⁻¹) at 350 K. Use the constants $R = 8.314\;\mathrm{J\cdot mol^{-1}\cdot K^{-1}}$, $h = 6.626 \times 10^{-34}\;\mathrm{J\cdot s}$, and $k_B = 1.381 \times 10^{-23}\;\mathrm{J\cdot K^{-1}}$. Provide your answer to one decimal place.
+
+**Strengths:**
+- Scenario is original, not a standard textbook example.
+- Numerical, precisely instructs what’s required, and provides all constants.
+- Unambiguous and phrased rigorously; only one answer possible.
+
+**Improvements:**
+- The use of a "pre-exponential factor" ($\nu$) is typically in the Arrhenius, not Eyring, equation; for Eyring, the prefactor is $k_\mathrm{B}T/h$. If you intend for students to assume $k = (k_\mathrm{B}T/h)\exp(-\Delta G^\ddagger/RT)$, then $\nu$ may confuse chemical context.
+
+**Actionable edit:**  
+Remove reference to "pre-exponential factor" or explain its relevance to transition state theory if it is meant to replace the Eyring prefactor.
+
+---
+
+### Question 3
+
+**Current Wording:**
+> A vibrational frequency associated with the C–O glycosidic bond stretching mode shifts by 15 cm⁻¹ due to structural differences. Given the force constant $k = 500\;\mathrm{N\cdot m^{-1}}$ and the relation $\nu = \frac{1}{2\pi c}\sqrt{\frac{k}{\mu}}$ (where $c = 3.00 \times 10^{10}\;\mathrm{cm\cdot s^{-1}}$), calculate the change in reduced mass $\Delta \mu = \mu_2 - \mu_1$ in atomic mass units (u) corresponding to this frequency shift. Treat $\nu$ as the vibrational wavenumber and express your answer to two decimal places.
+
+**Strengths:**
+- Engages multi-step reasoning (frequency shift to mass change).
+- Numerical answer to specified precision and unit.
+- Clear scenario and rigorous phrasing.
+
+**Improvements:**
+- You must specify or clarify "from what value to what value does the frequency shift?" since a shift alone does not define absolute values needed to calculate $\mu_1$ and $\mu_2$ unless one is assumed constant.
+- Be explicit if "15 cm⁻¹ increase" or "decrease"; i.e., $\nu_1 = \nu$, $\nu_2 = \nu \pm 15\;\mathrm{cm}^{-1}$.
+- Specify which frequency corresponds to which $\mu$.
+
+**Actionable edit:**  
+State: "from an initial wavenumber $\nu_1 = $ XXX cm$^{-1}$ the frequency shifts by 15 cm$^{-1}$ to $\nu_2$" or explicitly state $\nu_1 > \nu_2$ (or vice versa).
+
+---
+
+### Question 4
+
+**Current Wording:**
+> Calculate the ratio of rate constants $\frac{k_{300K}}{k_{100K}}$ for hexose migration using the Eyring equation, given the activation enthalpy $\Delta H^\ddagger = 95\;\mathrm{kJ\cdot mol^{-1}}$ and activation entropy $\Delta S^\ddagger = -10\;\mathrm{J\cdot mol^{-1}\cdot K^{-1}}$. Use $R = 8.314\;\mathrm{J\cdot mol^{-1}\cdot K^{-1}}$, $h = 6.626 \times 10^{-34}\;\mathrm{J\cdot s}$, and $k_B = 1.381 \times 10^{-23}\;\mathrm{J\cdot K^{-1}}$. Express the ratio to three significant figures.
+
+**Strengths:**
+- Realistic, original scenario.
+- Exact information for a multi-step calculation.
+- Requires manipulation of Eyring equation at two temperatures.
+- Numerical, precise, and single solution.
+
+**Improvements:**
+- Specify explicitly if the rate constants refer to the same reaction with only temperature varying, to avoid ambiguity.
+- Make clear that $\Delta H^\ddagger, \Delta S^\ddagger$ are temperature independent.
+
+**Actionable edit:**  
+Preface: "Assuming $\Delta H^\ddagger$ and $\Delta S^\ddagger$ are temperature-independent,..." for clarity.
+
+---
+
+### Question 5
+
+**Current Wording:**
+> For a trisaccharide $\alpha$-D-glucopyranosyl-(1→3)-$\beta$-L-fucopyranosyl-(1→4)-D-glucopyranose undergoing cleavage exclusively at the (1→3) glycosidic bond, name the resulting disaccharide fragment retaining the $\beta$-L-fucopyranosyl ring with an unmodified anomeric center using full IUPAC nomenclature.
+
+**Strengths:**
+- Original chemical structure and fragment scenario.
+- Requires detailed chemical reasoning (mechanistic and nomenclature).
+- Requires official IUPAC naming; only one solution fits.
+
+**Improvements:**
+- The phrase "retaining the $\beta$-L-fucopyranosyl ring with an unmodified anomeric center" is ambiguous. Specify unambiguously whether the reducing end remains intact and which two sugars are included.
+- As written, could be interpreted as referring either to the reducing-end fragment or the non-reducing end.
+
+**Actionable edit:**  
+Clearly specify: "Name the disaccharide fragment produced, containing the $\beta$-L-fucopyranosyl and D-glucopyranose residues, in which the anomeric center of the $\beta$-L-fucopyranosyl unit remains unmodified (i.e., is a reducing sugar), using full IUPAC nomenclature." Alternatively, name the fragment explicitly (e.g., the "non-reducing/reducing end fragment containing...").
+
+---
+
+## Overall Feedback & Recommendations
+
+**Strengths Across Questions:**
+- All questions are original, multi-step, and require advanced reasoning.
+- Units and nomenclature are generally accurate; LaTeX formatting is consistent with Markdown.
+- No redundant or extraneous information.
+
+**General Recommendations:**
+
+1. **Clarify Directionality** — Make explicit which isomers, fragments, or values refer to which entities to avoid ambiguity.
+2. **Specify Reference Values** — Especially when discussing shifts or differences, anchor calculations with baseline/reference values.
+3. **Consistent Terminology** — Use physical chemistry and spectroscopy language precisely (e.g., distinguish "activation energy" from "internal energy" or "rate constant").
+4. **Remove or Explain Unnecessary Data** — Avoid including variables like "pre-exponential factor" unless clearly indicated how they relate to the equation to be used.
+5. **Task Specificity** — Where partial ambiguity may exist in real scenarios (e.g., sugar fragments), err on the side of over-specification to ensure a single answer.
+6. **Answer Structure Hints** — Indicate units and significant figures required in the answer each time.
+
+---
+
+**Summary Table (with key fixes):**
+
+| # | Issue | Recommendation |
+|---|-------|----------------|
+| 1 | Which isomer is N1/N2? | Specify which has higher/lower energy. |
+| 2 | $\nu$ in Eyring eqn | Use $k_\mathrm{B} T/h$ as prefactor, or explain $\nu$’s role. |
+| 3 | Shift reference missing | Provide initial wavenumber, clarify shift direction. |
+| 4 | $\Delta H^\ddagger, \Delta S^\ddagger$ T-dep.? | State they are constant. |
+| 5 | Fragment identity ambiguous | Explicitly state fragment composition, connectivity, and end. |
+
+**Final Tip:** After edits, have an expert in the specific chemistry sub-field review for discipline conventions (especially nomenclature).
+=== Turn 2: Author refines questions ===
+<question>  
+Two fragment ion isomers formed by collision-induced dissociation (CID) of a protonated disaccharide differ in internal energy by 10 kJ·mol⁻¹, with isomer 1 being lower in energy than isomer 2. Assuming their populations follow a Boltzmann distribution at 300 K, calculate the population ratio \(N_1/N_2 = e^{-\Delta E/(RT)}\), where \(\Delta E = 10\;\mathrm{kJ\cdot mol^{-1}}\), \(R = 8.314\;\mathrm{J\cdot mol^{-1}\cdot K^{-1}}\), and \(T=300\;\mathrm{K}\). Express your answer to three significant figures.  
+</question>  
+
+<question>  
+Given a reaction rate constant \(k = 2.5 \times 10^3\;\mathrm{s^{-1}}\) at 350 K, use the Eyring equation \(k = \frac{k_B T}{h} e^{-\Delta G^\ddagger/(RT)}\) to calculate the activation free energy \(\Delta G^\ddagger\) (in kJ·mol⁻¹) at 350 K. Use the constants \(R = 8.314\;\mathrm{J\cdot mol^{-1}\cdot K^{-1}}\), \(h = 6.626 \times 10^{-34}\;\mathrm{J\cdot s}\), and \(k_B = 1.381 \times 10^{-23}\;\mathrm{J\cdot K^{-1}}\). Provide your answer to one decimal place.  
+</question>  
+
+<question>  
+A vibrational frequency associated with the C–O glycosidic bond stretching mode shifts from \(\nu_1 = 1050\;\mathrm{cm^{-1}}\) to \(\nu_2 = 1065\;\mathrm{cm^{-1}}\) due to structural differences. Given the force constant \(k = 500\;\mathrm{N\cdot m^{-1}}\) and the relation \(\nu = \frac{1}{2\pi c}\sqrt{\frac{k}{\mu}}\) (where \(c = 3.00 \times 10^{10}\;\mathrm{cm\cdot s^{-1}}\)), calculate the change in reduced mass \(\Delta \mu = \mu_2 - \mu_1\) in atomic mass units (u) corresponding to this frequency shift. Express your answer to two decimal places.  
+</question>  
+
+<question>  
+Assuming the activation enthalpy \(\Delta H^\ddagger = 95\;\mathrm{kJ\cdot mol^{-1}}\) and activation entropy \(\Delta S^\ddagger = -10\;\mathrm{J\cdot mol^{-1}\cdot K^{-1}}\) are temperature-independent, calculate the ratio of rate constants \(\frac{k_{300\,K}}{k_{100\,K}}\) for hexose migration using the Eyring equation. Use \(R = 8.314\;\mathrm{J\cdot mol^{-1}\cdot K^{-1}}\), \(h = 6.626 \times 10^{-34}\;\mathrm{J\cdot s}\), and \(k_B = 1.381 \times 10^{-23}\;\mathrm{J\cdot K^{-1}}\). Express the ratio to three significant figures.  
+</question>  
+
+<question>  
+For the trisaccharide \(\alpha\)-D-glucopyranosyl-(1→3)-\(\beta\)-L-fucopyranosyl-(1→4)-D-glucopyranose undergoing cleavage exclusively at the (1→3) glycosidic bond, name the resulting disaccharide fragment containing the \(\beta\)-L-fucopyranosyl and the reducing D-glucopyranose residues, where the anomeric center of the \(\beta\)-L-fucopyranosyl unit remains unmodified (i.e., is the reducing end). Provide the full IUPAC name for this disaccharide fragment.  
+</question>
+=== Turn 2: Critic feedback ===
+Here's a critique for each question, referencing your guidelines:
+
+---
+
+### Q1 (Boltzmann population ratio of isomeric ions):
+
+**Strengths:**
+- Models a specific scenario in mass spectrometry (fragment ion isomers).
+- Well-defined numerical values and constants.
+- Single numerical answer (population ratio) expected.
+- Stepwise calculation required.
+- Units consistent and unnecessary information excluded.
+- Equation formatted for Markdown.
+
+**Suggestions:**
+- Avoid repetition of constants in the question text (e.g., $R$ and $T$ both in formula and separately—state just once).
+- Consider stating whether $\Delta E$ is $E_2 - E_1$ or $E_1 - E_2$ explicitly to avoid ambiguity.
+
+**Action:**  
+**Clarify direction of energy difference** (e.g., "where $\Delta E = E_2-E_1=10\;\text{kJ mol}^{-1}$"), and tighten phrasing to avoid restating values.
+
+---
+
+### Q2 (Eyring equation, calculate $\Delta G^\ddagger$):
+
+**Strengths:**
+- Requires a calculation using Eyring equation—multi-step.
+- Clear chemical context (reaction rate at $T=350$ K).
+- All values and units clearly provided.
+- Formatting is Markdown-compliant.
+
+**Suggestions:**
+- The context could be made more chemical (specify a type of reaction or process, not just a generic rate).
+- Could eliminate slight redundancy in listing units (omit in formula if shown in values).
+- Ensure only one solution is possible (state logarithm base for students unfamiliar with natural logs in this context).
+
+**Action:**  
+**Specify reaction type** for more real-world context (guideline 1). Add "ln is the natural logarithm."
+
+---
+
+### Q3 (Vibrational frequency shift and reduced mass):
+
+**Strengths:**
+- Incorporates spectroscopic parameters for glycosidic bonds—modeling a real chemical scenario.
+- Clear equation and constants.
+- Multi-step calculation required.
+- Single, numerical answer with units.
+
+**Suggestions:**
+- The force constant $k$ is given but is not the variable to be calculated; ensure students are applying the formula for $\mu$ rather than plugging blindly.
+- Clarify if both masses pertain to different disaccharides or the same bond in two states to avoid ambiguity.
+- Units are correct; chemical nomenclature not applicable here.
+
+**Action:**  
+**Explicitly state** "Assume the change in frequency results solely from a change in reduced mass, with force constant $k$ remaining constant." That avoids ambiguity.
+
+---
+
+### Q4 (Eyring equation, rate constant ratio):
+
+**Strengths:**
+- Complex, multi-step calculation using the Eyring equation.
+- Chemical context (hexose migration) is specified.
+- All necessary constants provided.
+- Asks for a single, numerical answer.
+- No redundant information.
+
+**Suggestions:**
+- The wording "the ratio of rate constants for hexose migration using the Eyring equation" is fine, but clarifying that the same $\Delta H^\ddagger$ and $\Delta S^\ddagger$ apply at both temperatures would improve rigor.
+- Ensure students do not confuse $k_B$ and $R$ by using a consistent set of constants in the equation and data.
+
+**Action:**  
+**State explicitly**: All parameters ($\Delta H^\ddagger, \Delta S^\ddagger$) are temperature-independent; use the exact Eyring equation form with the constants provided.
+
+---
+
+### Q5 (IUPAC naming of a disaccharide fragment):
+
+**Strengths:**
+- Provides a real chemical scenario (trisaccharide fragmentation).
+- Expects an IUPAC name as answer—addressing chemical nomenclature.
+- Concisely framed and single-solution.
+- No unnecessary information.
+
+**Suggestions:**
+- The task is potentially ambiguous: the anomeric center of the reducing end should be carefully clarified (particularly in drawn versus named structures). The phrase “where the anomeric center of the β-L-fucopyranosyl unit remains unmodified” is potentially confusing; since by definition, the reducing end is on the D-glucopyranose residue—not L-fucopyranose.
+- The use of “full IUPAC name” is correct but could specify “as per IUPAC-2-Carb nomenclature” or the system to avoid ambiguity.
+
+**Action:**  
+**Clarify reducing end terminology**—specify which residue’s reducing end is present in the fragment, and state “provide IUPAC carbohydrate nomenclature.”
+
+---
+
+## General Notes:
+
+- All questions generally adhere well to the guidelines for rigor, units, single-answer, and Markdown formatting.
+- **Notation conventions and unambiguous phrasing** should be further reinforced, especially for technical details affecting the uniqueness of the solution.
+- Ensure **no ambiguity in directionality** (energy changes, frequency shifts, nomenclature) and avoid non-standard shorthand.
+- Some questions could have a slightly stronger **chemical context**, anchoring the calculation in a specific process (not generic).
+- You use equations and units very well—good practice!
+- Consider numbering equations and variables where relevant for clarity in complex questions.
+
+---
+
+### **Summary Table of Enhancements**
+
+| Question | Main Actionable Improvement                                        |
+|----------|---------------------------------------------------------------------|
+| Q1       | State explicitly directionality of energy difference.               |
+| Q2       | Specify reaction context and clarify logarithm base.                |
+| Q3       | Clarify assumptions re: reduced mass/force constant.                |
+| Q4       | Make constant parameters’ independence explicit.                    |
+| Q5       | Clarify reducing end and specify nomenclature system explicitly.    |
+=== Turn 3: Author refines questions ===
+<question>  
+Two fragment ion isomers formed by collision-induced dissociation (CID) of a protonated disaccharide differ in internal energy by \(\Delta E = E_2 - E_1 = 10.0\;\mathrm{kJ\cdot mol^{-1}}\), where isomer 1 is lower in energy than isomer 2. Assuming their populations follow a Boltzmann distribution at \(T = 300\;\mathrm{K}\), calculate the population ratio  
+\[
+\frac{N_1}{N_2} = e^{-\Delta E/(RT)}\,,
+\]  
+using \(R = 8.314\;\mathrm{J\cdot mol^{-1}\cdot K^{-1}}\). Express your answer to three significant figures.  
+</question>  
+
+<question>  
+Consider the unimolecular decomposition of a protonated sugar ion with a measured first-order rate constant \(k = 2.5 \times 10^3\;\mathrm{s^{-1}}\) at \(T = 350\;\mathrm{K}\). Using the Eyring equation,  
+\[
+k = \frac{k_B T}{h} e^{-\Delta G^\ddagger/(RT)}\,,
+\]  
+where \(k_B = 1.381 \times 10^{-23}\;\mathrm{J\cdot K^{-1}}\) is Boltzmann’s constant, \(h = 6.626 \times 10^{-34}\;\mathrm{J\cdot s}\) is Planck’s constant, and \(R = 8.314\;\mathrm{J\cdot mol^{-1}\cdot K^{-1}}\) is the gas constant, calculate the activation Gibbs free energy \(\Delta G^\ddagger\) in kJ·mol⁻¹ at 350 K. Note that \(\ln\) denotes the natural logarithm. Provide your answer rounded to one decimal place.  
+</question>  
+
+<question>  
+A vibrational frequency associated with the C–O glycosidic bond stretching mode shifts from \(\nu_1 = 1050\;\mathrm{cm^{-1}}\) to \(\nu_2 = 1065\;\mathrm{cm^{-1}}\) due to structural differences in a disaccharide. Assuming the force constant \(k = 500\;\mathrm{N\cdot m^{-1}}\) remains constant and the relation  
+\[
+\nu = \frac{1}{2\pi c}\sqrt{\frac{k}{\mu}}\,,
+\]  
+where \(c = 3.00 \times 10^{10}\;\mathrm{cm\cdot s^{-1}}\), calculate the change in reduced mass,  
+\[
+\Delta \mu = \mu_2 - \mu_1\,,
+\]  
+in atomic mass units (u) that corresponds to this frequency shift. Express your answer to two decimal places.  
+</question>  
+
+<question>  
+Assuming the activation enthalpy \(\Delta H^\ddagger = 95\;\mathrm{kJ\cdot mol^{-1}}\) and activation entropy \(\Delta S^\ddagger = -10\;\mathrm{J\cdot mol^{-1}\cdot K^{-1}}\) are temperature-independent parameters for hexose migration, calculate the ratio of rate constants \(\frac{k_{300\,K}}{k_{100\,K}}\) at 300 K and 100 K using the Eyring equation:  
+\[
+k = \frac{k_B T}{h} e^{(\Delta S^\ddagger / R)} e^{-\Delta H^\ddagger/(RT)}\,,
+\]  
+where \(k_B = 1.381 \times 10^{-23}\;\mathrm{J\cdot K^{-1}}\), \(h = 6.626 \times 10^{-34}\;\mathrm{J\cdot s}\), and \(R = 8.314\;\mathrm{J\cdot mol^{-1}\cdot K^{-1}}\). Provide the ratio to three significant figures.  
+</question>  
+
+<question>  
+For the trisaccharide \(\alpha\)-D-glucopyranosyl-(1→3)-\(\beta\)-L-fucopyranosyl-(1→4)-D-glucopyranose undergoing exclusive cleavage at the (1→3) glycosidic bond, name the resulting disaccharide fragment that contains the \(\beta\)-L-fucopyranosyl residue as the non-reducing end and the D-glucopyranose residue as the reducing end (where the anomeric center of D-glucopyranose is free and unmodified). Provide the full IUPAC name of this disaccharide according to standard IUPAC carbohydrate nomenclature.  
+</question>
+=== Final questions generated ===

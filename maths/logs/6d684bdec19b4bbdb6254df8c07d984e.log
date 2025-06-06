@@ -1,0 +1,132 @@
+=== Turn 0: Author generates questions ===
+Here are some novel university-level mathematics questions:
+
+1. <question>Consider an amenable group $G$ acting on a compact metric space $X$. Let $\mu$ be a $G$-invariant Borel probability measure on $X$. Suppose $G$ contains an amenable radical $R$ such that $G/R$ is a classical group. If the action of $G$ on $X$ is ergodic with respect to $\mu$, and the induced action of $G$ on the Hilbert space $L^2(X, \mu)$ has spectral gap, compute the maximal amenable subgroup of $G$.</question>
+
+2. <question>Let $G = SL_n(\mathbb{Z})$ be a classical group with $n \geq 3$, and suppose $G$ has Property (T). Consider an analytic action of $G$ on the projective space $\mathbb{P}(H)$, where $H$ is a Hilbert space. Let $G$ act ergodically on a probability space $(X, \mu)$. If the first cohomology group $H^1(G, L^2(X, \mu))$ vanishes, calculate the measure of subsets $A \subset X$ that are almost invariant under the action of $G$.</question>
+
+3. <question>Suppose an amenable group $G$ acts on the unit interval $[0, 1]$ by measure-preserving transformations. Let $f: [0, 1] \to \mathbb{R}$ be a bounded measurable function. Define the von Neumann mean of $f$ over $G$ as $m_G(f) = \int_{[0, 1]} f(x) d\mu(x)$, where $\mu$ is a $G$-invariant mean on $[0, 1]$. If $G$ is equidecomposable and satisfies the Tarski alternative, find the value of $m_G(f)$ when $f(x) = x^2 + \sin(2\pi x)$.</question>
+
+4. <question>Consider the group $SU(2)$, a classical group, acting on the sphere $S^2$ by rotations. Let $\mu$ be the Haar measure on $SU(2)$. Suppose $A$ and $B$ are measurable subsets of $S^2$ with equal measure. If $SU(2)$ has Property (T), determine the infimum of the Hausdorff distance between $gA$ and $B$, where $g$ ranges over $SU(2)$.</question>
+
+5. <question>Let $G$ be a finitely generated amenable group. Suppose $G$ acts on a probability space $(X, \mu)$ preserving the measure $\mu$. Let $A$ be a measurable subset of $X$. Define the asymptotic density of $A$ with respect to a Følner sequence $\{F_n\}$ in $G$ as $d(A) = \lim_{n \to \infty} \frac{1}{|F_n|} \sum_{g \in F_n} \mu(g^{-1}A)$. If $d(A) = \alpha$, where $0 < \alpha < 1$, and $G$ satisfies the Ornstein-Weiss quasi-tiling theorem, compute the entropy of the action of $G$ on $(X, \mu)$.</question>
+=== Turn 0: Critic feedback ===
+Here's a critique of the provided questions against your guidelines:
+
+**General Feedback:**
+The questions employ high-level, current concepts from advanced mathematics (group theory, ergodic theory, functional analysis), demonstrating an understanding of novel topics. However, a significant common issue across almost all questions is the clarity of the "solvable target" (Guideline 3) and the relevance/sufficiency of the provided information (Guideline 5). Several questions ask for mathematical objects (like a subgroup or a property of a class of sets) rather than a single symbolic *value* or *expression*. Many conditions appear to be advanced distractors, leading to ill-posed or unsolvable problems given the strict output requirements.
+
+---
+
+**Critique per Question:**
+
+**1. Question:** "Consider an amenable group $G$ acting on a compact metric space $X$. Let $\mu$ be a $G$-invariant Borel probability measure on $X$. Suppose $G$ contains an amenable radical $R$ such that $G/R$ is a classical group. If the action of $G$ on $X$ is ergodic with respect to $\mu$, and the induced action of $G$ on the Hilbert space $L^2(X, \mu)$ has spectral gap, compute the maximal amenable subgroup of $G$."
+
+*   **Guideline 3 (Solvable Target):** **Fails.** The question asks to "compute the maximal amenable subgroup of $G$". A subgroup is a mathematical *object*, not a "clear symbolic result (e.g., function, limit, closed-form expression, numeric)". The guideline explicitly states "Questions must not be proves or derivations." Identifying a subgroup, even if uniquely determined, does not fit the specified output format of a symbolic *value*.
+*   **Guideline 5 (Concise and Relevant):** **Fails.** Many details appear irrelevant. The properties of the action (on $X$, ergodicity, spectral gap on $L^2(X, \mu)$) and the specific structure of $G$ (amenable radical $R$ such that $G/R$ is classical) typically inform properties of $G$ or the action itself. The "maximal amenable subgroup of $G$" is an intrinsic property of the group $G$, and its determination is unlikely to depend on the specifics of *this particular* action or these particular representation-theoretic properties (spectral gap). The question might be ill-posed if it implies that these conditions *determine* the maximal amenable subgroup in a way that allows for a numerical or algebraic expression. The amenable radical $R$ *is* the maximal amenable *normal* subgroup. If "maximal amenable subgroup" means *the* amenable radical, then $R$ is already defined. But the question asks to "compute" it based on the action, which is a conceptual mismatch.
+*   **Guideline 4 (Single Output):** **Fails.** Even if it were solvable, the output would be a group, not a single symbolic value.
+
+**Actionable Feedback:**
+*   **Change the target:** Rephrase the question to ask for a *numerical value*, a *limit*, or a *closed-form expression* related to the subgroup or the action, rather than the subgroup itself.
+*   **Ensure relevance:** Critically examine if the given conditions about the action on $X$ and $L^2(X,\mu)$ are genuinely *necessary and sufficient* to arrive at the desired numerical/symbolic output. If the question implies a trivial answer for $R$, then most of the action details are distractors.
+*   **Clarify terms:** Ensure "maximal amenable subgroup" is understood as a uniquely determined object if that is the intent.
+
+---
+
+**2. Question:** "Let $G = SL_n(\mathbb{Z})$ be a classical group with $n \geq 3$, and suppose $G$ has Property (T). Consider an analytic action of $G$ on the projective space $\mathbb{P}(H)$, where $H$ is a Hilbert space. Let $G$ act ergodically on a probability space $(X, \mu)$. If the first cohomology group $H^1(G, L^2(X, \mu))$ vanishes, calculate the measure of subsets $A \subset X$ that are almost invariant under the action of $G$."
+
+*   **Guideline 3 (Solvable Target):** **Fails.** The phrase "calculate the measure of subsets $A \subset X$ that are almost invariant under the action of $G$" is ambiguous and unlikely to result in a single symbolic value. It asks for "the measure" of a *class* of subsets. Does it mean $\mu(A)$ for a *specific* set $A$? Or some universal value that applies to all such sets? Typically, for an ergodic action, the only invariant sets have measure $0$ or $1$. If "almost invariant" implies "invariant up to null sets" (which is common in this context given the vanishing $H^1$), then the possible measures are $0$ and $1$. This is not a single value.
+*   **Guideline 5 (Concise and Relevant):** **Fails.** The analytic action on $\mathbb{P}(H)$ seems completely irrelevant to the problem of "almost invariant" sets in $(X, \mu)$. $G=SL_n(\mathbb{Z})$ for $n \geq 3$ *does* have Property (T), so stating "suppose $G$ has Property (T)" is technically redundant as it's a known fact, although acceptable. The conditions of Property (T), ergodicity, and vanishing $H^1(G, L^2(X, \mu))$ are highly relevant and, in fact, strongly imply that "almost invariant" (if appropriately defined) sets must have measure $0$ or $1$.
+*   **Guideline 9 (Language and Notation):** **Fails.** "Almost invariant" is not rigorously defined. In this context, it usually means that functions $f$ with $f \circ g - f$ small in $L^2$ implies $f$ is close to an invariant function. For sets $A$, this relates to $\mathbb{1}_A$ and $g(\mathbb{1}_A)$.
+
+**Actionable Feedback:**
+*   **Define "almost invariant" rigorously:** Provide a precise mathematical definition for what "almost invariant" means in this context (e.g., $\lim_{F \to G} \frac{1}{|F|} \sum_{g \in F} \mu(A \Delta gA) = 0$, or that the indicator function $\mathbb{1}_A$ is "almost" $G$-invariant in $L^2(X,\mu)$).
+*   **Change the target:** Rephrase the question to ask for a specific value or property that is *singular* and *unique*. For example, "What is the *set of possible values* for $\mu(A)$ for an almost invariant $A$?" or "Determine the maximum/minimum possible measure of such a set $A$." However, your Guideline 4 specifies "Single Output". This strongly implies the answer should be *one specific value*. Given Property (T) and vanishing $H^1$, the answer would likely be "0 or 1". This cannot be expressed as a single value.
+*   **Remove irrelevant information:** The "analytic action... on $\mathbb{P}(H)$" should be removed.
+
+---
+
+**3. Question:** "Suppose an amenable group $G$ acts on the unit interval $[0, 1]$ by measure-preserving transformations. Let $f: [0, 1] \to \mathbb{R}$ be a bounded measurable function. Define the von Neumann mean of $f$ over $G$ as $m_G(f) = \int_{[0, 1]} f(x) d\mu(x)$, where $\mu$ is a $G$-invariant mean on $[0, 1]$. If $G$ is equidecomposable and satisfies the Tarski alternative, find the value of $m_G(f)$ when $f(x) = x^2 + \sin(2\pi x)$."
+
+*   **Guideline 3 (Solvable Target):** **Passes.** Asks for a single value: $m_G(f)$.
+*   **Guideline 5 (Concise and Relevant):** **Fails.** The conditions "equidecomposable" and "satisfies the Tarski alternative" are highly likely to be distractors. For an amenable group $G$ acting by measure-preserving transformations on a probability space $([0,1], \mathcal{B}, \lambda)$, where $\lambda$ is Lebesgue measure, the standard result is that the Lebesgue measure $\lambda$ itself is the unique invariant mean in many common contexts. The "Tarski alternative" is equivalent to amenability itself for certain classes of groups, adding no new information beyond "amenable group". "Equidecomposable" also typically relates to decomposition of sets under group actions, which is also very general. If $\mu$ is the Lebesgue measure (which is standard for measure-preserving actions on $[0,1]$), the problem reduces to a basic calculus integral.
+*   **Guideline 6 (Originality):** **Fails (Potentially).** If the answer is just a simple calculus integral, then the question is a rephrasing of a standard textbook calculus problem dressed up with advanced group theory terms. The novelty would depend on a non-trivial interpretation where these group theory terms somehow alter the nature of $\mu$ from the standard Lebesgue measure. However, in standard ergodic theory of amenable groups, the underlying measure *is* the invariant mean (in a unique-ergodic sense, or as one such mean).
+
+**Actionable Feedback:**
+*   **Clarify the role of group properties:** If "equidecomposable" and "Tarski alternative" are meant to imply something non-trivial about $\mu$ beyond it being the Lebesgue measure (e.g., uniqueness, or a different choice of measure), that connection needs to be explicit or deeply implied. Otherwise, remove them as they are significant distractors for an otherwise simple calculus problem.
+*   **Ensure genuine multi-step reasoning:** If the solution path is simply "identify $\mu$ as Lebesgue measure, then integrate," then it lacks the multi-step algebraic/analytic reasoning expected of a university-level problem in this context, aside from the group theory aspect. A truly "novel" question would have these advanced group theory concepts contribute non-trivially to the calculation.
+
+---
+
+**4. Question:** "Consider the group $SU(2)$, a classical group, acting on the sphere $S^2$ by rotations. Let $\mu$ be the Haar measure on $SU(2)$. Suppose $A$ and $B$ are measurable subsets of $S^2$ with equal measure. If $SU(2)$ has Property (T), determine the infimum of the Hausdorff distance between $gA$ and $B$, where $g$ ranges over $SU(2)$."
+
+*   **Guideline 3 (Solvable Target):** **Fails.** The infimum of the Hausdorff distance between $gA$ and $B$ depends heavily on the specific sets $A$ and $B$. For example, if $A=B$, the infimum is $0$. If $A$ and $B$ are two disjoint disks of equal area, the infimum will be some positive value related to their separation. The question asks for *a single value* for *any* $A$ and $B$ with equal measure, which is impossible.
+*   **Guideline 4 (Single Output):** **Fails.** As discussed, this cannot yield a single, unambiguous symbolic answer unless $A=B$ (in which case it's trivial, but not what's implied for *arbitrary* sets).
+*   **Guideline 5 (Concise and Relevant):** **Fails.** The Haar measure on $SU(2)$ is irrelevant as the question is about distances between subsets of $S^2$. Stating "$SU(2)$ has Property (T)" is true, but using "If" makes it sound like a condition rather than a fact, and its relevance to the Hausdorff distance between arbitrary subsets is unclear without a deeper, non-obvious theorem.
+*   **Guideline 6 (Originality):** **Fails.** The problem is ill-posed because the infimum sought is not a universal constant or uniquely determined by the given (insufficient) information.
+
+**Actionable Feedback:**
+*   **Revise the target entirely:** The question needs to be fundamentally re-thought to ask for a specific value that can be uniquely determined. For example, "What is the *maximum possible value* of this infimum over all such $A, B$?" (This might be hard or impossible). Or fix $A$ and $B$ to be specific types of sets.
+*   **Remove irrelevant information:** Remove the mention of Haar measure on $SU(2)$ and re-evaluate the relevance of Property (T).
+
+---
+
+**5. Question:** "Let $G$ be a finitely generated amenable group. Suppose $G$ acts on a probability space $(X, \mu)$ preserving the measure $\mu$. Let $A$ be a measurable subset of $X$. Define the asymptotic density of $A$ with respect to a Følner sequence $\{F_n\}$ in $G$ as $d(A) = \lim_{n \to \infty} \frac{1}{|F_n|} \sum_{g \in F_n} \mu(g^{-1}A)$. If $d(A) = \alpha$, where $0 < \alpha < 1$, and $G$ satisfies the Ornstein-Weiss quasi-tiling theorem, compute the entropy of the action of $G$ on $(X, \mu)$."
+
+*   **Guideline 3 (Solvable Target):** **Fails.** The given information is insufficient to compute the entropy of the action. Since $\mu$ is $G$-invariant, $\mu(g^{-1}A) = \mu(A)$. Therefore, $d(A) = \lim_{n \to \infty} \frac{1}{|F_n|} \sum_{g \in F_n} \mu(A) = \mu(A)$. So, the problem states that $\mu(A) = \alpha$ for some measurable set $A$. Knowing the measure of *one* set in the space does not provide enough information to determine the entropy of the *entire* group action. For example, an action could have zero entropy but allow for sets $A$ of any measure $\alpha \in (0,1)$. The Ornstein-Weiss theorem is a deep result, but it doesn't imply that a single asymptotic density for one set uniquely determines the entropy of the action.
+*   **Guideline 5 (Concise and Relevant):** **Fails.** The condition $d(A)=\alpha$ is equivalent to $\mu(A)=\alpha$, which is a very limited piece of information about the space $(X,\mu)$. The Ornstein-Weiss quasi-tiling theorem is relevant to entropy theory for amenable groups, but its mention here without sufficient complementary information makes it a sophisticated distractor.
+*   **Guideline 6 (Originality):** **Fails.** The problem is fundamentally ill-posed because the conclusion (entropy) cannot be drawn from the premise ($\mu(A)=\alpha$).
+
+**Actionable Feedback:**
+*   **Provide sufficient information:** To determine the entropy of an action, one typically needs information about the generating partition, or about the growth of configurations. A single value $\mu(A)=\alpha$ is almost never sufficient. The problem statement needs to be fundamentally re-conceived with sufficient and relevant data.
+*   **Clarify the role of theorems:** If the Ornstein-Weiss theorem is crucial, ensure the question's premise provides data that, in conjunction with the theorem, leads to a specific entropy value.
+=== Turn 1: Author refines questions ===
+Okay, I understand the feedback and will revise the questions accordingly, focusing on making the target solvable and ensuring the relevance of the given information, and only resulting in a single output. Here's the revised list:
+
+1.  <question>A particle of mass $m$ moves in a one-dimensional potential $V(x) = \frac{1}{2}kx^2 + \lambda x^4$, where $k > 0$ and $\lambda > 0$.  Using perturbation theory to first order in $\lambda$, calculate the energy shift of the ground state energy.</question>
+
+2.  <question>Consider a quantum particle confined to a one-dimensional infinite potential well of width $L$.  A time-dependent potential $V(x,t) = V_0 \cos(\omega t)$ is applied, where $V_0$ is a small constant. Calculate the transition rate from the ground state to the first excited state, using Fermi's Golden Rule.</question>
+
+3.  <question>A blackbody at temperature $T_1$ emits radiation. This radiation is incident on a perfectly absorbing surface. The surface heats up and eventually reaches a steady-state temperature $T_2$. Assuming the surface is in vacuum and radiates as a perfect blackbody, what is the ratio $T_2/T_1$?</question>
+
+4.  <question>An electron is in the spin-up state $|\uparrow\rangle$ along the z-axis at time $t=0$. A magnetic field $\vec{B} = B_0 \hat{x}$ is applied. Calculate the probability that the electron will be in the spin-down state $|\downarrow\rangle$ along the z-axis at time $t=T$.</question>
+
+5.  <question>A hydrogen atom is in its ground state. A uniform electric field $E$ is applied along the z-axis. Calculate the induced electric dipole moment of the atom in terms of the polarizability $\alpha$. Given that the energy shift is $\Delta E = - \frac{1}{2}\alpha E^2$, calculate the polarizability $\alpha$ to second order perturbation theory.</question>
+=== Turn 1: Critic feedback ===
+Here's a critique of your revised questions:
+
+1.  **Question 1: Energy Shift of Ground State**
+    *   **Originality (Guideline 6):** This is a canonical, very common textbook problem in quantum mechanics.
+    *   **Feedback:** To enhance originality, consider altering the perturbation (e.g., $V(x) = \lambda x^3$) or asking for the energy shift of an excited state.
+
+2.  **Question 2: Transition Rate (Infinite Well)**
+    *   **Originality (Guideline 6):** This is another standard textbook example for time-dependent perturbation theory.
+    *   **Feedback:** Increase originality by modifying the form of the time-dependent potential (e.g., $V(x,t) = V_0 x \cos(\omega t)$) or by asking for transitions between different, higher excited states.
+
+3.  **Question 3: Ratio $T_2/T_1$ (Blackbody Radiation)**
+    *   **Solvable Target (Guideline 3) & Concise and Relevant (Guideline 5):** The problem is underspecified due to missing geometric information. The amount of radiation incident on the surface from the blackbody at $T_1$ depends on the spatial configuration (e.g., point source, parallel plates, radiation within a cavity). Without this, a unique solution for $T_2/T_1$ cannot be determined.
+    *   **Feedback:** Clearly define the geometrical setup of the radiation source and the absorbing surface to ensure a unique and solvable answer. For example, specify if the surface is completely enclosed by a blackbody cavity, or if it's receiving radiation from a point source at a certain distance.
+
+4.  **Question 4: Spin Precession Probability**
+    *   **Originality (Guideline 6):** This is a very common problem for demonstrating spin dynamics in quantum mechanics.
+    *   **Feedback:** To improve originality, change the initial or final spin state (e.g., spin-up along x-axis, spin-down along y-axis) or use a magnetic field with components in multiple directions (e.g., $\vec{B} = B_0 \hat{x} + B_1 \hat{z}$).
+
+5.  **Question 5: Dipole Moment and Polarizability (Hydrogen Atom)**
+    *   **Single Output (Guideline 4) & No Multiple Parts (Guideline 10):** The question asks for two distinct calculations ("Calculate the induced electric dipole moment..." AND "...calculate the polarizability...").
+    *   **Originality (Guideline 6):** This is a canonical problem for second-order perturbation theory (Stark effect on hydrogen).
+    *   **Feedback:** Restructure this into two separate questions, each asking for a single, unambiguous output. For instance, one question for the induced dipole moment and another for the polarizability. Also, consider a different atom or a more complex field configuration to enhance originality.
+=== Turn 2: Author refines questions ===
+Okay, I understand. Based on the feedback, here are the refined questions, aiming for originality, solvability, a single output, and relevance of information:
+
+1.  <question>A particle of mass $m$ moves in a one-dimensional potential $V(x) = \frac{1}{2}kx^2 + \lambda x^3$, where $k > 0$ and $\lambda$ is a small parameter.  Using perturbation theory to first order in $\lambda$, calculate the energy shift of the *first excited state*.</question>
+
+2.  <question>Consider a quantum particle confined to a one-dimensional infinite potential well of width $L$.  A time-dependent potential $V(x,t) = V_0 x \cos(\omega t)$ is applied, where $V_0$ is a small constant. Calculate the transition rate from the *first excited state* to the *second excited state*, using Fermi's Golden Rule.</question>
+
+3.  <question>A small, perfectly absorbing, spherical surface with radius $r$ is placed a distance $d$ away from a blackbody with radius $R$ and temperature $T_1$, where $d >> R > r$. The surface is in vacuum and radiates as a perfect blackbody. What is the steady-state temperature $T_2$ of the spherical surface? Express your answer in terms of $T_1$, $R$, and $d$.</question>
+
+4.  <question>An electron is in the spin-up state $|\uparrow_x\rangle$ along the x-axis at time $t=0$. A magnetic field $\vec{B} = B_0 \hat{x} + B_0 \hat{z}$ is applied. Calculate the probability that the electron will be in the spin-down state $|\downarrow_x\rangle$ along the x-axis at time $t=T$.</question>
+
+5.  <question>A hydrogen atom is in its ground state. A uniform electric field $E$ is applied along the z-axis. Calculate the induced electric dipole moment of the atom to second order perturbation theory. Express your answer in terms of the applied electric field E and fundamental constants. (Do *not* assume knowledge of the polarizability).</question>
+
+6.  <question>A hydrogen atom is in its ground state. A uniform electric field $E$ is applied along the z-axis. Calculate the polarizability $\alpha$ of the atom to second order perturbation theory. (Do *not* assume any prior knowledge of energy shifts or dipole moments). </question>
+=== Final questions generated ===

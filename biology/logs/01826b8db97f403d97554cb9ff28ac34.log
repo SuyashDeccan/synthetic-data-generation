@@ -1,0 +1,185 @@
+=== Turn 0: Author generates questions ===
+Here are some novel, undergraduate-level biology questions based on your specifications:
+
+<question>A physical therapist is evaluating the impact of a 12-week Nordic Walking (NW) program on an elderly patient with balance issues. Before the intervention, the patient's average arm swing amplitude during normal gait was measured using Kinovea software and found to be 15 degrees. After the 12-week NW program, the patient's arm swing amplitude increased by 40%. What is the patient's arm swing amplitude after the intervention, in degrees?</question>
+
+<question>A researcher is studying the effects of Nordic Walking on gait speed in stroke patients. Before the intervention, the average gait speed of a group of patients was 0.6 m/s. After a Nordic Walking intervention, the gait speed increased by 25%. If gait speed (v) is related to stride length (L) and stride frequency (f) by the equation $v = L \cdot f$, and stride frequency remained constant throughout the intervention, by what percentage did the patients' stride length increase?</question>
+
+<question>A patient undergoes a rehabilitation program involving Nordic Walking. Pre-intervention, their Functional Gait Assessment (FGA) score was 20. Post-intervention, their FGA score improved by 30%. What is the patient's FGA score after the intervention?</question>
+
+<question>A researcher is investigating the impact of Nordic Walking on motor neuron excitability. Baseline motor neuron excitability, measured as the amplitude of a motor evoked potential (MEP), is 5 mV. Following Nordic Walking training, the MEP amplitude increases by 60%. What is the new MEP amplitude, in mV?</question>
+
+<question>During a study on Nordic Walking, researchers observed that the Timed Up and Go (TUG) test time decreased from 12 seconds to 9 seconds after the intervention. What is the percentage decrease in TUG test time?</question>
+=== Turn 0: Critic feedback ===
+Here is a critique of the provided questions, evaluated against your guidelines:
+
+---
+
+**General Strengths Across Questions:**
+*   **Guideline 1 (Model a biology Scenario):** All questions successfully embed the problem within a realistic or idealized biology/rehabilitation scenario involving Nordic Walking and relevant physiological/clinical measurements.
+*   **Guideline 2 (Expect numerical answer):** All questions clearly ask for a single numerical answer with a unit.
+*   **Guideline 4 (Avoid How based questions):** All questions ask for a specific calculation/value, not definitions or explanations.
+*   **Guideline 6 (Single Solution):** All questions have a clear, single correct numerical answer.
+*   **Guideline 7 (Rigorous, concise phrasing):** The language is clear, professional, and appropriate for undergraduate level.
+*   **Guideline 9 (Units and Notation):** Units are consistent and correctly specified for all numerical answers.
+*   **Guideline 10 (Not multipart):** Each question focuses on solving for a single target quantity.
+*   **Guideline 11 & 12 (LaTeX for solutions):** While the questions themselves don't use LaTeX extensively, the problems are structured in a way that their solutions could be easily formatted using `aligned` and LaTeX syntax.
+
+**General Weaknesses Across Questions (Except Q2):**
+*   **Guideline 3 (Force Multi-Step Reasoning - Biological):** While mathematically multi-step (e.g., calculate percentage, then add), most questions (1, 3, 4, 5) primarily test basic arithmetic (percentage change/increase) rather than requiring the application of *multiple distinct biological principles* or deep conceptual biological reasoning beyond understanding the context.
+*   **Guideline 5 (Be Unique):** Questions 1, 3, and 4 are essentially identical in their mathematical structure (calculating a new value after a percentage increase). Question 5 is a direct percentage decrease calculation. While the *context* is unique, the *problem type* is very standard and repetitive.
+
+---
+
+**Critique of Individual Questions:**
+
+<question>A physical therapist is evaluating the impact of a 12-week Nordic Walking (NW) program on an elderly patient with balance issues. Before the intervention, the patient's average arm swing amplitude during normal gait was measured using Kinovea software and found to be 15 degrees. After the 12-week NW program, the patient's arm swing amplitude increased by 40%. What is the patient's arm swing amplitude after the intervention, in degrees?</question>
+
+**Critique:**
+*   **Strength:** Excellent scenario and clear objective.
+*   **Weakness (Guideline 3 & 5):** The multi-step reasoning is purely arithmetic (percentage calculation), not biological. It's a very standard "increase by X%" problem, lacking uniqueness in its core problem structure. It doesn't force the student to integrate multiple biological concepts or principles about gait beyond recognizing a quantitative change.
+
+**Actionable Feedback:**
+*   To enhance biological multi-step reasoning, consider adding a layer of biological interpretation. For instance, link arm swing amplitude to another gait parameter or a functional outcome via a simple model, requiring a second biological deduction.
+    *   *Example revision:* "If the observed increase in arm swing amplitude is directly correlated with a proportional improvement in gait stability (measured on a scale of 0-100), and a 10% increase in arm swing amplitude corresponds to a 5-point increase in gait stability, what is the patient's new gait stability score if their baseline arm swing amplitude was 15 degrees and their baseline gait stability score was 70?" (This adds a second biological relationship/conversion).
+
+---
+
+<question>A researcher is studying the effects of Nordic Walking on gait speed in stroke patients. Before the intervention, the average gait speed of a group of patients was 0.6 m/s. After a Nordic Walking intervention, the gait speed increased by 25%. If gait speed (v) is related to stride length (L) and stride frequency (f) by the equation $v = L \cdot f$, and stride frequency remained constant throughout the intervention, by what percentage did the patients' stride length increase?</question>
+
+**Critique:**
+*   **Strength:** This question is an excellent example of fulfilling most guidelines. It integrates a biological scenario with a quantitative biological relationship ($v = L \cdot f$) and requires multi-step reasoning (calculate new speed, then use proportional reasoning with the formula). This truly forces multi-step *biological* reasoning and conceptual understanding. It's unique and well-phrased.
+*   **Weakness:** No significant weaknesses.
+
+**Actionable Feedback:**
+*   Keep questions of this type. They effectively combine biological concepts with quantitative problem-solving.
+
+---
+
+<question>A patient undergoes a rehabilitation program involving Nordic Walking. Pre-intervention, their Functional Gait Assessment (FGA) score was 20. Post-intervention, their FGA score improved by 30%. What is the patient's FGA score after the intervention?</question>
+
+**Critique:**
+*   **Strength:** Relevant clinical scenario, clear.
+*   **Weakness (Guideline 3 & 5):** Functionally identical in structure to Question 1 and Question 4. It's another basic "increase by X%" calculation, lacking unique biological reasoning or complexity beyond simple arithmetic. The FGA score is a good biological context, but the question doesn't leverage it for deeper biological insight.
+
+**Actionable Feedback:**
+*   Similar to Question 1, add a second biological or clinical layer. For instance, relate the FGA score improvement to a specific change in underlying biomechanics (e.g., "If every 5-point improvement in FGA score is associated with a 10% reduction in fall risk, what is the patient's new fall risk percentage if it was 40% before?") or a different physiological measure.
+
+---
+
+<question>A researcher is investigating the impact of Nordic Walking on motor neuron excitability. Baseline motor neuron excitability, measured as the amplitude of a motor evoked potential (MEP), is 5 mV. Following Nordic Walking training, the MEP amplitude increases by 60%. What is the new MEP amplitude, in mV?</question>
+
+**Critique:**
+*   **Strength:** Good neurophysiological context (MEP amplitude).
+*   **Weakness (Guideline 3 & 5):** This is the third instance of the "increase by X%" problem (identical to Questions 1 and 3). It does not require multi-step biological reasoning, only basic arithmetic. The concept of MEP amplitude is introduced, but no deeper understanding of its physiological implications is required to solve the problem.
+
+**Actionable Feedback:**
+*   To make it more unique and biologically multi-step, connect the MEP amplitude to a more fundamental neurophysiological principle.
+    *   *Example revision:* "If the MEP amplitude is directly proportional to the number of active motor units, and a baseline MEP of 5 mV corresponds to 200 active motor units, how many motor units are active after the Nordic Walking training?" (This connects amplitude to a physiological quantity and requires a proportional calculation).
+
+---
+
+<question>During a study on Nordic Walking, researchers observed that the Timed Up and Go (TUG) test time decreased from 12 seconds to 9 seconds after the intervention. What is the percentage decrease in TUG test time?</question>
+
+**Critique:**
+*   **Strength:** Clinically relevant TUG test, clear.
+*   **Weakness (Guideline 3 & 5):** While it's a "percentage decrease" instead of "percentage increase," the mathematical complexity remains low, requiring only basic arithmetic. It still falls into the category of a very standard percentage change problem, lacking the "novel, conceptually rich" aspect in its problem-solving mechanics.
+
+**Actionable Feedback:**
+*   Similar to the other questions, introduce a second biological or clinical step.
+    *   *Example revision:* "If a 25% decrease in TUG test time correlates with a 15% increase in community ambulation distance (CAD) per day, and the patient's baseline CAD was 500 meters/day, what is their new estimated CAD after the intervention?" (This connects TUG improvement to a functional outcome).
+
+---
+
+**Summary Recommendations:**
+*   **Diversify Problem Types:** Avoid over-reliance on simple percentage increase/decrease calculations.
+*   **Deepen Biological Interconnection:** For multi-step reasoning, ensure that at least two of the steps involve different biological principles, interpretations, or quantitative relationships (as exemplified by Question 2). This could involve linking:
+    *   Physiological measure $\rightarrow$ Functional outcome
+    *   Kinematic parameter $\rightarrow$ Metabolic cost
+    *   Neurophysiological measure $\rightarrow$ Cellular/molecular event count
+    *   Clinical score $\rightarrow$ Risk assessment or quality of life metric
+*   **Introduce Simple Biological Models/Formulas:** Incorporate basic equations or proportional relationships that are integral to the biological concepts being assessed, similar to how $v = L \cdot f$ was used in Question 2.
+=== Turn 1: Author refines questions ===
+Okay, I've refined the questions based on your feedback, focusing on adding a second layer of biological reasoning and moving away from simple percentage calculations. Here are the revised questions:
+
+<question>A physical therapist is evaluating the impact of a 12-week Nordic Walking (NW) program on an elderly patient with balance issues. Before the intervention, the patient's average arm swing amplitude during normal gait was measured using Kinovea software and found to be 15 degrees. After the 12-week NW program, the patient's arm swing amplitude increased by 40%.  Assume that improvements in arm swing amplitude contribute proportionally to enhanced energy efficiency during gait, where each degree increase in arm swing reduces metabolic cost by 0.02 kcal/meter. What is the estimated reduction in metabolic cost per meter walked, in kcal/meter, after the intervention compared to before the intervention?</question>
+
+<question>A researcher is studying the effects of Nordic Walking on gait speed in stroke patients. Before the intervention, the average gait speed of a group of patients was 0.6 m/s. After a Nordic Walking intervention, the gait speed increased by 25%. If gait speed (v) is related to stride length (L) and stride frequency (f) by the equation $v = L \cdot f$, and stride frequency remained constant throughout the intervention, by what percentage did the patients' stride length increase?</question>
+
+<question>A patient undergoes a rehabilitation program involving Nordic Walking. Pre-intervention, their Functional Gait Assessment (FGA) score was 20. Post-intervention, their FGA score improved by 30%. It's known that the Berg Balance Scale (BBS) score correlates linearly with the FGA score, such that BBS = 2 * FGA + 10. What is the patient's BBS score after the intervention?</question>
+
+<question>A researcher is investigating the impact of Nordic Walking on motor neuron excitability. Baseline motor neuron excitability, measured as the amplitude of a motor evoked potential (MEP), is 5 mV. Following Nordic Walking training, the MEP amplitude increases by 60%. The number of muscle fibers recruited (N) is related to the MEP amplitude (A) by the equation  N = 100 * A^0.5. What is the increase in the number of muscle fibers recruited, (ΔN) after the intervention?</question>
+
+<question>During a study on Nordic Walking, researchers observed that the Timed Up and Go (TUG) test time decreased from 12 seconds to 9 seconds after the intervention.  Assume that the risk of falling (R) is inversely proportional to the square of the TUG time (R = k / TUG^2), where k is a constant. If the initial risk of falling corresponds to a value of R=1 before the intervention (where TUG = 12s), what is the risk of falling after the intervention?</question>
+=== Turn 1: Critic feedback ===
+The questions are significantly improved and demonstrate a strong grasp of multi-step reasoning within biological/clinical scenarios. You've successfully moved beyond simple percentage calculations.
+
+Here's a detailed critique against your guidelines:
+
+**General Feedback:**
+*   **Excellent adherence to Guidelines 3, 4, 5, 6, 7, 9, and 10.** All questions require multi-step reasoning, avoid "how-based" questions, are unique, have single solutions, are rigorously phrased, are not multipart, and use consistent units (though some non-SI units are acceptable in biology context like kcal, degrees).
+*   **LaTeX syntax is correctly implemented for inline equations.** The `\begin{aligned}` guideline applies to the solution format, not the question itself, so its absence in the questions is correct.
+
+---
+
+**Question 1: Metabolic Cost and Arm Swing**
+<question>A physical therapist is evaluating the impact of a 12-week Nordic Walking (NW) program on an elderly patient with balance issues. Before the intervention, the patient's average arm swing amplitude during normal gait was measured using Kinovea software and found to be 15 degrees. After the 12-week NW program, the patient's arm swing amplitude increased by 40%. Assume that improvements in arm swing amplitude contribute proportionally to enhanced energy efficiency during gait, where each degree increase in arm swing reduces metabolic cost by 0.02 kcal/meter. What is the estimated reduction in metabolic cost per meter walked, in kcal/meter, after the intervention compared to before the intervention?</question>
+
+*   **Critique:**
+    *   **Guideline 1 (Model a biology Scenario):** Excellent. Real-world scenario, relevant parameters.
+    *   **Guideline 3 (Force Multi-Step Reasoning):** Achieved. (1. Calculate amplitude increase, 2. Calculate metabolic cost reduction).
+    *   **Area for Minor Enhancement:** While it's multi-step, the "biological principle" is a given conversion factor. It doesn't require the student to infer or apply a deeper biological model *beyond* the provided proportionality. This is a minor point, as it still requires understanding the relationship between physiological parameters.
+
+---
+
+**Question 2: Gait Speed, Stride Length, and Stride Frequency**
+<question>A researcher is studying the effects of Nordic Walking on gait speed in stroke patients. Before the intervention, the average gait speed of a group of patients was 0.6 m/s. After a Nordic Walking intervention, the gait speed increased by 25%. If gait speed (v) is related to stride length (L) and stride frequency (f) by the equation $v = L \cdot f$, and stride frequency remained constant throughout the intervention, by what percentage did the patients' stride length increase?</question>
+
+*   **Critique:**
+    *   **Meets all guidelines exceptionally well.** This question perfectly integrates a core biomechanical principle ($v=L \cdot f$) with percentage calculations and multi-step reasoning.
+
+---
+
+**Question 3: FGA and BBS Scores**
+<question>A patient undergoes a rehabilitation program involving Nordic Walking. Pre-intervention, their Functional Gait Assessment (FGA) score was 20. Post-intervention, their FGA score improved by 30%. It's known that the Berg Balance Scale (BBS) score correlates linearly with the FGA score, such that BBS = 2 * FGA + 10. What is the patient's BBS score after the intervention?</question>
+
+*   **Critique:**
+    *   **Meets all guidelines exceptionally well.** This question effectively uses clinical assessment scores and their correlation, which is a valuable application of biological data analysis in a rehabilitation context.
+
+---
+
+**Question 4: MEP and Muscle Fiber Recruitment**
+<question>A researcher is investigating the impact of Nordic Walking on motor neuron excitability. Baseline motor neuron excitability, measured as the amplitude of a motor evoked potential (MEP), is 5 mV. Following Nordic Walking training, the MEP amplitude increases by 60%. The number of muscle fibers recruited (N) is related to the MEP amplitude (A) by the equation N = 100 * A^0.5. What is the increase in the number of muscle fibers recruited, (ΔN) after the intervention?</question>
+
+*   **Critique:**
+    *   **Meets all guidelines exceptionally well, and particularly strong on Guideline 3 (Multi-Step Reasoning) and Guideline 1 (Biology Scenario).** The inclusion of a non-linear relationship ($A^{0.5}$) makes this question conceptually rich and requires more analytical thought.
+
+---
+
+**Question 5: TUG Test and Risk of Falling**
+<question>During a study on Nordic Walking, researchers observed that the Timed Up and Go (TUG) test time decreased from 12 seconds to 9 seconds after the intervention. Assume that the risk of falling (R) is inversely proportional to the square of the TUG time (R = k / TUG^2), where k is a constant. If the initial risk of falling corresponds to a value of R=1 before the intervention (where TUG = 12s), what is the risk of falling after the intervention?</question>
+
+*   **Critique:**
+    *   **Meets all guidelines exceptionally well.** This question is excellent for testing understanding of proportionality and solving for an unknown constant, which is a common task in quantitative biology.
+
+---
+
+**Overall Actionable Feedback:**
+You've made significant improvements. All questions are now strong. No major revisions are needed for any of these questions. The minor comment on Question 1 is just a nuanced observation, but it still functions perfectly well as a multi-step problem.
+
+**To further elevate if you were to create more questions:**
+*   Continue seeking scenarios where the biological relationship itself requires some interpretation or involves multiple biological variables interacting (as seen in Q2, Q3, Q4, Q5).
+*   Ensure that the "steps" are not merely arithmetic but involve applying distinct biological concepts or equations. You've done this well in these questions.
+=== Turn 2: Author refines questions ===
+Okay, thank you for the detailed feedback! I will generate a few more questions, focusing on integrating biological principles and multi-step reasoning even further.
+
+<question>A researcher is investigating the effects of Nordic Walking on cardiovascular function. Before the intervention, a participant's heart rate reserve (HRR) was 60 bpm. After a 10-week Nordic Walking program, the participant's resting heart rate decreased by 10%, while their maximum heart rate remained constant. Assuming that HRR is calculated as Maximum Heart Rate - Resting Heart Rate, by what percentage did the HRR increase after the intervention? Note that this calculation requires understanding how resting heart rate impacts HRR.</question>
+
+<question>A patient recovering from knee surgery is prescribed Nordic Walking as part of their rehabilitation. Initially, their step length is limited by pain and weakness, averaging 0.4 meters. After several weeks of Nordic Walking, their pain decreases, and their muscle strength improves, leading to a 30% increase in step length. Simultaneously, their cadence (steps per minute) increases from 90 steps/minute to 100 steps/minute. Given that walking speed (m/min) is the product of step length (m) and cadence (steps/min), what is the percentage increase in walking speed after the Nordic Walking intervention?</question>
+
+<question>A study examines the impact of Nordic Walking on pulmonary function in individuals with mild COPD. Baseline forced expiratory volume in 1 second (FEV1) is 2.5 liters. Following a Nordic Walking intervention, FEV1 increases by 15%.  Given that airflow resistance (R) is inversely proportional to FEV1 (R = k / FEV1, where k is a constant), by what percentage does the airflow resistance decrease after the intervention?  Assume k is such that R=1 at baseline.</question>
+
+<question>Researchers are studying the effect of Nordic Walking on bone density in postmenopausal women. A participant's baseline bone mineral density (BMD) in the hip is 0.8 g/cm². After a 6-month Nordic Walking program, BMD increases by 5%.  It is known that the risk of hip fracture is exponentially related to BMD, such that Risk = exp(-5 * BMD). By what percentage does the *relative* risk of hip fracture decrease (compared to baseline) after the intervention? This requires calculating the risk before and after the intervention and then calculating the percentage *decrease* in risk.</question>
+
+<question>A physical therapist is using Nordic Walking to improve balance in a patient with peripheral neuropathy. Before the intervention, the patient's center of pressure (COP) sway area during a single-leg stance was 10 cm². After the intervention, the COP sway area decreased by 40%.  Assume that COP sway area (S) is related to the probability of a loss of balance (P) by the equation P = 0.1 * S + 0.05. What is the change in the probability of loss of balance (ΔP) following the intervention?</question>
+=== Final questions generated ===

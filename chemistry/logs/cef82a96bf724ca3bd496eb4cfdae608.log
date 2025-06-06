@@ -1,0 +1,609 @@
+=== Turn 0: Author generates questions ===
+<question>  
+A protein solution at 298 K exhibits sedimentation equilibrium in an analytical ultracentrifuge with a rotor speed of 50,000 rpm. The protein has a molar mass of 66,500 g·mol⁻¹ and a partial specific volume of 0.73 mL·g⁻¹. The buffer density is 1.00 g·mL⁻¹ and its viscosity is 0.001 Pa·s. Using the sedimentation equilibrium equation, calculate the radial concentration distribution ratio $c(r)/c(r_0)$ at $r = 7.2$ cm from the center, given a reference radius $r_0 = 6.8$ cm. Assume gravitational acceleration $g = 9.81$ m·s⁻² and Avogadro's number $N_A = 6.022 \times 10^{23}$ mol⁻¹. Express the numerical value of $c(r)/c(r_0)$ to three significant figures.</question>
+
+<question>  
+A gold nanoparticle colloid exhibits a second virial coefficient $B_{22}$ of $4.5 \times 10^{-4}$ mL·mol·g⁻² at 298 K from osmotic pressure data. Assuming the nanoparticle behaves as hard spheres with diameter $d$, calculate $d$ in nanometers using the relation for hard spheres:  
+$$B_{22} = \frac{2 \pi}{3} N_A d^3$$  
+where $N_A = 6.022 \times 10^{23}$ mol⁻¹. Provide $d$ to two decimal places.</question>
+
+<question>  
+In an analytical ultracentrifugation-sedimentation equilibrium experiment at 300 K, a lysozyme solution demonstrates a sedimentation equilibrium distribution fitting to a molar mass of 14,300 Da and a second virial coefficient $B_{22}$ of $2.1 \times 10^{-4}$ mL·mol·g⁻². Using the virial expansion of chemical potential  
+$$\mu = \mu^0 + RT \left( \ln c + 2 B_{22} c \right),$$  
+calculate the osmotic pressure $\Pi$ (in kPa) at protein concentration $c = 5$ g·L⁻¹. Use $R = 8.314$ J·mol⁻¹·K⁻¹.</question>
+
+<question>  
+A binary aqueous solution of bovine serum albumin (BSA) and lysozyme forms a phase boundary at 310 K. The tie-line concentration points for BSA are 30 g·L⁻¹ in the dilute phase and 120 g·L⁻¹ in the dense phase. The total volume of the system is 100 mL, and initial BSA concentration is 60 g·L⁻¹. Calculate the mass of BSA in the dense phase after equilibrium is reached, assuming ideal volume additivity and negligible volume change upon mixing.</question>
+
+<question>  
+A capillary cell used in sedimentation equilibrium experiments exhibits a baseline absorbance of 0.003 at 280 nm. After 50 runs with varying protein samples, the absorbance baseline increases to 0.008 due to residual protein adsorption. Calculate the percentage decrease in analytical sensitivity, defined as the reciprocal of baseline absorbance, assuming all other parameters remain constant.</question>
+
+<question>  
+For a protein solution at 298 K, the equation of state is approximated by  
+$$\frac{\Pi}{c RT} = 1 + B_{22} c,$$  
+where $c$ is molar concentration in mol·L⁻¹ and $\Pi$ is the osmotic pressure. Knowing that $\Pi = 50$ kPa at $c = 0.025$ mol·L⁻¹ and $B_{22} = 1.2 \times 10^{-3}$ L·mol⁻¹, calculate the universal gas constant $R$ in J·mol⁻¹·K⁻¹ using these data at $T=298$ K.</question>
+
+<question>  
+A gold nanoparticle capped with citrate ligands shows irreversible aggregation when the solution ionic strength exceeds 50 mM NaCl. Assuming Debye–Hückel screening, calculate the Debye length $\kappa^{-1}$ at the threshold ionic strength (in nm). Use the relation:  
+$$\kappa^{-1} = \sqrt{\frac{\varepsilon_0 \varepsilon_r k_B T}{2 N_A e^2 I}},$$  
+with constants: vacuum permittivity $\varepsilon_0 = 8.854 \times 10^{-12}$ F·m⁻¹, water relative permittivity $\varepsilon_r = 78.5$, Boltzmann constant $k_B = 1.381 \times 10^{-23}$ J·K⁻¹, elementary charge $e = 1.602 \times 10^{-19}$ C, Avogadro number $N_A = 6.022 \times 10^{23}$ mol⁻¹, temperature $T = 298$ K, and ionic strength $I = 0.05$ mol·L⁻¹. Report the result in nm to two decimal places.</question>
+
+<question>  
+In an AUC-SE experiment analyzing a protein-nanoparticle conjugate, the apparent molar mass increases linearly with concentration $c$ (in g·L⁻¹) as  
+$$M_\text{app} = M_0(1 + k c),$$  
+where $M_0 = 50,000$ g·mol⁻¹ and $k = 0.02$ L·g⁻¹. Determine the corrected molar mass $M_0$ if the apparent molar mass at $c=10$ g·L⁻¹ is measured as $60,000$ g·mol⁻¹.</question>
+
+<question>  
+The reusability of a capillary cell in protein sedimentation equilibrium is monitored by measuring the standard deviation $\sigma$ of absorbance baseline after repeated cleaning cycles. If initial $\sigma_0 = 0.001$ absorbance units and the degradation follows an exponential decay  
+$$\sigma_n = \sigma_0 e^{\alpha n},$$  
+where $n$ is the number of runs and $\sigma_5 = 0.005$, calculate the decay constant $\alpha$ to three decimal places.</question>
+=== Turn 0: Critic feedback ===
+Here’s a detailed critique of each question, structured according to your guidelines:
+
+---
+
+### 1. Sedimentation equilibrium (protein solution)
+
+**Positive:**
+- Realistic biophysical scenario with all relevant constants given (Guidelines 1, 5).
+- Concisely phrased, with all variables well-defined (7, 8).
+- Multi-step numerical calculation required (3).
+- Only one numerical solution (6).
+- Consistent units, clear request for significant figures and units (9).
+
+**Suggestions:**
+- The inclusion of viscosity and gravity is not needed for this calculation at the level of $c(r)/c(r_0)$ (4). Remove to avoid distraction.
+- Could briefly specify the assumed form of the sedimentation equilibrium equation (e.g., written in exponent form).
+- Otherwise, this is a well-constructed question.
+
+---
+
+### 2. Gold nanoparticle: second virial coefficient
+
+**Positive:**
+- Unique, not a textbook example (5).
+- Requires rearrangement and unit conversions—a multi-step calculation (3).
+- Only one numerical solution (6).
+- All units and variables well specified (9).
+
+**Suggestions:**
+- The units for $B_{22}$ are unconventional; standard for second virial coefficient would be $L/mol$ or $m^3/mol$. Here, $mL \cdot mol \cdot g^{-2}$ is probably for mass-based concentration, which should be clarified. 
+- If you want to use $B_{22}$ in volume/mole units, add a note or ensure that units in the hard sphere equation match those for $B_{22}$ (9, 7).
+- “Provide $d$ to two decimal places” is clear.
+
+---
+
+### 3. Lysozyme, virial expansion/osmotic pressure
+
+**Positive:**
+- The equation given matches the context.
+- Only one numerical answer.
+- Variables and constants all given (except for $N_A$ if needed).
+- Real-world scenario (1).
+- Multi-step, involving physical and chemical reasoning (3).
+- Specificity of units is good (9).
+
+**Suggestions:**
+- Clarify whether $c$ in $\mu$ and the $B_{22}$ units refer to mass or molarity to avoid ambiguity.
+- State or derive the relationship between the given $B_{22}$ units and the form needed in the calculation.
+- Minor: Could specify that $c = 5$ g/L is the mass concentration; clarify all $c$ definitions (7, 9).
+
+---
+
+### 4. BSA/Lysozyme two-phase equilibrium
+
+**Positive:**
+- Realistic protein phase separation scenario (1, 5).
+- Detailed enough for multi-step calculation (3).
+- Well-posed, only one mass to determine (6).
+- Units and phrasing precise (7, 8).
+
+**Suggestions:**
+- Could be improved by clarifying the assumption: “Assume negligible protein or salt volume in solution" (if relevant), otherwise “negligible volume change upon mixing” is sufficient (7).
+- “Phase boundary” is a bit ambiguous; use “two-phase equilibrium” for precision (8).
+- Specify that “ideal volume additivity” means phase volumes sum to system volume.
+
+---
+
+### 5. Analytical sensitivity: baseline absorbance
+
+**Positive:**
+- Real scenario for instrument performance (1).
+- One numerical solution (6).
+- All variables defined.
+
+**Suggestions:**
+- The definition of “analytical sensitivity” as $1/\text{(absorbance)}$ is unconventional. Normally, sensitivity is $\Delta$signal/$\Delta$concentration. You can specify: “Here, analytical sensitivity is defined as the reciprocal of baseline absorbance” for absolute clarity (8).
+- Remove statement “assuming all other parameters remain constant” if unnecessary to the calculation (4).
+- Specify “percentage decrease” to three significant digits if needed.
+
+---
+
+### 6. Osmotic pressure: Gas constant
+**Positive:**
+- Requires reasoning and unit conversion (3).
+- Only one solution for $R$ (6).
+- All parameters specified (9).
+- Scenario is distinctive and advanced (5).
+
+**Suggestions:**
+- “Equation of state is approximated by…” should specify whether $c$ is truly in mol/L, as the equation’s derivation assumes SI units for concentrations ($mol\ m^{-3}$). Be precise in units and conversion. (7, 9).
+- Remove extraneous wording if possible.
+
+---
+
+### 7. Debye length for AuNP aggregation
+
+**Positive:**
+- Non-standard, scenario-based, multi-step (1, 3, 5).
+- Only one solution (6).
+- All constants defined, units requested in nm, with significant digits (9).
+
+**Suggestions:**
+- Consider briefly noting that $I$ must be converted to SI (mol/L $\to$ mol/m$^3$).
+- The formula given refers to monovalent ions; if so, indicate or specify for NaCl (1:1 electrolyte) for clarity.
+- “Irreversible aggregation” is supportive but not calculated, so this is fine (no redundancy).
+
+---
+
+### 8. Apparent molar mass: protein-nanoparticle interaction
+
+**Positive:**
+- Unique, scenario-based, multi-step (1, 3, 5).
+- Only one solution (6).
+- Equation defines all parameters.
+
+**Suggestions:**
+- Direct and concise—no improvements needed except perhaps clarifying that “corrected” is $M_0$ (7).
+- Could add specification: "Express the answer as an integer." if $M_0$ comes out exactly, else give significant digits.
+
+---
+
+### 9. Capillary cell, standard deviation decay
+
+**Positive:**
+- Unique monitoring scenario (1, 5).
+- Only one numerical answer (6).
+- Concisely posed (7).
+
+**Suggestions:**
+- “Exponential decay” is potentially misleading, since variance is increasing—the equation describes exponential growth of standard deviation. Consider “exponential increase”.
+- Specify the number of decimals required for the answer.
+- No major improvements otherwise.
+
+---
+
+## Summary Table of Major Issues & Improvements
+
+| Q# | Main critique | Suggestions for improvement                                        |
+|----|--------------|--------------------------------------------------------------------|
+| 1  | Minor extraneous info (viscosity, gravity) | Remove unnecessary variables for clarity                 |
+| 2  | Unusual $B_{22}$ units | Clarify/correct units to standard form or explain their use         |
+| 3  | $c$, $B_{22}$ definition unclear | Explicitly link units and concentration definitions               |
+| 4  | Jargon: “phase boundary” | Use “two-phase equilibrium”; clarify additivity assumption         |
+| 5  | Sensitivity definition | Explicitly define as reciprocal baseline; possibly restate           |
+| 6  | Unit clarity for $c$ | Be explicit about required unit conversions                          |
+| 7  | $I$ units conversion | Prompt the user to convert $I$ to $mol/m^3$ or clarify this need      |
+| 8  | Very clear | Minor: specify format for answer                                    |
+| 9  | “Decay” vs. “growth” phrasing | Use “exponential increase”; state desired answer precision         |
+
+---
+
+## General Recommendations
+
+- **Be precise about units and variable definitions**, especially unconventional forms (e.g., mass vs. molar concentration, $B_{22}$ unit origins).
+- **Eliminate variables not needed for the calculation** to avoid confusion.
+- **Use standard terminology** and define any non-standard terms.
+- **Avoid mixing units and clarify any conversions needed** within the question itself.
+- **Each question should expect a single numerical answer** — you achieve this.
+- **Phrase questions for maximum clarity and minimal ambiguity.**
+
+Your set is very strong and meets most guidelines closely. The above minor changes will further improve clarity and rigor.
+=== Turn 1: Author refines questions ===
+<question>  
+A protein solution at 298 K exhibits sedimentation equilibrium in an analytical ultracentrifuge with a rotor speed of 50,000 rpm. The protein has a molar mass of 66,500 g·mol⁻¹ and a partial specific volume of 0.73 mL·g⁻¹. The buffer density is 1.00 g·mL⁻¹. Using the sedimentation equilibrium equation  
+$$\frac{c(r)}{c(r_0)} = \exp \left[ \frac{M(1 - \bar{v} \rho) \omega^2 (r^2 - r_0^2)}{2RT} \right],$$  
+where $c(r)$ is the protein concentration at radius $r$, $c(r_0)$ is the concentration at reference radius $r_0$, $\omega$ is the angular velocity in radians per second, $R = 8.314$ J·mol⁻¹·K⁻¹, and $T$ is temperature in K, calculate the ratio $c(r)/c(r_0)$ at $r = 7.2$ cm, given $r_0 = 6.8$ cm. Express your answer to three significant figures. (Note: Convert rotor speed $\text{rpm}$ to angular velocity $\omega$ in rad·s⁻¹.)  
+Constants: Avogadro's number $N_A = 6.022 \times 10^{23}$ mol⁻¹.</question>
+
+<question>  
+A gold nanoparticle colloid exhibits a second virial coefficient $B_{22}$ of $4.5 \times 10^{-4}$ mL·mol·g⁻² at 298 K, obtained from osmotic pressure measurements using mass concentration units. Assuming the nanoparticle behaves as hard spheres with diameter $d$, use the relation for hard spheres expressed per mole of particles:  
+$$B_{22} = \frac{2 \pi}{3} N_A \left(\frac{d}{10^7}\right)^3,$$  
+where $B_{22}$ is in mL·mol·g⁻², $d$ is in nanometers, and $N_A = 6.022 \times 10^{23}$ mol⁻¹. (Note: The factor $10^7$ converts nm to cm.) Calculate $d$ in nanometers and provide the answer to two decimal places.  
+(Hint: Carefully consider unit consistency between $B_{22}$ and $d$.)</question>
+
+<question>  
+In an analytical ultracentrifugation-sedimentation equilibrium experiment at 300 K, a lysozyme solution demonstrates a sedimentation equilibrium distribution fitted to a molar mass of 14,300 Da and a second virial coefficient $B_{22} = 2.1 \times 10^{-4}$ mL·mol·g⁻² (mass concentration basis). Using the virial expansion of the chemical potential:  
+$$\mu = \mu^0 + RT \left( \ln c + 2 B_{22} c \right),$$  
+where $c$ is the protein mass concentration in g·L⁻¹, calculate the osmotic pressure $\Pi$ in kPa at $c = 5$ g·L⁻¹. Use $R = 8.314$ J·mol⁻¹·K⁻¹ and $T = 300$ K.  
+(Note: Use the relation $\Pi = c RT (1 + B_{22} c)$, adapted for mass concentration units.)</question>
+
+<question>  
+A binary aqueous solution of bovine serum albumin (BSA) and lysozyme forms two coexisting phases at 310 K. The tie-line concentrations of BSA are 30 g·L⁻¹ in the dilute phase and 120 g·L⁻¹ in the dense phase. The total system volume is 100 mL, and the initial BSA concentration before phase separation is 60 g·L⁻¹. Assuming ideal volume additivity (volumes are additive and no volume change occurs upon mixing), calculate the mass of BSA in the dense phase after equilibrium is reached. Express your answer in grams.</question>
+
+<question>  
+A capillary cell used in sedimentation equilibrium experiments exhibits a baseline absorbance of 0.003 at 280 nm initially. After 50 runs with various protein samples, the absorbance baseline increases to 0.008 due to residual protein adsorption. Analytical sensitivity is defined here as the reciprocal of the baseline absorbance. Calculate the percentage decrease in analytical sensitivity after these runs. Express your answer to three significant figures.</question>
+
+<question>  
+For a protein solution at 298 K, the osmotic pressure conforms to the relation:  
+$$\frac{\Pi}{c R T} = 1 + B_{22} c,$$  
+where $c$ is the molar concentration in mol·L⁻¹, $\Pi$ the osmotic pressure (Pa), and $B_{22} = 1.2 \times 10^{-3}$ L·mol⁻¹. Given $\Pi = 50,000$ Pa at $c = 0.025$ mol·L⁻¹ and $T=298$ K, calculate the universal gas constant $R$ in J·mol⁻¹·K⁻¹ using these data.  
+(Note: Assume ideal solution behavior with no unit conversion errors.)</question>
+
+<question>  
+A gold nanoparticle capped with citrate ligands shows irreversible aggregation when the solution ionic strength exceeds 50 mM NaCl. Using Debye–Hückel theory and the formula for Debye length:  
+$$\kappa^{-1} = \sqrt{\frac{\varepsilon_0 \varepsilon_r k_B T}{2 N_A e^2 I}},$$  
+calculate the Debye length $\kappa^{-1}$ in nanometers at the threshold ionic strength $I = 0.05$ mol·L⁻¹ (convert as needed to SI units). Use: vacuum permittivity $\varepsilon_0 = 8.854 \times 10^{-12}$ F·m⁻¹, water relative permittivity $\varepsilon_r=78.5$, Boltzmann constant $k_B = 1.381 \times 10^{-23}$ J·K⁻¹, elementary charge $e=1.602 \times 10^{-19}$ C, Avogadro’s number $N_A = 6.022 \times 10^{23}$ mol⁻¹, and temperature $T=298$ K. Provide your answer to two decimal places.</question>
+
+<question>  
+In an analytical ultracentrifugation-sedimentation equilibrium experiment analyzing a protein-nanoparticle conjugate, the apparent molar mass increases linearly with protein concentration $c$ (in g·L⁻¹) as:  
+$$M_{\mathrm{app}} = M_0 (1 + k c),$$  
+where $M_0 = 50,000$ g·mol⁻¹ and $k = 0.02$ L·g⁻¹. If the apparent molar mass at $c = 10$ g·L⁻¹ is measured as 60,000 g·mol⁻¹, determine the corrected molar mass $M_0$. Express your answer as an integer.</question>
+
+<question>  
+The reusability of a capillary cell in protein sedimentation equilibrium experiments is monitored by measuring the standard deviation $\sigma$ of the absorbance baseline after repeated cleaning cycles. The initial standard deviation is $\sigma_0 = 0.001$ absorbance units. The increase of deviation follows an exponential model given by:  
+$$\sigma_n = \sigma_0 e^{\alpha n},$$  
+where $n$ is the number of runs. If after $n=5$ runs the standard deviation is $\sigma_5 = 0.005$, calculate the rate constant $\alpha$. Report your answer to three decimal places.  
+(Note: Since $\sigma$ increases, this models exponential growth.)</question>
+=== Turn 1: Critic feedback ===
+Your questions are **well-constructed and advanced**, generally conforming to most guidelines. Here’s concise, actionable feedback for each, evaluated against your stated standards:
+
+---
+
+### 1. Protein Sedimentation Equilibrium (Question 1)
+**Strengths:**  
+- **Scenario-based** (ultracentrifugation).  
+- **Single numerical answer** sought.  
+- **Multi-step calculation required** (unit conversions, equation application).  
+- **Rigorous wording**.
+
+**Improvements:**  
+- The constant Avogadro's number $N_A$ is given but not required for the calculation, as the equation uses molar mass; its presence is redundant.  
+- Clarify if all constants (like partial specific volume and buffer density) are for calculation or distraction.
+
+---
+
+### 2. Second Virial Coefficient—Gold Nanoparticle (Question 2)
+**Strengths:**  
+- **Non-textbook scenario** (virial for nanoparticles).  
+- Good detail, **single solution**, multi-step reasoning.
+
+**Improvements:**  
+- Explain the units of $B_{22}$ more clearly: mass concentration basis for mL·mol·g⁻², which is non-standard and can cause confusion.  
+- The unit conversion (nm to cm with $10^7$) might confuse; explicitly specify $d$ input and output in nm.
+
+---
+
+### 3. Osmotic Pressure—Lysozyme $B_{22}$ (Question 3)
+**Strengths:**  
+- **Scenario** is clear and non-standard.  
+- Requires specific, **single numerical answer**.
+
+**Improvements:**  
+- The expression $\mu = \mu^0 + RT(\ln c + 2B_{22}c)$ is valid, but makes no connection to $\Pi$ directly. Provide the osmotic pressure equation explicitly for clarity.  
+- Units of $B_{22}$ again unusual; briefly clarify unit conventions.
+
+---
+
+### 4. Phase Separation—BSA (Question 4)
+**Strengths:**  
+- **Real-world scenario** (phase separation, tie line).  
+- Requires careful reasoning (mass balances).
+
+**Improvements:**  
+- Dense but clear; perhaps specify to “ignore nonidealities” for volume additivity, though this is mostly clear.  
+- Units and phrasing are correct.
+
+---
+
+### 5. Analytical Sensitivity after Baseline Drift (Question 5)
+**Strengths:**  
+- **Unique scenario** (instrument repeatability).
+
+**Improvements:**  
+- Small improvement: say “analytical sensitivity is defined as $1/$ (baseline absorbance)” as a reciprocal, to avoid confusion.
+
+---
+
+### 6. Osmotic Pressure Equation—Gas Constant (Question 6)
+**Strengths:**  
+- **Non-standard calculation** (finding $R$).  
+- Clear, single answer required.
+
+**Improvements:**  
+- None substantive; offering actual values for $B_{22}$ in typical units (or at least explaining the unusual unit basis) would reduce confusion.
+
+---
+
+### 7. Debye Length at Aggregation Threshold (Question 7)
+**Strengths:**  
+- **Multi-step calculation** with advanced theory.  
+- **Clear data for constants and units.**  
+
+**Improvements:**  
+- Possibly clarify that $I$ must be converted to SI units (mol/L to mol/m³).
+
+---
+
+### 8. Apparent Molar Mass Linear Correction (Question 8)
+**Strengths:**  
+- **Single variable to solve for, original scenario**, clear equation.  
+- **No ambiguity**.
+
+**Improvements:**  
+- Perhaps provide values for “measured” and the equation together to be concise, but current phrasing is already rigorous.
+
+---
+
+### 9. Capillary Cell Baseline Sigma Growth Rate (Question 9)
+**Strengths:**  
+- **Scenario-based**, unique, single answer.
+
+**Improvements:**  
+- Units are clear; perhaps explain “rate constant” to be per run on first use for clarity.
+
+---
+
+## **General Recommendations**
+
+- **Unit Clarity:** Unusual units (e.g., $B_{22}$ in mL·mol·g⁻²) are well-motivated but need a *briefer, explicit statement* about conventions to avoid ambiguity.
+- **Extraneous Information:** Watch for inclusion of constants or hints not used or necessary for the solution (example: $N_A$ in Q1).
+- **Question Formatting:** All equations are given in correct LaTeX/Markdown. Some could be simplified or stated inline for conciseness, but all are technically correct.
+- **Chemical Nomenclature:** Not directly relevant here, but maintain IUPAC whenever chemical names arise.
+- **Single Solution:** All questions do request just *one* value; do not ask for more than one answer per stem.
+
+---
+
+## **Summary Table**
+
+| Q# | Feedback Summary |
+|:--:|:----------------:|
+| 1  | Remove unused constants. |
+| 2  | Clarify $B_{22}$ units, restate unit conversions. |
+| 3  | Connect equations more directly; clarify $B_{22}$ units. |
+| 4  | Optionally state “ignore nonidealities” for volume. |
+| 5  | Define “analytical sensitivity” unambiguously. |
+| 6  | Clarify $B_{22}$ unit conventions (if needed). |
+| 7  | Remind to convert $I$ to SI units. |
+| 8  | All good; clear. |
+| 9  | Optionally specify “rate constant is per run.” |
+
+---
+
+**Overall:**   
+You are producing high-level, original, concise questions **well suited for assessment**. Address the minor clarity points above for maximum rigor and minimal ambiguity.
+=== Turn 2: Author refines questions ===
+<question>  
+A protein solution at 298 K exhibits sedimentation equilibrium in an analytical ultracentrifuge rotating at 50,000 rpm. The protein has a molar mass of 66,500 g·mol⁻¹, a partial specific volume of 0.73 mL·g⁻¹, and the buffer density is 1.00 g·mL⁻¹. Using the sedimentation equilibrium equation  
+$$\frac{c(r)}{c(r_0)} = \exp \left[ \frac{M(1 - \bar{v} \rho) \omega^2 (r^2 - r_0^2)}{2RT} \right],$$  
+where $c(r)$ is the protein concentration at radius $r$, $c(r_0)$ the concentration at reference radius $r_0$, $\omega$ the angular velocity in radians per second (convert from rpm), $R = 8.314$ J·mol⁻¹·K⁻¹, and $T = 298$ K, calculate the ratio $c(r)/c(r_0)$ at radius $r=7.2$ cm given $r_0=6.8$ cm. Express your answer to three significant figures.  
+(Note: The partial specific volume $\bar{v}$ and buffer density $\rho$ are provided for calculation.)  
+</question>
+
+<question>  
+A gold nanoparticle colloid at 298 K exhibits a second virial coefficient $B_{22} = 4.5 \times 10^{-4}$ mL·mol·g⁻² measured using mass concentration units. Assuming the nanoparticles behave as hard spheres with diameter $d$, use the relation per mole of particles:  
+$$B_{22} = \frac{2 \pi}{3} N_A \left(\frac{d}{10^7}\right)^3,$$  
+where $B_{22}$ is in mL·mol·g⁻², $d$ is in nanometers (nm), and $N_A = 6.022 \times 10^{23}$ mol⁻¹.  
+(Note: The factor $10^7$ converts $d$ from nm to centimeters.)  
+Calculate the nanoparticle diameter $d$ in nanometers. Provide your answer to two decimal places.  
+(Hint: Carefully ensure unit consistency between $B_{22}$ and $d$.)  
+</question>
+
+<question>  
+In an analytical ultracentrifugation sedimentation equilibrium experiment at 300 K, a lysozyme solution shows a fitted molar mass of 14,300 Da and a second virial coefficient $B_{22} = 2.1 \times 10^{-4}$ mL·mol·g⁻² (mass concentration basis). Using the virial expansion approximation for osmotic pressure expressed with mass concentration $c$ (g·L⁻¹):  
+$$\Pi = c R T (1 + B_{22} c),$$  
+where $R = 8.314$ J·mol⁻¹·K⁻¹ and $T = 300$ K, calculate the osmotic pressure $\Pi$ in kPa at $c = 5$ g·L⁻¹.  
+(Note: $B_{22}$ is given in units consistent with mass concentration.)  
+</question>
+
+<question>  
+A binary aqueous solution of bovine serum albumin (BSA) and lysozyme at 310 K phase separates into two coexisting phases. The tie-line concentrations of BSA are 30 g·L⁻¹ in the dilute phase and 120 g·L⁻¹ in the dense phase. The total system volume is 100 mL, and the initial BSA concentration before phase separation is 60 g·L⁻¹. Assuming ideal volume additivity (i.e., volumes add without volume change upon mixing), calculate the mass of BSA present in the dense phase after equilibrium. Express your answer in grams.  
+</question>
+
+<question>  
+A capillary cell used in sedimentation equilibrium experiments initially has a baseline absorbance of 0.003 at 280 nm. After 50 runs with various protein samples, the absorbance baseline increases to 0.008 due to residual protein adsorption. Analytical sensitivity is defined as the reciprocal of the baseline absorbance. Calculate the percentage decrease in analytical sensitivity after these 50 runs. Express your answer to three significant figures.  
+</question>
+
+<question>  
+For a protein solution at 298 K, the osmotic pressure satisfies the relation:  
+$$\frac{\Pi}{c R T} = 1 + B_{22} c,$$  
+where $c$ is the molar concentration in mol·L⁻¹, $\Pi$ is the osmotic pressure in Pascals, and $B_{22} = 1.2 \times 10^{-3}$ L·mol⁻¹. Given a measured osmotic pressure $\Pi = 50,000$ Pa at $c = 0.025$ mol·L⁻¹ and $T=298$ K, calculate the universal gas constant $R$ in J·mol⁻¹·K⁻¹ from these data.  
+(Assume ideal solution behavior and consistent units.)  
+</question>
+
+<question>  
+A gold nanoparticle capped with citrate ligands irreversibly aggregates when the ionic strength of the solution exceeds 50 mM NaCl. Using Debye–Hückel theory, calculate the Debye length $\kappa^{-1}$ in nanometers at the threshold ionic strength $I = 0.05$ mol·L⁻¹. The Debye length is given by:  
+$$\kappa^{-1} = \sqrt{\frac{\varepsilon_0 \varepsilon_r k_B T}{2 N_A e^2 I}},$$  
+where the constants are: vacuum permittivity $\varepsilon_0 = 8.854 \times 10^{-12}$ F·m⁻¹, water relative permittivity $\varepsilon_r=78.5$, Boltzmann constant $k_B = 1.381 \times 10^{-23}$ J·K⁻¹, elementary charge $e=1.602 \times 10^{-19}$ C, Avogadro’s number $N_A = 6.022 \times 10^{23}$ mol⁻¹, and temperature $T=298$ K.  
+(Note: Convert ionic strength $I$ to appropriate SI units before calculation.)  
+Provide your answer to two decimal places.  
+</question>
+
+<question>  
+In an analytical ultracentrifugation sedimentation equilibrium experiment of a protein–nanoparticle conjugate, the apparent molar mass depends linearly on protein concentration $c$ (g·L⁻¹) as:  
+$$M_{\mathrm{app}} = M_0 (1 + k c),$$  
+where $M_0 = 50,000$ g·mol⁻¹ and $k = 0.02$ L·g⁻¹. If the apparent molar mass measured at $c = 10$ g·L⁻¹ is 60,000 g·mol⁻¹, determine the corrected molar mass $M_0$. Express your answer as an integer.  
+</question>
+
+<question>  
+The reusability of a capillary cell in protein sedimentation equilibrium experiments is monitored by measuring the standard deviation $\sigma$ of the baseline absorbance after repeated cleaning cycles. The initial standard deviation is $\sigma_0 = 0.001$ absorbance units. The standard deviation increases exponentially according to:  
+$$\sigma_n = \sigma_0 e^{\alpha n},$$  
+where $n$ is the number of runs (cleaning cycles). If after $n=5$ runs the standard deviation reaches $\sigma_5 = 0.005$, calculate the rate constant $\alpha$ per run. Report your answer to three decimal places.  
+</question>
+=== Turn 2: Critic feedback ===
+**Overall Assessment:**  
+Most questions are rigorous, numerically focused, and require multi-step reasoning rooted in realistic or research-level chemistry scenarios. You generally follow best practices regarding phrasing, units, and originality. However, there are some issues regarding redundancy, uniqueness, unnecessary information, and formatting relative to your 11 guidelines. Below is critique for each question, followed by an overall summary.
+
+---
+
+**Q1 (Sedimentation equilibrium, concentration ratio):**  
+- **Strengths:** Well-defined scenario, single numerical answer, clear variable definitions.  
+- **Suggested Improvements:**  
+  - Remove text explicitly stating "Note..." about partial specific volume and buffer density—they’re already defined in the main statement.  
+  - To enhance clarity, specify that units for $\bar{v}$ and $\rho$ must be converted to SI before substitution (to promote attention to unit consistency).  
+  - Otherwise, the question matches guidelines well.
+
+---
+
+**Q2 (Gold nanoparticle, $B_{22}$, diameter):**  
+- **Strengths:** Original, requires careful unit management, single numerical answer.  
+- **Suggested Improvements:**  
+  - The "Hint" is somewhat unnecessary; expect the test-taker to identify unit consistency requirements.  
+  - Clarify the units of $B_{22}$ *in the question text itself*, even if in the equation; for transparency, write “$B_{22}$ (in mL·mol·g⁻²)” after first mention.
+  - Rephrase “calculate the nanoparticle diameter $d$ in nanometers” to “Calculate the nanoparticle diameter $d$ (in nm), to two decimal places.” for precision and consistency.
+
+---
+
+**Q3 (Lysozyme, osmotic pressure, $B_{22}$):**  
+- **Strengths:** Chemistry scenario, original set-up, forces multi-step reasoning.  
+- **Suggested Improvements:**  
+  - Add “Give your answer to two significant figures” to mirror rigor in other questions.
+  - No further improvements required.
+
+---
+
+**Q4 (Protein phase separation, mass balance):**  
+- **Strengths:** Rigorous, practical scenario; only solvable for the mass in one phase; no extraneous parts.  
+- **Suggested Improvements:**  
+  - Swap “calculate the mass of BSA present in the dense phase after equilibrium” with “Calculate the mass (in grams) of BSA in the dense phase at equilibrium.” for conciseness and to standardize variable/answer descriptions.
+  - Indicate, if expected, the number of significant figures for the response.
+
+---
+
+**Q5 (Capillary cell, baseline absorbance, percent decrease in analytical sensitivity):**  
+- **Strengths:** Simple yet multi-step, clear scenario.  
+- **Suggested Improvements:**  
+  - Remove “Calculate…” and replace with “Determine the percentage decrease in analytical sensitivity. Express to three significant figures.” for consistency.  
+  - You could briefly define "analytical sensitivity" for clarity, but it’s implied meaning is sufficient given the rest of the phrasing.
+
+---
+
+**Q6 (Gas constant from osmotic pressure):**  
+- **Strengths:** Unusual calculation (find $R$ — not often given as a variable), requires algebraic manipulation, unit consistency.  
+- **Suggested Improvements:**  
+  - Be explicit: “Calculate the value of the universal gas constant $R$ in J·mol⁻¹·K⁻¹.”
+  - Emphasize degree of precision required, e.g., “Give your answer to three significant figures.”
+
+---
+
+**Q7 (Debye length at threshold ionic strength):**  
+- **Strengths:** Solid physical chemistry scenario, all constants provided, precise calculation expected.  
+- **Suggested Improvements:**  
+  - Replace “(Note: Convert ionic strength $I$ to appropriate SI units before calculation.)” with a directive: “Ensure all quantities are expressed in SI units.”  
+  - Otherwise, excellent.
+
+---
+
+**Q8 (Apparent molar mass, concentration dependence):**  
+- **Strengths:** Direct, data-driven, one correct value, numerically focused.  
+- **Suggested Improvements:**  
+  - There appears to be a logical inconsistency: If $M_0 = 50{,}000$ and $k=0.02$ at $c=10$, then $M_\mathrm{app} = 50{,}000 \times (1 + 0.2) = 60{,}000$. The “measured” and model-predicted values coincide, so “determine the corrected $M_0$” is redundant—it is already $50{,}000$.  
+  - To improve, either provide an “incorrect” measured $M_{\mathrm{app}}$ or make $M_0$ unknown—e.g., “If $M_{\mathrm{app}}=60{,}000$ at $c=10$ given $k=0.15$, determine $M_0$”.
+  - Alternatively, have $k$ unknown if $M_0$ and $M_{\mathrm{app}}$ are measured.
+
+---
+
+**Q9 (Capillary cell, standard deviation, exponential increase):**  
+- **Strengths:** Single solution, chemical lab context, numerical, multi-step calculation.  
+- **Suggested Improvements:**  
+  - You could clarify “Report your answer as a decimal to three significant figures”.
+  - Otherwise, it’s concise and mathematically clear.
+
+---
+
+**General Issues/Recommendations:**  
+- **Redundancy:** Remove verbose instructions and notes—assume an advanced audience.
+- **Unit Consistency:** Almost all questions specify units, but occasionally reminders appear as “Note: ...” statements. Instead, ask for explicit SI unit use in the main body, not in side notes.
+- **Originality:** These questions are non-standard and advanced, which is excellent per your guideline. One exception (Q8) is potentially too trivial due to formula/data redundancy.
+- **Single-part Focus:** All questions are single-answer, although a few (esp. those with “Hint:” or “Note:”) may imply subsidiary steps. Keep instructions minimal.
+- **Chemical Nomenclature:** All chemicals are named unambiguously.
+- **Formatting:** In some cases, clarify the required precision (significant figures).
+
+---
+
+### **Summary Table:**
+
+| Qn | Model | Units/Chemical Name | Multi-step | Avoids Redundancy | Unique | Single Solution | Concise/Rigorous | No Colloquialism | Units Consistent | IUPAC/Units | Single-Part | Formatted Correctly | Feedback Needed |
+|----|-------|---------------------|------------|-------------------|--------|-----------------|------------------|------------------|------------------|--------------|-------------|---------------------|-----------------|
+| 1  | ✓     | ✓                   | ✓          | Minor “Note”      | ✓      | ✓               | ✓                | ✓                | Minor SI clarif. | ✓            | ✓           | ✓                   | Compact notes   |
+| 2  | ✓     | ✓                   | ✓          | Remove Hint       | ✓      | ✓               | Slight rephrase  | ✓                | Clarify units    | ✓            | ✓           | ✓                   | See above       |
+| 3  | ✓     | ✓                   | ✓          | ✓                 | ✓      | ✓               | Add sig fig      | ✓                | ✓                | ✓            | ✓           | ✓                   | See above       |
+| 4  | ✓     | ✓                   | ✓          | Conciseness       | ✓      | ✓               | Clarify phrasing | ✓                | ✓                | ✓            | ✓           | ✓                   | Minor           |
+| 5  | ✓     | ✓                   | ✓          | Remove “Calculate”| ✓      | ✓               | Clarify phrasing | ✓                | ✓                | ✓            | ✓           | ✓                   | Minor           |
+| 6  | ✓     | ✓                   | ✓          | Clarify “Calculate”|✓       | ✓               | Add sig figs     | ✓                | ✓                | ✓            | ✓           | ✓                   | Minor           |
+| 7  | ✓     | ✓                   | ✓          | Remove note       | ✓      | ✓               | ✓                | ✓                | ✓                | ✓            | ✓           | ✓                   | Minor           |
+| 8  | ✓     | ✓                   | Maybe      | Potentially trivial|No     | Yes, but simple | Clarify formula  | ✓                | ✓                | ✓            | ✓           | ✓                   | Needs rework    |
+| 9  | ✓     | ✓                   | ✓          | ✓                 | ✓      | ✓               | Clarify sig fig  | ✓                | ✓                | ✓            | ✓           | ✓                   | Minor           |
+
+---
+
+### **Actionable Feedback Summary:**
+1. Remove parenthetical or “Note:” reminders; embed essential instructions into the main question statement.
+2. Where “Hints” are present, rewrite so unit/precision cues are part of the direct question (not as hints).
+3. Clarify expected significant figures for all numerical answers.
+4. Review Q8 for redundancy/inconsistency—ensure given data do not exactly fit the model, thereby preserving uniqueness/multi-step reasoning.
+5. Periodically rephrase for conciseness (e.g., “Calculate…” to “Determine…” with explicit answer formatting).
+6. Ensure all equations and variables are presented in LaTeX, and that questions render as standard Markdown.
+
+**Strengths:** Scenarios are original and require advanced, non-textbook reasoning. Choices mostly comply with chemical nomenclature, SI units, multi-step requirement, and single-answer format.
+
+By implementing these suggestions, your questions will fully align with all 11 guidelines for high-quality chemistry assessment.
+=== Turn 3: Author refines questions ===
+<question>  
+A protein solution at 298 K exhibits sedimentation equilibrium in an analytical ultracentrifuge rotating at 50,000 rpm. The protein has a molar mass of 66,500 g·mol⁻¹, a partial specific volume of 0.73 mL·g⁻¹, and the buffer density is 1.00 g·mL⁻¹. Using the sedimentation equilibrium equation  
+$$\frac{c(r)}{c(r_0)} = \exp \left[ \frac{M(1 - \bar{v} \rho) \omega^2 (r^2 - r_0^2)}{2RT} \right],$$  
+where $c(r)$ is the protein concentration at radius $r$, $c(r_0)$ the concentration at reference radius $r_0$, $\omega$ the angular velocity in radians per second (convert from rpm), $R = 8.314$ J·mol⁻¹·K⁻¹, and $T = 298$ K, calculate the ratio $c(r)/c(r_0)$ at radius $r=7.2$ cm given $r_0=6.8$ cm.  
+(Ensure consistent SI units for $\bar{v}$ and $\rho$ before substituting.)  
+Express your answer to three significant figures.  
+</question>
+
+<question>  
+A gold nanoparticle colloid at 298 K exhibits a second virial coefficient $B_{22} = 4.5 \times 10^{-4}$ mL·mol·g⁻² (mass concentration units). Assuming the nanoparticles behave as hard spheres with diameter $d$, use the relation per mole of particles:  
+$$B_{22} = \frac{2 \pi}{3} N_A \left(\frac{d}{10^7}\right)^3,$$  
+where $B_{22}$ is in mL·mol·g⁻², $d$ is in nanometers (nm), and $N_A = 6.022 \times 10^{23}$ mol⁻¹.  
+Calculate the nanoparticle diameter $d$ (in nm) to two decimal places.  
+</question>
+
+<question>  
+In an analytical ultracentrifugation sedimentation equilibrium experiment at 300 K, a lysozyme solution shows a fitted molar mass of 14,300 Da and a second virial coefficient $B_{22} = 2.1 \times 10^{-4}$ mL·mol·g⁻² (mass concentration basis). Using the virial expansion approximation for osmotic pressure expressed with mass concentration $c$ (g·L⁻¹):  
+$$\Pi = c R T (1 + B_{22} c),$$  
+where $R = 8.314$ J·mol⁻¹·K⁻¹ and $T = 300$ K, calculate the osmotic pressure $\Pi$ in kPa at $c = 5$ g·L⁻¹.  
+Give your answer to two significant figures.  
+</question>
+
+<question>  
+A binary aqueous solution of bovine serum albumin (BSA) and lysozyme at 310 K phase separates into two coexisting phases. The tie-line concentrations of BSA are 30 g·L⁻¹ in the dilute phase and 120 g·L⁻¹ in the dense phase. The total system volume is 100 mL, and the initial BSA concentration before phase separation is 60 g·L⁻¹. Assuming ideal volume additivity, calculate the mass (in grams) of BSA in the dense phase at equilibrium.  
+Express your answer to three significant figures.  
+</question>
+
+<question>  
+A capillary cell used in sedimentation equilibrium experiments initially has a baseline absorbance of 0.003 at 280 nm. After 50 runs with various protein samples, the baseline absorbance increases to 0.008 due to residual protein adsorption. Analytical sensitivity is defined as the reciprocal of the baseline absorbance. Determine the percentage decrease in analytical sensitivity after these 50 runs. Express your answer to three significant figures.  
+</question>
+
+<question>  
+For a protein solution at 298 K, the osmotic pressure satisfies the relation:  
+$$\frac{\Pi}{c R T} = 1 + B_{22} c,$$  
+where $c$ is the molar concentration in mol·L⁻¹, $\Pi$ is the osmotic pressure in Pascals, and $B_{22} = 1.2 \times 10^{-3}$ L·mol⁻¹. Given a measured osmotic pressure $\Pi = 50,000$ Pa at $c = 0.025$ mol·L⁻¹ and $T = 298$ K, calculate the universal gas constant $R$ in J·mol⁻¹·K⁻¹ from these data.  
+Give your answer to three significant figures.  
+</question>
+
+<question>  
+A gold nanoparticle capped with citrate ligands irreversibly aggregates when the ionic strength of the solution exceeds 50 mM NaCl. Using Debye–Hückel theory, calculate the Debye length $\kappa^{-1}$ in nanometers at the threshold ionic strength $I = 0.05$ mol·L⁻¹. The Debye length is given by:  
+$$\kappa^{-1} = \sqrt{\frac{\varepsilon_0 \varepsilon_r k_B T}{2 N_A e^2 I}},$$  
+with constants: vacuum permittivity $\varepsilon_0 = 8.854 \times 10^{-12}$ F·m⁻¹, water relative permittivity $\varepsilon_r = 78.5$, Boltzmann constant $k_B = 1.381 \times 10^{-23}$ J·K⁻¹, elementary charge $e = 1.602 \times 10^{-19}$ C, Avogadro’s number $N_A = 6.022 \times 10^{23}$ mol⁻¹, and temperature $T = 298$ K.  
+Ensure all quantities are expressed in SI units before calculation.  
+Provide your answer to two decimal places.  
+</question>
+
+<question>  
+In an analytical ultracentrifugation sedimentation equilibrium experiment of a protein–nanoparticle conjugate, the apparent molar mass depends linearly on protein concentration $c$ (g·L⁻¹) as:  
+$$M_{\mathrm{app}} = M_0 (1 + k c),$$  
+where $k = 0.015$ L·g⁻¹. If $M_{\mathrm{app}} = 60,000$ g·mol⁻¹ at $c = 10$ g·L⁻¹, determine the corrected molar mass $M_0$. Express your answer as an integer.  
+</question>
+
+<question>  
+The reusability of a capillary cell in protein sedimentation equilibrium experiments is monitored by measuring the standard deviation $\sigma$ of the baseline absorbance after repeated cleaning cycles. The initial standard deviation is $\sigma_0 = 0.001$ absorbance units. The standard deviation increases exponentially according to:  
+$$\sigma_n = \sigma_0 e^{\alpha n},$$  
+where $n$ is the number of runs (cleaning cycles). If after $n = 5$ runs the standard deviation reaches $\sigma_5 = 0.005$, calculate the rate constant $\alpha$ per run. Report your answer to three decimal places.  
+</question>
+=== Final questions generated ===

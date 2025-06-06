@@ -1,0 +1,606 @@
+=== Turn 0: Author generates questions ===
+<question>  
+A Ti₃C₂Tₓ MXene sample exhibits Fano resonance in its infrared absorption spectrum centered at 1600 cm⁻¹ with an asymmetric line shape described by the Fano parameter $q=1.5$. Assuming the resonance corresponds to vibrational coupling between surface terminations and conduction electrons, derive the Fano line shape function and calculate the normalized absorbance at a wavenumber of 1580 cm⁻¹, given the resonance width $\Gamma = 15$ cm⁻¹. Use the formula  
+$$I(\epsilon) = I_0 \frac{(q + \epsilon)^2}{1 + \epsilon^2}$$  
+where $\epsilon = \frac{\nu - \nu_0}{\Gamma/2}$, $\nu_0 = 1600$ cm⁻¹, and $\nu=1580$ cm⁻¹.</question>
+
+<question>  
+A MXene-based supercapacitor employing Ti₃C₂Tₓ electrodes delivers a specific capacitance of 320 F·g⁻¹ with an interlayer spacing of 1.2 nm measured by X-ray diffraction. Upon intercalation with organic cations, the interlayer spacing expands to 1.8 nm, increasing ion accessibility. Assuming capacitance scales linearly with accessible surface area proportional to interlayer spacing, estimate the new specific capacitance (in F·g⁻¹) after intercalation.</question>
+
+<question>  
+Calculate the percentage increase in interlayer spacing between two MXene samples if their (002) X-ray diffraction peaks shift from 9.2° to 6.3° (Cu Kα radiation, $\lambda=1.5418$ Å). Use Bragg’s law  
+$$n\lambda=2d\sin{\theta}$$  
+to determine $d$ values and the relative expansion. Provide your answer as a percent increase with two significant figures.</question>
+
+<question>  
+Consider the surface termination of a Ti₃C₂Tₓ MXene fully terminated with hydroxyl groups replacing fluorine terminations. Calculate the change in surface dipole moment per unit cell if the dipole moment of Ti–OH is 1.2 Debye and that of Ti–F is 0.5 Debye. Assume 8 surface terminations per unit cell, all substituted simultaneously.</question>
+
+<question>  
+A Ti₃C₂ MXene electrode material exhibits a specific capacitance of 250 F·g⁻¹ when cycled in 1 M H₂SO₄ electrolyte. If the electronic conductivity of the material is 20,000 S·m⁻¹ and the ion diffusion coefficient in the interlayer is $1.5 \times 10^{-11}$ m²·s⁻¹, estimate the characteristic time constant (in seconds) for charge-discharge governed by diffusion through a 2 µm thick electrode. Apply the approximation $$\tau = \frac{L^2}{D}$$ for diffusion time, with $L$ as layer thickness and $D$ as diffusion coefficient.</question>
+
+<question>  
+In a broadband infrared measurement, the Fano resonance of a Ti₃C₂Tₓ MXene is modeled using the reduced energy variable $\epsilon = (\omega - \omega_0)/(\Gamma/2)$, where $\omega_0$ is the resonance frequency and $\Gamma$ the linewidth. If the Fano asymmetry parameter $q = 2.0$ and the resonance is at $\omega_0 = 1200$ cm⁻¹ with $\Gamma = 40$ cm⁻¹, find $\epsilon$ and normalized intensity $I(\epsilon)/I_0$ at $\omega = 1220$ cm⁻¹ using  
+$$I(\epsilon) = I_0 \frac{(q + \epsilon)^2}{1 + \epsilon^2}$$</question>
+
+<question>  
+A stacked MXene electrode’s gravimetric capacitance drops by 15% after increasing the interlayer spacing from 1.1 nm to 1.4 nm due to excessive surface termination with oxygen groups. Assuming capacitance $C$ depends on interlayer spacing $d$ as $C \propto d^{-\alpha}$, calculate the value of $\alpha$ to two decimal places.</question>
+
+<question>  
+Given the chemical formula Ti₃C₂(OH)₂F₂ as a surface-terminated MXene, determine the oxidation state of titanium assuming the oxidation states of C = –4, F = –1, and OH = –1 collectively maintain charge neutrality.</question>
+
+<question>  
+Calculate the frequency shift in cm⁻¹ of the Ti–C vibrational mode when surface termination changes from –F (mass = 19 u) to –OH (mass = 17 u) assuming the vibration behaves as a diatomic oscillator with reduced mass $\mu = \frac{m_{Ti} m_{T}}{m_{Ti} + m_{T}}$. Given Ti atomic mass = 48 u, original Ti–F vibrational frequency = 620 cm⁻¹, approximate the new Ti–OH vibrational frequency using harmonic oscillator principles.</question>
+
+<question>  
+Determine the minimum number of Ti₃C₂ MXene layers required to achieve an interlayer spacing expansion of 0.6 nm if each layer’s van der Waals thickness is 0.96 nm and fully hydrated interlayer galleries expand linearly by 0.12 nm per intercalated water molecule. Assume one water molecule intercalates per layer and the total expansion is cumulative.</question>
+=== Turn 0: Critic feedback ===
+**Overall Review:**  
+This question set is advanced, unique, and models real-world scenarios involving MXenes in physical chemistry and materials science context. Most questions require multi-step quantitative reasoning and expect specific numerical answers or IUPAC-named compounds. There is good use of LaTeX and technical rigor. However, improvements are possible regarding redundancy, clarity, and alignment with given guidelines.
+
+**Per-Question Feedback:**
+
+---
+
+**Question 1 (Fano resonance line shape, absorbance calculation):**  
+- **Strengths:** Real scenario, multi-step calculation, expects a normalized numerical solution.
+- **Weaknesses:** Two tasks are required: derive the function and calculate the value. The derivation can have multiple valid forms; only the calculation gives a unique answer.
+- **Action:** Remove the "derive" part; only require calculation using the provided formula.
+
+---
+
+**Question 2 (Capacitance change with interlayer expansion):**  
+- **Strengths:** Based in a real context, multi-step quantitative answer, units specified.
+- **Weaknesses:** The question explicitly states capacitance is proportional to interlayer spacing, making the calculation 1-step and missing more depth.
+- **Action:** Consider including a less direct scaling, e.g., with surface area or including additional physical relations, to force more reasoning.
+
+---
+
+**Question 3 (Bragg’s law, percent increase in $d$-spacing):**  
+- **Strengths:** Clear, single answer, multi-step calculation, uses physical law correctly; units detailed.
+- **Weaknesses:** Asking to round to "two significant figures" is a bit vague; be explicit (e.g., "to the nearest percent" or "xxx.xx%").
+- **Action:** Specify the rounding explicitly and ensure all variables are defined at first use.
+
+---
+
+**Question 4 (Dipole moment change per MXene cell):**  
+- **Strengths:** Chemical scenario, numerically specific, forces stepwise calculation.
+- **Weaknesses:** It may not explicitly state the direction (vector) of the dipoles; could clarify “net change in dipole moment magnitude per unit cell (in Debye).”
+- **Action:** Define whether the answer should be positive/negative (increase/decrease/absolute value).
+
+---
+
+**Question 5 (Diffusion time constant, capacitance):**  
+- **Strengths:** Requires multi-step inference, consistent units, well-posed for a single answer.
+- **Weaknesses:** Could briefly specify if geometric factors or one-dimensional diffusion are assumed (for clarity).
+- **Action:** Add “Assume one-dimensional diffusion.” if intended.
+
+---
+
+**Question 6 (Fano resonance, normalized intensity):**  
+- **Strengths:** Direct, well-posed, requires substitution and calculation, expects a normalized value.
+- **Weaknesses:** Very similar calculation to Question 1 (only parameters differ), violating guideline 4 (redundancy).
+- **Action:** Remove or combine with Question 1; do not ask essentially the same calculation with only parameter changes.
+
+---
+
+**Question 7 (Exponent alpha for capacitance versus $d$):**  
+- **Strengths:** Multi-step, asks for a parameter ($\alpha$) not directly given, unique solution, consistent units.
+- **Weaknesses:** Could strengthen by specifying the context for drop (e.g., "after X cycles," but not strictly necessary).
+- **Action:** Good as is, just clarify if "value of $\alpha$" should be positive or include sign if negative.
+
+---
+
+**Question 8 (Oxidation state determination in Ti₃C₂(OH)₂F₂):**  
+- **Strengths:** Unique correct chemical answer, reasons through oxidation state calculation.
+- **Weaknesses:** Avoid “collectively maintain charge neutrality” phrasing; clarify that overall charge is zero.
+- **Action:** Phrase: “determine the oxidation state of Ti in Ti₃C₂(OH)₂F₂, given oxidation states…” etc.
+
+---
+
+**Question 9 (Vibrational frequency after termination mass change):**  
+- **Strengths:** Realistic, requires multi-step reasoning, unique answer.
+- **Weaknesses:** The value for $m_T$ is ambiguous—should state "$m_T$ is the mass of the terminating atom/group."
+- **Action:** Define $m_T$ explicitly; clarify whether the reduced mass is to be recalculated including the appropriate values.
+
+---
+
+**Question 10 (Water intercalation and total expansion):**  
+- **Strengths:** Quantitative scenario, unique answer, multi-step calculation.
+- **Weaknesses:** “Assume one water molecule intercalates per layer”—clarify if per gallery (between layers) or per MXene sheet.
+- **Action:** Define if $n$ is number of layers or interlayer spaces; possibly state “number of interlayer expansions.”
+
+---
+
+### **General Recommendations:**
+- **Redundancy:** Remove or combine repetitive Fano resonance calculation questions (1 and 6).
+- **Multi-step Reasoning:** Ensure all questions require at least two steps or logical inferences, possibly by making proportionalities less direct or providing less explicit relationships.
+- **One Solution per Question:** Avoid multi-part questions (like "derive" and "calculate" in the same prompt).
+- **Chemical Nomenclature:** Always use IUPAC names and charge states.
+- **Units and Variables:** Always define all variables; ensure units remain SI (unless justified otherwise).
+- **Conciseness and Clarity:** Edit for brevity—avoid redundant phrases and ambiguous terms.
+
+### **Summary Table:**
+
+| Q# | Flaws                                                            | Fix                                 |
+|----|-------------------------------------------------------------------|-------------------------------------|
+| 1  | Multi-part (derive+calc), slight redundancy with Q6               | Remove "derive"; calc only; combine |
+| 2  | Too direct proportionality, possible 1-step answer                | Use less direct scaling             |
+| 3  | Rounding not explicit, some variable ambiguity                    | Specify rounding; define variables  |
+| 4  | Direction of dipole moment not specified                          | Clarify expectation (magnitude)     |
+| 5  | Implicit geometric assumptions                                    | State 1-D diffusion                 |
+| 6  | Redundant with Q1                                                 | Remove or merge with Q1             |
+| 7  | Possible sign ambiguity in $\alpha$                               | Specify positive $\alpha$           |
+| 8  | Slightly ambiguous “collectively maintain charge neutrality”      | Just say “overall charge zero”      |
+| 9  | $m_T$ not fully defined                                           | Explicitly define $m_T$             |
+|10  | Ambiguity in counting interlayers/expansion                       | Define whether per layer or gallery |
+
+---
+
+**Action:** Revise for compliance with guidelines—especially to enforce single-step answer, avoid redundancy, and ensure variable/units clarity. Remove or combine overlapping questions, and sharpen multi-step reasoning where possible.
+=== Turn 1: Author refines questions ===
+<question>  
+A Ti₃C₂Tₓ MXene sample exhibits Fano resonance in its infrared absorption spectrum centered at 1600 cm⁻¹ with an asymmetric line shape described by the Fano parameter $q=1.5$. Given the resonance width $\Gamma = 15$ cm⁻¹, calculate the normalized absorbance  
+$$\frac{I(\epsilon)}{I_0} = \frac{(q + \epsilon)^2}{1 + \epsilon^2}$$  
+at a wavenumber $\nu = 1580$ cm⁻¹, where  
+$$\epsilon = \frac{\nu - \nu_0}{\Gamma/2}, \quad \nu_0 = 1600 \text{ cm}^{-1}.$$  
+Provide the numerical value of $\frac{I(\epsilon)}{I_0}$ rounded to two decimal places.  
+</question>
+
+<question>  
+A MXene-based supercapacitor using Ti₃C₂Tₓ electrodes has a specific capacitance of 320 F·g⁻¹ with an interlayer spacing of 1.2 nm (as measured by X-ray diffraction). Upon intercalation with organic cations, the interlayer spacing expands to 1.8 nm, enhancing ion accessibility. Assuming the accessible electrochemical surface area scales with the square root of interlayer spacing, estimate the new specific capacitance (in F·g⁻¹) after intercalation.  
+</question>
+
+<question>  
+Calculate the percentage increase in interlayer spacing $d$ between two MXene samples if their (002) X-ray diffraction peaks shift from $9.2^\circ$ to $6.3^\circ$. Use Cu K$\alpha$ radiation with wavelength $\lambda = 1.5418$ Å and Bragg’s law:  
+$$n\lambda = 2 d \sin{\theta}.$$  
+Assume first-order diffraction ($n=1$), and provide the percent increase in $d$ rounded to the nearest whole percent.  
+</question>
+
+<question>  
+Consider a Ti₃C₂Tₓ MXene unit cell fully terminated with fluorine atoms replaced simultanously by hydroxyl groups. If the dipole moment of a Ti–F surface bond is 0.5 Debye and that of a Ti–OH bond is 1.2 Debye, and assuming 8 surface terminations per unit cell, calculate the net increase in surface dipole moment magnitude per unit cell (in Debye).  
+</question>
+
+<question>  
+A Ti₃C₂ MXene electrode exhibits a specific capacitance of 250 F·g⁻¹ when cycled in 1 M H₂SO₄ electrolyte. Given the ion diffusion coefficient in the interlayer is $D = 1.5 \times 10^{-11}$ m²·s⁻¹, estimate the characteristic charge-discharge diffusion time constant $\tau$ (in seconds) for a 2 µm thick electrode. Use the approximation for one-dimensional diffusion:  
+$$\tau = \frac{L^2}{D},$$  
+where $L$ is the electrode thickness. Provide your answer in seconds with two significant figures.  
+</question>
+
+<question>  
+A stacked MXene electrode’s gravimetric capacitance decreases by 15% when the interlayer spacing increases from 1.1 nm to 1.4 nm due to excessive oxygen surface terminations. Assuming capacitance follows the relation $C \propto d^{-\alpha}$ where $d$ is interlayer spacing, calculate the value of the exponent $\alpha$, rounded to two decimal places.  
+</question>
+
+<question>  
+Determine the oxidation state of titanium in surface-terminated MXene Ti₃C₂(OH)₂F₂, given that carbon has an oxidation state of –4, fluorine –1, and hydroxyl –1, and that the compound is electrically neutral overall.  
+</question>
+
+<question>  
+Calculate the approximate Ti–OH vibrational frequency (in cm⁻¹) if the Ti–F vibrational frequency is 620 cm⁻¹. Assume the vibration behaves as a diatomic harmonic oscillator, where the frequency $\nu$ is proportional to $\frac{1}{\sqrt{\mu}}$ with reduced mass  
+$$\mu = \frac{m_{Ti} \cdot m_{T}}{m_{Ti} + m_{T}},$$  
+$m_{Ti} = 48$ u, $m_F = 19$ u, $m_{OH} = 17$ u (atomic mass units). Show your calculation steps and provide the final frequency rounded to the nearest integer.  
+</question>
+
+<question>  
+Determine the minimum number of Ti₃C₂ MXene layers required to achieve a cumulative interlayer expansion of 0.6 nm, if each layer’s van der Waals thickness is 0.96 nm and each interlayer gallery expands by 0.12 nm upon intercalation of one water molecule. Assume one water molecule intercalates per interlayer gallery and that expansions add linearly with the number of galleries.  
+</question>
+=== Turn 1: Critic feedback ===
+**Overall feedback:**  
+The set of questions is advanced and well-written, often requiring numerical answers with units or IUPAC names. Most scenarios are novel and involve multi-step reasoning. However, there are some minor improvements needed for absolute clarity, brevity, and to fully align with all your guidelines. Below are critiques for each question and actionable direction for improvement:
+
+---
+
+### Question 1 (Fano resonance):
+
+- **Strengths:** Unique scenario, concise, correct use of equations, clear demand for numerical answer.
+- **Issues & Improvements:**
+    - **Units**: The normalized ratio $I(\epsilon)/I_0$ is technically unitless, but state what it represents (e.g., “normalized absorbance”).
+    - **Solution focus**: The prompt combines both theory confirmation and calculation. To maximize focus, drop the verbal description after the formula and start from the numerical task.
+    - **Redundancy:** None.
+- **Action:** Add “normalized absorbance (unitless)” after the answer blank for clarity.
+
+---
+
+### Question 2 (Surface area/capacitance scaling):
+
+- **Strengths:** Scenario-based, calculates a physically meaningful value, requires multi-step reasoning.
+- **Issues & Improvements:**
+    - **Mechanism clarity:** State explicitly that other factors remain unchanged, so the candidate need not consider extraneous effects.
+    - **Units:** Good.
+    - **IUPAC:** Good.
+    - **Action:** Add “Assume all other material properties remain constant.”
+
+---
+
+### Question 3 (Bragg's law/interlayer spacing):
+
+- **Strengths:** Multi-step calculation, unique, units consistent.
+- **Issues & Improvements:**
+    - **Units:** Provide a prompt in the answer line referencing “percent (%)” to clarify.
+    - **Redundancy:** None.
+    - **IUPAC:** Good.
+- **Action:** Add “Report the percent increase (%) rounded to the nearest whole percent.”
+
+---
+
+### Question 4 (Surface dipole change):
+
+- **Strengths:** Clear, single-step with multi-faceted data.
+- **Issues & Improvements:**
+    - **Units:** State explicitly the units for the answer—Debye.
+    - **Clarity:** State that all 8 terminations are replaced to prevent ambiguity.
+- **Action:** Edit to: “If all 8 surface F atoms are replaced by OH, calculate the net increase in surface dipole moment magnitude per unit cell (in Debye).”
+
+---
+
+### Question 5 (Diffusion time constant):
+
+- **Strengths:** Clear, single calculation, units consistent.
+- **Issues & Improvements:**
+    - **Ambiguity:** Specify that $L$ refers to electrode thickness—“thickness” could be ambiguous (layer vs. stacked).
+    - **Significant figures:** State this at the end: “Express your answer to two significant figures.”
+- **Action:** Add affirmation: "Use $L = 2\ \mu m$ as the electrode thickness. Express your answer to two significant figures."
+
+---
+
+### Question 6 (Exponent from change in C and d):
+
+- **Strengths:** Unique, single-step reasoning, only one solution.
+- **Issues & Improvements:**
+    - **Units:** When asking for exponent, state “unitless” in answer prompt for clarity.
+    - **Rigor:** Rephrase “due to excessive oxygen” as the mechanism isn’t directly used; focus on the calculation.
+    - **Action:** Reword as: “A gravimetric capacitance $C$ decreases by 15% when the interlayer spacing $d$ increases from 1.1 nm to 1.4 nm, following $C \propto d^{-\alpha}$. Calculate the exponent $\alpha$ (unitless), rounded to two decimal places.”
+
+---
+
+### Question 7 (Oxidation state):
+
+- **Strengths:** Unique, single answer (oxidation state), uses correct IUPAC conventions.
+- **Issues & Improvements:**
+    - **Compound format:** Specify “Name the oxidation state as an integer.”
+- **Action:** No major changes needed; perhaps just note: "Provide the Ti oxidation state as an integer."
+
+---
+
+### Question 8 (Ti–OH vibrational frequency):
+
+- **Strengths:** Calculation, multi-step, uses diatomic model, asks for the method.
+- **Issues & Improvements:**
+    - **Ambiguity:** Specify that the final frequency should have the unit “cm⁻¹”.
+    - **Units:** Emphasize “rounded to the nearest integer” and “in cm⁻¹.”
+- **Action:** Add at the end: “Give your final answer in cm⁻¹, rounded to the nearest integer.”
+
+---
+
+### Question 9 (number of MXene layers to reach expansion):
+
+- **Strengths:** Multi-step, unique, requires reasoning.
+- **Issues & Improvements:**
+    - **Units:** Specify the answer should be given as an integer number of layers (unitless).
+    - **Clarity:** The prompt is a bit long and could be more concise. “Assume one water molecule intercalates per interlayer, contributing 0.12 nm expansion per gallery. Calculate the minimum integer number of layers required to reach total expansion of 0.6 nm.”
+- **Action:** Make the prompt more concise and state answers should be in whole numbers.
+
+---
+
+## **General Recommendations**
+- Always specify the required units and precision (significant digits or rounding).
+- Reword or eliminate indirect or extraneous explanations in the question (keep scenario but focus on the calculation/answer).
+- Clarify that only one solution is possible where weaker wording might suggest open-endedness.
+- Use unambiguous terms for answer format (unitless, rounded integer, etc.).
+- Use consistent and standard phrasing throughout.
+
+**Summary Table:**
+
+| Q# | Main Issue(s)                      | How to improve                                                      |
+|----|-----------------------------------|---------------------------------------------------------------------|
+| 1  | Units description                 | State answer unitless; add “normalized absorbance (unitless)”       |
+| 2  | Mechanism clarity                 | Add “Assume all other properties remain constant.”                  |
+| 3  | Units in answer needed            | State answer is a percent (%) change.                               |
+| 4  | Clarity on replacements           | Explicitly state all 8 terminations replaced; answer in Debye.      |
+| 5  | Thickness clarity, sig figs       | Define $L$ as thickness; require two sig figs in answer.            |
+| 6  | Exponent unit, mechanism wording  | Mark $\alpha$ as unitless; focus wording on calculation.            |
+| 7  | Explicit answer format            | Specify “integer” oxidation state.                                  |
+| 8  | Units/precision                   | State answer in cm⁻¹, nearest integer.                              |
+| 9  | Conciseness, unit of answer       | Reword for brevity and require answer as integer number of layers.  |
+
+---
+
+**For All:**  
+Maintain the balance of context and answer expectation, but always explicitly specify output format, units, and rounding requirements to maximize grading consistency and reduce ambiguity.
+=== Turn 2: Author refines questions ===
+```xml
+<question>
+A Ti₃C₂Tₓ MXene sample exhibits Fano resonance in its infrared absorption spectrum centered at 1600 cm⁻¹ with an asymmetric line shape described by the Fano parameter \( q = 1.5 \). Given the resonance width \(\Gamma = 15\) cm⁻¹, calculate the normalized absorbance  
+\[
+\frac{I(\epsilon)}{I_0} = \frac{(q + \epsilon)^2}{1 + \epsilon^2}
+\]
+at a wavenumber \(\nu = 1580\) cm⁻¹, where
+\[
+\epsilon = \frac{\nu - \nu_0}{\Gamma/2}, \quad \nu_0 = 1600 \text{ cm}^{-1}.
+\]
+Provide the numerical value of \(\frac{I(\epsilon)}{I_0}\) rounded to two decimal places as normalized absorbance (unitless).
+</question>
+
+<question>
+A MXene-based supercapacitor using Ti₃C₂Tₓ electrodes has a specific capacitance of 320 F·g⁻¹ with an interlayer spacing of 1.2 nm (measured by X-ray diffraction). Upon intercalation with organic cations, the interlayer spacing expands to 1.8 nm, enhancing ion accessibility. Assume the accessible electrochemical surface area scales with the square root of interlayer spacing and that all other material properties remain constant.  
+Estimate the new specific capacitance (in F·g⁻¹) after intercalation.
+</question>
+
+<question>
+Calculate the percentage increase in interlayer spacing \( d \) between two MXene samples if their (002) X-ray diffraction peaks shift from \(9.2^\circ\) to \(6.3^\circ\). Use Cu K\(\alpha\) radiation with wavelength \(\lambda = 1.5418\) Å and Bragg’s law:  
+\[
+n\lambda = 2 d \sin{\theta}
+\]
+Assuming first-order diffraction (\(n=1\)), report the percent increase (\%) in \( d \) rounded to the nearest whole percent.
+</question>
+
+<question>
+Consider a Ti₃C₂Tₓ MXene unit cell where all 8 surface fluorine atoms are simultaneously replaced by hydroxyl groups. If the dipole moment of a Ti–F surface bond is 0.5 Debye and that of a Ti–OH bond is 1.2 Debye, calculate the net increase in surface dipole moment magnitude per unit cell (in Debye).
+</question>
+
+<question>
+A Ti₃C₂ MXene electrode exhibits a specific capacitance of 250 F·g⁻¹ when cycled in 1 M H₂SO₄ electrolyte. Given the ion diffusion coefficient in the interlayer is \( D = 1.5 \times 10^{-11} \) m²·s⁻¹, estimate the characteristic charge-discharge diffusion time constant \(\tau\) (in seconds) for a 2 µm thick electrode. Use the approximation for one-dimensional diffusion:
+\[
+\tau = \frac{L^2}{D}
+\]
+where \( L = 2 \, \mu m \) is the electrode thickness.
+Express your answer with two significant figures.
+</question>
+
+<question>
+A stacked MXene electrode’s gravimetric capacitance \( C \) decreases by 15% when the interlayer spacing \( d \) increases from 1.1 nm to 1.4 nm. Assuming capacitance follows the relation \( C \propto d^{-\alpha} \), calculate the exponent \(\alpha\) (unitless). Provide the value rounded to two decimal places.
+</question>
+
+<question>
+Determine the oxidation state of titanium in surface-terminated MXene Ti₃C₂(OH)₂F₂, given that carbon has an oxidation state of –4, fluorine –1, and hydroxyl –1. The compound is electrically neutral overall.  
+Provide the titanium oxidation state as an integer.
+</question>
+
+<question>
+Calculate the approximate Ti–OH vibrational frequency (in cm⁻¹), given that the Ti–F vibrational frequency is 620 cm⁻¹. Assume the vibration behaves as a diatomic harmonic oscillator, where the frequency \(\nu\) is proportional to \(\frac{1}{\sqrt{\mu}}\), with reduced mass  
+\[
+\mu = \frac{m_{Ti} \cdot m_T}{m_{Ti} + m_T}
+\]
+atomic masses: \( m_{Ti} = 48 \, u \), \( m_F = 19 \, u \), \( m_{OH} = 17 \, u \).  
+Show your calculation steps and provide the final frequency in cm⁻¹ rounded to the nearest integer.
+</question>
+
+<question>
+Determine the minimum integer number of Ti₃C₂ MXene layers required to achieve a cumulative interlayer expansion of 0.6 nm, given that each layer’s van der Waals thickness is 0.96 nm and each interlayer gallery expands by 0.12 nm upon intercalation of one water molecule. Assume one water molecule intercalates per interlayer gallery and that expansions add linearly with the number of galleries.  
+Provide the minimum number of layers as an integer.
+</question>
+```
+=== Turn 2: Critic feedback ===
+**General Feedback (applies to all questions):**  
+- Most questions are rigorous, original, and require multi-step calculation—great!  
+- Phrasing is generally precise and avoids colloquialisms.  
+- Equations are formatted in LaTeX, but some are in the form \(\) and \[\]; change these to Markdown: inline math as $...$, display math as $$...$$.  
+- Be sure that each question leads to a **single, unique solution** (no ambiguity or multiple correct answers possible).  
+- Where a final answer’s unit is expected (even if “unitless”), state that in the answer prompt for absolute clarity.  
+- Double check that no question contains redundant facts or “story” details that do not enter the calculation.  
+- Each question should have only a **single** question to answer. “Show your calculations **and** give a final value” will prompt for two things (see below for a fix).
+
+---
+
+### Question-by-Question Feedback:
+
+---
+
+#### 1. Fano resonance absorbance calculation
+
+**Strengths:**
+- Real-world scenario, multi-parameter calculation.  
+- Unique (not textbook standard).
+
+**Improvements:**
+- Change all $\( ... \)$ to $...$ and $\[ ... \]$ blocks to display math with $$...$$ for Markdown compatibility.
+- “as normalized absorbance (unitless)”—good.  
+- “Provide the numerical value ...” is clear and singular.
+- No redundant info.
+  
+**Actions:**  
+- Adjust equation delimiters as above.
+
+---
+
+#### 2. Capacitance scaling with interlayer spacing
+
+**Strengths:**
+- Unique, relates to MXene research.
+- Requires calculation + application of proportionality.
+
+**Improvements:**
+- No extraneous information.
+- Make sure only *one* answer is required: “Estimate the new specific capacitance (in F·g⁻¹) after intercalation.” This is clear.
+- Proportionality assumption is stated.
+- Units are clear.
+
+**Actions:**  
+- No changes needed except equation formatting update.
+
+---
+
+#### 3. Percentage increase in interlayer spacing via Bragg’s law
+
+**Strengths:**
+- Multi-step calculation, original.
+
+**Improvements:**
+- Equation formatting for Markdown.
+- “rounded to the nearest whole percent” — clear.
+
+**Actions:**  
+- Update equation delimiters.
+
+---
+
+#### 4. Surface dipole moment upon substitution
+
+**Strengths:**
+- Multi-step, unique context.
+
+**Improvements:**
+- Units specified.
+- Does not ask for mechanism, only **calculated value**.
+- No redundancy.
+
+**Actions:**  
+- Only fix equation delimiters.
+
+---
+
+#### 5. Diffusion time constant in electrode
+
+**Strengths:**
+- Scenario, unique, multi-step.
+
+**Improvements:**
+- “Express your answer with two significant figures.” — clear.
+- No ambiguity.
+
+**Actions:**  
+- Fix math formatting.
+
+---
+
+#### 6. Capacitance–spacing exponent
+
+**Strengths:**
+- Requires solving for an exponent via logarithms; good complexity and uniqueness.
+
+**Improvements:**
+- “Provide the value rounded to two decimal places.” — clear.
+- No odd wording.
+
+**Actions:**  
+- Fix equation delimiters.
+
+---
+
+#### 7. Titanium oxidation state in Ti₃C₂(OH)₂F₂
+
+**Strengths:**
+- Unique stoichiometry.
+- Single, clear answer requested. IUPAC naming used.
+
+**Improvements:**
+- “Compound is electrically neutral” is necessary.
+- Oxidation numbers are well-defined.
+
+**Actions:**  
+- No changes needed, aside from occasional parenthesis standardization and math delimiters.
+
+---
+
+#### 8. Vibrational frequency via reduced mass
+
+**Strengths:**
+- Multi-step quantum chemistry calculation.
+- Harmonic oscillator model, not textbook (for this system), original.
+
+**Improvements:**
+- “Show your calculation steps and provide the final frequency...”—this technically requests two things (steps + answer), violating guideline #10 (must have only one thing to answer).
+   - **Fix:** State: “Calculate the Ti–OH vibrational frequency (in cm⁻¹), showing your calculation steps, and provide your final answer rounded to the nearest integer.”
+   - But still, “show your steps **and** provide final answer” really means 2 things, so to *force* a single-answer structure, say:  
+     > “Calculate the Ti–OH vibrational frequency (in cm⁻¹) rounded to the nearest integer.”
+- Equation formatting.
+
+**Actions:**  
+- Reword for a single-solution format.
+- Update math delimiters.
+
+---
+
+#### 9. Minimum number of layers for a given expansion
+
+**Strengths:**
+- Multi-step, real scientific scenario, nonstandard.
+- Calculation is singularly requested (“Provide the minimum number of layers as an integer.”).
+
+**Improvements:**
+- No redundancies or ambiguous wording.
+- Units and logic are clear.
+
+**Actions:**  
+- No change except for math delimiters.
+
+---
+
+---
+
+### **Summary List of Improvements**
+
+1. **Equation Formatting:** Use $...$ for inline math, $$...$$ for display math—update throughout.
+2. **Single Solution:** For Q8, remove/merge “show steps and give answer”—require only one answer. Elsewhere, ensure prompts ask only for a single value.
+3. **Clarity/Redundancy:** Excellent overall; keep questions focused and avoid narrative not needed for the answer.
+4. **Uniqueness and Rigor:** All meet standard.
+5. **IUPAC & Units:** Adhered to.
+6. **Consistent Structure:** Each question should use similar, concise closing: for example, "Provide your answer as a [unit] rounded to [precision]."
+7. **Prompt structure:** Avoid asking for named chemicals *and* numbers, or for both explanations and numbers; only one output per question.
+
+---
+
+**In summary:**  
+The questions are strong and original, requiring multi-step reasoning and proper chemistry context. The main adjustments needed are to the Markdown math equation formatting, and (for Q8) to ensure the answer prompt asks for only one solution (not both steps and answer).
+=== Turn 3: Author refines questions ===
+```xml
+<question>
+A Ti$_3$C$_2$T$_x$ MXene sample exhibits Fano resonance in its infrared absorption spectrum centered at 1600 cm$^{-1}$ with an asymmetric line shape described by the Fano parameter $q = 1.5$. Given the resonance width $\Gamma = 15$ cm$^{-1}$, calculate the normalized absorbance  
+$$
+\frac{I(\epsilon)}{I_0} = \frac{(q + \epsilon)^2}{1 + \epsilon^2}
+$$
+at the wavenumber $\nu = 1580$ cm$^{-1}$, where
+$$
+\epsilon = \frac{\nu - \nu_0}{\Gamma/2}, \quad \nu_0 = 1600 \text{ cm}^{-1}.
+$$
+Provide your answer as the normalized absorbance (unitless) rounded to two decimal places.
+</question>
+
+<question>
+A MXene-based supercapacitor using Ti$_3$C$_2$T$_x$ electrodes has a specific capacitance of 320 F·g$^{-1}$ with an interlayer spacing of 1.2 nm (measured by X-ray diffraction). Upon intercalation with organic cations, the interlayer spacing expands to 1.8 nm, enhancing ion accessibility. Assume the accessible electrochemical surface area scales with the square root of interlayer spacing and that all other material properties remain constant.  
+Estimate the new specific capacitance (in F·g$^{-1}$) after intercalation. Provide your answer rounded to the nearest whole number.
+</question>
+
+<question>
+Calculate the percentage increase in interlayer spacing $d$ between two MXene samples if their (002) X-ray diffraction peaks shift from $9.2^\circ$ to $6.3^\circ$. Use Cu K$\alpha$ radiation with wavelength $\lambda = 1.5418$ Å and Bragg’s law:  
+$$
+n\lambda = 2 d \sin{\theta}
+$$
+Assuming first-order diffraction ($n=1$), report the percent increase in $d$ rounded to the nearest whole percent.
+</question>
+
+<question>
+Consider a Ti$_3$C$_2$T$_x$ MXene unit cell where all 8 surface fluorine atoms are simultaneously replaced by hydroxyl groups. If the dipole moment of a Ti–F surface bond is 0.5 Debye and that of a Ti–OH bond is 1.2 Debye, calculate the net increase in surface dipole moment magnitude per unit cell (in Debye). Provide your answer rounded to two decimal places.
+</question>
+
+<question>
+A Ti$_3$C$_2$ MXene electrode exhibits a specific capacitance of 250 F·g$^{-1}$ when cycled in 1 M H$_2$SO$_4$ electrolyte. Given the ion diffusion coefficient in the interlayer is $D = 1.5 \times 10^{-11}$ m$^2$·s$^{-1}$, estimate the characteristic charge-discharge diffusion time constant $\tau$ (in seconds) for a 2 µm thick electrode. Use the approximation for one-dimensional diffusion:
+$$
+\tau = \frac{L^2}{D}
+$$
+where $L = 2 \, \mu m$ is the electrode thickness. Provide your answer with two significant figures.
+</question>
+
+<question>
+A stacked MXene electrode’s gravimetric capacitance $C$ decreases by 15% when the interlayer spacing $d$ increases from 1.1 nm to 1.4 nm. Assuming capacitance follows the relation $C \propto d^{-\alpha}$, calculate the exponent $\alpha$ (unitless). Provide your answer rounded to two decimal places.
+</question>
+
+<question>
+Determine the oxidation state of titanium in the surface-terminated MXene Ti$_3$C$_2$(OH)$_2$F$_2$, given that carbon has an oxidation state of –4, fluorine –1, and hydroxyl –1. The compound is electrically neutral overall.  
+Provide the titanium oxidation state as an integer.
+</question>
+
+<question>
+Calculate the approximate Ti–OH vibrational frequency (in cm$^{-1}$), given that the Ti–F vibrational frequency is 620 cm$^{-1}$. Assume the vibration behaves as a diatomic harmonic oscillator, where the frequency $\nu$ is proportional to $\frac{1}{\sqrt{\mu}}$, with reduced mass  
+$$
+\mu = \frac{m_{Ti} \cdot m_T}{m_{Ti} + m_T}
+$$
+and atomic masses: $m_{Ti} = 48 \, u$, $m_F = 19 \, u$, $m_{OH} = 17 \, u$.  
+Provide your final answer rounded to the nearest integer (cm$^{-1}$).
+</question>
+
+<question>
+Determine the minimum integer number of Ti$_3$C$_2$ MXene layers required to achieve a cumulative interlayer expansion of 0.6 nm, given that each layer’s van der Waals thickness is 0.96 nm and each interlayer gallery expands by 0.12 nm upon intercalation of one water molecule. Assume one water molecule intercalates per interlayer gallery and that expansions add linearly with the number of galleries.  
+Provide the minimum number of layers as an integer.
+</question>
+```
+=== Final questions generated ===

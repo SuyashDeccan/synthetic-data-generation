@@ -1,0 +1,421 @@
+=== Turn 0: Author generates questions ===
+Here are five novel masters chemistry questions based on the provided topics, key concepts, and guidelines:
+
+1.  <question> Elementary Flux Mode (EFM) analysis of *E. coli* central metabolism reveals several pathways for synthesizing biomass precursors from glucose. Assume a simplified network where glucose is converted to pyruvate via glycolysis, and pyruvate can be converted to either acetyl-CoA or oxaloacetate. Acetyl-CoA feeds into lipid biosynthesis, while oxaloacetate feeds into amino acid biosynthesis. Given the following flux constraints (all in mmol/gDW/h): glucose uptake = $10$, pyruvate production from glucose = $20$, maximum acetyl-CoA flux = $15$, and maximum oxaloacetate flux = $8$. Calculate the maximum theoretical yield (in g biomass/g glucose) assuming biomass is composed of $60\%$ amino acids (derived from oxaloacetate) and $40\%$ lipids (derived from acetyl-CoA). The molar mass of the amino acid fraction is $110$ g/mol-C, and the molar mass of the lipid fraction is $12$ g/mol-C. The carbon content of glucose is $36$ g/mol-C. </question>
+
+2.  <question> A curated metabolic network of *E. coli* is represented as a knowledge graph.  A probabilistic metabolic optimization (PMO) algorithm is used to predict the optimal flux distribution under aerobic conditions. A specific reaction, catalyzed by citrate synthase (CS), has a probability distribution of fluxes described by a Gaussian distribution with a mean flux of $25$ mmol/gDW/h and a standard deviation of $5$ mmol/gDW/h.  The Gibbs free energy change of the CS reaction, $\Delta G$, is known to be related to the flux, $v$, via a linear relationship: $\Delta G = -a \cdot v + b$, where $a = 0.1$ kJ/(mol * mmol/gDW/h) and $b = 5$ kJ/mol. What is the probability that the Gibbs free energy change of the citrate synthase reaction is less than $2$ kJ/mol? Assume the flux distribution is normally distributed. Round to two decimal places.</question>
+
+3.  <question> An *E. coli* strain is engineered to overproduce succinate under anaerobic conditions. The metabolic network is simplified to include only glycolysis, the TCA cycle (truncated to succinate production), and a lumped reaction representing biomass formation. Glucose is the sole carbon source. Flux balance analysis (FBA) is performed to maximize succinate production while satisfying stoichiometric constraints and the ATP maintenance requirement. If the ATP maintenance is $7.6$ mmol ATP/gDW/h and 2 ATP are produced per glucose molecule via glycolysis, what is the minimum flux (mmol/gDW/h) through glycolysis required to satisfy the ATP maintenance, assuming no other ATP production pathways are active? </question>
+
+4.  <question> Consider an Elementary Flux Mode (EFM) in *E. coli* involving the conversion of glucose to ethanol. The stoichiometric coefficients for glucose, ethanol, carbon dioxide, and ATP are $-1$, $+2$, $+2$, and $+2$ respectively (all normalized to a glucose uptake rate of 1 mmol/gDW/h). If the standard Gibbs free energy change for glucose oxidation to ethanol and carbon dioxide is -235 kJ/mol, and the standard Gibbs free energy change for ATP hydrolysis is -30.5 kJ/mol, calculate the overall Gibbs free energy change (in kJ/mol glucose) for this EFM under standard conditions. </question>
+
+5.  <question> In *E. coli*, the biosynthesis of tryptophan is regulated by feedback inhibition. Chorismate is converted to tryptophan through a series of enzymatic reactions. Tryptophan inhibits the first enzyme in the pathway, anthranilate synthase (AS).  Assuming the rate of tryptophan synthesis is proportional to the chorismate concentration and inversely proportional to the tryptophan concentration, and given an initial chorismate concentration of $5$ mM and an initial tryptophan concentration of $0.5$ mM, calculate the chorismate concentration (in mM) when the tryptophan concentration reaches $2$ mM. Assume a linear relationship between enzyme activity and substrate/inhibitor concentrations.</question>
+=== Turn 0: Critic feedback ===
+Here's a critique of each question, along with actionable feedback for improvement:
+
+---
+
+### General Feedback (Applies to All Questions)
+
+A consistent issue across all questions is the lack of LaTeX formatting for numerical values, variables, and units within the text. This is a crucial guideline for presenting chemistry problems rigorously.
+
+**Actionable Feedback (High Priority for All Questions):**
+*   **LaTeX Formatting**: Ensure all inline math, numbers, variables, and units (e.g., $10$ mmol/gDW/h, $a = 0.1$ kJ/(mol $\cdot$ mmol/gDW/h), $\Delta G$) are enclosed by `$`...`$` for inline math and `$$`...`$$` for block math. Avoid Markdown for unformatted data.
+
+---
+
+### Question 1: Elementary Flux Mode (EFM) and Yield Calculation
+
+**Critique:**
+*   **1. Model a Chemistry Scenario**: Yes, *E. coli* central metabolism and biomass precursor synthesis.
+*   **2. Expect numerical value with units**: Yes, "maximum theoretical yield (in g biomass/g glucose)".
+*   **3. Force Multi-Step Reasoning**: Yes, requires identifying limiting fluxes, carbon stoichiometry, and combining yields.
+*   **4. Avoid Redundancy**: The given "pyruvate production from glucose = $20$" is consistent with "glucose uptake = $10$" if $1$ glucose yields $2$ pyruvate, which is standard glycolysis stoichiometry. This isn't redundant information; it's a consistency check or a given. No obvious extraneous information.
+*   **5. Be Unique**: This is a good application of yield calculations in metabolic engineering, appropriate for a masters level.
+*   **6. Single solution**: Yes, a single numerical answer.
+*   **7. Rigorous, concise phrasing**: Mostly good, but "g/mol-C" is ambiguous.
+*   **8. Avoid colloquial or ambiguous terminology**: "g/mol-C" is problematic. In metabolic engineering, "g/C-mol" or "C-mol" is used for carbon moles. If "$110$ g/mol-C" means "$110$ grams of amino acid fraction contains $1$ mole of carbon atoms," it implies a carbon content of $1/110$ mol C/g. The value for glucose ($36$ g/mol-C) is also slightly off from actual glucose ($180$ g/mol, $6$ C atoms, so $30$ g/mol-C). This inconsistency or non-standard value can cause confusion or lead to unexpected results if not clearly defined as an assumed property.
+*   **9. Units consistent; chemical nomenclature IUPAC**: Units are consistent if "g/mol-C" is clarified. No IUPAC nomenclature needed.
+*   **10. Questions not have multiple parts**: Yes, single solution.
+*   **11. Solution Formatting**: Fails this guideline (as noted in general feedback).
+
+**Actionable Feedback:**
+1.  **Clarify "g/mol-C"**: Rephrase the definition of "g/mol-C" for amino acid and lipid fractions to be unambiguous. For example: "The amino acid fraction has a carbon content of $1$ mol C per $110$ g of fraction (i.e., $110$ g/C-mol)," or "The molar mass per carbon atom of the amino acid fraction is $110$ g/mol-C."
+2.  **Glucose Carbon Content**: Reconcile the glucose carbon content. Either explicitly state that $36$ g/mol-C is an *assumed* or simplified value, or use the actual value of $30$ g/mol-C, which would make the problem more realistic.
+3.  **Apply LaTeX Formatting**: Format all numerical values and variables (e.g., $10$, $20$, $15$, $8$, $60\%$, $40\%$, $110$, $12$, $36$) with `$`...`$`.
+
+---
+
+### Question 2: Probabilistic Metabolic Optimization (PMO) and Gibbs Free Energy
+
+**Critique:**
+*   **1. Model a Chemistry Scenario**: Yes, *E. coli* metabolic network, probabilistic flux, and Gibbs free energy.
+*   **2. Expect numerical value with units**: Yes, "probability... less than $2$ kJ/mol."
+*   **3. Force Multi-Step Reasoning**: Yes, requires converting a $\Delta G$ condition into a flux condition and then calculating a probability from a normal distribution (Z-score calculation).
+*   **4. Avoid Redundancy**: "Curated metabolic network", "knowledge graph", "PMO algorithm", "aerobic conditions" are contextual but do not affect the calculation. While they provide scenario richness, they do not impede or hint at the solution. No significant redundancy.
+*   **5. Be Unique**: Linking probabilistic flux distributions to thermodynamic constraints is a novel and appropriate concept for masters level.
+*   **6. Single solution**: Yes, a single numerical answer.
+*   **7. Rigorous, concise phrasing**: Good.
+*   **8. Avoid colloquial or ambiguous terminology**: "Gaussian distribution" and "normally distributed" are synonymous here; using one is sufficient.
+*   **9. Units consistent; chemical nomenclature IUPAC**: Units are consistent. No IUPAC nomenclature needed.
+*   **10. Questions not have multiple parts**: Yes, single solution.
+*   **11. Solution Formatting**: Fails this guideline.
+
+**Actionable Feedback:**
+1.  **Apply LaTeX Formatting**: Format all numerical values and variables (e.g., $25$, $5$, $0.1$, $5$, $2$, $v$, $a$, $b$, $\Delta G$) with `$`...`$`.
+2.  **Minor Phrasing**: Optionally, consolidate "Gaussian distribution" and "normally distributed" to avoid slight redundancy.
+
+---
+
+### Question 3: Flux Balance Analysis (FBA) and ATP Maintenance
+
+**Critique:**
+*   **1. Model a Chemistry Scenario**: Yes, *E. coli* engineered for succinate production, anaerobic conditions, ATP maintenance.
+*   **2. Expect numerical value with units**: Yes, "minimum flux (mmol/gDW/h) through glycolysis."
+*   **3. Force Multi-Step Reasoning**: This is a very direct stoichiometric calculation ($7.6$ mmol ATP / ($2$ ATP/glucose)). While multi-step, it's basic arithmetic.
+*   **4. Avoid Redundancy**: The description of the simplified network ("TCA cycle (truncated to succinate production), and a lumped reaction representing biomass formation") is largely extraneous. The crucial information is the ATP maintenance requirement and ATP yield from glycolysis. The question effectively ignores the FBA context and network details provided.
+*   **5. Be Unique**: While the setup is common for FBA, the question itself is a trivial stoichiometric calculation. It does not leverage the complexity implied by "FBA" or "metabolic network simplification", making it too simple for a "novel masters chemistry question."
+*   **6. Single solution**: Yes, a single numerical answer.
+*   **7. Rigorous, concise phrasing**: Good.
+*   **8. Avoid colloquial or ambiguous terminology**: No issues.
+*   **9. Units consistent; chemical nomenclature IUPAC**: Units are consistent. No IUPAC nomenclature needed.
+*   **10. Questions not have multiple parts**: Yes, single solution.
+*   **11. Solution Formatting**: Fails this guideline.
+
+**Actionable Feedback:**
+1.  **Increase Complexity for Masters Level**: To be appropriate for a masters level, this question needs to be more complex.
+    *   *Option A*: Integrate the "truncated TCA cycle" and "biomass formation" into the calculation. For example, ask for the *maximal succinate production flux* given the ATP maintenance constraint, requiring a true FBA setup (even if simplified for a quick solution).
+    *   *Option B*: Add another ATP-producing or consuming pathway that needs to be considered.
+    *   *Option C*: Ask about the *yield* of succinate relative to glucose under specific conditions (e.g., maximizing succinate production while meeting ATP maintenance), which inherently involves FBA.
+2.  **Remove Redundancy**: If the question remains a simple ATP maintenance calculation, remove the irrelevant details about TCA and biomass formation to avoid extraneous information.
+3.  **Apply LaTeX Formatting**: Format all numerical values (e.g., $7.6$, $2$) with `$`...`$`.
+
+---
+
+### Question 4: Elementary Flux Mode (EFM) and Gibbs Free Energy Change
+
+**Critique:**
+*   **1. Model a Chemistry Scenario**: Yes, EFM in *E. coli*, glucose to ethanol pathway.
+*   **2. Expect numerical value with units**: Yes, "overall Gibbs free energy change (in kJ/mol glucose)".
+*   **3. Force Multi-Step Reasoning**: Yes, requires summing standard Gibbs free energy changes, accounting for ATP hydrolysis/synthesis based on stoichiometric coefficients.
+*   **4. Avoid Redundancy**: All given information (stoichiometric coefficients, standard Gibbs free energies) is directly relevant to the calculation. No obvious redundancy.
+*   **5. Be Unique**: Calculating the overall Gibbs free energy for an EFM that involves ATP coupling is a good application of thermodynamic principles in biochemical pathways, appropriate for masters level.
+*   **6. Single solution**: Yes, a single numerical answer.
+*   **7. Rigorous, concise phrasing**: Good.
+*   **8. Avoid colloquial or ambiguous terminology**: No issues.
+*   **9. Units consistent; chemical nomenclature IUPAC**: Units are consistent. No IUPAC nomenclature needed.
+*   **10. Questions not have multiple parts**: Yes, single solution.
+*   **11. Solution Formatting**: Fails this guideline.
+
+**Actionable Feedback:**
+1.  **Apply LaTeX Formatting**: Format all numerical values and variables (e.g., $-1$, $+2$, $+2$, $+2$, $1$, $-235$, $-30.5$) with `$`...`$`.
+
+---
+
+### Question 5: Tryptophan Biosynthesis and Feedback Inhibition
+
+**Critique:**
+*   **1. Model a Chemistry Scenario**: Yes, *E. coli* tryptophan biosynthesis, feedback inhibition.
+*   **2. Expect numerical value with units**: Yes, "chorismate concentration (in mM)".
+*   **3. Force Multi-Step Reasoning**: Requires setting up a rate equation and solving for a concentration.
+*   **4. Avoid Redundancy**: "Chorismate is converted to tryptophan through a series of enzymatic reactions." and "Tryptophan inhibits the first enzyme in the pathway, anthranilate synthase (AS)" provide context. No obvious redundancy.
+*   **5. Be Unique**: While feedback inhibition is standard, the specific kinetic model given, and the subsequent phrasing, is problematic.
+*   **6. Single solution**: Potentially. If the implicit assumption is that the rate remains constant, then it's a simple ratio calculation.
+*   **7. Rigorous, concise phrasing**: This is the weakest point. The kinetic model is ambiguous and potentially contradictory.
+    *   "Assuming the rate of tryptophan synthesis is proportional to the chorismate concentration and inversely proportional to the tryptophan concentration" sets up the rate law: $v = k \cdot [\text{Chorismate}] / [\text{Tryptophan}]$.
+    *   "Assume a linear relationship between enzyme activity and substrate/inhibitor concentrations." This statement is problematic. If the *rate* follows the previous proportionality, it is *not* linearly related to the inverse of tryptophan concentration. If this statement is meant to define a *different* rate law (e.g., $v = k_1[\text{Chorismate}] - k_2[\text{Tryptophan}]$), it contradicts the first. If it's meant to simplify the actual inhibition mechanism, it's not clearly linked to the rate law.
+    *   The problem then asks to calculate a concentration "when the tryptophan concentration reaches $2$ mM." This implies a change from initial conditions. Without more information (e.g., assuming the *rate* of synthesis remains constant between the two states, or defining it as a new steady state where the ratio is maintained), the problem is underspecified. A constant rate is not a typical assumption when concentrations change, especially for a metabolic pathway where substrate is consumed and product is formed.
+*   **8. Avoid colloquial or ambiguous terminology**: Yes, "linear relationship between enzyme activity and substrate/inhibitor concentrations" is ambiguous in context.
+*   **9. Units consistent; chemical nomenclature IUPAC**: Units are consistent. Common biochemical names are acceptable.
+*   **10. Questions not have multiple parts**: Yes, single solution if the implicit assumption (constant rate) is made.
+*   **11. Solution Formatting**: Fails this guideline.
+
+**Actionable Feedback:**
+1.  **Clarify the Kinetic Model (High Priority)**: This is the most critical issue.
+    *   **Option A (Simple Ratio)**: Explicitly state the assumption needed to solve this problem as a ratio. For example: "Assuming the rate of tryptophan synthesis $v$ can be described as $v = k \cdot [\text{Chorismate}] / [\text{Tryptophan}]$, and that the *rate of tryptophan synthesis remains constant* as concentrations change, calculate the chorismate concentration..." This makes it solvable, though still somewhat simplistic for masters level without further complexity. Remove the "linear relationship" sentence as it's confusing.
+    *   **Option B (More Complex Kinetics)**: Define a more robust and realistic kinetic model for feedback inhibition (e.g., a simplified Michaelis-Menten type equation with competitive or non-competitive inhibition terms) that *would* be consistent with a "linear relationship" for a specific term (e.g., $K_i$ linearly dependent on [Tryptophan]). This would significantly increase complexity and make it more suitable for masters level.
+2.  **Increase Complexity (if simple ratio is chosen)**: If Option A is chosen, consider adding another constraint or asking for a time-dependent change to make it more challenging.
+3.  **Apply LaTeX Formatting**: Format all numerical values (e.g., $5$, $0.5$, $2$) with `$`...`$`.
+
+---
+=== Turn 1: Author refines questions ===
+```xml
+<question> Elementary Flux Mode (EFM) analysis of *E. coli* central metabolism reveals several pathways for synthesizing biomass precursors from glucose. Assume a simplified network where glucose is converted to pyruvate via glycolysis, and pyruvate can be converted to either acetyl-CoA or oxaloacetate. Acetyl-CoA feeds into lipid biosynthesis, while oxaloacetate feeds into amino acid biosynthesis. Given the following flux constraints (all in mmol/gDW/h): glucose uptake = $10$, pyruvate production from glucose = $20$, maximum acetyl-CoA flux = $15$, and maximum oxaloacetate flux = $8$. Calculate the maximum theoretical yield (in g biomass/g glucose) assuming biomass is composed of $60\%$ amino acids (derived from oxaloacetate) and $40\%$ lipids (derived from acetyl-CoA). The amino acid fraction has a carbon content of $1$ mol C per $110$ g of fraction (i.e., $110$ g/C-mol), and the lipid fraction has a carbon content of $1$ mol C per $12$ g of fraction (i.e., $12$ g/C-mol). The molar mass per carbon atom of glucose is assumed to be $36$ g/mol-C. </question>
+
+<question> A curated metabolic network of *E. coli* is represented as a knowledge graph. A probabilistic metabolic optimization (PMO) algorithm is used to predict the optimal flux distribution under aerobic conditions. A specific reaction, catalyzed by citrate synthase (CS), has a probability distribution of fluxes described by a Gaussian distribution with a mean flux of $25$ mmol/gDW/h and a standard deviation of $5$ mmol/gDW/h. The Gibbs free energy change of the CS reaction, $\Delta G$, is known to be related to the flux, $v$, via a linear relationship: $\Delta G = -a \cdot v + b$, where $a = 0.1$ kJ/(mol $\cdot$ mmol/gDW/h) and $b = 5$ kJ/mol. What is the probability that the Gibbs free energy change of the citrate synthase reaction is less than $2$ kJ/mol? Assume the flux distribution is normally distributed. Round to two decimal places.</question>
+
+<question> An *E. coli* strain is engineered to overproduce succinate under anaerobic conditions. The metabolic network includes glycolysis, the TCA cycle (truncated to succinate production), and a lumped reaction representing biomass formation. Glucose is the sole carbon source. Flux balance analysis (FBA) is performed to maximize succinate production while satisfying stoichiometric constraints and the ATP maintenance requirement. Glycolysis produces $2$ ATP per glucose molecule. The truncated TCA cycle produces $1$ ATP per succinate molecule produced from oxaloacetate. The ATP maintenance requirement is $7.6$ mmol ATP/gDW/h. Assuming that biomass formation does not contribute to ATP production or consumption, what is the maximum flux (mmol/gDW/h) of succinate production if glucose uptake is $5$ mmol/gDW/h?</question>
+
+<question> Consider an Elementary Flux Mode (EFM) in *E. coli* involving the conversion of glucose to ethanol. The stoichiometric coefficients for glucose, ethanol, carbon dioxide, and ATP are $-1$, $+2$, $+2$, and $+2$ respectively (all normalized to a glucose uptake rate of $1$ mmol/gDW/h). If the standard Gibbs free energy change for glucose oxidation to ethanol and carbon dioxide is $-235$ kJ/mol, and the standard Gibbs free energy change for ATP hydrolysis is $-30.5$ kJ/mol, calculate the overall Gibbs free energy change (in kJ/mol glucose) for this EFM under standard conditions. </question>
+
+<question> In *E. coli*, the biosynthesis of tryptophan is regulated by feedback inhibition. Chorismate is converted to tryptophan through a series of enzymatic reactions. Tryptophan inhibits the first enzyme in the pathway, anthranilate synthase (AS). Assuming the rate of tryptophan synthesis $v$ can be described as $v = k \cdot [\text{Chorismate}] / [\text{Tryptophan}]$, and that the *rate of tryptophan synthesis remains constant* as concentrations change, and given an initial chorismate concentration of $5$ mM and an initial tryptophan concentration of $0.5$ mM, calculate the chorismate concentration (in mM) when the tryptophan concentration reaches $2$ mM.</question>
+```
+=== Turn 1: Critic feedback ===
+Here's a critique of each question, evaluated against your provided guidelines:
+
+---
+
+**Question 1 Critique:**
+
+*   **Guideline 1 (Model a Chemistry Scenario)**: **Pass**. The scenario describes a simplified metabolic network in *E. coli* for biomass precursor synthesis, which is a common problem in metabolic engineering and biochemical systems analysis.
+*   **Guideline 2 (Expect Numerical/IUPAC answers)**: **Pass**. The expected answer is a numerical value in g biomass/g glucose.
+*   **Guideline 3 (Force Multi-Step Reasoning)**: **Pass**. Requires determining the limiting flux through the pathways, converting fluxes to mass based on carbon content, and then calculating the overall yield.
+*   **Guideline 4 (Avoid Redundancy)**: **Pass**. All provided numerical values (glucose uptake, pyruvate production, maximum acetyl-CoA/oxaloacetate fluxes, biomass composition, carbon contents, glucose molar mass per carbon atom) are necessary for the calculation.
+*   **Guideline 5 (Be Unique)**: **Pass**. This is a good, non-trivial problem that combines stoichiometric analysis with yield calculations, going beyond standard textbook examples.
+*   **Guideline 6 (Single Solution)**: **Pass**. There is one unique numerical answer.
+*   **Guideline 7 (Rigorous, Concise Phrasing)**: **Minor Improvement Needed**. While generally good, the phrasing "The molar mass per carbon atom of glucose is assumed to be $36$ g/mol-C" could be slightly more concise.
+*   **Guideline 8 (Avoid Colloquial/Ambiguous Terminology)**: **Pass**. No colloquialisms or ambiguous terms detected.
+*   **Guideline 9 (Consistent Units, IUPAC Nomenclature)**: **Pass**. Units (mmol/gDW/h, g/C-mol, g/mol-C, g biomass/g glucose) are consistent and clearly defined.
+*   **Guideline 10 (No Multiple Parts)**: **Pass**. The question asks for a single calculation.
+*   **Guideline 11 (Solution Formatting)**: **Pass**. LaTeX syntax is used correctly for all mathematical expressions and variables.
+
+**Actionable Feedback for Question 1:**
+*   **Phrasing**: Rephrase "The molar mass per carbon atom of glucose is assumed to be $36$ g/mol-C" to "Glucose has a carbon content of $36$ g/C-mol." This is more consistent with how the carbon content of the other fractions is described (e.g., "$1$ mol C per $110$ g of fraction (i.e., $110$ g/C-mol)").
+
+---
+
+**Question 2 Critique:**
+
+*   **Guideline 1 (Model a Chemistry Scenario)**: **Pass**. The scenario involves a curated metabolic network, probabilistic optimization, and a specific enzyme reaction (citrate synthase) with associated thermodynamics, all relevant to biochemical systems.
+*   **Guideline 2 (Expect Numerical/IUPAC answers)**: **Pass**. The expected answer is a numerical probability (unitless).
+*   **Guideline 3 (Force Multi-Step Reasoning)**: **Pass**. Requires converting a $\Delta G$ constraint into a flux constraint using the given linear relationship, and then calculating the probability using properties of the normal distribution (Z-score calculation and lookup).
+*   **Guideline 4 (Avoid Redundancy)**: **Pass**. All parameters (mean flux, standard deviation, $a$ and $b$ coefficients, target $\Delta G$) are essential for the calculation. The explicit statement "Assume the flux distribution is normally distributed" is also crucial.
+*   **Guideline 5 (Be Unique)**: **Pass**. This question skillfully integrates concepts from metabolic modeling, thermodynamics, and probability theory, making it a unique and complex problem.
+*   **Guideline 6 (Single Solution)**: **Pass**. There is one unique numerical answer.
+*   **Guideline 7 (Rigorous, Concise Phrasing)**: **Pass**. The phrasing is clear, precise, and concise.
+*   **Guideline 8 (Avoid Colloquial/Ambiguous Terminology)**: **Pass**. No issues.
+*   **Guideline 9 (Consistent Units, IUPAC Nomenclature)**: **Pass**. Units (mmol/gDW/h, kJ/(mol $\cdot$ mmol/gDW/h), kJ/mol) are consistently used and appropriate.
+*   **Guideline 10 (No Multiple Parts)**: **Pass**. The question asks for a single calculation.
+*   **Guideline 11 (Solution Formatting)**: **Pass**. LaTeX syntax is correctly applied.
+
+**Actionable Feedback for Question 2:**
+*   **Excellent Question**: No specific actionable feedback. This question is exceptionally well-designed and meets all guidelines.
+
+---
+
+**Question 3 Critique:**
+
+*   **Guideline 1 (Model a Chemistry Scenario)**: **Pass**. The scenario describes an engineered *E. coli* strain for succinate overproduction, involving central metabolic pathways (glycolysis, truncated TCA) and ATP balance, which is a classic metabolic engineering and FBA setup.
+*   **Guideline 2 (Expect Numerical/IUPAC answers)**: **Pass**. The expected answer is a numerical value in mmol/gDW/h.
+*   **Guideline 3 (Force Multi-Step Reasoning)**: **Pass**. Requires setting up an ATP balance equation, considering ATP production from glycolysis and succinate production, and ATP consumption for maintenance, to solve for the maximum succinate flux.
+*   **Guideline 4 (Avoid Redundancy)**: **Pass**. All provided numerical values (glucose uptake, ATP yield per glucose, ATP yield per succinate, ATP maintenance) are necessary for the ATP balance.
+*   **Guideline 5 (Be Unique)**: **Pass**. This is a solid FBA-style problem focused on ATP balancing for production, which is a practical and complex application in metabolic engineering.
+*   **Guideline 6 (Single Solution)**: **Pass**. There is one unique numerical answer.
+*   **Guideline 7 (Rigorous, Concise Phrasing)**: **Pass**. The phrasing is clear, precise, and concise.
+*   **Guideline 8 (Avoid Colloquial/Ambiguous Terminology)**: **Pass**. No issues.
+*   **Guideline 9 (Consistent Units, IUPAC Nomenclature)**: **Pass**. Units (mmol/gDW/h, mmol ATP/gDW/h) are consistent and appropriate.
+*   **Guideline 10 (No Multiple Parts)**: **Pass**. The question asks for a single calculation.
+*   **Guideline 11 (Solution Formatting)**: **Pass**. LaTeX syntax is correctly applied.
+
+**Actionable Feedback for Question 3:**
+*   **Excellent Question**: No specific actionable feedback. This question is very well-designed and meets all guidelines.
+
+---
+
+**Question 4 Critique:**
+
+*   **Guideline 1 (Model a Chemistry Scenario)**: **Pass**. The scenario involves an Elementary Flux Mode (EFM) in *E. coli* for ethanol production, including stoichiometric coefficients and Gibbs free energy changes, which is a fundamental concept in metabolic modeling and bioenergetics.
+*   **Guideline 2 (Expect Numerical/IUPAC answers)**: **Pass**. The expected answer is a numerical value in kJ/mol glucose.
+*   **Guideline 3 (Force Multi-Step Reasoning)**: **Pass**. Requires combining standard Gibbs free energy changes for the main reaction and ATP hydrolysis, scaled by their respective stoichiometric coefficients, to calculate the overall $\Delta G$.
+*   **Guideline 4 (Avoid Redundancy)**: **Pass**. All provided information (stoichiometric coefficients, standard Gibbs free energy changes for glucose oxidation and ATP hydrolysis) is necessary.
+*   **Guideline 5 (Be Unique)**: **Pass**. This is a good application of bioenergetics principles to a metabolic pathway, representing a practical calculation in systems biology.
+*   **Guideline 6 (Single Solution)**: **Pass**. There is one unique numerical answer.
+*   **Guideline 7 (Rigorous, Concise Phrasing)**: **Pass**. The phrasing is clear, precise, and concise.
+*   **Guideline 8 (Avoid Colloquial/Ambiguous Terminology)**: **Pass**. No issues.
+*   **Guideline 9 (Consistent Units, IUPAC Nomenclature)**: **Pass**. Units (kJ/mol, mmol/gDW/h) are consistent and appropriate.
+*   **Guideline 10 (No Multiple Parts)**: **Pass**. The question asks for a single calculation.
+*   **Guideline 11 (Solution Formatting)**: **Pass**. LaTeX syntax is correctly applied.
+
+**Actionable Feedback for Question 4:**
+*   **Excellent Question**: No specific actionable feedback. This question is very well-designed and meets all guidelines.
+
+---
+
+**Question 5 Critique:**
+
+*   **Guideline 1 (Model a Chemistry Scenario)**: **Pass**. The scenario describes feedback inhibition in tryptophan biosynthesis in *E. coli*, including a rate equation and changing concentrations, a classic topic in enzyme kinetics and metabolic regulation.
+*   **Guideline 2 (Expect Numerical/IUPAC answers)**: **Pass**. The expected answer is a numerical value in mM.
+*   **Guideline 3 (Force Multi-Step Reasoning)**: **Pass**. Requires understanding the concept of constant rate, setting up an equation relating initial and final concentrations based on the given rate law, and solving for the unknown concentration.
+*   **Guideline 4 (Avoid Redundancy)**: **Pass**. All provided information (rate law, initial concentrations, final tryptophan concentration, and the crucial statement that the rate remains constant) is necessary.
+*   **Guideline 5 (Be Unique)**: **Pass**. This is a good application of enzyme kinetics principles to a metabolic pathway, going beyond simple Michaelis-Menten.
+*   **Guideline 6 (Single Solution)**: **Pass**. There is one unique numerical answer.
+*   **Guideline 7 (Rigorous, Concise Phrasing)**: **Pass**. The phrasing is clear, precise, and concise.
+*   **Guideline 8 (Avoid Colloquial/Ambiguous Terminology)**: **Pass**. No issues.
+*   **Guideline 9 (Consistent Units, IUPAC Nomenclature)**: **Pass**. Units (mM) are consistent and appropriate.
+*   **Guideline 10 (No Multiple Parts)**: **Pass**. The question asks for a single calculation.
+*   **Guideline 11 (Solution Formatting)**: **Pass**. LaTeX syntax is correctly applied.
+
+**Actionable Feedback for Question 5:**
+*   **Excellent Question**: No specific actionable feedback. This question is very well-designed and meets all guidelines.
+
+---
+
+**Overall Summary:**
+
+The provided questions are of very high quality. They demonstrate a strong understanding of the specified guidelines, particularly in modeling complex chemistry scenarios, forcing multi-step reasoning, maintaining uniqueness, and adhering to strict formatting requirements. The minor phrasing suggestion for Question 1 is negligible in the context of the overall excellence of the questions.
+=== Turn 2: Author refines questions ===
+```xml
+<question> Elementary Flux Mode (EFM) analysis of *E. coli* central metabolism reveals several pathways for synthesizing biomass precursors from glucose. Assume a simplified network where glucose is converted to pyruvate via glycolysis, and pyruvate can be converted to either acetyl-CoA or oxaloacetate. Acetyl-CoA feeds into lipid biosynthesis, while oxaloacetate feeds into amino acid biosynthesis. Given the following flux constraints (all in mmol/gDW/h): glucose uptake = $10$, pyruvate production from glucose = $20$, maximum acetyl-CoA flux = $15$, and maximum oxaloacetate flux = $8$. Calculate the maximum theoretical yield (in g biomass/g glucose) assuming biomass is composed of $60\%$ amino acids (derived from oxaloacetate) and $40\%$ lipids (derived from acetyl-CoA). The amino acid fraction has a carbon content of $110$ g/C-mol, and the lipid fraction has a carbon content of $12$ g/C-mol. Glucose has a carbon content of $36$ g/C-mol. </question>
+
+<question> A curated metabolic network of *E. coli* is represented as a knowledge graph. A probabilistic metabolic optimization (PMO) algorithm is used to predict the optimal flux distribution under aerobic conditions. A specific reaction, catalyzed by citrate synthase (CS), has a probability distribution of fluxes described by a Gaussian distribution with a mean flux of $25$ mmol/gDW/h and a standard deviation of $5$ mmol/gDW/h. The Gibbs free energy change of the CS reaction, $\Delta G$, is known to be related to the flux, $v$, via a linear relationship: $\Delta G = -a \cdot v + b$, where $a = 0.1$ kJ/(mol $\cdot$ mmol/gDW/h) and $b = 5$ kJ/mol. What is the probability that the Gibbs free energy change of the citrate synthase reaction is less than $2$ kJ/mol? Assume the flux distribution is normally distributed. Round to two decimal places.</question>
+
+<question> An *E. coli* strain is engineered to overproduce succinate under anaerobic conditions. The metabolic network includes glycolysis, the TCA cycle (truncated to succinate production), and a lumped reaction representing biomass formation. Glucose is the sole carbon source. Flux balance analysis (FBA) is performed to maximize succinate production while satisfying stoichiometric constraints and the ATP maintenance requirement. Glycolysis produces $2$ ATP per glucose molecule. The truncated TCA cycle produces $1$ ATP per succinate molecule produced from oxaloacetate. The ATP maintenance requirement is $7.6$ mmol ATP/gDW/h. Assuming that biomass formation does not contribute to ATP production or consumption, what is the maximum flux (mmol/gDW/h) of succinate production if glucose uptake is $5$ mmol/gDW/h?</question>
+
+<question> Consider an Elementary Flux Mode (EFM) in *E. coli* involving the conversion of glucose to ethanol. The stoichiometric coefficients for glucose, ethanol, carbon dioxide, and ATP are $-1$, $+2$, $+2$, and $+2$ respectively (all normalized to a glucose uptake rate of $1$ mmol/gDW/h). If the standard Gibbs free energy change for glucose oxidation to ethanol and carbon dioxide is $-235$ kJ/mol, and the standard Gibbs free energy change for ATP hydrolysis is $-30.5$ kJ/mol, calculate the overall Gibbs free energy change (in kJ/mol glucose) for this EFM under standard conditions. </question>
+
+<question> In *E. coli*, the biosynthesis of tryptophan is regulated by feedback inhibition. Chorismate is converted to tryptophan through a series of enzymatic reactions. Tryptophan inhibits the first enzyme in the pathway, anthranilate synthase (AS). Assuming the rate of tryptophan synthesis $v$ can be described as $v = k \cdot [\text{Chorismate}] / [\text{Tryptophan}]$, and that the *rate of tryptophan synthesis remains constant* as concentrations change, and given an initial chorismate concentration of $5$ mM and an initial tryptophan concentration of $0.5$ mM, calculate the chorismate concentration (in mM) when the tryptophan concentration reaches $2$ mM.</question>
+```
+=== Turn 2: Critic feedback ===
+Here's a critique of each question against the provided guidelines, along with actionable feedback for improvement:
+
+---
+
+### Question 1
+
+**Critique:**
+
+*   **Guideline 1 (Chemistry Scenario):** Strong. Presents a plausible and relevant scenario in metabolic engineering of *E. coli*.
+*   **Guideline 2 (Numerical/IUPAC answer):** Strong. Asks for a numerical yield with clear units.
+*   **Guideline 3 (Multi-Step Reasoning):** Strong. Requires multiple steps: balancing carbon flow, applying flux constraints, converting between C-mol and g, and calculating final yield.
+*   **Guideline 4 (Avoid Redundancy):** Moderate. The mention of "Elementary Flux Mode (EFM) analysis" is largely contextual and somewhat misleading, as the problem reduces to a constrained mass balance without requiring the student to apply EFM principles. While it sets a scene, it's not strictly necessary for the calculation. All other numerical data are essential.
+*   **Guideline 5 (Be Unique):** Strong. It's a practical and complex problem, avoiding standard textbook examples while being relevant to biochemical engineering.
+*   **Guideline 6 (Single Solution):** Strong. Designed to have a unique numerical answer.
+*   **Guideline 7 (Rigorous, Concise Phrasing):** Strong. Phrasing is clear and to the point.
+*   **Guideline 8 (Avoid Colloquial/Ambiguous):** Strong. Uses precise terminology; "feeds into" is common in this context.
+*   **Guideline 9 (Consistent Units/IUPAC):** Strong. Units are consistently applied and clearly specified.
+*   **Guideline 10 (No Multiple Parts):** Strong. Asks for a single value.
+*   **Guideline 11 (Solution Formatting):** Weak. Most numerical values and percentages are not enclosed in `$` for LaTeX formatting (e.g., "$10$", "$20$", "$60\%$", "$110$").
+
+**Actionable Feedback:**
+
+1.  **Redundancy (Guideline 4):** Consider rephrasing or removing "Elementary Flux Mode (EFM) analysis" if the problem is not truly testing EFM principles. For instance, "Mass balance analysis of *E. coli* central metabolism..." would be more accurate.
+2.  **Formatting (Guideline 11):** Enclose all numerical values, percentages, and units that are part of numerical expressions within `$` to ensure consistent LaTeX formatting.
+    *   Example: "...glucose uptake = $10$ mmol/gDW/h, pyruvate production from glucose = $20$ mmol/gDW/h, maximum acetyl-CoA flux = $15$ mmol/gDW/h, and maximum oxaloacetate flux = $8$ mmol/gDW/h."
+    *   Example: "...biomass is composed of $60\%$ amino acids... and $40\%$ lipids..."
+    *   Example: "...carbon content of $110$ g/C-mol... $12$ g/C-mol. Glucose has a carbon content of $36$ g/C-mol."
+
+---
+
+### Question 2
+
+**Critique:**
+
+*   **Guideline 1 (Chemistry Scenario):** Strong. A realistic application of statistical analysis in a metabolic context.
+*   **Guideline 2 (Numerical/IUPAC answer):** Strong. Asks for a numerical probability.
+*   **Guideline 3 (Multi-Step Reasoning):** Strong. Requires algebraic manipulation, understanding normal distributions, Z-score calculation, and probability determination.
+*   **Guideline 4 (Avoid Redundancy):** Weak. Phrases like "A curated metabolic network... represented as a knowledge graph" and "A probabilistic metabolic optimization (PMO) algorithm is used..." and "under aerobic conditions" are purely decorative. They do not affect the calculation, which is a straightforward statistical transformation. This extraneous information can be distracting.
+*   **Guideline 5 (Be Unique):** Moderate. While applying a statistical concept to biochemistry is good, the core problem is a standard transformation of a normal distribution. However, the specific biological context adds uniqueness.
+*   **Guideline 6 (Single Solution):** Strong. Designed to have a unique numerical answer.
+*   **Guideline 7 (Rigorous, Concise Phrasing):** Strong. The mathematical relationship and question are stated precisely.
+*   **Guideline 8 (Avoid Colloquial/Ambiguous):** Strong. Clear and unambiguous.
+*   **Guideline 9 (Consistent Units/IUPAC):** Strong. Units are correctly specified and consistent throughout the linear relationship.
+*   **Guideline 10 (No Multiple Parts):** Strong. Asks for a single value.
+*   **Guideline 11 (Solution Formatting):** Weak. Most numerical values are not enclosed in `$` for LaTeX formatting.
+
+**Actionable Feedback:**
+
+1.  **Redundancy (Guideline 4):** Remove all unnecessary contextual information that doesn't impact the calculation. Focus solely on the statistical and chemical parameters.
+    *   Example: "The flux of a reaction catalyzed by citrate synthase (CS) is described by a Gaussian distribution with a mean flux of $25$ mmol/gDW/h and a standard deviation of $5$ mmol/gDW/h. The Gibbs free energy change, $\Delta G$, is related to the flux, $v$, via $\Delta G = -a \cdot v + b$, where $a = 0.1$ kJ/(mol $\cdot$ mmol/gDW/h) and $b = 5$ kJ/mol. What is the probability that $\Delta G$ is less than $2$ kJ/mol?"
+2.  **Formatting (Guideline 11):** Enclose all numerical values within `$` for consistent LaTeX formatting.
+    *   Example: "...mean flux of $25$ mmol/gDW/h and a standard deviation of $5$ mmol/gDW/h."
+    *   Example: "...$a = 0.1$ kJ/(mol $\cdot$ mmol/gDW/h) and $b = 5$ kJ/mol."
+    *   Example: "...less than $2$ kJ/mol? Round to two decimal places."
+
+---
+
+### Question 3
+
+**Critique:**
+
+*   **Guideline 1 (Chemistry Scenario):** Strong. A highly relevant and realistic problem in metabolic engineering.
+*   **Guideline 2 (Numerical/IUPAC answer):** Strong. Asks for a numerical flux with clear units.
+*   **Guideline 3 (Multi-Step Reasoning):** Strong. Requires setting up and solving an ATP balance equation, linking glucose consumption to ATP production and maintenance.
+*   **Guideline 4 (Avoid Redundancy):** Moderate. "Lumped reaction representing biomass formation" is mentioned, but then immediately rendered irrelevant by "biomass formation does not contribute to ATP production or consumption." This detail is redundant. The mention of "FBA" is contextual and less problematic than in Q2, as the problem is a direct calculation of a constraint (ATP balance) often used in FBA.
+*   **Guideline 5 (Be Unique):** Moderate. This is a common and fundamental problem type in metabolic engineering (ATP yield and maintenance). However, it's well-formulated for a numerical assessment.
+*   **Guideline 6 (Single Solution):** Strong. Designed to have a unique numerical answer.
+*   **Guideline 7 (Rigorous, Concise Phrasing):** Strong. The conditions and relationships are clearly stated.
+*   **Guideline 8 (Avoid Colloquial/Ambiguous):** Strong. Clear and unambiguous.
+*   **Guideline 9 (Consistent Units/IUPAC):** Strong. Units are consistently applied and clearly specified.
+*   **Guideline 10 (No Multiple Parts):** Strong. Asks for a single value.
+*   **Guideline 11 (Solution Formatting):** Weak. Most numerical values are not enclosed in `$` for LaTeX formatting.
+
+**Actionable Feedback:**
+
+1.  **Redundancy (Guideline 4):** Remove the redundant information about biomass formation: "Assuming that biomass formation does not contribute to ATP production or consumption." The problem is clearer without it.
+    *   Example: "The metabolic network includes glycolysis, the TCA cycle (truncated to succinate production). Glucose is the sole carbon source." (Then directly go into ATP details).
+2.  **Formatting (Guideline 11):** Enclose all numerical values within `$` for consistent LaTeX formatting.
+    *   Example: "...produces $2$ ATP per glucose molecule. The truncated TCA cycle produces $1$ ATP per succinate molecule... The ATP maintenance requirement is $7.6$ mmol ATP/gDW/h."
+    *   Example: "...glucose uptake is $5$ mmol/gDW/h?"
+
+---
+
+### Question 4
+
+**Critique:**
+
+*   **Guideline 1 (Chemistry Scenario):** Strong. A classic biochemical energetics problem involving energy coupling.
+*   **Guideline 2 (Numerical/IUPAC answer):** Strong. Asks for a numerical Gibbs free energy change with clear units.
+*   **Guideline 3 (Multi-Step Reasoning):** Strong. Requires interpreting stoichiometric coefficients, applying Hess's Law, and accounting for ATP coupling.
+*   **Guideline 4 (Avoid Redundancy):** Moderate. "Elementary Flux Mode (EFM)" is mentioned, which is contextual but not directly used in the calculation, as the specific stoichiometry is provided. However, it frames the problem as a specific biological pathway, which is acceptable.
+*   **Guideline 5 (Be Unique):** Moderate. It's a standard type of problem (thermodynamics of coupled reactions) but well-framed within a biological context.
+*   **Guideline 6 (Single Solution):** Strong. Designed to have a unique numerical answer.
+*   **Guideline 7 (Rigorous, Concise Phrasing):** Strong. The conditions and relationships are clearly stated.
+*   **Guideline 8 (Avoid Colloquial/Ambiguous):** Strong. Clear and unambiguous.
+*   **Guideline 9 (Consistent Units/IUPAC):** Strong. Units are consistently applied and clearly specified.
+*   **Guideline 10 (No Multiple Parts):** Strong. Asks for a single value.
+*   **Guideline 11 (Solution Formatting):** Weak. Most numerical values are not enclosed in `$` for LaTeX formatting.
+
+**Actionable Feedback:**
+
+1.  **Formatting (Guideline 11):** Enclose all numerical values within `$` for consistent LaTeX formatting.
+    *   Example: "...coefficients for glucose, ethanol, carbon dioxide, and ATP are $-1$, $+2$, $+2$, and $+2$ respectively..."
+    *   Example: "...uptake rate of $1$ mmol/gDW/h)."
+    *   Example: "...is $-235$ kJ/mol, and the standard Gibbs free energy change for ATP hydrolysis is $-30.5$ kJ/mol..."
+
+---
+
+### Question 5
+
+**Critique:**
+
+*   **Guideline 1 (Chemistry Scenario):** Strong. A plausible scenario involving enzyme kinetics and metabolic regulation.
+*   **Guideline 2 (Numerical/IUPAC answer):** Strong. Asks for a numerical concentration with clear units.
+*   **Guideline 3 (Multi-Step Reasoning):** Strong. Requires setting up an equation based on the constant rate condition and solving for the unknown concentration.
+*   **Guideline 4 (Avoid Redundancy):** Moderate. "Tryptophan inhibits the first enzyme in the pathway, anthranilate synthase (AS)." While true and good context, the specific enzyme name "anthranilate synthase (AS)" is not strictly necessary for the calculation itself, given the rate law is provided. It's a minor point, as it adds realism.
+*   **Guideline 5 (Be Unique):** Moderate. While rate law problems are common, the specific form of feedback inhibition and the "constant rate" condition make it a good, targeted problem.
+*   **Guideline 6 (Single Solution):** Strong. Designed to have a unique numerical answer.
+*   **Guideline 7 (Rigorous, Concise Phrasing):** Strong. The rate law and the "constant rate" assumption are clearly stated.
+*   **Guideline 8 (Avoid Colloquial/Ambiguous):** Strong. Clear and unambiguous.
+*   **Guideline 9 (Consistent Units/IUPAC):** Strong. Units are consistently applied. Biochemical names are acceptable.
+*   **Guideline 10 (No Multiple Parts):** Strong. Asks for a single value.
+*   **Guideline 11 (Solution Formatting):** Weak. Most numerical values are not enclosed in `$` for LaTeX formatting.
+
+**Actionable Feedback:**
+
+1.  **Formatting (Guideline 11):** Enclose all numerical values within `$` for consistent LaTeX formatting.
+    *   Example: "...initial chorismate concentration of $5$ mM and an initial tryptophan concentration of $0.5$ mM..."
+    *   Example: "...tryptophan concentration reaches $2$ mM."
+
+---
+
+**Overall Summary and Recommendation:**
+
+The questions are generally strong in their scientific content, requiring multi-step reasoning within plausible chemistry/biochemistry scenarios. The main areas for improvement are:
+
+1.  **Strict adherence to Guideline 11 (LaTeX Formatting):** This is a consistent and easily fixable issue across all questions. Every single number (e.g., $10$, $20$, $60$, $0.5$, $2$, $5$, $7.6$, $235$, $30.5$, $0.1$, $8$, $12$, $36$, $110$) and variable should be enclosed in `$`.
+2.  **Refinement of Redundancy (Guideline 4):** Review questions for any contextual information (like "knowledge graph," "PMO algorithm," specific enzyme names when a general mechanism is given) that does not directly contribute to the problem's solution or understanding. While context can be good, extraneous details can be distracting. Questions 1, 2, and 3 have the most room for improvement here.
+
+Addressing these points will significantly improve the quality and professionalism of the assessment.
+=== Turn 3: Author refines questions ===
+```xml
+<question> Mass balance analysis of *E. coli* central metabolism reveals several pathways for synthesizing biomass precursors from glucose. Assume a simplified network where glucose is converted to pyruvate via glycolysis, and pyruvate can be converted to either acetyl-CoA or oxaloacetate. Acetyl-CoA feeds into lipid biosynthesis, while oxaloacetate feeds into amino acid biosynthesis. Given the following flux constraints (all in mmol/gDW/h): glucose uptake = $10$, pyruvate production from glucose = $20$, maximum acetyl-CoA flux = $15$, and maximum oxaloacetate flux = $8$. Calculate the maximum theoretical yield (in g biomass/g glucose) assuming biomass is composed of $60\%$ amino acids (derived from oxaloacetate) and $40\%$ lipids (derived from acetyl-CoA). The amino acid fraction has a carbon content of $110$ g/C-mol, and the lipid fraction has a carbon content of $12$ g/C-mol. Glucose has a carbon content of $36$ g/C-mol. </question>
+
+<question> The flux of a reaction catalyzed by citrate synthase (CS) is described by a Gaussian distribution with a mean flux of $25$ mmol/gDW/h and a standard deviation of $5$ mmol/gDW/h. The Gibbs free energy change, $\Delta G$, is related to the flux, $v$, via $\Delta G = -a \cdot v + b$, where $a = 0.1$ kJ/(mol $\cdot$ mmol/gDW/h) and $b = 5$ kJ/mol. What is the probability that $\Delta G$ is less than $2$ kJ/mol? Assume the flux distribution is normally distributed. Round to two decimal places.</question>
+
+<question> An *E. coli* strain is engineered to overproduce succinate under anaerobic conditions. The metabolic network includes glycolysis, the TCA cycle (truncated to succinate production). Glucose is the sole carbon source. Flux balance analysis (FBA) is performed to maximize succinate production while satisfying stoichiometric constraints and the ATP maintenance requirement. Glycolysis produces $2$ ATP per glucose molecule. The truncated TCA cycle produces $1$ ATP per succinate molecule produced from oxaloacetate. The ATP maintenance requirement is $7.6$ mmol ATP/gDW/h. What is the maximum flux (mmol/gDW/h) of succinate production if glucose uptake is $5$ mmol/gDW/h?</question>
+
+<question> Consider an Elementary Flux Mode (EFM) in *E. coli* involving the conversion of glucose to ethanol. The stoichiometric coefficients for glucose, ethanol, carbon dioxide, and ATP are $-1$, $+2$, $+2$, and $+2$ respectively (all normalized to a glucose uptake rate of $1$ mmol/gDW/h). If the standard Gibbs free energy change for glucose oxidation to ethanol and carbon dioxide is $-235$ kJ/mol, and the standard Gibbs free energy change for ATP hydrolysis is $-30.5$ kJ/mol, calculate the overall Gibbs free energy change (in kJ/mol glucose) for this EFM under standard conditions. </question>
+
+<question> In *E. coli*, the biosynthesis of tryptophan is regulated by feedback inhibition. Chorismate is converted to tryptophan through a series of enzymatic reactions. Tryptophan inhibits the first enzyme in the pathway. Assuming the rate of tryptophan synthesis $v$ can be described as $v = k \cdot [\text{Chorismate}] / [\text{Tryptophan}]$, and that the *rate of tryptophan synthesis remains constant* as concentrations change, and given an initial chorismate concentration of $5$ mM and an initial tryptophan concentration of $0.5$ mM, calculate the chorismate concentration (in mM) when the tryptophan concentration reaches $2$ mM.</question>
+```
+=== Final questions generated ===

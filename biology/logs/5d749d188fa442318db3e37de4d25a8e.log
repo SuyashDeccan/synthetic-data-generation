@@ -1,0 +1,181 @@
+=== Turn 0: Author generates questions ===
+Here are some novel, undergraduate-level biology questions:
+
+1.  <question>A clinical trial investigates the effectiveness of a new counseling strategy on medication adherence in asthma patients. Patients are randomized into two groups: a control group receiving standard care and an intervention group receiving the new counseling strategy. Baseline adherence, measured using the Morisky Medication Adherence Scale-8 (MMAS-8), is $5.0 \pm 1.0$ (mean $\pm$ SD) in both groups. After 3 months, the MMAS-8 score in the control group is $5.2 \pm 1.2$, while the intervention group shows an MMAS-8 score of $6.8 \pm 1.1$. Assuming the MMAS-8 score ranges from 0 to 8, calculate the percentage improvement in adherence for the intervention group, relative to the change observed in the control group.  Express your answer as a percentage (%).</question>
+
+2.  <question>A study is designed to assess the impact of a visual aid intervention on inhaler technique.  Researchers recruit 60 participants with COPD. 30 participants are randomly assigned to the intervention group receiving a video demonstration of proper inhaler technique, while the other 30 receive standard verbal instructions.  Before the intervention, 10% of participants in each group demonstrate correct inhaler technique. After the intervention, 60% of the intervention group demonstrate correct technique, compared to 20% in the control group.  Calculate the absolute risk reduction (ARR) of incorrect inhaler technique due to the intervention. Express your answer as a decimal.</question>
+
+3.  <question>Researchers are investigating the relationship between medication adherence and clinical outcomes in a group of patients with hypertension. They calculate an Adherence Index (AI) that combines medication possession ratio (MPR) and device usage data for a cohort of 100 patients.  The average MPR is 0.8, and the average score for correct device usage (on a scale of 0 to 1) is 0.7. The AI is calculated as the product of MPR and device usage score. If patients with an AI above 0.6 show a 20% lower risk of cardiovascular events compared to those below 0.6, and 60 patients have an AI above 0.6, by what percentage is the total number of cardiovascular events reduced in the cohort? Express your answer as a percentage (%).</question>
+
+4.  <question>A research team is evaluating the effect of different interventions on improving medication adherence among patients with diabetes.  They conduct a randomized controlled trial with three groups: Group A receives standard care, Group B receives motivational interviewing, and Group C receives a combination of motivational interviewing and a simplified medication schedule. At baseline, adherence, measured using the percentage of days with correct medication intake, is 50% in all three groups.  After 6 months, Group A shows no change in adherence, Group B shows an increase to 65%, and Group C shows an increase to 80%. Calculate the number needed to treat (NNT) to achieve a 15% improvement in adherence using the combined intervention (Group C) compared to standard care (Group A). Assume the "treatment" is the intervention that leads to the adherence improvement.</question>
+
+5.  <question>In a clinical study, two different counseling approaches are used to improve adherence to antiretroviral therapy in HIV-positive patients. Group 1 receives brief counseling sessions (15 minutes each), while Group 2 receives extended counseling sessions (45 minutes each). The baseline adherence, measured by self-report, is 60% in both groups. After three months, adherence in Group 1 increases to 70% and in Group 2 increases to 85%. Assuming the cost per patient per month for brief counseling is $5, and for extended counseling is $15, calculate the cost per 1% increase in adherence for the extended counseling group. Express your answer in dollars ($).</question>
+=== Turn 0: Critic feedback ===
+Here is a critique of each question against your provided guidelines:
+
+---
+
+### Question 1
+
+<question>A clinical trial investigates the effectiveness of a new counseling strategy on medication adherence in asthma patients. Patients are randomized into two groups: a control group receiving standard care and an intervention group receiving the new counseling strategy. Baseline adherence, measured using the Morisky Medication Adherence Scale-8 (MMAS-8), is $5.0 \pm 1.0$ (mean $\pm$ SD) in both groups. After 3 months, the MMAS-8 score in the control group is $5.2 \pm 1.2$, while the intervention group shows an MMAS-8 score of $6.8 \pm 1.1$. Assuming the MMAS-8 score ranges from 0 to 8, calculate the percentage improvement in adherence for the intervention group, relative to the change observed in the control group. Express your answer as a percentage (%).</question>
+
+**Critique:**
+
+*   **Guideline 3 (Force Multi-Step Reasoning) & 6 (Single Solution):** The phrasing "calculate the percentage improvement in adherence for the intervention group, relative to the change observed in the control group" is ambiguous. It leads to multiple plausible interpretations for the denominator of the percentage, violating the single solution principle.
+    *   *Interpretation 1 (Net improvement as % of control change):* $((\Delta I - \Delta C) / \Delta C) \times 100\% = ((1.8 - 0.2) / 0.2) \times 100\% = 800\%$.
+    *   *Interpretation 2 (Net improvement as % of maximum possible improvement from baseline):* $((\Delta I - \Delta C) / (\text{Max Score} - \text{Baseline})) \times 100\% = (1.6 / (8 - 5)) \times 100\% = 53.33\%$.
+    *   *Interpretation 3 (Percentage point difference as % of control group's final adherence):* This is less likely given the wording.
+*   **Guideline 7 (Rigorous, Concise Phrasing):** The ambiguity in "relative to the change observed in the control group" makes the phrasing insufficiently rigorous for a precise quantitative problem.
+
+**Actionable Feedback for Improvement:**
+
+*   **Clarify the calculation's denominator:** Rephrase to explicitly state what the "percentage improvement" should be relative to. For instance:
+    *   "Calculate the percentage of the *maximum possible adherence improvement* (from baseline to maximum score) that the *net improvement* (intervention change minus control change) represents."
+    *   OR "By what percentage does the *net adherence improvement* in the intervention group (beyond standard care) exceed the improvement seen in the control group?" (This would lead to the 800% result, which might be unusual in context but mathematically clear).
+
+---
+
+### Question 2
+
+<question>A study is designed to assess the impact of a visual aid intervention on inhaler technique. Researchers recruit 60 participants with COPD. 30 participants are randomly assigned to the intervention group receiving a video demonstration of proper inhaler technique, while the other 30 receive standard verbal instructions. Before the intervention, 10% of participants in each group demonstrate correct inhaler technique. After the intervention, 60% of the intervention group demonstrate correct technique, compared to 20% in the control group. Calculate the absolute risk reduction (ARR) of incorrect inhaler technique due to the intervention. Express your answer as a decimal.</question>
+
+**Critique:**
+
+*   **Guideline 3 (Force Multi-Step Reasoning):** While correct, the calculation for Absolute Risk Reduction (ARR) is a direct application of a definition (Risk_control - Risk_intervention). For an undergraduate level, it could benefit from requiring slightly more complex derivation of the "risk" values or an additional intermediate step. The baseline data (10% before intervention) serves as a distractor rather than being integral to the calculation, which is acceptable but could be more integrated if multi-step reasoning is to be maximized.
+*   **Guideline 9 (Units must be consistent):** Asking for a "decimal" is generally acceptable for a proportion, but "proportion" is slightly more precise terminology in statistical contexts.
+
+**Actionable Feedback for Improvement:**
+
+*   **Increase complexity for multi-step reasoning:** Consider a scenario where the percentages of correct/incorrect technique need to be derived from raw numbers of patients or from a composite score that requires prior calculation, making the identification of the "risk" less direct.
+*   **Minor phrasing suggestion:** "Express your answer as a proportion (a decimal between 0 and 1)."
+
+---
+
+### Question 3
+
+<question>Researchers are investigating the relationship between medication adherence and clinical outcomes in a group of patients with hypertension. They calculate an Adherence Index (AI) that combines medication possession ratio (MPR) and device usage data for a cohort of 100 patients. The average MPR is 0.8, and the average score for correct device usage (on a scale of 0 to 1) is 0.7. The AI is calculated as the product of MPR and device usage score. If patients with an AI above 0.6 show a 20% lower risk of cardiovascular events compared to those below 0.6, and 60 patients have an AI above 0.6, by what percentage is the total number of cardiovascular events reduced in the cohort? Express your answer as a percentage (%).</question>
+
+**Critique:**
+
+*   **Guideline 3 (Force Multi-Step Reasoning):** This question effectively forces multi-step reasoning. It requires students to correctly identify the relevant information (number of patients in each group, relative risk reduction) and disregard irrelevant distractors (average MPR, average device usage, specific AI calculation for the averages). The calculation of the overall cohort risk reduction is robust.
+*   **Overall:** This is a strong question that aligns well with all provided guidelines.
+
+**Actionable Feedback for Improvement:**
+
+*   No significant changes recommended. The question is well-designed.
+
+---
+
+### Question 4
+
+<question>A research team is evaluating the effect of different interventions on improving medication adherence among patients with diabetes. They conduct a randomized controlled trial with three groups: Group A receives standard care, Group B receives motivational interviewing, and Group C receives a combination of motivational interviewing and a simplified medication schedule. At baseline, adherence, measured using the percentage of days with correct medication intake, is 50% in all three groups. After 6 months, Group A shows no change in adherence, Group B shows an increase to 65%, and Group C shows an increase to 80%. Calculate the number needed to treat (NNT) to achieve a 15% improvement in adherence using the combined intervention (Group C) compared to standard care (Group A). Assume the "treatment" is the intervention that leads to the adherence improvement.</question>
+
+**Critique:**
+
+*   **Guideline 3 (Force Multi-Step Reasoning) & 6 (Single Solution) & 7 (Rigorous, Concise Phrasing):** The primary issue is the inference required for NNT. NNT is calculated based on the *proportion of individuals* who experience a specific binary outcome (an "event"). The question provides *group average adherence scores*. It is not possible to directly infer the *percentage of patients* achieving a specific threshold (e.g., 65% adherence) from a group average (e.g., 80% adherence) without making an unjustified assumption about the distribution of individual scores. This ambiguity violates the "Single Solution" principle. For instance, if Group C's average is 80%, it doesn't mean 100% of patients achieved *at least* 65% adherence; some could be lower, some higher, averaging to 80%.
+
+**Actionable Feedback for Improvement:**
+
+*   **Redefine the outcome for NNT in terms of proportions of patients:** Instead of group average adherence scores, provide the percentage of patients in each group who achieved the specified outcome (e.g., "achieved an adherence level of 65% or more," or "showed an adherence improvement of at least 15 percentage points").
+    *   *Example Fix:* "After 6 months, in Group A, 5% of patients showed an adherence improvement of at least 15 percentage points. In Group C, 70% of patients showed an adherence improvement of at least 15 percentage points."
+    *   This makes the calculation of the "event rate" for NNT clear and unambiguous.
+
+---
+
+### Question 5
+
+<question>In a clinical study, two different counseling approaches are used to improve adherence to antiretroviral therapy in HIV-positive patients. Group 1 receives brief counseling sessions (15 minutes each), while Group 2 receives extended counseling sessions (45 minutes each). The baseline adherence, measured by self-report, is 60% in both groups. After three months, adherence in Group 1 increases to 70% and in Group 2 increases to 85%. Assuming the cost per patient per month for brief counseling is $5, and for extended counseling is $15, calculate the cost per 1% increase in adherence for the extended counseling group. Express your answer in dollars ($).</question>
+
+**Critique:**
+
+*   **Overall:** This is a well-structured question that aligns well with all provided guidelines. It models a relevant scenario, expects a numerical answer, forces clear multi-step reasoning (total cost over time, then cost per percentage point increase), avoids "how-based" questions, is unique, has a single clear solution, uses rigorous phrasing, and correctly handles units. The inclusion of Group 1 data acts as an appropriate distractor.
+
+**Actionable Feedback for Improvement:**
+
+*   No changes recommended. The question is excellent.
+
+---
+=== Turn 1: Author refines questions ===
+```xml
+<question>A clinical trial investigates the effectiveness of a new counseling strategy on medication adherence in asthma patients. Patients are randomized into two groups: a control group receiving standard care and an intervention group receiving the new counseling strategy. Baseline adherence, measured using the Morisky Medication Adherence Scale-8 (MMAS-8), is $5.0 \pm 1.0$ (mean $\pm$ SD) in both groups. After 3 months, the MMAS-8 score in the control group is $5.2 \pm 1.2$, while the intervention group shows an MMAS-8 score of $6.8 \pm 1.1$. Assuming the MMAS-8 score ranges from 0 to 8, calculate the percentage of the *maximum possible adherence improvement* (from baseline to the maximum score of 8) that the *net improvement* in the intervention group represents (intervention change minus control change). Express your answer as a percentage (%).</question>
+
+<question>A study is designed to assess the impact of a visual aid intervention on inhaler technique. Researchers recruit 60 participants with COPD. 30 participants are randomly assigned to the intervention group receiving a video demonstration of proper inhaler technique, while the other 30 receive standard verbal instructions. Before the intervention, 3 patients in each group demonstrate correct inhaler technique. After the intervention, 18 participants in the intervention group demonstrate correct technique, compared to 6 in the control group. Calculate the absolute risk reduction (ARR) of incorrect inhaler technique due to the intervention. Express your answer as a proportion (a decimal between 0 and 1).</question>
+
+<question>Researchers are investigating the relationship between medication adherence and clinical outcomes in a group of patients with hypertension. They calculate an Adherence Index (AI) that combines medication possession ratio (MPR) and device usage data for a cohort of 100 patients.  The average MPR is 0.8, and the average score for correct device usage (on a scale of 0 to 1) is 0.7. The AI is calculated as the product of MPR and device usage score. If patients with an AI above 0.6 show a 20% lower risk of cardiovascular events compared to those below 0.6, and 60 patients have an AI above 0.6, by what percentage is the total number of cardiovascular events reduced in the cohort? Express your answer as a percentage (%).</question>
+
+<question>A research team is evaluating the effect of different interventions on improving medication adherence among patients with diabetes. They conduct a randomized controlled trial with three groups: Group A receives standard care, Group B receives motivational interviewing, and Group C receives a combination of motivational interviewing and a simplified medication schedule. At baseline, adherence, measured using the percentage of days with correct medication intake, is similar across all groups. After 6 months, in Group A, 5% of patients showed an adherence improvement of at least 15 percentage points. In Group B, 40% of patients showed an adherence improvement of at least 15 percentage points. In Group C, 70% of patients showed an adherence improvement of at least 15 percentage points. Calculate the number needed to treat (NNT) to achieve at least a 15 percentage point improvement in adherence using the combined intervention (Group C) compared to standard care (Group A).</question>
+
+<question>In a clinical study, two different counseling approaches are used to improve adherence to antiretroviral therapy in HIV-positive patients. Group 1 receives brief counseling sessions (15 minutes each), while Group 2 receives extended counseling sessions (45 minutes each). The baseline adherence, measured by self-report, is 60% in both groups. After three months, adherence in Group 1 increases to 70% and in Group 2 increases to 85%. Assuming the cost per patient per month for brief counseling is $5, and for extended counseling is $15, calculate the cost per 1% increase in adherence for the extended counseling group. Express your answer in dollars ($).</question>
+```
+=== Turn 1: Critic feedback ===
+Here's a critique of each question against the provided guidelines, with concise, actionable feedback:
+
+---
+
+**Critique of Question 1:**
+`<question>A clinical trial investigates the effectiveness of a new counseling strategy on medication adherence in asthma patients. Patients are randomized into two groups: a control group receiving standard care and an intervention group receiving the new counseling strategy. Baseline adherence, measured using the Morisky Medication Adherence Scale-8 (MMAS-8), is $5.0 \pm 1.0$ (mean $\pm$ SD) in both groups. After 3 months, the MMAS-8 score in the control group is $5.2 \pm 1.2$, while the intervention group shows an MMAS-8 score of $6.8 \pm 1.1$. Assuming the MMAS-8 score ranges from 0 to 8, calculate the percentage of the *maximum possible adherence improvement* (from baseline to the maximum score of 8) that the *net improvement* in the intervention group represents (intervention change minus control change). Express your answer as a percentage (%).</question>`
+
+*   **Guideline 1 (Biology Scenario/Physical Reasoning):** Good scenario, but calculation is purely arithmetic, not requiring biological conceptual understanding beyond defining terms. Lacks physical reasoning.
+*   **Guideline 3 (Multi-Step Reasoning/Biological Principles):** Multi-step arithmetic is present. However, it involves no distinct biological principles, only calculation of changes and percentages. The standard deviations are distractors.
+*   **Actionable Feedback:** To strengthen "biological principles," consider relating the MMAS-8 score to a physiological outcome (e.g., symptom control, forced expiratory volume) and asking for a calculation that integrates this relationship. Otherwise, recognize it's a quantitative reasoning question in a biological context, rather than one testing deep biological principles. The current question is a strong quantitative reasoning problem for applied health sciences.
+
+---
+
+**Critique of Question 2:**
+`<question>A study is designed to assess the impact of a visual aid intervention on inhaler technique. Researchers recruit 60 participants with COPD. 30 participants are randomly assigned to the intervention group receiving a video demonstration of proper inhaler technique, while the other 30 receive standard verbal instructions. Before the intervention, 3 patients in each group demonstrate correct inhaler technique. After the intervention, 18 participants in the intervention group demonstrate correct technique, compared to 6 in the control group. Calculate the absolute risk reduction (ARR) of incorrect inhaler technique due to the intervention. Express your answer as a proportion (a decimal between 0 and 1).</question>`
+
+*   **Guideline 1 (Biology Scenario/Physical Reasoning):** Good scenario. The calculation of Absolute Risk Reduction (ARR) is a common epidemiological measure, but the reasoning is statistical, not biological. Lacks physical reasoning.
+*   **Guideline 3 (Multi-Step Reasoning/Biological Principles):** Multi-step calculation of event rates and then ARR is present. The "biological principle" is the definition of ARR itself, a statistical concept in a biological context. The baseline data for correct technique is a distractor.
+*   **Actionable Feedback:** Similar to Q1, this is an excellent quantitative application of an epidemiological metric. To increase "biological principles," consider linking inhaler technique improvement to a direct physiological effect (e.g., drug deposition in lungs, requiring understanding of respiratory mechanics), making the calculation part of understanding a biological process.
+
+---
+
+**Critique of Question 3:**
+`<question>Researchers are investigating the relationship between medication adherence and clinical outcomes in a group of patients with hypertension. They calculate an Adherence Index (AI) that combines medication possession ratio (MPR) and device usage data for a cohort of 100 patients. The average MPR is 0.8, and the average score for correct device usage (on a scale of 0 to 1) is 0.7. The AI is calculated as the product of MPR and device usage score. If patients with an AI above 0.6 show a 20% lower risk of cardiovascular events compared to those below 0.6, and 60 patients have an AI above 0.6, by what percentage is the total number of cardiovascular events reduced in the cohort? Express your answer as a percentage (%).</question>`
+
+*   **Guideline 1 (Biology Scenario/Physical Reasoning):** Good biological context. Reasoning is purely quantitative.
+*   **Guideline 3 (Multi-Step Reasoning/Biological Principles):** The "average MPR" and "average device usage" are distractors; they are not used in the common interpretation of this type of problem. The definition of "total number of cardiovascular events reduced in the cohort" is ambiguous without a clear baseline comparison.
+*   **Guideline 6 (Single Solution):** Ambiguous. The most common interpretation (population attributable risk reduction) yields 12%, but the question doesn't explicitly define the baseline for "total reduction."
+*   **Guideline 7 (Rigorous, concise phrasing):** Not rigorous enough. The phrasing for the total reduction is unclear, and irrelevant information (average MPR, device usage, and AI calculation method) causes confusion.
+*   **Actionable Feedback:**
+    1.  **Remove distractors:** Eliminate "The average MPR is 0.8, and the average score for correct device usage (on a scale of 0 to 1) is 0.7. The AI is calculated as the product of MPR and device usage score." unless they are actually used.
+    2.  **Clarify baseline:** Rephrase to explicitly state the baseline for calculating percentage reduction. For example: "Assuming that patients with an AI above 0.6 would have had the same risk of cardiovascular events as those below 0.6 if their adherence was lower, by what percentage is the total number of cardiovascular events reduced in the cohort compared to if all patients had an AI below 0.6?" (This explicitly defines the 12% calculation).
+
+---
+
+**Critique of Question 4:**
+`<question>A research team is evaluating the effect of different interventions on improving medication adherence among patients with diabetes. They conduct a randomized controlled trial with three groups: Group A receives standard care, Group B receives motivational interviewing, and Group C receives a combination of motivational interviewing and a simplified medication schedule. At baseline, adherence, measured using the percentage of days with correct medication intake, is similar across all groups. After 6 months, in Group A, 5% of patients showed an adherence improvement of at least 15 percentage points. In Group B, 40% of patients showed an adherence improvement of at least 15 percentage points. In Group C, 70% of patients showed an adherence improvement of at least 15 percentage points. Calculate the number needed to treat (NNT) to achieve at least a 15 percentage point improvement in adherence using the combined intervention (Group C) compared to standard care (Group A).</question>`
+
+*   **Guideline 1 (Biology Scenario/Physical Reasoning):** Strong biological context (diabetes, adherence). Reasoning is statistical (NNT calculation).
+*   **Guideline 3 (Multi-Step Reasoning/Biological Principles):** Correctly requires calculating Absolute Benefit Increase and then NNT. NNT is a key concept in clinical epidemiology. Group B data acts as an appropriate distractor.
+*   **Guideline 9 (Units/Symbols):** NNT is typically reported as a whole number (rounded up).
+*   **Actionable Feedback:** This is a well-structured question. Consider adding "round up to the nearest whole number" to ensure a consistent interpretation of NNT. Its primary strength lies in testing the application of a crucial epidemiological metric in a clinical context.
+
+---
+
+**Critique of Question 5:**
+`<question>In a clinical study, two different counseling approaches are used to improve adherence to antiretroviral therapy in HIV-positive patients. Group 1 receives brief counseling sessions (15 minutes each), while Group 2 receives extended counseling sessions (45 minutes each). The baseline adherence, measured by self-report, is 60% in both groups. After three months, adherence in Group 1 increases to 70% and in Group 2 increases to 85%. Assuming the cost per patient per month for brief counseling is $5, and for extended counseling is $15, calculate the cost per 1% increase in adherence for the extended counseling group. Express your answer in dollars ($).</question>`
+
+*   **Guideline 1 (Biology Scenario/Physical Reasoning):** Strong biological context (HIV, adherence). Reasoning is cost-effectiveness calculation.
+*   **Guideline 3 (Multi-Step Reasoning/Biological Principles):** Multi-step calculation of total cost and per-percentage increase. The information for Group 1 and baseline for Group 1 are appropriate distractors. The "biological principle" here is economic evaluation in health (applied biology), rather than a core biological process.
+*   **Actionable Feedback:** This is a strong quantitative question for applied health sciences. It effectively tests multi-step arithmetic and cost-effectiveness calculation within a relevant clinical scenario. No significant improvements needed if the goal is to assess quantitative reasoning in applied biology/health economics.
+
+---
+**Overall Summary:**
+
+The questions are generally strong in modeling biological scenarios (clinical trials/studies), forcing multi-step numerical reasoning, avoiding "how-based" questions, being unique, having single solutions (except Q3), and being non-multipart. They are best suited for assessing quantitative skills in **biostatistics, clinical epidemiology, or public health**, which are applied fields of biology.
+
+The primary area for improvement, if the strict interpretation of "biological principles or steps" and "physical reasoning" is emphasized, is that the calculations themselves are largely mathematical/statistical, not directly involving the mechanics or principles of core biological systems. However, within the realm of *applied* biology and health sciences, these are excellent questions.
+=== Turn 2: Author refines questions ===
+```xml
+<question>A clinical trial investigates the effectiveness of a new counseling strategy on medication adherence in asthma patients. Patients are randomized into two groups: a control group receiving standard care and an intervention group receiving the new counseling strategy. Baseline adherence, measured using the Morisky Medication Adherence Scale-8 (MMAS-8), is $5.0$ in both groups. After 3 months, the MMAS-8 score in the control group is $5.2$, while the intervention group shows an MMAS-8 score of $6.8$. Assuming the MMAS-8 score ranges from 0 to 8, calculate the percentage of the *maximum possible adherence improvement* (from a baseline of 5 to the maximum score of 8) that the *net improvement* in the intervention group represents (intervention change minus control change). Express your answer as a percentage (%).</question>
+
+<question>A study is designed to assess the impact of a visual aid intervention on inhaler technique. Researchers recruit 60 participants with COPD. 30 participants are randomly assigned to the intervention group receiving a video demonstration of proper inhaler technique, while the other 30 receive standard verbal instructions. After the intervention, 18 participants in the intervention group demonstrate correct technique, compared to 6 in the control group. Calculate the absolute risk reduction (ARR) of incorrect inhaler technique due to the intervention. Express your answer as a proportion (a decimal between 0 and 1).</question>
+
+<question>Researchers are investigating the relationship between medication adherence and clinical outcomes in a group of patients with hypertension. Patients with an Adherence Index (AI) above 0.6 show a 20% lower risk of cardiovascular events compared to those below 0.6. If 60 out of 100 patients in the cohort have an AI above 0.6, and assuming that patients with an AI above 0.6 would have had the same risk of cardiovascular events as those below 0.6 if their adherence was lower, by what percentage is the total number of cardiovascular events reduced in the cohort compared to if all patients had an AI below 0.6? Express your answer as a percentage (%).</question>
+
+<question>A research team is evaluating the effect of different interventions on improving medication adherence among patients with diabetes. They conduct a randomized controlled trial with three groups: Group A receives standard care, Group B receives motivational interviewing, and Group C receives a combination of motivational interviewing and a simplified medication schedule. After 6 months, in Group A, 5% of patients showed an adherence improvement of at least 15 percentage points. In Group B, 40% of patients showed an adherence improvement of at least 15 percentage points. In Group C, 70% of patients showed an adherence improvement of at least 15 percentage points. Calculate the number needed to treat (NNT) to achieve at least a 15 percentage point improvement in adherence using the combined intervention (Group C) compared to standard care (Group A). Round up to the nearest whole number.</question>
+
+<question>In a clinical study, two different counseling approaches are used to improve adherence to antiretroviral therapy in HIV-positive patients. Group 1 receives brief counseling sessions (15 minutes each), while Group 2 receives extended counseling sessions (45 minutes each). The baseline adherence is 60% in both groups. After three months, adherence in Group 2 increases to 85%. Assuming the cost per patient per month for extended counseling is $15, calculate the cost per 1% increase in adherence for the extended counseling group. Express your answer in dollars ($).</question>
+```
+=== Final questions generated ===

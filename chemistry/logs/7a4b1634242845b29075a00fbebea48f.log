@@ -1,0 +1,703 @@
+=== Turn 0: Author generates questions ===
+<question>  
+A cavity-modified azide-alkyne cycloaddition occurs under strong coupling to a vacuum electromagnetic mode with frequency $\nu = 3.00 \times 10^{14} \text{ Hz}$. Given that the reaction’s activation energy without coupling is $E_a = 75.0 \text{ kJ·mol}^{-1}$ and coupling reduces $E_a$ by the vibrational Rabi splitting energy,  
+$$ \hbar \Omega_R = 2 \times 10^{-20} \text{ J per molecule}, $$  
+estimate the new effective activation energy $E_a^\prime$ in $\text{kJ·mol}^{-1}$. (Use Avogadro’s number $N_A = 6.022 \times 10^{23} \text{ mol}^{-1}$ and $\hbar = 1.055 \times 10^{-34} \text{ J·s}$.)</question>
+
+<question>
+In a metal-free catalytic system, the 1,3-dipolar azide-alkyne cycloaddition exhibits a second-order rate constant $k = 2.50 \times 10^{-3} \text{ M}^{-1}\text{s}^{-1}$ at 298 K with activation free energy $\Delta G^\ddagger = 84.0 \text{ kJ·mol}^{-1}$. Using the Eyring equation 
+$$ k = \frac{k_B T}{h} \exp\left(-\frac{\Delta G^\ddagger}{R T}\right), $$
+calculate the expected rate constant $k^\prime$ at 310 K, assuming $\Delta G^\ddagger$ is temperature-independent. (Use $k_B = 1.381 \times 10^{-23} \text{ J·K}^{-1}$, $h = 6.626 \times 10^{-34} \text{ J·s}$, $R = 8.314 \text{ J·mol}^{-1}\text{K}^{-1}$.)</question>
+
+<question>  
+Quantum vacuum fluctuations in a cavity generate a zero-point energy shift that alters the transition state energy of a click reaction by an amount $\Delta E = \frac{1}{2} h \nu$, where $\nu = 5.00 \times 10^{13} \text{ Hz}$. Calculate the corresponding energy shift in $\text{kJ·mol}^{-1}$. (Use $h = 6.626 \times 10^{-34} \text{ J·s}$, $N_A = 6.022 \times 10^{23} \text{ mol}^{-1}$.)</question>
+
+<question>  
+Ab initio calculations at the CCSD(T)/aug-cc-pVTZ level yield an enthalpy of activation $\Delta H^\ddagger = 60.2 \text{ kJ·mol}^{-1}$ and entropy of activation $\Delta S^\ddagger = -85.0 \text{ J·mol}^{-1}\text{K}^{-1}$ for a metal-free azide-alkyne cycloaddition at 298 K. Calculate the Gibbs free energy of activation $\Delta G^\ddagger$ in $\text{kJ·mol}^{-1}$ at 298 K using these values.</question>
+
+<question>  
+In a polaritonic environment, the ground state energy of a dipolar reactant is lowered by a fraction $f=0.015$ due to strong light-matter coupling. If the original activation barrier is $80.0 \text{ kJ·mol}^{-1}$, calculate the modified activation barrier in $\text{kJ·mol}^{-1}$ assuming proportional energy lowering of the transition state and the ground state, but with the ground state stabilization causing a net reduction in barrier height equal to the difference of their shifts.</question>
+
+<question>  
+During a metal-free catalyst mediated azide-alkyne cycloaddition, the pre-exponential factor $A$ in the Arrhenius equation is $1.2 \times 10^{12} \text{ s}^{-1}$, and the activation energy $E_a = 90.0 \text{ kJ·mol}^{-1}$. Calculate the rate constant $k$ at 350 K. Use $R = 8.314 \text{ J·mol}^{-1}\text{K}^{-1}$. Express $k$ in $\text{s}^{-1}$.</question>
+
+<question>  
+A cycloaddition reaction occurs inside an optical cavity where the vacuum field modifies the reaction coordinate's zero-point energy by $0.8 \text{ eV}$ per molecule. Convert this energy change to $\text{kJ·mol}^{-1}$ and determine the percentage change relative to an original activation energy of $180 \text{ kJ·mol}^{-1}$. (Use $N_A = 6.022 \times 10^{23} \text{ mol}^{-1}$ and $1 \text{ eV} = 1.602 \times 10^{-19} \text{ J}$.)</question>
+
+<question>  
+Using ab initio molecular orbital theory, the HOMO-LUMO gap for a reactant in a metal-free click reaction is computed as $5.20 \text{ eV}$. Calculate the wavelength in nanometers of the photon resonant with this gap. (Use $hc = 1240 \text{ eV·nm}$.)</question>
+
+<question>  
+For an azide-alkyne cycloaddition via metal-free catalysis, the reaction rate can be accelerated by modifying the external cavity coupling to achieve a vibrational strong coupling with coupling strength $\hbar \Omega_R = 50 \text{ meV}$. Estimate the corresponding frequency splitting $\Delta \nu$ in THz (terahertz). Use $\hbar = 6.582 \times 10^{-16} \text{ eV·s}$. Express $\Delta \nu$ as $$ \Delta \nu = \frac{\Omega_R}{2\pi}. $$</question>
+
+<question>  
+A quantum chemical calculation predicts the solvation free energy difference $\Delta G_\text{solv}$ between reactant and transition state to be $-5.5 \text{ kcal·mol}^{-1}$ in acetonitrile. Convert this energy to kilojoules per mole, and determine the corresponding equilibrium constant ratio $K_\text{TS}/K_\text{R}$ at 298 K, given  
+$$ \Delta G = -RT \ln K. $$  
+Use $R = 8.314 \text{ J·mol}^{-1}\text{K}^{-1}$ and $1 \text{ kcal} = 4.184 \text{ kJ}.$</question>
+=== Turn 0: Critic feedback ===
+**General Note:**  
+Overall, these questions are sophisticated, integrating cutting-edge chemistry, quantum optics, and numerical analysis. You closely follow the guidelines—each question is scenario-based, requires multi-step calculation and unit conversion, and generally aims for a single numerical answer. The mathematical formatting is correct for Markdown with LaTeX.
+
+Below is question-by-question feedback, with improvements for full alignment to your own guidelines:
+
+---
+
+### 1. Cavity-modified azide-alkyne cycloaddition activation energy
+
+- **Strengths:** Scenario-based, expects a clear numerical value, multi-step, original.
+- **Areas to Improve:**
+  - The phrase "reduced by the vibrational Rabi splitting energy" could be more rigorous: express explicitly that the *entire* $\hbar\Omega_R$ should be subtracted from $E_a$, clarifying units if per mole or per molecule.
+  - Minor: specify "per molecule" in the context of conversion to per mole to reinforce unit consistency.
+  - Remove "estimate": Just say "Calculate the new effective activation energy...".
+
+---
+
+### 2. Eyring rate constant at new temperature
+
+- **Strengths:** Realistic catalysis, all constants given, multi-step, single numerical value.
+- **Areas to Improve:**
+  - Avoid stating "calculate the expected rate constant": say "Calculate the rate constant $k'$ at 310 K..." for conciseness.
+  - Despite the phrase "expected," no subjective estimation is done, so "expected" is unnecessary.
+  - Double-check that no superfluous information is provided; here, all values are relevant.
+
+---
+
+### 3. Zero-point energy shift calculation
+
+- **Strengths:** Cutting-edge physical chemistry scenario, correct focus on multi-step calculation.
+- **Areas to Improve:**
+  - Remove non-impactful background ("quantum vacuum fluctuations...") unless needed—simply state the energy increment and frequency, and what to compute.
+  - Phrase to "Calculate the energy shift, in $\text{kJ·mol}^{-1}$, corresponding to...", for precision.
+  - There is only one possible numerical answer—good.
+
+---
+
+### 4. Gibbs free energy of activation from ab initio data
+
+- **Strengths:** Focused, requires characteristic calculation.
+- **Areas to Improve:**
+  - First phrase could be more concise; for instance, drop the naming of the computational level unless essential (the chemistry context will remain without it).
+  - Exact temperature is specified, and only one answer is needed—good.
+
+---
+
+### 5. Polaritonic environment and lowered ground state energy
+
+- **Strengths:** Advanced, unique scenario; clear target answer.
+- **Areas to Improve:**
+  - The portion "with the ground state stabilization causing a net reduction in barrier height equal to the difference of their shifts" is circuitous; clarify that the *relative* shift reduces the activation barrier by $fE_a$ (if that's the intended physics).
+  - Remove redundancy in phrasing for clarity.
+
+---
+
+### 6. Arrhenius rate constant at a specific temperature
+
+- **Strengths:** Simple, computational, and rigorous.
+- **Areas to Improve:**
+  - "During a..." is unnecessary—open with "Given a reaction with $A=...$..." for conciseness.
+  - State "Calculate the rate constant $k$ at $T=350$ K..."
+
+---
+
+### 7. Zero-point energy shift in eV and percentage reduction
+
+- **Strengths:** Contemporary, numerical answer expected.
+- **Areas to Improve:**
+  - Ensure absolute consistency: require the answer in both $\text{kJ·mol}^{-1}$ AND the % change, but this does not violate the "single solution" rule since the two values together are the answer (one calculation, two related numbers).
+  - Remove introductory context—open with energies as data.
+
+---
+
+### 8. HOMO-LUMO gap and photon resonance
+
+- **Strengths:** Unique, multi-step unit conversion, single value.
+- **Areas to Improve:**
+  - Say "Calculate the wavelength (in nm)..." for conciseness.
+
+---
+
+### 9. Vibrational strong coupling—frequency splitting
+
+- **Strengths:** Non-standard, single step, no ambiguity.
+- **Areas to Improve:**
+  - Do not display the formula for $\Delta\nu$ unless you wish students to use it explicitly. If so, say "using $\Delta\nu = \frac{\Omega_R}{2\pi}$".
+  - No need for so much background; open with "Given $\hbar\Omega_R=...$, calculate the frequency splitting..."
+
+---
+
+### 10. Solvation free energy and equilibrium constant ratio
+
+- **Strengths:** Multi-step; requires both unit conversion and thermodynamic calculation.
+- **Areas to Improve:**
+  - The phrase "determine the corresponding equilibrium constant ratio $K_\text{TS}/K_\text{R}$ at 298 K" is clear.
+  - Opening wording could be shorter; e.g., "Given a solvation free energy difference..."
+  - If two answers (converted energy and equilibrium ratio) are both required as a single logical solution, this is okay per guideline 10. But if considered separate, restructure to have just one (e.g., "What is $K_{TS}/K_R$ at 298 K?").
+
+---
+
+## **Summary Table:**
+
+| Q# | Model Scenario | Units | Multi-Step | Original | Concise | Rigorous | 1 Solution | Minor Issues |
+|----|:--------------:|:-----:|:----------:|:--------:|:-------:|:--------:|:-----------:|:------------|
+| 1  | Yes            | Yes   | Yes        | Yes      | Mostly  | Yes      | Yes         | Phrasing    |
+| 2  | Yes            | Yes   | Yes        | Yes      | Minor   | Yes      | Yes         | Phrasing    |
+| 3  | Yes            | Yes   | Yes        | Yes      | Minor   | Yes      | Yes         | Conciseness |
+| 4  | Yes            | Yes   | Yes        | Yes      | Minor   | Yes      | Yes         | Verbosity   |
+| 5  | Yes            | Yes   | Yes        | Yes      | Minor   | Yes      | Yes         | Clarity     |
+| 6  | Yes            | Yes   | Yes        | Yes      | Minor   | Yes      | Yes         | Verbosity   |
+| 7  | Yes            | Yes   | Yes        | Yes      | Minor   | Yes      | Yes         | Format      |
+| 8  | Yes            | Yes   | Yes        | Yes      | Minor   | Yes      | Yes         | Conciseness |
+| 9  | Yes            | Yes   | Yes        | Yes      | Minor   | Yes      | Yes         | Format      |
+| 10 | Yes            | Yes   | Yes        | Yes      | Minor   | Yes      | Yes*        | Format      |
+
+---
+
+**General Suggestions for All:**
+- Start with critical data, trim narrative or background to context.
+- Use concise, directive language: "Calculate...", "Determine...", "Compute...".
+- For unit conversions and scenario details, specify per molecule or per mole as needed.
+- If two "answers" are logically joined (e.g., convert then use value), it's compliant. Otherwise, split into two single-solution items.
+
+---
+
+**Actionable Tweaks Example (for one question):**  
+Original:  
+> Given a vibrational Rabi splitting of $\hbar \Omega_R = 50\ \text{meV}$, estimate the corresponding frequency splitting $\Delta\nu$ in THz.  
+
+Improved:  
+> Given a vibrational Rabi splitting strength $\hbar \Omega_R = 50\ \text{meV}$, calculate the frequency splitting $\Delta\nu$ in THz using $\Delta\nu = \Omega_R / 2\pi$.  
+
+---
+
+**Overall:**  
+These questions are well-constructed, unique, and require advanced, multi-step reasoning. Minor improvements in conciseness and directness will ensure your assessments are perfectly aligned with your high standards.
+=== Turn 1: Author refines questions ===
+<question>  
+A cavity-modified azide-alkyne cycloaddition occurs under strong coupling to a vacuum electromagnetic mode with frequency $\nu = 3.00 \times 10^{14} \text{ Hz}$. The reaction’s activation energy without coupling is $E_a = 75.0 \text{ kJ·mol}^{-1}$. Coupling reduces $E_a$ by the vibrational Rabi splitting energy  
+$$ \hbar \Omega_R = 2 \times 10^{-20} \text{ J per molecule}. $$  
+Calculate the new effective activation energy $E_a^\prime$ in $\text{kJ·mol}^{-1}$. (Use Avogadro’s number $N_A = 6.022 \times 10^{23} \text{ mol}^{-1}$.)  
+</question>
+
+<question>  
+In a metal-free catalytic system, the 1,3-dipolar azide-alkyne cycloaddition has a second-order rate constant $k = 2.50 \times 10^{-3} \text{ M}^{-1}\text{s}^{-1}$ at 298 K and activation free energy $\Delta G^\ddagger = 84.0 \text{ kJ·mol}^{-1}$. Using the Eyring equation  
+$$ k = \frac{k_B T}{h} \exp\left(-\frac{\Delta G^\ddagger}{R T}\right), $$  
+calculate the rate constant $k^\prime$ at 310 K, assuming $\Delta G^\ddagger$ is temperature-independent.  
+(Use $k_B = 1.381 \times 10^{-23} \text{ J·K}^{-1}$, $h = 6.626 \times 10^{-34} \text{ J·s}$, $R = 8.314 \text{ J·mol}^{-1}\text{K}^{-1}$.)  
+</question>
+
+<question>  
+Calculate the zero-point energy shift, in $\text{kJ·mol}^{-1}$, corresponding to an energy increment  
+$$ \Delta E = \frac{1}{2} h \nu $$  
+for $\nu = 5.00 \times 10^{13} \text{ Hz}$. (Use $h = 6.626 \times 10^{-34} \text{ J·s}$, $N_A = 6.022 \times 10^{23} \text{ mol}^{-1}$.)  
+</question>
+
+<question>  
+Given an enthalpy of activation $\Delta H^\ddagger = 60.2 \text{ kJ·mol}^{-1}$ and entropy of activation $\Delta S^\ddagger = -85.0 \text{ J·mol}^{-1}\text{K}^{-1}$ at 298 K, calculate the Gibbs free energy of activation $\Delta G^\ddagger$ in $\text{kJ·mol}^{-1}$ at 298 K.  
+</question>
+
+<question>  
+In a polaritonic environment, the ground state energy of a dipolar reactant is lowered by a fraction $f=0.015$ due to strong light-matter coupling. If the original activation barrier is $80.0 \text{ kJ·mol}^{-1}$, calculate the modified activation barrier assuming the transition state and ground state energies both decrease proportionally by $f$, and that the barrier height is reduced by the difference in these shifts.  
+</question>
+
+<question>  
+Given a reaction with pre-exponential factor $A = 1.2 \times 10^{12} \text{ s}^{-1}$ and activation energy $E_a = 90.0 \text{ kJ·mol}^{-1}$, calculate the rate constant $k$ at $T=350$ K using the Arrhenius equation. (Use $R = 8.314 \text{ J·mol}^{-1}\text{K}^{-1}$.) Express $k$ in $\text{s}^{-1}$.  
+</question>
+
+<question>  
+A cycloaddition reaction inside an optical cavity experiences a vacuum field-induced zero-point energy change of $0.8 \text{ eV}$ per molecule. Convert this energy to $\text{kJ·mol}^{-1}$, and determine the percentage change relative to an original activation energy of $180 \text{ kJ·mol}^{-1}$.  
+(Use $N_A = 6.022 \times 10^{23} \text{ mol}^{-1}$ and $1 \text{ eV} = 1.602 \times 10^{-19} \text{ J}$.)  
+</question>
+
+<question>  
+The HOMO-LUMO gap for a reactant in a metal-free click reaction is calculated as $5.20 \text{ eV}$. Calculate the wavelength, in nanometers, of the photon resonant with this gap. (Use $hc = 1240 \text{ eV·nm}$.)  
+</question>
+
+<question>  
+Given a vibrational Rabi splitting strength $\hbar \Omega_R = 50 \text{ meV}$, calculate the frequency splitting $\Delta \nu$ in THz using  
+$$ \Delta \nu = \frac{\Omega_R}{2\pi}, $$  
+where $\hbar = 6.582 \times 10^{-16} \text{ eV·s}$.  
+</question>
+
+<question>  
+Given a solvation free energy difference $\Delta G_\text{solv} = -5.5 \text{ kcal·mol}^{-1}$ between reactant and transition state in acetonitrile, convert this energy to kilojoules per mole and calculate the equilibrium constant ratio $K_\text{TS}/K_\text{R}$ at 298 K using  
+$$ \Delta G = -RT \ln K. $$  
+(Use $R = 8.314 \text{ J·mol}^{-1}\text{K}^{-1}$ and $1 \text{ kcal} = 4.184 \text{ kJ}.$)  
+</question>
+=== Turn 1: Critic feedback ===
+Here is an expert critique of your 10 chemistry assessment questions, evaluated against your guidelines:
+
+---
+
+**General Strengths:**
+
+- Most questions are unique and tie into advanced or contemporary topics (e.g., polaritonic chemistry, strong coupling, click reactions).
+- All prompt a single, well-defined numerical answer with clear units.
+- Equations, constants, and scenario data are clearly stated in a way that is rigorous and unambiguous.
+- No extraneous or redundant information is present.
+- All questions avoid colloquial/ambiguous terminology and use a consistent LaTeX/Markdown format.
+
+---
+
+### Per-Question Feedback and Suggestions
+
+#### 1. Cavity-modified activation energy
+
+**Strengths:**  
+- Modern scenario; asks for one computed value with units, using advanced physical chemistry.
+- Data is sufficient; units are consistent; scenario is concrete.
+
+**Suggestions:**  
+- Consider clarifying that the Rabi splitting is *subtracted* (i.e., "by the amount") from $E_a$.  
+- Instead of "calculate the new effective activation energy," say "calculate the modified activation energy $E_a'$, in $\,\mathrm{kJ}\,\mathrm{mol}^{-1}$, after subtracting the Rabi splitting per mole from $E_a$."
+- Could specify "per mole" more explicitly to reinforce the calculation's multi-step nature.
+
+---
+
+#### 2. Eyring equation temperature change
+
+**Strengths:**  
+- Clearly structured; forces several steps; all constants provided; uses non-standard $T$ values.
+
+**Suggestions:**  
+- Instead of "calculate $k'$," perhaps specify: "Calculate the rate constant $k'$ at $T = 310\,\mathrm{K}$, in $\mathrm{M}^{-1}\mathrm{s}^{-1}$."
+- No substantial changes needed.
+
+---
+
+#### 3. Zero-point energy shift
+
+**Strengths:**  
+- Direct, requires conversion and multiplication by Avogadro’s number.
+- Units and constants clear.
+
+**Suggestions:**  
+- None required.
+
+---
+
+#### 4. Gibbs free energy of activation
+
+**Strengths:**  
+- Rigorous, concise, non-redundant.
+
+**Suggestions:**  
+- Consider specifying units in the final answer prompt: "Calculate $\Delta G^\ddagger$ (in $\mathrm{kJ}\,\mathrm{mol}^{-1}$)."
+- All data are already provided.
+
+---
+
+#### 5. Polaritonic activation barrier reduction
+
+**Strengths:**  
+- Original application of a contemporary effect.
+- Unambiguous prompt.
+
+**Suggestions:**  
+- The phrase "the barrier height is reduced by the difference in these shifts" could be confusing. Maybe rephrase as:
+  - "Assume the activation barrier is lowered by the difference in the energy reduction of ground and transition states (i.e., zero if both decrease equally)."
+- Confirm that the expected answer is the original barrier, since shifts are proportional; or clarify if you expect $0$.
+
+---
+
+#### 6. Arrhenius equation rate constant
+
+**Strengths:**  
+- Direct, non-redundant, all data given.
+
+**Suggestions:**  
+- Instead of "calculate the rate constant $k$," specify "calculate the rate constant $k$, in $\mathrm{s}^{-1}$, at $T = 350\,\mathrm{K}$."
+
+---
+
+#### 7. Zero-point energy change in eV and its percentage
+
+**Strengths:**  
+- Requires two steps: energy conversion and percentage calculation.
+
+**Suggestions:**  
+- To meet the "single solution" rule (guideline 10), split this into two questions:
+  - (a) "Convert $0.8\,\mathrm{eV}$ per molecule to $\mathrm{kJ}\,\mathrm{mol}^{-1}$."
+  - (b) "Calculate the percentage change relative to an activation energy of $180\,\mathrm{kJ}\,\mathrm{mol}^{-1}$."
+- Since you require only **one part per question**, rewrite as two separate questions.
+
+---
+
+#### 8. HOMO-LUMO gap to photon wavelength
+
+**Strengths:**  
+- One operation only, unique setting.
+
+**Suggestions:**  
+- Consider specifying significant figures or tolerance for rounding; minor.
+- Otherwise, excellent.
+
+---
+
+#### 9. Rabi splitting in THz
+
+**Strengths:**  
+- All data provided, unique setup.
+
+**Suggestions:**  
+- Specify "to three significant figures" or similar for enhanced rigor.
+- "Calculate the frequency splitting $\Delta\nu$ (in $\mathrm{THz}$)."
+
+---
+
+#### 10. Solvation free energy to equilibrium ratio
+
+**Strengths:**  
+- Multi-step reasoning (unit conversion, then exponentiation).
+
+**Suggestions:**  
+- Like #7, this is a **two-part** problem. It first asks for the energy in kJ/mol, then for a ratio.
+- Per guideline 10, split into two:
+  - (a) "Convert $\Delta G_\text{solv}$ to $\mathrm{kJ}\,\mathrm{mol}^{-1}$."
+  - (b) "Calculate the equilibrium constant ratio $K_\text{TS}/K_\text{R}$ at $298\,\mathrm{K}$ using $\Delta G = -RT \ln K$."
+- Alternatively, give the value already in kJ/mol and only ask for the ratio.
+
+---
+
+### Summary Table
+
+| # | Multi-Step | One Part | Units/Rigorous | Originality | Suggestions     |
+|---|------------|----------|----------------|-------------|----------------|
+|1  | ✓      | ✓       | ✓           | ✓         | Wording   |
+|2  | ✓      | ✓       | ✓           | ✓         | None      |
+|3  | ✓      | ✓       | ✓           | ✓         | None      |
+|4  | ✓      | ✓       | ✓           | ✓         | Units     |
+|5  | ✓      | ✓       | ✓           | ✓         | Clarify   |
+|6  | ✓      | ✓       | ✓           | ✓         | Units     |
+|7  | ✓      | ✗       | ✓           | ✓         | Split     |
+|8  | ✓      | ✓       | ✓           | ✓         | None      |
+|9  | ✓      | ✓       | ✓           | ✓         | SF/Units  |
+|10 | ✓      | ✗       | ✓           | ✓         | Split     |
+
+---
+
+### **Overall Recommendations**
+
+1. Split multi-part questions (#7, #10) into separate, single-solution prompts.
+2. Where possible, phrase questions to specify expected units and significant figures.
+3. Ensure that energy changes/subtractions/relative amounts are explained as clearly as possible, minimizing ambiguity.
+4. Otherwise, your questions are varied, original, rigorous, and well-phrased in technical language with all necessary data, easily being renderable in Markdown.
+
+**Your questions are already exemplary for advanced chemistry assessment—only minor edits needed to fully align with your guidelines.**
+=== Turn 2: Author refines questions ===
+<question>  
+A cavity-modified azide-alkyne cycloaddition occurs under strong coupling to a vacuum electromagnetic mode with frequency \(\nu = 3.00 \times 10^{14} \text{ Hz}\). The reaction’s activation energy without coupling is \(E_a = 75.0 \text{ kJ·mol}^{-1}\). The coupling reduces \(E_a\) by the vibrational Rabi splitting energy given by  
+\[
+\hbar \Omega_R = 2 \times 10^{-20} \text{ J per molecule}.  
+\]  
+Calculate the modified activation energy \(E_a'\) (in \(\mathrm{kJ}\,\mathrm{mol}^{-1}\)) after subtracting the Rabi splitting energy per mole from \(E_a\).  
+(Use Avogadro’s number \(N_A = 6.022 \times 10^{23} \mathrm{mol}^{-1}\).)  
+</question>
+
+<question>  
+In a metal-free catalytic system, the 1,3-dipolar azide-alkyne cycloaddition has a second-order rate constant \(k = 2.50 \times 10^{-3} \mathrm{M}^{-1}\mathrm{s}^{-1}\) at 298 K and activation free energy \(\Delta G^\ddagger = 84.0 \mathrm{\,kJ\,mol}^{-1}\). Using the Eyring equation  
+\[
+k = \frac{k_B T}{h} \exp\left(-\frac{\Delta G^\ddagger}{R T}\right),  
+\]  
+calculate the rate constant \(k'\) (in \(\mathrm{M}^{-1}\mathrm{s}^{-1}\)) at \(T = 310 \mathrm{\,K}\), assuming \(\Delta G^\ddagger\) is temperature-independent.  
+(Use \(k_B = 1.381 \times 10^{-23} \mathrm{\,J\,K}^{-1}\), \(h = 6.626 \times 10^{-34} \mathrm{\,J\,s}\), \(R = 8.314 \mathrm{\,J\,mol}^{-1}\mathrm{K}^{-1}\).)  
+</question>
+
+<question>  
+Calculate the zero-point energy shift (in \(\mathrm{kJ\,mol}^{-1}\)) corresponding to an energy increment  
+\[
+\Delta E = \frac{1}{2} h \nu,  
+\]  
+for \(\nu = 5.00 \times 10^{13} \mathrm{\,Hz}\).  
+(Use \(h = 6.626 \times 10^{-34} \mathrm{\,J\,s}\) and Avogadro’s number \(N_A = 6.022 \times 10^{23} \mathrm{\,mol}^{-1}\).)  
+</question>
+
+<question>  
+Given an enthalpy of activation \(\Delta H^\ddagger = 60.2 \mathrm{\,kJ\,mol}^{-1}\) and entropy of activation \(\Delta S^\ddagger = -85.0 \mathrm{\,J\,mol}^{-1}\mathrm{K}^{-1}\) at 298 K, calculate the Gibbs free energy of activation \(\Delta G^\ddagger\) (in \(\mathrm{kJ\,mol}^{-1}\)) at 298 K.  
+</question>
+
+<question>  
+In a polaritonic environment, the ground state energy of a dipolar reactant is lowered by a fraction \(f = 0.015\) due to strong light-matter coupling. The original activation barrier is \(80.0 \mathrm{\,kJ\,mol}^{-1}\). Assuming both the transition state and ground state energies decrease proportionally by \(f\), calculate the modified activation barrier. Note that the effective reduction in barrier height equals the difference in these energy shifts.  
+</question>
+
+<question>  
+Given a reaction with pre-exponential factor \(A = 1.2 \times 10^{12} \mathrm{\,s}^{-1}\) and activation energy \(E_a = 90.0 \mathrm{\,kJ\,mol}^{-1}\), calculate the rate constant \(k\) (in \(\mathrm{s}^{-1}\)) at temperature \(T = 350 \mathrm{\,K}\) using the Arrhenius equation.  
+(Use the gas constant \(R = 8.314 \mathrm{\,J\,mol}^{-1}\mathrm{K}^{-1}\).)  
+</question>
+
+<question>  
+Convert a vacuum field-induced zero-point energy change of \(0.8\,\mathrm{eV}\) per molecule into \(\mathrm{kJ\,mol}^{-1}\).  
+(Use Avogadro’s number \(N_A = 6.022 \times 10^{23} \mathrm{\,mol}^{-1}\) and \(1\,\mathrm{eV} = 1.602 \times 10^{-19} \mathrm{\,J}\).)  
+</question>
+
+<question>  
+A cycloaddition reaction has an original activation energy of \(180 \mathrm{\,kJ\,mol}^{-1}\). Given a zero-point energy increase of \(0.8\,\mathrm{eV}\) per molecule (previously converted to \(\mathrm{kJ\,mol}^{-1}\)), calculate the percentage change in the activation energy due to this change.  
+</question>
+
+<question>  
+The HOMO-LUMO gap for a reactant in a metal-free click reaction is calculated as \(5.20 \mathrm{\,eV}\). Calculate the wavelength (in nanometers) of a photon resonant with this gap.  
+(Use \(hc = 1240 \mathrm{\,eV\cdot nm}\).)  
+</question>
+
+<question>  
+Given a vibrational Rabi splitting strength \(\hbar \Omega_R = 50 \mathrm{\,meV}\), calculate the frequency splitting \(\Delta \nu\) (in \(\mathrm{THz}\)), using the relation  
+\[
+\Delta \nu = \frac{\Omega_R}{2\pi},  
+\]  
+and \(\hbar = 6.582 \times 10^{-16} \mathrm{\,eV\cdot s}\). Provide your answer to three significant figures.  
+</question>
+
+<question>  
+Convert a solvation free energy difference \(\Delta G_\mathrm{solv} = -5.5\,\mathrm{kcal\,mol}^{-1}\) between reactant and transition state in acetonitrile to \(\mathrm{kJ\,mol}^{-1}\).  
+(Use \(1\,\mathrm{kcal} = 4.184\,\mathrm{kJ}\).)  
+</question>
+
+<question>  
+Using the solvation free energy difference \(\Delta G_\mathrm{solv} = -5.5\,\mathrm{kcal\,mol}^{-1}\) (converted to \(\mathrm{kJ\,mol}^{-1}\)), calculate the equilibrium constant ratio \(\frac{K_\mathrm{TS}}{K_\mathrm{R}}\) at 298 K, where  
+\[
+\Delta G = -RT \ln K.  
+\]  
+(Use gas constant \(R = 8.314 \mathrm{\,J\,mol}^{-1}\mathrm{K}^{-1}\).)  
+</question>
+=== Turn 2: Critic feedback ===
+Here’s actionable feedback on your chemistry questions as per your provided guidelines:
+
+---
+
+### General Strengths
+- Questions are concise, technical, and require rigorous calculation.
+- Units are mostly consistent, SI units are dominant, and constants are given to ensure reproducibility.
+- Each question targets a unique and non-trivial scenario, with a clearly defined single numerical output.
+- Phrasing is scientific and avoids ambiguity.
+
+### Criteria-by-Criteria Critique & Suggestions
+
+---
+
+#### 1. Model a Chemistry Scenario
+**Strengths:** All questions are rooted in real or realistic chemistry scenarios: photochemistry, catalysis, thermodynamics, polaritonic chemistry, etc.
+
+**Recommendation:** No change needed.
+
+---
+
+#### 2. Numerical Value or IUPAC Compound Name for Answer
+**Strengths:** All questions request a numerical value with units. No request for chemical names, but that's appropriate for these.
+
+**Recommendation:** Encourage full use of significant figures (e.g., "round your answer to three significant figures") to match the constants provided.
+
+---
+
+#### 3. Multi-Step Reasoning
+**Strengths:** Most questions (e.g., Eyring, Arrhenius, ZPE conversions) require at least two steps (e.g., per molecule to per mole, then subtract or convert).
+
+**Minor Weakness:** Some (esp. #4, #11, #12) require only one straightforward operation.
+
+**Improvement:** Consider briefly specifying "Show intermediate steps" or, for single-step questions, combine with a related value (if compliant with "one solution only").
+
+---
+
+#### 4. Avoid Redundancy
+**Strengths:** No unnecessary information in almost all questions.
+
+**Minor Concern:** Some formulae/definitions in the questions could be omitted if they're standard (e.g., Eyring equation is often included, but could be omitted for advanced students).
+
+---
+
+#### 5. Be Unique (Avoid Textbook-Standard Examples)
+**Strengths:** Greatly accomplished—strong coupling, polaritonic effects, and solvation shifts are at the forefront of physical/organic chemistry research, not textbook fodder.
+
+**Recommendation:** Maintain the trend.
+
+---
+
+#### 6. Single Solution Only
+**Strengths:** All questions request a single value, in units. No multi-part questions.
+
+**Minor Suggestion:** Some wordings (e.g., #12) might tempt a student to show ratios for both reactant and TS. Rephrase to emphasize only the ratio needed.
+
+---
+
+#### 7. Rigorous, Concise Phrasing
+**Strengths:** Questions are direct and precise.
+
+---
+
+#### 8. Avoid Colloquial/Ambiguous Terminology
+**Strengths:** There is no colloquial language.
+
+---
+
+#### 9. Units Consistency & Official IUPAC Nomenclature
+**Strengths:** Units are almost always clear and SI. Chemical names not required here, all physical quantities clearly labeled.
+
+**Minor Weakness:** 
+- Sometimes sub-unit conversions could be more explicit in the request (e.g., "Give your answer to three significant figures" or "in $\mathrm{kJ\,mol}^{-1}$").
+- For #10: Make explicit the expected answer in "THz".
+
+---
+
+#### 10. Single-Answer Format
+**Strengths:** Generally, all questions demand only a single value.
+
+---
+
+#### 11. Solution Formatting: Use LaTeX Markdown ($ or $$)
+**Strengths:** Consistent use of LaTeX within Markdown.
+
+**Minor Weakness:** Sometimes, equations could stay inline ($E = mc^2$) instead of using block format, but that doesn’t affect rendering.
+
+**Minor Suggestion:** For units in LaTeX, prefer \mathrm{~unit} (e.g. $\mathrm{kJ\,mol}^{-1}$) throughout for consistency.
+
+---
+
+### **Question-wise Specifics:**
+
+#### Q4, Q11, Q12
+- Single step only (simple $G = H - TS$ or a direct conversion/ratio). Consider increasing reasoning steps, possibly by combining two related steps (if it doesn't violate the "single solution" rule).
+
+#### Q5
+- The information on the identical decrease for both TS and ground state is well-stated and unique, but clarifying that $\Delta E_a' = (1-f)\Delta E_a$ in the wording would make calculation more explicit without giving away the answer.
+
+#### Q7
+- The constant for the eV-to-J conversion is clear. To avoid mistakes, reinforce by asking for an explicit answer prompt: “Report your answer to three significant figures.”
+
+#### Q8
+- Good connection to Q7, but remind students to use their previously calculated value (makes it genuinely multi-step).
+
+#### Q10
+- State the expected unit ("THz") in the final answer explicitly ("Provide your answer to three significant figures, in THz").
+
+#### Q11
+- Simple kcal-to-kJ conversion; could be combined with a subsequent conceptual or experimental implication.
+
+---
+
+### **Summary Table**
+
+| Guideline                                      | All Qs? | Concerned Qs | Feedback                                        |
+|------------------------------------------------|---------|--------------|-------------------------------------------------|
+| Model scenario                                 | Y       |              | Good                                            |
+| Single comp/value answer                       | Y       |              | Clarify expected sig figs/units for answer      |
+| Multi-step reasoning                           | Most    | 4, 11, 12    | Minor: Combine steps or request justification   |
+| Avoid redundancy                               | Y       |              | Good                                            |
+| Unique and complex                             | Y       |              | Excellent                                       |
+| One solution                                   | Y       |              | Retain strict phrasing                          |
+| Concise, rigorous phrasing                     | Y       |              | Good                                            |
+| Consistent units, IUPAC nomenclature           | Y       |              | Ensure all chemical units in $\mathrm{...}$     |
+| Use LaTeX Markdown                             | Y       |              | Good, minor consistency in inline/block         |
+
+---
+
+### **Overall Actionable Suggestions**
+
+1. **For simple conversions, combine or contextualize for multi-step calculation.**
+2. **Explicitly state the required answer’s units and significant figures.**
+3. **Continue using precise, unambiguous, and concise phrasing.**
+4. **Prefer useful SI units and reinforce this (e.g., report to three significant figures in $\mathrm{kJ\,mol}^{-1}$ or $\mathrm{THz}$).**
+5. **Revisit any completely single-step (conversion) questions and tie them to more chemical context.**
+
+---
+
+**Sample Rewording for Q11 for more rigor:**  
+Given a solvation free energy difference $\Delta G_\mathrm{solv} = -5.5\,\mathrm{kcal\,mol}^{-1}$ between reactant and transition state in acetonitrile, (a) convert this to $\mathrm{kJ\,mol}^{-1}$, and (b) discuss briefly how this affects the activation energy.
+
+(But only if two-step single answer allowed; otherwise, keep as-is, but include “to three significant figures.”)
+=== Turn 3: Author refines questions ===
+<question>  
+A cavity-modified azide-alkyne cycloaddition occurs under strong coupling to a vacuum electromagnetic mode with frequency \(\nu = 3.00 \times 10^{14} \mathrm{~Hz}\). The reaction’s activation energy without coupling is \(E_a = 75.0 \mathrm{~kJ\,mol}^{-1}\). The coupling reduces \(E_a\) by the vibrational Rabi splitting energy given by  
+\[
+\hbar \Omega_R = 2.00 \times 10^{-20} \mathrm{~J \, per\, molecule}.  
+\]  
+Calculate the modified activation energy \(E_a'\) (in \(\mathrm{kJ\,mol}^{-1}\)) after subtracting the Rabi splitting energy per mole from \(E_a\).  
+(Use Avogadro’s number \(N_A = 6.022 \times 10^{23} \mathrm{~mol}^{-1}\).)  
+Report your answer to three significant figures.  
+</question>
+
+<question>  
+In a metal-free catalytic system, the 1,3-dipolar azide-alkyne cycloaddition has a second-order rate constant \(k = 2.50 \times 10^{-3} \,\mathrm{M}^{-1}\mathrm{s}^{-1}\) at 298 K and activation free energy \(\Delta G^\ddagger = 84.0 \mathrm{~kJ\,mol}^{-1}\). Using the Eyring equation  
+\[
+k = \frac{k_B T}{h} \exp\left(-\frac{\Delta G^\ddagger}{R T}\right),  
+\]  
+calculate the rate constant \(k'\) (in \(\mathrm{M}^{-1}\mathrm{s}^{-1}\)) at \(T = 310\,\mathrm{K}\), assuming \(\Delta G^\ddagger\) is temperature-independent.  
+(Use \(k_B = 1.381 \times 10^{-23} \mathrm{~J\,K^{-1}}\), \(h = 6.626 \times 10^{-34} \mathrm{~J\,s}\), and \(R = 8.314 \mathrm{~J\,mol}^{-1}\mathrm{K}^{-1}\).)  
+Report your answer to three significant figures.  
+</question>
+
+<question>  
+Calculate the zero-point energy shift \(\Delta E\) (in \(\mathrm{kJ\,mol}^{-1}\)) given by  
+\[
+\Delta E = \tfrac{1}{2} h \nu,  
+\]  
+for \(\nu = 5.00 \times 10^{13} \mathrm{~Hz}\).  
+(Use Planck’s constant \(h = 6.626 \times 10^{-34} \mathrm{~J\,s}\) and Avogadro’s number \(N_A = 6.022 \times 10^{23} \mathrm{~mol}^{-1}\).)  
+Report your answer to three significant figures.  
+</question>
+
+<question>  
+Given the enthalpy of activation \(\Delta H^\ddagger = 60.2 \mathrm{~kJ\,mol}^{-1}\) and entropy of activation \(\Delta S^\ddagger = -85.0 \mathrm{~J\,mol}^{-1}\mathrm{K}^{-1}\) at \(T = 298\,\mathrm{K}\), calculate the Gibbs free energy of activation \(\Delta G^\ddagger\) (in \(\mathrm{kJ\,mol}^{-1}\)) at 298 K using  
+\[
+\Delta G^\ddagger = \Delta H^\ddagger - T \Delta S^\ddagger.
+\]  
+Report your answer to three significant figures.  
+</question>
+
+<question>  
+In a polaritonic environment, the ground state energy of a dipolar reactant is lowered by a fraction \(f = 0.015\) due to strong light-matter coupling. The original activation barrier is \(80.0 \mathrm{~kJ\,mol}^{-1}\). Assuming that both the transition state and ground state energies decrease proportionally by the same fraction \(f\), calculate the modified activation barrier \(E_a'\) in \(\mathrm{kJ\,mol}^{-1}\).  
+(Hint: The effective reduction in activation barrier equals the difference between the fractional energy decreases of the transition state and ground state.)  
+Report your answer to three significant figures.  
+</question>
+
+<question>  
+Given a reaction with pre-exponential factor \(A = 1.20 \times 10^{12} \mathrm{~s}^{-1}\) and activation energy \(E_a = 90.0 \mathrm{~kJ\,mol}^{-1}\), calculate the rate constant \(k\) (in \(\mathrm{s}^{-1}\)) at temperature \(T = 350\,\mathrm{K}\) using the Arrhenius equation  
+\[
+k = A \exp\left(-\frac{E_a}{R T}\right).
+\]  
+(Use the gas constant \(R = 8.314 \mathrm{~J\,mol}^{-1}\mathrm{K}^{-1}\).)  
+Report your answer to three significant figures.  
+</question>
+
+<question>  
+Convert a vacuum field-induced zero-point energy change of \(0.80\,\mathrm{eV}\) per molecule into \(\mathrm{kJ\,mol}^{-1}\).  
+(Use Avogadro’s number \(N_A = 6.022 \times 10^{23} \mathrm{~mol}^{-1}\) and \(1\,\mathrm{eV} = 1.602 \times 10^{-19} \mathrm{~J}\).)  
+Report your answer to three significant figures.  
+</question>
+
+<question>  
+A cycloaddition reaction has an original activation energy of \(180 \mathrm{~kJ\,mol}^{-1}\). Given a zero-point energy increase of \(0.80\,\mathrm{eV}\) per molecule (convert this to \(\mathrm{kJ\,mol}^{-1}\) using the constants provided earlier), calculate the percentage change in the activation energy caused by this zero-point energy shift.  
+Express your answer as a percentage to three significant figures.  
+</question>
+
+<question>  
+The HOMO-LUMO gap for a reactant in a metal-free click reaction is calculated as \(5.20\,\mathrm{eV}\). Calculate the wavelength \(\lambda\) (in nanometers) of a photon resonant with this gap using  
+\[
+\lambda = \frac{hc}{E},
+\]  
+where \(hc = 1240 \, \mathrm{eV\cdot nm}\).  
+Report your answer to three significant figures.  
+</question>
+
+<question>  
+Given a vibrational Rabi splitting strength \(\hbar \Omega_R = 50.0 \mathrm{~meV}\), calculate the frequency splitting \(\Delta \nu\) (in \(\mathrm{THz}\)) using the relation  
+\[
+\Delta \nu = \frac{\Omega_R}{2\pi},
+\]  
+where \(\hbar = 6.582 \times 10^{-16} \mathrm{~eV\cdot s}\).  
+Provide your answer to three significant figures in \(\mathrm{THz}\).  
+</question>
+
+<question>  
+Convert a solvation free energy difference of \(\Delta G_\mathrm{solv} = -5.5\,\mathrm{kcal\,mol}^{-1}\) (between reactant and transition state in acetonitrile) to \(\mathrm{kJ\,mol}^{-1}\).  
+(Use \(1\,\mathrm{kcal} = 4.184\,\mathrm{kJ}\).)  
+Report your answer to three significant figures.  
+</question>
+
+<question>  
+Using the solvation free energy difference \(\Delta G_\mathrm{solv} = -5.5\,\mathrm{kcal\,mol}^{-1}\) converted to \(\mathrm{kJ\,mol}^{-1}\), calculate the equilibrium constant ratio \(\frac{K_\mathrm{TS}}{K_\mathrm{R}}\) at \(T = 298\,\mathrm{K}\).  
+Use the relation  
+\[
+\Delta G = -RT \ln K,
+\]  
+where \(R = 8.314 \mathrm{~J\,mol}^{-1}\mathrm{K}^{-1}\).  
+Report the dimensionless ratio \(\frac{K_\mathrm{TS}}{K_\mathrm{R}}\) to three significant figures.  
+</question>
+=== Final questions generated ===

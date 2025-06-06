@@ -1,0 +1,514 @@
+=== Turn 0: Author generates questions ===
+<question>  
+An X-ray crystallography study of Cucumis melo agglutinin (CMA1), an R-type lectin, reveals a unit cell with dimensions:  
+ a = 58.2 Å, b = 72.4 Å, c = 94.6 Å,  
+and angles α = β = γ = 90°, with space group P212121. Given the molecular weight of CMA1 is 13,500 Da and the calculated Matthews coefficient $V_M$ is 2.5 Å³·Da⁻¹, estimate the number of CMA1 molecules per asymmetric unit. Assume the solvent content of the crystal is typical for protein crystals (~50%).  
+</question>
+
+<question>  
+A glycosaminoglycan (GAG) pentasaccharide binds specifically to an R-type lectin domain with a dissociation constant $K_D = 150$ nM at 298 K. Using the thermodynamic relationship $\Delta G = RT \ln K_D$, calculate the standard binding free energy $\Delta G^\circ$ in kJ·mol⁻¹. Use $R = 8.314$ J·mol⁻¹·K⁻¹.  
+</question>
+
+<question>  
+The binding pocket of CMA1 selectively recognizes the terminal sugar moiety of a glycan with strong hydrogen bonding interactions. If the enthalpic contribution to the binding is $\Delta H = -45.2$ kJ·mol⁻¹ and the entropy contribution at 298 K is such that the free energy change is $\Delta G = -36.1$ kJ·mol⁻¹, calculate the entropy change $\Delta S$ of binding in J·mol⁻¹·K⁻¹.  
+</question>
+
+<question>  
+In a molecular dynamics study, a mutation in the carbohydrate recognition domain of an R-type lectin causes the glycan-binding specificity to shift from N-acetylgalactosamine to glucose. Assuming no other structural changes, estimate the approximate change in hydrogen bond energy per bond if the mutation disrupts two hydrogen bonds, each normally contributing -4.5 kJ·mol⁻¹ in binding. Provide the net change in binding free energy in kJ·mol⁻¹.  
+</question>
+
+<question>  
+CMA1 crystallizes with a resolution of 1.8 Å and the calculated B-factor of one residue within the glycan-binding site is 25 Å². Given the Debye-Waller factor relationship $B = 8\pi^2 \langle u^2 \rangle$, where $\langle u^2 \rangle$ is the mean square atomic displacement in Å², calculate the root mean square displacement (RMSD) of that residue's atoms.  
+</question>
+
+<question>  
+A synthesized disaccharide ligand for CMA1 contains a single sulfate group at the 4-position of an iduronic acid residue, enhancing binding affinity by 6.0 kJ·mol⁻¹. If the original dissociation constant was 500 nM, calculate the new dissociation constant after sulfation at 298 K. Use $R = 8.314$ J·mol⁻¹·K⁻¹.  
+</question>
+
+<question>  
+An R-type lectin shows selective binding to a glycosaminoglycan displaying alternating 1→4 and 1→3 linkages of glucuronic acid and N-acetylglucosamine. Deduce the IUPAC-condensed notation of this tetrasaccharide repeating unit.  
+</question>
+
+<question>  
+Using the Eyring equation, calculate the activation enthalpy $\Delta H^\ddagger$ for glycan binding to CMA1 if the experimentally determined rate constant at 310 K is $1.2 \times 10^4$ s⁻¹ and the activation free energy $\Delta G^\ddagger$ is 68.5 kJ·mol⁻¹. Use the relation:  
+$$\Delta G^\ddagger = \Delta H^\ddagger - T \Delta S^\ddagger,$$  
+and assume the transmission coefficient is 1 and the pre-exponential factor is constant. Use $R = 8.314$ J·mol⁻¹·K⁻¹ and $k_B T/h = 6.2 \times 10^{12}$ s⁻¹ at 310 K.  
+</question>
+
+<question>  
+In the crystal structure of CMA1 complexed with a glycosaminoglycan, the observed electron density for the sulfate groups is weaker, corresponding to an occupancy of 0.75. If the total scattering factor contribution of a sulfate group at full occupancy is 50 electrons, calculate the effective scattering factor observed during X-ray data collection.  
+</question>
+=== Turn 0: Critic feedback ===
+Here’s a critical review of your questions versus your outlined guidelines, along with actionable improvements for each:
+
+---
+
+**1. First Question (X-ray/Matthews coefficient):**
+
+- **Strengths:** 
+  - Realistic scenario (X-ray crystallography, common in research).
+  - Requires multistep reasoning (unit cell, volume, $V_M$, MW, # of molecules).
+  - Precise units, new protein, not a textbook example.
+- **Improvements:**  
+  - The wording could be slightly tighter: clarify if the given $V_M$ was calculated from the given parameters or is an independently provided number (currently, both parameters are given, but with the values present it seems almost repetitive—could just provide numerical values and force calculation).
+  - Even though you require an explicit estimate, asking for the number of molecules "per asymmetric unit" is the clear single answer. Good.
+- **Actionable edit:** Remove “Assume the solvent content ...” (it doesn’t affect the process since you provide $V_M$ and typical protein MW).
+- **Formatting:** All equations and numbers are in good LaTeX/Markdown style.
+
+---
+
+**2. Second Question ($\Delta G$ from $K_D$):**
+
+- **Strengths:** Clear calculation needed, units required, not a standard example.
+- **Improvements:**  
+  - Unambiguously say "Calculate the standard Gibbs binding free energy, $\Delta G^\circ$, in kJ·mol⁻¹."  
+- **Tightening:** Optionally specify that $K_D$ should be unitless in the calculation, but likely not needed for this audience.
+- **Formatting:** Correct.
+
+---
+
+**3. Third Question (Calculate $\Delta S$ from $\Delta G$ and $\Delta H$):**
+
+- **Strengths:**  
+  - Real scenario, relevant calculations.
+  - Numbers and units are precise.
+- **Improvements:**  
+  - Instead of "the entropy contribution at 298 K is such that..." simply provide $\Delta G$ for the reaction at 298 K.
+  - Wording could be shorter: "Given $\Delta H$ and $\Delta G$ at 298 K, calculate $\Delta S$."
+- **Formatting:** Correct.
+
+---
+
+**4. Fourth Question (Mutation disrupts H-bonds; estimate $\Delta \Delta G$):**
+
+- **Strengths:**  
+  - Requires understanding of the energetics of H-bonds.
+  - Applies to a non-standard scenario.
+- **Improvements:**  
+  - Slightly convoluted phrasing about shift in specificity. For a calculation question, focus on bond disruption rather than the specificity (otherwise, it brings in unnecessary chemical reasoning—stick to numerical calculation per guidelines).
+  - Actionable: Remove “specificity to shift ...” and make it “If a mutation disrupts two hydrogen bonds in the binding site, each contributing −4.5 kJ·mol⁻¹, estimate the net change in binding free energy, in kJ·mol⁻¹.”
+- **Formatting:** Clear.
+
+---
+
+**5. Fifth Question (Debye–Waller/B-factor RMSD):**
+
+- **Strengths:** Precise, relating B-factor to RMSD.
+- **Improvements:**  
+  - None significant; very concise and well-posed.
+  - Possibly state "calculate the RMS atomic displacement (root mean square), in Å."
+- **Formatting:** Correct.
+
+---
+
+**6. Sixth Question (Effect of ligand modification on $K_D$):**
+
+- **Strengths:** Logical, multistep (relates change in free energy to change in $K_D$), precise.
+- **Improvements:**  
+  - Explicitly say to give the new $K_D$ to three significant figures and with correct units.
+- **Formatting:** Correct.
+
+---
+
+**7. Seventh Question (IUPAC notation for GAG, alternating linkages):**
+
+- **Strengths:** Demands chemical nomenclature skills, unique, not a textbook case.
+- **Improvements:**  
+  - "Deduce the IUPAC-condensed notation for this tetrasaccharide" (drop “repeating unit”; “tetrasaccharide” is sufficient).
+  - Specify that the answer should be given as a single IUPAC name.
+- **Formatting:** Clear.
+
+---
+
+**8. Eighth Question (Eyring equation; calculate $\Delta H^\ddagger$):**
+
+- **Strengths:** Multi-step, advanced, realistic.
+- **Improvements:**  
+  - Be very explicit that only $\Delta H^\ddagger$ is required.
+  - "Assume the transmission coefficient is 1 and the pre-exponential factor is $k_BT/h$." Just mention pre-exponential, not both.
+- **Formatting:** Clear.
+
+---
+
+**9. Ninth Question (Electron density occupancy factor):**
+
+- **Strengths:** Straightforward, no superfluous info.
+- **Improvements:**  
+  - Ensure the answer is expected as a single numerical value with correct units (electrons).
+  - Not much to improve.
+- **Formatting:** Correct.
+
+---
+
+**General Feedback:**
+
+- **(a) Strengths:**
+  - Most questions are scenario-based, multifaceted, and require calculations with explicit numbers/units.
+  - Formatting is largely rigorous and units are consistent.
+  - There is clear avoidance of redundancy and textbook examples.
+
+- **(b) Minor Issues:**
+  - A few lengthy or wordy question stems (esp. Q1 and Q4).
+  - In some, there’s slight ambiguity on whether a calculation or a compound name is required—a quick phrase clarifies this.
+  - In some places, existence of both calculated and supplied values (Q1) could be clarified.
+
+- **(c) Compliance:**
+  - All require a single value (or IUPAC name), not multiple parts.
+  - Phrasing is technical, not colloquial.
+
+---
+
+**General, Actionable Recommendations:**
+
+1. **Trim Unnecessary Explanatory Phrasing:** Focus directly on the calculation or deduction; avoid background statements unless essential for context.
+2. **Streamline Wording:** Condense sentence structure for more rigor (e.g., "Estimate the number of molecules per asymmetric unit given...").
+3. **Clarify Expected Answer Format:** Always specify: "Give your answer as a [number] with units/IUPAC name."
+4. **Explicit Units:** Where necessary, specify that answers must include correct units, and sometimes to a specific number of significant figures.
+5. **Focus on Problem Core:** Remove scenario details not directly relevant to the required calculation (see Q1 and Q4 notes).
+6. **Avoid Subtle Double-Check Data:** (e.g., in Q1—either units, dimensions, $V_M$, or MW—force the calculation, don’t just cross-check).
+
+---
+
+**Sample Improved Directions For One Question:**
+
+_Original:_  
+An X-ray crystallography study of Cucumis melo agglutinin (CMA1), an R-type lectin, reveals a unit cell with dimensions:  
+a = 58.2 Å, b = 72.4 Å, c = 94.6 Å,  
+and angles α = β = γ = 90°, with space group P212121. Given the molecular weight of CMA1 is 13,500 Da and the calculated Matthews coefficient $V_M$ is 2.5 Å³·Da⁻¹, estimate the number of CMA1 molecules per asymmetric unit. Assume the solvent content of the crystal is typical for protein crystals (~50%).
+
+_Improved:_  
+A crystal of Cucumis melo agglutinin (CMA1) has unit cell parameters $a = 58.2$ Å, $b = 72.4$ Å, $c = 94.6$ Å, and space group $P2_12_12_1$. The molecular weight of CMA1 is 13,500 Da. If the Matthews coefficient $V_M$ is calculated as $2.5$ Å³·Da⁻¹, calculate the number of CMA1 molecules per asymmetric unit. Give your answer as an integer.
+
+---
+
+**Summary:**  
+Your questions are well-constructed and represent challenging, high-level assessment items. Minor improvements chiefly involve further tightening the language, directly specifying answer format, and, in places, focusing only on information necessary for the calculation or deduction.
+=== Turn 1: Author refines questions ===
+<question>  
+A crystal of Cucumis melo agglutinin (CMA1) has unit cell parameters \(a = 58.2\ \mathring{A}\), \(b = 72.4\ \mathring{A}\), \(c = 94.6\ \mathring{A}\), and space group \(P2_12_12_1\). The molecular weight of CMA1 is 13,500 Da. Given the Matthews coefficient \(V_M = 2.5\ \mathring{A}^3\cdot\text{Da}^{-1}\), calculate the number of CMA1 molecules per asymmetric unit. Give your answer as an integer.  
+</question>
+
+<question>  
+A glycosaminoglycan pentasaccharide binds specifically to an R-type lectin domain with dissociation constant \(K_D = 150\) nM at 298 K. Calculate the standard Gibbs binding free energy \(\Delta G^\circ\) in kJ·mol\(^{-1}\). Use \(R = 8.314\) J·mol\(^{-1}\)·K\(^{-1}\).  
+</question>
+
+<question>  
+Given the enthalpy change \(\Delta H = -45.2\) kJ·mol\(^{-1}\) and Gibbs free energy change \(\Delta G = -36.1\) kJ·mol\(^{-1}\) at 298 K for the binding of a ligand to CMA1, calculate the entropy change \(\Delta S\) in J·mol\(^{-1}\)·K\(^{-1}\).  
+</question>
+
+<question>  
+If a mutation disrupts two hydrogen bonds in the binding site of an R-type lectin, each contributing \(-4.5\) kJ·mol\(^{-1}\) to binding, estimate the net change in binding free energy \(\Delta \Delta G\) in kJ·mol\(^{-1}\) due to this mutation.  
+</question>
+
+<question>  
+In a CMA1 crystal structure determined at 1.8 \(\mathring{A}\) resolution, a residue in the glycan-binding site has a B-factor of 25 \(\mathring{A}^2\). Using the Debye-Waller relation \(B = 8\pi^2 \langle u^2 \rangle\), where \(\langle u^2 \rangle\) is the mean square atomic displacement in \(\mathring{A}^2\), calculate the root mean square displacement (RMSD) of the atoms in \(\mathring{A}\).  
+</question>
+
+<question>  
+A synthesized disaccharide ligand for CMA1 contains a sulfate group at the 4-position of an iduronic acid residue, increasing the binding affinity by 6.0 kJ·mol\(^{-1}\). If the original dissociation constant was 500 nM at 298 K, calculate the new dissociation constant after sulfation. Use \(R = 8.314\) J·mol\(^{-1}\)·K\(^{-1}\). Express your answer in nanomolar (nM) to three significant figures.  
+</question>
+
+<question>  
+An R-type lectin selectively binds a glycosaminoglycan tetrasaccharide composed of alternating 1→4 and 1→3 linkages of glucuronic acid and N-acetylglucosamine. Deduce the IUPAC-condensed notation for this tetrasaccharide. Provide your answer as a single IUPAC-condensed name.  
+</question>
+
+<question>  
+Using the Eyring equation, calculate the activation enthalpy \(\Delta H^\ddagger\) (in kJ·mol\(^{-1}\)) for glycan binding to CMA1, given the rate constant at 310 K is \(1.2 \times 10^{4}\) s\(^{-1}\) and the activation free energy \(\Delta G^\ddagger = 68.5\) kJ·mol\(^{-1}\). Assume the transmission coefficient is 1 and the pre-exponential factor equals \(k_B T / h = 6.2 \times 10^{12}\) s\(^{-1}\) at 310 K. Use \(R = 8.314\) J·mol\(^{-1}\)·K\(^{-1}\) and the relation \(\Delta G^\ddagger = \Delta H^\ddagger - T \Delta S^\ddagger\).  
+</question>
+
+<question>  
+In the crystal structure of CMA1 complexed with a glycosaminoglycan, the sulfate group electron density corresponds to an occupancy of 0.75. If the full occupancy scattering factor of a sulfate group is 50 electrons, calculate the effective scattering factor observed in the X-ray data. Provide your answer as a numerical value in electrons.  
+</question>
+=== Turn 1: Critic feedback ===
+**Overall Assessment:**
+These questions are advanced, original, and require chemical reasoning, often blending structural biology with physical chemistry and biochemistry — a strong approach for higher-level chemistry assessment. Generally, they are clear, concise, and fit the scenario-based, unit-specific requirements.
+
+**Detailed Feedback per Question:**
+
+---
+
+**Q1 (Unit cell/Matthews coefficient):**
+- **Strengths:** Scenario-based, unique, multi-step, concise, units correct, unambiguous.
+- **Improvement:** None. **Excellent.**
+
+---
+
+**Q2 (Calculate ΔG° from K_D):**
+- **Strengths:** Multi-step, scenario-based, rigorous units, concise.
+- **Minor Suggestion:** Specify that the student should assume standard state concentrations and to use $K_D$ in the correct units (M), but this is often assumed at this level.  
+- **Optional Addition:** You could state: "Assume the standard state is 1 M."
+
+---
+
+**Q3 (Calculate ΔS):**
+- **Strengths:** Concise, unique, quantitative, enforces correct sign/unit.
+- **Improvement:** Mention to give numeric answer to an appropriate number of significant figures (e.g., 2 or 3).
+- **Minor:** Clarify that $\Delta S$ should be given in J·mol$^{-1}$·K$^{-1}$.
+
+---
+
+**Q4 (Estimate ΔΔG from H-bond loss):**
+- **Strengths:** Direct, models a real mutation, forces calculation.
+- **Minor Suggestion:** Specify "Assume the contributions are additive" for absolute clarity.
+
+---
+
+**Q5 (Calculate RMSD from B-factor):**
+- **Strengths:** Concise, multi-step, units enforced in answer, scenario-based.
+- **Minor:** Instruct explicitly: "Report your answer to two decimal places" (to standardize responses).
+
+---
+
+**Q6 (ΔK_D from ΔΔG):**
+- **Strengths:** Quantitative, multi-step, rigorous units/notation, original, consistent.
+- **Improvement:** State “Assume the free energy difference is entirely due to the change in $K_D$.” for completeness.
+
+---
+
+**Q7 (IUPAC condensed glycan naming):**
+- **Strengths:** Unusual and original, enforces knowledge of real chemical nomenclature.
+- **Improvement:** For clarity, specify the tetrasaccharide sequence (e.g., “beginning with glucuronic acid at the reducing end”) if answer order might be ambiguous. Also, ensure this is a single naming task, not naming and drawing, which it is.
+- **Consider:** “Provide the IUPAC-condensed name, indicating linkages explicitly.”
+
+---
+
+**Q8 (Eyring equation/ΔH‡ from k and ΔG‡):**
+- **Strengths:** Complex, multi-step, original, forces units/precision.
+- **Improvement:** Inform the student to provide $\Delta H^\ddagger$ to two decimal places.
+- **Minor:** The pre-exponential factor is given as both an explicit value and a formula; that's fine, but might state: "Use $k_BT/h = 6.2 \times 10^{12} \text{ s}^{-1}$ at 310 K."
+
+---
+
+**Q9 (Scattering factor/occupancy):**
+- **Strengths:** Simple, quantitative, original, enforces units.
+- **Minor:** None.
+
+---
+
+**General Recommendations:**
+
+1. **Clarify expected significant figures** (where open to rounding ambiguity).
+2. **Occasionally specify directionality or sequence** when naming polysaccharides.
+3. Add explicit statements regarding **assumptions** (e.g., additivity, standard states) where even the most advanced students might be unsure.
+4. All questions are single-valued, with only one expected answer — excellent. Avoids multipart responses.
+5. Equations and all math are already in $\LaTeX$-friendly Markdown, as required.
+6. All units are specified and consistent.
+
+**Conclusion:**  
+These questions are already of very high quality according to your guidelines. Only minor improvements are advisable: specify significant figures where appropriate, clarify sequences/nomenclature where ambiguity might arise, and add explicit assumptions as needed. Otherwise, these items are exemplars of rigorous assessment design at the graduate/upper undergraduate chemistry/structural biology interface.
+=== Turn 2: Author refines questions ===
+<question>  
+A crystal of Cucumis melo agglutinin (CMA1) has unit cell parameters \(a = 58.2\ \mathring{A}\), \(b = 72.4\ \mathring{A}\), \(c = 94.6\ \mathring{A}\), and space group \(P2_12_12_1\). The molecular weight of CMA1 is 13,500 Da. Given the Matthews coefficient \(V_M = 2.5\ \mathring{A}^3\cdot\text{Da}^{-1}\), calculate the number of CMA1 molecules per asymmetric unit. Give your answer as an integer.  
+</question>
+
+<question>  
+A glycosaminoglycan pentasaccharide binds specifically to an R-type lectin domain with dissociation constant \(K_D = 150\ \mathrm{nM}\) at 298 K. Calculate the standard Gibbs binding free energy \(\Delta G^\circ\) in kJ·mol\(^{-1}\). Use \(R = 8.314\) J·mol\(^{-1}\)·K\(^{-1}\). Assume the standard state is 1 M and convert \(K_D\) to molar units accordingly.  
+</question>
+
+<question>  
+Given the enthalpy change \(\Delta H = -45.2\) kJ·mol\(^{-1}\) and Gibbs free energy change \(\Delta G = -36.1\) kJ·mol\(^{-1}\) at 298 K for the binding of a ligand to CMA1, calculate the entropy change \(\Delta S\) in J·mol\(^{-1}\)·K\(^{-1}\). Report your answer with three significant figures.  
+</question>
+
+<question>  
+If a mutation disrupts two hydrogen bonds in the binding site of an R-type lectin, each contributing \(-4.5\) kJ·mol\(^{-1}\) to binding, estimate the net change in binding free energy \(\Delta \Delta G\) in kJ·mol\(^{-1}\) due to this mutation. Assume the contributions from the two hydrogen bonds are additive.  
+</question>
+
+<question>  
+In a CMA1 crystal structure determined at 1.8 \(\mathring{A}\) resolution, a residue in the glycan-binding site has a B-factor of 25 \(\mathring{A}^2\). Using the Debye-Waller relation \(B = 8\pi^2 \langle u^2 \rangle\), where \(\langle u^2 \rangle\) is the mean square atomic displacement in \(\mathring{A}^2\), calculate the root mean square displacement (RMSD) of the atoms in \(\mathring{A}\). Report your answer to two decimal places.  
+</question>
+
+<question>  
+A synthesized disaccharide ligand for CMA1 contains a sulfate group at the 4-position of an iduronic acid residue, increasing the binding affinity by 6.0 kJ·mol\(^{-1}\). If the original dissociation constant was 500 nM at 298 K, calculate the new dissociation constant after sulfation. Use \(R = 8.314\) J·mol\(^{-1}\)·K\(^{-1}\). Assume the free energy difference is entirely due to the change in \(K_D\). Express your answer in nanomolar (nM) to three significant figures.  
+</question>
+
+<question>  
+An R-type lectin selectively binds a glycosaminoglycan tetrasaccharide composed of alternating 1→4 and 1→3 linkages of glucuronic acid and N-acetylglucosamine, starting with a glucuronic acid residue at the reducing end. Deduce the IUPAC-condensed notation for this tetrasaccharide. Provide your answer as a single IUPAC-condensed name indicating all linkages explicitly.  
+</question>
+
+<question>  
+Using the Eyring equation, calculate the activation enthalpy \(\Delta H^\ddagger\) (in kJ·mol\(^{-1}\)) for glycan binding to CMA1, given the rate constant at 310 K is \(1.2 \times 10^{4}\) s\(^{-1}\) and the activation free energy \(\Delta G^\ddagger = 68.5\) kJ·mol\(^{-1}\). Assume the transmission coefficient is 1 and use the pre-exponential factor \(k_B T / h = 6.2 \times 10^{12}\) s\(^{-1}\) at 310 K. Use \(R = 8.314\) J·mol\(^{-1}\)·K\(^{-1}\) and the relation \(\Delta G^\ddagger = \Delta H^\ddagger - T \Delta S^\ddagger\). Report \(\Delta H^\ddagger\) to two decimal places.  
+</question>
+
+<question>  
+In the crystal structure of CMA1 complexed with a glycosaminoglycan, the sulfate group electron density corresponds to an occupancy of 0.75. If the full occupancy scattering factor of a sulfate group is 50 electrons, calculate the effective scattering factor observed in the X-ray data. Provide your answer as a numerical value in electrons.  
+</question>
+=== Turn 2: Critic feedback ===
+**Overall Evaluation:**
+
+Your questions are advanced, well-constructed, uniquely contextualized (CMA1, glycosaminoglycan, etc.), and demand appropriate calculation, nomenclature, or logic for single, unambiguous answers. Most items are rendered in clear, LaTeX-marked math. However, there are minor points where they could be improved for clarity, conciseness, or adherence to all guidelines.
+
+---
+
+### **1. Unit Cell & Matthews Coefficient Calculation**
+
+**Strengths:**  
+- Real scenario, clear numbers, direct prompt, correct units.
+- Mathematical expectation is multi-step and not rote.
+
+**Suggestions:**  
+- The parenthetical “Give your answer as an integer” is redundant, as the calculation will always yield a whole number of molecules.  
+- Consider specifying that you disregard solvent or give the protein as “assumed to be the only macromolecule in the asymmetric unit” for clarity.  
+- The variable $V_M$ and its value are well stated.
+
+**Revision Suggestion:**  
+*Minor; consider dropping the parenthetical or integrating it into the question phrasing.*
+
+---
+
+### **2. $K_D$ to $\Delta G^\circ$ Calculation**
+
+**Strengths:**  
+- Clear, multi-step, units specified, realistic cofactor and context.
+
+**Suggestions:**  
+- Specify “report your answer to two decimal places” or other significant figure instruction for consistency with other questions.
+- Remove “convert $K_D$ to molar units accordingly” in the question; instead, state $K_D$ in molar and/or nM and ask directly for conversion, or only give one unit.
+
+**Revision Suggestion:**  
+*Specify the desired precision. For conciseness: “Given…”*
+
+---
+
+### **3. Calculating $\Delta S$**
+
+**Strengths:**  
+- Units are clear, context direct, expectation clear.
+
+**Suggestions:**  
+- Sign convention: Make sure equation sign is clear as Gibbs function defines $\Delta G = \Delta H - T\Delta S$.  
+- Consider dropping “for the binding of a ligand to CMA1” as context is given; phrase as “Calculate the entropy change $\Delta S\ (\text{in J$\cdot$mol}^{-1}\cdot \text{K}^{-1})$ at 298 K.”  
+- Precision is good.
+
+---
+
+### **4. Disruption of Hydrogen Bonds**
+
+**Strengths:**  
+- Direct calculation, additive assumption is clear.
+
+**Suggestions:**  
+- “Assume the contributions ... are additive” is fine; straightforward.  
+- End question at “Provide your answer in kJ$\cdot$mol$^{-1}$.”
+
+---
+
+### **5. Debye-Waller Factor/RMSD Calculation**
+
+**Strengths:**  
+- Complete, formula provided, answer expected to two decimal places.
+
+**Suggestions:**  
+- Consider clarifying units for $B$ at the start (“B-factor of 25 $\mathring{A}^2$”).
+- Phrase as: “Calculate the root mean square atomic displacement ($\mathring{A}$).” (Cleaner phrasing.)
+
+---
+
+### **6. Binding Affinity Change and $K_D$**
+
+**Strengths:**  
+- Excellent; requires multiple steps, units clear, contingency (“assume free energy difference…”) explicit.
+
+**Suggestions:**  
+- Specify answer format, e.g., “Report your answer to three significant figures.”  
+- The context might be shortened (“A disaccharide ligand …”), but fine as is.
+
+---
+
+### **7. IUPAC Condensed Glycan Nomenclature**
+
+**Strengths:**  
+- Chemical nomenclature, requires detailed logical reconstruction, expects unique, structured output.
+
+**Suggestions:**  
+- Could provide a model for how to write the notation in your preferred form (e.g., clarify “provide your answer as ...”).  
+- For maximal clarity: “Write the IUPAC-condensed name, explicitly indicating all linkages.”
+
+---
+
+### **8. Eyring Equation: Activation Enthalpy**
+
+**Strengths:**  
+- Multi-step, uses context, well-posed, unique answer.
+
+**Suggestions:**  
+- Possibly clarify in one phrase, e.g., “Given $k_B T / h = 6.2 \times 10^{12}\ \text{s}^{-1}$ at 310 K, use the relation ... to calculate $\Delta H^\ddagger$ to two decimal places.”
+
+---
+
+### **9. Occupancy & Scattering Factor Calculation**
+
+**Strengths:**  
+- Posed concisely, calculations direct, units/precision clear.
+
+**Suggestions:**  
+- No improvement required.
+
+---
+
+## **General Recommendations**
+
+1. **Consistency in Answer Format**: Always specify the expected precision (number of significant figures or decimals) and final answer units.
+2. **Phrasing**: Remove superfluous discovery instructions (“Give your answer as an integer”) unless necessary for clarity, and focus on imperative voice.
+3. **Avoid Redundancy**: Some contextual phrases can be trimmed without loss of clarity.
+4. **Units and Chemical Names**: You are already rigorous; keep it consistent.
+5. **Single Solution**: All questions meet this guideline.
+6. **Solution Formatting**: Most of your math is formatted as required.
+7. **Explicit Precision/Units**: Specify the number format for reporting answers consistently across all questions.
+8. **Be explicit in nomenclature**: For IUPAC/condensed names, specify if anomeric configuration and linkage directionality must be included.
+
+---
+
+## **Summary Table**
+
+| Q# | Meets Guidelines | Suggestion                       |
+|----|------------------|----------------------------------|
+| 1  | Yes (minor)      | Precision; integrate parenthet.  |
+| 2  | Yes              | Specify decimal places           |
+| 3  | Yes              | Minor rephrase for clarity       |
+| 4  | Yes              | None                             |
+| 5  | Yes              | Wording; clarify units           |
+| 6  | Yes              | Specify sig figs                 |
+| 7  | Yes              | Clarify answer format            |
+| 8  | Yes              | Conciseness in instructions      |
+| 9  | Yes              | None                             |
+
+---
+
+**In summary:** Your questions are strong, advanced, and creative. Most improvements are in clarity and formatting/output precision. Standardize expectations for answer format throughout, trim unnecessary instructional language, and clarify where explicit chemical/structural nomenclature is needed.
+=== Turn 3: Author refines questions ===
+<question>  
+A crystal of Cucumis melo agglutinin (CMA1) has unit cell parameters \(a = 58.2\ \mathring{A}\), \(b = 72.4\ \mathring{A}\), \(c = 94.6\ \mathring{A}\), and space group \(P2_12_12_1\). The molecular weight of CMA1 is 13,500 Da. Given the Matthews coefficient \(V_M = 2.5\ \mathring{A}^3\cdot\text{Da}^{-1}\), calculate the number of CMA1 molecules in the asymmetric unit. Assume CMA1 is the only macromolecule present.  
+</question>
+
+<question>  
+A glycosaminoglycan pentasaccharide binds specifically to an R-type lectin domain with dissociation constant \(K_D = 150\ \mathrm{nM}\) at 298 K. Calculate the standard Gibbs binding free energy \(\Delta G^\circ\) in kJ·mol\(^{-1}\). Use \(R = 8.314\) J·mol\(^{-1}\)·K\(^{-1}\). Report your answer to two decimal places.  
+</question>
+
+<question>  
+Given the enthalpy change \(\Delta H = -45.2\) kJ·mol\(^{-1}\) and Gibbs free energy change \(\Delta G = -36.1\) kJ·mol\(^{-1}\) at 298 K, calculate the entropy change \(\Delta S\) in J·mol\(^{-1}\)·K\(^{-1}\). Use the relation \(\Delta G = \Delta H - T \Delta S\). Report your answer with three significant figures.  
+</question>
+
+<question>  
+If a mutation disrupts two hydrogen bonds in the binding site of an R-type lectin, each contributing \(-4.5\) kJ·mol\(^{-1}\) to binding, estimate the net change in binding free energy \(\Delta \Delta G\) in kJ·mol\(^{-1}\) due to this mutation. Assume the contributions are additive. Provide your answer in kJ·mol\(^{-1}\).  
+</question>
+
+<question>  
+In a CMA1 crystal structure determined at 1.8 \(\mathring{A}\) resolution, a residue in the glycan-binding site has a B-factor of 25 \(\mathring{A}^2\). Using the Debye-Waller relation \(B = 8\pi^2 \langle u^2 \rangle\), where \(\langle u^2 \rangle\) is the mean square atomic displacement in \(\mathring{A}^2\), calculate the root mean square atomic displacement in \(\mathring{A}\). Report your answer to two decimal places.  
+</question>
+
+<question>  
+A synthesized disaccharide ligand for CMA1 contains a sulfate group at the 4-position of an iduronic acid residue, increasing the binding affinity by 6.0 kJ·mol\(^{-1}\). If the original dissociation constant was 500 nM at 298 K, calculate the new dissociation constant after sulfation. Use \(R = 8.314\) J·mol\(^{-1}\)·K\(^{-1}\) and assume the free energy difference is entirely due to the change in \(K_D\). Express your answer in nanomolar (nM) to three significant figures.  
+</question>
+
+<question>  
+An R-type lectin selectively binds a glycosaminoglycan tetrasaccharide composed of alternating 1→4 and 1→3 linkages of glucuronic acid and N-acetylglucosamine, starting with a glucuronic acid residue at the reducing end. Write the full IUPAC-condensed name of this tetrasaccharide, explicitly indicating all linkage positions and directions.  
+</question>
+
+<question>  
+Using the Eyring equation, calculate the activation enthalpy \(\Delta H^\ddagger\) (in kJ·mol\(^{-1}\)) for glycan binding to CMA1, given the rate constant at 310 K is \(1.2 \times 10^{4}\) s\(^{-1}\) and the activation free energy \(\Delta G^\ddagger = 68.5\) kJ·mol\(^{-1}\). Assume a transmission coefficient of 1 and a pre-exponential factor \(k_B T / h = 6.2 \times 10^{12}\) s\(^{-1}\) at 310 K. Use \(R = 8.314\) J·mol\(^{-1}\)·K\(^{-1}\) and the relation \(\Delta G^\ddagger = \Delta H^\ddagger - T \Delta S^\ddagger\). Report \(\Delta H^\ddagger\) to two decimal places.  
+</question>
+
+<question>  
+In the crystal structure of CMA1 complexed with a glycosaminoglycan, the sulfate group electron density corresponds to an occupancy of 0.75. If the full-occupancy scattering factor of the sulfate group is 50 electrons, calculate the effective scattering factor observed in the X-ray data. Provide your answer as a numerical value in electrons.  
+</question>
+=== Final questions generated ===

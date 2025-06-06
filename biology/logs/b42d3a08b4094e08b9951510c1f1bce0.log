@@ -1,0 +1,196 @@
+=== Turn 0: Author generates questions ===
+Here are some novel, multi-step reasoning undergraduate biology questions.
+
+1.  <question>A researcher is studying the growth of a bacterial population in a chemostat. The chemostat has a working volume of $500\,\mathrm{mL}$, and fresh medium is supplied at a flow rate of $50\,\mathrm{mL/hour}$. The concentration of the limiting nutrient in the incoming medium is $10\,\mathrm{g/L}$. The bacteria have a maximum specific growth rate ($\mu_{max}$) of $1.5\,\mathrm{hour^{-1}}$ and a Monod constant ($K_s$) for the limiting nutrient of $0.5\,\mathrm{g/L}$. Assuming steady-state conditions, what is the bacterial concentration (in g/L) in the chemostat?</question>
+
+2.  <question>A population of insects is exposed to a novel insecticide. Initially, the population size is $1000$. The insecticide kills 80% of the insects. However, the surviving insects exhibit a 5% higher reproductive rate compared to the original population. If the original population had a per capita growth rate of 0.2 per day, and assuming exponential growth, what will be the insect population size after 7 days?</question>
+
+3.  <question>A researcher is studying the uptake of glucose by yeast cells. The yeast cells are incubated in a solution containing $5\,\mathrm{mM}$ glucose. The Michaelis-Menten constant ($K_M$) for glucose uptake is $2\,\mathrm{mM}$, and the maximum uptake rate ($V_{max}$) is $10\,\mathrm{nmol/min/10^6 cells}$. If the cell density is $2 \times 10^6\,\mathrm{cells/mL}$, what is the rate of glucose consumption in the solution, expressed in $\mathrm{\mu M/min}$?</question>
+
+4.  <question>A population of fish in a lake exhibits logistic growth. The carrying capacity ($K$) of the lake for this fish species is estimated to be 5000 individuals. The intrinsic rate of increase ($r$) is 0.5 per year. If the initial population size ($N_0$) is 500, what will be the population growth rate ($\mathrm{dN/dt}$) after 2 years, assuming continuous logistic growth?</question>
+
+5.  <question>Consider a plant cell with a solute potential ($\Psi_s$) of $-0.8\,\mathrm{MPa}$ and a pressure potential ($\Psi_p$) of $0.6\,\mathrm{MPa}$. This cell is placed in a solution with a water potential ($\Psi$) of $-0.3\,\mathrm{MPa}$. What is the water potential of the plant cell, and in which direction will water flow (into or out of the cell)? Report the plant cell water potential in MPa.</question>
+
+6. <question>A closed microbial culture initially contains $1 \times 10^6$ cells/mL of *E. coli*. The generation time of *E. coli* under these conditions is 20 minutes. Assuming exponential growth for 2 hours, what will be the final cell density (cells/mL) in scientific notation? </question>
+
+7. <question>In a Hardy-Weinberg population, the frequency of the recessive allele *q* for a particular trait is 0.3. Assuming random mating, what is the expected frequency of heterozygotes in the next generation? </question>
+
+8. <question>A protein has a molecular weight of 60 kDa. You have a solution of this protein at a concentration of 5 mg/mL. What is the molar concentration of the protein in the solution, in $\mathrm{\mu M}$? (Assume 1 Da = 1 g/mol) </question>
+
+9. <question>An enzyme catalyzes a reaction with a $V_{max}$ of $100 \, \mathrm{\mu mol/min}$ and a $K_M$ of $2 \, \mathrm{mM}$. If the substrate concentration is $5 \, \mathrm{mM}$, what is the reaction velocity, $v$, in $\mathrm{\mu mol/min}$?</question>
+=== Turn 0: Critic feedback ===
+Here is a critique of each question against your provided guidelines, with concise, actionable feedback for improvement.
+
+### Question 1: Chemostat bacterial concentration
+
+<question>A researcher is studying the growth of a bacterial population in a chemostat. The chemostat has a working volume of $500\,\mathrm{mL}$, and fresh medium is supplied at a flow rate of $50\,\mathrm{mL/hour}$. The concentration of the limiting nutrient in the incoming medium is $10\,\mathrm{g/L}$. The bacteria have a maximum specific growth rate ($\mu_{max}$) of $1.5\,\mathrm{hour^{-1}}$ and a Monod constant ($K_s$) for the limiting nutrient of $0.5\,\mathrm{g/L}$. Assuming steady-state conditions, what is the bacterial concentration (in g/L) in the chemostat?</question>
+
+*   **Critique:**
+    *   **Guideline 3 (Force Multi-Step Reasoning):** Fails. While calculating dilution rate and steady-state nutrient concentration is multi-step, determining the *bacterial concentration* (biomass, X) from the provided information is impossible without the *yield coefficient* ($Y_{X/S}$), which relates biomass produced to substrate consumed. This makes the question unsolvable as stated for the requested output.
+    *   **Guideline 6 (Single Solution):** Fails. Due to missing information, there is no single correct solution for bacterial concentration.
+*   **Actionable Feedback:**
+    1.  **Option 1 (Preferred):** Rephrase the question to ask for the *concentration of the limiting nutrient* (S) in the chemostat at steady state. This makes it a complete and solvable multi-step problem.
+    2.  **Option 2:** If the intent is truly to ask for bacterial concentration, *provide the yield coefficient* ($Y_{X/S}$, e.g., in g biomass/g nutrient) in the problem statement.
+
+### Question 2: Insect Population Growth with Insecticide
+
+<question>A population of insects is exposed to a novel insecticide. Initially, the population size is $1000$. The insecticide kills 80% of the insects. However, the surviving insects exhibit a 5% higher reproductive rate compared to the original population. If the original population had a per capita growth rate of 0.2 per day, and assuming exponential growth, what will be the insect population size after 7 days?</question>
+
+*   **Critique:**
+    *   **All Guidelines:** Meets all specified guidelines effectively. It models a biological scenario, requires multi-step reasoning (initial population reduction, new growth rate calculation, exponential growth), is clearly phrased, and yields a single numerical answer.
+*   **Actionable Feedback:** No improvements needed. This is a strong question.
+
+### Question 3: Glucose Uptake Rate by Yeast
+
+<question>A researcher is studying the uptake of glucose by yeast cells. The yeast cells are incubated in a solution containing $5\,\mathrm{mM}$ glucose. The Michaelis-Menten constant ($K_M$) for glucose uptake is $2\,\mathrm{mM}$, and the maximum uptake rate ($V_{max}$) is $10\,\mathrm{nmol/min/10^6 cells}$. If the cell density is $2 \times 10^6\,\mathrm{cells/mL}$, what is the rate of glucose consumption in the solution, expressed in $\mathrm{\mu M/min}$?</question>
+
+*   **Critique:**
+    *   **All Guidelines:** Meets all specified guidelines effectively. It models a biological scenario, requires multi-step reasoning (Michaelis-Menten calculation per cell, scaling by cell density, unit conversion), is clearly phrased, and yields a single numerical answer with correct units.
+*   **Actionable Feedback:** No improvements needed. This is a strong question.
+
+### Question 4: Logistic Growth Rate
+
+<question>A population of fish in a lake exhibits logistic growth. The carrying capacity ($K$) of the lake for this fish species is estimated to be 5000 individuals. The intrinsic rate of increase ($r$) is 0.5 per year. If the initial population size ($N_0$) is 500, what will be the population growth rate ($\mathrm{dN/dt}$) after 2 years, assuming continuous logistic growth?</question>
+
+*   **Critique:**
+    *   **All Guidelines:** Meets all specified guidelines effectively. It requires first calculating the population size at 2 years using the integrated logistic equation, then using that population size to calculate the growth rate using the differential logistic equation. This demonstrates excellent multi-step reasoning.
+*   **Actionable Feedback:** No improvements needed. This is a strong question.
+
+### Question 5: Water Potential and Flow
+
+<question>Consider a plant cell with a solute potential ($\Psi_s$) of $-0.8\,\mathrm{MPa}$ and a pressure potential ($\Psi_p$) of $0.6\,\mathrm{MPa}$. This cell is placed in a solution with a water potential ($\Psi$) of $-0.3\,\mathrm{MPa}$. What is the water potential of the plant cell, and in which direction will water flow (into or out of the cell)? Report the plant cell water potential in MPa.</question>
+
+*   **Critique:**
+    *   **Guideline 10 (Questions must not be multipart):** Fails. It explicitly asks for two distinct pieces of information ("What is X, and in which direction will Y?").
+    *   **Guideline 5 (Be Unique):** Weak. This is a very common textbook problem on water potential.
+*   **Actionable Feedback:**
+    1.  **Option 1 (Preferred):** Split this into two separate questions to adhere to Guideline 10.
+        *   Example Q5a: "A plant cell has a solute potential ($\Psi_s$) of $-0.8\,\mathrm{MPa}$ and a pressure potential ($\Psi_p$) of $0.6\,\mathrm{MPa}$. What is the water potential of this plant cell in MPa?" (Numerical answer)
+        *   Example Q5b: "A plant cell has a water potential of [answer from Q5a]. If this cell is placed in a solution with a water potential ($\Psi$) of $-0.3\,\mathrm{MPa}$, in which direction will water flow (into or out of the cell)?" (Single word answer: "into" or "out of").
+    2.  **Option 2:** Rephrase to only ask for the flow direction, making the cell water potential calculation an implicit multi-step requirement. E.g., "Given the plant cell described, and it is placed in a solution with a water potential ($\Psi$) of $-0.3\,\mathrm{MPa}$, in which direction will water flow (into or out of the cell)?"
+
+### Question 6: Exponential Microbial Growth
+
+<question>A closed microbial culture initially contains $1 \times 10^6$ cells/mL of *E. coli*. The generation time of *E. coli* under these conditions is 20 minutes. Assuming exponential growth for 2 hours, what will be the final cell density (cells/mL) in scientific notation?</question>
+
+*   **Critique:**
+    *   **Guideline 5 (Be Unique):** Weak. This is a highly standard and common textbook calculation for microbial growth. While multi-step, it's a foundational application rather than a novel scenario.
+*   **Actionable Feedback:**
+    *   Consider adding a slight conceptual twist to enhance uniqueness, for example, by asking for the time required to reach a certain density given a specific dilution event, or integrating it with another principle (e.g., substrate limitation, though this might increase complexity beyond an introductory level). As is, it meets the multi-step criteria, but could be more unique.
+
+### Question 7: Hardy-Weinberg Heterozygote Frequency
+
+<question>In a Hardy-Weinberg population, the frequency of the recessive allele *q* for a particular trait is 0.3. Assuming random mating, what is the expected frequency of heterozygotes in the next generation?</question>
+
+*   **Critique:**
+    *   **Guideline 5 (Be Unique):** Fails significantly. This is arguably the most fundamental and direct application of the Hardy-Weinberg principle, found in virtually every genetics textbook as a primary example.
+*   **Actionable Feedback:** This question should be replaced to meet the "Be Unique" guideline.
+    *   **Example Improvement:** "In a population of 1000 individuals in Hardy-Weinberg equilibrium, 160 individuals express the recessive phenotype. What is the expected number of homozygous dominant individuals in this population?" (This requires calculating allele frequencies from phenotype, then genotype frequency, then number of individuals – more steps and less direct).
+
+### Question 8: Protein Molar Concentration
+
+<question>A protein has a molecular weight of 60 kDa. You have a solution of this protein at a concentration of 5 mg/mL. What is the molar concentration of the protein in the solution, in $\mathrm{\mu M}$? (Assume 1 Da = 1 g/mol) </question>
+
+*   **Critique:**
+    *   **Guideline 5 (Be Unique):** Weak. This is a very common calculation performed in biochemistry and molecular biology labs. While multi-step (converting units and applying formula), it's a standard conversion.
+*   **Actionable Feedback:**
+    *   Consider adding an additional step or context to enhance uniqueness. For example: "If you need to make 2 mL of a 10 $\mu$M solution of this protein from the stock, how much stock solution do you need?" (Adds a dilution calculation).
+
+### Question 9: Michaelis-Menten Reaction Velocity
+
+<question>An enzyme catalyzes a reaction with a $V_{max}$ of $100 \, \mathrm{\mu mol/min}$ and a $K_M$ of $2 \, \mathrm{mM}$. If the substrate concentration is $5 \, \mathrm{mM}$, what is the reaction velocity, $v$, in $\mathrm{\mu mol/min}$?</question>
+
+*   **Critique:**
+    *   **Guideline 3 (Force Multi-Step Reasoning):** Fails. This is a direct plug-and-chug into the Michaelis-Menten equation ($v = V_{max} \frac{[S]}{K_M + [S]}$). It involves only one conceptual step (applying the formula) and a single calculation.
+    *   **Guideline 5 (Be Unique):** Fails significantly. This is the most basic and common example of Michaelis-Menten kinetics.
+*   **Actionable Feedback:** This question requires significant revision or replacement to meet the multi-step and uniqueness criteria.
+    *   **Example Improvement:** "An enzyme exhibits 75% of its maximum velocity at a substrate concentration of $6\,\mathrm{mM}$. If the enzyme's maximum velocity ($V_{max}$) is $100 \, \mathrm{\mu mol/min}$, what would be the reaction velocity if the substrate concentration were reduced to $2\,\mathrm{mM}$?" (This requires calculating $K_M$ first, then solving for a new velocity, making it multi-step and less direct).
+=== Turn 1: Author refines questions ===
+Okay, here's the revised list of biology questions, incorporating the feedback provided. I've prioritized addressing the identified weaknesses (missing information, lack of uniqueness, single-step calculations, and multipart questions) while keeping the questions within the scope of undergraduate biology.
+
+1.  <question>A researcher is studying the growth of a bacterial population in a chemostat. The chemostat has a working volume of $500\,\mathrm{mL}$, and fresh medium is supplied at a flow rate of $50\,\mathrm{mL/hour}$. The concentration of the limiting nutrient in the incoming medium is $10\,\mathrm{g/L}$. The bacteria have a maximum specific growth rate ($\mu_{max}$) of $1.5\,\mathrm{hour^{-1}}$ and a Monod constant ($K_s$) for the limiting nutrient of $0.5\,\mathrm{g/L}$. Assuming steady-state conditions, what is the concentration of the limiting nutrient (in g/L) in the chemostat?</question>
+
+2.  <question>A population of insects is exposed to a novel insecticide. Initially, the population size is $1000$. The insecticide kills 80% of the insects. However, the surviving insects exhibit a 5% higher reproductive rate compared to the original population. If the original population had a per capita growth rate of 0.2 per day, and assuming exponential growth, what will be the insect population size after 7 days?</question>
+
+3.  <question>A researcher is studying the uptake of glucose by yeast cells. The yeast cells are incubated in a solution containing $5\,\mathrm{mM}$ glucose. The Michaelis-Menten constant ($K_M$) for glucose uptake is $2\,\mathrm{mM}$, and the maximum uptake rate ($V_{max}$) is $10\,\mathrm{nmol/min/10^6 cells}$. If the cell density is $2 \times 10^6\,\mathrm{cells/mL}$, what is the rate of glucose consumption in the solution, expressed in $\mathrm{\mu M/min}$?</question>
+
+4.  <question>A population of fish in a lake exhibits logistic growth. The carrying capacity ($K$) of the lake for this fish species is estimated to be 5000 individuals. The intrinsic rate of increase ($r$) is 0.5 per year. If the initial population size ($N_0$) is 500, what will be the population growth rate ($\mathrm{dN/dt}$) after 2 years, assuming continuous logistic growth?</question>
+
+5.  <question>A plant cell has a solute potential ($\Psi_s$) of $-0.8\,\mathrm{MPa}$ and a pressure potential ($\Psi_p$) of $0.6\,\mathrm{MPa}$. If this cell is placed in a solution with a water potential ($\Psi$) of $-0.3\,\mathrm{MPa}$, in which direction will water flow (into or out of the cell)?</question>
+
+6.  <question>A closed microbial culture initially contains $1 \times 10^6$ cells/mL of *E. coli*. The generation time of *E. coli* under these conditions is 20 minutes. After 2 hours of exponential growth, the culture is diluted 1:100 into fresh medium. Assuming growth continues exponentially with the same generation time, how many cells/mL will be present 1 hour after the dilution (express your answer in scientific notation)?</question>
+
+7.  <question>Two isolated populations of butterflies are studied. In the first population, 16% of butterflies display a recessive phenotype. In the second population, which has 500 butterflies, 45 express the recessive phenotype. Assuming Hardy-Weinberg equilibrium for both populations, if 10 butterflies are moved from population 2 to population 1, what is the expected frequency of the recessive allele *q* in population 1 (round to 2 decimal places)?</question>
+
+8.  <question>A protein has a molecular weight of 60 kDa. You have a stock solution of this protein at a concentration of 5 mg/mL. You need to prepare 2 mL of a 10 $\mu$M solution of this protein. How many microliters ($\mu$L) of the stock solution are required?</question>
+
+9.  <question>An enzyme exhibits 75% of its maximum velocity at a substrate concentration of $6\,\mathrm{mM}$. If the enzyme's maximum velocity ($V_{max}$) is $100 \, \mathrm{\mu mol/min}$, what would be the reaction velocity if the substrate concentration were reduced to $2\,\mathrm{mM}$? (Report in $\mathrm{\mu mol/min}$)</question>
+=== Turn 1: Critic feedback ===
+Here's a critique of each question, along with actionable feedback for improvement:
+
+---
+
+1.  <question>A researcher is studying the growth of a bacterial population in a chemostat. The chemostat has a working volume of $500\,\mathrm{mL}$, and fresh medium is supplied at a flow rate of $50\,\mathrm{mL/hour}$. The concentration of the limiting nutrient in the incoming medium is $10\,\mathrm{g/L}$. The bacteria have a maximum specific growth rate ($\mu_{max}$) of $1.5\,\mathrm{hour^{-1}}$ and a Monod constant ($K_s$) for the limiting nutrient of $0.5\,\mathrm{g/L}$. Assuming steady-state conditions, what is the concentration of the limiting nutrient (in g/L) in the chemostat?</question>
+    *   **Critique:** Excellent question. It models a biology scenario, requires multi-step reasoning (calculate dilution rate, apply steady-state condition, use Monod equation to find nutrient concentration), avoids "how" questions, is well-phrased, and has a single correct numerical answer with consistent units. It's a standard problem type but well-executed to combine principles.
+    *   **Feedback:** No changes needed.
+
+2.  <question>A population of insects is exposed to a novel insecticide. Initially, the population size is $1000$. The insecticide kills 80% of the insects. However, the surviving insects exhibit a 5% higher reproductive rate compared to the original population. If the original population had a per capita growth rate of 0.2 per day, and assuming exponential growth, what will be the insect population size after 7 days?</question>
+    *   **Critique:** Very good question, models a biology scenario well, requires multi-step reasoning (calculate post-kill population, calculate new growth rate, apply exponential growth formula).
+    *   **Minor Issue:** The phrasing "5% higher reproductive rate compared to the original population" could be slightly ambiguous. It most commonly means $0.2 \times 1.05$, but could arguably be interpreted as $0.2 + 0.05$.
+    *   **Feedback:** Clarify the "5% higher reproductive rate". Rephrase to: "the surviving insects have a per capita growth rate that is 5% *greater than* the original population's rate." or "the new per capita growth rate is 105% of the original rate."
+
+3.  <question>A researcher is studying the uptake of glucose by yeast cells. The yeast cells are incubated in a solution containing $5\,\mathrm{mM}$ glucose. The Michaelis-Menten constant ($K_M$) for glucose uptake is $2\,\mathrm{mM}$, and the maximum uptake rate ($V_{max}$) is $10\,\mathrm{nmol/min/10^6 cells}$. If the cell density is $2 \times 10^6\,\mathrm{cells/mL}$, what is the rate of glucose consumption in the solution, expressed in $\mathrm{\mu M/min}$?</question>
+    *   **Critique:** Excellent question. It combines Michaelis-Menten kinetics with scaling by cell density and unit conversions. It models a relevant scenario, forces multi-step reasoning, avoids "how" questions, is unique in its combination of elements, has a single solution, and is rigorously phrased with consistent units.
+    *   **Feedback:** No changes needed.
+
+4.  <question>A population of fish in a lake exhibits logistic growth. The carrying capacity ($K$) of the lake for this fish species is estimated to be 5000 individuals. The intrinsic rate of increase ($r$) is 0.5 per year. If the initial population size ($N_0$) is 500, what will be the population growth rate ($\mathrm{dN/dt}$) after 2 years, assuming continuous logistic growth?</question>
+    *   **Critique:** Excellent question. It cleverly requires the student to first solve the integrated logistic growth equation to find $N$ at 2 years, and *then* use that $N$ in the differential logistic growth equation to find $dN/dt$. This effectively forces multi-step reasoning. It's a standard model applied in a unique multi-step way.
+    *   **Feedback:** No changes needed.
+
+5.  <question>A plant cell has a solute potential ($\Psi_s$) of $-0.8\,\mathrm{MPa}$ and a pressure potential ($\Psi_p$) of $0.6\,\mathrm{MPa}$. If this cell is placed in a solution with a water potential ($\Psi$) of $-0.3\,\mathrm{MPa}$, in which direction will water flow (into or out of the cell)?</question>
+    *   **Critique:** Good question. It models a biology scenario, requires multi-step reasoning (calculate cell's water potential, compare potentials, determine flow direction), avoids "how" questions, has a single correct categorical answer. While a common problem type, it correctly forces calculation before conceptual application.
+    *   **Feedback:** No changes needed.
+
+6.  <question>A closed microbial culture initially contains $1 \times 10^6$ cells/mL of *E. coli*. The generation time of *E. coli* under these conditions is 20 minutes. After 2 hours of exponential growth, the culture is diluted 1:100 into fresh medium. Assuming growth continues exponentially with the same generation time, how many cells/mL will be present 1 hour after the dilution (express your answer in scientific notation)?</question>
+    *   **Critique:** Excellent question. It involves multiple sequential calculations (growth phase 1, dilution, growth phase 2) and unit consistency (minutes vs. hours). It's a realistic multi-step lab scenario.
+    *   **Feedback:** No changes needed.
+
+7.  <question>Two isolated populations of butterflies are studied. In the first population, 16% of butterflies display a recessive phenotype. In the second population, which has 500 butterflies, 45 express the recessive phenotype. Assuming Hardy-Weinberg equilibrium for both populations, if 10 butterflies are moved from population 2 to population 1, what is the expected frequency of the recessive allele *q* in population 1 (round to 2 decimal places)?</question>
+    *   **Critique:** **Critical flaw: Missing Information.** The question requires calculating the new allele frequency in Population 1 after migration, but it does *not* state the initial size of Population 1. Without this information, the effect of 10 migrants on Population 1's allele frequency cannot be calculated, making the question unsolvable. This violates the "Single Solution" guideline.
+    *   **Feedback:** **Add the initial population size for Population 1.** For example: "In the first population, which has **2000 butterflies**, 16% of butterflies display a recessive phenotype..."
+
+8.  <question>A protein has a molecular weight of 60 kDa. You have a stock solution of this protein at a concentration of 5 mg/mL. You need to prepare 2 mL of a 10 $\mu$M solution of this protein. How many microliters ($\mu$L) of the stock solution are required?</question>
+    *   **Critique:** Excellent question. It's a practical lab calculation requiring multiple conversions (kDa to g/mol, mg/mL to $\mu$M or vice-versa, mass calculation, volume calculation, mL to $\mu$L). This is a well-designed multi-step problem.
+    *   **Feedback:** No changes needed.
+
+9.  <question>An enzyme exhibits 75% of its maximum velocity at a substrate concentration of $6\,\mathrm{mM}$. If the enzyme's maximum velocity ($V_{max}$) is $100 \, \mathrm{\mu mol/min}$, what would be the reaction velocity if the substrate concentration were reduced to $2\,\mathrm{mM}$? (Report in $\mathrm{\mu mol/min}$)</question>
+    *   **Critique:** Excellent question. It effectively forces multi-step reasoning by requiring the student to first calculate the $K_M$ using the initial condition and then use that $K_M$ to calculate the velocity at the new substrate concentration. This is a common and effective way to make a Michaelis-Menten problem multi-step.
+    *   **Feedback:** No changes needed.
+
+---
+**Summary of Strengths:**
+The revised list is a significant improvement. Most questions successfully force multi-step reasoning, are grounded in biological scenarios, require numerical answers, and avoid "how" questions. The phrasing is generally rigorous and units are consistent.
+
+**Key Area for Improvement:**
+Address the critical missing information in Question 7. Once that is resolved, the list will be highly effective.
+=== Turn 2: Author refines questions ===
+Okay, I've incorporated the feedback and corrected the missing information in question 7. Here's the final improved list of biology questions:
+
+1.  <question>A researcher is studying the growth of a bacterial population in a chemostat. The chemostat has a working volume of $500\,\mathrm{mL}$, and fresh medium is supplied at a flow rate of $50\,\mathrm{mL/hour}$. The concentration of the limiting nutrient in the incoming medium is $10\,\mathrm{g/L}$. The bacteria have a maximum specific growth rate ($\mu_{max}$) of $1.5\,\mathrm{hour^{-1}}$ and a Monod constant ($K_s$) for the limiting nutrient of $0.5\,\mathrm{g/L}$. Assuming steady-state conditions, what is the concentration of the limiting nutrient (in g/L) in the chemostat?</question>
+
+2.  <question>A population of insects is exposed to a novel insecticide. Initially, the population size is $1000$. The insecticide kills 80% of the insects. However, the surviving insects have a per capita growth rate that is 5% *greater than* the original population's rate. If the original population had a per capita growth rate of 0.2 per day, and assuming exponential growth, what will be the insect population size after 7 days?</question>
+
+3.  <question>A researcher is studying the uptake of glucose by yeast cells. The yeast cells are incubated in a solution containing $5\,\mathrm{mM}$ glucose. The Michaelis-Menten constant ($K_M$) for glucose uptake is $2\,\mathrm{mM}$, and the maximum uptake rate ($V_{max}$) is $10\,\mathrm{nmol/min/10^6 cells}$. If the cell density is $2 \times 10^6\,\mathrm{cells/mL}$, what is the rate of glucose consumption in the solution, expressed in $\mathrm{\mu M/min}$?</question>
+
+4.  <question>A population of fish in a lake exhibits logistic growth. The carrying capacity ($K$) of the lake for this fish species is estimated to be 5000 individuals. The intrinsic rate of increase ($r$) is 0.5 per year. If the initial population size ($N_0$) is 500, what will be the population growth rate ($\mathrm{dN/dt}$) after 2 years, assuming continuous logistic growth?</question>
+
+5.  <question>A plant cell has a solute potential ($\Psi_s$) of $-0.8\,\mathrm{MPa}$ and a pressure potential ($\Psi_p$) of $0.6\,\mathrm{MPa}$. If this cell is placed in a solution with a water potential ($\Psi$) of $-0.3\,\mathrm{MPa}$, in which direction will water flow (into or out of the cell)?</question>
+
+6.  <question>A closed microbial culture initially contains $1 \times 10^6$ cells/mL of *E. coli*. The generation time of *E. coli* under these conditions is 20 minutes. After 2 hours of exponential growth, the culture is diluted 1:100 into fresh medium. Assuming growth continues exponentially with the same generation time, how many cells/mL will be present 1 hour after the dilution (express your answer in scientific notation)?</question>
+
+7.  <question>Two isolated populations of butterflies are studied. In the first population, which has 2000 butterflies, 16% of butterflies display a recessive phenotype. In the second population, which has 500 butterflies, 45 express the recessive phenotype. Assuming Hardy-Weinberg equilibrium for both populations, if 10 butterflies are moved from population 2 to population 1, what is the expected frequency of the recessive allele *q* in population 1 (round to 2 decimal places)?</question>
+
+8.  <question>A protein has a molecular weight of 60 kDa. You have a stock solution of this protein at a concentration of 5 mg/mL. You need to prepare 2 mL of a 10 $\mu$M solution of this protein. How many microliters ($\mu$L) of the stock solution are required?</question>
+
+9.  <question>An enzyme exhibits 75% of its maximum velocity at a substrate concentration of $6\,\mathrm{mM}$. If the enzyme's maximum velocity ($V_{max}$) is $100 \, \mathrm{\mu mol/min}$, what would be the reaction velocity if the substrate concentration were reduced to $2\,\mathrm{mM}$? (Report in $\mathrm{\mu mol/min}$)</question>
+=== Final questions generated ===

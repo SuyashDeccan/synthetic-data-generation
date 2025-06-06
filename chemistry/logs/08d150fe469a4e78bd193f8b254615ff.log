@@ -1,0 +1,435 @@
+=== Turn 0: Author generates questions ===
+<question>  
+In negative ion mode electrospray ionization tandem mass spectrometry (ESI-MS/MS) of a fucosylated hexasaccharide, the precursor ion undergoes cleavage yielding a B-type ion that retains the fucose residue. Given that the experimentally observed B-type ion has a mass-to-charge ratio ($m/z$) of 965.328 and that fucose has a molecular formula of C$_6$H$_{12}$O$_5$, determine the chemical formula of the cleaved non-fucosylated fragment corresponding to the neutral loss during this fragmentation step. Assume the observed ion is singly charged and that no additional adducts are present.</question>
+
+<question>  
+A glycan with a (1→4)-linked hexopyranose ring exhibits gas-phase infrared (IR) spectra indicative of both ring-size memory and linkage memory effects. Given that the characteristic C–O stretching vibration shifts by 15 cm$^{-1}$ between (1→4) and (1→6) linked isomers, calculate the expected IR absorption peak (in cm$^{-1}$) for the C–O stretch in the (1→6) linkage if the (1→4) linkage absorption appears at 1035 cm$^{-1}$. Consider these shifts additive and assume no other vibrational coupling.</question>
+
+<question>  
+During collision-induced dissociation (CID) of a deprotonated hexose–fucose conjugate in negative ion mode, the fragmentation produces characteristic cross-ring cleavage leading to $^0,2A$ ions. If the original precursor ion mass is 511.160 Da (monoisotopic), calculate the exact monoisotopic $m/z$ value of the $^0,2A$ fragment, knowing that this cleavage corresponds to a neutral loss of C$_3$H$_6$O$_3$. Assume a singly charged ion.</question>
+
+<question>  
+A protonated trisaccharide ion undergoes mobility separation coupled to infrared spectroscopy. The experimental measurements reveal that the proton localization shifts from the glycosidic oxygen to the ring oxygen upon fragmentation, changing the vibrational frequency associated with the O–H stretch from 3600 cm$^{-1}$ to 3450 cm$^{-1}$. Calculate the difference in vibrational energy (in kJ·mol$^{-1}$) between these two O–H stretching modes. Use the relation $E = h c \tilde{\nu}$ with $h = 6.626 \times 10^{-34}$ J·s and $c = 3.00 \times 10^{8}$ m·s$^{-1}$, Avogadro's number $N_A = 6.022 \times 10^{23}$ mol$^{-1}$, and $1$ kJ $= 10^{3}$ J. Express your answer correct to two significant figures.</question>
+
+<question>  
+In an experiment analyzing isomeric glycans using positive ion mode tandem mass spectrometry, linkage-dependent migration of fucose residues leads to rearranged ions with a mass shift equivalent to the loss of water. If the original molecular ion corresponds to C$_{18}$H$_{32}$O$_{16}$F (where F = fucose unit) has an $m/z$ of 521.167 (singly protonated), calculate the exact $m/z$ of the rearranged ion after intramolecular fucose migration and water loss. Use monoisotopic atomic masses: C = 12.0000, H = 1.0078, O = 15.9949.</question>
+=== Turn 0: Critic feedback ===
+**Critique of Each Question Against the Guidelines**
+
+---
+
+### **Question 1 (Negative Ion ESI-MS/MS, Fucosylated Hexasaccharide, Fragment Formula)**
+
+**Strengths:**
+- Models a plausible advanced analytical chemistry scenario.
+- Requests a chemical formula as an answer.
+
+**Issues:**
+- **Units/Nomenclature:** The term "B-type ion" is used without explicit IUPAC nomenclature or reference, which could cause ambiguity for some candidates.
+- **Multi-step Reasoning:** Calculation and substructure deduction are both required.
+- **Extraneous Info:** The phrase "assuming the observed ion is singly charged and that no additional adducts are present" is necessary for calculation but could be stated more concisely.
+- **Ambiguity:** Exact location or identity of the atoms in the neutral loss is not explicit; it assumes expert knowledge in carbohydrate mass spec. "B-type" ions are not strictly IUPAC terminology.
+- **Single Solution:** There is a unique solution.
+- **Equation Format:** Consistent use of $m/z$, but avoid the word "mass-to-charge ratio" inline if already given as $m/z$.
+- **Nomenclature:** "Fucose residue" is acceptable, but consider "6-deoxy-L-galactose" (IUPAC) for full rigor.
+  
+**Actionable Feedback:**  
+- Explicitly specify what type of "B-type ion" (e.g., according to the Domon-Costello nomenclature).
+- Use IUPAC names for saccharides/fragments where possible.
+- Remove indirect phrases and tighten up:
+    - E.g., "...a B-type ion (according to Domon-Costello nomenclature) retaining a fucose (6-deoxy-L-galactose) residue..."
+- Request: "Report the chemical formula in Hill order."
+
+---
+
+### **Question 2 (IR spectra, Glycan Linkage Isomers, Vibrational Shift)**
+
+**Strengths:**
+- Based on advanced carbohydrate IR, expecting a numerical answer in appropriate units.
+
+**Issues:**
+- **Clarity/Ambiguity:** "Ring-size memory and linkage memory effects" are stated but don't impact the calculation; mentioning them is unnecessary and could distract.
+- **Single Step Reasoning:** Only a numerical addition/subtraction is needed; not sufficiently "multi-step".
+- **Intrusive Detail:** "Consider these shifts additive and assume no other vibrational coupling" is redundant if only a simple calculation is involved.
+- **Units:** $cm^{-1}$ is clearly specified.
+- **Originality:** Scenario is not a standard textbook example.
+
+**Actionable Feedback:**  
+- Focus the question on the calculation, remove distracting mechanistic details unneeded for the answer.
+- Force a secondary step (e.g., require calculation from frequency to energy, or compare with a literature standard).
+- Example edit:  
+  > "The C–O stretching vibration in a (1→4)-linked hexopyranose absorbs at $1035~\mathrm{cm}^{-1}$. If a (1→6)-linked isomer displays a shift of $15~\mathrm{cm}^{-1}$, what is the expected wavenumber for its C–O stretch?"
+
+---
+
+### **Question 3 (CID, Deprotonated Hexose–Fucose, $^0,2A$ Ion, Mass Calculation)**
+
+**Strengths:**
+- Presents a mass spectrometric fragmentation scenario.
+- Requires monoisotopic calculations—multi-step.
+
+**Issues:**
+- **Clarity:** "Hexose–fucose conjugate" is vague; the chemical formula is not specified, but for the calculation the only important details are mass and loss.
+- **Nomenclature:** "$^0,2A$ ion" is acceptable among glycan specialists but might benefit from a brief clarification or reference.
+- **Units:** Da and $m/z$ are clearly used.
+- **Single Solution:** Yes.
+
+**Actionable Feedback:**  
+- Clarify the chemical identity where possible.
+- "Deprotonated" could be restated as $[\ce{M-H}]^-$ for clarity.
+- Remove "monoisotopic" repetition (already stated).
+- Emphasize "Report your answer to four decimal places, in $m/z$."
+
+---
+
+### **Question 4 (Protonated Trisaccharide, IR shift, Energy Calculation)**
+
+**Strengths:**
+- Based on advanced instrumentation (IM-IR-MS).
+- Forces multi-step conversion (frequency to energy to kJ/mol), explicit constants provided.
+
+**Issues:**
+- **Extraneous Detail:** The phrase about "proton localization" is mechanistic and not necessary for calculation—could be distracting.
+- **Nomenclature:** Terms like "glycosidic oxygen" could be more precise (e.g., "O atom at glycosidic linkage").
+- **Equation Format:** Constants are clearly given, and the conversion is laid out.
+- **Single Solution:** Yes.
+
+**Actionable Feedback:**
+- Remove mechanistic discussion unless it is necessary to answer.
+- Focus question: "An O–H stretching vibration shifts from $3600~\mathrm{cm}^{-1}$ to $3450~\mathrm{cm}^{-1}$ upon a structural rearrangement in a trisaccharide. Calculate the difference in vibrational energy (in $\mathrm{kJ}~\mathrm{mol}^{-1}$)..."
+- Request answer with significant figures, as already stated.
+
+---
+
+### **Question 5 (Isomeric Glycans, Fucose Migration, Mass Shift Calculation)**
+
+**Strengths:**
+- Models a specialist, real-world glycan MS scenario.
+- Provides atomic masses for precision.
+- Requires multi-step reasoning (structure, mass shift, calculate $m/z$).
+
+**Issues:**
+- **Complexity:** Naming "F = fucose unit" is a bit odd; formula should state the full composition (e.g., include fucose as C$_6$H$_{12}$O$_5$ explicitly).
+- **Units:** $m/z$ is used correctly.
+- **Single Solution:** Yes.
+- **Ambiguity:** How does "loss of water" relate to fucose migration? Possibly unclear to the uninitiated.
+
+**Actionable Feedback:**
+- State chemical formula in full (do not use "F").
+- Specify that "fucose" is C$_6$H$_{12}$O$_5$ (if relevant to mass calculation).
+- Remove explanation of migration if not needed for the calculation; focus on the mass shift.
+- Example:  
+  > "A glycan of formula C$_{18}$H$_{32}$O$_{16}$C$_6$H$_{12}$O$_5$ (fucose-containing) yields a protonated molecular ion at $m/z = 521.167$. Upon loss of one H$_2$O ($M = 18.0106$ Da), calculate the exact $m/z$ of the resulting ion. ..."
+
+---
+
+## **General/Global Suggestions**
+
+- **Equation Formatting:** Use in-line math consistently with Markdown syntax: use $...$ (not \( ... \)).
+- **Phrasing:** Focus and streamline each question to the calculation/mechanistic steps essential for obtaining the answer.
+- **Nomenclature:** Where clarity is needed, supplement carbohydrate/glycan notation with IUPAC names or formulas.
+- **Scenario Detail:** Only include background information that affects or is necessary for the calculation/logic.
+- **Avoid Redundancy:** Do not state mechanistic background if the answer only requires calculation.
+- **Explicit Units/Precision:** Always specify the required units and degree of precision in the answer.
+- **Single-Step vs Multi-Step:** If the question is solvable in one trivial step, add another required calculation or piece of reasoning.
+
+---
+
+### **Summary Table**
+
+| Q# | Issue                | Suggestion                                                        |
+|----|----------------------|-------------------------------------------------------------------|
+| 1  | Ambiguous notation   | Clarify B-type, use IUPAC, streamline scenario                    |
+| 2  | Single-step only     | Remove extraneous info, add a calculation step                    |
+| 3  | Vague composition    | Clarify structure, notation, answer formatting                    |
+| 4  | Superfluous context  | Focus on required calculation, concise phrasing                   |
+| 5  | Formula shorthand    | State full formula, clarify migration/mass-loss link              |
+
+---
+
+**Overall Sample Edit (Generalized):** 
+
+> In negative ion mode ESI-MS/MS, a hexasaccharide with a terminal 6-deoxy-L-galactose (fucose) residue yields a B1-type fragment retaining the fucose. Given an observed $m/z = 965.328$ for the singly-charged fragment and a residue formula of C$_6$H$_{12}$O$_5$ for fucose, determine the chemical formula (Hill order) of the neutral fragment lost during this step.
+
+---
+
+**In summary:**  
+- Clarify notation and IUPAC names.
+- Remove irrelevant background.
+- Force multi-step or nontrivial calculations.
+- Ensure question is direct, with explicit units and unique solution.
+- Use Markdown $...$ for all equations and units, per your guidelines.
+=== Turn 1: Author refines questions ===
+<question>
+In negative ion mode electrospray ionization tandem mass spectrometry (ESI-MS/MS) of a hexasaccharide terminating with a 6-deoxy-L-galactose (fucose) residue, the precursor ion fragments to yield a singly charged B1-type ion (according to Domon-Costello nomenclature) that retains the fucose. Given that this fragment ion has an observed $m/z = 965.328$ and that fucose has the chemical formula C$_6$H$_{12}$O$_5$, determine the chemical formula of the neutral fragment lost during this cleavage. Report your answer in Hill order.
+</question>
+
+<question>
+The C–O stretching vibration in a (1→4)-linked hexopyranose ring absorbs at $1035~\mathrm{cm}^{-1}$. If a (1→6)-linked isomer exhibits a shift of $15~\mathrm{cm}^{-1}$ relative to this value, calculate the expected wavenumber (in cm$^{-1}$) for the C–O stretch absorption in the (1→6) linkage isomer.
+</question>
+
+<question>
+During collision-induced dissociation (CID) of a deprotonated hexose–fucose conjugate ion $[\mathrm{M}-\mathrm{H}]^{-}$ with a precursor monoisotopic mass of 511.160 Da, a characteristic $^{0,2}A$ cross-ring cleavage occurs, resulting in a neutral loss of C$_3$H$_6$O$_3$. Calculate the exact monoisotopic $m/z$ value of the resulting fragment ion. Assume the fragment is singly charged. Report your answer to four decimal places.
+</question>
+
+<question>
+An O–H stretching vibrational mode in a protonated trisaccharide shifts from $3600~\mathrm{cm}^{-1}$ to $3450~\mathrm{cm}^{-1}$ upon structural rearrangement. Using the relation $E = h c \tilde{\nu}$, where $h = 6.626 \times 10^{-34}$ J·s, $c = 3.00 \times 10^{8}$ m·s$^{-1}$, and Avogadro’s number $N_A = 6.022 \times 10^{23}$ mol$^{-1}$, calculate the difference in vibrational energy (in kJ·mol$^{-1}$) between these two modes. Express your answer to two significant figures.
+</question>
+
+<question>
+A glycan with the molecular formula C$_{24}$H$_{44}$O$_{21}$ (including a fucose unit, C$_6$H$_{12}$O$_5$) produces a protonated molecular ion with $m/z = 521.167$. After intramolecular fucose migration, a rearranged ion is observed that corresponds to a neutral loss of water (H$_2$O). Using the monoisotopic atomic masses C = 12.0000, H = 1.0078, and O = 15.9949, calculate the exact $m/z$ of this rearranged ion, assuming it is singly protonated. Report your answer to four decimal places.
+</question>
+=== Turn 1: Critic feedback ===
+**General Feedback on All Questions:**
+
+- **Model Scenario:** All questions set a relevant, advanced scenario grounded in real research (glycomics/mass spectrometry) and meet the modeling guideline.
+- **Answer Expected:** Most specify the answer required (numerical with units or chemical formula); some minor clarifications would help.
+- **Multi-Step Reasoning:** All force multi-step calculations or logical steps.
+- **No Extraneous Information:** No redundancy is present.
+- **Uniqueness:** Scenarios are novel and non-standard.
+- **Single Solution:** Each is targeted toward a unique numerical or formulaic answer.
+- **Rigorous, Concise Language:** Generally concise and technically precise, though minor improvements possible (noted below).
+- **Units/Nomenclature:** Usage is mostly correct, but calling out "Hill order" alone may not suffice for IUPAC nomenclature in Q1.
+- **No Multi-Part Questions:** Each is atomic in focus.
+- **Solution Formatting:** Most equations and variables use $...$ for LaTeX, but ensure ALL formulas, numbers, species, and Greek letters (e.g., $m/z$, $\mathrm{cm}^{-1}$, chemical formulas) are within dollar signs in all cases.
+
+---
+
+### Question-Specific Feedback
+
+#### Question 1:  
+> In negative ion mode electrospray ionization tandem mass spectrometry (ESI-MS/MS) of a hexasaccharide... chemical formula of the neutral fragment lost...
+
+- **Strengths:** 
+  - Unique application scenario.
+  - Requires knowledge of mass spec fragmentation, formula determination.
+- **Actionable Improvements:**
+  1. *Units Consistency:* For $m/z=965.328$, ensure all numbers, units, and formulas are in LaTeX: write as "$m/z = 965.328$."
+  2. *Clarity in Reporting:* Rather than "Report your answer in Hill order," clarify with "Give your answer as a chemical formula in Hill order (C, H, ...), using IUPAC nomenclature."
+  3. *Precision in Language:* Specify "monoisotopic $m/z$" for precision, if appropriate.
+  4. *No ambiguity:* State what is meant by "neutral fragment lost" (i.e., the exact composition).
+  5. *Formatting:* Ensure all formulas and units are properly within $...$.
+
+#### Question 2:
+> The C–O stretching vibration... absorbs at $1035~\mathrm{cm}^{-1}$... shift of $15~\mathrm{cm}^{-1}$... calculate expected wavenumber...
+
+- **Strengths:** 
+  - Straightforward, no ambiguity.
+- **Actionable Improvements:**
+  1. *Specify Direction of Shift:* Be explicit—shift "to higher" or "lower" wavenumber ("red shift" or "blue shift") to prevent guessing the sign. For example, "shifts by 15 cm$^{-1}$ to lower wavenumber."
+  2. *Units:* Keep all variables in LaTeX formatting.
+  3. *IUPAC Nomenclature/Context:* No issues; appropriately phrased.
+
+#### Question 3:
+> During collision-induced dissociation... precursor monoisotopic mass... neutral loss of C$_3$H$_6$O$_3$...
+
+- **Strengths:** 
+  - Rigorous, multi-step.
+- **Actionable Improvements:**
+  1. *Formatting:* $C_3H_6O_3$ should be $\mathrm{C}_3\mathrm{H}_6\mathrm{O}_3$ for consistency.
+  2. *Units:* For $m/z$, "$m/z$ value of the resulting fragment ion"—write as "the monoisotopic $m/z$" (in $\mathrm{Da}$, or clarify units).
+  3. *Request Precision:* Instead of "to four decimal places," specify in parentheses after answer line: "($xxxx.xxxx$)."
+  4. *Clarify Assumptions:* State "Assume all ions are singly charged" or "negative ion mode" as appropriate.
+
+#### Question 4:
+> An O–H stretching vibrational mode... shifts from $3600~\mathrm{cm}^{-1}$ to $3450~\mathrm{cm}^{-1}$....
+
+- **Strengths:** 
+  - Forces multi-step with units conversion.
+- **Actionable Improvements:**
+  1. *Units Consistency & Significant Figures:* Specify, "Express your answer in $\mathrm{kJ}~\mathrm{mol}^{-1}$ to two significant figures."
+  2. *Formatting:* Enclose all units and numerical values in $...$. Ensure all constants are stated with units in LaTeX.
+  3. *Clarity:* Acceptable as is for Nomenclature/unit.
+
+#### Question 5:
+> A glycan with the molecular formula C$_{24}$H$_{44}$O$_{21}$... produces a protonated molecular ion with $m/z = 521.167$...
+
+- **Strengths:** 
+  - Real-world, multi-step, unique.
+- **Actionable Improvements:**
+  1. *Units Formatting:* Enclose $m/z$, all formulas, and atomic masses in $...$.
+  2. *Clarity in Loss Description:* "Loss of water (H$_2$O)" could be better written as "corresponding to a neutral loss of $\mathrm{H}_2\mathrm{O}$."
+  3. *Requested Answer Formatting:* Instead of "report your answer to four decimal places," clarify "Report your answer to four decimal places ($xxxx.xxxx$)."
+  4. *Nomenclature/Units:* Ensure correct IUPAC formula spelling and formatting.
+
+---
+
+### **Summarized Action Points:**
+
+- **Consistent LaTeX Formatting:** Enclose every equation, symbol, and unit using $...$ for correct Markdown rendering.
+- **Explicit Shift Direction:** When using "shift," specify direction (increase or decrease, red or blue shift).
+- **Chemical Nomenclature:** Use IUPAC names and Hill order for formulas, making this explicit.
+- **Clarity on Significant Figures:** Specify the precision within parentheses at end.
+- **Request Formatting:** For answers, always specify "Report your answer as..." followed by detailed requirements.
+- **No ambiguity:** Remove all wording that could be misinterpreted (e.g., "shift" alone, "formula" alone).
+- **Keep questions atomic:** All do this, keep it up.
+
+**If you revise as above, all questions will tightly meet your guidelines.**
+=== Turn 2: Author refines questions ===
+<question>
+In negative ion mode electrospray ionization tandem mass spectrometry (ESI-MS/MS) of a hexasaccharide terminating with a 6-deoxy-L-galactose (fucose) residue, the precursor ion fragments to yield a singly charged B$_1$-type ion (according to Domon–Costello nomenclature) that retains the fucose unit. Given that the monoisotopic precursor ion has an $m/z = 965.328$ and the fucose residue has the chemical formula $\mathrm{C}_6\mathrm{H}_{12}\mathrm{O}_5$, determine the chemical formula of the neutral fragment lost during this cleavage. Report your answer as a chemical formula in Hill order using IUPAC nomenclature.
+</question>
+
+<question>
+The C–O stretching vibration in a (1→4)-linked hexopyranose ring absorbs at $1035~\mathrm{cm}^{-1}$. If a (1→6)-linked isomer exhibits a shift of $15~\mathrm{cm}^{-1}$ to lower wavenumber relative to this value, calculate the expected wavenumber (in $\mathrm{cm}^{-1}$) for the C–O stretching absorption in the (1→6)-linked isomer. Report your answer with units.
+</question>
+
+<question>
+During collision-induced dissociation (CID) of a deprotonated hexose–fucose conjugate ion $[\mathrm{M}-\mathrm{H}]^{-}$ with a monoisotopic precursor mass of $511.160$ Da, a characteristic $^{0,2}A$ cross-ring cleavage occurs, resulting in a neutral loss of $\mathrm{C}_3\mathrm{H}_6\mathrm{O}_3$. Calculate the exact monoisotopic $m/z$ value of the resulting fragment ion. Assume the fragment is singly charged. Report your answer to four decimal places (e.g., $xxxx.xxxx$).
+</question>
+
+<question>
+An O–H stretching vibrational mode in a protonated trisaccharide shifts from $3600~\mathrm{cm}^{-1}$ to $3450~\mathrm{cm}^{-1}$ upon structural rearrangement. Using the relation $E = h c \tilde{\nu}$, where $h = 6.626 \times 10^{-34}~\mathrm{J \cdot s}$, $c = 3.00 \times 10^{8}~\mathrm{m \cdot s}^{-1}$, and Avogadro’s number $N_A = 6.022 \times 10^{23}~\mathrm{mol}^{-1}$, calculate the difference in vibrational energy (in $\mathrm{kJ} \cdot \mathrm{mol}^{-1}$) between these two modes. Express your answer to two significant figures and include units.
+</question>
+
+<question>
+A glycan with the molecular formula $\mathrm{C}_{24}\mathrm{H}_{44}\mathrm{O}_{21}$ (including a fucose unit, $\mathrm{C}_6\mathrm{H}_{12}\mathrm{O}_5$) produces a protonated molecular ion with $m/z = 521.167$. After intramolecular fucose migration, a rearranged ion is observed that corresponds to a neutral loss of water ($\mathrm{H}_2\mathrm{O}$). Using the monoisotopic atomic masses $C = 12.0000$, $H = 1.0078$, and $O = 15.9949$, calculate the exact $m/z$ of this rearranged ion, assuming it is singly protonated. Report your answer to four decimal places (e.g., $xxxx.xxxx$).
+</question>
+=== Turn 2: Critic feedback ===
+**General Assessment**
+
+- **Strengths:**  
+  - All questions are original and contextually rich, modeling specialized chemistry scenarios (Glycobiology/MS, IR, etc.).
+  - Each expects a single, rigorous numerical or chemical formula answer, usually with units or proper IUPAC chemical nomenclature.
+  - They demand multi-step reasoning and calculations.
+  - No clear colloquialisms or ambiguous language.
+  - They use concise, technical phrasing.
+  - No standard textbook examples or duplication of typical questions.
+
+**Individual Critique**
+
+---
+
+### **Question 1**
+
+**Strengths**
+- Scenario is specific (negative ion mode ESI-MS/MS of fucosylated hexasaccharide).
+- Requires understanding of fragmentation nomenclature and chemical formula accounting.
+
+**Improvements**
+- The phrase *"precursor ion fragments to yield ... that retains the fucose unit"* could be clearer; consider specifying if the B$_1$-type ion is the observed product or neutral loss product.
+- Clarify that the neutral fragment is the remainder after the B$_1$ ion is formed.
+- Remove unnecessary context such as “according to Domon–Costello nomenclature”—if this nomenclature is used, it is sufficient to refer to the B$_1$ ion.
+- State explicitly: "Report your answer as a chemical formula using Hill notation."
+- Check that the given input parameters are strictly necessary and unambiguous.
+
+**Suggested revision (example)**
+> In negative ion mode ESI-MS/MS of a hexasaccharide terminating with a 6-deoxy-L-galactose (fucose) residue, the monoisotopic precursor ion has $m/z = 965.328$. Upon fragmentation, a singly charged B$_1$ ion retaining the fucose residue ($\mathrm{C}_6\mathrm{H}_{12}\mathrm{O}_5$) is observed. Determine the chemical formula in Hill order of the neutral fragment lost in this process. Provide your answer as a chemical formula.
+
+---
+
+### **Question 2**
+
+**Strengths**
+- Scenario tests applied IR spectroscopy, with chemical context (glycosidic linkage).
+- Requires simple calculation.
+
+**Improvements**
+- The context is perhaps more than required ("hexopyranose ring") unless it affects the calculation; it can be trimmed.
+- "Shift of $15~\mathrm{cm}^{-1}$ to lower wavenumber" should ensure clarity (i.e., subtract or add?).
+- Explicitly state: "Provide your answer as a numerical value with units of cm$^{-1}$."
+- Could clarify if the absorption is for the *same* bond after isomerization.
+
+**Suggested revision**
+> The C–O stretching vibration in a (1→4)-linked hexopyranose ring absorbs at $1035~\mathrm{cm}^{-1}$. A (1→6)-linked isomer displays this absorption $15~\mathrm{cm}^{-1}$ lower in wavenumber. Calculate the wavenumber (in $\mathrm{cm}^{-1}$) for the (1→6)-linked isomer’s C–O stretching. Provide your answer with units.
+
+---
+
+### **Question 3**
+
+**Strengths**
+- Original; models real glycan CID scenario.
+- Requires calculation of monoisotopic mass subtraction.
+
+**Improvements**
+- Terminology: "$[\mathrm{M}-\mathrm{H}]^-$" is clear but also clarify “deprotonated” for less advanced students.
+- Possibly remove redundancy in stating "Assume the fragment is singly charged."
+- “Report your answer to four decimal places with units” is clear.
+
+**Suggested revision**
+> During CID of a deprotonated hexose–fucose conjugate $[\mathrm{M}-\mathrm{H}]^-$ with a monoisotopic precursor mass of $511.160$ Da, a $^{0,2}A$ cross-ring cleavage yields a neutral fragment of $\mathrm{C}_3\mathrm{H}_6\mathrm{O}_3$. Calculate the exact monoisotopic $m/z$ value of the resulting singly charged fragment ion. Provide your answer to four decimal places.
+
+---
+
+### **Question 4**
+
+**Strengths**
+- Requires vibrational spectroscopy energy calculation using physical constants.
+- Only a single answer requested.
+
+**Improvements**
+- Minor: “Structural rearrangement” could be specified more precisely, but acceptable if context is established previously.
+- Explicitly state: “provide your answer in kJ⋅mol⁻¹ with two significant figures and units.”
+
+**Suggested revision**
+> An O–H stretching mode in a protonated trisaccharide shifts from $3600~\mathrm{cm}^{-1}$ to $3450~\mathrm{cm}^{-1}$ after structural rearrangement. Given $E = h c \tilde{\nu}$, where $h = 6.626 \times 10^{-34}~\mathrm{J \cdot s}$, $c = 3.00 \times 10^{8}~\mathrm{m \cdot s}^{-1}$ and $N_A = 6.022 \times 10^{23}~\mathrm{mol}^{-1}$, calculate the difference in vibrational energy (in $\mathrm{kJ} \cdot \mathrm{mol}^{-1}$) between these two modes. Report your answer to two significant figures with units.
+
+---
+
+### **Question 5**
+
+**Strengths**
+- Advanced mass spec calculation; includes atomic mono-isotopic masses.
+- Steps and expected answer format are clear.
+
+**Improvements**
+- The beginning could be more direct without repeated mention of fucose formula unless needed for calculation.
+- Clarify: The molecular formula already *includes* the fucose residue, so this is not a separate addition.
+- "After intramolecular fucose migration, a rearranged ion is observed that corresponds to a neutral loss of water ($\mathrm{H}_2\mathrm{O}$)" - could be expressed more concisely.
+- “Assuming it is singly protonated” can be stated earlier.
+
+**Suggested revision**
+> A glycan with the molecular formula $\mathrm{C}_{24}\mathrm{H}_{44}\mathrm{O}_{21}$ produces a singly protonated molecular ion at $m/z = 521.167$. Upon rearrangement, the ion loses a single water molecule ($\mathrm{H}_2\mathrm{O}$). Using the monoisotopic atomic masses $C = 12.0000$, $H = 1.0078$, and $O = 15.9949$, calculate the exact $m/z$ of the singly protonated product ion. Report your answer to four decimal places.
+
+---
+
+## **Summary Table**
+
+| Guideline # | Strengths                                  | Areas for Improvement                         |
+|-------------|--------------------------------------------|-----------------------------------------------|
+| 1           | Realistic scenarios, clear context         | Minor excess background in some questions     |
+| 2           | All ask for specific, formatted answers    | Specify answer units/method more explicitly   |
+| 3           | Multi-step processes are required          | N/A                                           |
+| 4           | Minimal redundancy                         | Some context could be more concise            |
+| 5           | Original and advanced                      | N/A                                           |
+| 6           | Single correct answer per question         | N/A                                           |
+| 7           | Rigorous, concise technical phrasing       | Some sentences could be even more direct      |
+| 8           | No ambiguous or colloquial language        | Ensure terms are unambiguous to target level  |
+| 9           | Consistent units, IUPAC style              | Explicitly request units where missing        |
+| 10          | Each question requires a single answer     | N/A                                           |
+| 11          | LaTeX/Markdown usage present               | Consistent formatting throughout              |
+
+---
+
+## **Concise Actionable Feedback**
+
+1. **Trim Excess Context**: Remove or condense background information that does not affect the required calculation or answer.
+2. **Clarify Instructions**: Be explicit about formatting—specify units, significant figures, and nomenclature directly in the question.
+3. **Consistent Phrasing**: Place all relevant chemical and physical constants up front, and refer to them consistently.
+4. **Avoid Redundant Detail**: Do not introduce chemical formulas (e.g., of fucose) more than once if not directly used in the calculation.
+5. **LaTeX and Markdown**: Standardize formatting throughout for equations, numbers, and symbols—review for consistent use of $...$ for all math.
+6. **Single Solution**: Reiterate that each question admits only one value, formula, or chemical name as the correct response.
+7. **Precision in Answer Specification**: Always state the required precision (decimal places, significant figures) and appropriate units.
+
+Follow these improvements to ensure maximum clarity, conciseness, and assessment rigor in alignment with your guidelines.
+=== Turn 3: Author refines questions ===
+<question>
+In negative ion mode electrospray ionization tandem mass spectrometry (ESI-MS/MS) of a hexasaccharide terminating with a 6-deoxy-L-galactose (fucose) residue, the monoisotopic precursor ion has $m/z = 965.328$. Upon fragmentation, a singly charged B$_1$ ion retaining the fucose residue ($\mathrm{C}_6\mathrm{H}_{12}\mathrm{O}_5$) is observed. Determine the chemical formula of the neutral fragment lost during this cleavage, expressed in Hill notation.
+</question>
+
+<question>
+The C–O stretching vibration in a (1→4)-linked hexopyranose ring absorbs at $1035~\mathrm{cm}^{-1}$. A (1→6)-linked isomer exhibits this absorption $15~\mathrm{cm}^{-1}$ lower. Calculate the expected wavenumber (in $\mathrm{cm}^{-1}$) for the C–O stretching vibration in the (1→6)-linked isomer. Provide your answer with units.
+</question>
+
+<question>
+During collision-induced dissociation of a deprotonated hexose–fucose conjugate ion $[\mathrm{M}-\mathrm{H}]^-$ with a monoisotopic precursor mass of $511.160$ Da, a $^{0,2}A$ cross-ring cleavage occurs, resulting in the loss of a neutral fragment $\mathrm{C}_3\mathrm{H}_6\mathrm{O}_3$. Calculate the exact monoisotopic $m/z$ value of the resulting singly charged fragment ion. Provide your answer to four decimal places.
+</question>
+
+<question>
+An O–H stretching vibrational mode in a protonated trisaccharide shifts from $3600~\mathrm{cm}^{-1}$ to $3450~\mathrm{cm}^{-1}$ upon structural rearrangement. Given the relation $E = h c \tilde{\nu}$ with $h = 6.626 \times 10^{-34}~\mathrm{J \cdot s}$, $c = 3.00 \times 10^{8}~\mathrm{m \cdot s}^{-1}$, and Avogadro’s number $N_A = 6.022 \times 10^{23}~\mathrm{mol}^{-1}$, calculate the difference in vibrational energy between these two modes in $\mathrm{kJ} \cdot \mathrm{mol}^{-1}$. Report your answer with two significant figures and units.
+</question>
+
+<question>
+A glycan with molecular formula $\mathrm{C}_{24}\mathrm{H}_{44}\mathrm{O}_{21}$ produces a singly protonated molecular ion with $m/z = 521.167$. After intramolecular rearrangement, the ion loses a water molecule ($\mathrm{H}_2\mathrm{O}$). Using monoisotopic atomic masses $C = 12.0000$, $H = 1.0078$, and $O = 15.9949$, calculate the exact $m/z$ of the resulting singly protonated ion. Provide your answer to four decimal places.
+</question>
+=== Final questions generated ===

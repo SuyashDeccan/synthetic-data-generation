@@ -1,0 +1,132 @@
+=== Turn 0: Author generates questions ===
+1.  <question>Consider a Bayesian regression model where the prior for the regression function $f(x)$ is a Gaussian process with a Matérn kernel $k(x, x') = \frac{2^{1-\nu}}{\Gamma(\nu)} (\sqrt{2\nu} \frac{|x - x'|}{\ell})^\nu K_\nu(\sqrt{2\nu} \frac{|x - x'|}{\ell})$, where $\nu > 0$ is a smoothness parameter, $\ell > 0$ is a length-scale parameter, and $K_\nu$ is a modified Bessel function of the second kind. Assume the observation model is $y_i = f(x_i) + \epsilon_i$, where $\epsilon_i \sim N(0, \sigma^2)$ are i.i.d. Gaussian noise. If the parameter $\ell$ is assigned a Gamma hyperprior with shape parameter $a$ and rate parameter $b$, determine the posterior predictive distribution's mean at a new input location $x^*$, given a training dataset $D = \{(x_i, y_i)\}_{i=1}^n$. Express the mean as a function of the posterior mean of $\ell$ and the kernel function.</question>
+
+2.  <question>Let $f \sim GP(0, K)$ be a Gaussian process on $[0,1]$, where $K(x, x') = \exp(-\theta|x - x'|^2)$ is the squared exponential kernel with unknown bandwidth $\theta$. Suppose we observe $y_i = f(x_i) + \epsilon_i$ for $i=1, \dots, n$, where $\epsilon_i \sim N(0, \sigma^2)$ are i.i.d. Gaussian noise. Place a Gamma prior with shape $a > 0$ and rate $b > 0$ on $\theta$. Compute the marginal likelihood $p(y|\theta)$ integrating out $f$, and determine the maximum a posteriori (MAP) estimate $\hat{\theta}_{MAP}$ of $\theta$ given the data $y = (y_1, \dots, y_n)$.</question>
+
+3.  <question>Consider a signal $f(x)$ modeled as a Gaussian process with a zero mean and a covariance function $K(x, x') = \sigma_f^2 \exp(-\frac{(x-x')^2}{2l^2}) + \sigma_n^2 \delta(x,x')$, where $\sigma_f^2$ is the signal variance, $l$ is the characteristic length scale, $\sigma_n^2$ is the noise variance, and $\delta(x,x')$ is the Kronecker delta function. Let $y = f(x) + \epsilon$, where $\epsilon \sim N(0, \sigma_n^2)$. Assume a Gamma prior $\Gamma(\alpha, \beta)$ on $\sigma_f^2$ and an Inverse-Gamma prior $IG(\gamma, \delta)$ on $\sigma_n^2$. With $n$ observations $D = \{(x_i, y_i)\}_{i=1}^n$, derive the posterior distribution $p(\sigma_f^2, \sigma_n^2 | D)$.</question>
+
+4.  <question>Suppose we have a Gaussian process prior for a function $f(x)$ with mean function $m(x) = 0$ and covariance function $k(x, x') = \alpha \exp(-\beta |x - x'|)$, where $\alpha$ and $\beta$ are hyperparameters. The observations are $y_i = f(x_i) + \epsilon_i$, with $\epsilon_i \sim N(0, \sigma^2)$. We place exponential priors on the hyperparameters $\alpha$ and $\beta$, i.e., $p(\alpha) = \lambda e^{-\lambda \alpha}$ and $p(\beta) = \mu e^{-\mu \beta}$ for $\alpha, \beta > 0$. Derive the joint posterior distribution of $\alpha$, $\beta$, and $f(x)$ given the observations $y = (y_1, ..., y_n)$ at locations $x = (x_1, ..., x_n)$, i.e., find an expression for $p(\alpha, \beta, f(x) | y)$.</question>
+
+5.  <question>Consider a Gaussian process regression problem where the prior on the function $f(x)$ is a Gaussian process with mean zero and covariance function $K(x, x'; \theta) = \sigma_f^2 \exp(-\frac{|x - x'|}{\ell})$. We have $n$ noisy observations $y_i = f(x_i) + \epsilon_i$, where $\epsilon_i \sim N(0, \sigma_n^2)$. Let $\theta = (\sigma_f^2, \ell, \sigma_n^2)$ be the hyperparameters. Assume an inverse Gamma prior for each hyperparameter: $p(\sigma_f^2) \sim IG(a_1, b_1)$, $p(\ell) \sim IG(a_2, b_2)$, and $p(\sigma_n^2) \sim IG(a_3, b_3)$. Express the log marginal likelihood $log \ p(y | \theta)$ and find an expression for the gradient with respect to $\ell$, i.e., $\frac{\partial log \ p(y | \theta)}{\partial \ell}$.</question>
+=== Turn 0: Critic feedback ===
+Here's a critique of the provided questions based on your guidelines:
+
+**Question 1:**
+*   **Guideline 3 (Solvable Target / No Derivations):** Violates. The request "determine the posterior predictive distribution's mean... Express the mean as a function of the posterior mean of $\ell$" is problematic. The expectation of a function of a random variable is generally not the function of the expectation ($E[g(\ell)] \neq g(E[\ell])$). This implies either a complex, generally intractable derivation or an unrealistic simplification, thus falling under "derivation" rather than a straightforward solvable target.
+*   **Guideline 6 (Originality):** Partially violates. While the Matérn kernel and Gamma hyperprior setup is standard, the specific phrasing of the requested output (mean as a function of posterior mean of $\ell$) makes it unusual, potentially bordering on a "trick question" if an exact closed form doesn't exist under that constraint.
+*   **Actionable Feedback:**
+    *   Rephrase the question to ask for a truly solvable symbolic result, rather than a derivation or a potentially misleading simplification involving expectations. For example, instead of asking for "the posterior predictive distribution's mean", ask for a component of it given *fixed* hyperparameters, or reframe it to avoid the analytical intractability of integrating out $\ell$ under the specified constraint.
+
+**Question 2:**
+*   **Guideline 3 (Solvable Target / No Derivations):** Violates. Calculating the marginal likelihood $p(y|\theta)$ and then determining the MAP estimate $\hat{\theta}_{MAP}$ both involve significant derivation steps (matrix algebra, differentiation, optimization), which is forbidden by "Questions must not be proves or derivations".
+*   **Guideline 4 (Single Output):** Violates. It asks for two distinct outputs: "the marginal likelihood $p(y|\theta)$" AND "the maximum a posteriori (MAP) estimate $\hat{\theta}_{MAP}$".
+*   **Guideline 6 (Originality):** Violates. Computing the marginal likelihood and MAP estimate for GP hyperparameters is a very standard problem in Gaussian Process literature (often called Type-II Maximum Likelihood or empirical Bayes).
+*   **Guideline 10 (No Multiple Parts):** Violates. The question explicitly asks for two separate answers.
+*   **Actionable Feedback:**
+    *   Split into two separate questions if both computations are desired, or choose only one target.
+    *   Rephrase to ask for a *component* or *specific form* of the result that doesn't involve the full derivation. For example, ask for an element of the covariance matrix within the marginal likelihood formula, or the specific form of the prior term in the MAP objective.
+    *   Ensure the target is not a standard textbook derivation.
+
+**Question 3:**
+*   **Guideline 3 (Solvable Target / No Derivations):** Violates. The request "derive the posterior distribution $p(\sigma_f^2, \sigma_n^2 | D)$" is explicitly a "derivation" task. Deriving a full posterior distribution for multiple hyperparameters in a GP model is typically analytically intractable to express in a simple closed form and requires showing multiple steps.
+*   **Guideline 6 (Originality):** Violates. Deriving posterior distributions for GP hyperparameters with common priors is a standard exercise in Bayesian inference for Gaussian Processes.
+*   **Actionable Feedback:**
+    *   Change the target from "derive the posterior distribution" to asking for a specific *component* of the posterior (e.g., the exponent term, or the likelihood term). This would align with "solvable target" and avoid "derivation".
+    *   To be unique, consider a very specific part of the posterior or a scenario not commonly found in standard texts.
+
+**Question 4:**
+*   **Guideline 3 (Solvable Target / No Derivations):** Violates. The request "Derive the joint posterior distribution of $\alpha$, $\beta$, and $f(x)$... find an expression for $p(\alpha, \beta, f(x) | y)$" is explicitly a "derivation" task. Furthermore, expressing a posterior distribution *over a function* $f(x)$ jointly with hyperparameters in a simple closed form is generally not feasible and often requires advanced variational or MCMC techniques, not direct symbolic derivation.
+*   **Guideline 6 (Originality):** Violates. While the specific combination of exponential priors might not be the most common, the task of expressing a joint posterior over a function and hyperparameters is a fundamental (but usually intractable) goal in Bayesian nonparametrics. It's not a unique problem that yields a simple, non-derivational symbolic answer.
+*   **Actionable Feedback:**
+    *   This question is too broad and too complex for the specified output type. It asks for a full derivation of a complex, usually analytically intractable joint distribution. It needs to be significantly narrowed down to a specific, analytically solvable element. For example, ask for the form of one of the conditional posteriors if other variables were fixed, or a specific term in the likelihood.
+
+**Question 5:**
+*   **Guideline 3 (Solvable Target / No Derivations):** Violates. "Express the log marginal likelihood $log \ p(y | \theta)$ and find an expression for the gradient with respect to $\ell$, i.e., $\frac{\partial log \ p(y | \theta)}{\partial \ell}$" involves significant derivation steps, particularly for the gradient, which contradicts "Questions must not be proves or derivations".
+*   **Guideline 4 (Single Output):** Violates. It asks for two distinct outputs: "the log marginal likelihood" AND "the gradient with respect to $\ell$".
+*   **Guideline 6 (Originality):** Violates. Computing the log marginal likelihood and its gradients for GP hyperparameters is a very standard and frequently encountered task in Gaussian Process optimization (e.g., Type-II Maximum Likelihood).
+*   **Guideline 10 (No Multiple Parts):** Violates. The question explicitly asks for two separate answers.
+*   **Actionable Feedback:**
+    *   Split into two separate questions.
+    *   For each part, rephrase to ask for a specific *component* of the result (e.g., a term in the inverse of the covariance matrix for the log-likelihood, or a specific part of the gradient calculation). This would avoid the full derivation and align with the "solvable target" guideline.
+    *   Ensure the target is not a standard textbook derivation.
+=== Turn 1: Author refines questions ===
+Here's a refined set of questions, attempting to adhere to the guidelines (specifically avoiding derivations, ensuring a solvable target, targeting a single output, and aiming for some originality within the constraints):
+
+1.  <question>Consider a Bayesian regression model where the prior for the regression function $f(x)$ is a Gaussian process with a Matérn kernel $k(x, x') = \frac{2^{1-\nu}}{\Gamma(\nu)} (\sqrt{2\nu} \frac{|x - x'|}{\ell})^\nu K_\nu(\sqrt{2\nu} \frac{|x - x'|}{\ell})$, where $\nu$ is fixed and known. Assume the observation model is $y_i = f(x_i) + \epsilon_i$, where $\epsilon_i \sim N(0, \sigma^2)$ are i.i.d. Gaussian noise with known $\sigma^2$. Let $K$ be the covariance matrix of the training data $x_1, \dots, x_n$ and $k_*$ be the vector of covariances between a new input $x^*$ and the training data. If the lengthscale parameter $\ell$ is fixed, write down the expression for the variance of the predictive distribution at $x^*$.</question>
+
+2.  <question>Let $f \sim GP(0, K)$ be a Gaussian process on $[0,1]$, where $K(x, x') = \exp(-\theta|x - x'|^2)$ is the squared exponential kernel.  Suppose we observe $y_i = f(x_i) + \epsilon_i$ for $i=1, \dots, n$, where $\epsilon_i \sim N(0, \sigma^2)$ are i.i.d. Gaussian noise with known $\sigma^2$. Let $K_{y}$ be the covariance matrix of the observed data, i.e., $K_{y} = K(X,X) + \sigma^2 I$, where $X = [x_1, ..., x_n]^T$ is the design matrix. Write down the expression for the determinant of the covariance matrix of the observed data, $|K_y|$, required to compute the marginal likelihood.</question>
+
+3.  <question>Consider a signal $f(x)$ modeled as a Gaussian process with a zero mean and a covariance function $K(x, x') = \sigma_f^2 \exp(-\frac{(x-x')^2}{2l^2}) + \sigma_n^2 \delta(x,x')$, where $\sigma_f^2$ is the signal variance, $l$ is the characteristic length scale, $\sigma_n^2$ is the noise variance, and $\delta(x,x')$ is the Kronecker delta function. Let $y = f(x) + \epsilon$, where $\epsilon \sim N(0, \sigma_n^2)$. Assume $l$ and $\sigma_n^2$ are fixed and known. With $n$ observations $D = \{(x_i, y_i)\}_{i=1}^n$, what is the form of the *likelihood* term $p(D|\sigma_f^2)$ in the posterior distribution of $\sigma_f^2$?</question>
+
+4.  <question>Suppose we have a Gaussian process prior for a function $f(x)$ with mean function $m(x) = 0$ and covariance function $k(x, x') = \alpha \exp(-\beta |x - x'|)$, where $\alpha$ and $\beta$ are hyperparameters. The observations are $y_i = f(x_i) + \epsilon_i$, with $\epsilon_i \sim N(0, \sigma^2)$. We place exponential priors on the hyperparameters $\alpha$ and $\beta$, i.e., $p(\alpha) = \lambda e^{-\lambda \alpha}$ and $p(\beta) = \mu e^{-\mu \beta}$ for $\alpha, \beta > 0$. Given fixed values of $\alpha$ and $\beta$, how does the variance of $f(x)$ at a point $x$ vary as $\beta$ increases?</question>
+
+5.  <question>Consider a Gaussian process regression problem where the prior on the function $f(x)$ is a Gaussian process with mean zero and covariance function $K(x, x'; \theta) = \sigma_f^2 \exp(-\frac{|x - x'|}{\ell})$. We have $n$ noisy observations $y_i = f(x_i) + \epsilon_i$, where $\epsilon_i \sim N(0, \sigma_n^2)$. Let $\theta = (\sigma_f^2, \ell, \sigma_n^2)$ be the hyperparameters. Given fixed hyperparameters, write down the expression for the Cholesky decomposition $L$ of the kernel matrix $K$, that is, $K = LL^T$, which is required to calculate the log marginal likelihood.</question>
+=== Turn 1: Critic feedback ===
+Here's a critique of the provided questions against your guidelines:
+
+---
+
+**Question 1:**
+"Consider a Bayesian regression model where the prior for the regression function $f(x)$ is a Gaussian process with a Matérn kernel $k(x, x') = \frac{2^{1-\nu}}{\Gamma(\nu)} (\sqrt{2\nu} \frac{|x - x'|}{\ell})^\nu K_\nu(\sqrt{2\nu} \frac{|x - x'|}{\ell})$, where $\nu$ is fixed and known. Assume the observation model is $y_i = f(x_i) + \epsilon_i$, where $\epsilon_i \sim N(0, \sigma^2)$ are i.i.d. Gaussian noise with known $\sigma^2$. Let $K$ be the covariance matrix of the training data $x_1, \dots, x_n$ and $k_*$ be the vector of covariances between a new input $x^*$ and the training data. If the lengthscale parameter $\ell$ is fixed, write down the expression for the variance of the predictive distribution at $x^*$. "
+
+*   **Critique:**
+    *   **Adherence:** 1 (Input Format), 2 (Mathematical Structure), 3 (Solvable Target), 4 (Single Output), 5 (Concise and Relevant), 8 (Solution Formatting), 9 (Language and Notation), 10 (Single Part), 11 (No Solutions/Hints), 12 (No Numeric Approximations).
+    *   **Area for Improvement (Guideline 6 & 7 - Originality & Multi-Step Reasoning):** This question largely tests recall of a standard GP predictive variance formula. While the Matérn kernel is specified, its complex form doesn't alter the general structure of the variance expression, making it a direct application of a known formula rather than requiring complex derivation or unique multi-step reasoning.
+    *   **Actionable Feedback:** To enhance originality and multi-step reasoning, consider asking for a specific term within the variance that requires careful identification or manipulation based on the given kernel, or asking how the variance changes under a specific, non-trivial perturbation of hyperparameters or data.
+
+---
+
+**Question 2:**
+"Let $f \sim GP(0, K)$ be a Gaussian process on $[0,1]$, where $K(x, x') = \exp(-\theta|x - x'|^2)$ is the squared exponential kernel. Suppose we observe $y_i = f(x_i) + \epsilon_i$ for $i=1, \dots, n$, where $\epsilon_i \sim N(0, \sigma^2)$ are i.i.d. Gaussian noise with known $\sigma^2$. Let $K_{y}$ be the covariance matrix of the observed data, i.e., $K_{y} = K(X,X) + \sigma^2 I$, where $X = [x_1, ..., x_n]^T$ is the design matrix. Write down the expression for the determinant of the covariance matrix of the observed data, $|K_y|$, required to compute the marginal likelihood."
+
+*   **Critique:**
+    *   **Adherence:** 1 (Input Format), 2 (Mathematical Structure), 3 (Solvable Target), 4 (Single Output), 5 (Concise and Relevant), 8 (Solution Formatting), 9 (Language and Notation), 10 (Single Part), 11 (No Solutions/Hints), 12 (No Numeric Approximations).
+    *   **Area for Improvement (Guideline 6 & 7 - Originality & Multi-Step Reasoning):** Similar to Q1, this question primarily tests direct recall of a standard component of the GP marginal likelihood formula. It doesn't require derivation or complex reasoning beyond identifying the correct term.
+    *   **Actionable Feedback:** Instead of asking for $|K_y|$ directly, ask for a quantity that requires combining or manipulating elements of the marginal likelihood formula, or a specific property related to the determinant that requires deeper understanding (e.g., how it relates to model complexity).
+
+---
+
+**Question 3:**
+"Consider a signal $f(x)$ modeled as a Gaussian process with a zero mean and a covariance function $K(x, x') = \sigma_f^2 \exp(-\frac{(x-x')^2}{2l^2}) + \sigma_n^2 \delta(x,x')$, where $\sigma_f^2$ is the signal variance, $l$ is the characteristic length scale, $\sigma_n^2$ is the noise variance, and $\delta(x,x')$ is the Kronecker delta function. Let $y = f(x) + \epsilon$, where $\epsilon \sim N(0, \sigma_n^2)$. Assume $l$ and $\sigma_n^2$ are fixed and known. With $n$ observations $D = \{(x_i, y_i)\}_{i=1}^n$, what is the form of the *likelihood* term $p(D|\sigma_f^2)$ in the posterior distribution of $\sigma_f^2$?"
+
+*   **Critique:**
+    *   **Adherence:** 1 (Input Format), 2 (Mathematical Structure), 3 (Solvable Target), 4 (Single Output), 5 (Concise and Relevant), 8 (Solution Formatting), 10 (Single Part), 11 (No Solutions/Hints), 12 (No Numeric Approximations).
+    *   **Violation (Guideline 9 - Language and Notation):** The covariance function $K(x, x') = \sigma_f^2 \exp(-\frac{(x-x')^2}{2l^2}) + \sigma_n^2 \delta(x,x')$ already includes a noise term. Subsequently stating "Let $y = f(x) + \epsilon$, where $\epsilon \sim N(0, \sigma_n^2)$" is confusing and potentially contradictory in standard GP formulations. If $K(x,x')$ is the prior for $f(x)$, then the observation noise $\epsilon$ would lead to a total covariance matrix $K(X,X) + \sigma_n^2 I$. If the $\sigma_n^2 \delta(x,x')$ term is *already* intended to model the observation noise, then the additional $\epsilon$ term is redundant or misphrased. This ambiguity makes the precise form of the required covariance matrix unclear. Also, "Kronecker delta function" usually applies to discrete indices; for continuous $x$, it's typically a Dirac delta or implies discrete noise added to the diagonal.
+    *   **Area for Improvement (Guideline 6 & 7 - Originality & Multi-Step Reasoning):** Similar to Q1 and Q2, this asks for a direct recall of the GP marginal likelihood formula.
+    *   **Actionable Feedback:** Clarify the covariance function's role: Is it the prior for $f(x)$ or the covariance of the observations $y$? Rephrase the observation model to avoid redundancy/confusion (e.g., if the noise is part of the kernel, state $y=f(x)$ directly, or separate the noise term from the kernel definition if it represents independent observation noise). Strengthen reasoning by asking for a nuanced aspect of the likelihood.
+
+---
+
+**Question 4:**
+"Suppose we have a Gaussian process prior for a function $f(x)$ with mean function $m(x) = 0$ and covariance function $k(x, x') = \alpha \exp(-\beta |x - x'|)$, where $\alpha$ and $\beta$ are hyperparameters. The observations are $y_i = f(x_i) + \epsilon_i$, with $\epsilon_i \sim N(0, \sigma^2)$. We place exponential priors on the hyperparameters $\alpha$ and $\beta$, i.e., $p(\alpha) = \lambda e^{-\lambda \alpha}$ and $p(\beta) = \mu e^{-\mu \beta}$ for $\alpha, \beta > 0$. Given fixed values of $\alpha$ and $\beta$, how does the variance of $f(x)$ at a point $x$ vary as $\beta$ increases?"
+
+*   **Critique:**
+    *   **Adherence:** 1 (Input Format), 2 (Mathematical Structure), 10 (Single Part), 11 (No Solutions/Hints), 12 (No Numeric Approximations).
+    *   **Violation (Guideline 3 - Solvable Target):** The question asks "how does the variance... vary", which expects a qualitative description (e.g., increases, decreases, stays the same) rather than a clear symbolic mathematical expression.
+    *   **Violation (Guideline 5 - Concise and Relevant):** The information about "observations are $y_i = f(x_i) + \epsilon_i$" and "exponential priors on the hyperparameters $\alpha$ and $\beta$" is entirely irrelevant to the question asked, which pertains only to the prior variance of $f(x)$ at a point $x$.
+    *   **Violation (Guideline 7 - Multi-Step Reasoning):** If "variance of $f(x)$ at a point $x$" refers to the prior variance, it is $k(x,x) = \alpha \exp(-\beta|x-x|) = \alpha$. This value is independent of $\beta$, making the question trivial and perhaps misleading. If it refers to the predictive variance, the question asks for a qualitative answer without sufficient context for a simple determination, and the prior information is still irrelevant.
+    *   **Actionable Feedback:** Rephrase to ask for a symbolic expression related to the kernel function's properties or a specific mathematical quantity. Remove all irrelevant information (observation model, hyperparameter priors). Clearly specify if "variance of $f(x)$" means prior variance or predictive variance, and if the latter, specify $x$ as a new test point $x^*$ and the context of observations.
+
+---
+
+**Question 5:**
+"Consider a Gaussian process regression problem where the prior on the function $f(x)$ is a Gaussian process with mean zero and covariance function $K(x, x'; \theta) = \sigma_f^2 \exp(-\frac{|x - x'|}{\ell})$. We have $n$ noisy observations $y_i = f(x_i) + \epsilon_i$, where $\epsilon_i \sim N(0, \sigma_n^2)$. Let $\theta = (\sigma_f^2, \ell, \sigma_n^2)$ be the hyperparameters. Given fixed hyperparameters, write down the expression for the Cholesky decomposition $L$ of the kernel matrix $K$, that is, $K = LL^T$, which is required to calculate the log marginal likelihood."
+
+*   **Critique:**
+    *   **Adherence:** 1 (Input Format), 2 (Mathematical Structure), 4 (Single Output), 5 (Concise and Relevant), 8 (Solution Formatting), 9 (Language and Notation), 10 (Single Part), 11 (No Solutions/Hints).
+    *   **Violation (Guideline 3 - Solvable Target & 12 - No Numeric Approximations):** The Cholesky decomposition $L$ for a general matrix $K$ is not a symbolic closed-form *expression* that can be simply "written down" in terms of the elements of $K$. It is the result of an algorithm or numerical procedure. This guideline explicitly states "Do not rely on computational tools - use traditional mathematical methods." Asking for $L$ implies performing a numerical computation.
+    *   **Violation (Guideline 7 - Multi-Step Reasoning):** This question doesn't require a sequence of algebraic or analytic steps to derive a symbolic result. It asks for the output of a numerical factorization.
+    *   **Actionable Feedback:** Do not ask for the Cholesky factor $L$ itself. Instead, ask for a symbolic expression that *involves* $L$ (e.g., the log determinant of $K$ in terms of $L$, or a component of the marginal likelihood that is simplified by using $L$), or ask for the *properties* of $L$ that are relevant for calculation.
+=== Turn 2: Author refines questions ===
+Okay, here's a revised set of questions, designed to address the feedback and adhere to the guidelines more closely. The goal is to avoid simple recall, encourage multi-step reasoning, and ensure solvable symbolic targets.
+
+1.  <question>Consider a Bayesian linear regression model with a Gaussian process prior over the weights. Let $X$ be the $n \times d$ design matrix. The prior covariance of the weights is given by $\Sigma$. Show that the log determinant of the posterior covariance matrix of the weights can be written in terms of $\Sigma$ and the observation noise variance $\sigma^2$, and design matrix $X$.</question>
+
+2.  <question>Let $f \sim GP(0, K)$ be a Gaussian process with squared exponential kernel $K(x, x') = \exp(-\theta|x - x'|^2)$. You have observed data $D = \{(x_i, y_i)\}_{i=1}^n$ with noise variance $\sigma^2$. Let $K_y$ be the covariance matrix of the observed data. Describe, without explicitly computing it, how the trace of the inverse of $K_y$ changes as $\theta$ approaches zero. Explain your reasoning using the properties of the squared exponential kernel.</question>
+
+3.  <question>A Gaussian process is used to model a function $f(x)$ with a zero mean and covariance $K(x, x') = \sigma_f^2 \exp(-\frac{(x-x')^2}{2l^2}) + \sigma_n^2 \delta(x,x')$, where $\sigma_f^2$, $l$, and $\sigma_n^2$ are fixed hyperparameters.  Given two observations $y_1$ at $x_1$ and $y_2$ at $x_2$, where $x_1 \neq x_2$, write an expression for the conditional variance of $f(x^*)$ at a new test point $x^*$, given $y_1$ and $y_2$. Focus on how the conditional variance is changed by the observed covariance between the function values at $x_1$ and $x_2$, by considering the conditional variance *relative* to what it would be *if* the values were conditionally independent. Show the ratio of the two variances.</question>
+
+4.  <question>Suppose we have a Gaussian process prior for a function $f(x)$ with mean function $m(x) = 0$ and covariance function $k(x, x') = \alpha \exp(-\beta |x - x'|)$, where $\alpha$ and $\beta$ are hyperparameters.  What is the largest possible value of the marginal variance of the Gaussian process, $k(x,x)$, under the constraint that $k(x,x')$ remains a valid covariance function (i.e., ensures the covariance matrix is positive semi-definite) and under the constraint that $\beta > 0$? Explain your reasoning.</question>
+
+5.  <question>Consider a Gaussian process regression problem with covariance function $K(x, x'; \theta) = \sigma_f^2 \exp(-\frac{|x - x'|}{\ell})$. Let $K$ be the kernel matrix evaluated on $n$ training data points, and $L$ its Cholesky decomposition ($K = LL^T$). Express the derivative of the log determinant of $K$ with respect to the lengthscale parameter $\ell$, i.e., $\frac{\partial}{\partial \ell} \log |K|$, in terms of $L$ and $\frac{\partial K}{\partial \ell}$.</question>
+=== Final questions generated ===

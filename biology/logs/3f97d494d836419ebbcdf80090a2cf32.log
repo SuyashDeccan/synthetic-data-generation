@@ -1,0 +1,226 @@
+=== Turn 0: Author generates questions ===
+Here are some novel, undergraduate-level biology questions based on the provided topics, key concepts, and guidelines:
+
+<question>A researcher is conducting a prospective, single-blinded, controlled clinical study on patients undergoing mandibular microfracture (MMF) to treat temporomandibular joint (TMJ) disorders. 30 patients (age 25-40, equal gender distribution) are enrolled. Post-surgery, all patients receive identical pain medication and oral hygiene instructions. Patients are divided into two groups: Group A undergoes MMF with standard surgical protocols, while Group B undergoes MMF with an enhanced, minimally invasive technique hypothesized to reduce soft tissue injury. Post-operative infection rates in Group A average 7%, while in Group B the infection rate is 3%. The researcher hypothesizes that Group B's minimally invasive technique results in a 40% reduction in soft tissue trauma. If soft tissue trauma is directly proportional to the infection rate, what is the expected average infection rate (expressed as a percentage) if the researcher were to employ the standard surgical protocols (Group A) on a new group of 100 patients with a 50% reduction in soft tissue trauma?</question>
+
+<question>In a prospective clinical trial assessing patient tolerance to MMF, the discomfort level is measured using a visual analog scale (VAS) ranging from 0 (no pain) to 10 (worst pain). 40 patients undergoing MMF were enrolled, divided into two equal groups. Group 1 received standard pre-operative counseling. Group 2 received enhanced pre-operative counseling focused on managing expectations and relaxation techniques. The mean VAS score for Group 1 was 6.5 and the mean VAS score for Group 2 was 4.3. Assuming VAS scores are normally distributed and a single patient scores 5.4 on VAS, what is the probability that the patient belongs to Group 1? Assume equal prior probabilities of belonging to either group and a standard deviation of VAS scores of 1.8 for both groups. Give the answer as a decimal value between 0 and 1.</question>
+
+<question>A prospective clinical study is conducted to compare two MMF techniques (Technique A and Technique B) on 60 patients experiencing TMJ pain. 30 patients are randomly assigned to each group. Intraoperative data reveals that the average duration of surgery for Technique A is 90 minutes, while for Technique B it's 75 minutes. Postoperative data collected over 12 months shows that 8 patients in the Technique A group developed a minor infection, while only 3 patients in the Technique B group did. If the likelihood of infection is directly proportional to the square root of the surgery duration, what is the ratio of the actual infection rate of Technique B to the expected infection rate given its shorter surgical duration, rounded to two decimal places?</question>
+
+<question>A single-blinded clinical trial evaluates the impact of oral hygiene on infection rates post-MMF. 50 patients are enrolled and undergo the same MMF procedure. 25 are assigned to an intensive oral hygiene protocol (Group A) and 25 receive standard oral hygiene instructions (Group B). The number of patients who followed the instructions from Group A is 22, while those who followed the instructions from Group B is 18. Post-operatively, 2 patients in Group A develop infections, whereas 5 patients in Group B develop infections. Assuming a direct proportionality between the rate of instruction following and the inverse of the infection rate, what is the difference of infection rate between the two groups, assuming that everyone follows all instructions?</question>
+
+<question>Researchers performed MMF on 40 patients experiencing TMJ dysfunction. They categorized the patients into two groups of 20: one group (A) with no pre-existing conditions, and another group (B) with a history of smoking. All patients underwent the same MMF procedure and received identical postoperative care. Analysis revealed that 3 patients from group A experienced a Grade 1 soft tissue injury, while 8 patients from group B experienced a Grade 1 soft tissue injury. Assume that the probability of Grade 1 soft tissue injury can be modelled as a binomial distribution. Given the number of patients in each group, determine the relative risk of Grade 1 soft tissue injury for patients with a history of smoking compared to those without any pre-existing conditions.</question>
+=== Turn 0: Critic feedback ===
+As a biology assessment expert, I've evaluated your novel, undergraduate-level biology questions against the provided guidelines. Overall, you've done a commendable job in creating questions that are rooted in realistic biological scenarios and require multi-step reasoning. However, some questions contain critical inconsistencies that prevent a single correct solution.
+
+Here's a detailed critique for each question:
+
+---
+
+**Question 1**
+<question>A researcher is conducting a prospective, single-blinded, controlled clinical study on patients undergoing mandibular microfracture (MMF) to treat temporomandibular joint (TMJ) disorders. 30 patients (age 25-40, equal gender distribution) are enrolled. Post-surgery, all patients receive identical pain medication and oral hygiene instructions. Patients are divided into two groups: Group A undergoes MMF with standard surgical protocols, while Group B undergoes MMF with an enhanced, minimally invasive technique hypothesized to reduce soft tissue injury. Post-operative infection rates in Group A average 7%, while in Group B the infection rate is 3%. The researcher hypothesizes that Group B's minimally invasive technique results in a 40% reduction in soft tissue trauma. If soft tissue trauma is directly proportional to the infection rate, what is the expected average infection rate (expressed as a percentage) if the researcher were to employ the standard surgical protocols (Group A) on a new group of 100 patients with a 50% reduction in soft tissue trauma?</question>
+
+*   **Strengths:** Excellent biological scenario, models a realistic clinical study, requires multi-step quantitative reasoning (proportionality calculations), and seeks a specific numerical answer.
+*   **Critique:** **Internal Inconsistency (Guideline 6: Single Solution).** The core issue is that the given infection rates and the stated trauma reduction are mathematically inconsistent with the assumed direct proportionality.
+    *   If infection rate (IR) is directly proportional to soft tissue trauma (STT), then $IR = k \times STT$.
+    *   For Group A: $IR_A = 7\%$. Let its trauma be $STT_A$. So $7 = k \times STT_A$.
+    *   For Group B: $IR_B = 3\%$.
+    *   The hypothesis states $STT_B = STT_A - 0.40 \times STT_A = 0.60 \times STT_A$.
+    *   If this hypothesis were true, then $IR_B = k \times STT_B = k \times (0.60 \times STT_A) = 0.60 \times (k \times STT_A) = 0.60 \times IR_A = 0.60 \times 7\% = 4.2\%$.
+    *   However, the question states $IR_B = 3\%$. Since $4.2\% \neq 3\%$, the observed data ($7\%$ and $3\%$) and the researcher's hypothesis ($40\%$ reduction in trauma) contradict each other under the given proportionality rule. This means a single, consistent proportionality constant ($k$) cannot be derived from the initial information, making the subsequent calculation ambiguous.
+*   **Actionable Feedback:** Reconcile the numerical values to ensure mathematical consistency.
+    *   **Option 1 (Adjust $IR_B$):** If $IR_A=7\%$ and $STT_B$ is $40\%$ less than $STT_A$, then $IR_B$ *must* be $4.2\%$. State $IR_B$ as $4.2\%$.
+    *   **Option 2 (Adjust % reduction):** If $IR_A=7\%$ and $IR_B=3\%$, then $STT_B$ must be $(3/7) \times STT_A$. This is a $(1 - 3/7) \times 100\% \approx 57.14\%$ reduction in trauma. Adjust the percentage of trauma reduction in Group B accordingly.
+
+---
+
+**Question 2**
+<question>In a prospective clinical trial assessing patient tolerance to MMF, the discomfort level is measured using a visual analog scale (VAS) ranging from 0 (no pain) to 10 (worst pain). 40 patients undergoing MMF were enrolled, divided into two equal groups. Group 1 received standard pre-operative counseling. Group 2 received enhanced pre-operative counseling focused on managing expectations and relaxation techniques. The mean VAS score for Group 1 was 6.5 and the mean VAS score for Group 2 was 4.3. Assuming VAS scores are normally distributed and a single patient scores 5.4 on VAS, what is the probability that the patient belongs to Group 1? Assume equal prior probabilities of belonging to either group and a standard deviation of VAS scores of 1.8 for both groups. Give the answer as a decimal value between 0 and 1.</question>
+
+*   **Strengths:** This is an **excellent** question.
+    *   **Guideline 1 (Model a biology Scenario):** Very realistic clinical trial scenario.
+    *   **Guideline 2 (Expect numerical answer):** Clear.
+    *   **Guideline 3 (Force Multi-Step Reasoning):** Requires a multi-step calculation involving probability density functions for normal distributions and Bayes' Theorem, demonstrating robust statistical reasoning in a biological context.
+    *   **Guideline 4 (Avoid How based questions):** Clearly a problem-solving question.
+    *   **Guideline 5 (Be Unique):** A unique application of Bayesian inference in a clinical setting.
+    *   **Guideline 6 (Single Solution):** Yields one correct answer.
+    *   **Guideline 7 (Rigorous, concise phrasing):** Clearly and professionally phrased.
+    *   **Guideline 9 (Units):** Probability is unitless, VAS scale is well-defined.
+    *   **Guideline 10 (Not multipart):** Asks for a single quantity.
+*   **Critique:** None.
+*   **Actionable Feedback:** None. This question perfectly aligns with all guidelines.
+
+---
+
+**Question 3**
+<question>A prospective clinical study is conducted to compare two MMF techniques (Technique A and Technique B) on 60 patients experiencing TMJ pain. 30 patients are randomly assigned to each group. Intraoperative data reveals that the average duration of surgery for Technique A is 90 minutes, while for Technique B it's 75 minutes. Postoperative data collected over 12 months shows that 8 patients in the Technique A group developed a minor infection, while only 3 patients in the Technique B group did. If the likelihood of infection is directly proportional to the square root of the surgery duration, what is the ratio of the actual infection rate of Technique B to the expected infection rate given its shorter surgical duration, rounded to two decimal places?</question>
+
+*   **Strengths:** This is another **excellent** question.
+    *   **Guideline 1 (Model a biology Scenario):** Realistic comparison of surgical techniques.
+    *   **Guideline 2 (Expect numerical answer):** Clear.
+    *   **Guideline 3 (Force Multi-Step Reasoning):** Requires calculating actual rates, determining a proportionality constant, calculating an expected rate, and finally computing a ratio. This is solid multi-step reasoning.
+    *   **Guideline 4 (Avoid How based questions):** Clearly a problem-solving question.
+    *   **Guideline 5 (Be Unique):** Unique application of proportionality within a clinical context.
+    *   **Guideline 6 (Single Solution):** Yields one correct answer.
+    *   **Guideline 7 (Rigorous, concise phrasing):** Clearly and professionally phrased.
+    *   **Guideline 9 (Units):** Ratio is unitless, durations are consistent.
+    *   **Guideline 10 (Not multipart):** Asks for a single quantity.
+*   **Critique:** None.
+*   **Actionable Feedback:** None. This question also perfectly aligns with all guidelines.
+
+---
+
+**Question 4**
+<question>A single-blinded clinical trial evaluates the impact of oral hygiene on infection rates post-MMF. 50 patients are enrolled and undergo the same MMF procedure. 25 are assigned to an intensive oral hygiene protocol (Group A) and 25 receive standard oral hygiene instructions (Group B). The number of patients who followed the instructions from Group A is 22, while those who followed the instructions from Group B is 18. Post-operatively, 2 patients in Group A develop infections, whereas 5 patients in Group B develop infections. Assuming a direct proportionality between the rate of instruction following and the inverse of the infection rate, what is the difference of infection rate between the two groups, assuming that everyone follows all instructions?</question>
+
+*   **Strengths:** Good biological scenario, attempts multi-step calculation involving proportionality.
+*   **Critique:** **Internal Inconsistency (Guideline 6: Single Solution).** Similar to Question 1, the provided data contradicts the stated proportionality rule.
+    *   Let $F$ be the rate of instruction following and $IR$ be the infection rate. The relationship is $F \propto 1/IR$, which means $F = k/IR$, or $F \times IR = k$ (where $k$ is a constant).
+    *   For Group A: $F_A = 22/25 = 0.88$. $IR_A = 2/25 = 0.08$. So, $k_A = F_A \times IR_A = 0.88 \times 0.08 = 0.0704$.
+    *   For Group B: $F_B = 18/25 = 0.72$. $IR_B = 5/25 = 0.20$. So, $k_B = F_B \times IR_B = 0.72 \times 0.20 = 0.144$.
+    *   Since $k_A \neq k_B$, the given data points do not satisfy a consistent direct proportionality between the rate of instruction following and the inverse of the infection rate. This makes it impossible to determine a single constant ($k$) to then apply to the hypothetical scenario where "everyone follows all instructions" (i.e., $F=1.0$). The calculation will be ambiguous.
+*   **Actionable Feedback:** Adjust the numerical values (either instruction following numbers or infection counts) so that the derived constant $k$ is consistent for both Group A and Group B. For example, if you want $k=0.0704$ (from Group A), then for Group B with $F_B=0.72$, the infection rate $IR_B$ should be $k/F_B = 0.0704/0.72 \approx 0.0978$ (or approximately 2.44 patients out of 25). This will allow for a consistent calculation in the final step.
+
+---
+
+**Question 5**
+<question>Researchers performed MMF on 40 patients experiencing TMJ dysfunction. They categorized the patients into two groups of 20: one group (A) with no pre-existing conditions, and another group (B) with a history of smoking. All patients underwent the same MMF procedure and received identical postoperative care. Analysis revealed that 3 patients from group A experienced a Grade 1 soft tissue injury, while 8 patients from group B experienced a Grade 1 soft tissue injury. Assume that the probability of Grade 1 soft tissue injury can be modelled as a binomial distribution. Given the number of patients in each group, determine the relative risk of Grade 1 soft tissue injury for patients with a history of smoking compared to those without any pre-existing conditions.</question>
+
+*   **Strengths:** Good biological scenario, tests a fundamental epidemiological concept (relative risk) with multi-step calculations, and yields a single numerical answer.
+*   **Critique:** **Minor Over-specification (Guideline 3/7).** The statement "Assume that the probability of Grade 1 soft tissue injury can be modelled as a binomial distribution" is technically correct, but it is not strictly necessary for the direct calculation of relative risk, which relies only on the observed frequencies/proportions. Including it might imply a more complex statistical analysis (e.g., calculating confidence intervals or performing hypothesis tests using binomial properties) than is required to simply find the relative risk ratio. It could potentially confuse or distract students from the straightforward calculation.
+*   **Actionable Feedback:**
+    *   **Option 1 (Simplify):** Remove the phrase "Assume that the probability of Grade 1 soft tissue injury can be modelled as a binomial distribution" if the goal is purely to calculate the point estimate of relative risk based on observed proportions.
+    *   **Option 2 (Expand):** If you intend to engage with the binomial distribution properties, rephrase the question to explicitly ask for something that requires it, such as a confidence interval for the relative risk or a p-value for the difference in proportions.
+
+---
+=== Turn 1: Author refines questions ===
+Here are the refined biology questions based on the feedback, aiming for internal consistency and clarity:
+
+<question>A researcher is conducting a prospective, single-blinded, controlled clinical study on patients undergoing mandibular microfracture (MMF) to treat temporomandibular joint (TMJ) disorders. 30 patients (age 25-40, equal gender distribution) are enrolled. Post-surgery, all patients receive identical pain medication and oral hygiene instructions. Patients are divided into two groups: Group A undergoes MMF with standard surgical protocols, while Group B undergoes MMF with an enhanced, minimally invasive technique hypothesized to reduce soft tissue injury. Post-operative infection rates in Group A average 7%, while in Group B the infection rate is 4.2%. The researcher hypothesizes that Group B's minimally invasive technique results in a reduction in soft tissue trauma. If soft tissue trauma is directly proportional to the infection rate, what is the expected average infection rate (expressed as a percentage) if the researcher were to employ the standard surgical protocols (Group A) on a new group of 100 patients with a 50% reduction in soft tissue trauma?</question>
+
+<question>In a prospective clinical trial assessing patient tolerance to MMF, the discomfort level is measured using a visual analog scale (VAS) ranging from 0 (no pain) to 10 (worst pain). 40 patients undergoing MMF were enrolled, divided into two equal groups. Group 1 received standard pre-operative counseling. Group 2 received enhanced pre-operative counseling focused on managing expectations and relaxation techniques. The mean VAS score for Group 1 was 6.5 and the mean VAS score for Group 2 was 4.3. Assuming VAS scores are normally distributed and a single patient scores 5.4 on VAS, what is the probability that the patient belongs to Group 1? Assume equal prior probabilities of belonging to either group and a standard deviation of VAS scores of 1.8 for both groups. Give the answer as a decimal value between 0 and 1.</question>
+
+<question>A prospective clinical study is conducted to compare two MMF techniques (Technique A and Technique B) on 60 patients experiencing TMJ pain. 30 patients are randomly assigned to each group. Intraoperative data reveals that the average duration of surgery for Technique A is 90 minutes, while for Technique B it's 75 minutes. Postoperative data collected over 12 months shows that 8 patients in the Technique A group developed a minor infection, while only 3 patients in the Technique B group did. If the likelihood of infection is directly proportional to the square root of the surgery duration, what is the ratio of the actual infection rate of Technique B to the expected infection rate given its shorter surgical duration, rounded to two decimal places?</question>
+
+<question>A single-blinded clinical trial evaluates the impact of oral hygiene on infection rates post-MMF. 50 patients are enrolled and undergo the same MMF procedure. 25 are assigned to an intensive oral hygiene protocol (Group A) and 25 receive standard oral hygiene instructions (Group B). The number of patients who followed the instructions from Group A is 22, while those who followed the instructions from Group B is 18. Post-operatively, 2 patients in Group A develop infections, whereas 3 patients in Group B develop infections. Assuming a direct proportionality between the rate of instruction following and the inverse of the infection rate, what is the difference of infection rate between the two groups, assuming that everyone follows all instructions?</question>
+
+<question>Researchers performed MMF on 40 patients experiencing TMJ dysfunction. They categorized the patients into two groups of 20: one group (A) with no pre-existing conditions, and another group (B) with a history of smoking. All patients underwent the same MMF procedure and received identical postoperative care. Analysis revealed that 3 patients from group A experienced a Grade 1 soft tissue injury, while 8 patients from group B experienced a Grade 1 soft tissue injury. Given the number of patients in each group, determine the relative risk of Grade 1 soft tissue injury for patients with a history of smoking compared to those without any pre-existing conditions.</question>
+=== Turn 1: Critic feedback ===
+Here's a critique of each question against your guidelines, with concise, actionable feedback:
+
+<question>A researcher is conducting a prospective, single-blinded, controlled clinical study on patients undergoing mandibular microfracture (MMF) to treat temporomandibular joint (TMJ) disorders. 30 patients (age 25-40, equal gender distribution) are enrolled. Post-surgery, all patients receive identical pain medication and oral hygiene instructions. Patients are divided into two groups: Group A undergoes MMF with standard surgical protocols, while Group B undergoes MMF with an enhanced, minimally invasive technique hypothesized to reduce soft tissue injury. Post-operative infection rates in Group A average 7%, while in Group B the infection rate is 4.2%. The researcher hypothesizes that Group B's minimally invasive technique results in a reduction in soft tissue trauma. If soft tissue trauma is directly proportional to the infection rate, what is the expected average infection rate (expressed as a percentage) if the researcher were to employ the standard surgical protocols (Group A) on a new group of 100 patients with a 50% reduction in soft tissue trauma?</question>
+
+**Critique:**
+*   **1. Model a biology Scenario:** Excellent. Real-world clinical study context.
+*   **2. Expect numerical answer:** Yes, a percentage.
+*   **3. Force Multi-Step Reasoning:** Yes. Requires calculating the proportionality constant/relationship from the initial data and then applying it to a new scenario.
+*   **4. Avoid How based questions:** Yes, problem-solving.
+*   **5. Be Unique:** Yes, the scenario and specific proportional relationship are novel.
+*   **6. Single Solution:** Yes, a clear calculation.
+*   **7. Use rigorous, concise phrasing:** Good. "Post-operative infection rates in Group A average 7%, while in Group B the infection rate is 4.2%" is slightly redundant; "The average post-operative infection rate in Group A was 7%, and in Group B was 4.2%" would be slightly more concise.
+*   **9. Units must be consistent:** Answer is a percentage, which is dimensionless; units are consistent in the problem (percentages).
+*   **10. Questions must not be multipart:** Yes, single target quantity.
+*   **11. Solution Formatting (LaTeX):** Not applicable to question text, but would apply to solution.
+*   **12. Multi-Step Equations (LaTeX):** Not applicable to question text, but would apply to solution.
+
+**Actionable Feedback:**
+*   **Minor Wording:** Rephrase for slightly better flow: "The average post-operative infection rate in Group A was 7%, and in Group B was 4.2%." This is a very minor point for an otherwise strong question.
+
+---
+
+<question>In a prospective clinical trial assessing patient tolerance to MMF, the discomfort level is measured using a visual analog scale (VAS) ranging from 0 (no pain) to 10 (worst pain). 40 patients undergoing MMF were enrolled, divided into two equal groups. Group 1 received standard pre-operative counseling. Group 2 received enhanced pre-operative counseling focused on managing expectations and relaxation techniques. The mean VAS score for Group 1 was 6.5 and the mean VAS score for Group 2 was 4.3. Assuming VAS scores are normally distributed and a single patient scores 5.4 on VAS, what is the probability that the patient belongs to Group 1? Assume equal prior probabilities of belonging to either group and a standard deviation of VAS scores of 1.8 for both groups. Give the answer as a decimal value between 0 and 1.</question>
+
+**Critique:**
+*   **1. Model a biology Scenario:** Excellent. Clinical trial, patient discomfort, VAS.
+*   **2. Expect numerical answer:** Yes, a decimal probability.
+*   **3. Force Multi-Step Reasoning:** Yes. Requires understanding normal distribution, likelihood calculation, and Bayesian inference (or a proportional likelihood approach). This is statistically demanding.
+*   **4. Avoid How based questions:** Yes, problem-solving.
+*   **5. Be Unique:** Yes, applying Bayesian probability in this context is unique.
+*   **6. Single Solution:** Yes, given the explicit statistical assumptions.
+*   **7. Use rigorous, concise phrasing:** Excellent. All necessary statistical assumptions are clearly stated.
+*   **9. Units must be consistent:** Probability is dimensionless; no SI units applicable.
+*   **10. Questions must not be multipart:** Yes, single target quantity.
+*   **11. Solution Formatting (LaTeX):** Not applicable to question text, but would apply to solution.
+*   **12. Multi-Step Equations (LaTeX):** Not applicable to question text, but the solution would heavily rely on `\begin{aligned}`.
+
+**Actionable Feedback:**
+*   This is a strong question. No significant improvements needed if the target audience is expected to have a strong statistical background including probability density functions and Bayes' theorem.
+
+---
+
+<question>A prospective clinical study is conducted to compare two MMF techniques (Technique A and Technique B) on 60 patients experiencing TMJ pain. 30 patients are randomly assigned to each group. Intraoperative data reveals that the average duration of surgery for Technique A is 90 minutes, while for Technique B it's 75 minutes. Postoperative data collected over 12 months shows that 8 patients in the Technique A group developed a minor infection, while only 3 patients in the Technique B group did. If the likelihood of infection is directly proportional to the square root of the surgery duration, what is the ratio of the actual infection rate of Technique B to the expected infection rate given its shorter surgical duration, rounded to two decimal places?</question>
+
+**Critique:**
+*   **1. Model a biology Scenario:** Excellent. Clinical study comparing techniques, infection rates.
+*   **2. Expect numerical answer:** Yes, a ratio.
+*   **3. Force Multi-Step Reasoning:** Yes. Requires calculating observed rates, establishing proportionality from one group, calculating expected rate for the other, and then computing the ratio.
+*   **4. Avoid How based questions:** Yes, problem-solving.
+*   **5. Be Unique:** Yes, the square root proportionality is uncommon and makes it distinct.
+*   **6. Single Solution:** Yes, clear calculation.
+*   **7. Use rigorous, concise phrasing:** Excellent. The proportionality and required output format are clear.
+*   **9. Units must be consistent:** Ratio is dimensionless; durations are consistent (minutes).
+*   **10. Questions must not be multipart:** Yes, single target quantity.
+*   **11. Solution Formatting (LaTeX):** Not applicable to question text, but would apply to solution.
+*   **12. Multi-Step Equations (LaTeX):** Not applicable to question text, but the solution would benefit from `\begin{aligned}`.
+
+**Actionable Feedback:**
+*   This is a strong question. No significant improvements needed.
+
+---
+
+<question>A single-blinded clinical trial evaluates the impact of oral hygiene on infection rates post-MMF. 50 patients are enrolled and undergo the same MMF procedure. 25 are assigned to an intensive oral hygiene protocol (Group A) and 25 receive standard oral hygiene instructions (Group B). The number of patients who followed the instructions from Group A is 22, while those who followed the instructions from Group B is 18. Post-operatively, 2 patients in Group A develop infections, whereas 3 patients in Group B develop infections. Assuming a direct proportionality between the rate of instruction following and the inverse of the infection rate, what is the difference of infection rate between the two groups, assuming that everyone follows all instructions?</question>
+
+**Critique:**
+*   **1. Model a biology Scenario:** Excellent. Clinical trial on oral hygiene and infection rates.
+*   **2. Expect numerical answer:** Yes, a difference in rates.
+*   **3. Force Multi-Step Reasoning:** Yes. Requires calculating observed following and infection rates, inferring a proportionality constant for each group, then applying it to a hypothetical scenario (100% adherence) to get new rates, and finally calculating their difference.
+*   **4. Avoid How based questions:** Yes, problem-solving.
+*   **5. Be Unique:** Yes, the "instruction following" proportionality is novel.
+*   **6. Single Solution:** **Potential Ambiguity.** The stated proportionality, "direct proportionality between the rate of instruction following and the inverse of the infection rate" ($F \propto 1/I \implies F \cdot I = k$), implies a single proportionality constant ($k$) that should hold universally. However, if you calculate $k$ from the observed data for Group A ($k_A = (22/25) \times (2/25) = 44/625$) and Group B ($k_B = (18/25) \times (3/25) = 54/625$), you get different values for $k$. This means the "proportionality" as a universal rule is not perfectly supported by the data provided, or there are other confounding factors. The question implicitly expects you to use the derived $k$ for each group *independently* to project their hypothetical 100% adherence rates, leading to a difference of $k_B - k_A = (54-44)/625 = 10/625$. If the intent was for a single $k$ to apply across both groups, the problem setup would be internally inconsistent. This ambiguity makes the question less rigorous for a single, unambiguous solution based on a universal proportionality.
+*   **7. Use rigorous, concise phrasing:** Good, but the ambiguity in applying the proportionality constant needs clarification (see #6). Also, specify the order of the difference (e.g., "difference of infection rate (Group A - Group B)").
+*   **9. Units must be consistent:** Difference in rates is dimensionless.
+*   **10. Questions must not be multipart:** Yes, single target quantity.
+*   **11. Solution Formatting (LaTeX):** Not applicable to question text, but would apply to solution.
+*   **12. Multi-Step Equations (LaTeX):** Not applicable to question text, but the solution would benefit from `\begin{aligned}`.
+
+**Actionable Feedback:**
+*   **Clarify Proportionality Application:** To ensure a single solution, clarify how to interpret the "direct proportionality".
+    *   **Option A (Recommended if current interpretation is intended):** Rephrase to imply group-specific proportionality: "Assuming, for each group, a direct proportionality between their observed rate of instruction following and the inverse of their infection rate..." This makes it clear that you calculate a $k$ for each group based on its own data, then use that $k$ to project its 100% adherence infection rate.
+    *   **Option B (If a universal constant is intended):** Either adjust the input data so that $k_A$ equals $k_B$, or specify that one group's data (e.g., Group A's) should be used to establish the universal $k$ to predict for both.
+*   **Specify Order of Difference:** Clarify if it's (Group A rate - Group B rate) or (Group B rate - Group A rate).
+
+---
+
+<question>Researchers performed MMF on 40 patients experiencing TMJ dysfunction. They categorized the patients into two groups of 20: one group (A) with no pre-existing conditions, and another group (B) with a history of smoking. All patients underwent the same MMF procedure and received identical postoperative care. Analysis revealed that 3 patients from group A experienced a Grade 1 soft tissue injury, while 8 patients from group B experienced a Grade 1 soft tissue injury. Given the number of patients in each group, determine the relative risk of Grade 1 soft tissue injury for patients with a history of smoking compared to those without any pre-existing conditions.</question>
+
+**Critique:**
+*   **1. Model a biology Scenario:** Excellent. Observational study comparing groups for risk factors.
+*   **2. Expect numerical answer:** Yes, a ratio.
+*   **3. Force Multi-Step Reasoning:** Yes. Calculate incidence rates for both groups, then compute the ratio.
+*   **4. Avoid How based questions:** Yes, problem-solving.
+*   **5. Be Unique:** Yes, specific scenario for relative risk calculation is novel.
+*   **6. Single Solution:** Yes, straightforward calculation.
+*   **7. Use rigorous, concise phrasing:** Excellent. Clear and direct.
+*   **9. Units must be consistent:** Ratio is dimensionless.
+*   **10. Questions must not be multipart:** Yes, single target quantity.
+*   **11. Solution Formatting (LaTeX):** Not applicable to question text, but would apply to solution.
+*   **12. Multi-Step Equations (LaTeX):** Not applicable to question text, but the solution would benefit from `\begin{aligned}`.
+
+**Actionable Feedback:**
+*   This is a strong question. No significant improvements needed. It's a classic epidemiological calculation presented in a clear, relevant biological context.
+=== Turn 2: Author refines questions ===
+Here are the refined biology questions, incorporating the feedback provided. The main changes are:
+
+*   Question 1: Minor wording change for conciseness.
+*   Question 4: Reworded to remove ambiguity in the proportionality relationship and specify the difference order.
+
+<question>A researcher is conducting a prospective, single-blinded, controlled clinical study on patients undergoing mandibular microfracture (MMF) to treat temporomandibular joint (TMJ) disorders. 30 patients (age 25-40, equal gender distribution) are enrolled. Post-surgery, all patients receive identical pain medication and oral hygiene instructions. Patients are divided into two groups: Group A undergoes MMF with standard surgical protocols, while Group B undergoes MMF with an enhanced, minimally invasive technique hypothesized to reduce soft tissue injury. The average post-operative infection rate in Group A was 7%, and in Group B was 4.2%. The researcher hypothesizes that Group B's minimally invasive technique results in a reduction in soft tissue trauma. If soft tissue trauma is directly proportional to the infection rate, what is the expected average infection rate (expressed as a percentage) if the researcher were to employ the standard surgical protocols (Group A) on a new group of 100 patients with a 50% reduction in soft tissue trauma?</question>
+
+<question>In a prospective clinical trial assessing patient tolerance to MMF, the discomfort level is measured using a visual analog scale (VAS) ranging from 0 (no pain) to 10 (worst pain). 40 patients undergoing MMF were enrolled, divided into two equal groups. Group 1 received standard pre-operative counseling. Group 2 received enhanced pre-operative counseling focused on managing expectations and relaxation techniques. The mean VAS score for Group 1 was 6.5 and the mean VAS score for Group 2 was 4.3. Assuming VAS scores are normally distributed and a single patient scores 5.4 on VAS, what is the probability that the patient belongs to Group 1? Assume equal prior probabilities of belonging to either group and a standard deviation of VAS scores of 1.8 for both groups. Give the answer as a decimal value between 0 and 1.</question>
+
+<question>A prospective clinical study is conducted to compare two MMF techniques (Technique A and Technique B) on 60 patients experiencing TMJ pain. 30 patients are randomly assigned to each group. Intraoperative data reveals that the average duration of surgery for Technique A is 90 minutes, while for Technique B it's 75 minutes. Postoperative data collected over 12 months shows that 8 patients in the Technique A group developed a minor infection, while only 3 patients in the Technique B group did. If the likelihood of infection is directly proportional to the square root of the surgery duration, what is the ratio of the actual infection rate of Technique B to the expected infection rate given its shorter surgical duration, rounded to two decimal places?</question>
+
+<question>A single-blinded clinical trial evaluates the impact of oral hygiene on infection rates post-MMF. 50 patients are enrolled and undergo the same MMF procedure. 25 are assigned to an intensive oral hygiene protocol (Group A) and 25 receive standard oral hygiene instructions (Group B). The number of patients who followed the instructions from Group A is 22, while those who followed the instructions from Group B is 18. Assuming, for each group, a direct proportionality between their observed rate of instruction following and the inverse of their infection rate, what is the difference of infection rate (Group A - Group B) between the two groups, assuming that everyone follows all instructions?</question>
+
+<question>Researchers performed MMF on 40 patients experiencing TMJ dysfunction. They categorized the patients into two groups of 20: one group (A) with no pre-existing conditions, and another group (B) with a history of smoking. All patients underwent the same MMF procedure and received identical postoperative care. Analysis revealed that 3 patients from group A experienced a Grade 1 soft tissue injury, while 8 patients from group B experienced a Grade 1 soft tissue injury. Given the number of patients in each group, determine the relative risk of Grade 1 soft tissue injury for patients with a history of smoking compared to those without any pre-existing conditions.</question>
+=== Final questions generated ===

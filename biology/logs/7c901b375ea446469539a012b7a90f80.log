@@ -1,0 +1,207 @@
+=== Turn 0: Author generates questions ===
+Here are some undergraduate-level biology questions based on the provided topics, concepts, and guidelines:
+
+<question>
+A researcher is investigating PAX2 expression in endometrial tissue samples. In a control group of 20 normal endometrial samples, the average PAX2 staining intensity score (on a scale of 0-3, where 0 is no staining and 3 is strong staining) is 2.8. In a group of 15 endometrial hyperplasia samples, the average PAX2 staining intensity score is 1.5. Assuming that PAX2 expression intensity correlates linearly with the proportion of cells expressing PAX2, calculate the estimated percentage reduction in PAX2-expressing cells from normal endometrium to endometrial hyperplasia, based solely on the average staining intensity scores.
+</question>
+
+<question>
+In a pathology study examining PAX2 expression, immunohistochemistry is performed on 100 endometrial tissue samples. The staining intensity is graded on a scale of 0 to 3 (0 = no staining, 3 = strong staining). The mean staining intensity across all samples is calculated to be 1.8. Assuming the staining intensity scores follow a normal distribution with a standard deviation of 0.8, what is the probability of a randomly selected sample having a staining intensity score greater than 2.6? Provide the Z-score as the answer.
+</question>
+
+<question>
+A researcher is analyzing the correlation between PAX2 expression and tumor size in endometrial carcinoma. The study includes 50 patients. The mean tumor diameter is 3 cm with a standard deviation of 1.5 cm. The correlation coefficient (r) between PAX2 staining intensity (graded from 0-3) and tumor diameter is -0.15. Calculate the percentage of variance in tumor diameter that can be explained by PAX2 staining intensity, based on the given correlation coefficient.
+</question>
+
+<question>
+A research team is conducting a follow-up study on endometrial cancer patients, focusing on PAX2 expression and disease recurrence. The original study (Study A) had a cohort of 30 patients followed for 2 years. The current follow-up study (Study B) aims for a larger sample size and longer duration. Assuming that the statistical power increases proportionally to the square root of the sample size and the square root of the duration, calculate the relative increase in statistical power if Study B includes 120 patients followed for 8 years, compared to Study A.
+</question>
+
+<question>
+A pathologist observes that in a set of endometrial carcinoma samples, 35% show complete loss of PAX2 expression (score = 0). If the true prevalence of PAX2 loss in endometrial carcinoma is known to be 40%, calculate the false negative rate (%) in the pathologist's observation, assuming the pathologist evaluated 100 samples.
+</question>
+=== Turn 0: Critic feedback ===
+Here's a critique of each question against your guidelines, with concise, actionable feedback:
+
+---
+
+<question>
+A researcher is investigating PAX2 expression in endometrial tissue samples. In a control group of 20 normal endometrial samples, the average PAX2 staining intensity score (on a scale of 0-3, where 0 is no staining and 3 is strong staining) is 2.8. In a group of 15 endometrial hyperplasia samples, the average PAX2 staining intensity score is 1.5. Assuming that PAX2 expression intensity correlates linearly with the proportion of cells expressing PAX2, calculate the estimated percentage reduction in PAX2-expressing cells from normal endometrium to endometrial hyperplasia, based solely on the average staining intensity scores.
+</question>
+
+**Critique:**
+*   **Guideline 3 (Force Multi-Step Reasoning):** Weak. This question primarily tests basic arithmetic (percentage change) with a given linear assumption. It does not integrate multiple distinct biological principles or complex reasoning.
+*   **Guideline 5 (Be Unique):** The scenario is unique, but the core calculation is a very standard percentage decrease.
+*   **Actionable Feedback:** To enhance multi-step reasoning, consider adding a layer of biological interpretation. For instance, instead of a direct percentage calculation, ask how this change might impact a downstream pathway or cellular function, requiring students to link expression levels to a biological consequence, perhaps by providing additional context or data points for a comparative analysis.
+
+---
+
+<question>
+In a pathology study examining PAX2 expression, immunohistochemistry is performed on 100 endometrial tissue samples. The staining intensity is graded on a scale of 0 to 3 (0 = no staining, 3 = strong staining). The mean staining intensity across all samples is calculated to be 1.8. Assuming the staining intensity scores follow a normal distribution with a standard deviation of 0.8, what is the probability of a randomly selected sample having a staining intensity score greater than 2.6? Provide the Z-score as the answer.
+</question>
+
+**Critique:**
+*   **Guideline 3 (Force Multi-Step Reasoning):** Very weak. This is a single-step, direct application of the Z-score formula. It tests basic statistical knowledge, not multiple biological principles or complex reasoning.
+*   **Guideline 5 (Be Unique):** Very weak. This is a canonical textbook problem for Z-score calculation, merely rephrased with biological data.
+*   **Actionable Feedback:** Do not ask for just the Z-score. Ask for the probability itself, which requires looking up the Z-score in a table or using a calculator, adding a second step. More importantly, to align with multi-step biological reasoning, connect the statistical concept to a biological implication. For example, "If samples with intensity > 2.6 are considered 'high expressors', what is the probability of finding a high expressor, and what clinical significance might this have?" (though the latter part would violate 'numerical answer'). Better yet, embed this statistical calculation within a larger problem that requires interpreting *two* such probabilities or comparing different distributions from biological interventions.
+
+---
+
+<question>
+A researcher is analyzing the correlation between PAX2 expression and tumor size in endometrial carcinoma. The study includes 50 patients. The mean tumor diameter is 3 cm with a standard deviation of 1.5 cm. The correlation coefficient (r) between PAX2 staining intensity (graded from 0-3) and tumor diameter is -0.15. Calculate the percentage of variance in tumor diameter that can be explained by PAX2 staining intensity, based on the given correlation coefficient.
+</question>
+
+**Critique:**
+*   **Guideline 3 (Force Multi-Step Reasoning):** Weak. This is a single-step calculation ($r^2$) directly from the correlation coefficient. It tests basic statistical knowledge, not multiple biological principles or complex reasoning.
+*   **Guideline 5 (Be Unique):** Very weak. This is a canonical textbook problem for $r^2$ calculation, merely rephrased with biological data.
+*   **Actionable Feedback:** To improve, connect this statistical concept to a deeper biological question. Instead of just calculating $r^2$, pose a scenario where a weak correlation (like -0.15) prompts further biological investigation. For example, ask students to propose a *next step* in research based on this finding, or ask them to compare the explanatory power of PAX2 with another hypothetical biomarker given its $r$ value, forcing a comparative biological interpretation. The core calculation itself remains simple, but the surrounding context can demand more biological thought.
+
+---
+
+<question>
+A research team is conducting a follow-up study on endometrial cancer patients, focusing on PAX2 expression and disease recurrence. The original study (Study A) had a cohort of 30 patients followed for 2 years. The current follow-up study (Study B) aims for a larger sample size and longer duration. Assuming that the statistical power increases proportionally to the square root of the sample size and the square root of the duration, calculate the relative increase in statistical power if Study B includes 120 patients followed for 8 years, compared to Study A.
+</question>
+
+**Critique:**
+*   **Guideline 3 (Force Multi-Step Reasoning):** Moderate. While it involves multiple calculation steps, the biological principle (statistical power, sample size, duration) is *given* as a direct proportionality, not something students must infer or understand deeply. It's a test of applying a given mathematical rule, not integrating multiple biological concepts.
+*   **Guideline 5 (Be Unique):** Moderate. The specific combination of factors and proportionality makes it slightly less common than Q2/Q3, but the underlying arithmetic is simple.
+*   **Actionable Feedback:** To truly "force multi-step reasoning" beyond simple proportional arithmetic, provide a scenario where the student must *select* the most appropriate statistical approach or *evaluate* the trade-offs of increasing sample size vs. duration in a real-world biological study design context. For instance, ask about the *implications* of this power increase on detecting a specific effect size, or contrast this with the logistical challenges of such an increase, requiring students to integrate concepts of experimental design with statistical power.
+
+---
+
+<question>
+A pathologist observes that in a set of endometrial carcinoma samples, 35% show complete loss of PAX2 expression (score = 0). If the true prevalence of PAX2 loss in endometrial carcinoma is known to be 40%, calculate the false negative rate (%) in the pathologist's observation, assuming the pathologist evaluated 100 samples.
+</question>
+
+**Critique:**
+*   **Guideline 1 (Model a biology Scenario):** Excellent. Clearly models a relevant biological scenario in pathology/diagnostics.
+*   **Guideline 3 (Force Multi-Step Reasoning):** Strong. This requires understanding definitions of prevalence, observed values, and false negative rate, and then performing calculations that involve setting up the problem correctly (true positives vs. observed positives vs. false negatives). It requires more than a single formula application.
+*   **Guideline 5 (Be Unique):** Strong. While the concepts are standard (false negative rate), the specific numbers and context make it a novel problem application.
+*   **Actionable Feedback:** This is the strongest question. To push it even further for advanced learners, one could introduce an additional factor, e.g., "Given this false negative rate, and a known false positive rate of X%, calculate the overall accuracy/precision/F1-score for PAX2 as a diagnostic marker," requiring students to integrate multiple diagnostic metrics. Ensure the context of "false negative rate" is explicitly tied to the pathologist's *observation* being "negative" (i.e., not detecting PAX2 loss when it's truly present).
+=== Turn 1: Author refines questions ===
+```python
+questions = [
+    """<question>A researcher is investigating PAX2 expression in endometrial tissue samples to differentiate between normal endometrium and endometrial hyperplasia. In a control group of 20 normal endometrial samples, the average PAX2 staining intensity score (on a scale of 0-3, where 0 is no staining and 3 is strong staining) is 2.8. In a group of 15 endometrial hyperplasia samples, the average PAX2 staining intensity score is 1.5. Assuming that PAX2 expression intensity correlates linearly with the proportion of cells expressing PAX2, and knowing that PAX2 is a transcription factor promoting cell proliferation, estimate the percentage reduction in PAX2-expressing cells from normal endometrium to endometrial hyperplasia. Based on this reduction, if a target gene of PAX2 normally increases cell proliferation by 20%, what is the predicted percentage increase in cell proliferation due to this target gene in endometrial hyperplasia, assuming the target gene expression also changes linearly with PAX2 expression?</question>""",
+    """<question>In a pathology study examining PAX2 expression, immunohistochemistry is performed on 100 endometrial tissue samples. The staining intensity is graded on a scale of 0 to 3 (0 = no staining, 3 = strong staining). The mean staining intensity across all samples is calculated to be 1.8 with a standard deviation of 0.8. Assuming the staining intensity scores follow a normal distribution, calculate the probability of a randomly selected sample having a staining intensity score greater than 2.6. If samples with staining intensity greater than 2.6 are considered 'high expressors', and 'high expressors' are hypothesized to have a 1.5 times greater risk of disease progression, what is the relative increase in the odds ratio of disease progression comparing high expressors to the remaining patients? (Assume a fixed baseline disease progression risk of 10% in the remaining patients.)</question>""",
+    """<question>A researcher is analyzing the correlation between PAX2 expression and tumor size in endometrial carcinoma. The study includes 50 patients. The mean tumor diameter is 3 cm with a standard deviation of 1.5 cm. The correlation coefficient (r) between PAX2 staining intensity (graded from 0-3) and tumor diameter is -0.15. Calculate the percentage of variance in tumor diameter that can be explained by PAX2 staining intensity, based on the given correlation coefficient. Given the weak correlation, the researcher hypothesizes that a microRNA (miRNA-X) might be influencing both PAX2 expression *and* tumor growth independently. If miRNA-X expression is negatively correlated with PAX2 expression (r = -0.6) and positively correlated with tumor diameter (r = 0.4), explain how miRNA-X might be confounding the observed relationship between PAX2 and tumor size. Specifically, calculate the predicted change in the original PAX2-tumor diameter correlation if miRNA-X's influence was statistically removed (conceptually, not computationally). Would it increase, decrease, or stay the same and explain why.</question>""",
+    """<question>A research team is conducting a follow-up study on endometrial cancer patients, focusing on PAX2 expression and disease recurrence. The original study (Study A) had a cohort of 30 patients followed for 2 years, detecting a statistically significant link between low PAX2 expression and early recurrence. The current follow-up study (Study B) aims for a larger sample size and longer duration. Assuming that the statistical power increases proportionally to the square root of the sample size and the square root of the duration, calculate the relative increase in statistical power if Study B includes 120 patients followed for 8 years, compared to Study A. Recognizing that a larger study might uncover more subtle effects, what are the potential ethical considerations of increasing sample size and study duration in this patient population, considering the burden of follow-up and the possibility of uncovering insignificant or clinically irrelevant associations, while weighing it against the benefit of higher resolution understanding of PAX2 in endometrial recurrence?</question>""",
+    """<question>A pathologist observes that in a set of endometrial carcinoma samples, 35% show complete loss of PAX2 expression (score = 0). If the true prevalence of PAX2 loss in endometrial carcinoma is known to be 40%, calculate the false negative rate (%) in the pathologist's observation, assuming the pathologist evaluated 100 samples. Given this false negative rate, and assuming the assay is designed to detect PAX2 loss, calculate the Positive Predictive Value (PPV) of the assay in this patient population, assuming a false positive rate of 5%.</question>"""
+]
+
+for i, question in enumerate(questions):
+    print(f"{i+1}. {question}")
+```
+=== Turn 1: Critic feedback ===
+Here's a critique of each question, focusing on adherence to your guidelines and providing actionable feedback for improvement.
+
+---
+
+### **Question 1 Critique**
+
+```python
+<question>A researcher is investigating PAX2 expression in endometrial tissue samples to differentiate between normal endometrium and endometrial hyperplasia. In a control group of 20 normal endometrial samples, the average PAX2 staining intensity score (on a scale of 0-3, where 0 is no staining and 3 is strong staining) is 2.8. In a group of 15 endometrial hyperplasia samples, the average PAX2 staining intensity score is 1.5. Assuming that PAX2 expression intensity correlates linearly with the proportion of cells expressing PAX2, and knowing that PAX2 is a transcription factor promoting cell proliferation, estimate the percentage reduction in PAX2-expressing cells from normal endometrium to endometrial hyperplasia. Based on this reduction, if a target gene of PAX2 normally increases cell proliferation by 20%, what is the predicted percentage increase in cell proliferation due to this target gene in endometrial hyperplasia, assuming the target gene expression also changes linearly with PAX2 expression?</question>
+```
+
+**Critique:**
+
+*   **Guideline 10 (Not Multipart): Fail.** The question asks for two distinct calculations: "percentage reduction in PAX2-expressing cells" and "predicted percentage increase in cell proliferation." This violates the single target quantity rule.
+*   **Biological Logic/Clarity (Second Part): Improvement Needed.**
+    *   The first part assumes a linear correlation of staining intensity with cell proportion. This implies a scale of 0-3 maps directly (e.g., 3 = 100%, 0 = 0%). This should be explicitly stated or rephrased to avoid ambiguity (e.g., "Assume the staining intensity directly reflects relative expression levels.").
+    *   The second part states PAX2 promotes proliferation, and its expression *decreases* in hyperplasia. If PAX2 expression (and its target gene) decreases, the "increase in cell proliferation" due to this target gene should also *decrease*, or even become a net reduction compared to normal. The phrasing "what is the predicted percentage increase in cell proliferation due to this target gene in endometrial hyperplasia" is confusing. It sounds like proliferation *increases* in hyperplasia, which contradicts the premise that PAX2, a promoter, is *reduced*. This part needs to be rephased for clear biological consistency (e.g., "what is the predicted percentage *change* in cell proliferation..." or "what is the predicted *percentage of the normal increase* in cell proliferation...").
+
+**Actionable Feedback:**
+
+1.  **Split into two questions.** Create one question for the PAX2 reduction and another for the cell proliferation part.
+2.  **Clarify linear mapping:** Explicitly state the interpretation of the 0-3 scale (e.g., "Assume a score of 3 represents 100% of maximum possible expression/proportion, and 0 represents 0%.").
+3.  **Rephrase cell proliferation part:** Ensure the direction of change in proliferation is logically consistent with the reduction in PAX2 expression. For example, "what is the predicted percentage of the normal ($20\%$) increase in cell proliferation due to this target gene observed in endometrial hyperplasia?" or "what is the percentage *reduction* in cell proliferation attributed to this target gene in hyperplasia compared to normal endometrium?"
+
+---
+
+### **Question 2 Critique**
+
+```python
+<question>In a pathology study examining PAX2 expression, immunohistochemistry is performed on 100 endometrial tissue samples. The staining intensity is graded on a scale of 0 to 3 (0 = no staining, 3 = strong staining). The mean staining intensity across all samples is calculated to be 1.8 with a standard deviation of 0.8. Assuming the staining intensity scores follow a normal distribution, calculate the probability of a randomly selected sample having a staining intensity score greater than 2.6. If samples with staining intensity greater than 2.6 are considered 'high expressors', and 'high expressors' are hypothesized to have a 1.5 times greater risk of disease progression, what is the relative increase in the odds ratio of disease progression comparing high expressors to the remaining patients? (Assume a fixed baseline disease progression risk of 10% in the remaining patients.)</question>
+```
+
+**Critique:**
+
+*   **Guideline 10 (Not Multipart): Fail.** The question asks for "the probability..." AND "the relative increase in the odds ratio...". This violates the single target quantity rule.
+*   **Guideline 7 & 9 (Rigorous Phrasing, Units/Symbols): Improvement Needed.**
+    *   "Relative increase in the odds ratio" is a statistically ambiguous phrase. Usually, one calculates the odds ratio (OR) itself, or a ratio of ORs. If the intent is for the increase *above 1* (i.e., OR - 1), it should be specified. If it refers to "relative risk" versus "odds ratio," that also needs clarification. The problem states "1.5 times greater *risk*", which implies a Relative Risk (RR), but then asks for "relative increase in the odds ratio." This needs to be consistent and clear.
+    *   Assuming a normal distribution for a discrete, bounded scale (0-3) is a common simplification in problems, but it's an idealization worth noting if precision is paramount.
+
+**Actionable Feedback:**
+
+1.  **Split into two questions.** One for the probability calculation and one for the risk/odds ratio calculation.
+2.  **Clarify statistical terms:** For the second part, precisely define what "relative increase in the odds ratio" means, or rephrase to ask for a standard statistical measure like the odds ratio itself, or the relative risk, making sure the input "1.5 times greater risk" is consistent with the output requested. For example, "what is the odds ratio of disease progression for high expressors compared to the remaining patients?"
+
+---
+
+### **Question 3 Critique**
+
+```python
+<question>A researcher is analyzing the correlation between PAX2 expression and tumor size in endometrial carcinoma. The study includes 50 patients. The mean tumor diameter is 3 cm with a standard deviation of 1.5 cm. The correlation coefficient (r) between PAX2 staining intensity (graded from 0-3) and tumor diameter is -0.15. Calculate the percentage of variance in tumor diameter that can be explained by PAX2 staining intensity, based on the given correlation coefficient. Given the weak correlation, the researcher hypothesizes that a microRNA (miRNA-X) might be influencing both PAX2 expression *and* tumor growth independently. If miRNA-X expression is negatively correlated with PAX2 expression (r = -0.6) and positively correlated with tumor diameter (r = 0.4), explain how miRNA-X might be confounding the observed relationship between PAX2 and tumor size. Specifically, calculate the predicted change in the original PAX2-tumor diameter correlation if miRNA-X's influence was statistically removed (conceptually, not computationally). Would it increase, decrease, or stay the same and explain why.</question>
+```
+
+**Critique:**
+
+*   **Guideline 10 (Not Multipart): Fail.** The question asks for "percentage of variance explained" AND "predicted change in the original PAX2-tumor diameter correlation... would it increase, decrease, or stay the same and explain why." This violates the single target quantity rule.
+*   **Guideline 2 (Answer Type) & 4 (Avoid How-based): Fail (second part).** The second part asks for a single word ("increase/decrease/same") but then demands an "explain why," which is a conceptual explanation ("how-based") not a numerical or single-word answer.
+
+**Actionable Feedback:**
+
+1.  **Split into two questions.** One for calculating the percentage of variance, and another for the confounding scenario.
+2.  **For the confounding question, rephrase to avoid "explain why":** Instead of asking for an explanation, you could ask for a specific numerical value or a directional statement without the rationale. For example, "What is the expected *direction* of the correlation between PAX2 and tumor size if the confounding effect of miRNA-X were removed?" (answer: increase/decrease/stay the same). Or, formulate it as a multiple-choice question where the options include the correct explanation.
+
+---
+
+### **Question 4 Critique**
+
+```python
+<question>A research team is conducting a follow-up study on endometrial cancer patients, focusing on PAX2 expression and disease recurrence. The original study (Study A) had a cohort of 30 patients followed for 2 years, detecting a statistically significant link between low PAX2 expression and early recurrence. The current follow-up study (Study B) aims for a larger sample size and longer duration. Assuming that the statistical power increases proportionally to the square root of the sample size and the square root of the duration, calculate the relative increase in statistical power if Study B includes 120 patients followed for 8 years, compared to Study A. Recognizing that a larger study might uncover more subtle effects, what are the potential ethical considerations of increasing sample size and study duration in this patient population, considering the burden of follow-up and the possibility of uncovering insignificant or clinically irrelevant associations, while weighing it against the benefit of higher resolution understanding of PAX2 in endometrial recurrence?</question>
+```
+
+**Critique:**
+
+*   **Guideline 10 (Not Multipart): Fail.** The question asks for a "relative increase in statistical power" AND "potential ethical considerations." This clearly violates the single target quantity rule.
+*   **Guideline 2 (Answer Type) & 4 (Avoid How-based): Fail (second part).** The request for "potential ethical considerations" is an open-ended discussion question, not a numerical or single-word answer. This is a "how-based" question asking for explanation/discussion.
+
+**Actionable Feedback:**
+
+1.  **Split into two distinct questions.** One purely for the statistical power calculation.
+2.  **Remove or rephrase the ethical considerations:** If ethics are a required assessment point, formulate a separate question that requires a single-word or numerical answer, or a constrained choice. For example, a multiple-choice question on the *primary* ethical concern from a given list, or a short scenario asking for a "yes/no" decision based on ethical principles.
+
+---
+
+### **Question 5 Critique**
+
+```python
+<question>A pathologist observes that in a set of endometrial carcinoma samples, 35% show complete loss of PAX2 expression (score = 0). If the true prevalence of PAX2 loss in endometrial carcinoma is known to be 40%, calculate the false negative rate (%) in the pathologist's observation, assuming the pathologist evaluated 100 samples. Given this false negative rate, and assuming the assay is designed to detect PAX2 loss, calculate the Positive Predictive Value (PPV) of the assay in this patient population, assuming a false positive rate of 5%.</question>
+```
+
+**Critique:**
+
+*   **Guideline 10 (Not Multipart): Fail.** The question asks for the "false negative rate (%)" AND the "Positive Predictive Value (PPV)." This violates the single target quantity rule.
+
+**Actionable Feedback:**
+
+1.  **Split into two questions.** One for the false negative rate and another for the Positive Predictive Value. This would make two excellent, self-contained questions.
+=== Turn 2: Author refines questions ===
+```python
+improved_questions = [
+    """<question>A researcher is investigating PAX2 expression in endometrial tissue samples to differentiate between normal endometrium and endometrial hyperplasia. In a control group of 20 normal endometrial samples, the average PAX2 staining intensity score (on a scale of 0-3, where 0 is no staining and 3 is strong staining) is 2.8. In a group of 15 endometrial hyperplasia samples, the average PAX2 staining intensity score is 1.5. Assume a score of 3 represents 100% of maximum possible PAX2 expression, and 0 represents 0%. Estimate the percentage reduction in PAX2 expression from normal endometrium to endometrial hyperplasia.</question>""",
+    """<question>A researcher is investigating PAX2 expression in endometrial tissue samples. PAX2 is a transcription factor promoting cell proliferation. In normal endometrium, a target gene of PAX2 increases cell proliferation by 20%. In endometrial hyperplasia, PAX2 expression is reduced.  Assuming the target gene expression changes linearly with PAX2 expression and that PAX2 expression in hyperplasia is 50% of normal, what is the predicted percentage of the normal 20% increase in cell proliferation due to this target gene observed in endometrial hyperplasia?</question>""",
+    """<question>In a pathology study examining PAX2 expression, immunohistochemistry is performed on 100 endometrial tissue samples. The staining intensity is graded on a scale of 0 to 3 (0 = no staining, 3 = strong staining). The mean staining intensity across all samples is calculated to be 1.8 with a standard deviation of 0.8. Assuming the staining intensity scores follow a normal distribution, calculate the probability of a randomly selected sample having a staining intensity score greater than 2.6.</question>""",
+    """<question>In a pathology study examining PAX2 expression, immunohistochemistry is performed on 100 endometrial tissue samples. The staining intensity is graded on a scale of 0 to 3 (0 = no staining, 3 = strong staining). Samples with staining intensity greater than 2.6 are considered 'high expressors' and are hypothesized to have a 1.5 times greater risk of disease progression. If the baseline disease progression risk is 10% in the remaining patients, what is the odds ratio of disease progression for high expressors compared to the remaining patients?</question>""",
+    """<question>A researcher is analyzing the correlation between PAX2 expression and tumor size in endometrial carcinoma. The study includes 50 patients. The correlation coefficient (r) between PAX2 staining intensity (graded from 0-3) and tumor diameter is -0.15. Calculate the percentage of variance in tumor diameter that can be explained by PAX2 staining intensity, based on the given correlation coefficient.</question>""",
+    """<question>A researcher is analyzing the correlation between PAX2 expression and tumor size in endometrial carcinoma. The study includes 50 patients. The correlation coefficient (r) between PAX2 staining intensity (graded from 0-3) and tumor diameter is -0.15. Given the weak correlation, the researcher hypothesizes that a microRNA (miRNA-X) might be influencing both PAX2 expression *and* tumor growth independently. If miRNA-X expression is negatively correlated with PAX2 expression (r = -0.6) and positively correlated with tumor diameter (r = 0.4), what is the expected *direction* of the correlation between PAX2 and tumor size if the confounding effect of miRNA-X were removed (increase, decrease, or stay the same)?</question>""",
+    """<question>A research team is conducting a follow-up study on endometrial cancer patients, focusing on PAX2 expression and disease recurrence. The original study (Study A) had a cohort of 30 patients followed for 2 years, detecting a statistically significant link between low PAX2 expression and early recurrence. The current follow-up study (Study B) aims for a larger sample size and longer duration. Assuming that the statistical power increases proportionally to the square root of the sample size and the square root of the duration, calculate the relative increase in statistical power if Study B includes 120 patients followed for 8 years, compared to Study A.</question>""",
+    """<question>A research team is planning a follow-up study on endometrial cancer patients, focusing on PAX2 expression and disease recurrence. A larger study might uncover more subtle effects. Which of the following is the PRIMARY ethical concern when increasing sample size and study duration in this patient population? (a) Increased cost of the study (b) Increased burden of follow-up for patients (c) Increased risk of false positive results (d) Slower publication of the results.</question>""",
+    """<question>A pathologist observes that in a set of endometrial carcinoma samples, 35% show complete loss of PAX2 expression (score = 0). If the true prevalence of PAX2 loss in endometrial carcinoma is known to be 40%, calculate the false negative rate (%) in the pathologist's observation, assuming the pathologist evaluated 100 samples.</question>""",
+    """<question>A pathologist observes that in a set of endometrial carcinoma samples, the assay designed to detect PAX2 loss has a false negative rate of 20%. Assuming a false positive rate of 5% and the true prevalence of PAX2 loss in endometrial carcinoma is 40%, calculate the Positive Predictive Value (PPV) of the assay in this patient population.</question>"""
+]
+
+for i, question in enumerate(improved_questions):
+    print(f"{i+1}. {question}")
+```
+=== Final questions generated ===

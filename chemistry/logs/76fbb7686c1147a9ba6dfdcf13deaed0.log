@@ -1,0 +1,412 @@
+=== Turn 0: Author generates questions ===
+<question>  
+A perovskite slab model consisting of 8 PbI$_6^{4-}$ octahedra interacts with organic cations at the surface. Density Functional Theory calculations find the binding energy of a single organic cation with one PbI$_6$ octahedron to be –0.85 eV. Given that adding an additional cation increases PbI$_6$ octahedral distortion by 2.5%, decreasing binding energy by 0.12 eV per octahedron distorted, calculate the net binding energy (in eV) if 3 organic cations sequentially passivate the slab, distorting all 8 octahedra cumulatively. Assume binding energy reductions accumulate linearly with distortion and only distortions caused by these 3 cations affect binding energy.</question>
+
+<question>  
+Within a quantum confined lead iodide perovskite nanocrystal, the bandgap widens due to spatial confinement. Given the effective mass of the electron $m_e^* = 0.12 m_0$ and the hole $m_h^* = 0.15 m_0$, where $m_0$ is the free electron mass, calculate the increase in bandgap energy (in eV) for a spherical nanocrystal of radius 3 nm. Use the effective mass approximation and the particle-in-a-sphere model, applying the formula:  
+$$ \Delta E = \frac{\hbar^2 \pi^2}{2 R^2} \left(\frac{1}{m_e^*} + \frac{1}{m_h^*}\right) $$  
+where $\hbar = 1.055 \times 10^{-34}$ J·s, and $1\, \text{eV} = 1.602 \times 10^{-19}$ J.</question>
+
+<question>  
+An organic ammonium cation with formula C$_6$H$_{16}$N$^{+}$ is proposed as a surface passivator for PbI$_6^{4-}$ octahedra in a perovskite. Using Density Derived Electrostatic and Chemical (DDEC) charges, the effective cation number defined as the net positive charge that contributes to electrostatic stabilization is 0.78 per ammonium function. If the structure contains 12 such cations balanced with 16 PbI$_6^{4-}$ octahedra, calculate the overall charge imbalance per formula unit and suggest which IUPAC name corresponds to the cation given the molecular formula.</question>
+
+<question>  
+Consider an organic cation passivating a PbI$_6^{4-}$ surface through hydrogen bonding, modeled by DFT calculations as having a binding energy of –1.4 eV per cation. Upon substitution of the terminal amine group by a methyl group, the binding energy decreases by 35%. Calculate the new binding energy in kJ·mol$^{-1}$ (1 eV = 96.485 kJ·mol$^{-1}$). Round to two decimal places.</question>
+
+<question>  
+Using Density Functional Theory, the shift in electrostatic potential induced by an organic cation at a perovskite surface is calculated as +0.42 V relative to vacuum. If the cation insertion reduces the work function of the substrate from 5.25 eV to 4.83 eV, calculate the dipole moment per unit area (in Debye·nm$^{-2}$), considering the Helmholtz equation:  
+$$ \Delta \phi = \frac{e \mu}{\varepsilon_0 A} $$  
+where $\Delta \phi$ is the potential shift, $e = 1.602 \times 10^{-19}$ C, $\varepsilon_0 = 8.854 \times 10^{-12}$ C$^2$·J$^{-1}$·m$^{-1}$, $A$ is the unit area of 1 nm$^{2}$, and $1\, \text{Debye} = 3.336 \times 10^{-30}$ C·m.</question>
+=== Turn 0: Critic feedback ===
+Here is specific, guideline-based feedback on each question:
+
+---
+
+### Question 1 (Perovskite slab, binding energy, distortion)
+
+#### Strengths:
+- Models a complex, real-world chemistry scenario (perovskite surface/cation interaction).
+- Requires multi-step numerical calculation.
+- Expects a single numerical answer with units.
+- Not a standard textbook example; shows originality.
+- Phrasing is formal and avoids ambiguity.
+
+#### Areas for improvement:
+- **Redundancy**: The reference to "DFT calculations find the binding energy..." is redundant after the binding energy value is stated.
+- **Single Solution**: The wording around whether the 0.12 eV penalty applies for all 8 octahedra for each cation, or only the ones distorted by that cation, can be misinterpreted. Clarify whether distortions are cumulative or if only new octahedra are counted per cation.
+- **Conciseness**: The phrase "distorting all 8 octahedra cumulatively" is ambiguous; say instead: "every cation distorts all 8 octahedra."
+- **Extraneous Info**: Mentioning "only distortions caused by these 3 cations affect binding energy" is unnecessary if no other sources of distortion are implied.
+
+**Suggested revision:**  
+Clarify the cumulative nature:  
+"If each of 3 cations distorts all 8 PbI$_6^{4-}$ octahedra, and the reduction in binding energy per octahedron is additive, calculate the final total binding energy (in eV) after all 3 cations bind."
+
+---
+
+### Question 2 (Quantum confinement bandgap increase)
+
+#### Strengths:
+- Strong multi-step numerical problem based on effective mass/particle-in-a-sphere.
+- Unambiguous, concise, and unit-consistent.
+- Requires calculation and careful unit conversion.
+- Non-redundant and original.
+- Follows solution formatting rules.
+
+#### Areas for improvement:
+- **Single Solution**: There is only one numerical answer, but it may help to specify "round your answer to two decimal places" for precision.
+- **Conciseness**: Might start with "Calculate" directly, skipping "Given the effective masses..."
+
+**Suggested revision:**  
+"Calculate the increase in bandgap energy (in eV, to two decimal places) for a spherical lead iodide perovskite nanocrystal of radius 3 nm using..." (then state parameters).
+
+---
+
+### Question 3 (Charge imbalance & IUPAC name)
+
+#### Strengths:
+- Models a real surface passivation, with a focus on charge balance.
+- IUPAC naming expectation adds a layer of chemical rigor.
+
+#### Areas for improvement:
+- **Single Solution**: Asks for both a numerical charge imbalance and a compound name—violates guideline #10 (only one solution per question).
+- **Ambiguity**: The question about "overall charge imbalance per formula unit" may confuse students given the partial charge per cation and how to define "formula unit" in context. Be precise about what is defined as a formula unit.
+- **Conciseness**: This can be split into: (a) charge calculation, (b) compound naming.
+
+**Suggested revision:**  
+Choose either the numerical calculation **or** the IUPAC naming. For instance:  
+"Given 12 C$_6$H$_{16}$N$^+$ cations (effective charge 0.78 each) and 16 PbI$_6^{4-}$ anions, calculate the net charge imbalance per formula unit."
+
+---
+
+### Question 4 (Binding energy reduction & conversion)
+
+#### Strengths:
+- Focuses on DFT-calculated binding energies with chemical substitution.
+- Involves percent reduction calculation and energy unit conversion.
+- Single numerical answer with units.
+
+#### Areas for improvement:
+- **Precision**: Since you're asking to round to two decimal places, state clearly which part of the calculation to round, especially in multi-step calculations.
+- **Clarity**: The phrase "decreases by 35%"—clarify whether this is reduction in *magnitude* or *absolute value* since the value is negative (is the new value $B_{new} = 0.65 \times B_{old}$?).
+- **Solution Formatting**: Equation snippet is in the narrative, not in TeX blocks.
+
+**Suggested revision:**  
+"Calculate the new binding energy, in kJ·mol$^{-1}$ (rounded to two decimal places), if the original is –1.4 eV per cation and is reduced in magnitude by 35% upon methyl substitution ($1\,\mathrm{eV} = 96.485\,\mathrm{kJ\,mol}^{-1}$)."
+
+---
+
+### Question 5 (Potential shift, dipole, Helmholtz equation)
+
+#### Strengths:
+- Original physical chemistry scenario (work function shift at perovskite surface).
+- Requires both unit conversion and correct electromagnetic application.
+- Unique, multi-step, nonstandard.
+
+#### Areas for improvement:
+- **Redundancy**: Both a shift in potential (+0.42 V) and a work function decrease (5.25 to 4.83 eV) are given; this is redundant unless you explicitly require students to check for consistency, which is not asked for.
+- **Clarity**: The cation-induced shift (+0.42 V) and work function decrease (0.42 eV) are the same, so provide only one piece of information.
+- **Units**: "per unit area" is correct, but reiterate the area $A = 1\,\text{nm}^2$ for clarity.
+- **Conciseness**: Remove redundant options in the parameters.
+
+**Suggested revision:**  
+"Given an electrostatic potential shift of $+0.42$ V induced at a perovskite surface by a cation monolayer over an area of $1\,\mathrm{nm}^2$, calculate the dipole moment per unit area in Debye$\cdot$nm$^{-2}$ using the Helmholtz equation: $\Delta\phi = \dfrac{e\mu}{\varepsilon_0 A}$, where $e = 1.602 \times 10^{-19}$ C, $\varepsilon_0 = 8.854 \times 10^{-12}$ C$^2$·J$^{-1}$·m$^{-1}$, and $1\,\mathrm{Debye}=3.336\times 10^{-30}$ C·m."
+
+---
+
+## Summary of Actions:
+
+**General for all:**
+- Each question must require one final answer, not two.
+- Avoid giving excess or redundant info.
+- Clarify any potentially ambiguous accumulations or stepwise penalties.
+- Use precise language about units, rounding, and numeric steps.
+- Structure information so it’s needed for the solution, not just background.
+
+**Specific for each question:**
+1. Clarify "cumulative" and the scope of distortion.
+2. State rounding and streamlining for brevity.
+3. Break into two questions: either charge calculation or IUPAC name, not both.
+4. Clarify binding energy decrease (absolute value?).
+5. Remove redundant data; clarify area context.
+
+**Equation Formatting:**
+- All equations, numbers, and variables should be formatted with LaTeX using $...$ for inline and $$...$$ for block format, with no unrenderable fragments.
+
+---
+
+**In summary:** The scenarios, reasoning, and expected answers are sound, but each question needs minor but important clarification and rewording to ensure unique solutions, absence of ambiguity or redundancy, and full compliance with all listed guidelines.
+=== Turn 1: Author refines questions ===
+<question>  
+A perovskite slab model consists of 8 PbI$_6^{4-}$ octahedra interacting with organic cations at the surface. The binding energy of a single organic cation with one PbI$_6$ octahedron is –0.85 eV. Each cation distorts all 8 octahedra by 2.5%, and this distortion reduces the binding energy by 0.12 eV per octahedron. Assuming the binding energy penalties accumulate linearly and distortions from all 3 sequentially added cations affect all 8 octahedra cumulatively, calculate the total net binding energy (in eV) after all 3 cations have bound to the slab.  
+</question>
+
+<question>  
+Calculate the increase in bandgap energy $\Delta E$ (in eV, rounded to two decimal places) for a spherical lead iodide perovskite nanocrystal of radius $R = 3$ nm using the effective mass approximation and particle-in-a-sphere model:  
+$$  
+\Delta E = \frac{\hbar^2 \pi^2}{2 R^2} \left(\frac{1}{m_e^*} + \frac{1}{m_h^*}\right)  
+$$  
+where $m_e^* = 0.12 m_0$, $m_h^* = 0.15 m_0$, $\hbar = 1.055 \times 10^{-34}$ J·s, and $1\,\mathrm{eV} = 1.602 \times 10^{-19}$ J.  
+</question>
+
+<question>  
+A perovskite surface is passivated by 12 organic ammonium cations (C$_6$H$_{16}$N$^{+}$), each with an effective electrostatic charge of +0.78 (from DDEC analysis), balanced by 16 PbI$_6^{4-}$ octahedra. Calculate the net charge imbalance per formula unit, assuming one formula unit contains 1 cation and 1 octahedron.  
+</question>
+
+<question>  
+An organic cation passivating a PbI$_6^{4-}$ surface has a binding energy of –1.40 eV per cation. After substituting the terminal amine group with a methyl group, the magnitude of binding energy decreases by 35%. Calculate the new binding energy in kJ·mol$^{-1}$ rounded to two decimal places. (Use $1\,\mathrm{eV} = 96.485\,\mathrm{kJ\,mol}^{-1}$.)  
+</question>
+
+<question>  
+An organic cation adsorbed on a perovskite surface induces an electrostatic potential shift of $\Delta \phi = +0.42$ V relative to vacuum over an area $A = 1\,\mathrm{nm}^2$. Using the Helmholtz equation  
+$$  
+\Delta \phi = \frac{e \mu}{\varepsilon_0 A}  
+$$  
+where $e = 1.602 \times 10^{-19}$ C, $\varepsilon_0 = 8.854 \times 10^{-12}$ C$^2$·J$^{-1}$·m$^{-1}$, and $1\,\mathrm{Debye} = 3.336 \times 10^{-30}$ C·m, calculate the dipole moment per unit area $\mu$ in Debye·nm$^{-2}$.  
+</question>
+=== Turn 1: Critic feedback ===
+Certainly! Here is a concise critique based on your 11 guidelines:
+
+---
+
+### Question 1
+
+#### Feedback:
+- **Strengths:**  
+  - Models a non-trivial chemical scenario (perovskite surface/cation interactions).
+  - Requires sequential, multi-step reasoning, accumulator binding/destabilization energy.
+  - The answer is a **single numerical value with units (eV)**.
+  - Uses appropriate mathematical notation and concise phrasing.
+
+- **Areas to improve:**  
+  - The phrase "**Each cation distorts all 8 octahedra...**" and "**distortions from all 3... affect all 8 octahedra cumulatively**" could be phrased more precisely (e.g., sum all distortions per octahedron after each binding?).
+  - Minor ambiguity: Does the penalty for each subsequent cation act cumulatively (i.e., $-0.12 \times 3$ per octahedron after all 3 cations), or is it $-0.12$ each time a single cation binds?
+  - Consider explicitly stating "**the sum of all penalties after all 3 cations have bound**" for clarity.
+
+---
+
+### Question 2
+
+#### Feedback:
+- **Strengths:**  
+  - Presents a real calculation relevant to quantum-confinement in nanocrystals.
+  - Requires multi-step calculation: plugging masses, converting units, proper formula usage.
+  - The answer is a single value (eV, 2 decimal places).
+
+- **Areas to improve:**  
+  - The model and assumptions are clear.  
+  - Maybe clarify "**using the above formula only; neglect dielectric confinement/exciton binding**" to avoid ambiguity.
+
+---
+
+### Question 3
+
+#### Feedback:
+- **Strengths:**  
+  - Scenario is realistic (surface passivation/charge analysis).
+  - Direct calculation, requires summation, proportional reasoning, and unit handling.
+  - Answer is a single value with unit.
+
+- **Areas to improve:**  
+  - There is mild ambiguity in "**Calculate the net charge imbalance per formula unit...**" (Is it absolute value, or signed? How is imbalance defined—cation plus anion, or deviation from neutrality?).
+  - To improve: "**State your answer as the net formal charge per formula unit (cation + octahedron)**."
+  - Use IUPAC names for all species (i.e., provide ammonium's systematic name once).
+
+---
+
+### Question 4
+
+#### Feedback:
+- **Strengths:**  
+  - Good mechanistic reasoning (effect of functional group substitution), conversion to kJ/mol.
+  - Requires multi-step calculation.
+
+- **Areas to improve:**  
+  - "The magnitude of binding energy decreases by 35%" could be misread. Explicitly state unambiguously whether new binding energy is $-1.40 \times 0.65$ or $-1.40 + 0.35 \times 1.40$ eV.
+  - Perhaps clarify: "**The new binding energy is 35% less negative than the original**" or similar.
+
+---
+
+### Question 5
+
+#### Feedback:
+- **Strengths:**  
+  - Good application of Helmholtz equation, connects physical chemistry/electrostatics to surface science.
+  - Multi-step: manipulate equation, unit conversions, final answer in Debye per $nm^2$.
+  - Uses concise, correct mathematical and scientific language.
+
+- **Areas to improve:**  
+  - The phrase "dipole moment per unit area $\mu$" can be confusing, as $\mu$ is just dipole moment; per area is accomplished by dividing by $A$. Should clarify:
+    - **"Calculate the required dipole moment $\mu$ (in Debye) that produces this shift over area $A=1~\mathrm{nm}^2$"**
+    - Or, if requiring per unit area, specifically state "**dipole moment density = \mu / A**".
+  - Use equation variables consistently in statement and question, avoid possible ambiguity.
+
+---
+
+### Overall summary
+
+- All questions successfully **avoid redundancy, use original/complex scenarios**, require **multi-step reasoning**, and have **one correct solution**.
+- All use proper **scientific formatting, concise rigorous phrasing**.
+- **Main improvement area:** Remove minor ambiguities by clarifying key phrases (cumulativity, sign conventions, "magnitude", per unit vs. total), and explicitly define any slightly non-standard terms.
+- For maximum clarity and unit rigor, **explicitly state required units and rounding.**
+- For questions involving charges/compounds, ensure **IUPAC nomenclature** is stated or referenced.
+
+---
+
+**Example revision of a problematic phrase for clarity:**
+- _"Each cation distorts all 8 octahedra by 2.5%, and this distortion reduces the binding energy by 0.12 eV per octahedron for each cation. After all 3 cations have bound, the total penalty is applied cumulatively for each octahedron."_  
+  ⟶  
+  _"Each sequentially added cation distorts all 8 octahedra, reducing binding energy by 0.12 eV per octahedron per cation. Calculate the total net binding energy after all 3 cations have bound."_
+
+---
+
+**Bottom line:**  
+Your questions are strong and meet most criteria. You can make them "assessment perfect" with small clarifications to remove potential ambiguities in language regarding summation, sign, and units.
+=== Turn 2: Author refines questions ===
+<question>  
+A perovskite slab model contains 8 PbI$_6^{4-}$ octahedra interacting with organic cations at its surface. The binding energy of a single organic cation to one PbI$_6$ octahedron is –0.85 eV. Each sequentially added cation distorts all 8 octahedra, reducing the binding energy by 0.12 eV per octahedron per cation. Assuming these binding energy penalties accumulate linearly and cumulatively for all 3 cations bound, calculate the total net binding energy (in eV) after all 3 cations have adsorbed onto the slab.  
+</question>
+
+<question>  
+Calculate the increase in bandgap energy $\Delta E$ (in eV, rounded to two decimal places) for a spherical lead iodide perovskite nanocrystal of radius $R = 3$ nm using the effective mass approximation and the particle-in-a-sphere model given by:  
+$$  
+\Delta E = \frac{\hbar^2 \pi^2}{2 R^2} \left(\frac{1}{m_e^*} + \frac{1}{m_h^*}\right)  
+$$  
+where $m_e^* = 0.12\, m_0$, $m_h^* = 0.15\, m_0$, $\hbar = 1.055 \times 10^{-34}$ J·s, and $1\,\mathrm{eV} = 1.602 \times 10^{-19}$ J. Use this formula only; neglect dielectric confinement and exciton binding effects.  
+</question>
+
+<question>  
+A perovskite surface is passivated by 12 organic ammonium cations (hexylammonium, C$_6$H$_{16}$N$^{+}$), each carrying an effective electrostatic charge of +0.78 according to DDEC analysis, balanced by 16 PbI$_6^{4-}$ octahedra. Assuming one formula unit contains one cation and one PbI$_6^{4-}$ octahedron, calculate the net formal charge per formula unit (cation plus octahedron). Report the signed value.  
+</question>
+
+<question>  
+An organic cation binding to a PbI$_6^{4-}$ perovskite surface has a binding energy of –1.40 eV per cation. After substituting the terminal amine group with a methyl group, the binding energy becomes 35% less negative in magnitude. Calculate the new binding energy in kJ·mol$^{-1}$, rounded to two decimal places. (Use $1\,\mathrm{eV} = 96.485\,\mathrm{kJ\,mol}^{-1}$.)  
+</question>
+
+<question>  
+An organic cation adsorbed on a perovskite surface induces an electrostatic potential shift of $\Delta \phi = +0.42$ V relative to vacuum over an area $A = 1\,\mathrm{nm}^2$. Using the Helmholtz equation  
+$$  
+\Delta \phi = \frac{e\,\mu}{\varepsilon_0 A}  
+$$  
+where $e = 1.602 \times 10^{-19}$ C, $\varepsilon_0 = 8.854 \times 10^{-12}$ C$^2$·J$^{-1}$·m$^{-1}$, and $1\,\mathrm{Debye} = 3.336 \times 10^{-30}$ C·m, calculate the dipole moment $\mu$ (in Debye) that produces this potential shift over area $A=1~\mathrm{nm}^2$. Express your answer in Debye to two decimal places.  
+</question>
+=== Turn 2: Critic feedback ===
+**General Feedback:**  
+These questions broadly align with the guidelines—they are original, scenario-based, require numerical answers with units, and demand multistep reasoning. However, each has specific issues regarding clarity, calculation setup, potential ambiguity, and formatting. See itemized feedback:
+
+---
+
+### **Question 1**
+
+**Pros:**
+- Scenario is real, complex, and unique.
+- Requires cumulative calculation and multi-step reasoning.
+- Single solution required (numerical, eV).
+
+**Issues & Improvement Suggestions:**
+- **Ambiguity:** The phrase “penalties accumulate linearly and cumulatively for all 3 cations bound” could be interpreted differently. Explicitly state whether binding energy reductions are applied to each cation as it binds, and if all bound cations incur penalties from all previously bound cations.
+- **Units/Redundancy:** Good use of units; no redundancy.
+- **Phrasing:** Could be more concise.
+
+**Revision Example:**  
+Clarify the order of the penalty application, e.g., "Each time a cation adsorbs, all 8 octahedra have their binding energy reduced by $0.12$ eV for each already-adsorbed cation, in addition to the initial $-0.85$ eV binding. Calculate the net total binding energy after three cations are adsorbed."
+
+---
+
+### **Question 2**
+
+**Pros:**
+- Clear, realistic nanocrystal calculation.
+- Variables, units, and constants all specified precisely.
+- Distinct from standard textbook examples.
+
+**Issues & Improvement Suggestions:**
+- **Potential Redundancy:** None detected.
+- **Clarity:** Equation formatting is good, and solution is single-valued.
+- **Units:** Clear.
+- **Suggestion:** Instead of “Neglect dielectric and exciton binding effects,” specify “Use the provided formula only; do not account for additional effects.” (To help avoid second-guessing.)
+
+---
+
+### **Question 3**
+
+**Pros:**
+- Unique: effective charge and DDEC analysis rarely tested.
+- Well-posed, single answer required.
+
+**Issues & Improvement Suggestions:**
+- **Minor Ambiguity**: The setup asks for "formal charge," but uses "effective charge" from DDEC analysis for the cation—this is a potential source of confusion for students expecting purely formal ionic charge rules.  
+- **Suggestion:** Specify "Based on the effective charges provided above..." or reframe to clarify it's not the classical oxidation state but the DDEC value being used.
+- **Redundancy:** None; concise.
+
+---
+
+### **Question 4**
+
+**Pros:**
+- Realistic surface binding chemistry context.
+- Requires proportional reasoning, unit conversion.
+- Single, clear numerically reported result.
+
+**Issues & Improvement Suggestions:**
+- **Minor ambiguity:** Phrase “35% less negative in magnitude” is awkward. Clarify: "The new binding energy is $35\%$ less negative (i.e., its magnitude is reduced by $35\%$)."
+- **Command:** Explicitly state: "Calculate the new binding energy and report in $kJ\cdot mol^{-1}$ to two decimal places." (Though this is already mostly clear.)
+
+---
+
+### **Question 5**
+
+**Pros:**
+- Multi-step numeric problem, realistic use of Helmholtz equation.
+- Requires conversion to Debye, nontrivial chemistry context.
+
+**Issues & Improvement Suggestions:**
+- **Clarity:** The formula is given twice—once in display mode, once in inline. Use it only once, using correct Markdown ($$...$$).
+- **Potential ambiguity:** Explicitly state if $A$ should be entered in SI units (m$^2$).
+- **Units:** Good conversion requires careful attention, so perhaps remind to convert area units.
+- **Phrasing:** Instead of “that produces this potential shift over area $A=1~\mathrm{nm}^2$,” say “that produces this potential shift over an area of $1~\mathrm{nm}^2$.”
+
+---
+
+## **Overall Recommendations**
+
+- **Consistency:** Ensure every variable is clearly defined directly after it appears.
+- **Clarity:** Specify precisely how sequential penalties are to be applied in multi-binding energy problems.
+- **Calculation Scope:** When using effective (“DDEC”) charges, clarify the distinction from formal charges to avoid confusion.
+- **Phrase Reduction in Magnitude Accurately:** Avoid expressions like “less negative in magnitude” in favor of “its magnitude is reduced by…”
+- **Formatting:** Use LaTeX-formatting for all equations and variables, and ensure units are consistent and explicitly stated.
+- **Avoid Repetition:** Only state each provided equation once.
+- **Single Solution:** All questions have single solutions—keep this consistent.
+
+---
+
+**In summary:**  
+Your questions are rigorously constructed, with realistic, original, and calculation-intensive chemistry scenarios that demand multi-step solutions and consistent unit/nomenclature standards. Focus on clarifying calculation procedures and ambiguous terminology, tightening phrasing, and ensuring that all variables and conversion steps are clearly articulated to further improve the assessment quality.
+=== Turn 3: Author refines questions ===
+<question>  
+A perovskite slab model contains 8 PbI$_6^{4-}$ octahedra interacting with organic cations at its surface. The binding energy of a single organic cation to one PbI$_6$ octahedron is –0.85 eV. Each time a new cation adsorbs, all 8 octahedra experience a binding energy reduction of 0.12 eV per previously adsorbed cation, applied cumulatively. Assuming these binding energy penalties accumulate linearly for all three cations bound sequentially, calculate the total net binding energy (in eV) after all three cations have adsorbed onto the slab.  
+</question>
+
+<question>  
+Calculate the increase in bandgap energy $\Delta E$ (in eV, rounded to two decimal places) for a spherical lead iodide perovskite nanocrystal of radius $R = 3$ nm using the effective mass approximation and the particle-in-a-sphere model:  
+$$  
+\Delta E = \frac{\hbar^2 \pi^2}{2 R^2} \left(\frac{1}{m_e^*} + \frac{1}{m_h^*}\right),  
+$$  
+where $m_e^* = 0.12\, m_0$, $m_h^* = 0.15\, m_0$, $\hbar = 1.055 \times 10^{-34}$ J·s, and $1\,\mathrm{eV} = 1.602 \times 10^{-19}$ J. Use this formula only; do not account for dielectric confinement or exciton binding effects.  
+</question>
+
+<question>  
+A perovskite surface is passivated by 12 organic ammonium cations (hexylammonium, C$_6$H$_{16}$N$^{+}$), each carrying an effective electrostatic charge of +0.78 according to DDEC analysis, balanced by 16 PbI$_6^{4-}$ octahedra. Assuming one formula unit consists of one cation and one PbI$_6^{4-}$ octahedron, calculate the net formal charge per formula unit (cation plus octahedron) based on these effective charges. Report the signed value.  
+</question>
+
+<question>  
+An organic cation binding to a PbI$_6^{4-}$ perovskite surface has an initial binding energy of –1.40 eV per cation. After substituting the terminal amine group with a methyl group, the magnitude of the binding energy is reduced by 35%. Calculate the new binding energy in kJ·mol$^{-1}$, rounded to two decimal places. (Use $1\,\mathrm{eV} = 96.485\,\mathrm{kJ\,mol}^{-1}$.)  
+</question>
+
+<question>  
+An organic cation adsorbed on a perovskite surface induces an electrostatic potential shift of $\Delta \phi = +0.42$ V relative to vacuum over an area of $A = 1\,\mathrm{nm}^2$. Using the Helmholtz equation  
+$$  
+\Delta \phi = \frac{e\,\mu}{\varepsilon_0 A},  
+$$  
+where $e = 1.602 \times 10^{-19}$ C, $\varepsilon_0 = 8.854 \times 10^{-12}$ C$^2$·J$^{-1}$·m$^{-1}$, and $1\,\mathrm{Debye} = 3.336 \times 10^{-30}$ C·m, calculate the dipole moment $\mu$ (in Debye) that produces this potential shift over the given area. Express your answer in Debye, rounded to two decimal places. (Note: convert all units to SI.)  
+</question>
+=== Final questions generated ===

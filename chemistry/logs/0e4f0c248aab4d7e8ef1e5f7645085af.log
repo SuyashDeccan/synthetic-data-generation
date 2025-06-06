@@ -1,0 +1,623 @@
+=== Turn 0: Author generates questions ===
+<question>  
+In a mixed halide MAPb(I₁₋ₓBrₓ)₃ perovskite film, the bandgap \(E_g\) varies linearly from 1.55 eV for MAPbI₃ (x=0) to 2.30 eV for MAPbBr₃ (x=1). Assuming Vegard’s law applies and the exciton binding energy is negligible, calculate the molar fraction \(x\) at which the photon with wavelength 600 nm is just absorbed (i.e., the photon energy equals the bandgap) at room temperature (298 K). Use \(E \text{ (eV)} = \frac{1240}{\lambda \text{ (nm)}}\).</question>  
+
+<question>  
+A density functional theory (DFT) calculation predicts that upon adsorption of methylammonium (MA⁺) cations on the (001) surface of MAPbI₃, the charge transfer \(Q\) from the cation to the PbI₃ lattice is 0.18 e (elementary charge units). Given that the surface density of adsorbed MA⁺ cations is \(5.0 \times 10^{14}\,\text{cm}^{-2}\), compute the surface charge density (in C·m⁻²) induced by this charge transfer. Use \(e = 1.602 \times 10^{-19}\) C.</question>  
+
+<question>  
+During time-resolved photoluminescence decay of an MAPbI₃ film passivated by phenethylammonium iodide (PEAI), the radiative recombination rate constant \(k_r\) is measured as \(1.2 \times 10^{8}\, \text{s}^{-1}\), whereas the nonradiative recombination rate constant \(k_{nr}\) reduces from \(5.0 \times 10^{8}\, \text{s}^{-1}\) in the pristine film to \(1.0 \times 10^{8}\, \text{s}^{-1}\) post-passivation. Calculate the change in photoluminescence quantum yield (PLQY) as a percentage after passivation, given by \(\text{PLQY} = \frac{k_r}{k_r + k_{nr}} \times 100\%\).</question>  
+
+<question>  
+A DFT simulation of the charge density difference in an MAPbI₃-phenyltrimethylammonium iodide (PTAI) interface using the density derived electrostatic and chemical (DDEC) method yields an electrostatic potential difference of 0.42 V across a 3.4 nm thick interfacial layer. Calculate the corresponding average electric field (in V·nm⁻¹) inside the interfacial layer.</question>  
+
+<question>  
+The absorption coefficient \(\alpha(\lambda)\) of a MAPbI₃ perovskite at the onset of optical absorption follows \(\alpha = A(\lambda - \lambda_g)^{1/2}\), where \(\lambda_g\) is the absorption edge wavelength corresponding to the bandgap. Given that at 800 nm, \(\alpha = 1.0 \times 10^{4} \text{ cm}^{-1}\) and \(\lambda_g = 820 \text{ nm}\), find the prefactor \(A\) (in cm⁻¹·nm⁻¹⁄²).</question>  
+
+<question>  
+Charge transfer dynamics in an organic cation passivated MAPbI₃ film show that the average electron transfer time \(\tau\) from the perovskite to the passivation layer is governed by Marcus theory:  
+$$k = \frac{2\pi}{\hbar} |V|^2 \frac{1}{\sqrt{4\pi \lambda k_B T}} \exp\left[-\frac{(\Delta G + \lambda)^2}{4 \lambda k_B T}\right]$$  
+where \(k = \frac{1}{\tau}\), \(V=100\) meV is the electronic coupling, \(\lambda=200\) meV is the reorganization energy, \(\Delta G = -150\) meV is the Gibbs free energy change, \(k_B = 8.617 \times 10^{-5}\) eV·K⁻¹, and \(\hbar = 6.582 \times 10^{-16}\) eV·s. Calculate \(\tau\) (in picoseconds) at 298 K.</question>  
+
+<question>  
+A mixed-halide MAPbI₃₋ₓClₓ perovskite layer exhibits a density functional theory predicted HOMO level shift from –5.43 eV (x=0) to –5.65 eV (x=0.15). Assuming a linear variation of the HOMO level with respect to \(x\), find the expected HOMO level (in eV) for \(x = 0.07\).</question>  
+
+<question>  
+An MAPbI₃ nanocrystal exhibits quantum confinement changes modeled by effective mass approximation, where the bandgap shift \(\Delta E_g\) (in eV) due to confinement in a sphere of radius \(r\) (in nm) is:  
+$$\Delta E_g = \frac{\hbar^2 \pi^2}{2 r^2} \left(\frac{1}{m_e^*} + \frac{1}{m_h^*}\right)$$  
+Given electron effective mass \(m_e^* = 0.12 m_0\), hole effective mass \(m_h^* = 0.15 m_0\), and \(\hbar^2 / 2 m_0 = 3.81\, \text{eV nm}^2\), calculate the bandgap shift \(\Delta E_g\) (in eV) for a nanocrystal with radius \(r = 5\) nm.</question>  
+
+<question>  
+Using density derived electrostatic and chemical (DDEC) analysis, the net atomic charge of Pb in a MAPbI₃ lattice is found to be +1.45 e. If the unit cell contains one Pb atom and three I atoms with charges summing to neutralize the lattice, calculate the average charge on each iodine atom in elemental charge units.</question>
+=== Turn 0: Critic feedback ===
+Certainly! Here’s a concise, point-by-point critique of the provided questions, directly referencing your guidelines and providing actionable improvements:
+
+---
+
+**General Observations:**  
+- All questions are contextually rich and original (not standard textbook examples), generally modeling real experimental or theoretical MAPbX₃ perovskite scenarios.  
+- Most demand explicit multi-step physical/chemical reasoning and expect single numerical values with clear units.
+- Notably, the use of LaTeX is correct for both inline and block equations (except for `<question>` formatting instead of proper Markdown code fencing, but this can be fixed).
+
+---
+
+### Question-by-Question Feedback
+
+---
+
+**Q1:** *Bandgap and Absorption Wavelength*  
+- **Strengths:** Realistic scenario; requires multi-step calculation with units.
+- **Suggestions:**
+    - Ask explicitly for rounding/precision (significant figures or decimal places).
+    - Remove "at room temperature (298 K)"—it's unnecessary, as temperature isn't used in the calculation.
+    - Equation is well-formatted; context is original.
+
+---
+
+**Q2:** *Surface Charge Density Calculation*  
+- **Strengths:** Precise, direct, numerical with units expected.
+- **Suggestions:**
+    - “Compute the surface charge density (in C·m⁻²) induced by this charge transfer.” This is good, but consider specifying: “Report your answer to two significant figures.”
+    - Re-emphasize that the result should be in SI units only, to ensure unit consistency.
+
+---
+
+**Q3:** *PLQY Calculation*  
+- **Strengths:** Clear, concise, multi-step, asks for a percentage, all numbers provided.
+- **Suggestions:**
+    - State required decimal places or precision for the answer.
+    - “Calculate the change in photoluminescence quantum yield (PLQY) as a percentage after passivation” is potentially ambiguous: clarify “Calculate the percentage point increase in PLQY after passivation.”
+
+---
+
+**Q4:** *Electric Field from Potential Profile*  
+- **Strengths:** Unambiguous, single answer, requires unit conversion.
+- **Suggestions:**
+    - Specify answer precision.
+    - Make sure to phrase as “average electric field in V·nm⁻¹” — consider also providing “in the direction from PTAI to MAPbI₃” if relevant to avoid ambiguity of direction.
+
+---
+
+**Q5:** *Absorption Coefficient Prefactor*  
+- **Strengths:** Forces algebraic manipulation, numerical final answer, unique.
+- **Suggestions:**
+    - “Prefactor A (in cm⁻¹·nm⁻¹⁄²)” could use a more explicit notation: "cm⁻¹·nm$^{-1/2}$".
+    - Possibly clarify “at the onset of optical absorption” as "for $\lambda > \lambda_g$".
+    - Specify answer format: “Report the value of $A$ to two significant figures.”
+
+---
+
+**Q6:** *Marcus Theory Electron Transfer Time*  
+- **Strengths:** Advanced concept, not generic, numbers provided, subtle multi-step calculation.
+- **Suggestions:**
+    - Label units (meV) for all variables for explicit clarity.
+    - Specify whether Boltzmann constant and $\hbar$ values are given to the user; avoid uncertainty about physical constants.
+    - Clarify if answer should be to 1 or 2 significant figures, or “rounded to the nearest whole number.”
+
+---
+
+**Q7:** *DFT-predicted HOMO Level Shift*  
+- **Strengths:** Linear interpolation required, single value, clear context.
+- **Suggestions:**
+    - Specify answer format (e.g., “Report to two decimal places”); units are clear.
+    - Remove phrase “density functional theory predicted” to avoid clutter ("DFT-predicted" is enough in this context).
+
+---
+
+**Q8:** *Quantum Confinement Bandgap Shift*  
+- **Strengths:** Detailed, multi-step, clear units, original context.
+- **Suggestions:**
+    - Possibly remind the reader to keep $m_e^*$ and $m_h^*$ as fractions of $m_0$.
+    - Specify answer precision or decimal places.
+    - Use e.g., "Calculate the bandgap shift $\Delta E_g$ (in eV) to two decimal places..."
+
+---
+
+**Q9:** *Net Atomic Charge Calculation*  
+- **Strengths:** Balanced stoichiometry, DDEC framing, multi-step.
+- **Suggestions:**
+    - Indicate that final answer should include the sign (e.g., “Report the value with sign, e.g., ‘–0.48 e’”).
+    - Possibly specify “elementary charge units ($e$)” at the end.
+
+---
+
+### OVERARCHING SUGGESTIONS
+
+1. **Precision/Significant Figures:** Explicitly state the desired number of significant figures or decimal places for every answer.
+2. **Clutter/Redundancy:** Remove superfluous phrases (e.g., “at room temperature” if not relevant, “density functional theory predicted” unless distinguishing DFT from experiment is critical).
+3. **Ambiguity:** Where possible, clarify units in the question itself; e.g., “in eV,” “in V·nm⁻¹,” “as a percentage (to two decimal places),” “give the signed value,” etc.
+4. **Single-Answer Requirement:** All questions achieve this, but ensure it is always explicit by specifying exactly what to report (e.g., 'percentage increase', not 'describe change').
+5. **Rigorous Terminology:** Review questions to ensure they make no use of colloquial language ("just absorbed" could be replaced with "for which the photon energy matches the bandgap").
+6. **Markdown/LaTeX Formatting:** Replace `<question> ... </question>` tags with numbered items or Markdown-code-fenced latex blocks for compatibility with markdown rendering engines.
+
+---
+
+### Example of Improved Question Formatting
+
+**Original:**  
+<question>  
+In a mixed halide MAPb(I₁₋ₓBrₓ)₃ perovskite film, the bandgap \(E_g\) varies linearly from 1.55 eV for MAPbI₃ (x=0) to 2.30 eV for MAPbBr₃ (x=1)....  
+</question>  
+
+**Improved:**  
+1\. In a mixed halide MAPb(I$_{1-x}$Br$_x$)$_3$ perovskite film, the bandgap $E_g$ varies linearly from $1.55\,\text{eV}$ at $x=0$ (MAPbI$_3$) to $2.30\,\text{eV}$ at $x=1$ (MAPbBr$_3$). According to Vegard’s law and assuming the exciton binding energy is negligible, determine the bromide molar fraction $x$ at which the photon energy for $600\,\text{nm}$ exactly equals the bandgap. Use $E(\text{eV}) = \frac{1240}{\lambda\,(\text{nm})}$. Report your answer to two decimal places.
+
+---
+
+**Summary Table:**
+
+| Question | Issue(s) | Suggested Fix |
+|---|---|---|
+| 1 | Ambiguity in required precision; unnecessary "room temperature" | Specify decimal places; remove extraneous T info |
+| 2 | Precision not specified; units need reiteration | State required sig figs; restate SI units in prompt |
+| 3 | PLQY change phrasing slightly ambiguous | Clarify as "percentage point increase"; specify format |
+| 4 | Potential ambiguity in direction of field | Specify direction or just "magnitude" as needed |
+| 5 | Units for A might be unclear | Use explicit "cm⁻¹·nm$^{-1/2}$"; state decimal places |
+| 6 | Constants' units; answer precision | List all units; specify sig figs/rounding requirement |
+| 7 | “DFT predicted” phrase extraneous; precision not set | Trim wording; set answer format |
+| 8 | Remind about units/reference masses; sig figs | Specify answer to two decimals |
+| 9 | Clarify need for sign in answer | Explicitly request signed value |
+
+---
+
+**In summary:**  
+- Tighten wording, clarify answer formatting/significant digits, remove clutter, and maximize unambiguity in all questions.  
+- Where formulas or variables are introduced, clarify all units/variables.
+- Standardize use of Markdown/LaTeX and numbering, avoiding custom tags.
+
+Let me know if you'd like sample rewrites of individual questions!
+=== Turn 1: Author refines questions ===
+<question>  
+1. In a mixed halide MAPb(I$_{1-x}$Br$_x$)$_3$ perovskite film, the bandgap $E_g$ varies linearly from $1.55\,\mathrm{eV}$ at $x=0$ (MAPbI$_3$) to $2.30\,\mathrm{eV}$ at $x=1$ (MAPbBr$_3$). Assuming Vegard’s law applies and the exciton binding energy is negligible, determine the molar fraction $x$ at which photons of wavelength $600\,\mathrm{nm}$ are absorbed (i.e., photon energy equals bandgap). Use $E\,(\mathrm{eV}) = \frac{1240}{\lambda\,(\mathrm{nm})}$. Report your answer to two decimal places.  
+</question>  
+
+<question>  
+2. A density functional theory (DFT) calculation predicts that the charge transfer $Q$ from methylammonium (MA$^+$) cations adsorbed on the (001) surface of MAPbI$_3$ to the PbI$_3$ lattice is $0.18\,e$ per cation, where $e=1.602 \times 10^{-19}\,\mathrm{C}$ is the elementary charge. Given the surface density of adsorbed MA$^+$ cations is $5.0 \times 10^{14}\,\mathrm{cm}^{-2}$, calculate the surface charge density induced by this charge transfer in $\mathrm{C\,m^{-2}}$. Express your answer in SI units and report to two significant figures.  
+</question>  
+
+<question>  
+3. Time-resolved photoluminescence decay measurements on an MAPbI$_3$ film showed a radiative recombination rate constant $k_r = 1.2 \times 10^{8}\,\mathrm{s}^{-1}$. The nonradiative rate constant $k_{nr}$ decreases from $5.0 \times 10^{8}\,\mathrm{s}^{-1}$ before passivation to $1.0 \times 10^{8}\,\mathrm{s}^{-1}$ after passivation by phenethylammonium iodide (PEAI). Calculate the change in photoluminescence quantum yield (PLQY) in percentage points after passivation, using:  
+\[
+\mathrm{PLQY} = \frac{k_r}{k_r + k_{nr}} \times 100\%.
+\]  
+Report your answer to two decimal places.  
+</question>  
+
+<question>  
+4. A DFT simulation of the MAPbI$_3$–phenyltrimethylammonium iodide (PTAI) interface using density derived electrostatic and chemical (DDEC) analysis yields an electrostatic potential difference of $0.42\,\mathrm{V}$ across an interfacial layer of thickness $3.4\,\mathrm{nm}$. Calculate the average magnitude of the electric field inside the interfacial layer in $\mathrm{V\,nm^{-1}}$. Report your answer to two decimal places.  
+</question>  
+
+<question>  
+5. The absorption coefficient $\alpha(\lambda)$ of MAPbI$_3$ near the absorption edge follows $\alpha = A(\lambda - \lambda_g)^{1/2}$ for $\lambda > \lambda_g$, where $\lambda_g$ is the absorption edge wavelength. Given that $\alpha = 1.0 \times 10^{4}\,\mathrm{cm}^{-1}$ at $\lambda = 800\,\mathrm{nm}$ and $\lambda_g = 820\,\mathrm{nm}$, calculate the prefactor $A$ in units of $\mathrm{cm}^{-1}\cdot\mathrm{nm}^{-1/2}$. Report your answer to two significant figures.  
+</question>  
+
+<question>  
+6. Charge transfer dynamics in an organic cation-passivated MAPbI$_3$ film follow Marcus theory:  
+\[
+k = \frac{2\pi}{\hbar} |V|^2 \frac{1}{\sqrt{4\pi \lambda k_B T}} \exp\left[-\frac{(\Delta G + \lambda)^2}{4 \lambda k_B T}\right]
+\]  
+where $k = 1/\tau$ is the rate, $\tau$ the electron transfer time, $V = 100\,\mathrm{meV}$ is electronic coupling, $\lambda = 200\,\mathrm{meV}$ is reorganization energy, $\Delta G = -150\,\mathrm{meV}$ is the Gibbs free energy change, Boltzmann constant $k_B = 8.617 \times 10^{-5}\,\mathrm{eV\,K^{-1}}$, reduced Planck’s constant $\hbar = 6.582 \times 10^{-16}\,\mathrm{eV\,s}$, and temperature $T=298\,\mathrm{K}$. Calculate $\tau$ in picoseconds. Report your answer to two significant figures.  
+</question>  
+
+<question>  
+7. A mixed-halide MAPbI$_{3-x}$Cl$_x$ perovskite exhibits a DFT-predicted HOMO level shift from $-5.43\,\mathrm{eV}$ at $x=0$ to $-5.65\,\mathrm{eV}$ at $x=0.15$. Assuming a linear dependence of the HOMO level on $x$, estimate the HOMO level (in eV) at $x=0.07$. Report your answer to two decimal places.  
+</question>  
+
+<question>  
+8. The bandgap shift $\Delta E_g$ (in eV) due to quantum confinement in an MAPbI$_3$ nanocrystal of radius $r$ (in nm) is modeled by the effective mass approximation as:  
+\[
+\Delta E_g = \frac{\hbar^2 \pi^2}{2 r^2} \left( \frac{1}{m_e^*} + \frac{1}{m_h^*} \right)
+\]
+
+Given electron effective mass $m_e^* = 0.12\,m_0$, hole effective mass $m_h^* = 0.15\,m_0$, and $\frac{\hbar^2}{2 m_0} = 3.81\,\mathrm{eV\,nm^2}$, calculate $\Delta E_g$ for $r=5\,\mathrm{nm}$. Report your answer to two decimal places.  
+</question>  
+
+<question>  
+9. Density derived electrostatic and chemical (DDEC) analysis finds the net atomic charge of Pb in an MAPbI$_3$ lattice to be $+1.45\,e$. Assuming the unit cell contains one Pb atom and three I atoms with charges balancing to electrical neutrality, calculate the average charge on each iodine atom. Express your answer in elementary charge units ($e$) with sign and report to two decimal places.  
+</question>
+=== Turn 1: Critic feedback ===
+Here is a critique for each question according to your guidelines:
+
+---
+
+### Question 1
+
+**Strengths:**  
+- Models a real chemical system (mixed-halide perovskite).
+- Requires multi-step reasoning: conversion from wavelength to energy, linear interpolation.
+- Concisely phrased and uses proper units.
+- No redundancy; only relevant constants provided.
+
+**Improvements:**  
+- The wording “photons of wavelength 600 nm are absorbed” could be refined: specify if $E_g = E_{photon}$ or if the absorption edge is being sought.
+- Consider stating “at which $x$ the bandgap equals the energy of a 600 nm photon” for absolute clarity.
+
+---
+
+### Question 2
+
+**Strengths:**  
+- Clear and unique; models interfacial charge transfer.
+- Correct SI units and proper significant digits specified.
+- Multi-step required: convert charge per cation to surface charge density.
+
+**Improvements:**  
+- No significant improvements needed; phrasing is concise and avoids redundancy.
+
+---
+
+### Question 3
+
+**Strengths:**  
+- Models a common experimental setup (PLQY change due to passivation).
+- Requires calculation of initial and final PLQY and their difference.
+
+**Improvements:**  
+- The phrase “change in photoluminescence quantum yield in percentage points” could be interpreted as either the difference (final - initial) or the ratio; however, use of “percentage points” is correct, but you may clarify: “Calculate the increase in PLQY (final minus initial, in percentage points)...” for absolute unambiguity.
+
+---
+
+### Question 4
+
+**Strengths:**  
+- Unique scenario (DFT interface dipole).
+- Multi-step: relates potential difference and electric field.
+- Concise with proper units.
+
+**Improvements:**  
+- Add “assume the field is uniform within the interfacial layer” for full rigor.
+
+---
+
+### Question 5
+
+**Strengths:**  
+- Advanced treatment of absorption edge physics.
+- Multi-step: plug in, solve for prefactor.
+
+**Improvements:**  
+- Specify that the absorption model is “near the absorption edge” for physical clarity (already present).
+- Units are clear and correctly given.
+
+---
+
+### Question 6
+
+**Strengths:**  
+- Uses Marcus theory for charge transfer: unique and relevant.
+- Multi-step: substitute, calculate exponentials, invert to get $\tau$.
+- All constants and units provided.
+
+**Improvements:**  
+- Additional note: “Use all values in $\mathrm{eV}$ for energy terms in the formula” might clarify if students are unsure about unit consistency.
+
+---
+
+### Question 7
+
+**Strengths:**  
+- Models a compositional effect on electronic structure.
+- Requires interpolation.
+
+**Improvements:**  
+- Add “Assume a linear relationship; calculate the HOMO level for $x=0.07$” to explicitly direct the expected interpolation.
+
+---
+
+### Question 8
+
+**Strengths:**  
+- Models quantum confinement.
+- Clearly marked parameters and expected answer form.
+
+**Improvements:**  
+- None significant; all steps are necessary and units are consistent.
+
+---
+
+### Question 9
+
+**Strengths:**  
+- Deals with charge balancing and DDEC analysis.
+- Solves for charge per iodide given neutrality constraint.
+
+**Improvements:**  
+- Specify “with sign” in the answer instruction to avoid ambiguity.
+
+---
+
+## General Feedback
+
+**Strengths Across All Questions:**
+- Each question is unique and not standard textbook fare.
+- All expect a single numerical value, properly rounded and with units.
+- All are multi-step, requiring more than simple plug-and-chug calculations.
+- Phrasing is concise and non-colloquial; units and constants are clear.
+- Chemical nomenclature is IUPAC-compliant as relevant.
+- Only one solution per question.
+
+**Areas for Minor Improvement:**
+- Sometimes, small clarifications could prevent minor ambiguities—for example, specifying that a difference (not a ratio) is expected, or that energy units must be consistent.
+- In a few cases, a reminder to assume linearity (when not otherwise obvious) can aid students and prevent misinterpretation.
+- Assumptions (homogeneity, uniform field, etc.) should be briefly stated if not trivially inferable from context.
+
+## Summary Table
+
+| Q | Meets All Criteria? | Key Improvements |
+|:-:|:-------------------:|:--------------------------------------------------------------------|
+| 1 | Yes (minor)         | Clarify “absorption” (i.e., $E_g = E_{photon}$)                      |
+| 2 | Yes                 | None                                                                  |
+| 3 | Yes (minor)         | Rephrase for clarity about “percentage points”                        |
+| 4 | Yes (minor)         | Specify assumption of uniform field                                   |
+| 5 | Yes                 | None                                                                  |
+| 6 | Yes (minor)         | Additional note about units in exponential for Marcus equation        |
+| 7 | Yes (minor)         | Add explicit instruction to assume linearity                          |
+| 8 | Yes                 | None                                                                  |
+| 9 | Yes                 | Emphasize “with sign” in answer required                              |
+
+---
+
+**Overall:**  
+These are excellent, well-constructed, original multi-step chemistry problems, with only minor potential improvements for clarity. No major revisions are necessary.
+=== Turn 2: Author refines questions ===
+<question>  
+1. In a mixed halide MAPb(I$_{1-x}$Br$_x$)$_3$ perovskite film, the bandgap $E_g$ varies linearly from $1.55\,\mathrm{eV}$ at $x=0$ (MAPbI$_3$) to $2.30\,\mathrm{eV}$ at $x=1$ (MAPbBr$_3$). Assuming Vegard’s law applies and the exciton binding energy is negligible, determine the molar fraction $x$ at which the bandgap equals the photon energy of wavelength $600\,\mathrm{nm}$. Use $E\,(\mathrm{eV}) = \frac{1240}{\lambda\,(\mathrm{nm})}$. Report your answer to two decimal places.  
+</question>  
+
+<question>  
+2. A density functional theory (DFT) calculation predicts that the charge transfer $Q$ from methylammonium (MA$^+$) cations adsorbed on the (001) surface of MAPbI$_3$ to the PbI$_3$ lattice is $0.18\,e$ per cation, where $e=1.602 \times 10^{-19}\,\mathrm{C}$ is the elementary charge. Given the surface density of adsorbed MA$^+$ cations is $5.0 \times 10^{14}\,\mathrm{cm}^{-2}$, calculate the surface charge density induced by this charge transfer in $\mathrm{C\,m^{-2}}$. Express your answer in SI units and report to two significant figures.  
+</question>  
+
+<question>  
+3. Time-resolved photoluminescence decay measurements on an MAPbI$_3$ film showed a radiative recombination rate constant $k_r = 1.2 \times 10^{8}\,\mathrm{s}^{-1}$. The nonradiative rate constant $k_{nr}$ decreases from $5.0 \times 10^{8}\,\mathrm{s}^{-1}$ before passivation to $1.0 \times 10^{8}\,\mathrm{s}^{-1}$ after passivation by phenethylammonium iodide (PEAI). Calculate the increase in photoluminescence quantum yield (PLQY) in percentage points after passivation, using:  
+\[
+\mathrm{PLQY} = \frac{k_r}{k_r + k_{nr}} \times 100\%.
+\]  
+Report your answer to two decimal places.  
+</question>  
+
+<question>  
+4. A DFT simulation of the MAPbI$_3$–phenyltrimethylammonium iodide (PTAI) interface using density derived electrostatic and chemical (DDEC) analysis yields an electrostatic potential difference of $0.42\,\mathrm{V}$ across an interfacial layer of thickness $3.4\,\mathrm{nm}$. Assuming the electric field is uniform within the interfacial layer, calculate the average magnitude of the electric field inside the interfacial layer in $\mathrm{V\,nm^{-1}}$. Report your answer to two decimal places.  
+</question>  
+
+<question>  
+5. The absorption coefficient $\alpha(\lambda)$ of MAPbI$_3$ near the absorption edge follows $\alpha = A(\lambda - \lambda_g)^{1/2}$ for $\lambda > \lambda_g$, where $\lambda_g$ is the absorption edge wavelength. Given that $\alpha = 1.0 \times 10^{4}\,\mathrm{cm}^{-1}$ at $\lambda = 800\,\mathrm{nm}$ and $\lambda_g = 820\,\mathrm{nm}$, calculate the prefactor $A$ in units of $\mathrm{cm}^{-1}\cdot\mathrm{nm}^{-1/2}$. Report your answer to two significant figures.  
+</question>  
+
+<question>  
+6. Charge transfer dynamics in an organic cation-passivated MAPbI$_3$ film follow Marcus theory:  
+\[
+k = \frac{2\pi}{\hbar} |V|^2 \frac{1}{\sqrt{4\pi \lambda k_B T}} \exp\left[-\frac{(\Delta G + \lambda)^2}{4 \lambda k_B T}\right]
+\]  
+where $k = 1/\tau$ is the rate, $\tau$ the electron transfer time, $V = 100\,\mathrm{meV}$ is electronic coupling, $\lambda = 200\,\mathrm{meV}$ is reorganization energy, $\Delta G = -150\,\mathrm{meV}$ is the Gibbs free energy change, Boltzmann constant $k_B = 8.617 \times 10^{-5}\,\mathrm{eV\,K^{-1}}$, reduced Planck’s constant $\hbar = 6.582 \times 10^{-16}\,\mathrm{eV\,s}$, and temperature $T=298\,\mathrm{K}$. Use all energies in $\mathrm{eV}$ when substituting into the formula. Calculate $\tau$ in picoseconds. Report your answer to two significant figures.  
+</question>  
+
+<question>  
+7. A mixed-halide MAPbI$_{3-x}$Cl$_x$ perovskite exhibits a DFT-predicted HOMO level shift from $-5.43\,\mathrm{eV}$ at $x=0$ to $-5.65\,\mathrm{eV}$ at $x=0.15$. Assuming a linear relationship of the HOMO level with $x$, estimate the HOMO level (in eV) at $x=0.07$. Report your answer to two decimal places.  
+</question>  
+
+<question>  
+8. The bandgap shift $\Delta E_g$ (in eV) due to quantum confinement in an MAPbI$_3$ nanocrystal of radius $r$ (in nm) is modeled by the effective mass approximation as:  
+\[
+\Delta E_g = \frac{\hbar^2 \pi^2}{2 r^2} \left( \frac{1}{m_e^*} + \frac{1}{m_h^*} \right)
+\]
+
+Given electron effective mass $m_e^* = 0.12\,m_0$, hole effective mass $m_h^* = 0.15\,m_0$, and $\frac{\hbar^2}{2 m_0} = 3.81\,\mathrm{eV\,nm^2}$, calculate $\Delta E_g$ for $r=5\,\mathrm{nm}$. Report your answer to two decimal places.  
+</question>  
+
+<question>  
+9. Density derived electrostatic and chemical (DDEC) analysis finds the net atomic charge of Pb in an MAPbI$_3$ lattice to be $+1.45\,e$. Assuming the unit cell contains one Pb atom and three I atoms and the overall charge neutrality holds, calculate the average charge on each iodine atom in elementary charge units (with sign). Report your answer to two decimal places.  
+</question>
+=== Turn 2: Critic feedback ===
+**Feedback on Chemistry Assessment Questions**
+
+Below is a question-by-question critique, referencing the guidelines provided:
+
+---
+
+### Q1: Mixed Halide Perovskite Bandgap
+
+- **Strengths:**  
+  - Real chemical system and context (MAPb halide perovskites).
+  - Requires multi-step calculation using Vegard’s law, bandgap-photon wavelength relation.
+  - Well-structured, concise, and clear units; answer is unique and numerical.
+- **Areas for Improvement:**  
+  - The phrase “Assuming Vegard’s law applies and the exciton binding energy is negligible” is a little redundant; it's good practice but perhaps not needed if you always expect linear variation and no binding effects.
+  - Could clarify that photon energy equals bandgap at onset of absorption.
+- **Action:**  
+  - Remove or move clarification to a footnote if intended for advanced learners.
+---
+
+### Q2: Surface Charge Density Calculation
+
+- **Strengths:**  
+  - Real DFT scenario, asks for surface charge induced by charge transfer; unique numerical answer.
+  - Requires correct SI conversion, so multi-step reasoning enforced.
+- **Areas for Improvement:**  
+  - No major issues—concise, single solution, units clear.
+- **Action:**  
+  - None significant; perhaps add "to two significant figures" at end if uniformity is required.
+
+---
+
+### Q3: PLQY Increase Calculation
+
+- **Strengths:**  
+  - Clear scenario involving passivation, requires knowledge of quantum yield definition, careful arithmetic.
+  - Unique numerical answer in percentage points.
+- **Areas for Improvement:**  
+  - None significant; question is well-phrased and focused.
+- **Action:**  
+  - Good as is.
+
+---
+
+### Q4: Interfacial Electric Field
+
+- **Strengths:**  
+  - DFT simulation context, single formula application, unique answer.
+  - Requires multi-step reasoning (potential, thickness, field unit conversion).
+- **Areas for Improvement:**  
+  - “Average magnitude” is mathematically correct, but could simply say “Calculate the average electric field…in $\,\mathrm{V\,nm^{-1}}$”.
+- **Action:**  
+  - Rephrase to "the average electric field" for slight conciseness.
+
+---
+
+### Q5: Absorption Edge Prefactor
+
+- **Strengths:**  
+  - Absorption equation, edge effect, real perovskite system.
+  - Requires symbolic manipulation and careful use of units.
+- **Areas for Improvement:**  
+  - None significant; phrasing is good, units are consistent.
+- **Action:**  
+  - Acceptable as is.
+
+---
+
+### Q6: Charge Transfer (Marcus Theory)
+
+- **Strengths:**  
+  - Demands multi-step substitution, unit handling, exponentials, and final conversion.
+  - All constants given, context specific, unique result.
+- **Areas for Improvement:**  
+  - Slightly long, but not multi-answer.
+  - State clearly: "Calculate $\tau$ in picoseconds to two significant figures." (which is present)
+- **Action:**  
+  - Consider: For readability, consider combining "Use all energies in eV when substituting" into equation notes rather than main stem.
+
+---
+
+### Q7: Linear Extrapolation of HOMO Level
+
+- **Strengths:**  
+  - Linear relationship assumed, calculation is clear.
+  - Unique numerical solution.
+- **Areas for Improvement:**  
+  - Good as is.
+- **Action:**  
+  - Acceptable.
+
+---
+
+### Q8: Quantum Confinement Energy Shift
+
+- **Strengths:**  
+  - Effective mass scenario, real calculation.
+  - Single answer, clear units, requires multi-step reasoning.
+- **Areas for Improvement:**  
+  - None significant.
+- **Action:**  
+  - Good as is.
+
+---
+
+### Q9: Charge Distribution in Perovskite Lattice
+
+- **Strengths:**  
+  - Real scenario, DDEC analysis, unit cell chemistry.
+  - Forces conservation of charge reasoning, unique numeric answer.
+- **Areas for Improvement:**  
+  - None significant.
+- **Action:**  
+  - Acceptable.
+
+---
+
+## **General Feedback & Improvement Suggestions**
+
+- **Avoid Redundancy:**  
+  - Where possible, avoid explaining standard relationships unless strictly necessary for the problem. Assume the intended audience is capable of handling physical chemistry conventions (unless assessment is aimed at beginners).
+- **Single Solution:**  
+  - All questions above meet this requirement; none require two-part answers.
+- **Units and Notation:**  
+  - Consistent and appropriate. Suggest putting all units in brackets after the variable for clarity and uniformity (e.g., “Report your answer in $\mathrm{V\,nm^{-1}}$ to two decimal places.”).
+- **Originality and Complexity:**  
+  - Strong—scenarios are unique, not standard textbook fare.
+- **Conciseness:**  
+  - Most questions are brief and to the point. Consider rephrasing to reduce unnecessary words (e.g., "Calculate the molar fraction $x$ where…")
+- **Formatting:**  
+  - Consistent use of LaTeX. All equations and units should properly render in Markdown, as per instructions.
+- **No Multiple Parts:**  
+  - Met.
+- **Phrasing:**  
+  - Avoid “determine and explain” or “calculate and discuss”; instead, use “Calculate the…” (which is done here).
+
+---
+
+### **Summary Table**
+
+| Q# | Issues Found | Suggested Fix                                         |
+|----|-------------|-------------------------------------------------------|
+| 1  | Mild redundancy                  | Remove/streamline assumptions.      |
+| 2  | None                             | Add instructions on sig. figures, if not uniform. |
+| 3  | None                             | –                                   |
+| 4  | Slightly wordy                   | “Average magnitude” $\rightarrow$ “average” |
+| 5  | None                             | –                                   |
+| 6  | Slightly wordy instructions      | Condense units note.                |
+| 7  | None                             | –                                   |
+| 8  | None                             | –                                   |
+| 9  | None                             | –                                   |
+
+---
+
+## **Final Tips**
+
+- Remove excess explanation unless the assessment is for mixed-experience candidates.
+- Phrase commands uniformly ("Calculate...", "Determine...").
+- State required answer formatting at the end (units, significant digits, decimal places).
+- Ensure each question has only one interpretation and a unique answer.
+- Consistent variable and unit formatting, all equations and symbols in $...$ for Markdown.
+
+**Overall: These are high-quality advanced chemistry assessment questions that closely follow the guidelines with only very minor tweaks recommended for wording and relevance.**
+=== Turn 3: Author refines questions ===
+<question>  
+1. In a mixed halide MAPb(I$_{1-x}$Br$_x$)$_3$ perovskite film, the bandgap $E_g$ varies linearly from $1.55\,\mathrm{eV}$ at $x=0$ (MAPbI$_3$) to $2.30\,\mathrm{eV}$ at $x=1$ (MAPbBr$_3$). Calculate the molar fraction $x$ at which the bandgap equals the photon energy corresponding to a wavelength of $600\,\mathrm{nm}$. Use $E\,(\mathrm{eV}) = \frac{1240}{\lambda\,(\mathrm{nm})}$. Report your answer to two decimal places.  
+</question>  
+
+<question>  
+2. A density functional theory (DFT) calculation predicts that the charge transfer $Q$ from methylammonium (MA$^+$) cations adsorbed on the (001) surface of MAPbI$_3$ to the PbI$_3$ lattice is $0.18\,e$ per cation, where $e = 1.602 \times 10^{-19}\,\mathrm{C}$ is the elementary charge. Given the surface density of adsorbed MA$^+$ cations is $5.0 \times 10^{14}\,\mathrm{cm}^{-2}$, calculate the surface charge density induced by this charge transfer in $\mathrm{C\,m^{-2}}$. Report your answer in SI units to two significant figures.  
+</question>  
+
+<question>  
+3. Time-resolved photoluminescence decay measurements on an MAPbI$_3$ film showed a radiative recombination rate constant $k_r = 1.2 \times 10^{8}\,\mathrm{s}^{-1}$. The nonradiative rate constant $k_{nr}$ decreases from $5.0 \times 10^{8}\,\mathrm{s}^{-1}$ before passivation to $1.0 \times 10^{8}\,\mathrm{s}^{-1}$ after passivation by phenethylammonium iodide (PEAI). Calculate the increase in photoluminescence quantum yield (PLQY) in percentage points after passivation, using:  
+\[
+\mathrm{PLQY} = \frac{k_r}{k_r + k_{nr}} \times 100\%.
+\]  
+Report your answer to two decimal places.  
+</question>  
+
+<question>  
+4. A DFT simulation of the MAPbI$_3$–phenyltrimethylammonium iodide (PTAI) interface using density derived electrostatic and chemical (DDEC) analysis yields an electrostatic potential difference of $0.42\,\mathrm{V}$ across an interfacial layer of thickness $3.4\,\mathrm{nm}$. Assuming the electric field is uniform within the interfacial layer, calculate the average electric field inside the interfacial layer in $\mathrm{V\,nm^{-1}}$. Report your answer to two decimal places.  
+</question>  
+
+<question>  
+5. The absorption coefficient $\alpha(\lambda)$ of MAPbI$_3$ near the absorption edge follows $\alpha = A(\lambda - \lambda_g)^{1/2}$ for $\lambda > \lambda_g$, where $\lambda_g$ is the absorption edge wavelength. Given that $\alpha = 1.0 \times 10^{4}\,\mathrm{cm}^{-1}$ at $\lambda = 800\,\mathrm{nm}$ and $\lambda_g = 820\,\mathrm{nm}$, calculate the prefactor $A$ in units of $\mathrm{cm}^{-1}\cdot\mathrm{nm}^{-1/2}$. Report your answer to two significant figures.  
+</question>  
+
+<question>  
+6. Charge transfer dynamics in an organic cation-passivated MAPbI$_3$ film follow Marcus theory:  
+\[
+k = \frac{2\pi}{\hbar} |V|^2 \frac{1}{\sqrt{4\pi \lambda k_B T}} \exp\left[-\frac{(\Delta G + \lambda)^2}{4 \lambda k_B T}\right]
+\]  
+where $k = 1/\tau$ is the rate, $\tau$ the electron transfer time, $V = 100\,\mathrm{meV}$ is electronic coupling, $\lambda = 200\,\mathrm{meV}$ is reorganization energy, $\Delta G = -150\,\mathrm{meV}$ is the Gibbs free energy change, Boltzmann constant $k_B = 8.617 \times 10^{-5}\,\mathrm{eV\,K^{-1}}$, reduced Planck’s constant $\hbar = 6.582 \times 10^{-16}\,\mathrm{eV\,s}$, and temperature $T=298\,\mathrm{K}$. Using eV units for energies, calculate $\tau$ in picoseconds. Report your answer to two significant figures.  
+</question>  
+
+<question>  
+7. A mixed-halide MAPbI$_{3-x}$Cl$_x$ perovskite exhibits a DFT-predicted HOMO level shift from $-5.43\,\mathrm{eV}$ at $x=0$ to $-5.65\,\mathrm{eV}$ at $x=0.15$. Assuming a linear dependence of the HOMO level on $x$, estimate the HOMO level (in eV) at $x=0.07$. Report your answer to two decimal places.  
+</question>  
+
+<question>  
+8. The bandgap shift $\Delta E_g$ (in eV) due to quantum confinement in an MAPbI$_3$ nanocrystal of radius $r$ (in nm) is modeled by the effective mass approximation:  
+\[
+\Delta E_g = \frac{\hbar^2 \pi^2}{2 r^2} \left( \frac{1}{m_e^*} + \frac{1}{m_h^*} \right)
+\]
+
+Given electron effective mass $m_e^* = 0.12\,m_0$, hole effective mass $m_h^* = 0.15\,m_0$, and $\frac{\hbar^2}{2 m_0} = 3.81\,\mathrm{eV\,nm^2}$, calculate $\Delta E_g$ for $r=5\,\mathrm{nm}$. Report your answer to two decimal places.  
+</question>  
+
+<question>  
+9. Density derived electrostatic and chemical (DDEC) analysis finds the net atomic charge of Pb in an MAPbI$_3$ lattice to be $+1.45\,e$. Assuming the unit cell contains one Pb atom and three I atoms and maintains overall charge neutrality, calculate the average atomic charge on each iodine atom in units of elementary charge (with sign). Report your answer to two decimal places.  
+</question>
+=== Final questions generated ===

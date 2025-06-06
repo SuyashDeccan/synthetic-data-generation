@@ -1,0 +1,442 @@
+=== Turn 0: Author generates questions ===
+<question>  
+In an electrochemical cell using a Ti$_3$C$_2$T$_x$ MXene electrode immersed in 0.5 M H$_2$SO$_4$ electrolyte at 298 K, the interfacial proton transfer is limited by the substrate conductivity. Given that the charge transfer resistance $R_\mathrm{ct}$ on a planar carbon substrate is 120 Ω, while the porous Ni foam substrate reduces $R_\mathrm{ct}$ by a factor proportional to the increase in effective surface area from 1 cm$^2$ to 10 cm$^2$ and conductivity enhancement by a factor of 4, calculate the expected $R_\mathrm{ct}$ (in Ω) for the Ti$_3$C$_2$T$_x$ electrode on Ni foam. Assume $R_\mathrm{ct}$ scales inversely with both surface area and conductivity.</question>
+
+<question>  
+During charge storage measurements at 298 K, a MXene electrode on Ni foam substrate displays an interfacial charge transfer rate constant $k$ given by the Eyring equation:  
+$$k = \frac{k_B T}{h} \exp\left(-\frac{\Delta G^\ddagger}{RT}\right)$$  
+If the activation free energy $\Delta G^\ddagger$ on a planar substrate is 68 kJ·mol$^{-1}$, and the enhanced proton mobility in 0.1 M H$_2$SO$_4$ electrolyte on Ni foam decreases $\Delta G^\ddagger$ by 12%, calculate the ratio of rate constants $k_\mathrm{Ni\,foam}/k_\mathrm{planar}$ at 298 K. Use $R=8.314\, \text{J mol}^{-1}\text{K}^{-1}$.</question>
+
+<question>  
+A Ti$_3$C$_2$T$_x$ electrode on Ni foam substrate exhibits double-layer capacitance proportional to accessible surface area and intrinsic conductivity. If the intrinsic double-layer capacitance per unit area is 350 $\mu$F cm$^{-2}$ and the Ni foam substrate improves effective surface area from 2 cm$^{2}$ to 15 cm$^{2}$ and increases conductivity by a factor of 5, calculate the net increase factor in capacitance assuming capacitance scales linearly with both parameters.</question>
+
+<question>  
+In a cyclic voltammetry experiment at 298 K of a Ti$_3$C$_2$T$_x$ electrode in 0.1 M H$_2$SO$_4$, the proton diffusion coefficient $D$ is influenced by the substrate. The planar substrate has $D = 1.2 \times 10^{-5}$ cm$^2$s$^{-1}$. Given that the Ni foam substrate enhances proton mobility by 35%, calculate the diffusion-limited current density $i_\mathrm{lim}$ on Ni foam if the limiting current on the planar substrate is 0.85 mA cm$^{-2}$. Assume all other conditions remain constant.</question>
+
+<question>  
+Given the Butler–Volmer equation for interfacial charge transfer kinetics,  
+$$i = i_0 \left[ \exp\left(\frac{\alpha n F \eta}{RT}\right) - \exp\left(-\frac{(1-\alpha) n F \eta}{RT}\right) \right]$$  
+where $i_0$ is the exchange current density, $\eta$ the overpotential, and $\alpha$ the transfer coefficient, consider a Ti$_3$C$_2$T$_x$ MXene electrode on Ni foam with $i_0=2$ mA cm$^{-2}$, $\alpha=0.5$, $n=1$, and overpotential $\eta=50$ mV at 298 K. Calculate the net current density $i$ (in mA cm$^{-2}$) assuming $F=96485$ C mol$^{-1}$.</question>
+
+<question>  
+During electrochemical impedance spectroscopy (EIS) of a Ti$_3$C$_2$T$_x$ MXene deposited on Ni foam in 0.1 M H$_2$SO$_4$, the Warburg impedance $Z_W$ dominates the low-frequency region and is expressed as  
+$$Z_W = \sigma \frac{1 - j}{\sqrt{\omega}}$$  
+where $j$ is the imaginary unit, $\sigma$ the Warburg coefficient, and $\omega$ the angular frequency. If the charge storage mechanism shifts upon changing electrolyte from 0.1 M H$_2$SO$_4$ to 0.1 M H$_3$PO$_4$, doubling $\sigma$ from 15 Ω s$^{1/2}$ to 30 Ω s$^{1/2}$ at 1 Hz, calculate the magnitude of $Z_W$ at 1 Hz before and after the electrolyte change.</question>
+
+<question>  
+For a supercapacitor cell using Ti$_3$C$_2$T$_x$ MXenes coated on Ni foam, the proton flux $J$ through the interface follows  
+$$J = \frac{D C}{\delta}$$  
+where $D$ is proton diffusivity, $C$ proton concentration, and $\delta$ diffusion layer thickness. Given the planar substrate has $D=1.0 \times 10^{-5}$ cm$^2$/s, $C=0.1$ mol·L$^{-1}$, and $\delta=10$ μm, while Ni foam increases $D$ by a factor of 3 and effectively halves $\delta$ due to porosity, calculate the fold increase in proton flux $J$ (dimensionless) on Ni foam compared to planar substrate.</question>
+=== Turn 0: Critic feedback ===
+**General Strengths**  
+- All questions model a realistic, contemporary electrochemical scenario (guideline 1).
+- All expected answers are numerical, with units (guideline 2, 6).
+- Multi-step reasoning is required in each (guideline 3).
+- The content is not copied from standard textbook examples (guideline 5).
+- The wording is rigorous and technical (guideline 7, 8).
+- Most units are consistent and clear (guideline 9).
+- Each question requires a single, specific answer (guideline 10).
+- Equations/variables appear to be properly LaTeX formatted (guideline 11).
+
+**Concise, Actionable Feedback by Guideline**
+
+### 1. Modeling a Chemistry Scenario
+- **Strength:** All questions contextualize chemistry in MXene supercapacitor or electrode scenarios.
+- **Action:** None required.
+
+### 2. Answers: Numerical Values with Units or IUPAC Compounds
+- **Strength:** All questions ask for numerical answers with units.
+- **Action:** In Q6, explicitly specify to "express your answer in $\Omega$" for clarity.
+- **Action:** In Q4, although current density is involved, clarify if the answer should be in mA cm$^{-2}$ or as a ratio.
+
+### 3. Multi-Step Reasoning
+- **Strength:** Each question involves two or more calculation or conceptual steps.
+- **Action:** None required.
+
+### 4. Avoid Redundancy (Exclude Extraneous Information):
+- **Issue:** Several questions contain more information or technical narration than needed.
+    - Q1: The specific temperature is not directly used; if it is always at 298 K, you may skip repeating it unless it's part of the calculation.
+    - Q3: You state "intrinsic conductivity", but the rest is about "increases conductivity" — clarify or simplify.
+    - Q6: "Charge storage mechanism shifts" is mentioned but is not used, since only the change in $\sigma$ matters for the calculation.
+- **Action:** Remove temperature mention unless it's central to the calculation. Prune non-essential context.
+
+### 5. Uniqueness
+- **Strength:** Questions are original and non-standard.
+- **Action:** None required.
+
+### 6. Single Solution Expected
+- **Strength:** Each clearly asks for one (numerical) answer.
+- **Action:** None.
+
+### 7. Rigorous, Concise Phrasing
+- **Issue:** Some questions could be more concise.
+    - Q5: "Given the Butler–Volmer equation for interfacial charge transfer kinetics,..." is more verbose than needed.
+    - Q2, Q4: There are long phrases that can be shortened.
+- **Action:** Start with a statement of what's given, then ask for the calculation, e.g., "A Ti$_3$C$_2$T$_x$ MXene electrode has $i_0=2$ mA cm$^{-2}$, $\alpha=0.5$...".
+- **Action:** Remove non-essential phrases (e.g., "Assume all other conditions remain constant"—if this is standard practice).
+
+### 8. Non-Colloquial Language
+- **Strength:** Wording is professional and precise.
+- **Action:** None.
+
+### 9. Consistent Units; IUPAC Nomenclature
+- **Strength:** Most units are standard and consistent.
+- **Issue:** Sometimes per area and per mass units are mixed; double-check for consistency (e.g., mA cm$^{-2}$, Ω, etc.).
+- **Action:** In Q3, "capacitance per unit area" and "net increase factor in capacitance"—ensure units are matched and the requirements are clear.
+
+### 10. Single-Part, Single-Solution
+- **Strength:** All questions are single-part.
+- **Action:** None.
+
+### 11. Markdown/LaTeX Formatting
+- **Strength:** Equations are well-formatted for Markdown with LaTeX.
+- **Action:** None.
+
+---
+
+## **Summary Table of Recommendations**
+
+| # | Issue                                   | Action                                                                                                                    |
+|---|-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| 1 | Repetitive/Irrelevant Information       | Prune context (temperature, repeated narrative, etc.) unless essential to calculation.                                    |
+| 2 | Clarity in Response Units               | Explicitly specify requested units in every question.                                                                     |
+| 3 | Conciseness                             | Rephrase for brevity; focus on relevant quantitative setup and query only.                                                |
+| 4 | Consistency in Terms/Units              | Ensure all descriptions and required units are fully aligned and unambiguous.                                             |
+
+---
+
+## **Example Rewrite (Q5):**
+**Original:**  
+Given the Butler–Volmer equation for interfacial charge transfer kinetics,  
+$$i = i_0 \left[ \exp\left(\frac{\alpha n F \eta}{RT}\right) - \exp\left(-\frac{(1-\alpha) n F \eta}{RT}\right) \right]$$  
+where $i_0$ is the exchange current density, $\eta$ the overpotential, and $\alpha$ the transfer coefficient, consider a Ti$_3$C$_2$T$_x$ MXene electrode on Ni foam with $i_0=2$ mA cm$^{-2}$, $\alpha=0.5$, $n=1$, and overpotential $\eta=50$ mV at 298 K. Calculate the net current density $i$ (in mA cm$^{-2}$) assuming $F=96485$ C mol$^{-1}$.
+
+**Rewrite:**  
+A Ti$_3$C$_2$T$_x$ MXene electrode on Ni foam exhibits $i_0 = 2$ mA cm$^{-2}$, $\alpha = 0.5$, $n = 1$, and operates at overpotential $\eta = 50$ mV at 298 K. Using the Butler–Volmer equation
+$$i = i_0 \left[ \exp\left(\frac{\alpha n F \eta}{RT}\right) - \exp\left(-\frac{(1-\alpha) n F \eta}{RT}\right) \right],$$
+calculate the current density $i$ in mA cm$^{-2}$ using $F = 96485$ C mol$^{-1}$.
+
+---
+
+## **Overall Judgment:**  
+These questions are strong, contemporary, and mathematically rigorous, but can be improved with minor edits for conciseness, relevant context, and explicit unit guidance.
+=== Turn 1: Author refines questions ===
+<question>  
+In an electrochemical cell with a Ti$_3$C$_2$T$_x$ MXene electrode on Ni foam substrate, the charge transfer resistance $R_\mathrm{ct}$ on a planar carbon substrate is 120 Ω. The Ni foam increases effective surface area from 1 cm$^2$ to 10 cm$^2$ and enhances conductivity by a factor of 4. Assuming $R_\mathrm{ct}$ scales inversely with both surface area and conductivity, calculate the expected $R_\mathrm{ct}$ (in Ω) for the Ti$_3$C$_2$T$_x$ electrode on Ni foam.</question>
+
+<question>  
+A Ti$_3$C$_2$T$_x$ MXene electrode exhibits an activation free energy $\Delta G^\ddagger = 68$ kJ·mol$^{-1}$ on a planar substrate. On Ni foam, enhanced proton mobility reduces $\Delta G^\ddagger$ by 12%. Using the Eyring equation  
+$$k = \frac{k_B T}{h} \exp\left(-\frac{\Delta G^\ddagger}{RT}\right),$$  
+calculate the ratio of rate constants $k_\mathrm{Ni\,foam}/k_\mathrm{planar}$ at 298 K. Use $R = 8.314\, \text{J mol}^{-1}\text{K}^{-1}$.</question>
+
+<question>  
+A Ti$_3$C$_2$T$_x$ electrode on Ni foam displays a double-layer capacitance proportional to accessible surface area and conductivity. Given an intrinsic capacitance of 350 $\mu$F cm$^{-2}$, an increase in effective surface area from 2 cm$^{2}$ to 15 cm$^{2}$, and conductivity increased by a factor of 5, calculate the net capacitance increase factor compared to the planar electrode, assuming linear scaling with both parameters.</question>
+
+<question>  
+In cyclic voltammetry of a Ti$_3$C$_2$T$_x$ electrode at 298 K, the proton diffusion coefficient $D$ on a planar substrate is $1.2 \times 10^{-5}$ cm$^{2}$s$^{-1}$. Ni foam enhances proton mobility by 35%. If the limiting current density on the planar substrate is 0.85 mA cm$^{-2}$, calculate the limiting current density (in mA cm$^{-2}$) on Ni foam.</question>
+
+<question>  
+A Ti$_3$C$_2$T$_x$ MXene electrode on Ni foam has exchange current density $i_0=2$ mA cm$^{-2}$, transfer coefficient $\alpha=0.5$, number of electrons $n=1$, and operates at overpotential $\eta=50$ mV at 298 K. Using the Butler–Volmer equation  
+$$i = i_0 \left[ \exp\left(\frac{\alpha n F \eta}{RT}\right) - \exp\left(-\frac{(1-\alpha) n F \eta}{RT}\right) \right],$$  
+calculate the current density $i$ in mA cm$^{-2}$. Use $F=96485$ C mol$^{-1}$ and $R=8.314$ J mol$^{-1}$ K$^{-1}$.</question>
+
+<question>  
+During EIS of Ti$_3$C$_2$T$_x$ MXene on Ni foam in 0.1 M electrolyte, the Warburg impedance is  
+$$Z_W = \sigma \frac{1 - j}{\sqrt{\omega}},$$  
+where $\sigma$ is the Warburg coefficient and $\omega$ the angular frequency. At 1 Hz, $\sigma$ doubles from 15 Ω s$^{1/2}$ to 30 Ω s$^{1/2}$ when switching the electrolyte from 0.1 M H$_2$SO$_4$ to 0.1 M H$_3$PO$_4$. Calculate the magnitude of $Z_W$ (in Ω) at 1 Hz before and after this change.</question>
+
+<question>  
+For a Ti$_3$C$_2$T$_x$ MXene electrode, proton flux $J$ follows  
+$$J = \frac{D C}{\delta},$$  
+where $D$ is proton diffusivity, $C$ proton concentration, and $\delta$ diffusion layer thickness. On a planar substrate, $D=1.0 \times 10^{-5}$ cm$^2$/s, $C=0.1$ mol·L$^{-1}$, and $\delta=10$ μm. Ni foam increases $D$ by a factor of 3 and halves $\delta$ due to porosity. Calculate the fold increase in proton flux $J$ on Ni foam compared to planar substrate (dimensionless).</question>
+=== Turn 1: Critic feedback ===
+**Overall Assessment:**  
+Your questions demonstrate originality, multi-step reasoning, and require calculation of a single final value with correct units, aligning well with most of the guidelines. The questions are contextualized, rigorous, and mostly concise. However, some improvements are warranted for optimal clarity, force of reasoning, and full adherence to the stated criteria.
+
+---
+
+**Per-Question Feedback:**
+
+---
+
+### Q1 (Charge Transfer Resistance, MXene/Ni foam)
+
+**Strengths:**
+- Concise, single numerical answer expected.
+- Realistic and original.
+- All units are consistent and correct.
+
+**Improvements:**  
+- The mention of “on a planar carbon substrate” could be more clearly tied to “planar electrode” for clarity.
+- Wording can be tightened to reduce verbosity (e.g., remove “enhances conductivity by a factor of 4”—could directly say “conductivity increases fourfold”).
+- Specify that only one parameter is changing at a time (surface or conductivity) unless both are changing together.
+
+**Suggested Revision:**  
+"Given $R_\mathrm{ct} = 120\ \Omega$ for a Ti$_3$C$_2$T$_x$ electrode on a planar substrate of area 1 cm$^2$, estimate $R_\mathrm{ct}$ for a Ni foam electrode with area 10 cm$^2$ and fourfold increased conductivity, assuming $R_\mathrm{ct}$ is inversely proportional to both area and conductivity. Express your answer in $\Omega$."  
+
+---
+
+### Q2 (Eyring Equation, Activation Free Energy)
+
+**Strengths:**
+- Clear, multi-step; unique setup.
+- Explicit about variables and expected calculation.
+
+**Improvements:**  
+- Consider rephrasing “reduces $\Delta G^\ddagger$ by 12%” as “$\Delta G^\ddagger$ is decreased by 12% on Ni foam”.
+- Ideally, specify to "give your answer to two significant digits" for answer clarity.
+
+**Suggestion:**  
+"Tighten phrasing and specify significant figures as needed."
+
+---
+
+### Q3 (Capacitance Increase Factor)
+
+**Strengths:**
+- Unambiguous, requires multi-step reasoning.
+- Units and quantities clearly defined.
+
+**Improvements:**  
+- The phrase “net capacitance increase factor compared to the planar electrode” could be simplified to “By what factor does the total capacitance increase on Ni foam compared to planar?”
+
+**Suggestion:**  
+"Calculate the factor by which the total capacitance increases on Ni foam compared to planar substrate, given area and conductivity increase as specified."
+
+---
+
+### Q4 (Diffusion Coefficient and Limiting Current)
+
+**Strengths:**
+- Clear, real-world electrochem scenario.
+- Rigorous, single-step answer.
+
+**Improvements:**  
+- The modifier “enhances proton mobility by 35%” could be more directly phrased: “$D$ increases by 35%”.
+
+**Suggestion:**  
+"Restate mobility increase clearly to refer directly to $D$ for precision."
+
+---
+
+### Q5 (Butler–Volmer Equation, Ni Foam)
+
+**Strengths:**
+- Original, references real electrochem practice.
+- Unambiguous, single numerical answer with correct units.
+
+**Improvements:**  
+- The phrase “operates at overpotential $\eta=50$ mV at 298 K” can be more precise: “is operated at..."
+
+**Suggestion:**  
+"Tighten sentence structure for maximal clarity and concision."
+
+---
+
+### Q6 (EIS, Warburg Impedance)
+
+**Strengths:**
+- Unique, practical; direct computation.
+
+**Improvements:**  
+- Change “before and after this change” to “in each electrolyte”.
+- Possibly remove extra context: you could drop “during EIS of...in 0.1 M electrolyte”; just specify the system and the parameter change.
+
+**Suggestion:**  
+"Compute the magnitude of $Z_W$ at 1 Hz for $\sigma=15\ \Omega\, s^{1/2}$ and for $\sigma=30\ \Omega\, s^{1/2}$. State answers in $\Omega$."
+
+---
+
+### Q7 (Proton Flux Ratio)
+
+**Strengths:**
+- Multi-step; final answer is a dimensionless factor.
+- Units supplied and consistent.
+
+**Improvements:**  
+- Could specify that “all other parameters remain constant”.
+
+**Suggestion:**  
+"Calculate the multiplicative increase in proton flux $J$ on Ni foam vs. planar, given $D$ increases by 3x and $\delta$ decreases by 2x. Provide your answer as a dimensionless factor."
+
+---
+
+**General Recommendations for All Questions:**
+
+- **Conciseness:** Streamline by removing any non-essential descriptive phrasing that does not influence calculations.
+- **Directness:** Always state exactly what is changing and what remains constant.
+- **Numerical Precision:** Indicate significant figures or decimal places for final numerical answers, where appropriate.
+- **Formatting:** You already mostly use proper LaTeX syntax and correct Markdown, which is excellent.
+
+---
+
+**Summary Table:**
+
+| Guideline              | Met?           | Comments                                               |
+|------------------------|----------------|--------------------------------------------------------|
+| Chemistry scenario     | Yes            | Real systems, good context                             |
+| Numerical/unit answer  | Yes            | Always a number w/ units or clear IUPAC name           |
+| Multi-step reasoning   | Yes            | All require more than 1 operation                      |
+| Avoid redundancy       | Yes            | No extraneous info                                     |
+| Unique                 | Yes            | Fresh combinations; not textbook clones                |
+| Single solution        | Yes            | Each question yields a single, clear answer            |
+| Concise, rigorous      | Mostly         | Could be tightened for length and directness in places |
+| Avoid ambiguity        | Yes            | Physics/chemistry terms clear, but minor phrasing      |
+| Units/nomenclature     | Yes            | All valid, all units consistent                        |
+| Single-part only       | Yes            | No compound/multi-sub-question                         |
+| LaTeX Markdown         | Yes            | Properly formatted                                     |
+
+**Final Advice:**  
+Your questions are well above average in complexity and originality for advanced chemistry assessments. Address the noted minor language and formatting points for maximal clarity, brevity, and exam-ready quality.
+=== Turn 2: Author refines questions ===
+<question>  
+Given a Ti$_3$C$_2$T$_x$ electrode on a planar substrate with charge transfer resistance $R_\mathrm{ct} = 120\ \Omega$ and area 1 cm$^2$, estimate $R_\mathrm{ct}$ for the same electrode on Ni foam with area 10 cm$^2$ and fourfold higher conductivity. Assume $R_\mathrm{ct}$ is inversely proportional to both electrode area and conductivity. Express your answer in $\Omega$.  
+</question>
+
+<question>  
+A Ti$_3$C$_2$T$_x$ electrode has an activation free energy $\Delta G^\ddagger = 68$ kJ·mol$^{-1}$ on a planar substrate, which decreases by 12% on Ni foam due to enhanced proton mobility. Using the Eyring equation  
+$$k = \frac{k_B T}{h} \exp\left(-\frac{\Delta G^\ddagger}{RT}\right),$$  
+calculate the ratio of rate constants $k_\mathrm{Ni\,foam}/k_\mathrm{planar}$ at 298 K. Use $R = 8.314\ \text{J mol}^{-1} \text{K}^{-1}$. Report your answer to two significant digits.  
+</question>
+
+<question>  
+A Ti$_3$C$_2$T$_x$ electrode on Ni foam shows double-layer capacitance proportional to accessible surface area and conductivity. Given an intrinsic capacitance of 350 $\mu$F·cm$^{-2}$, an effective area increase from 2 cm$^{2}$ to 15 cm$^{2}$ and conductivity increased fivefold, by what factor does the total capacitance increase compared to the planar substrate? Assume linear scaling with area and conductivity.  
+</question>
+
+<question>  
+At 298 K, a Ti$_3$C$_2$T$_x$ electrode on a planar substrate exhibits proton diffusion coefficient $D = 1.2 \times 10^{-5}$ cm$^{2}$/s. Ni foam increases $D$ by 35%. If the limiting current density on the planar substrate is 0.85 mA·cm$^{-2}$, calculate the limiting current density on Ni foam in mA·cm$^{-2}$.  
+</question>
+
+<question>  
+A Ti$_3$C$_2$T$_x$ MXene electrode on Ni foam has exchange current density $i_0 = 2$ mA·cm$^{-2}$, transfer coefficient $\alpha = 0.5$, number of electrons $n=1$, and operates at overpotential $\eta = 50$ mV at 298 K. Using the Butler–Volmer equation  
+$$i = i_0 \left[ \exp\left(\frac{\alpha n F \eta}{RT}\right) - \exp\left(-\frac{(1-\alpha) n F \eta}{RT}\right) \right],$$  
+calculate the current density $i$ in mA·cm$^{-2}$. Use $F=96485$ C·mol$^{-1}$ and $R=8.314$ J·mol$^{-1}$·K$^{-1}$.  
+</question>
+
+<question>  
+For Ti$_3$C$_2$T$_x$ MXene on Ni foam, the Warburg impedance is  
+$$Z_W = \sigma \frac{1 - j}{\sqrt{\omega}},$$  
+where $\sigma$ is the Warburg coefficient and $\omega$ the angular frequency. At 1 Hz, $\sigma$ doubles from 15 Ω·s$^{1/2}$ to 30 Ω·s$^{1/2}$ when switching electrolyte from 0.1 M H$_2$SO$_4$ to 0.1 M H$_3$PO$_4$. Calculate the magnitude of $Z_W$ at 1 Hz for each electrolyte in $\Omega$.  
+</question>
+
+<question>  
+For Ti$_3$C$_2$T$_x$, proton flux $J$ follows  
+$$J = \frac{D C}{\delta},$$  
+with proton diffusivity $D$, concentration $C$, and diffusion layer thickness $\delta$. On a planar substrate, $D = 1.0 \times 10^{-5}$ cm$^2$/s, $C=0.1$ mol·L$^{-1}$, and $\delta=10$ μm. Ni foam increases $D$ threefold and reduces $\delta$ by half, with all other parameters constant. Calculate the fold increase in proton flux $J$ on Ni foam compared to planar substrate (dimensionless).  
+</question>
+=== Turn 2: Critic feedback ===
+**Overall Feedback:**
+Your questions demonstrate solid real-world modeling, expect numerical answers with units, require multi-step reasoning, and use rigorous chemical/physical scenarios. Questions are unique and not textbook-standard, generally focusing on chemical scenarios involving Ti$_3$C$_2$T$_x$ MXene electrodes, with clear, single-solution expectations. Most employ consistent, correct units and well-formatted equations.
+
+Below is detailed, actionable feedback for improvement, mapped to your guidelines:
+
+---
+
+### Question 1 (Charge Transfer Resistance Scaling)
+- **Strengths:** Realistic scenario, multi-parameter proportionality, concise, answer is a single $\Omega$ value.
+- **Improvements:** Explicitly state that both area and conductivity for the foam should be considered relative to the planar substrate (to avoid ambiguity). Consider mentioning that $R_{\mathrm{ct}}$ here refers to interfacial—not bulk—resistance (for clarity).  
+**Action:** Specify: "Assume the Ni foam’s conductivity is four times higher than that of the planar substrate and that area effects are referenced to the planar configuration."
+
+---
+
+### Question 2 (Activation Energy & Rate Constants, Eyring Eqn)
+- **Strengths:** Appropriate physical chemistry application, dimensional consistency, multi-step calculation, clear scenario.
+- **Improvements:** Specify that both $\Delta G^\ddagger$ values refer to identical reactions (for clarity), and explicitly state "Report your answer as a dimensionless ratio to two significant digits".  
+**Action:** At the end, add: "Express your answer as a dimensionless ratio, to two significant digits."
+
+---
+
+### Question 3 (Capacitance Scaling)
+- **Strengths:** Original scenario, multi-factor scaling, clear calculation, answer is a dimensionless factor.
+- **Improvements:** Specify whether comparison is to the *initial* value or explicitly to "planar substrate" (currently slightly ambiguous: is it area 2 or 1 cm$^2$?).
+**Action:** Clarify: "...compared to the planar substrate (2 cm$^{2}$ area, baseline conductivity)."
+
+---
+
+### Question 4 (Limiting Current & Diffusion)
+- **Strengths:** Realistic electrochemistry scenario, forces use of proportionality reasoning, numerical answer expected, units clear.
+- **Improvements:** Ensure limiting current density is defined (Cottrell or steady-state?), but context makes it clear enough for advanced students.
+**Action:** Optionally: "Assume all other parameters remain unchanged. Give your answer in mA·cm$^{-2}$ to two significant digits."
+
+---
+
+### Question 5 (Butler–Volmer/Bioelectrochemistry)
+- **Strengths:** Detailed, multi-step calculation required, only one numerical solution, rigorous language, equations properly formatted.
+- **Improvements:** Specify that overpotential $\eta$ is positive/forward, just for clarity; request numerical answer to a specific number of significant digits.  
+**Action:** Add: "Assume $\eta = +50$ mV. Report $i$ in mA·cm$^{-2}$ to two significant digits."
+
+---
+
+### Question 6 (Warburg Impedance at 1 Hz)
+- **Strengths:** Clear model, realistic parameter manipulation, single numerical answer per condition, proper units.
+- **Improvements:** Request magnitude explicitly as $|Z_W|$ for both solutions, and to a certain number of significant digits (ensure unambiguous reporting).  
+**Action:** Say: "Report each value as $|Z_W|$ in $\Omega$ to two significant digits."
+
+---
+
+### Question 7 (Proton Flux Scaling)
+- **Strengths:** Clear physical chemistry problem, requires proportional reasoning, no extraneous info, asks for a dimensionless factor.
+- **Improvements:** Clarify physical meaning of "fold increase" (should answer be e.g. "$6$" meaning "$J$ increases 6-fold") and units are dimensionless.  
+**Action:** Specify: "Calculate and report the dimensionless factor (e.g. $J_\mathrm{foam}/J_\mathrm{planar}$) to the nearest integer."
+
+---
+
+## Additional Global Suggestions
+- After each question, always specify whether to round or report to a given number of significant digits/decimal places for consistency.
+- Ensure all questions explicitly mention the required unit or dimensionality.
+- Where relevant, say "Express your answer as [unit] to [X] significant digits."
+- If you expect calculation via a proportionality, define all proportional factors for clarity.
+- Double-check that no question has more than one sub-component or answer.
+
+---
+
+**Summary Table**
+
+| # | Single Solution | Units/Nomenclature | Multi-step | Unique/Non-redun. | Phrasing/Format | Action |
+|:-:|:--------------:|:------------------:|:----------:|:-----------------:|:---------------:|:------:|
+| 1 | ✔️ | ✔️ | ✔️ | ✔️ | Minor clarity | Clarify relative values |
+| 2 | ✔️ | ✔️ | ✔️ | ✔️ | Sig. digits, clarity | Add ratio/significant digits |
+| 3 | ✔️ | ✔️ | ✔️ | ✔️ | Baseline definition | Specify baseline configuration |
+| 4 | ✔️ | ✔️ | ✔️ | ✔️ | Units, sig. digits | Add answer precision |
+| 5 | ✔️ | ✔️ | ✔️ | ✔️ | Sig. digits | Add sig. digits, clarify $\eta$ |
+| 6 | ✔️ | ✔️ | ✔️ | ✔️ | Report format | Specify magnitude, precision |
+| 7 | ✔️ | ✔️ | ✔️ | ✔️ | Fold/factor clarity | Specify dimensionless ratio |
+
+Apply these improvements for maximally rigorous and unambiguous assessment questions.
+=== Turn 3: Author refines questions ===
+<question>  
+Given a Ti$_3$C$_2$T$_x$ electrode on a planar substrate with charge transfer resistance $R_\mathrm{ct} = 120\ \Omega$ and area 1 cm$^2$, estimate $R_\mathrm{ct}$ for the same electrode on Ni foam with area 10 cm$^2$ and fourfold higher conductivity. Assume that this interfacial charge transfer resistance, $R_{\mathrm{ct}}$, is inversely proportional to both electrode area and conductivity, each referenced relative to the planar substrate. Express your answer in $\Omega$ rounded to the nearest integer.  
+</question>
+
+<question>  
+A Ti$_3$C$_2$T$_x$ electrode exhibits an activation free energy $\Delta G^\ddagger = 68$ kJ·mol$^{-1}$ on a planar substrate for a given reaction. On Ni foam, $\Delta G^\ddagger$ decreases by 12% due to enhanced proton mobility. Using the Eyring equation  
+$$k = \frac{k_B T}{h} \exp\left(-\frac{\Delta G^\ddagger}{RT}\right),$$  
+calculate the ratio of rate constants $k_\mathrm{Ni\,foam}/k_\mathrm{planar}$ at 298 K. Use $R = 8.314\ \text{J mol}^{-1} \text{K}^{-1}$. Express your answer as a dimensionless ratio to two significant digits.  
+</question>
+
+<question>  
+A Ti$_3$C$_2$T$_x$ electrode on Ni foam shows double-layer capacitance proportional to accessible surface area and conductivity. Given an intrinsic capacitance of 350 $\mu$F·cm$^{-2}$, an effective area increase from 2 cm$^{2}$ (planar substrate baseline) to 15 cm$^{2}$ on Ni foam, and conductivity increased fivefold relative to the planar substrate, by what factor does the total capacitance increase compared to the planar substrate? Assume linear scaling with both area and conductivity. Report your answer as a dimensionless factor rounded to two significant digits.  
+</question>
+
+<question>  
+At 298 K, a Ti$_3$C$_2$T$_x$ electrode on a planar substrate exhibits a proton diffusion coefficient $D = 1.2 \times 10^{-5}$ cm$^{2}$/s. Ni foam increases $D$ by 35%. If the limiting current density on the planar substrate is 0.85 mA·cm$^{-2}$, calculate the limiting current density on Ni foam. Assume all other parameters remain unchanged. Give your answer in mA·cm$^{-2}$ rounded to two significant digits.  
+</question>
+
+<question>  
+A Ti$_3$C$_2$T$_x$ MXene electrode on Ni foam has exchange current density $i_0 = 2$ mA·cm$^{-2}$, transfer coefficient $\alpha = 0.5$, number of electrons $n=1$, and operates at a positive overpotential $\eta = +50$ mV at 298 K. Using the Butler–Volmer equation  
+$$i = i_0 \left[ \exp\left(\frac{\alpha n F \eta}{RT}\right) - \exp\left(-\frac{(1-\alpha) n F \eta}{RT}\right) \right],$$  
+calculate the current density $i$ in mA·cm$^{-2}$. Use $F=96485$ C·mol$^{-1}$ and $R=8.314$ J·mol$^{-1}$·K$^{-1}$. Report your answer to two significant digits.  
+</question>
+
+<question>  
+For Ti$_3$C$_2$T$_x$ MXene on Ni foam, the Warburg impedance is described by  
+$$Z_W = \sigma \frac{1 - j}{\sqrt{\omega}},$$  
+where $\sigma$ is the Warburg coefficient and $\omega$ the angular frequency. At 1 Hz, $\sigma$ doubles from 15 Ω·s$^{1/2}$ to 30 Ω·s$^{1/2}$ when switching electrolyte from 0.1 M H$_2$SO$_4$ to 0.1 M H$_3$PO$_4$. Calculate the magnitude $|Z_W|$ at 1 Hz for each electrolyte. Report both values in $\Omega$ to two significant digits.  
+</question>
+
+<question>  
+For Ti$_3$C$_2$T$_x$, proton flux $J$ follows  
+$$J = \frac{D C}{\delta},$$  
+where proton diffusivity $D$, concentration $C$, and diffusion layer thickness $\delta$ are known. On a planar substrate, $D = 1.0 \times 10^{-5}$ cm$^2$/s, $C=0.1$ mol·L$^{-1}$, and $\delta=10$ μm. Ni foam increases $D$ threefold and reduces $\delta$ by half, with all other parameters constant. Calculate the fold increase (dimensionless ratio $J_\mathrm{foam}/J_\mathrm{planar}$) in proton flux on Ni foam compared to planar substrate. Report your answer rounded to the nearest integer.  
+</question>
+=== Final questions generated ===

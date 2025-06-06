@@ -1,0 +1,230 @@
+=== Turn 0: Author generates questions ===
+```
+<question>Consider a random walker on a $d$-dimensional hypercubic lattice with lattice spacing $a$. The walker starts at the origin and diffuses with a diffusion coefficient $D$. At a constant rate $r$, the walker is reset to its initial position (the origin). Assume the walker's position is updated according to a Markov chain model. In the continuum limit, where $a \rightarrow 0$, derive an expression for the mean first passage time (MFPT) to a spherical absorbing boundary of radius $R$ centered at the origin, denoted as $T(R, r, D)$. You may assume $R >> a$, such that a continuous space approximation is valid.</question>
+
+<question>A particle undergoes diffusion on a $d$-dimensional hypercubic lattice with lattice spacing $a$. The particle is subject to stochastic resetting to the origin at a rate $r$. Calculate the exact MFPT, $T_d(r)$, for the particle to reach a target site located at a Manhattan distance of $L$ lattice sites from the origin. Assume that the particle starts at the origin. In the limit of very large $r$ (i.e., $r \rightarrow \infty$), what is the universal limiting value of $T_d(r)$ when the target is the nearest neighbor of the initial position?</question>
+
+<question>Consider a diffusing particle on a $d$-dimensional lattice with lattice spacing $a$. The particle is stochastically reset to the origin at a rate $r$. Assume that for a specific target location, an optimal resetting rate $r^*$ exists that minimizes the MFPT. Investigate the large dimension asymptotics of this optimal resetting rate, $r^*$, as $d \rightarrow \infty$. Specifically, derive a leading-order expression for $r^*$ as a function of $d$, assuming a mean-field approximation is valid. Assume the diffusion coefficient $D$ is constant.</question>
+
+<question>A particle diffuses on a one-dimensional lattice with lattice spacing $a$. It starts at position $R_0 > 0$ and is reset to the origin with rate $r$. Using a continuous space approximation, determine the behavior of the MFPT, $T(R_0, r)$, to reach the origin as a function of the resetting rate $r$ and the initial position $R_0$. Assume that the diffusion coefficient is $D$. Find the expression of $T(R_0, r)$ in the continuous limit, assuming $a \rightarrow 0$.</question>
+
+<question>Consider a biased random walker on a $d$-dimensional hypercubic lattice. The walker has a probability $p > 1/(2d)$ to move in the positive direction along any axis and a probability $q < 1/(2d)$ to move in the negative direction, with $p+q + (2d-2)n = 1$, where $n$ is the probability to move to other available sites. The lattice spacing is $a$. Additionally, the walker is subject to stochastic resetting to the origin with rate $r$. Derive an expression for the MFPT to a target site located at $\vec{R} = (L_1 a, L_2 a, ..., L_d a)$, where $L_i$ is the number of lattice sites along the $i$-th dimension. Give the solution in the continuous limit as $a \rightarrow 0$, using a Green's function approach.</question>
+```
+=== Turn 0: Critic feedback ===
+Here's a critique of each question against the provided guidelines:
+
+---
+
+### Question 1: Mean First Passage Time to Spherical Boundary with Resetting
+
+`<question>Consider a random walker on a $d$-dimensional hypercubic lattice with lattice spacing $a$. The walker starts at the origin and diffuses with a diffusion coefficient $D$. At a constant rate $r$, the walker is reset to its initial position (the origin). Assume the walker's position is updated according to a Markov chain model. In the continuum limit, where $a \rightarrow 0$, derive an expression for the mean first passage time (MFPT) to a spherical absorbing boundary of radius $R$ centered at the origin, denoted as $T(R, r, D)$. You may assume $R >> a$, such that a continuous space approximation is valid.</question>`
+
+**Critique:**
+
+*   **Guideline 1 (Model a Physics Scenario):** Excellent. A well-defined physical scenario involving diffusion, resetting, and absorbing boundaries.
+*   **Guideline 2 (Expect symbolic/numerical answer):** Excellent. Clearly asks for a symbolic expression for $T(R, r, D)$.
+*   **Guideline 3 (Force Multi-Step Reasoning):** Excellent. Requires setting up and solving a partial differential equation (likely a backward Kolmogorov equation for MFPT) with a resetting term and appropriate boundary conditions in multiple dimensions. This is a multi-step derivation.
+*   **Guideline 4 (Be Unique):** Excellent. While the concept of MFPT with resetting is established, this specific setup (spherical boundary, starting at origin, deriving a general expression) is not a trivial or commonly repeated textbook problem.
+*   **Guideline 5 (Single Solution):** Excellent. A unique symbolic expression for $T(R, r, D)$ should be derivable.
+*   **Guideline 6 (Rigorous, concise phrasing; no hints):** Excellent. The phrasing is clear, precise, and contains no unnecessary hints.
+*   **Guideline 7 (All assumptions stated, variables defined):** Excellent. All variables ($d$, $a$, $D$, $r$, $R$) and assumptions (hypercubic lattice, Markov chain, continuum limit, $R \gg a$) are clearly stated and defined.
+*   **Guideline 8 (Units consistent; SI units; conventional notation):** Excellent. Notation is conventional, and units are consistent for a symbolic derivation.
+*   **Guideline 9 (Not multipart; no hints):** Excellent. The question asks for a single target quantity.
+*   **Guideline 10 (Question Formatting):** Excellent. Correct LaTeX formatting for inline math and proper wrapping in `<question>` tags.
+
+**Overall Feedback:** This is an outstanding question. It is challenging, well-defined, and adheres to all guidelines.
+
+---
+
+### Question 2: Exact MFPT on Lattice and Large $r$ Limit
+
+`<question>A particle undergoes diffusion on a $d$-dimensional hypercubic lattice with lattice spacing $a$. The particle is subject to stochastic resetting to the origin at a rate $r$. Calculate the exact MFPT, $T_d(r)$, for the particle to reach a target site located at a Manhattan distance of $L$ lattice sites from the origin. Assume that the particle starts at the origin. In the limit of very large $r$ (i.e., $r \rightarrow \infty$), what is the universal limiting value of $T_d(r)$ when the target is the nearest neighbor of the initial position?</question>`
+
+**Critique:**
+
+*   **Guideline 10 (Not multipart):** **FAIL.** This question explicitly asks for two distinct results:
+    1.  `Calculate the exact MFPT, $T_d(r)$` (a general expression).
+    2.  `In the limit of very large $r$..., what is the universal limiting value of $T_d(r)$ when the target is the nearest neighbor...` (a specific numerical or simpler symbolic value derived from the first part).
+    This violates the guideline "Questions must not be multipart".
+
+*   **Guideline 6 (Rigorous, concise phrasing; no hints):** Minor point, but "universal limiting value" could be seen as a slight hint that the answer might simplify significantly or become independent of some parameters.
+
+*   **Other Guidelines:**
+    *   **Guideline 1, 2, 3, 4, 5, 7, 8, 11:** Good. The scenario is clear, it demands symbolic expressions, multi-step reasoning (lattice equations, limits), is reasonably unique (lattice-based with Manhattan distance), and variables are defined. Formatting is correct.
+
+**Actionable Feedback:**
+*   **Split this into two separate questions.** One question should ask for the general `exact MFPT, $T_d(r)$`. The second question should ask for the `universal limiting value` under the specified conditions.
+
+---
+
+### Question 3: Optimal Resetting Rate Asymptotics
+
+`<question>Consider a diffusing particle on a $d$-dimensional lattice with lattice spacing $a$. The particle is stochastically reset to the origin at a rate $r$. Assume that for a specific target location, an optimal resetting rate $r^*$ exists that minimizes the MFPT. Investigate the large dimension asymptotics of this optimal resetting rate, $r^*$, as $d \rightarrow \infty$. Specifically, derive a leading-order expression for $r^*$ as a function of $d$, assuming a mean-field approximation is valid. Assume the diffusion coefficient $D$ is constant.</question>`
+
+**Critique:**
+
+*   **Guideline 7 (All assumptions stated, variables defined):** **FAIL.** The question states "for a specific target location" but **does not define this target location**. The optimal resetting rate $r^*$ is typically dependent on the distance or coordinates of the target from the origin. Without a defined target (e.g., "a target at a distance $L$ from the origin", or "a target at $\vec{X}_T$"), the problem is underspecified, and a unique expression for $r^*$ cannot be derived.
+
+*   **Other Guidelines:**
+    *   **Guideline 1, 2, 3, 4, 5, 6, 8, 9, 10, 11:** Excellent. This is a very advanced and unique problem combining optimization, asymptotic analysis, and mean-field theory, which is highly challenging and appropriate for advanced learners. It clearly asks for a single symbolic expression and is well-formatted.
+
+**Actionable Feedback:**
+*   **Define the specific target location.** For example: "Assume the target is located at a distance $L$ from the origin," or "Assume the target is located at $(L a, 0, \dots, 0)$."
+
+---
+
+### Question 4: MFPT to Origin in 1D with Resetting
+
+`<question>A particle diffuses on a one-dimensional lattice with lattice spacing $a$. It starts at position $R_0 > 0$ and is reset to the origin with rate $r$. Using a continuous space approximation, determine the behavior of the MFPT, $T(R_0, r)$, to reach the origin as a function of the resetting rate $r$ and the initial position $R_0$. Assume that the diffusion coefficient is $D$. Find the expression of $T(R_0, r)$ in the continuous limit, assuming $a \rightarrow 0$.</question>`
+
+**Critique:**
+
+*   **Guideline 4 (Be Unique):** **FAIL.** This is a *canonical problem* in the field of stochastic resetting. It is typically the first or second example solved in review articles, lecture notes, and research papers introducing the concept of MFPT with resetting. While not a classical "textbook physics problem" in general, it is very much a "standard textbook problem" within the specialized domain of stochastic resetting. Therefore, it lacks the novelty required by this guideline.
+
+*   **Guideline 6 (Rigorous, concise phrasing; no hints):** Minor redundancy. "Using a continuous space approximation" and "in the continuous limit, assuming $a \rightarrow 0$" convey the same information. One of these phrases would suffice.
+
+*   **Other Guidelines:**
+    *   **Guideline 1, 2, 3, 5, 7, 8, 9, 10, 11:** Good. The scenario is clear, it asks for a single symbolic expression, requires solving a differential equation, variables are defined, and formatting is correct.
+
+**Actionable Feedback:**
+*   **Modify the scenario to introduce novelty.** For example, add a potential, a different type of boundary, or make the resetting a more complex function of position/time to make it less standard.
+*   Remove the redundant phrasing about the continuous limit.
+
+---
+
+### Question 5: Biased Random Walk with Resetting (Green's Function Approach)
+
+`<question>Consider a biased random walker on a $d$-dimensional hypercubic lattice. The walker has a probability $p > 1/(2d)$ to move in the positive direction along any axis and a probability $q < 1/(2d)$ to move in the negative direction, with $p+q + (2d-2)n = 1$, where $n$ is the probability to move to other available sites. The lattice spacing is $a$. Additionally, the walker is subject to stochastic resetting to the origin with rate $r$. Derive an expression for the MFPT to a target site located at $\vec{R} = (L_1 a, L_2 a, ..., L_d a)$, where $L_i$ is the number of lattice sites along the $i$-th dimension. Give the solution in the continuous limit as $a \rightarrow 0$, using a Green's function approach.</question>`
+
+**Critique:**
+
+*   **Guideline 7 (All assumptions stated, variables defined):** **FAIL.** The definition of the probabilities $p$, $q$, and $n$ for the biased random walk is highly ambiguous and likely ill-posed for a standard hypercubic lattice.
+    *   "a probability $p$ to move in the positive direction along *any* axis" typically means that each of the $d$ positive axial directions has a probability $p$. Similarly for $q$. This would mean a total probability of $d \cdot p$ for positive moves and $d \cdot q$ for negative moves.
+    *   The equation `p+q + (2d-2)n = 1` implies that $p$ and $q$ are *per-direction* probabilities for *one specific* positive and *one specific* negative direction, respectively. What about the other $d-1$ positive directions and $d-1$ negative directions? The term `(2d-2)n` is particularly confusing; "other available sites" is vague. On a hypercubic lattice, moves are usually limited to $2d$ nearest neighbors. This definition of movement probabilities is crucial for correctly deriving the drift velocity and diffusion tensor in the continuum limit, and as stated, it's unclear.
+
+*   **Guideline 9 (No hints):** **FAIL.** Explicitly stating `using a Green's function approach` is a direct hint regarding the solution method. This violates the guideline "no hints should be provided".
+
+*   **Other Guidelines:**
+    *   **Guideline 1, 2, 3, 4, 5, 8, 10, 11:** Excellent. If the probability definition were clarified, this would be a very challenging and unique problem. It demands a symbolic expression, multi-step and advanced reasoning (biased diffusion, resetting, Green's function), and formatting is correct.
+
+**Actionable Feedback:**
+*   **Crucially, clarify the definition of the biased probabilities ($p, q, n$).** Clearly state how the particle moves. For example, "The particle moves one lattice spacing along each axis $i$ with probability $P_i^+$ in the positive direction and $P_i^-$ in the negative direction. Assume $P_i^+ = p$ and $P_i^- = q$ for all $i$. The remaining probability $1 - \sum_i (P_i^+ + P_i^-)$ corresponds to the particle remaining at its current position." Or, if $p$ is the probability to choose any of the $d$ positive axes, etc.
+*   **Remove the hint:** Delete "using a Green's function approach."
+=== Turn 1: Author refines questions ===
+```python
+def refine_questions(questions):
+    refined_questions = []
+    for i, question in enumerate(questions):
+        if i == 0: # Question 1: MFPT to Spherical Boundary with Resetting
+            refined_questions.append(question) # No changes needed
+
+        elif i == 1: # Question 2: Exact MFPT on Lattice and Large r Limit - SPLIT INTO TWO
+            # Split Question 2 into two separate questions:
+            # Part 1: Calculate the exact MFPT, T_d(r)
+            refined_questions.append("<question>A particle undergoes diffusion on a $d$-dimensional hypercubic lattice with lattice spacing $a$. The particle is subject to stochastic resetting to the origin at a rate $r$. Calculate the exact MFPT, $T_d(r)$, for the particle to reach a target site located at a Manhattan distance of $L$ lattice sites from the origin. Assume that the particle starts at the origin.</question>")
+
+            # Part 2: Universal limiting value for nearest neighbor in large r limit
+            refined_questions.append("<question>A particle undergoes diffusion on a $d$-dimensional hypercubic lattice with lattice spacing $a$. The particle is subject to stochastic resetting to the origin at a rate $r$.  In the limit of very large $r$ (i.e., $r \rightarrow \infty$), what is the limiting value of the MFPT, $T_d(r)$, when the target is the nearest neighbor of the initial position? Assume the particle starts at the origin, and the target is at a Manhattan distance of 1 lattice site.</question>")
+
+        elif i == 2: # Question 3: Optimal Resetting Rate Asymptotics - DEFINE TARGET LOCATION
+            refined_questions.append("<question>Consider a diffusing particle on a $d$-dimensional lattice with lattice spacing $a$. The particle is stochastically reset to the origin at a rate $r$. Assume that for a target location at a Manhattan distance $L$ from the origin, an optimal resetting rate $r^*$ exists that minimizes the MFPT. Investigate the large dimension asymptotics of this optimal resetting rate, $r^*$, as $d \rightarrow \infty$. Specifically, derive a leading-order expression for $r^*$ as a function of $d$, assuming a mean-field approximation is valid. Assume the diffusion coefficient $D$ is constant.</question>")
+
+        elif i == 3: # Question 4: MFPT to Origin in 1D with Resetting - ADD A POTENTIAL AND REMOVE REDUNDANCY
+            refined_questions.append("<question>A particle diffuses on a one-dimensional lattice with lattice spacing $a$. It starts at position $R_0 > 0$ and is reset to the origin with rate $r$.  Additionally, the particle experiences a linear potential $V(x) = kx$. Using a continuous space approximation, determine the behavior of the MFPT, $T(R_0, r)$, to reach the origin as a function of the resetting rate $r$, the initial position $R_0$, and the potential strength $k$. Assume that the diffusion coefficient is $D$ and consider the continuous limit as $a \rightarrow 0$.</question>")
+
+        elif i == 4: # Question 5: Biased Random Walk with Resetting (Green's Function Approach) - CLARIFY PROBABILITIES AND REMOVE HINT
+            refined_questions.append("<question>Consider a biased random walker on a $d$-dimensional hypercubic lattice. The walker moves one lattice spacing along each axis $i$ with probability $P_i^+$ in the positive direction and $P_i^-$ in the negative direction. Assume $P_i^+ = p > 0$ and $P_i^- = q > 0$ for all $i$. The probability to stay at the same location is given by $n = 1 - \sum_{i=1}^d (P_i^+ + P_i^-)$. The lattice spacing is $a$. Additionally, the walker is subject to stochastic resetting to the origin with rate $r$. Derive an expression for the MFPT to a target site located at $\\vec{R} = (L_1 a, L_2 a, ..., L_d a)$, where $L_i$ is the number of lattice sites along the $i$-th dimension. Give the solution in the continuous limit as $a \rightarrow 0$.</question>")
+
+    return refined_questions
+
+questions = [
+    "<question>Consider a random walker on a $d$-dimensional hypercubic lattice with lattice spacing $a$. The walker starts at the origin and diffuses with a diffusion coefficient $D$. At a constant rate $r$, the walker is reset to its initial position (the origin). Assume the walker's position is updated according to a Markov chain model. In the continuum limit, where $a \rightarrow 0$, derive an expression for the mean first passage time (MFPT) to a spherical absorbing boundary of radius $R$ centered at the origin, denoted as $T(R, r, D)$. You may assume $R >> a$, such that a continuous space approximation is valid.</question>",
+    "<question>A particle undergoes diffusion on a $d$-dimensional hypercubic lattice with lattice spacing $a$. The particle is subject to stochastic resetting to the origin at a rate $r$. Calculate the exact MFPT, $T_d(r)$, for the particle to reach a target site located at a Manhattan distance of $L$ lattice sites from the origin. Assume that the particle starts at the origin. In the limit of very large $r$ (i.e., $r \rightarrow \infty$), what is the universal limiting value of $T_d(r)$ when the target is the nearest neighbor of the initial position?</question>",
+    "<question>Consider a diffusing particle on a $d$-dimensional lattice with lattice spacing $a$. The particle is stochastically reset to the origin at a rate $r$. Assume that for a specific target location, an optimal resetting rate $r^*$ exists that minimizes the MFPT. Investigate the large dimension asymptotics of this optimal resetting rate, $r^*$, as $d \rightarrow \infty$. Specifically, derive a leading-order expression for $r^*$ as a function of $d$, assuming a mean-field approximation is valid. Assume the diffusion coefficient $D$ is constant.</question>",
+    "<question>A particle diffuses on a one-dimensional lattice with lattice spacing $a$. It starts at position $R_0 > 0$ and is reset to the origin with rate $r$. Using a continuous space approximation, determine the behavior of the MFPT, $T(R_0, r)$, to reach the origin as a function of the resetting rate $r$ and the initial position $R_0$. Assume that the diffusion coefficient is $D$. Find the expression of $T(R_0, r)$ in the continuous limit, assuming $a \rightarrow 0$.</question>",
+    "<question>Consider a biased random walker on a $d$-dimensional hypercubic lattice. The walker has a probability $p > 1/(2d)$ to move in the positive direction along any axis and a probability $q < 1/(2d)$ to move in the negative direction, with $p+q + (2d-2)n = 1$, where $n$ is the probability to move to other available sites. The lattice spacing is $a$. Additionally, the walker is subject to stochastic resetting to the origin with rate $r$. Derive an expression for the MFPT to a target site located at $\\vec{R} = (L_1 a, L_2 a, ..., L_d a)$, where $L_i$ is the number of lattice sites along the $i$-th dimension. Give the solution in the continuous limit as $a \rightarrow 0$, using a Green's function approach.</question>"
+]
+
+refined_questions = refine_questions(questions)
+
+for i, refined_question in enumerate(refined_questions):
+    print(f"{i+1}. {refined_question}")
+```
+
+```
+1. <question>Consider a random walker on a $d$-dimensional hypercubic lattice with lattice spacing $a$. The walker starts at the origin and diffuses with a diffusion coefficient $D$. At a constant rate $r$, the walker is reset to its initial position (the origin). Assume the walker's position is updated according to a Markov chain model. In the continuum limit, where $a \rightarrow 0$, derive an expression for the mean first passage time (MFPT) to a spherical absorbing boundary of radius $R$ centered at the origin, denoted as $T(R, r, D)$. You may assume $R >> a$, such that a continuous space approximation is valid.</question>
+2. <question>A particle undergoes diffusion on a $d$-dimensional hypercubic lattice with lattice spacing $a$. The particle is subject to stochastic resetting to the origin at a rate $r$. Calculate the exact MFPT, $T_d(r)$, for the particle to reach a target site located at a Manhattan distance of $L$ lattice sites from the origin. Assume that the particle starts at the origin.</question>
+3. <question>A particle undergoes diffusion on a $d$-dimensional hypercubic lattice with lattice spacing $a$. The particle is subject to stochastic resetting to the origin at a rate $r$.  In the limit of very large $r$ (i.e., $r \rightarrow \infty$), what is the limiting value of the MFPT, $T_d(r)$, when the target is the nearest neighbor of the initial position? Assume the particle starts at the origin, and the target is at a Manhattan distance of 1 lattice site.</question>
+4. <question>Consider a diffusing particle on a $d$-dimensional lattice with lattice spacing $a$. The particle is stochastically reset to the origin at a rate $r$. Assume that for a target location at a Manhattan distance $L$ from the origin, an optimal resetting rate $r^*$ exists that minimizes the MFPT. Investigate the large dimension asymptotics of this optimal resetting rate, $r^*$, as $d \rightarrow \infty$. Specifically, derive a leading-order expression for $r^*$ as a function of $d$, assuming a mean-field approximation is valid. Assume the diffusion coefficient $D$ is constant.</question>
+5. <question>A particle diffuses on a one-dimensional lattice with lattice spacing $a$. It starts at position $R_0 > 0$ and is reset to the origin with rate $r$.  Additionally, the particle experiences a linear potential $V(x) = kx$. Using a continuous space approximation, determine the behavior of the MFPT, $T(R_0, r)$, to reach the origin as a function of the resetting rate $r$, the initial position $R_0$, and the potential strength $k$. Assume that the diffusion coefficient is $D$ and consider the continuous limit as $a \rightarrow 0$.</question>
+6. <question>Consider a biased random walker on a $d$-dimensional hypercubic lattice. The walker moves one lattice spacing along each axis $i$ with probability $P_i^+$ in the positive direction and $P_i^-$ in the negative direction. Assume $P_i^+ = p > 0$ and $P_i^- = q > 0$ for all $i$. The probability to stay at the same location is given by $n = 1 - \sum_{i=1}^d (P_i^+ + P_i^-)$. The lattice spacing is $a$. Additionally, the walker is subject to stochastic resetting to the origin with rate $r$. Derive an expression for the MFPT to a target site located at $\vec{R} = (L_1 a, L_2 a, ..., L_d a)$, where $L_i$ is the number of lattice sites along the $i$-th dimension. Give the solution in the continuous limit as $a \rightarrow 0$.</question>
+```
+=== Turn 1: Critic feedback ===
+The refined questions show significant improvement and largely adhere to the provided guidelines. Here's a detailed critique of each question:
+
+**Overall Assessment:**
+The `refine_questions` function has effectively addressed the initial issues, especially by splitting multipart questions, adding relevant physical details (like potential), clarifying ambiguous parameters, and removing hints. The formatting is consistent and correct. All questions now require multi-step reasoning and explore novel scenarios in the context of diffusion with resetting.
+
+Here's a breakdown for each specific question:
+
+---
+
+**1. Question 1 (Original Question 1: MFPT to Spherical Boundary with Resetting)**
+
+*   **Critique:** This question is excellent. It clearly defines the physical scenario, all variables are specified, the target quantity is singular, and it requires a sophisticated understanding of diffusion with resetting in a continuous space, likely involving boundary conditions and solving a partial differential equation. It meets all the guidelines.
+
+---
+
+**2. Question 2 (New Question, split from Original Question 2: Exact MFPT on Lattice)**
+
+*   **Critique:** This is a very good improvement, as it addresses the "multipart" issue of the original Q2. It now focuses solely on calculating the exact MFPT on a lattice for a specific target type (Manhattan distance). This requires knowledge of discrete random walks and incorporating resetting, which is a non-trivial task. All guidelines are met.
+
+---
+
+**3. Question 3 (New Question, split from Original Question 2: Universal Limiting Value for Large $r$)**
+
+*   **Critique:** Another excellent improvement from the split. This question specifically targets the behavior of MFPT at very high resetting rates, which often reveals a simpler, universal limit related to the first step time or local properties. It tests a specific conceptual understanding rather than just calculation. All guidelines are met.
+
+---
+
+**4. Question 4 (Original Question 3: Optimal Resetting Rate Asymptotics)**
+
+*   **Critique:** This question is very strong. It introduces the concept of an optimal resetting rate and then asks for its asymptotic behavior in high dimensions under a mean-field approximation. This requires multiple levels of analytical thinking: deriving MFPT, optimizing it, and then performing asymptotic analysis. The addition of "target location at a Manhattan distance $L$" clarifies the scenario. All guidelines are met.
+
+---
+
+**5. Question 5 (Original Question 4: MFPT to Origin in 1D with Resetting and Potential)**
+
+*   **Critique:** This question is a significant improvement. Adding a linear potential makes the problem considerably more complex and realistic, moving beyond a simple diffusion equation to one with a drift term (Fokker-Planck type). This enhances the "uniqueness" and "multi-step reasoning" aspects. All variables are clearly defined, and the continuous limit is specified. All guidelines are met.
+
+---
+
+**6. Question 6 (Original Question 5: Biased Random Walk with Resetting)**
+
+*   **Critique:** This question is excellent. The clarification of the probabilities ($P_i^+ = p > 0$, $P_i^- = q > 0$, and the definition of $n$) is crucial for problem solvability and clarity. Removing the "Green's function approach" hint adheres strictly to the "no hints" guideline. This problem requires translating a biased lattice walk into a continuous diffusion with drift, incorporating resetting, and solving for MFPT. All guidelines are met.
+
+---
+
+**Summary of Strengths:**
+
+*   **Adherence to "No Hints":** All hints have been successfully removed.
+*   **Resolution of "Multipart" Questions:** The original Question 2 was effectively split into two distinct, well-posed questions.
+*   **Enhanced Complexity and Uniqueness:** Questions have been made more challenging and less "textbook" by adding potentials, considering specific limits, or incorporating bias.
+*   **Clarity and Rigor:** All assumptions and variables are explicitly defined for each question, and the phrasing is concise and professional.
+*   **Formatting:** LaTeX formatting is correctly applied throughout for mathematical expressions and variables.
+
+**Minor or No Issues Remaining:**
+
+*   No significant issues were identified across the refined questions. They are all very well-formulated and meet the high standards set by the guidelines.
+=== Turn 2: Author refines questions ===
+Okay, I have reviewed the refined questions and your feedback, and I agree that they are much improved. I have no further modifications to suggest. The questions are well-defined, challenging, and relevant to the topic of diffusion and resetting.  The numbered list with `<question>` tags is also correctly formatted. The refined questions are excellent as is.
+
+```
+1. <question>Consider a random walker on a $d$-dimensional hypercubic lattice with lattice spacing $a$. The walker starts at the origin and diffuses with a diffusion coefficient $D$. At a constant rate $r$, the walker is reset to its initial position (the origin). Assume the walker's position is updated according to a Markov chain model. In the continuum limit, where $a \rightarrow 0$, derive an expression for the mean first passage time (MFPT) to a spherical absorbing boundary of radius $R$ centered at the origin, denoted as $T(R, r, D)$. You may assume $R >> a$, such that a continuous space approximation is valid.</question>
+2. <question>A particle undergoes diffusion on a $d$-dimensional hypercubic lattice with lattice spacing $a$. The particle is subject to stochastic resetting to the origin at a rate $r$. Calculate the exact MFPT, $T_d(r)$, for the particle to reach a target site located at a Manhattan distance of $L$ lattice sites from the origin. Assume that the particle starts at the origin.</question>
+3. <question>A particle undergoes diffusion on a $d$-dimensional hypercubic lattice with lattice spacing $a$. The particle is subject to stochastic resetting to the origin at a rate $r$.  In the limit of very large $r$ (i.e., $r \rightarrow \infty$), what is the limiting value of the MFPT, $T_d(r)$, when the target is the nearest neighbor of the initial position? Assume the particle starts at the origin, and the target is at a Manhattan distance of 1 lattice site.</question>
+4. <question>Consider a diffusing particle on a $d$-dimensional lattice with lattice spacing $a$. The particle is stochastically reset to the origin at a rate $r$. Assume that for a target location at a Manhattan distance $L$ from the origin, an optimal resetting rate $r^*$ exists that minimizes the MFPT. Investigate the large dimension asymptotics of this optimal resetting rate, $r^*$, as $d \rightarrow \infty$. Specifically, derive a leading-order expression for $r^*$ as a function of $d$, assuming a mean-field approximation is valid. Assume the diffusion coefficient $D$ is constant.</question>
+5. <question>A particle diffuses on a one-dimensional lattice with lattice spacing $a$. It starts at position $R_0 > 0$ and is reset to the origin with rate $r$.  Additionally, the particle experiences a linear potential $V(x) = kx$. Using a continuous space approximation, determine the behavior of the MFPT, $T(R_0, r)$, to reach the origin as a function of the resetting rate $r$, the initial position $R_0$, and the potential strength $k$. Assume that the diffusion coefficient is $D$ and consider the continuous limit as $a \rightarrow 0$.</question>
+6. <question>Consider a biased random walker on a $d$-dimensional hypercubic lattice. The walker moves one lattice spacing along each axis $i$ with probability $P_i^+$ in the positive direction and $P_i^-$ in the negative direction. Assume $P_i^+ = p > 0$ and $P_i^- = q > 0$ for all $i$. The probability to stay at the same location is given by $n = 1 - \sum_{i=1}^d (P_i^+ + P_i^-)$. The lattice spacing is $a$. Additionally, the walker is subject to stochastic resetting to the origin with rate $r$. Derive an expression for the MFPT to a target site located at $\vec{R} = (L_1 a, L_2 a, ..., L_d a)$, where $L_i$ is the number of lattice sites along the $i$-th dimension. Give the solution in the continuous limit as $a \rightarrow 0$.</question>
+```
+=== Final questions generated ===

@@ -1,0 +1,174 @@
+=== Turn 0: Author generates questions ===
+Here are some novel university-level physics questions:
+
+1.  <question>Consider a Carnot engine operating between two heat reservoirs at temperatures $T_h$ and $T_c$, with $T_h > T_c$. Suppose the working substance of the Carnot engine is a gas described by an equation of state that yields a non-constant heat capacity $C_V(T) = a + bT$, where $a$ and $b$ are positive constants. Calculate the efficiency $\eta$ of this Carnot engine in terms of $T_h$, $T_c$, $a$, and $b$.</question>
+
+2.  <question>A particle of mass $m$ is constrained to move on a smooth, pliable surface defined by $z = f(x, y)$. The surface is embedded in a uniform gravitational field $\vec{g} = -g\hat{z}$. Determine the Hamiltonian $H$ for the particle's motion in terms of $x$, $y$, $\dot{x}$, and $\dot{y}$.</question>
+
+3.  <question>Consider a three-dimensional Carnot group $G$ with a Lie algebra $\mathfrak{g}$ spanned by vector fields $X_1, X_2, X_3$ such that $[X_1, X_2] = X_3$ and all other brackets are zero. A sub-Riemannian metric is defined by declaring $X_1$ and $X_2$ orthonormal. Calculate the growth vector and the Hausdorff dimension $Q$ of this Carnot group.</question>
+
+4.  <question>A Lipschitz function $f: \mathbb{R}^n \to \mathbb{R}$ is defined such that $|f(x) - f(y)| \leq L||x - y||$ for all $x, y \in \mathbb{R}^n$, where $L$ is the Lipschitz constant. Consider a level set $E = \{x \in \mathbb{R}^n : f(x) = 0\}$. Assuming $E$ is non-empty, determine an upper bound for the measure-theoretic density $\Theta^{*n}(E, x)$ of $E$ at any point $x \in E$.</question>
+
+5.  <question>A perfectly pliable string of length $L$ and uniform linear mass density $\mu$ is fixed at both ends. The string is placed in a uniform magnetic field $B$ directed along its length. What is the lowest frequency $f$ at which the string will resonate transversely?</question>
+
+6.  <question>Consider a system of $N$ identical, non-interacting particles confined to a three-dimensional volume $V$. The particles obey the relativistic energy-momentum relation $E = \sqrt{p^2c^2 + m^2c^4}$, where $p$ is the momentum, $m$ is the mass, and $c$ is the speed of light. In the limit where $pc \gg mc^2$, calculate the equation of state (i.e., the relationship between pressure $P$, volume $V$, and temperature $T$) of this system.</question>
+
+7.  <question>A smooth map $F: M \to N$ between Riemannian manifolds $M$ and $N$ is given. Let $J(x)$ denote the Jacobian of $F$ at a point $x \in M$. Determine a general expression for the singular values of $J(x)$.</question>
+
+8.  <question>Consider a charged particle with charge $q$ and mass $m$ moving in a uniform magnetic field $\vec{B} = B\hat{z}$. Assume the particle's initial velocity is $\vec{v}(0) = v_0\hat{x}$. Calculate the average kinetic energy $\langle K \rangle$ of the particle over a complete cyclotron period $T = \frac{2\pi m}{qB}$.</question>
+
+9.  <question>A one-dimensional random walk starts at the origin. At each step, the walker moves either $+1$ or $-1$ with probabilities $p$ and $1-p$, respectively. After $n$ steps, what is the probability $P(X=k)$ that the walker is at position $k$, where $k$ is an integer between $-n$ and $n$, with the constraint that $n$ and $k$ have the same parity?</question>
+
+10. <question>A spherical capacitor consists of two concentric spherical conducting shells of radii $a$ and $b$, with $b>a$. The space between the shells is filled with a dielectric material whose permittivity varies with the radial distance $r$ as $\epsilon(r) = \epsilon_0 (1 + \frac{r}{a})$. Calculate the capacitance $C$ of this capacitor.</question>
+=== Turn 0: Critic feedback ===
+Here's a critique of each question against your guidelines:
+
+**General Feedback:**
+The questions cover a broad range of university-level physics and mathematical physics topics. However, several questions contain irrelevant or misleading information, violate the "single output" rule, or are too standard/conceptual to be considered "novel" or require "multi-step reasoning" in the way intended.
+
+---
+
+**1. Critique of Question 1:**
+The question provides a specific heat capacity $C_V(T) = a + bT$, which is irrelevant for calculating the efficiency of a Carnot engine. The efficiency of a Carnot engine depends *only* on the temperatures of the hot and cold reservoirs, $\eta = 1 - T_c/T_h$, regardless of the working substance. Including $C_V(T)$ makes the problem a "trick question" rather than a multi-step calculation based on the given parameters, potentially misleading students into complex, unnecessary derivations. This violates the spirit of "Concise and Relevant" (Guideline 5) as the extra information is distracting and serves no calculational purpose in a direct application of the Carnot theorem. It also arguably affects "Multi-Step Reasoning" (Guideline 7) if the intent was a direct calculation and not a conceptual test.
+
+**Actionable Feedback:** Remove the information about $C_V(T)$ or rephrase the question to explicitly require a derivation from thermodynamic principles *without* relying on the Carnot theorem's universality, which would then make the $C_V(T)$ information relevant.
+
+---
+
+**2. Critique of Question 2:**
+The term "pliable surface" is ambiguous and potentially misleading (Guideline 5). If it implies deformability, it's underspecified. If it means "smooth," it's redundant. More critically, a Hamiltonian $H$ is typically expressed in terms of generalized coordinates ($x, y$) and *generalized momenta* ($p_x, p_y$), not generalized velocities ($\dot{x}, \dot{y}$). The question asks for $H$ in terms of $x, y, \dot{x}, \dot{y}$, which is incorrect notation for the Hamiltonian function itself (Guideline 9). It should ask for $H$ in terms of $x, y, p_x, p_y$.
+
+**Actionable Feedback:** Replace "pliable" with "smooth" (if no deformation is implied) or clarify its meaning. Crucially, change the required output variables from $\dot{x}$, $\dot{y}$ to $p_x$, $p_y$ (or $p_1, p_2$).
+
+---
+
+**3. Critique of Question 3:**
+The question asks for two distinct outputs: "the growth vector *and* the Hausdorff dimension $Q$" (Guideline 4 & 10). This violates the "Single Output" guideline, which states that each question expects a single, unambiguous symbolic answer. While closely related, these are typically considered two separate quantities.
+
+**Actionable Feedback:** Split this into two separate questions, one asking for the growth vector and another for the Hausdorff dimension $Q$.
+
+---
+
+**4. Critique of Question 4:**
+This question is well-formulated and adheres to all guidelines. It tests a deep understanding of advanced real analysis/geometric measure theory concepts, requiring multi-step reasoning.
+
+**Actionable Feedback:** None.
+
+---
+
+**5. Critique of Question 5:**
+The problem statement about the magnetic field $\vec{B}$ being "directed along its length" is highly problematic (Guideline 5 & 9). For a magnetic field to affect the transverse resonance of a string, there would typically need to be a current flowing through the string, and the force ($I\vec{L} \times \vec{B}$) would need to be perpendicular to the string's motion. If $\vec{B}$ is along the string's length, and assuming no current or interaction specified, it will exert no force relevant to transverse motion. This renders the magnetic field information irrelevant, making it a distractor or indicating the problem is underspecified.
+
+**Actionable Feedback:** Either remove the magnetic field information entirely, or specify the presence and direction of a current through the string such that the magnetic field can exert a relevant force.
+
+---
+
+**6. Critique of Question 6:**
+The question is a well-formulated, standard textbook problem in statistical mechanics (Guideline 6). While it satisfies most criteria, it lacks "Originality" as it's a very common exercise often found in introductory statistical mechanics courses to illustrate relativistic limits.
+
+**Actionable Feedback:** To enhance originality, consider introducing a slightly more complex interaction, a different dimensionality, or a different type of relativistic particle if the goal is novelty.
+
+---
+
+**7. Critique of Question 7:**
+This question is well-formulated and adheres to all guidelines. It's a good advanced question testing the interplay between differential geometry and linear algebra.
+
+**Actionable Feedback:** None.
+
+---
+
+**8. Critique of Question 8:**
+This is a conceptual "trick question" (Guideline 6). The magnetic force does no work on a charged particle, meaning its kinetic energy remains constant throughout its motion. Therefore, the average kinetic energy is simply its instantaneous kinetic energy, which is determined by its initial velocity. While this technically leads to a symbolic answer, it does not require "Multi-Step Reasoning" (Guideline 7) in the sense of a complex calculation, but rather the application of a fundamental principle. It also lacks originality as it's a very common conceptual check.
+
+**Actionable Feedback:** Rephrase the question to require a more involved calculation (e.g., average *momentum* over a period, or kinetic energy in a combined electric and magnetic field), or acknowledge its conceptual nature by making it part of a larger problem.
+
+---
+
+**9. Critique of Question 9:**
+This is a classic and very common textbook problem for a one-dimensional random walk (Guideline 6). It lacks originality and might be too standard for "novel university-level physics questions." Additionally, the phrase "with the constraint that $n$ and $k$ have the same parity" is redundant information (Guideline 5 & 9). For a 1D random walk with steps $\pm 1$, it's an inherent property that the parity of the final position $k$ must match the parity of the number of steps $n$. If they don't match, the probability is simply zero. Including this as a "constraint" suggests it's an additional condition, rather than a fundamental outcome.
+
+**Actionable Feedback:** Remove the phrase "with the constraint that $n$ and $k$ have the same parity". To enhance originality, consider adding boundaries, a bias, or a different step size/distribution.
+
+---
+
+**10. Critique of Question 10:**
+This question is well-formulated and adheres to all guidelines. It's a good, non-trivial problem that requires multi-step reasoning and careful application of electrostatics principles with a variable dielectric.
+
+**Actionable Feedback:** None.
+=== Turn 1: Author refines questions ===
+Okay, here's the revised list of physics questions, incorporating the feedback provided. The goal is to make them more novel, less misleading, and better aligned with the intended difficulty level and guidelines.
+
+1.  <question>Consider a Carnot engine operating between two heat reservoirs at temperatures $T_h$ and $T_c$, with $T_h > T_c$. Suppose the working substance of the Carnot engine is a gas.  Determine the heat absorbed during the isothermal expansion at temperature $T_h$, assuming the equation of state is known. Express your answer in terms of $T_h$ and any relevant parameters from the equation of state.</question>
+
+2.  <question>A particle of mass $m$ is constrained to move on a smooth surface defined by $z = f(x, y)$. The surface is embedded in a uniform gravitational field $\vec{g} = -g\hat{z}$. Determine the Hamiltonian $H$ for the particle's motion in terms of $x$, $y$, $p_x$, and $p_y$, where $p_x$ and $p_y$ are the canonical momenta conjugate to $x$ and $y$, respectively.</question>
+
+3.  <question>Consider a three-dimensional Carnot group $G$ with a Lie algebra $\mathfrak{g}$ spanned by vector fields $X_1, X_2, X_3$ such that $[X_1, X_2] = X_3$ and all other brackets are zero. A sub-Riemannian metric is defined by declaring $X_1$ and $X_2$ orthonormal. Calculate the growth vector of this Carnot group.</question>
+
+4.  <question>A Lipschitz function $f: \mathbb{R}^n \to \mathbb{R}$ is defined such that $|f(x) - f(y)| \leq L||x - y||$ for all $x, y \in \mathbb{R}^n$, where $L$ is the Lipschitz constant. Consider a level set $E = \{x \in \mathbb{R}^n : f(x) = 0\}$. Assuming $E$ is non-empty, determine an upper bound for the measure-theoretic density $\Theta^{*n}(E, x)$ of $E$ at any point $x \in E$.</question>
+
+5.  <question>A perfectly pliable string of length $L$ and uniform linear mass density $\mu$ is fixed at both ends. The string is carrying a uniform current $I$ and is placed in a uniform magnetic field $\vec{B} = B\hat{y}$, where the string is aligned along the x-axis. What is the lowest frequency $f$ at which the string will resonate transversely?</question>
+
+6.  <question>Consider a system of $N$ identical, non-interacting particles confined to a three-dimensional volume $V$. The particles obey the relativistic energy-momentum relation $E = \sqrt{p^2c^2 + m^2c^4}$, where $p$ is the momentum, $m$ is the mass, and $c$ is the speed of light.  In the limit where $pc \gg mc^2$ and the particles are confined within a spherical cavity, derive an expression for the density of states $g(E)$ as a function of the energy, $E$.</question>
+
+7.  <question>A smooth map $F: M \to N$ between Riemannian manifolds $M$ and $N$ is given. Let $J(x)$ denote the Jacobian of $F$ at a point $x \in M$. Determine a general expression for the singular values of $J(x)$.</question>
+
+8.  <question>Consider a charged particle with charge $q$ and mass $m$ moving in a uniform magnetic field $\vec{B} = B\hat{z}$ and a uniform electric field $\vec{E} = E\hat{x}$. Assume the particle's initial velocity is $\vec{v}(0) = 0$. Calculate the average kinetic energy $\langle K \rangle$ of the particle over a period $T$ where the particle completes one full rotation in the x-y plane. (You may assume the electric field is weak enough that the particle completes at least one such rotation before drifting significantly in the y-direction).</question>
+
+9.  <question>A one-dimensional random walk starts at the origin. At each step, the walker moves either $+1$ or $-1$ with probabilities $p$ and $1-p$, respectively. After $n$ steps, what is the probability $P(X=k)$ that the walker is at position $k$, where $k$ is an integer between $-n$ and $n$?</question>
+
+10. <question>A spherical capacitor consists of two concentric spherical conducting shells of radii $a$ and $b$, with $b>a$. The space between the shells is filled with a dielectric material whose permittivity varies with the radial distance $r$ as $\epsilon(r) = \epsilon_0 (1 + \frac{r}{a})$. Calculate the capacitance $C$ of this capacitor.</question>
+=== Turn 1: Critic feedback ===
+Here's a critique of each question, focusing on adherence to your guidelines:
+
+1.  <question>Consider a Carnot engine operating between two heat reservoirs at temperatures $T_h$ and $T_c$, with $T_h > T_c$. Suppose the working substance of the Carnot engine is a gas. Determine the heat absorbed during the isothermal expansion at temperature $T_h$, assuming the equation of state is known. Express your answer in terms of $T_h$ and any relevant parameters from the equation of state.</question>
+    *   **Critique:** The question is incomplete. For a unique, solvable answer, a specific equation of state (e.g., ideal gas, van der Waals gas) must be *provided*, not just assumed to be "known." Without this, "relevant parameters from the equation of state" are undefined, making the question unsolvable for a specific symbolic result.
+
+2.  <question>A particle of mass $m$ is constrained to move on a smooth surface defined by $z = f(x, y)$. The surface is embedded in a uniform gravitational field $\vec{g} = -g\hat{z}$. Determine the Hamiltonian $H$ for the particle's motion in terms of $x$, $y$, $p_x$, and $p_y$, where $p_x$ and $p_y$ are the canonical momenta conjugate to $x$ and $y$, respectively.</question>
+    *   **Critique:** Well-posed and aligns with all guidelines. It requires multi-step reasoning (Lagrangian, canonical momenta, Legendre transform) and targets a clear symbolic expression.
+
+3.  <question>Consider a three-dimensional Carnot group $G$ with a Lie algebra $\mathfrak{g}$ spanned by vector fields $X_1, X_2, X_3$ such that $[X_1, X_2] = X_3$ and all other brackets are zero. A sub-Riemannian metric is defined by declaring $X_1$ and $X_2$ orthonormal. Calculate the growth vector of this Carnot group.</question>
+    *   **Critique:** Excellent. This is a highly original and non-trivial question from an advanced mathematical domain, requiring specific knowledge and calculation of the growth vector. It adheres to all guidelines.
+
+4.  <question>A Lipschitz function $f: \mathbb{R}^n \to \mathbb{R}$ is defined such that $|f(x) - f(y)| \leq L||x - y||$ for all $x, y \in \mathbb{R}^n$, where $L$ is the Lipschitz constant. Consider a level set $E = \{x \in \mathbb{R}^n : f(x) = 0\}$. Assuming $E$ is non-empty, determine an upper bound for the measure-theoretic density $\Theta^{*n}(E, x)$ of $E$ at any point $x \in E$.</question>
+    *   **Critique:** The notation and context for "measure-theoretic density $\Theta^{*n}(E, x)$" are problematic. For a level set $E$ of a Lipschitz function in $\mathbb{R}^n$, its $n$-dimensional Lebesgue measure is typically zero, making its $n$-dimensional density $0$. If the question intends to ask about the $(n-1)$-dimensional Hausdorff density (which is a known result for such sets), it must explicitly state this (e.g., $\Theta^{*(n-1)}(E,x)$ with respect to $\mathcal{H}^{n-1}$). As written, the question is either trivial (answer $0$) or underspecified in its intended measure.
+
+5.  <question>A perfectly pliable string of length $L$ and uniform linear mass density $\mu$ is fixed at both ends. The string is carrying a uniform current $I$ and is placed in a uniform magnetic field $\vec{B} = B\hat{y}$, where the string is aligned along the x-axis. What is the lowest frequency $f$ at which the string will resonate transversely?</question>
+    *   **Critique:** The physical setup regarding string tension and magnetic force is ambiguous. A uniform magnetic force perpendicular to the string's equilibrium position will deform it but does not directly constitute the longitudinal tension required for transverse wave propagation as implied by the standard wave speed formula. Without an explicitly stated initial tension, the concept of "resonate transversely" is ill-defined. Clarify the source of string tension or how the magnetic force modifies it.
+
+6.  <question>Consider a system of $N$ identical, non-interacting particles confined to a three-dimensional volume $V$. The particles obey the relativistic energy-momentum relation $E = \sqrt{p^2c^2 + m^2c^4}$, where $p$ is the momentum, $m$ is the mass, and $c$ is the speed of light. In the limit where $pc \gg mc^2$ and the particles are confined within a spherical cavity, derive an expression for the density of states $g(E)$ as a function of the energy, $E$.</question>
+    *   **Critique:** The phrase "derive an expression" violates guideline 3 and 11 ("Questions must not be proves or derivations"). It should be rephrased to "Determine an expression" or "Find an expression." Additionally, for calculating the bulk density of states $g(E)$, the specific shape of the "spherical cavity" is typically irrelevant and can be removed for conciseness unless a quantum mechanical treatment of boundary conditions is explicitly implied.
+
+7.  <question>A smooth map $F: M \to N$ between Riemannian manifolds $M$ and $N$ is given. Let $J(x)$ denote the Jacobian of $F$ at a point $x \in M$. Determine a general expression for the singular values of $J(x)$.</question>
+    *   **Critique:** This question is too definitional. A "general expression" for singular values is simply their definition (e.g., square roots of eigenvalues of $J(x)^*J(x)$). This doesn't require "multi-step reasoning" as typically intended for a calculation problem, but rather a restatement of a definition. To be more challenging, it should ask for a specific property or a relation involving the metric tensors beyond the basic definition.
+
+8.  <question>Consider a charged particle with charge $q$ and mass $m$ moving in a uniform magnetic field $\vec{B} = B\hat{z}$ and a uniform electric field $\vec{E} = E\hat{x}$. Assume the particle's initial velocity is $\vec{v}(0) = 0$. Calculate the average kinetic energy $\langle K \rangle$ of the particle over a period $T$ where the particle completes one full rotation in the x-y plane. (You may assume the electric field is weak enough that the particle completes at least one such rotation before drifting significantly in the y-direction).</question>
+    *   **Critique:** The parenthetical statement "(You may assume the electric field is weak enough that the particle completes at least one such rotation before drifting significantly in the y-direction)" functions as an explicit hint and violates guideline 11 ("no hints"). The problem is solvable exactly for the full cycloid motion without this simplification. Remove the hint.
+
+9.  <question>A one-dimensional random walk starts at the origin. At each step, the walker moves either $+1$ or $-1$ with probabilities $p$ and $1-p$, respectively. After $n$ steps, what is the probability $P(X=k)$ that the walker is at position $k$, where $k$ is an integer between $-n$ and $n$?</question>
+    *   **Critique:** This is a very standard textbook problem (a direct application of the binomial distribution) and violates guideline 6 ("Avoid rewording standard textbook problems"). It lacks originality and the multi-step reasoning expected for a non-trivial assessment.
+
+10. <question>A spherical capacitor consists of two concentric spherical conducting shells of radii $a$ and $b$, with $b>a$. The space between the shells is filled with a dielectric material whose permittivity varies with the radial distance $r$ as $\epsilon(r) = \epsilon_0 (1 + \frac{r}{a})$. Calculate the capacitance $C$ of this capacitor.</question>
+    *   **Critique:** Well-posed and aligns with all guidelines. The varying permittivity makes this a non-trivial problem requiring integral calculus, fitting the "multi-step reasoning" requirement.
+=== Turn 2: Author refines questions ===
+Okay, here's the refined list of physics questions, incorporating the feedback.
+
+1.  <question>Consider a Carnot engine operating between two heat reservoirs at temperatures $T_h$ and $T_c$, with $T_h > T_c$. Suppose the working substance of the Carnot engine is one mole of an ideal gas. Determine the heat absorbed during the isothermal expansion at temperature $T_h$, assuming the initial and final volumes during the isothermal expansion are $V_1$ and $V_2$ respectively.</question>
+
+2.  <question>A particle of mass $m$ is constrained to move on a smooth surface defined by $z = f(x, y)$. The surface is embedded in a uniform gravitational field $\vec{g} = -g\hat{z}$. Determine the Hamiltonian $H$ for the particle's motion in terms of $x$, $y$, $p_x$, and $p_y$, where $p_x$ and $p_y$ are the canonical momenta conjugate to $x$ and $y$, respectively.</question>
+
+3.  <question>Consider a three-dimensional Carnot group $G$ with a Lie algebra $\mathfrak{g}$ spanned by vector fields $X_1, X_2, X_3$ such that $[X_1, X_2] = X_3$ and all other brackets are zero. A sub-Riemannian metric is defined by declaring $X_1$ and $X_2$ orthonormal. Calculate the growth vector of this Carnot group.</question>
+
+4.  <question>A Lipschitz function $f: \mathbb{R}^n \to \mathbb{R}$ is defined such that $|f(x) - f(y)| \leq L||x - y||$ for all $x, y \in \mathbb{R}^n$, where $L$ is the Lipschitz constant. Consider the level set $E = \{x \in \mathbb{R}^n : f(x) = 0\}$. Assuming $E$ is non-empty, determine an upper bound for the $(n-1)$-dimensional Hausdorff density $\Theta^{*(n-1)}(E, x)$ of $E$ at any point $x \in E$ with respect to the $(n-1)$-dimensional Hausdorff measure $\mathcal{H}^{n-1}$.</question>
+
+5.  <question>A perfectly pliable string of length $L$ and uniform linear mass density $\mu$ is fixed at both ends and is under tension $T$. The string is carrying a uniform current $I$ and is placed in a uniform magnetic field $\vec{B} = B\hat{y}$, where the string is aligned along the x-axis. Assuming the magnetic force is small compared to the tension, determine the approximate change in the lowest resonant frequency $f$ of the string due to the magnetic field.</question>
+
+6.  <question>Consider a system of $N$ identical, non-interacting particles confined to a three-dimensional volume $V$. The particles obey the relativistic energy-momentum relation $E = \sqrt{p^2c^2 + m^2c^4}$, where $p$ is the momentum, $m$ is the mass, and $c$ is the speed of light.  In the limit where $pc \gg mc^2$, find an expression for the density of states $g(E)$ as a function of the energy, $E$.</question>
+
+7.  <question>A smooth map $F: M \to N$ between Riemannian manifolds $M$ and $N$ is given. Let $J(x)$ denote the Jacobian of $F$ at a point $x \in M$, and let $g_M$ and $g_N$ be the metric tensors on $M$ and $N$, respectively. If $F$ is an isometric embedding, what are the singular values of $J(x)$?</question>
+
+8.  <question>Consider a charged particle with charge $q$ and mass $m$ moving in a uniform magnetic field $\vec{B} = B\hat{z}$ and a uniform electric field $\vec{E} = E\hat{x}$. Assume the particle's initial velocity is $\vec{v}(0) = 0$. Calculate the average kinetic energy $\langle K \rangle$ of the particle over a period $T$ where the particle completes one full rotation in the x-y plane.</question>
+
+9.  <question>Consider a Markov chain with three states, labeled 1, 2, and 3. The transition probabilities are given by $P_{12} = 1/2$, $P_{13} = 1/2$, $P_{21} = 1/3$, $P_{23} = 2/3$, and $P_{31} = 1/4$, $P_{32} = 3/4$. If the system starts in state 1, what is the probability that the system is in state 3 after two steps?</question>
+
+10. <question>A spherical capacitor consists of two concentric spherical conducting shells of radii $a$ and $b$, with $b>a$. The space between the shells is filled with a dielectric material whose permittivity varies with the radial distance $r$ as $\epsilon(r) = \epsilon_0 (1 + \frac{r}{a})$. Calculate the capacitance $C$ of this capacitor.</question>
+=== Final questions generated ===

@@ -1,0 +1,287 @@
+=== Turn 0: Author generates questions ===
+Here are some novel undergraduate-level biology questions based on your specifications:
+
+<question>A researcher is performing immunohistochemistry (IHC) on a series of endometrial tissue samples. They observe that a region containing 100 epithelial cells in a proliferative phase sample displays strong PAX2 staining, with an average staining intensity score of 3 (on a scale of 0-3, with 0 being no staining and 3 being strong staining). In a subsequent endometrioid adenocarcinoma sample, a similar region containing 100 epithelial cells from the same patient shows a significantly reduced PAX2 staining intensity, scoring an average of 0.5. Assuming the initial PAX2 protein concentration in the proliferative phase is 1.5 $\\mu$g/cell, and the IHC staining intensity is directly proportional to the PAX2 protein concentration, what is the estimated PAX2 protein concentration per cell in the endometrioid adenocarcinoma sample, in $\\mu$g/cell?
+</question>
+
+<question>A pathologist is analyzing PAX2 expression in a cohort of 500 endometrial cancer samples using IHC. Based on previous studies, they hypothesize that the mean PAX2 staining intensity in well-differentiated tumors will be significantly higher than in poorly differentiated tumors. They assign a differentiation grade (1-3, with 1 being well-differentiated and 3 being poorly differentiated) to each tumor based on histological analysis. After staining and scoring, the following data is obtained:
+Well-differentiated (Grade 1, n=150): Mean PAX2 intensity = 2.5
+Moderately differentiated (Grade 2, n=200): Mean PAX2 intensity = 1.8
+Poorly differentiated (Grade 3, n=150): Mean PAX2 intensity = 0.9
+Calculate the overall mean PAX2 staining intensity across all 500 samples.</question>
+
+<question>In a research study investigating the role of PAX2 in kidney development, embryonic kidney tissue sections are stained with an anti-PAX2 antibody using IHC. A specific region of interest containing 50 cells shows an average PAX2 staining intensity of 2.0 (on a scale of 0-3). To quantify the expression, the researchers use image analysis software. If the software assigns each cell an intensity value equivalent to its staining score, what is the total PAX2 intensity score for this specific region of interest? </question>
+
+<question>A research team is investigating the correlation between PAX2 expression and tumor stage in a set of 200 ovarian cancer samples. IHC analysis reveals that 80 tumors are stage I/II, and 120 are stage III/IV. The average PAX2 staining intensity in the stage I/II tumors is 2.1, while in the stage III/IV tumors, it is 1.4. Calculate the difference in average PAX2 staining intensity between the two groups.</question>
+
+<question>A lab is optimizing their PAX2 IHC protocol for consistency and reproducibility. They run IHC on 10 control samples (known PAX2 positive expression), obtaining the following PAX2 staining scores (on a scale of 0-3): 2.5, 2.7, 2.3, 2.8, 2.6, 2.4, 2.9, 2.2, 2.7, 2.5. Calculate the standard deviation of these PAX2 staining scores.
+</question>
+=== Turn 0: Critic feedback ===
+Here's a critique of each question against your guidelines, with actionable feedback:
+
+---
+
+**Question 1:**
+<question>A researcher is performing immunohistochemistry (IHC) on a series of endometrial tissue samples. They observe that a region containing 100 epithelial cells in a proliferative phase sample displays strong PAX2 staining, with an average staining intensity score of 3 (on a scale of 0-3, with 0 being no staining and 3 being strong staining). In a subsequent endometrioid adenocarcinoma sample, a similar region containing 100 epithelial cells from the same patient shows a significantly reduced PAX2 staining intensity, scoring an average of 0.5. Assuming the initial PAX2 protein concentration in the proliferative phase is 1.5 $\mu$g/cell, and the IHC staining intensity is directly proportional to the PAX2 protein concentration, what is the estimated PAX2 protein concentration per cell in the endometrioid adenocarcinoma sample, in $\mu$g/cell?
+</question>
+
+**Critique:**
+*   **Guideline 1 (Biology Scenario):** **Pass.** Excellent, real-world biological scenario.
+*   **Guideline 2 (Single/Numerical Answer):** **Pass.** Seeks a single numerical answer.
+*   **Guideline 3 (Multi-Step Reasoning):** **Pass.** Requires setting up a proportion and solving, which is a multi-step calculation involving conceptual understanding of proportionality in a biological context.
+*   **Guideline 4 (Avoid How-based):** **Pass.** It's a problem to solve, not a definition.
+*   **Guideline 5 (Unique):** **Pass.** Novel application of proportionality in an IHC context.
+*   **Guideline 6 (Single Solution):** **Pass.** Yields one correct numerical answer.
+*   **Guideline 7 (Rigorous, Concise Phrasing):** **Pass.** Clear and professional language.
+*   **Guideline 9 (Units, Symbols):** **Pass.** Consistent units and correct LaTeX for $\mu$g/cell.
+*   **Guideline 10 (Not Multipart):** **Pass.** Focuses on a single target quantity.
+*   **Guideline 11 (LaTeX Syntax):** **Pass.** Correct use of `$...$`.
+
+**Actionable Feedback:**
+*   **Minor Improvement:** The mention of "100 epithelial cells" in each region is extraneous information that does not affect the per-cell concentration calculation. While sometimes intentional for distractors, here it simply adds words without adding complexity. Consider removing it for conciseness unless it's intended to check for understanding of per-cell vs. total concentration (which isn't asked for).
+
+---
+
+**Question 2:**
+<question>A pathologist is analyzing PAX2 expression in a cohort of 500 endometrial cancer samples using IHC. Based on previous studies, they hypothesize that the mean PAX2 staining intensity in well-differentiated tumors will be significantly higher than in poorly differentiated tumors. They assign a differentiation grade (1-3, with 1 being well-differentiated and 3 being poorly differentiated) to each tumor based on histological analysis. After staining and scoring, the following data is obtained:
+Well-differentiated (Grade 1, n=150): Mean PAX2 intensity = 2.5
+Moderately differentiated (Grade 2, n=200): Mean PAX2 intensity = 1.8
+Poorly differentiated (Grade 3, n=150): Mean PAX2 intensity = 0.9
+Calculate the overall mean PAX2 staining intensity across all 500 samples.</question>
+
+**Critique:**
+*   **Guideline 1 (Biology Scenario):** **Pass.** Excellent, relevant biological scenario involving cancer pathology and IHC.
+*   **Guideline 2 (Single/Numerical Answer):** **Pass.** Seeks a single numerical answer.
+*   **Guideline 3 (Multi-Step Reasoning):** **Pass.** Requires calculating a weighted average, which involves multiple arithmetic steps (multiplication and addition followed by division). This is a good application of a quantitative concept to biological data.
+*   **Guideline 4 (Avoid How-based):** **Pass.** It's a problem to solve.
+*   **Guideline 5 (Unique):** **Pass.** While weighted average is a common statistical concept, its application here is specific and novel within a biological context.
+*   **Guideline 6 (Single Solution):** **Pass.** Yields one correct numerical answer.
+*   **Guideline 7 (Rigorous, Concise Phrasing):** **Pass.** Clear and professional language.
+*   **Guideline 9 (Units, Symbols):** **Pass.** Units are implicit (intensity score), which is acceptable.
+*   **Guideline 10 (Not Multipart):** **Pass.** Focuses on a single target quantity.
+*   **Guideline 11 (LaTeX Syntax):** **Pass.** Correctly formatted.
+
+**Actionable Feedback:**
+*   **Overall:** This question is very well-designed and meets all specified criteria. No significant improvements needed.
+
+---
+
+**Question 3:**
+<question>In a research study investigating the role of PAX2 in kidney development, embryonic kidney tissue sections are stained with an anti-PAX2 antibody using IHC. A specific region of interest containing 50 cells shows an average PAX2 staining intensity of 2.0 (on a scale of 0-3). To quantify the expression, the researchers use image analysis software. If the software assigns each cell an intensity value equivalent to its staining score, what is the total PAX2 intensity score for this specific region of interest? </question>
+
+**Critique:**
+*   **Guideline 1 (Biology Scenario):** **Pass.** Good biological context.
+*   **Guideline 2 (Single/Numerical Answer):** **Pass.** Seeks a single numerical answer.
+*   **Guideline 3 (Multi-Step Reasoning):** **Fail.** This is a single-step multiplication (average * count). It lacks the multi-step reasoning or application of multiple distinct biological principles expected for an undergraduate level problem. It's too simplistic.
+*   **Guideline 4 (Avoid How-based):** **Pass.** It's a problem to solve.
+*   **Guideline 5 (Unique):** **Fail.** The core calculation (total = average * count) is a very basic arithmetic problem, not particularly novel or conceptually rich for an undergraduate biology context.
+*   **Guideline 6 (Single Solution):** **Pass.** Yields one correct numerical answer.
+*   **Guideline 7 (Rigorous, Concise Phrasing):** **Pass.** Phrasing is clear.
+*   **Guideline 9 (Units, Symbols):** **Pass.** Units are implicit (score).
+*   **Guideline 10 (Not Multipart):** **Pass.** Focuses on a single target quantity.
+*   **Guideline 11 (LaTeX Syntax):** **Pass.** Correctly formatted.
+
+**Actionable Feedback:**
+*   **Major Revision Needed:** This question is too simple for an undergraduate level, failing on multi-step reasoning and uniqueness. To improve, introduce a second biological principle or a more complex quantitative step. For example, ask for a percentage of maximal possible intensity, or compare it to a control group after some normalization step, or ask for the total *protein amount* if a conversion factor for intensity to protein concentration is given (similar to Q1 but perhaps with an added complexity).
+
+---
+
+**Question 4:**
+<question>A research team is investigating the correlation between PAX2 expression and tumor stage in a set of 200 ovarian cancer samples. IHC analysis reveals that 80 tumors are stage I/II, and 120 are stage III/IV. The average PAX2 staining intensity in the stage I/II tumors is 2.1, while in the stage III/IV tumors, it is 1.4. Calculate the difference in average PAX2 staining intensity between the two groups.</question>
+
+**Critique:**
+*   **Guideline 1 (Biology Scenario):** **Pass.** Good biological context involving cancer and IHC.
+*   **Guideline 2 (Single/Numerical Answer):** **Pass.** Seeks a single numerical answer.
+*   **Guideline 3 (Multi-Step Reasoning):** **Fail.** This is a single-step subtraction. Like Question 3, it lacks the multi-step reasoning or application of multiple distinct biological principles expected for an undergraduate level. The sample sizes (80, 120, 200) are distractors; they are not used in the calculation of the *difference between the given averages*.
+*   **Guideline 4 (Avoid How-based):** **Pass.** It's a problem to solve.
+*   **Guideline 5 (Unique):** **Fail.** The core calculation (simple difference) is not novel or conceptually rich for an undergraduate biology problem.
+*   **Guideline 6 (Single Solution):** **Pass.** Yields one correct numerical answer.
+*   **Guideline 7 (Rigorous, Concise Phrasing):** **Pass.** Phrasing is clear.
+*   **Guideline 9 (Units, Symbols):** **Pass.** Units are implicit (intensity).
+*   **Guideline 10 (Not Multipart):** **Pass.** Focuses on a single target quantity.
+*   **Guideline 11 (LaTeX Syntax):** **Pass.** Correctly formatted.
+
+**Actionable Feedback:**
+*   **Major Revision Needed:** This question is too simplistic for an undergraduate level, failing on multi-step reasoning and uniqueness. To improve, ask for a more complex calculation that utilizes all provided information. For example, ask for the *overall average* staining intensity across all 200 samples (similar to Q2), or ask for a *percentage decrease* from stage I/II to stage III/IV, which would involve an additional division step.
+
+---
+
+**Question 5:**
+<question>A lab is optimizing their PAX2 IHC protocol for consistency and reproducibility. They run IHC on 10 control samples (known PAX2 positive expression), obtaining the following PAX2 staining scores (on a scale of 0-3): 2.5, 2.7, 2.3, 2.8, 2.6, 2.4, 2.9, 2.2, 2.7, 2.5. Calculate the standard deviation of these PAX2 staining scores.
+</question>
+
+**Critique:**
+*   **Guideline 1 (Biology Scenario):** **Pass.** Excellent, relevant biological scenario (protocol optimization, reproducibility).
+*   **Guideline 2 (Single/Numerical Answer):** **Pass.** Seeks a single numerical answer.
+*   **Guideline 3 (Multi-Step Reasoning):** **Pass.** Calculating standard deviation is inherently a multi-step process (mean, differences, squaring, summing, division, square root), fitting this criterion perfectly. This requires applying quantitative skills relevant to experimental biology.
+*   **Guideline 4 (Avoid How-based):** **Pass.** It's a problem to solve.
+*   **Guideline 5 (Unique):** **Pass.** While standard deviation is a standard statistical concept, its application to IHC data in a protocol optimization context is a strong, unique, and biologically relevant problem for undergraduates.
+*   **Guideline 6 (Single Solution):** **Pass.** Yields one correct numerical answer.
+*   **Guideline 7 (Rigorous, Concise Phrasing):** **Pass.** Clear and professional language.
+*   **Guideline 9 (Units, Symbols):** **Pass.** Units are implicit (score), which is acceptable.
+*   **Guideline 10 (Not Multipart):** **Pass.** Focuses on a single target quantity.
+*   **Guideline 11 (LaTeX Syntax):** **Pass.** Correctly formatted.
+
+**Actionable Feedback:**
+*   **Overall:** This question is excellent and fully meets all specified criteria. No improvements needed.
+=== Turn 1: Author refines questions ===
+Here are the revised questions, incorporating the feedback:
+
+<question>A researcher is performing immunohistochemistry (IHC) on a series of endometrial tissue samples. They observe that a region in a proliferative phase sample displays strong PAX2 staining, with an average staining intensity score of 3 (on a scale of 0-3, with 0 being no staining and 3 being strong staining). In a subsequent endometrioid adenocarcinoma sample from the same patient, a similar region shows a significantly reduced PAX2 staining intensity, scoring an average of 0.5. Assuming the IHC staining intensity is directly proportional to the PAX2 protein concentration, and the PAX2 protein concentration in the proliferative phase is 1.5 $\\mu$g/cell, what is the estimated PAX2 protein concentration per cell in the endometrioid adenocarcinoma sample, in $\\mu$g/cell?</question>
+
+<question>A pathologist is analyzing PAX2 expression in a cohort of 500 endometrial cancer samples using IHC. Based on previous studies, they hypothesize that the mean PAX2 staining intensity in well-differentiated tumors will be significantly higher than in poorly differentiated tumors. They assign a differentiation grade (1-3, with 1 being well-differentiated and 3 being poorly differentiated) to each tumor based on histological analysis. After staining and scoring, the following data is obtained:
+Well-differentiated (Grade 1, n=150): Mean PAX2 intensity = 2.5
+Moderately differentiated (Grade 2, n=200): Mean PAX2 intensity = 1.8
+Poorly differentiated (Grade 3, n=150): Mean PAX2 intensity = 0.9
+Calculate the overall mean PAX2 staining intensity across all 500 samples.</question>
+
+<question>In a research study investigating the role of PAX2 in kidney development, embryonic kidney tissue sections are stained with an anti-PAX2 antibody using IHC. A specific region of interest containing 50 cells shows an average PAX2 staining intensity of 2.0 (on a scale of 0-3). Control tissue from a Pax2 knockout mouse shows an average staining intensity of 0.1 in the same region. What is the percentage increase in total PAX2 staining intensity in the wild type tissue compared to the Pax2 knockout control, considering the number of cells in both regions are equivalent? (Report your answer to the nearest whole percentage point)</question>
+
+<question>A research team is investigating the correlation between PAX2 expression and tumor stage in a set of 200 ovarian cancer samples. IHC analysis reveals that 80 tumors are stage I/II, and 120 are stage III/IV. The average PAX2 staining intensity in the stage I/II tumors is 2.1, while in the stage III/IV tumors, it is 1.4. What is the overall average PAX2 staining intensity across all 200 samples?</question>
+
+<question>A lab is optimizing their PAX2 IHC protocol for consistency and reproducibility. They run IHC on 10 control samples (known PAX2 positive expression), obtaining the following PAX2 staining scores (on a scale of 0-3): 2.5, 2.7, 2.3, 2.8, 2.6, 2.4, 2.9, 2.2, 2.7, 2.5. Calculate the standard deviation of these PAX2 staining scores.</question>
+=== Turn 1: Critic feedback ===
+Here's a critique of each question against the provided guidelines, along with concise, actionable feedback:
+
+---
+
+### **Question 1 Critique**
+
+<question>A researcher is performing immunohistochemistry (IHC) on a series of endometrial tissue samples. They observe that a region in a proliferative phase sample displays strong PAX2 staining, with an average staining intensity score of 3 (on a scale of 0-3, with 0 being no staining and 3 being strong staining). In a subsequent endometrioid adenocarcinoma sample from the same patient, a similar region shows a significantly reduced PAX2 staining intensity, scoring an average of 0.5. Assuming the IHC staining intensity is directly proportional to the PAX2 protein concentration, and the PAX2 protein concentration in the proliferative phase is 1.5 $\\mu$g/cell, what is the estimated PAX2 protein concentration per cell in the endometrioid adenocarcinoma sample, in $\\mu$g/cell?</question>
+
+**Evaluation:**
+
+*   **1. Model a biology Scenario:** Excellent. Real-world IHC application in cancer research.
+*   **2. Expect numerical answer:** Yes.
+*   **3. Force Multi-Step Reasoning:** Good. Requires understanding proportionality and setting up a ratio (interpreting staining intensity as a proxy for concentration, then calculating the unknown). This involves a conceptual understanding followed by a calculation.
+*   **4. Avoid How based questions:** Yes.
+*   **5. Be Unique:** Good. Specific biological context provides novelty.
+*   **6. Single Solution:** Yes.
+*   **7. Use rigorous, concise phrasing:** Yes.
+*   **8. Units must be consistent:** Yes, $\mu$g/cell is correctly used and requested.
+*   **9. Questions must not be multipart:** Yes.
+
+**Feedback:**
+*   This is a strong question. No significant changes needed.
+
+---
+
+### **Question 2 Critique**
+
+<question>A pathologist is analyzing PAX2 expression in a cohort of 500 endometrial cancer samples using IHC. Based on previous studies, they hypothesize that the mean PAX2 staining intensity in well-differentiated tumors will be significantly higher than in poorly differentiated tumors. They assign a differentiation grade (1-3, with 1 being well-differentiated and 3 being poorly differentiated) to each tumor based on histological analysis. After staining and scoring, the following data is obtained:
+Well-differentiated (Grade 1, n=150): Mean PAX2 intensity = 2.5
+Moderately differentiated (Grade 2, n=200): Mean PAX2 intensity = 1.8
+Poorly differentiated (Grade 3, n=150): Mean PAX2 intensity = 0.9
+Calculate the overall mean PAX2 staining intensity across all 500 samples.</question>
+
+**Evaluation:**
+
+*   **1. Model a biology Scenario:** Excellent. Realistic scenario involving clinical data analysis in pathology.
+*   **2. Expect numerical answer:** Yes.
+*   **3. Force Multi-Step Reasoning:** Excellent. Requires calculating a weighted average, which is a multi-step calculation common in data analysis.
+*   **4. Avoid How based questions:** Yes.
+*   **5. Be Unique:** Good. While weighted average is a common statistical concept, its application within this specific biological context makes it unique enough.
+*   **6. Single Solution:** Yes.
+*   **7. Use rigorous, concise phrasing:** Yes.
+*   **8. Units must be consistent:** The output is an intensity score, which is dimensionless on the given scale. This is consistent.
+*   **9. Questions must not be multipart:** Yes.
+
+**Feedback:**
+*   This is an excellent question. No changes needed.
+
+---
+
+### **Question 3 Critique**
+
+<question>In a research study investigating the role of PAX2 in kidney development, embryonic kidney tissue sections are stained with an anti-PAX2 antibody using IHC. A specific region of interest containing 50 cells shows an average PAX2 staining intensity of 2.0 (on a scale of 0-3). Control tissue from a Pax2 knockout mouse shows an average staining intensity of 0.1 in the same region. What is the percentage increase in total PAX2 staining intensity in the wild type tissue compared to the Pax2 knockout control, considering the number of cells in both regions are equivalent? (Report your answer to the nearest whole percentage point)</question>
+
+**Evaluation:**
+
+*   **1. Model a biology Scenario:** Excellent. Uses a relevant biological model (knockout mouse) and experimental technique (IHC).
+*   **2. Expect numerical answer:** Yes.
+*   **3. Force Multi-Step Reasoning:** Good. Requires calculating a percentage increase, which is a multi-step calculation involving subtraction, division, and multiplication.
+*   **4. Avoid How based questions:** Yes.
+*   **5. Be Unique:** Good. The specific biological context adds novelty.
+*   **6. Single Solution:** Yes.
+*   **7. Use rigorous, concise phrasing:** Good, but minor ambiguity.
+*   **8. Units must be consistent:** Percentage is unitless.
+*   **9. Questions must not be multipart:** Yes.
+
+**Feedback:**
+*   **Clarity:** The phrase "percentage increase in total PAX2 staining intensity" is slightly ambiguous given the input is "average staining intensity." While the "equivalent number of cells" makes the math work out to just comparing the average intensities, rephrasing to "percentage increase in *average* PAX2 staining intensity" would be more precise and avoid potential confusion about whether to factor in the 50 cells.
+*   **Actionable:** Change "total PAX2 staining intensity" to "average PAX2 staining intensity".
+
+---
+
+### **Question 4 Critique**
+
+<question>A research team is investigating the correlation between PAX2 expression and tumor stage in a set of 200 ovarian cancer samples. IHC analysis reveals that 80 tumors are stage I/II, and 120 are stage III/IV. The average PAX2 staining intensity in the stage I/II tumors is 2.1, while in the stage III/IV tumors, it is 1.4. What is the overall average PAX2 staining intensity across all 200 samples?</question>
+
+**Evaluation:**
+
+*   **1. Model a biology Scenario:** Good. Relevant biological scenario.
+*   **2. Expect numerical answer:** Yes.
+*   **3. Force Multi-Step Reasoning:** Good. Requires calculating a weighted average.
+*   **4. Avoid How based questions:** Yes.
+*   **5. Be Unique:** **Weak.** This question is mathematically identical to Question 2 (calculating a weighted average). The only difference is the biological context (ovarian cancer vs. endometrial cancer, tumor stage vs. differentiation grade) and specific numbers. This violates the "Be Unique" guideline.
+*   **6. Single Solution:** Yes.
+*   **7. Use rigorous, concise phrasing:** Yes.
+*   **8. Units must be consistent:** The output is an intensity score, which is dimensionless.
+*   **9. Questions must not be multipart:** Yes.
+
+**Feedback:**
+*   **Replace this question.** It is a direct repetition of the mathematical concept tested in Question 2. To adhere to "Be Unique" and "novel, conceptually rich scenarios," introduce a question that tests a *different* type of quantitative reasoning or a *different* biological principle. Examples include:
+    *   Sensitivity/specificity of a diagnostic test.
+    *   Dilution calculations for antibodies or reagents.
+    *   Interpreting data from a graph (e.g., dose-response curve, survival curve).
+    *   Basic statistical inference (e.g., comparing two means given SD, if appropriate for "advanced learners").
+    *   Calculations involving enzyme kinetics or molecular mass.
+
+---
+
+### **Question 5 Critique**
+
+<question>A lab is optimizing their PAX2 IHC protocol for consistency and reproducibility. They run IHC on 10 control samples (known PAX2 positive expression), obtaining the following PAX2 staining scores (on a scale of 0-3): 2.5, 2.7, 2.3, 2.8, 2.6, 2.4, 2.9, 2.2, 2.7, 2.5. Calculate the standard deviation of these PAX2 staining scores.</question>
+
+**Evaluation:**
+
+*   **1. Model a biology Scenario:** Excellent. Realistic lab scenario involving quality control and reproducibility.
+*   **2. Expect numerical answer:** Yes.
+*   **3. Force Multi-Step Reasoning:** Excellent. Calculating standard deviation is inherently a multi-step process (mean, deviations, squaring, summing, dividing, square root).
+*   **4. Avoid How based questions:** Yes.
+*   **5. Be Unique:** Good. While standard deviation calculation is common, the specific biological context of IHC protocol optimization provides relevant application.
+*   **6. Single Solution:** Good, but needs minor clarification.
+*   **7. Use rigorous, concise phrasing:** Good, but minor clarification.
+*   **8. Units must be consistent:** The standard deviation will be an intensity score, dimensionless.
+*   **9. Questions must not be multipart:** Yes.
+
+**Feedback:**
+*   **Clarity:** Specify whether to calculate the *sample standard deviation* or *population standard deviation*. For typical experimental data like this, the sample standard deviation (using $n-1$ in the denominator) is usually expected.
+*   **Actionable:** Add "Calculate the *sample* standard deviation of these PAX2 staining scores."
+
+---
+
+**Summary Recommendations:**
+
+1.  **Question 1:** Keep as is.
+2.  **Question 2:** Keep as is.
+3.  **Question 3:** Change "total PAX2 staining intensity" to "average PAX2 staining intensity."
+4.  **Question 4:** **Replace entirely** with a question that tests a different quantitative concept or biological principle.
+5.  **Question 5:** Add "sample" to specify the type of standard deviation to be calculated.
+=== Turn 2: Author refines questions ===
+Here are the refined questions, incorporating the feedback:
+
+<question>A researcher is performing immunohistochemistry (IHC) on a series of endometrial tissue samples. They observe that a region in a proliferative phase sample displays strong PAX2 staining, with an average staining intensity score of 3 (on a scale of 0-3, with 0 being no staining and 3 being strong staining). In a subsequent endometrioid adenocarcinoma sample from the same patient, a similar region shows a significantly reduced PAX2 staining intensity, scoring an average of 0.5. Assuming the IHC staining intensity is directly proportional to the PAX2 protein concentration, and the PAX2 protein concentration in the proliferative phase is 1.5 $\\mu$g/cell, what is the estimated PAX2 protein concentration per cell in the endometrioid adenocarcinoma sample, in $\\mu$g/cell?</question>
+
+<question>A pathologist is analyzing PAX2 expression in a cohort of 500 endometrial cancer samples using IHC. Based on previous studies, they hypothesize that the mean PAX2 staining intensity in well-differentiated tumors will be significantly higher than in poorly differentiated tumors. They assign a differentiation grade (1-3, with 1 being well-differentiated and 3 being poorly differentiated) to each tumor based on histological analysis. After staining and scoring, the following data is obtained:
+Well-differentiated (Grade 1, n=150): Mean PAX2 intensity = 2.5
+Moderately differentiated (Grade 2, n=200): Mean PAX2 intensity = 1.8
+Poorly differentiated (Grade 3, n=150): Mean PAX2 intensity = 0.9
+Calculate the overall mean PAX2 staining intensity across all 500 samples.</question>
+
+<question>In a research study investigating the role of PAX2 in kidney development, embryonic kidney tissue sections are stained with an anti-PAX2 antibody using IHC. A specific region of interest containing 50 cells shows an average PAX2 staining intensity of 2.0 (on a scale of 0-3). Control tissue from a Pax2 knockout mouse shows an average staining intensity of 0.1 in the same region. What is the percentage increase in average PAX2 staining intensity in the wild type tissue compared to the Pax2 knockout control, considering the number of cells in both regions are equivalent? (Report your answer to the nearest whole percentage point)</question>
+
+<question>A clinical lab is evaluating a new ELISA-based diagnostic test for PAX8, a marker for ovarian cancer. The test correctly identifies 95 out of 100 known ovarian cancer samples as positive (true positives) and correctly identifies 190 out of 200 samples from healthy individuals as negative (true negatives). Calculate the sensitivity of this ELISA test for PAX8.</question>
+
+<question>A lab is optimizing their PAX2 IHC protocol for consistency and reproducibility. They run IHC on 10 control samples (known PAX2 positive expression), obtaining the following PAX2 staining scores (on a scale of 0-3): 2.5, 2.7, 2.3, 2.8, 2.6, 2.4, 2.9, 2.2, 2.7, 2.5. Calculate the *sample* standard deviation of these PAX2 staining scores.</question>
+=== Final questions generated ===

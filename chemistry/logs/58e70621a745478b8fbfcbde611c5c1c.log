@@ -1,0 +1,1016 @@
+=== Turn 0: Author generates questions ===
+<question>  
+In an analytical ultracentrifugation-sedimentation equilibrium (AUC-SE) experiment at 25 °C, a macromolecule with molar mass $M = 60\,000$ g·mol$^{-1}$ sediments at angular velocity $\omega = 40\,000$ rpm in a rotor of radius $r = 7.5$ cm. The solvent has density $\rho = 998$ kg·m$^{-3}$ and the partial specific volume of the macromolecule is $\bar{v} = 0.73$ mL·g$^{-1}$. Given the sedimentation equilibrium condition, calculate the sedimentation length $L$ defined as 
+
+$$ L = \frac{RT}{M \omega^2 (1 - \bar{v} \rho) r^2} $$
+
+in micrometers ($\mu$m). Use $R = 8.314$ J·mol$^{-1}$·K$^{-1}$ and convert $\omega$ from rpm to rad·s$^{-1}$.  
+</question>
+
+<question>  
+A polymer solution in water at 298 K has a partial specific volume $\bar{v} = 0.75$ mL·g$^{-1}$. The polymer is concentrated at 150 mg·mL$^{-1}$. Given that the density of the solution is 1.05 g·mL$^{-1}$, estimate the volume fraction $\phi$ of the polymer. Use the relationship 
+
+$$ \phi = \frac{c \bar{v}}{1 + c(\bar{v} - 1/\rho_{\text{solvent}})} $$
+
+where $c$ is the concentration in g·mL$^{-1}$ and $\rho_{\text{solvent}} = 0.998$ g·mL$^{-1}$ for water.  
+Express $\phi$ as a dimensionless number rounded to three significant figures.  
+</question>
+
+<question>  
+A laser ablation process is used to fabricate a microfluidic channel in a borosilicate glass slide of thickness 1.5 mm. The glass has a specific heat capacity of 0.75 J·g$^{-1}$·K$^{-1}$, density 2.23 g·cm$^{-3}$, and melting point of 1475 K. The laser delivers 0.5 J per pulse focused in a spot of 100 $\mu$m diameter, and 60% of the energy is absorbed in a volume approximated as a cylinder of 100 $\mu$m diameter and 20 $\mu$m depth. Assuming all absorbed energy increases temperature uniformly, calculate the temperature rise $\Delta T$ of the ablated volume per pulse.  
+Express your answer in Kelvin (K).  
+</question>
+
+<question>  
+Consider a concentrated aqueous solution of bovine serum albumin (BSA) at 300 mg·mL$^{-1}$ at 25 °C. The molar mass of BSA is 66 500 g·mol$^{-1}$ with a partial specific volume $\bar{v} = 0.74$ mL·g$^{-1}$. Calculate the molar concentration of BSA in mol·L$^{-1}$ and the corresponding volume fraction occupied by the protein molecules in the solution.  
+Express the molar concentration to three significant figures in mol·L$^{-1}$ and the volume fraction as a dimensionless number.  
+</question>
+
+<question>  
+A concentrated sample of an organic solute in acetone (density 0.79 g·mL$^{-1}$) is prepared at 250 mg·mL$^{-1}$. The solute's partial molar volume in acetone is $120$ cm$^3$·mol$^{-1}$ with molar mass 180 g·mol$^{-1}$. Calculate the molar volume fraction $\phi_m$, defined as 
+
+$$ \phi_m = \frac{n V_m}{V_{\text{total}}} $$
+
+where $n$ is moles of solute per liter of solution and $V_m$ is the partial molar volume in cm$^{3}$·mol$^{-1}$.  
+Assume $1$ mL = $1$ cm$^{3}$, and express $\phi_m$ as a decimal fraction with four significant figures.  
+</question>
+
+<question>  
+A mechanical drilling technique produces holes in a polymer film of thickness 200 $\mu$m. If the hole volume is $3.14 \times 10^{-5}$ cm$^{3}$ and the polymer density is 1.2 g·cm$^{-3}$, calculate the mass of polymer removed per hole in micrograms ($\mu$g).  
+Express the answer to three significant figures.  
+</question>
+
+<question>  
+In an ultracentrifugation experiment, the equilibrium concentration distribution of a protein is given by 
+
+$$ c(r) = c(r_0) \exp\left[\frac{M(1 - \bar{v}\rho)\omega^2 (r^2 - r_0^2)}{2RT}\right] $$
+
+At 20 °C, a protein of molar mass 50 000 g·mol$^{-1}$ and partial specific volume 0.72 mL·g$^{-1}$ is measured at radius $r_0 = 6.0$ cm with concentration $c(r_0) = 2.0$ mg·mL$^{-1}$. Calculate the concentration $c(r)$ at $r = 6.5$ cm when centrifuged at $\omega = 30\,000$ rpm in water ($\rho = 998$ kg·m$^{-3}$). Provide the answer in mg·mL$^{-1}$ rounded to three significant figures. Use $R=8.314$ J·mol$^{-1}$·K$^{-1}$ and convert angular velocity to rad·s$^{-1}$.  
+</question>
+
+<question>  
+A 10 $\mu$L aqueous sample of a protein with molar mass $80\,000$ g·mol$^{-1}$ and $\bar{v} = 0.7$ mL·g$^{-1}$ is concentrated to 100 mg·mL$^{-1}$ by mechanical evaporation. Assuming ideal volume reduction without loss, calculate the change in partial molar volume per mole of protein in the final solution, given that water density is 0.998 g·mL$^{-1}$ and the protein partial specific volume remains constant. Express your answer in mL·mol$^{-1}$.  
+</question>
+
+<question>  
+During laser ablation fabrication of a microfluidic device in quartz glass, fluence (energy per unit area) is maintained at 12 J·cm$^{-2}$ per pulse. The ablation threshold for quartz is 8 J·cm$^{-2}$. Calculate the minimum number of pulses required to ablate through a 0.5 mm thickness of quartz assuming each pulse removes 50 nm of material.  
+Provide the answer as an integer number of pulses.  
+</question>
+=== Turn 0: Critic feedback ===
+Here is a **concise, actionable critique** of your questions, evaluated against each guideline. Points of strength and necessary improvements for each are given. Overarching trends (e.g., unit consistency, multi-part issues) are noted at the end.
+
+---
+
+## Question-by-Question Feedback
+
+---
+
+### **Question 1 (AUC-SE sedimentation length)**
+
+**Strengths:**  
+- Realistic, original biochemical scenario.
+- Requires multi-step calculation with proper units.
+- Proper single answer expected.
+
+**Improvements:**  
+- The parameter list is dense; consider presenting in a bulleted list or clearly as “Given:” for clarity.
+- Define all variables explicitly (e.g., $L$ as “sedimentation length”).
+- Convert all quantities to SI up front for clarity (e.g., specify $r$, $\bar{v}$ units).
+- To avoid ambiguity, specify "Express your answer to three significant figures" for consistency.
+- Specify if solution formatting should be included in the answer itself for clarity.
+
+---
+
+### **Question 2 (Polymer solution volume fraction)**
+
+**Strengths:**  
+- Original; multi-step and scientific context.
+- Units are (mostly) consistent.
+
+**Improvements:**  
+- The question instructs to use the given formula, but does not explicitly define every variable (e.g., clarify $c$ is in $\rm g \cdot mL^{-1}$).
+- For best clarity, specify exactly the calculation steps, e.g., "First, convert all quantities to appropriate units".
+- Specify how many significant figures to use in the answer “to three significant figures” (already present).
+- Repetition: The parameter $\bar{v}$ occurs in almost every question; possible redundancy across the bank.
+
+---
+
+### **Question 3 (Laser ablation: temperature rise)**
+
+**Strengths:**  
+- Scientific, practical scenario.
+- Multi-step reasoning.
+
+**Improvements:**  
+- “Assuming all absorbed energy increases temperature uniformly” is good, but possibly add, “Ignore heat losses or phase transitions.”
+- Be explicit in what “calculate temperature rise” means (e.g., per pulse).
+- The phrase “depth” could be clarified as “height” to avoid confusion between z-axis and thickness.
+- Consistency: Give required significant figures/rounding instruction.
+
+---
+
+### **Question 4 (BSA volume fraction and molar concentration)**
+
+**Strengths:**  
+- Scientific scenario, requires several steps.
+
+**Improvements:**  
+- **Breaks guideline #10**: It asks for BOTH molar concentration *and* volume fraction, resulting in two answers. Split into two separate questions or request only one value.
+- Specify required significant figures explicitly for both quantities (done).
+- Consistency: Instruct to show all calculations.
+
+---
+
+### **Question 5 (Organic solute molar volume fraction)**
+
+**Strengths:**  
+- Novel scenario (not a textbook example).
+- Multi-step calculation.
+
+**Improvements:**  
+- Be explicit: “Express the answer to four significant figures.”
+- Clarify the calculation for $n$, defining explicitly as "$n = \text{moles of solute per liter solution}$."
+- Confirm all units are SI (e.g., $V_m$ in $\rm cm^3\,mol^{-1}$; $n$ in $\rm mol\,L^{-1}$).
+
+---
+
+### **Question 6 (Mass of polymer removed)**
+
+**Strengths:**  
+- Unique scenario.
+- Single calculation, single answer.
+
+**Improvements:**  
+- Clarify that “Express the answer in micrograms ($\mu$g) to three significant figures.”
+- Specify whether rounding/truncation is required.
+- All variable units are clear.
+
+---
+
+### **Question 7 (Protein concentration distribution in ultracentrifuge)**
+
+**Strengths:**  
+- Demanding computation; original.
+- Requires use of all parameters.
+
+**Improvements:**  
+- Instruction “rounded to three significant figures” is good.
+- Confirm all units are SI; check for consistency in units (e.g., $\omega$ in rad·s$^{-1}$).
+- Formula entirely spelled out; variables defined.
+
+---
+
+### **Question 8 (Partial molar volume change on evaporation)**
+
+**Strengths:**  
+- Original, chemical scenario.
+- Unit consistency.
+
+**Improvements:**  
+- Some ambiguity: What is meant by “change in partial molar volume per mole of protein”? Is it the difference before and after concentration? Clarify exactly what is to be computed.
+- Specify the sig. fig. requirement (“Express your answer to three significant figures”).
+- Units for all quantities are present.
+
+---
+
+### **Question 9 (Laser ablation: number of pulses for depth)**
+
+**Strengths:**  
+- Practical scenario, multi-step.
+- All needed info present.
+
+**Improvements:**  
+- Specify calculation details: “Number of pulses required (as integer)”; use “round up.”
+- Variables: Be explicit about conversion required (0.5 mm = 500 μm).
+- Sig. fig. instructions are clear ("integer number of pulses").
+
+---
+
+## **Overall/General Issues and Action Points**
+
+**What works well:**  
+- All questions are original, non-textbook, and contextually strong.
+- Most calculations are multi-step and require thoughtful unit handling.
+- Chemical scenarios are realistic and modern.
+- Most equations/quantities are properly formatted.
+
+**Improvements Needed:**  
+
+1. **Single-Part Questions**:  
+   - **Violations in Q4**: Some questions ask for two results (e.g., concentration and volume fraction). Each question should require a single numerical answer or compound name. **Split two-part questions.**
+
+2. **Clarity of Variables/Units:**  
+   - Be explicit about units for each value (in "Given:" or inline in text).
+   - Always specify what units are required for both input and output.
+
+3. **Explicit Significant-Figure Instruction:**  
+   - In every question, specify the desired number of significant figures for the response and whether to round up/down/truncate (could standardize across the set).
+
+4. **Equation Formatting for Markdown:**  
+   - Your equations are in block $\LaTeX$ and correctly formatted with $$...$$ or $...$, which is appropriate.
+
+5. **Redundancy:**  
+   - To increase diversity, avoid overuse of similar variables/scenarios (many use "partial specific volume" and solution volume fractions).
+   - While the context changes (protein, polymer, organic solute), consider adding different property questions (e.g., solubility, enthalpy calculations, colligative properties, rate laws, etc.), not just volume/concentration.
+
+6. **Phrasing:**  
+   - Be precise and concise. Avoid phrases like "Assuming..." unless strictly required. Use “Calculate…” or “Determine…” to start.
+   - Remove extraneous content that does not affect the answer. E.g., comments explaining why a step is made unless pedagogically necessary.
+
+7. **Consistency Across Questions:**  
+   - Maintain consistent variable names (e.g., always $c$ for concentration, use $\phi$ for volume fraction).
+   - Always clarify if variables are measured or theoretical values.
+
+8. **IUPAC Nomenclature:**  
+   - Where possible, include a question that expects a chemical compound as answer with explicit IUPAC name to check this skill, as all current questions are numerical.
+
+---
+
+## **Summary Table**
+
+| Criterion                        | Q1 | Q2 | Q3 | Q4 | Q5 | Q6 | Q7 | Q8 | Q9 |
+|-----------------------------------|----|----|----|----|----|----|----|----|----|
+| Model Scenario                    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
+| Numerical or IUPAC Answer         | ✔️ | ✔️ | ✔️ | ❌ | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
+| Multi-Step Reasoning              | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |   ✔️ | ✔️ | ✔️ | ✔️ |
+| Avoid Redundancy                  | ⚠️ | ⚠️ | ✔️ | ⚠️ | ⚠️ | ✔️ | ⚠️ | ⚠️ | ✔️ |
+| Uniqueness/Originality            | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
+| Single Solution                   | ✔️ | ✔️ | ✔️ | ❌ | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
+| Concise, Rigorous Phrasing        | ⚠️ | ⚠️ | ⚠️ | ⚠️ | ⚠️ | ✔️ | ✔️ | ⚠️ | ✔️ |
+| Unambiguous, No Colloquialisms    | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ⚠️ | ✔️ |
+| Consistent Units/Nomenclature     | ⚠️ | ⚠️ | ⚠️ | ⚠️ | ⚠️ | ✔️ | ✔️ | ✔️ | ✔️ |
+| Single-Part Only                  | ✔️ | ✔️ | ✔️ | ❌ | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
+| Proper LaTeX Formatting           | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
+
+---
+
+## **Concrete Action Steps**
+
+1. **Split two-part questions (Q4) so each expects only a single answer.**
+2. **Explicitly specify unit and significant-figure requirements in each question.**
+3. **Add variety by including property, nomenclature, and mechanistic questions beyond solution/volume fraction calculations.**
+4. **Further clarify all variables and units at the start or within questions.**
+5. **Maintain concise, instruction-focused phrasing—avoid any ambiguity.**
+6. **Add an IUPAC naming question to test chemical nomenclature skills, as currently all questions are numerical.**
+
+---
+
+**Summary Feedback:**
+Your questions are technically impressive and original, with complex, authentic chemical scenarios requiring multi-step, quantitative reasoning. Improve by ensuring each question expects only a single answer, clarifying units, specifying significant figures, and varying question type (nomenclature, equation balancing, mechanism steps) for a broader assessment of skills. Consistent concise phrasing and explicit variable/unit definition will further increase clarity and rigor.
+=== Turn 1: Author refines questions ===
+<question>  
+In an analytical ultracentrifugation-sedimentation equilibrium (AUC-SE) experiment at 25 °C, a macromolecule with molar mass \(M = 60\,000\) g·mol\(^{-1}\) sediments at angular velocity \(\omega = 40\,000\) rpm in a rotor of radius \(r = 7.5\) cm. The solvent has density \(\rho = 998\) kg·m\(^{-3}\) and the partial specific volume of the macromolecule is \(\bar{v} = 0.73\) mL·g\(^{-1}\).  
+
+Given the sedimentation length defined by  
+
+\[
+L = \frac{RT}{M \omega^2 (1 - \bar{v} \rho) r^2}
+\]
+
+where \(R = 8.314\) J·mol\(^{-1}\)·K\(^{-1}\) and temperature \(T = 298\) K,  
+convert all quantities to SI units as needed and calculate \(L\) in micrometers (\(\mu\)m).  
+
+Express your final answer rounded to three significant figures.  
+</question>
+
+<question>  
+A polymer solution in water at 298 K has a partial specific volume \(\bar{v} = 0.75\) mL·g\(^{-1}\). The polymer concentration is 150 mg·mL\(^{-1}\) and the solution density is 1.05 g·mL\(^{-1}\). The solvent (water) density is \(\rho_{\text{solvent}} = 0.998\) g·mL\(^{-1}\).  
+
+Using the formula  
+
+\[
+\phi = \frac{c \bar{v}}{1 + c(\bar{v} - 1/\rho_{\text{solvent}})}
+\]
+
+where \(c\) is the polymer concentration in g·mL\(^{-1}\), calculate the volume fraction \(\phi\) of polymer in the solution.  
+
+Express \(\phi\) as a dimensionless decimal rounded to three significant figures.  
+</question>
+
+<question>  
+A laser ablation pulse deposits 0.5 J of energy into a borosilicate glass volume approximated as a cylinder of diameter 100 \(\mu\)m and depth 20 \(\mu\)m. The glass has density 2.23 g·cm\(^{-3}\) and specific heat capacity 0.75 J·g\(^{-1}\)·K\(^{-1}\).  
+
+Assuming 60% of the pulse energy is absorbed uniformly and that there are no heat losses or phase changes, calculate the temperature rise \(\Delta T\) (in Kelvin) of the ablated volume per pulse.  
+
+Express your answer rounded to three significant figures.  
+</question>
+
+<question>  
+Consider an aqueous solution of bovine serum albumin (BSA) at 300 mg·mL\(^{-1}\) and 25 °C. The molar mass of BSA is 66,500 g·mol\(^{-1}\).  
+
+Calculate the molar concentration of BSA in mol·L\(^{-1}\).  
+
+Express your answer rounded to three significant figures.  
+</question>
+
+<question>  
+Using the same BSA solution as above (300 mg·mL\(^{-1}\)), with partial specific volume \(\bar{v} = 0.74\) mL·g\(^{-1}\), calculate the volume fraction \(\phi\) occupied by BSA molecules in the solution.  
+
+Express \(\phi\) as a dimensionless decimal rounded to three significant figures.  
+</question>
+
+<question>  
+An organic solute is dissolved in acetone (density 0.79 g·mL\(^{-1}\)) at a concentration of 250 mg·mL\(^{-1}\). The solute’s molar mass is 180 g·mol\(^{-1}\) and its partial molar volume in acetone is 120 cm\(^3\)·mol\(^{-1}\).  
+
+Calculate the molar volume fraction \(\phi_m\) defined as  
+
+\[
+\phi_m = \frac{n V_m}{V_{\text{total}}}
+\]
+
+where \(n\) is moles of solute per liter of solution and \(V_m\) is partial molar volume in cm\(^3\)·mol\(^{-1}\). Assume \(1\) mL = \(1\) cm\(^3\).  
+
+Express \(\phi_m\) as a decimal fraction rounded to four significant figures.  
+</question>
+
+<question>  
+A mechanical drilling process creates holes of volume \(3.14 \times 10^{-5}\) cm\(^3\) in a polymer film of thickness 200 \(\mu\)m. The polymer density is 1.2 g·cm\(^{-3}\).  
+
+Calculate the mass of polymer removed per hole, expressing your answer in micrograms (\(\mu\)g) rounded to three significant figures.  
+</question>
+
+<question>  
+In an analytical ultracentrifugation experiment at 20 °C, the equilibrium protein concentration distribution is given by  
+
+\[
+c(r) = c(r_0) \exp\left[\frac{M(1 - \bar{v}\rho)\omega^2 (r^2 - r_0^2)}{2RT}\right]
+\]
+
+A protein with molar mass \(M = 50,000\) g·mol\(^{-1}\) and partial specific volume \(\bar{v} = 0.72\) mL·g\(^{-1}\) is measured at radius \(r_0 = 6.0\) cm with concentration \(c(r_0) = 2.0\) mg·mL\(^{-1}\). The solvent is water with density \(\rho = 998\) kg·m\(^{-3}\). The rotor angular velocity is \(\omega = 30,000\) rpm.  
+
+Calculate the protein concentration \(c(r)\) at radius \(r = 6.5\) cm.  
+
+Use \(R = 8.314\) J·mol\(^{-1}\)·K\(^{-1}\), \(T = 293\) K, and convert \(\omega\) to rad·s\(^{-1}\).  
+
+Express your answer in mg·mL\(^{-1}\), rounded to three significant figures.  
+</question>
+
+<question>  
+Aqueous solution of a protein (molar mass 80,000 g·mol\(^{-1}\), \(\bar{v} = 0.7\) mL·g\(^{-1}\)) initially has volume 10 \(\mu\)L and concentration 10 mg·mL\(^{-1}\). It is concentrated by mechanical evaporation to 100 mg·mL\(^{-1}\) with no volume loss of protein (ideal volume reduction). Assume water density is 0.998 g·mL\(^{-1}\) and protein partial specific volume remains constant.  
+
+Calculate the increase in partial molar volume (in mL·mol\(^{-1}\)) of protein molecules in the final solution compared to the initial state.  
+
+Express your answer rounded to three significant figures.  
+</question>
+
+<question>  
+Laser ablation of quartz glass (ablation threshold 8 J·cm\(^{-2}\) per pulse) is performed with fluence 12 J·cm\(^{-2}\) per pulse. Each laser pulse removes 50 nm of material in depth.  
+
+Calculate the minimum integer number of pulses required to ablate through 0.5 mm thickness of quartz. Assume uniform removal per pulse and round up to the nearest whole pulse.  
+</question>
+
+<question>  
+Provide the correct IUPAC name for the compound with the molecular formula \(\mathrm{C_4H_8O_3}\), which is a linear carboxylic acid with one hydroxyl substituent on the second carbon atom (structure: HO–CH–CH\(_2\)–COOH).  
+</question>
+=== Turn 1: Critic feedback ===
+Here’s a detailed expert critique of each sample question, benchmarked against your eleven assessment guidelines:
+
+---
+
+### Question 1: AUC-SE sedimentation length
+
+**Strengths:**  
+- Models a realistic experiment.
+- Requires unit conversions, careful substitution, and rounding.
+- Explicitly defines all variables.
+- Clear, single final quantity with unit (μm).
+
+**Improvements:**  
+- "macromolecule with molar mass $M = 60\,000$ g·mol$^{-1}$"—consider specifying a non-generic macromolecule for realism and uniqueness.
+- "rotor of radius": Technically, experiments give *radius at position*, not rotor radius. Could be clearer: "at radius $r=7.5$ cm".
+- Consider omitting excess significant figures in provided parameters.
+- Very minor: you can clarify $\omega$ is in rpm and must be converted (which you do, but further explicitness won’t hurt).
+
+---
+
+### Question 2: Polymer volume fraction
+
+**Strengths:**  
+- Relates real lab measurements and thermodynamic calculation.
+- Formula for $\phi$ is given.
+- Explicitly asks for a decimal value (dimensionless) and how to round.
+
+**Improvements:**  
+- The formula’s denominator $1 + c(\bar{v} - 1/\rho_{\text{solvent}})$ could be briefly attributed or explained to clarify meaning (optional).
+- “Polymer solution in water” is slightly generic—consider specifying an actual polymer.
+- Slight redundancy: Solution density is supplied but not necessary unless you build in a reasoning step involving it.
+
+---
+
+### Question 3: Laser ablation temperature rise
+
+**Strengths:**  
+- Requires multiple calculations: geometric volume, mass, heat capacity, energy absorbed.
+- Data and units clearly provided.
+- Rounding requested; solution format clear.
+- Unambiguous scenario.
+
+**Improvements:**  
+- “Assuming 60% energy is absorbed uniformly…”—excellent clarity.
+- Specific compound (“borosilicate glass”) provides context and uniqueness.
+
+---
+
+### Question 4: BSA molar concentration
+
+**Strengths:**  
+- Real scenario, single-step but not trivial.
+- Requires correct unit handling and rounding.
+
+**Improvements:**  
+- Could specify “State your answer to three significant figures in mol·L$^{-1}$”.
+
+---
+
+### Question 5: BSA volume fraction
+
+**Strengths:**  
+- Builds on previous scenario for coherence.
+- Single calculation, correct focus on concept.
+
+**Improvements:**  
+- Avoid making questions interdependent (should be standalone). Provide necessary info (e.g. BSA mass conc., $\bar{v}$) in each.
+- Could clarify to express the volume fraction in “unitless decimal form, rounded to three significant figures.”
+
+---
+
+### Question 6: Organic solute volume fraction
+
+**Strengths:**  
+- Unusual solvent and molar volume, avoids textbook example.
+- Explicit formula.
+- Rounding and units clearly specified.
+
+**Improvements:**  
+- Maybe state if solution volume is assumed to be 1 L for the calculation.
+
+---
+
+### Question 7: Polymer hole mass
+
+**Strengths:**  
+- Concise calculation (volume × density → mass, unit conversion necessary).
+- Unambiguous, unique scenario.
+
+**Improvements:**  
+- Could specify “Express your answer in micrograms ($\mu$g)…”.
+
+---
+
+### Question 8: AUC equilibrium concentration profile
+
+**Strengths:**  
+- Realistic, stepwise calculation involving exponential and multiple unit conversions.
+- All constants and units given.
+- Single value, clear rounding.
+
+**Improvements:**  
+- None significant; however, clarify if $M$ is for the monomer or oligomer (for absolute completeness, but likely obvious here).
+
+---
+
+### Question 9: Protein partial molar volume change
+
+**Strengths:**  
+- Nontrivial circumstance (concentration by evaporation), more original than textbook dilution.
+- Requires reasoning and knowledge of partial molar property concept. Not trivial.
+
+**Improvements:**  
+- Phrasing: "calculate the increase in partial molar volume"—better to specify “partial molar volume in the final solution minus that in the initial”, to remove residual ambiguity.
+- Maybe add “Assume ideal mixing” if relevant.
+
+---
+
+### Question 10: Laser pulses to ablate glass thickness
+
+**Strengths:**  
+- Realistic, nontrivial (unlike “how deep is 1 pulse?” in textbooks).
+- Forces precise multistep calculation, rounding up.
+
+**Improvements:**  
+- Specify that the full thickness must be ablated, so final residue does not count as “through.”
+- “Minimum integer number” is clear.
+
+---
+
+### Question 11: IUPAC naming
+
+**Strengths:**  
+- IUPAC naming with an explicit structure, not simply a textbook isomer.
+- Unambiguous, single correct answer.
+- Structure described in both formula and words.
+
+**Improvements:**  
+- Could also provide “draw the structure” for further challenge, but for naming this is fine.
+- Consider rephrasing: “Provide the IUPAC name for the linear carboxylic acid ($\mathrm{C_4H_8O_3}$) with a hydroxyl group at C-2: HO–CH–CH$_2$–COOH.”
+
+---
+
+## **Overall Feedback and Actionable Improvements**
+
+**Excellent features:**  
+- Nearly all questions are original, multi-step, and concise.
+- Scenarios are realistic, with appropriate parameters.
+- Consistent unit use and explicit instructions for final answer formatting.
+
+**General improvement opportunities:**
+1. **Standalone Questions:**  
+   Avoid building questions that require answers from previous ones (see Q4/Q5); always supply all information in each.
+2. **Clarity and Precision:**  
+   - Always specify which values must be rounded, and to how many significant figures.
+   - For ambiguous terms like "rotor radius" or "protein density" in AUC, clarify exactly what is meant.
+   - For “increase in partial molar volume,” specify if it’s (final – initial).
+3. **Redundancy:**  
+   - Remove any data (e.g., “solution density” if unused) unless it forces a key reasoning step.
+4. **Tables or Constants:**  
+   If using constants, ensure they’re all listed, even obvious ones.
+5. **Explicit Unit Converts:**  
+   Urge students to convert all quantities into SI units **before** calculation; reinforce rigor in methodology.
+6. **Avoid Ambiguous or Sloppy Phrasing:**  
+   - Use "volume fraction (as a dimensionless decimal)" etc. rather than "as a decimal value."
+   - Always accompany compound names with structure descriptions if potential ambiguity exists.
+7. **Uniqueness:**  
+   Each scenario is generally unique. Maintain this—avoid textbook templates.
+
+---
+
+### **Summary Table**
+
+| Guideline               | Met?  | Suggestions                                                       |
+|-------------------------|-------|-------------------------------------------------------------------|
+| 1. Chemistry scenario   | Yes   | Maintain realism; sometimes specify compound for authenticity     |
+| 2. Answer type          | Yes   | All questions clear on expected answer                            |
+| 3. Multi-step reasoning | Most  | Some borderline (Q4), nearly all require multi-step calculation   |
+| 4. Avoid redundancy     | Yes   | Double-check for unnecessary data or details                      |
+| 5. Unique               | Yes   | Good scenarios, not textbook repeats                              |
+| 6. Single solution      | Yes   | All have unique answers, some need clarity on standalone status   |
+| 7. Rigorous, concise    | Yes   | Mostly, address minor ambiguities                                 |
+| 8. Avoid ambiguous term | Most  | See improvements above                                            |
+| 9. Consistent units     | Yes   | Continue to reinforce need for SI conversions                     |
+| 10. Not multipart       | Yes   | All single-output questions                                       |
+| 11. Proper formatting   | Yes   | All equations in LaTeX/Markdown                                   |
+
+---
+
+## **Conclusion (Actionable Summary)**
+
+- Ensure each question is fully standalone: all necessary data should be (re)stated.
+- Clarify any ambiguous terms or conversions (e.g., “rotor radius”, initial/final states).
+- Omit unnecessary data unless used for a required reasoning step.
+- Always specify answer format, significant figures, and required units explicitly.
+- Maintain question originality and complexity.
+- Review question phrasing for maximum precision and rigor.
+- Use chemical example names and scenarios that are not found verbatim in standard textbooks.
+
+**These refinements will further elevate your chemistry assessments’ rigor, clarity, and effectiveness.**
+=== Turn 2: Author refines questions ===
+<question>  
+In an analytical ultracentrifugation sedimentation equilibrium (AUC-SE) experiment at 25 °C, a globular protein with molar mass \(M = 60\,000\) g·mol\(^{-1}\) is analyzed at radius \(r = 7.5\) cm in a rotor. The rotor spins at angular velocity \(\omega = 40\,000\) rpm. The solvent density is \(\rho = 998\) kg·m\(^{-3}\), and the protein’s partial specific volume is \(\bar{v} = 0.73\) mL·g\(^{-1}\).  
+
+Given the sedimentation length defined by  
+
+\[
+L = \frac{RT}{M \omega^2 (1 - \bar{v} \rho) r^2}
+\]
+
+where \(R = 8.314\) J·mol\(^{-1}\)·K\(^{-1}\) and temperature \(T = 298\) K, convert all quantities to SI units before calculation and determine \(L\) in micrometers (\(\mu\)m).  
+
+Express your final answer rounded to three significant figures.  
+</question>
+
+
+<question>  
+An aqueous solution of polyethylene glycol (PEG) at 298 K has a partial specific volume \(\bar{v} = 0.75\) mL·g\(^{-1}\). The polymer concentration is 150 mg·mL\(^{-1}\). The solvent (water) density is \(\rho_{\text{solvent}} = 0.998\) g·mL\(^{-1}\).  
+
+Using the formula  
+
+\[
+\phi = \frac{c \bar{v}}{1 + c(\bar{v} - 1/\rho_{\text{solvent}})}
+\]
+
+where \(c\) is the polymer concentration expressed in g·mL\(^{-1}\), calculate the dimensionless volume fraction \(\phi\) of PEG in the solution.  
+
+Express \(\phi\) as a unitless decimal rounded to three significant figures.  
+</question>
+
+
+<question>  
+A laser ablation pulse deposits 0.5 J of energy into a borosilicate glass sample approximated as a cylindrical volume with diameter 100 \(\mu\)m and depth 20 \(\mu\)m. The glass has density 2.23 g·cm\(^{-3}\) and specific heat capacity 0.75 J·g\(^{-1}\)·K\(^{-1}\).  
+
+Assuming 60% of the pulse energy is absorbed uniformly by this volume, and neglecting any heat losses or phase changes, calculate the temperature increase \(\Delta T\) (in Kelvin) per pulse.  
+
+Express your answer rounded to three significant figures.  
+</question>
+
+
+<question>  
+An aqueous solution of bovine serum albumin (BSA) at 25 °C has a concentration of 300 mg·mL\(^{-1}\). The molar mass of BSA is 66,500 g·mol\(^{-1}\).  
+
+Calculate the molar concentration of the BSA solution in mol·L\(^{-1}\).  
+
+Express your answer rounded to three significant figures.  
+</question>
+
+
+<question>  
+Consider an aqueous bovine serum albumin (BSA) solution at 25 °C with concentration 300 mg·mL\(^{-1}\) and partial specific volume \(\bar{v} = 0.74\) mL·g\(^{-1}\).  
+
+Calculate the unitless volume fraction \(\phi\) occupied by BSA molecules in the solution.  
+
+Express \(\phi\) as a dimensionless decimal rounded to three significant figures.  
+</question>
+
+
+<question>  
+An organic solute is dissolved in acetone (density 0.79 g·mL\(^{-1}\)) at a concentration of 250 mg·mL\(^{-1}\). The solute’s molar mass is 180 g·mol\(^{-1}\), and its partial molar volume in acetone is 120 cm\(^3\)·mol\(^{-1}\).  
+
+Assuming the solution volume is 1 L, calculate the molar volume fraction \(\phi_m\) defined as  
+
+\[
+\phi_m = \frac{n V_m}{V_{\text{total}}}
+\]
+
+where \(n\) is the moles of solute per liter of solution, and \(V_m\) is the partial molar volume in cm\(^3\)·mol\(^{-1}\).  
+
+Express \(\phi_m\) as a decimal fraction rounded to four significant figures.  
+</question>
+
+
+<question>  
+A mechanical drilling process creates holes of volume \(3.14 \times 10^{-5}\) cm\(^3\) in a polymer film that is 200 \(\mu\)m thick. The polymer density is 1.2 g·cm\(^{-3}\).  
+
+Calculate the mass of polymer removed per hole, expressing your answer in micrograms (\(\mu\)g).  
+
+Round your answer to three significant figures.  
+</question>
+
+
+<question>  
+In an analytical ultracentrifugation sedimentation equilibrium experiment at 20 °C, the equilibrium concentration distribution of a protein is described by  
+
+\[
+c(r) = c(r_0) \exp\left[\frac{M(1 - \bar{v}\rho)\omega^2 (r^2 - r_0^2)}{2RT}\right]
+\]
+
+where:  
+- \(M = 50,000\) g·mol\(^{-1}\) (molar mass),  
+- \(\bar{v} = 0.72\) mL·g\(^{-1}\) (partial specific volume),  
+- \(\rho = 998\) kg·m\(^{-3}\) (solvent density),  
+- \(\omega = 30,000\) rpm (rotor angular velocity),  
+- \(r_0 = 6.0\) cm (reference radius),  
+- \(r = 6.5\) cm (target radius),  
+- \(c(r_0) = 2.0\) mg·mL\(^{-1}\) (protein concentration at \(r_0\)),  
+- \(R = 8.314\) J·mol\(^{-1}\)·K\(^{-1}\), and  
+- \(T = 293\) K.  
+
+Convert \(\omega\) to radians per second and all other quantities to SI units before calculation.  
+
+Calculate the protein concentration \(c(r)\) at radius \(r = 6.5\) cm.  
+
+Express your answer in mg·mL\(^{-1}\), rounded to three significant figures.  
+</question>
+
+
+<question>  
+An aqueous protein solution has initial volume 10 \(\mu\)L and protein concentration 10 mg·mL\(^{-1}\). The protein has molar mass 80,000 g·mol\(^{-1}\) and partial specific volume \(\bar{v} = 0.7\) mL·g\(^{-1}\). The solution is concentrated by mechanical evaporation to 100 mg·mL\(^{-1}\), assuming ideal mixing and that the protein volume does not change. The solvent density remains 0.998 g·mL\(^{-1}\).  
+
+Calculate the increase in partial molar volume of the protein molecules in mL·mol\(^{-1}\), defined as the partial molar volume in the final solution minus that in the initial solution.  
+
+Express your answer rounded to three significant figures.  
+</question>
+
+
+<question>  
+Laser ablation of quartz glass has an ablation threshold fluence of 8 J·cm\(^{-2}\) per pulse. The laser fluence used is 12 J·cm\(^{-2}\) per pulse. Each pulse removes 50 nm of material in depth.  
+
+Calculate the minimum integer number of pulses needed to ablate through a 0.5 mm thickness of quartz glass. Assume uniform removal per pulse and round up to the nearest whole pulse.  
+</question>
+
+
+<question>  
+Provide the correct IUPAC name for the compound with molecular formula \(\mathrm{C_4H_8O_3}\), which is a linear carboxylic acid with a hydroxyl group substituted on the second carbon atom. The structure is HO–CH–CH\(_2\)–COOH.  
+</question>
+=== Turn 2: Critic feedback ===
+Certainly! Here is **concise, actionable feedback** for each question, **addressing your 11 guidelines** in turn:
+
+---
+
+### Question 1: Sedimentation Length (AUC-SE)
+
+**Strengths:**
+- Good real-world scenario and originality.
+- All necessary parameters provided; clear unit conversion requirement.
+- Only one final answer sought.
+
+**Issues & Suggestions:**
+- Units in the expression for $L$: The equation is provided correctly, but it's not clear if the reader must substitute every variable or if the numbers provided are already in SI. Explicitly require all variables to be substituted in SI units.
+- The question could clarify "Convert all quantities to SI units before calculation" by saying "Express all quantities (including $M$, $\bar{v}$, and $\rho$) in SI units prior to substitution in the equation."
+- The rounding instruction is clear.
+
+---
+
+### Question 2: Polymer Volume Fraction
+
+**Strengths:**
+- Requires multi-step reasoning with unit conversions.
+- Formula and variables are stated explicitly.
+- Final answer is unique and unitless.
+
+**Issues & Suggestions:**
+- The equation’s denominator $1 + c(\bar{v} - 1/\rho_{\text{solvent}})$ can be ambiguous if units are not handled consistently—clarify that $c$, $\bar{v}$, and $1/\rho_{\text{solvent}}$ must be in compatible units (e.g., g/mL, mL/g, mL/g).
+- State that the answer is dimensionless and give the desired decimal accuracy.
+
+---
+
+### Question 3: Temperature Increase from Laser Ablation
+
+**Strengths:**
+- Realistic laboratory scenario.
+- All variables and units are provided.
+- Calculation is multi-step and result is unique.
+
+**Issues & Suggestions:**
+- Explicitly state that the student should convert all lengths to SI units before calculation; clarify expected units for final answer ($\Delta T$ in Kelvin).
+- The “assuming 60% absorbed” is good contextual detail.
+- Specify that the “volume” is for one hole for clarity and that the temperature change is for **one pulse**.
+
+---
+
+### Question 4: Molar Concentration (BSA)
+
+**Strengths:**
+- Common biological scenario with non-standard concentrations.
+- Requires conversion between mg/mL and mol/L; multi-step reasoning.
+
+**Issues & Suggestions:**
+- Specify that students must convert units ($1$ mg/mL to g/L etc.).
+- For clarity and consistency, specify "Express the answer to three significant figures in **mol·L$^{-1}$**."
+- Otherwise, question is rigorous and concise.
+
+---
+
+### Question 5: Volume Fraction of BSA
+
+**Strengths:**
+- Requires knowledge of partial specific volume and unit conversions.
+- Final answer is unique and dimensionless.
+
+**Issues & Suggestions:**
+- Specify the definition or equation for volume fraction (many exist: $\phi = c \bar{v}$ etc.), and clarify units to avoid ambiguity.
+- State explicitly that answers should be kept to three significant figures.
+
+---
+
+### Question 6: Molar Volume Fraction (Organic Solute in Acetone)
+
+**Strengths:**
+- Well-posed, context not standard textbook example.
+- Requires several unit conversions.
+
+**Issues & Suggestions:**
+- Clarify any conversions required: $n$ in mol/L, $V_m$ in cm$^3$/mol, $V_{\text{total}}$ in mL or cm$^3$—make unit expectations explicit.
+- For "Assume 1 L of solution", be clear whether total volume refers to solution or pure solvent.
+
+---
+
+### Question 7: Mass of Polymer Removed per Hole
+
+**Strengths:**
+- Multi-step, requires volume to mass calculation; real-world context.
+- Final answer unique and to specified decimal places.
+
+**Issues & Suggestions:**
+- Specify that mass should be expressed in **$\mu$g** (micrograms), and recommend all units be converted to SI before calculations.
+- Thickness of film is not needed for calculations as presented; remove or give context for inclusion.
+- Specify that answer is per hole.
+
+---
+
+### Question 8: Concentration Distribution in AUC
+
+**Strengths:**
+- Uses a non-standard scenario (radial concentration) with multiple physical constants.
+- Explicit instruction to convert units.
+
+**Issues & Suggestions:**
+- Statement about unit conversions is good, but redundancy should be avoided—simply state "Convert all quantities to SI units before calculation."
+- Specify final answer's required accuracy and units.
+- Equation presentation is clear and unambiguous.
+
+---
+
+### Question 9: Partial Molar Volume Change on Concentration
+
+**Strengths:**
+- Multi-step, realistic and non-textbook situation.
+- Requires understanding of partial molar volume concept.
+
+**Issues & Suggestions:**
+- Partial molar volume calculation may require explicit formula—either provide it or reference the appropriate thermodynamic relation to avoid misinterpretation.
+- Specify units and rounding requirement.
+
+---
+
+### Question 10: Laser Ablation Pulses for Quartz
+
+**Strengths:**
+- Requires conversion between depths and calculation of minimum integer pulses.
+- Only one final answer.
+
+**Issues & Suggestions:**
+- Specify "Round up to the nearest integer" for clarity.
+- State that 0.5 mm should be converted to nm before calculations.
+
+---
+
+### Question 11: IUPAC Name for Hydroxy Acid
+
+**Strengths:**
+- Unique compound (not a textbook example).
+- Requires application of IUPAC rules.
+
+**Issues & Suggestions:**
+- Structure provided is sufficiently unambiguous; could be more explicit (drawn, but text is fine).
+- Could be slightly more concise: e.g., just “Name the IUPAC compound HO–CH–CH$_2$–COOH ($C_4H_8O_3$)”.
+
+---
+
+## **General Feedback Across All Questions**
+
+- **Unit Clarity:** In all cases, specify expected units for input and output to avoid confusion and mismatches (especially for $\mu$g, $\mu$m, mg/mL, etc.).
+- **Equation Clarity:** If an equation is not universally standard, provide it and ensure all symbols are defined.
+- **Avoid Redundancy:** Several questions specify "convert all quantities to SI units before calculation" repeatedly. If used, rephrase so it's clear but not redundant.
+- **No Extraneous Details:** Avoid adding values or facts not used in the calculation (thickness of the film, unless needed; specific T unless it appears in the formula).
+- **Single Result:** Each question asks for one numerical value or name, which is good.
+- **Non-Textbook:** The scenarios are original and not rote textbook exercises.
+- **Rigor and Conciseness:** Overall, the questions are clearly phrased and direct.
+
+---
+
+## **Summary Table**
+
+| Q# | Guideline Issues                            | Suggestions                                                |
+|----|---------------------------------------------|------------------------------------------------------------|
+| 1  | SI conversion instruction can be clearer.   | Specify all variable units before substitution.             |
+| 2  | Possible unit ambiguity in denominator.     | Clarify all variable unit expectations.                    |
+| 3  | Units for final answer; clarify per pulse.  | Specify all conversions and per pulse result.              |
+| 4  | Conversion steps could be more explicit.    | Clearly state all conversions and required answer units.    |
+| 5  | Missing formula/unit clarity.               | State formula/units for volume fraction.                   |
+| 6  | Conversion for $n$, $V_m$, $V_{\text{total}}$ not explicit.| Specify units for every variable.                         |
+| 7  | Superfluous film thickness; unit clarity.   | Omit if not used; specify precise units for answer.        |
+| 8  | Repeated SI conversion and unit request.    | One concise SI conversion/language; specify accuracy/units.|
+| 9  | Formula for partial molar volume not given. | Provide or reference the appropriate formula.              |
+| 10 | Conversion/rnd-up could be more explicit.   | Instruct to round up, and convert units at start.          |
+| 11 | Structure description can be streamlined.   | Shorten while retaining clarity.                           |
+
+---
+
+## **General Suggestions for All Questions**
+
+1. **Be explicit about required units at every step.**
+2. **Define all symbols and variables at least once.**
+3. **State equations in Markdown $\LaTeX$ format for clarity.**
+4. **Avoid context or numbers not impacting the answer (i.e., extraneous data).**
+5. **Avoid multi-part answers, strictly require a single solution.**
+6. **Avoid ambiguous chemical or physical terminology.**
+7. **Encourage multi-step reasoning without excessive verbiage.**
+
+---
+
+If **further improvements** are sought for a specific question, please indicate!
+=== Turn 3: Author refines questions ===
+<question>  
+In an analytical ultracentrifugation sedimentation equilibrium (AUC-SE) experiment at 25 °C, a globular protein with molar mass \(M = 60\,000\) g·mol\(^{-1}\) is analyzed at radius \(r = 7.5\) cm in a rotor spinning at angular velocity \(\omega = 40\,000\) rpm. The solvent density is \(\rho = 998\) kg·m\(^{-3}\), and the protein’s partial specific volume is \(\bar{v} = 0.73\) mL·g\(^{-1}\).  
+
+Given the sedimentation length  
+
+\[
+L = \frac{RT}{M \omega^2 (1 - \bar{v} \rho) r^2}
+\]
+
+where \(R = 8.314\) J·mol\(^{-1}\)·K\(^{-1}\) and \(T = 298\) K, convert all given quantities—including \(M\), \(\bar{v}\), \(\rho\), \(r\), and \(\omega\)—to SI units before substituting into the equation.  
+
+Calculate \(L\) in micrometers (\(\mu\)m).  
+
+Express your final answer rounded to three significant figures.  
+</question>  
+
+
+<question>  
+An aqueous solution of polyethylene glycol (PEG) at 298 K has a partial specific volume \(\bar{v} = 0.75\) mL·g\(^{-1}\). The polymer concentration is 150 mg·mL\(^{-1}\). The solvent (water) density is \(\rho_{\text{solvent}} = 0.998\) g·mL\(^{-1}\).  
+
+Using the formula  
+
+\[
+\phi = \frac{c \bar{v}}{1 + c(\bar{v} - 1/\rho_{\text{solvent}})}
+\]
+
+where \(c\) is polymer concentration in g·mL\(^{-1}\), \(\bar{v}\) is in mL·g\(^{-1}\), and \(\rho_{\text{solvent}}\) in g·mL\(^{-1}\), calculate the unitless volume fraction \(\phi\) of PEG.  
+
+Express \(\phi\) as a dimensionless decimal rounded to three significant figures.  
+</question>  
+
+
+<question>  
+A laser ablation pulse deposits 0.5 J of energy into a borosilicate glass sample modeled as a cylinder with diameter 100 \(\mu\)m and depth 20 \(\mu\)m. The glass density is 2.23 g·cm\(^{-3}\), and its specific heat capacity is 0.75 J·g\(^{-1}\)·K\(^{-1}\).  
+
+Assuming 60% of the pulse energy is absorbed uniformly in this volume and neglecting heat losses or phase changes, calculate the temperature increase \(\Delta T\) in Kelvin produced by one laser pulse.  
+
+Convert all quantities to SI units before calculation.  
+
+Express \(\Delta T\) rounded to three significant figures.  
+</question>  
+
+
+<question>  
+An aqueous solution of bovine serum albumin (BSA) at 25 °C has a concentration of 300 mg·mL\(^{-1}\). The molar mass of BSA is 66,500 g·mol\(^{-1}\).  
+
+Calculate the molar concentration of the BSA solution in mol·L\(^{-1}\).  
+
+Express your answer rounded to three significant figures.  
+</question>  
+
+
+<question>  
+An aqueous bovine serum albumin (BSA) solution at 25 °C has concentration 300 mg·mL\(^{-1}\) and partial specific volume \(\bar{v} = 0.74\) mL·g\(^{-1}\).  
+
+Calculate the unitless volume fraction \(\phi\) occupied by BSA molecules using the formula \(\phi = c \bar{v}\), where \(c\) is the concentration in g·mL\(^{-1}\) and \(\bar{v}\) in mL·g\(^{-1}\).  
+
+Express \(\phi\) as a dimensionless decimal rounded to three significant figures.  
+</question>  
+
+
+<question>  
+An organic solute is dissolved in acetone (density 0.79 g·mL\(^{-1}\)) at a concentration of 250 mg·mL\(^{-1}\). The solute’s molar mass is 180 g·mol\(^{-1}\), and its partial molar volume in acetone is 120 cm\(^3\)·mol\(^{-1}\).  
+
+Assuming the solution volume is 1 L, calculate the molar volume fraction \(\phi_m\) defined as  
+
+\[
+\phi_m = \frac{n V_m}{V_{\text{total}}}
+\]
+
+where \(n\) (mol) = moles of solute per liter of solution, \(V_m\) is the partial molar volume in cm\(^3\)·mol\(^{-1}\), and \(V_{\text{total}}\) is total solution volume in cm\(^3\) (1 L = 1000 cm\(^3\)).  
+
+Express \(\phi_m\) as a dimensionless decimal rounded to four significant figures.  
+</question>  
+
+
+<question>  
+Mechanical drilling creates holes of volume \(3.14 \times 10^{-5}\) cm\(^3\) in a polymer film. The polymer density is 1.2 g·cm\(^{-3}\).  
+
+Calculate the mass of polymer removed per hole, expressing the result in micrograms (\(\mu\)g).  
+
+Express your final answer rounded to three significant figures.  
+</question>  
+
+
+<question>  
+In an analytical ultracentrifugation sedimentation equilibrium experiment at 20 °C, the concentration distribution of a protein is given by  
+
+\[
+c(r) = c(r_0) \exp\left[\frac{M(1 - \bar{v}\rho)\omega^2 (r^2 - r_0^2)}{2RT}\right]
+\]
+
+where  
+- \(M = 50,000\) g·mol\(^{-1}\) (molar mass),  
+- \(\bar{v} = 0.72\) mL·g\(^{-1}\) (partial specific volume),  
+- \(\rho = 998\) kg·m\(^{-3}\) (solvent density),  
+- \(\omega = 30,000\) rpm (rotor angular velocity),  
+- \(r_0 = 6.0\) cm,  
+- \(r = 6.5\) cm,  
+- \(c(r_0) = 2.0\) mg·mL\(^{-1}\),  
+- \(R = 8.314\) J·mol\(^{-1}\)·K\(^{-1}\),  
+- \(T = 293\) K.  
+
+Convert \(\omega\) to radians per second and all other quantities to SI units before calculation.  
+
+Calculate the protein concentration \(c(r)\) at \(r = 6.5\) cm.  
+
+Express your answer in mg·mL\(^{-1}\), rounded to three significant figures.  
+</question>  
+
+
+<question>  
+An aqueous protein solution initially has volume 10 \(\mu\)L and protein concentration 10 mg·mL\(^{-1}\). The protein has molar mass 80,000 g·mol\(^{-1}\) and partial specific volume \(\bar{v} = 0.7\) mL·g\(^{-1}\). The solution is concentrated by mechanical evaporation to 100 mg·mL\(^{-1}\), assuming ideal mixing and that protein volume remains constant. The solvent density remains 0.998 g·mL\(^{-1}\).  
+
+Calculate the increase in partial molar volume of the protein molecules (in mL·mol\(^{-1}\)), defined as the partial molar volume in the final solution minus that in the initial solution.  
+
+Express your answer rounded to three significant figures.  
+</question>  
+
+
+<question>  
+Laser ablation of quartz glass has an ablation threshold fluence of 8 J·cm\(^{-2}\) per pulse. The laser fluence used is 12 J·cm\(^{-2}\) per pulse. Each pulse removes 50 nm of material depth.  
+
+Calculate the minimum integer number of pulses required to completely ablate through a 0.5 mm thickness of quartz glass.  
+
+Convert units as needed and round up to the nearest whole number of pulses.  
+</question>  
+
+
+<question>  
+Provide the correct IUPAC name for the compound with molecular formula \(\mathrm{C_4H_8O_3}\), which is a linear carboxylic acid with a hydroxyl group on the second carbon atom.  
+
+The structural formula is HO–CH–CH\(_2\)–COOH.  
+</question>
+=== Final questions generated ===

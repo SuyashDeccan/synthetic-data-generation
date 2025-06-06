@@ -1,0 +1,188 @@
+=== Turn 0: Author generates questions ===
+Here are some novel, undergraduate-level biology questions based on the given topic, key concepts, and guidelines:
+
+1.  <question>An asthma clinical trial compares a new inhaler with a standard inhaler. Researchers use the Morisky Medication Adherence Scale-8 (MMAS-8) to assess adherence. The new inhaler group has an average MMAS-8 score of 6.5, while the standard inhaler group has an average score of 5.0. It is known that for every 1-point increase in the MMAS-8 score, the risk of asthma exacerbation decreases by 15%. Calculate the estimated percentage reduction in asthma exacerbations for the new inhaler group compared to the standard inhaler group, assuming a linear relationship. </question>
+
+2.  <question>A clinical study of COPD patients uses both the MMAS-8 and the Device Appropriateness Index (DAI).  The average MMAS-8 score is 7.0, and the average DAI score is 0.8 (on a scale of 0 to 1, with 1 indicating perfect device appropriateness). Researchers find that the correlation coefficient between MMAS-8 scores and forced expiratory volume in one second (FEV1) is 0.6, and the correlation coefficient between DAI scores and FEV1 is 0.4. If FEV1 increases linearly with both MMAS-8 and DAI, and a combined Adherence Index (AI) is calculated as AI = (MMAS-8/8) + DAI, what is the AI score, rounded to two decimal places, for a patient with MMAS-8 score of 6 and DAI score of 0.9?</question>
+
+3.  <question>A researcher designs a study to assess adherence to inhaled corticosteroids in children with asthma. The study involves weekly check-ins, and the researcher wants to quantify the potential cumulative impact of non-adherence over a 12-week period. Suppose that the average daily adherence rate, *a*, for a patient, determined using an electronic monitoring device, is 0.75 (where 1.0 represents perfect adherence). Further suppose that for each 0.1 decrease in *a*, the patient experiences an average of 0.5 additional asthma symptoms per week. Calculate the total number of additional asthma symptoms expected for that patient over the 12-week period, compared to perfect adherence. </question>
+
+4. <question>In a clinical trial, two groups of patients with COPD are treated with different inhalers. Group A has an average MMAS-8 score of 7, and Group B has an average MMAS-8 score of 5. Studies indicate that for every point increase in MMAS-8, lung function (measured in FEV1 liters) improves by 0.1 liters. Assuming a linear relationship, how much greater is the average FEV1 (in liters) for patients in Group A compared to patients in Group B?</question>
+
+5. <question>A study investigates adherence to medication in asthma patients, employing the MMAS-8 scale. Patients are categorized into three adherence levels: high (MMAS-8 score of 8), medium (MMAS-8 score of 6-7), and low (MMAS-8 score of <6). The proportion of patients in the low adherence group is found to be 0.3. Further analysis reveals that patients with low adherence have a 20% greater risk of hospitalization compared to those with medium or high adherence. If the baseline hospitalization rate for the medium/high adherence group is 0.1 hospitalizations per patient-year, what is the expected hospitalization rate (in hospitalizations per patient-year) for the low adherence group, rounded to two decimal places?</question>
+=== Turn 0: Critic feedback ===
+Here's a critique of each question against your guidelines, with concise, actionable feedback:
+
+---
+
+**Critique and Feedback:**
+
+1.  <question>An asthma clinical trial compares a new inhaler with a standard inhaler. Researchers use the Morisky Medication Adherence Scale-8 (MMAS-8) to assess adherence. The new inhaler group has an average MMAS-8 score of 6.5, while the standard inhaler group has an average score of 5.0. It is known that for every 1-point increase in the MMAS-8 score, the risk of asthma exacerbation decreases by 15%. Calculate the estimated percentage reduction in asthma exacerbations for the new inhaler group compared to the standard inhaler group, assuming a linear relationship. </question>
+
+    *   **Strengths:** This question is well-designed. It models a realistic biology scenario (clinical trial, adherence, exacerbations), requires multi-step quantitative reasoning (calculate score difference, then apply reduction rate), avoids "how-based" questions, is unique, and yields a single numerical solution. Phrasing is rigorous and concise.
+    *   **Area for Improvement:**
+        *   **LaTeX Formatting (Guideline 8/9):** While the numerical values are clear, for full adherence to "Symbols should follow conventional biology notation" and "rigorous, concise phrasing," consider using LaTeX for scores and percentages within the question, e.g., "MMAS-8 score of $6.5$" and "decreases by $15\\%$."
+
+---
+
+2.  <question>A clinical study of COPD patients uses both the MMAS-8 and the Device Appropriateness Index (DAI). The average MMAS-8 score is 7.0, and the average DAI score is 0.8 (on a scale of 0 to 1, with 1 indicating perfect device appropriateness). Researchers find that the correlation coefficient between MMAS-8 scores and forced expiratory volume in one second (FEV1) is 0.6, and the correlation coefficient between DAI scores and FEV1 is 0.4. If FEV1 increases linearly with both MMAS-8 and DAI, and a combined Adherence Index (AI) is calculated as AI = (MMAS-8/8) + DAI, what is the AI score, rounded to two decimal places, for a patient with MMAS-8 score of 6 and DAI score of 0.9?</question>
+
+    *   **Strengths:** Models a relevant biology scenario and seeks a numerical answer.
+    *   **Area for Improvement:**
+        *   **Force Multi-Step Reasoning / Distractor Information (Guideline 3):** This question contains significant extraneous information (average scores, correlation coefficients, relationship with FEV1). The actual calculation required is a direct plug-and-chug into the given formula for AI. This makes it a single-step calculation and fails to leverage the provided biological/statistical context. **Action:** Either remove the irrelevant information (e.g., average scores, correlations with FEV1) to make the question more concise for the specific calculation, or, preferably, rephrase the question to *require* the use of this biological/statistical information (e.g., "Given the correlations, which index (MMAS-8 or DAI) contributes more to the combined AI's prediction of FEV1?") or to calculate something related to FEV1 using the combined index.
+        *   **LaTeX Formatting (Guideline 8/9):** Use LaTeX for variables and numerical values, e.g., "MMAS-8 score of $7.0$", "DAI score of $0.8$", "$FEV_1$", and "$AI = (MMAS-8/8) + DAI$".
+
+---
+
+3.  <question>A researcher designs a study to assess adherence to inhaled corticosteroids in children with asthma. The study involves weekly check-ins, and the researcher wants to quantify the potential cumulative impact of non-adherence over a 12-week period. Suppose that the average daily adherence rate, *a*, for a patient, determined using an electronic monitoring device, is 0.75 (where 1.0 represents perfect adherence). Further suppose that for each 0.1 decrease in *a*, the patient experiences an average of 0.5 additional asthma symptoms per week. Calculate the total number of additional asthma symptoms expected for that patient over the 12-week period, compared to perfect adherence. </question>
+
+    *   **Strengths:** This is an excellent question. It perfectly models a biology scenario, robustly forces multi-step reasoning (calculate deviation, rate per week, then total over time), avoids "how" questions, is unique, and yields a single correct numerical solution. Phrasing is rigorous and concise.
+    *   **Area for Improvement:**
+        *   **LaTeX Formatting (Guideline 8/9):** Incorporate LaTeX for numerical values and the variable, e.g., "rate, $a$, for a patient, is $0.75$", "each $0.1$ decrease in $a$", "$0.5$ additional asthma symptoms per week", "over the $12$-week period".
+
+---
+
+4.  <question>In a clinical trial, two groups of patients with COPD are treated with different inhalers. Group A has an average MMAS-8 score of 7, and Group B has an average MMAS-8 score of 5. Studies indicate that for every point increase in MMAS-8, lung function (measured in FEV1 liters) improves by 0.1 liters. Assuming a linear relationship, how much greater is the average FEV1 (in liters) for patients in Group A compared to patients in Group B?</question>
+
+    *   **Strengths:** A strong question. It clearly models a biology scenario (clinical trial, adherence, lung function), forces multi-step reasoning (calculate score difference, then apply improvement rate), is unique, and leads to a single numerical answer with consistent units. Phrasing is concise.
+    *   **Area for Improvement:**
+        *   **LaTeX Formatting (Guideline 8/9):** Use LaTeX for numerical values, scores, and units, e.g., "MMAS-8 score of $7$", "$FEV_1$ (in liters)", "improves by $0.1\\,\\mathrm{L}$".
+
+---
+
+5.  <question>A study investigates adherence to medication in asthma patients, employing the MMAS-8 scale. Patients are categorized into three adherence levels: high (MMAS-8 score of 8), medium (MMAS-8 score of 6-7), and low (MMAS-8 score of <6). The proportion of patients in the low adherence group is found to be 0.3. Further analysis reveals that patients with low adherence have a 20% greater risk of hospitalization compared to those with medium or high adherence. If the baseline hospitalization rate for the medium/high adherence group is 0.1 hospitalizations per patient-year, what is the expected hospitalization rate (in hospitalizations per patient-year) for the low adherence group, rounded to two decimal places?</question>
+
+    *   **Strengths:** Models a relevant biology scenario and seeks a numerical answer with consistent units.
+    *   **Area for Improvement:**
+        *   **Force Multi-Step Reasoning / Distractor Information (Guideline 3):** The information "The proportion of patients in the low adherence group is found to be 0.3" is irrelevant to calculating the hospitalization rate *specifically for the low adherence group*. It's a distractor. **Action:** Remove this sentence to improve conciseness and avoid misleading the student, or rephrase the question to require its use (e.g., asking for the overall population's expected hospitalization rate).
+        *   **LaTeX Formatting (Guideline 8/9):** Incorporate LaTeX for numerical values, scores, and rates, e.g., "MMAS-8 score of $8$", "proportion of patients... $0.3$", "$20\\%$ greater risk", "baseline hospitalization rate... $0.1\\,\\mathrm{hospitalizations\\,per\\,patient-year}$".
+=== Turn 1: Author refines questions ===
+Here are the refined questions, incorporating the feedback and using LaTeX formatting:
+
+1.  <question>An asthma clinical trial compares a new inhaler with a standard inhaler. Researchers use the Morisky Medication Adherence Scale-8 (MMAS-8) to assess adherence. The new inhaler group has an average MMAS-8 score of $6.5$, while the standard inhaler group has an average score of $5.0$. It is known that for every $1$-point increase in the MMAS-8 score, the risk of asthma exacerbation decreases by $15\\%$. Calculate the estimated percentage reduction in asthma exacerbations for the new inhaler group compared to the standard inhaler group, assuming a linear relationship.</question>
+
+2.  <question>A clinical study of COPD patients uses both the MMAS-8 and the Device Appropriateness Index (DAI).  Researchers find that the correlation coefficient between MMAS-8 scores and forced expiratory volume in one second ($FEV_1$) is $0.6$, and the correlation coefficient between DAI scores and $FEV_1$ is $0.4$. A combined Adherence Index ($AI$) is calculated as $AI = (MMAS-8/8) + DAI$. Given these correlations, which index (MMAS-8 or DAI) has a stronger influence on the combined AI's predicted change to $FEV_1$? Justify your answer.</question>
+
+3.  <question>A researcher designs a study to assess adherence to inhaled corticosteroids in children with asthma. The study involves weekly check-ins, and the researcher wants to quantify the potential cumulative impact of non-adherence over a $12$-week period. Suppose that the average daily adherence rate, $a$, for a patient, determined using an electronic monitoring device, is $0.75$ (where $1.0$ represents perfect adherence). Further suppose that for each $0.1$ decrease in $a$, the patient experiences an average of $0.5$ additional asthma symptoms per week. Calculate the total number of additional asthma symptoms expected for that patient over the $12$-week period, compared to perfect adherence.</question>
+
+4.  <question>In a clinical trial, two groups of patients with COPD are treated with different inhalers. Group A has an average MMAS-8 score of $7$, and Group B has an average MMAS-8 score of $5$. Studies indicate that for every point increase in MMAS-8, lung function (measured in $FEV_1$) improves by $0.1\\,\\mathrm{L}$. Assuming a linear relationship, how much greater is the average $FEV_1$ (in liters) for patients in Group A compared to patients in Group B?</question>
+
+5.  <question>A study investigates adherence to medication in asthma patients, employing the MMAS-8 scale. Patients are categorized into three adherence levels: high (MMAS-8 score of $8$), medium (MMAS-8 score of $6-7$), and low (MMAS-8 score of <$6$).  Further analysis reveals that patients with low adherence have a $20\\%$ greater risk of hospitalization compared to those with medium or high adherence. If the baseline hospitalization rate for the medium/high adherence group is $0.1\\,\\mathrm{hospitalizations\\,per\\,patient-year}$, what is the expected hospitalization rate (in hospitalizations per patient-year) for the low adherence group, rounded to two decimal places?</question>
+=== Turn 1: Critic feedback ===
+Here's a critique of each question against your guidelines, with actionable feedback:
+
+---
+
+**Critique for Question 1:**
+<question>An asthma clinical trial compares a new inhaler with a standard inhaler. Researchers use the Morisky Medication Adherence Scale-8 (MMAS-8) to assess adherence. The new inhaler group has an average MMAS-8 score of $6.5$, while the standard inhaler group has an average score of $5.0$. It is known that for every $1$-point increase in the MMAS-8 score, the risk of asthma exacerbation decreases by $15\\%$. Calculate the estimated percentage reduction in asthma exacerbations for the new inhaler group compared to the standard inhaler group, assuming a linear relationship.</question>
+
+**Evaluation:**
+*   **Guideline 1 (Model a biology Scenario):** Adheres well.
+*   **Guideline 2 (Expect answers of single word answer, numerical answer):** Adheres well (numerical percentage).
+*   **Guideline 3 (Force Multi-Step Reasoning):** Adheres well (calculate score difference, then apply percentage reduction).
+*   **Guideline 4 (Avoid How based questions):** Adheres well.
+*   **Guideline 5 (Be Unique):** Adheres well.
+*   **Guideline 6 (Single Solution):** Adheres well.
+*   **Guideline 7 (Rigorous, concise phrasing):** Adheres well.
+*   **Guideline 9 (Units must be consistent; SI units; Symbols):** Adheres well.
+*   **Guideline 10 (Questions must not be multipart):** Adheres well.
+*   **Guideline 11 (Solution Formatting):** Question formatting is correct.
+*   **Guideline 12 (Multi-Step Equations):** Not applicable for question critique.
+
+**Feedback:** This is an excellent question. It effectively combines a biological scenario with a clear multi-step numerical calculation. No significant improvements needed.
+
+---
+
+**Critique for Question 2:**
+<question>A clinical study of COPD patients uses both the MMAS-8 and the Device Appropriateness Index (DAI). Researchers find that the correlation coefficient between MMAS-8 scores and forced expiratory volume in one second ($FEV_1$) is $0.6$, and the correlation coefficient between DAI scores and $FEV_1$ is $0.4$. A combined Adherence Index ($AI$) is calculated as $AI = (MMAS-8/8) + DAI$. Given these correlations, which index (MMAS-8 or DAI) has a stronger influence on the combined AI's predicted change to $FEV_1$? Justify your answer.</question>
+
+**Evaluation:**
+*   **Guideline 1 (Model a biology Scenario):** Adheres well.
+*   **Guideline 2 (Expect answers of single word answer, numerical answer):** **Violated.** The question asks for "which index" and "Justify your answer," which requires a short explanation, not a single word or numerical answer.
+*   **Guideline 3 (Force Multi-Step Reasoning):** **Weak adherence.** While conceptual reasoning is involved, it doesn't involve "two or more biological principles or steps" in a calculative or derivation sense.
+*   **Guideline 4 (Avoid How based questions):** **Violated.** "Justify your answer" is a form of "how/why" explanation.
+*   **Guideline 5 (Be Unique):** Adheres well.
+*   **Guideline 6 (Single Solution):** Adheres well (one index is correct, though the premise is complex).
+*   **Guideline 7 (Rigorous, concise phrasing):** Phrasing is clear, but the underlying statistical premise is complex and potentially ambiguous for a direct comparison based *only* on individual correlations when a scaled combined index is introduced without correlation between components.
+*   **Guideline 9 (Units must be consistent; SI units; Symbols):** Adheres well.
+*   **Guideline 10 (Questions must not be multipart):** Adheres well.
+*   **Guideline 11 (Solution Formatting):** Question formatting is correct.
+*   **Guideline 12 (Multi-Step Equations):** Not applicable for question critique.
+
+**Feedback:** This question has several critical issues that make it unsuitable under the given guidelines.
+1.  **Change Answer Type:** Rephrase the question to require a numerical calculation or a single numerical answer, eliminating the "Justify your answer" component and the qualitative "which index" output.
+2.  **Strengthen Multi-Step Reasoning:** If aiming for a numerical answer, incorporate a scenario that requires more explicit calculation steps based on the given information, perhaps involving a hypothetical change in scores or a weighted contribution calculation.
+3.  **Clarify Statistical Premise:** The current formulation asking about "stronger influence on the combined AI's predicted change to FEV1" given only individual correlations, and with one component scaled (`MMAS-8/8`), is statistically complex and potentially misleading. It's not straightforward to deduce the combined AI's correlation with FEV1 without knowing the correlation between MMAS-8 and DAI. Consider simplifying the relationship or providing more data (e.g., a multiple regression equation) if the intent is to analyze component influence.
+
+---
+
+**Critique for Question 3:**
+<question>A researcher designs a study to assess adherence to inhaled corticosteroids in children with asthma. The study involves weekly check-ins, and the researcher wants to quantify the potential cumulative impact of non-adherence over a $12$-week period. Suppose that the average daily adherence rate, $a$, for a patient, determined using an electronic monitoring device, is $0.75$ (where $1.0$ represents perfect adherence). Further suppose that for each $0.1$ decrease in $a$, the patient experiences an average of $0.5$ additional asthma symptoms per week. Calculate the total number of additional asthma symptoms expected for that patient over the $12$-week period, compared to perfect adherence.</question>
+
+**Evaluation:**
+*   **Guideline 1 (Model a biology Scenario):** Adheres well.
+*   **Guideline 2 (Expect answers of single word answer, numerical answer):** Adheres well (numerical count of symptoms).
+*   **Guideline 3 (Force Multi-Step Reasoning):** Adheres exceptionally well (calculating adherence deficit, then number of $0.1$ decrements, then weekly symptoms, then total symptoms over time).
+*   **Guideline 4 (Avoid How based questions):** Adheres well.
+*   **Guideline 5 (Be Unique):** Adheres well.
+*   **Guideline 6 (Single Solution):** Adheres well.
+*   **Guideline 7 (Rigorous, concise phrasing):** Adheres well.
+*   **Guideline 9 (Units must be consistent; SI units; Symbols):** Adheres well.
+*   **Guideline 10 (Questions must not be multipart):** Adheres well.
+*   **Guideline 11 (Solution Formatting):** Question formatting is correct.
+*   **Guideline 12 (Multi-Step Equations):** Not applicable for question critique.
+
+**Feedback:** This is an excellent question. It perfectly meets all the specified guidelines, providing a clear biological context and requiring multiple calculation steps to arrive at a single numerical answer. No significant improvements needed.
+
+---
+
+**Critique for Question 4:**
+<question>In a clinical trial, two groups of patients with COPD are treated with different inhalers. Group A has an average MMAS-8 score of $7$, and Group B has an average MMAS-8 score of $5$. Studies indicate that for every point increase in MMAS-8, lung function (measured in $FEV_1$) improves by $0.1\\,\\mathrm{L}$. Assuming a linear relationship, how much greater is the average $FEV_1$ (in liters) for patients in Group A compared to patients in Group B?</question>
+
+**Evaluation:**
+*   **Guideline 1 (Model a biology Scenario):** Adheres well.
+*   **Guideline 2 (Expect answers of single word answer, numerical answer):** Adheres well (numerical difference in Liters).
+*   **Guideline 3 (Force Multi-Step Reasoning):** Adheres well (calculate score difference, then apply FEV1 improvement rate).
+*   **Guideline 4 (Avoid How based questions):** Adheres well.
+*   **Guideline 5 (Be Unique):** Adheres well (distinct from Q1 despite similar structure).
+*   **Guideline 6 (Single Solution):** Adheres well.
+*   **Guideline 7 (Rigorous, concise phrasing):** Adheres well.
+*   **Guideline 9 (Units must be consistent; SI units; Symbols):** Adheres well (uses $\mathrm{L}$ for Liters).
+*   **Guideline 10 (Questions must not be multipart):** Adheres well.
+*   **Guideline 11 (Solution Formatting):** Question formatting is correct.
+*   **Guideline 12 (Multi-Step Equations):** Not applicable for question critique.
+
+**Feedback:** This is an excellent question. It clearly adheres to all guidelines, providing a relevant biological scenario and requiring a two-step numerical calculation. No significant improvements needed.
+
+---
+
+**Critique for Question 5:**
+<question>A study investigates adherence to medication in asthma patients, employing the MMAS-8 scale. Patients are categorized into three adherence levels: high (MMAS-8 score of $8$), medium (MMAS-8 score of $6-7$), and low (MMAS-8 score of <$6$). Further analysis reveals that patients with low adherence have a $20\\%$ greater risk of hospitalization compared to those with medium or high adherence. If the baseline hospitalization rate for the medium/high adherence group is $0.1\\,\\mathrm{hospitalizations\\,per\\,patient-year}$, what is the expected hospitalization rate (in hospitalizations per patient-year) for the low adherence group, rounded to two decimal places?</question>
+
+**Evaluation:**
+*   **Guideline 1 (Model a biology Scenario):** Adheres well.
+*   **Guideline 2 (Expect answers of single word answer, numerical answer):** Adheres well (numerical rate).
+*   **Guideline 3 (Force Multi-Step Reasoning):** Adheres well (interpret percentage increase, then apply to baseline rate).
+*   **Guideline 4 (Avoid How based questions):** Adheres well.
+*   **Guideline 5 (Be Unique):** Adheres well.
+*   **Guideline 6 (Single Solution):** Adheres well.
+*   **Guideline 7 (Rigorous, concise phrasing):** Adheres well.
+*   **Guideline 9 (Units must be consistent; SI units; Symbols):** Adheres well (includes $\mathrm{hospitalizations\\,per\\,patient-year}$).
+*   **Guideline 10 (Questions must not be multipart):** Adheres well.
+*   **Guideline 11 (Solution Formatting):** Question formatting is correct.
+*   **Guideline 12 (Multi-Step Equations):** Not applicable for question critique.
+
+**Feedback:** This is an excellent question. It effectively models a biological scenario and requires clear multi-step numerical reasoning. The instruction for rounding is also clear. No significant improvements needed.
+=== Turn 2: Author refines questions ===
+Okay, here are the improved questions, incorporating the feedback provided, specifically addressing the issues raised with Question 2, and keeping all other questions as they were deemed excellent:
+
+1.  <question>An asthma clinical trial compares a new inhaler with a standard inhaler. Researchers use the Morisky Medication Adherence Scale-8 (MMAS-8) to assess adherence. The new inhaler group has an average MMAS-8 score of $6.5$, while the standard inhaler group has an average score of $5.0$. It is known that for every $1$-point increase in the MMAS-8 score, the risk of asthma exacerbation decreases by $15\\%$. Calculate the estimated percentage reduction in asthma exacerbations for the new inhaler group compared to the standard inhaler group, assuming a linear relationship.</question>
+
+2.  <question>A clinical study of COPD patients uses both the MMAS-8 and the Device Appropriateness Index (DAI). Researchers find the following linear regression equation relating Forced Expiratory Volume in one second ($FEV_1$, in Liters) to MMAS-8 and DAI scores: $FEV_1 = 1.5 + 0.15(MMAS-8) + 0.05(DAI)$. If a patient's MMAS-8 score increases by 2 points and their DAI score decreases by 1, what is the net change in their predicted $FEV_1$ (in Liters)?</question>
+
+3.  <question>A researcher designs a study to assess adherence to inhaled corticosteroids in children with asthma. The study involves weekly check-ins, and the researcher wants to quantify the potential cumulative impact of non-adherence over a $12$-week period. Suppose that the average daily adherence rate, $a$, for a patient, determined using an electronic monitoring device, is $0.75$ (where $1.0$ represents perfect adherence). Further suppose that for each $0.1$ decrease in $a$, the patient experiences an average of $0.5$ additional asthma symptoms per week. Calculate the total number of additional asthma symptoms expected for that patient over the $12$-week period, compared to perfect adherence.</question>
+
+4.  <question>In a clinical trial, two groups of patients with COPD are treated with different inhalers. Group A has an average MMAS-8 score of $7$, and Group B has an average MMAS-8 score of $5$. Studies indicate that for every point increase in MMAS-8, lung function (measured in $FEV_1$) improves by $0.1\\,\\mathrm{L}$. Assuming a linear relationship, how much greater is the average $FEV_1$ (in liters) for patients in Group A compared to patients in Group B?</question>
+
+5.  <question>A study investigates adherence to medication in asthma patients, employing the MMAS-8 scale. Patients are categorized into three adherence levels: high (MMAS-8 score of $8$), medium (MMAS-8 score of $6-7$), and low (MMAS-8 score of <$6$).  Further analysis reveals that patients with low adherence have a $20\\%$ greater risk of hospitalization compared to those with medium or high adherence. If the baseline hospitalization rate for the medium/high adherence group is $0.1\\,\\mathrm{hospitalizations\\,per\\,patient-year}$, what is the expected hospitalization rate (in hospitalizations per patient-year) for the low adherence group, rounded to two decimal places?</question>
+=== Final questions generated ===
